@@ -5,7 +5,7 @@
 A little wiser every day. Lumen is an independent, responsive visual microlearning app for mobile and desktop browsers.
 
 ## Features
-- 154 original introductory modules across 54 subjects, with 600 illustrated slides and 308 assessment questions.
+- 200 original introductory courses and 4 quick reads across 68 subjects, with 800 illustrated slides and 408 assessment questions.
 - Interactive simulations of compounding, supply and demand, and independent coin tosses.
 - Personalized recommendations, bookmarks, notes, adaptive review, and learning progress.
 - Light/dark appearance and a local structured-content studio.
