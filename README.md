@@ -1,5 +1,7 @@
 # Lumen
 
+**[Open the Lumen web app](https://mattkhering.github.io/Lumen/)**
+
 A little wiser every day. Lumen is an independent, responsive visual microlearning app for mobile and desktop browsers.
 
 ## Features
