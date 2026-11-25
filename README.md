@@ -23,3 +23,9 @@ In Settings → Pages, select Deploy from a branch, choose `main` and `/ (root)`
 Learning history is stored locally in the browser, with export and deletion controls. There are no accounts or cross-device synchronization yet. Custom content is private to the browser. The initial lessons are educational introductions, not professional advice.
 
 Lumen uses original content and illustrations and is not affiliated with Imprint.
+
+## Editorial quality program
+
+The 2026-11-25.1 editorial batch revises 24 existing courses (96 slides, 48 questions) in `quality-reviewed-01.js` and `quality-reviewed-02.js`, preserving course IDs. Six topic-specific diagrams are provided by `quality-visuals.js`. Revised lessons use relevant educational references and new answer explanations. Editorial revision is not independent expert certification. Other courses remain review-pending. The lesson source area provides public GitHub issue links for content corrections; users should not include private information. Reading completion and passing the course's short knowledge check are separate outcomes. Earlier completions are retained without retroactively inferring knowledge-check passes; changes in content revision invalidate only the current assessment result, not reading completion.
+
+Remaining work: individually review and verify the other 1,326 full courses and four quick reads, improve their assessments and illustrations, achieve the agreed difficulty balance through substantive content changes, and complete real-device and independent subject-matter testing.
