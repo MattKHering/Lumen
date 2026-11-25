@@ -10,6 +10,7 @@ A little wiser every day. Lumen is an independent, responsive visual microlearni
 - Access every activity directly through Explore → Interactive, or encounter it within its associated course. Standalone activities do not change course completion progress.
 - Interactive experience content and runtime are stored in `experiences-stories.js`, `experiences-scenarios.js`, `experiences-workshops.js`, and `experiences-engine.js`. Models are educational simplifications and illustrative examples, not professional advice.
 - Personalized recommendations, bookmarks, notes, adaptive review, and learning progress.
+- Knowledge Profile: self-reported subject familiarity, optional adaptive Test me placement assessments across all 68 subjects, and post-lesson Already knew this? feedback. Placement uses four sampled foundational questions and up to four dedicated application/reasoning questions per subject (272 dedicated items in `knowledge-bank-01.js` and `knowledge-bank-02.js`). Results are provisional starting-level recommendations, not verified expertise or course completion. The difficulty catalog still requires its planned audit.
 - Light/dark appearance and a local structured-content studio.
 
 ## Run locally
