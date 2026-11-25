@@ -6,7 +6,9 @@ A little wiser every day. Lumen is an independent, responsive visual microlearni
 
 ## Features
 - 200 original introductory courses and 4 quick reads across 68 subjects, with 800 illustrated slides and 408 assessment questions.
-- Six interactive simulations: compounding, supply and demand, independent coin tosses, simplified eye-color inheritance, an animated downhill cart race, and lightbulb logic gates.
+- 100 interactive learning experiences: 25 visual stories, 20 simulations, 15 decision scenarios, 10 learning games, 10 interactive diagrams, 10 predict-and-reveal activities, 5 timelines and 5 sequencing puzzles.
+- Access every activity directly through Explore → Interactive, or encounter it within its associated course. Standalone activities do not change course completion progress.
+- Interactive experience content and runtime are stored in `experiences-stories.js`, `experiences-scenarios.js`, `experiences-workshops.js`, and `experiences-engine.js`. Models are educational simplifications and illustrative examples, not professional advice.
 - Personalized recommendations, bookmarks, notes, adaptive review, and learning progress.
 - Light/dark appearance and a local structured-content studio.
 
