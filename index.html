@@ -11998,8 +11998,8 @@ function depthCourse(row){
  const diagram=terms.slice(0,3).map(t=>short(t.term));
  const mix=(options,correct,n)=>{let k=n%options.length;return {options:options.slice(k).concat(options.slice(0,k)),correct:(correct-k+options.length)%options.length}};
  let a=seed%3,b=(a+1+(seed%2))%3;
- const q1={q:'Which concept matches this description? '+terms[a].definition,...mix(terms.slice(0,3).map(t=>t.term),a,seed),why:terms[a].term+': '+terms[a].definition};
- const q2={q:'What best describes '+terms[b].term.toLowerCase()+'?',...mix(terms.slice(0,3).map(t=>t.definition),b,seed+1),why:terms[b].term+': '+terms[b].definition};
+ const q1={q:'Which concept matches this description? '+terms[a].definition,...mix(terms.slice(0,3).map(t=>t.term),a,Math.floor(seed/3)),why:terms[a].term+': '+terms[a].definition};
+ const q2={q:'What best describes '+terms[b].term.toLowerCase()+'?',...mix(terms.slice(0,3).map(t=>t.definition),b,Math.floor(seed/7)+1),why:terms[b].term+': '+terms[b].definition};
  return {id,category,title,desc:terms[0].definition,art:'network',diagram,difficulty:'Beginner',format:'Course',source:depthReferences[category],depth:true,
  slides:terms.map((t,i)=>({title:t.term,text:t.definition,label:short(t.term),art:['network','scales','timeline','growth'][i]})),questions:[q1,q2]};
 }
