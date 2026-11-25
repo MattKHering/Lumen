@@ -5992,6 +5992,2781 @@ courses.push(...[
     ]
   }
 ]);
+// Original interdisciplinary expansion: academic foundations and everyday systems.
+courses.push(...[
+  {
+    "id": "algorithms",
+    "category": "Computer Science",
+    "title": "Algorithms: instructions that solve problems",
+    "desc": "Understand inputs, decisions and efficient procedures.",
+    "art": "network",
+    "diagram": [
+      "Input",
+      "Procedure",
+      "Output"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/introduction-computer-science/pages/index",
+    "slides": [
+      {
+        "title": "A precise procedure",
+        "text": "An algorithm specifies steps for solving a problem. A sorting algorithm receives a collection and returns it in an intended order.",
+        "label": "Procedure",
+        "art": "network"
+      },
+      {
+        "title": "Search by elimination",
+        "text": "Binary search checks the middle of a sorted collection, discards the half that cannot contain the target, and repeats until it succeeds or runs out of candidates.",
+        "label": "Search",
+        "art": "scales"
+      },
+      {
+        "title": "Cost as inputs grow",
+        "text": "Linear search may inspect all n items. Binary search uses at most about log₂(n) comparisons plus a small constant on an efficiently indexed, sorted collection.",
+        "label": "Efficiency",
+        "art": "timeline"
+      },
+      {
+        "title": "Correctness comes first",
+        "text": "A fast algorithm that produces the wrong result is not useful. Test normal inputs, empty inputs and edge cases before comparing performance.",
+        "label": "Correctness",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Which condition makes ordinary binary search suitable?",
+        "options": [
+          "Every item has the same value",
+          "The collection is sorted and efficiently indexed",
+          "The collection contains exactly two items"
+        ],
+        "correct": 1,
+        "why": "Binary search depends on ordering and efficient access to the middle."
+      },
+      {
+        "q": "If a procedure fails on an empty input, what should be checked first?",
+        "options": [
+          "Its display color",
+          "Its average running time",
+          "Its correctness for edge cases"
+        ],
+        "correct": 2,
+        "why": "A valid procedure must handle the inputs specified by its contract."
+      }
+    ]
+  },
+  {
+    "id": "operating-systems",
+    "category": "Computer Science",
+    "title": "The invisible manager inside a computer",
+    "desc": "Learn what operating systems do with programs and hardware.",
+    "art": "network",
+    "diagram": [
+      "Processes",
+      "Memory",
+      "Devices"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/introduction-computer-science/pages/index",
+    "slides": [
+      {
+        "title": "An abstraction layer",
+        "text": "An operating system manages resources and provides interfaces through which applications request services without controlling every hardware detail directly.",
+        "label": "Abstraction",
+        "art": "network"
+      },
+      {
+        "title": "Processes and scheduling",
+        "text": "A process is a running instance of a program with associated resources. A scheduler allocates processor time among runnable threads or processes.",
+        "label": "Scheduling",
+        "art": "scales"
+      },
+      {
+        "title": "Virtual memory",
+        "text": "Virtual addresses are translated into physical memory locations through hardware and operating-system mechanisms. Isolation helps prevent applications from accessing each other's memory directly.",
+        "label": "Memory",
+        "art": "timeline"
+      },
+      {
+        "title": "Files and permissions",
+        "text": "File systems organize persistent data. Access controls can restrict which users or processes read, modify or execute resources.",
+        "label": "Permissions",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Why does a scheduler exist?",
+        "options": [
+          "To permanently dedicate every CPU core to one app",
+          "To compress every file",
+          "To allocate CPU time to runnable work"
+        ],
+        "correct": 2,
+        "why": "Scheduling coordinates work competing for processor time."
+      },
+      {
+        "q": "What helps isolate one application's memory from another?",
+        "options": [
+          "Virtual memory and access protection",
+          "A different desktop wallpaper",
+          "The monitor's refresh rate"
+        ],
+        "correct": 0,
+        "why": "Address translation and protections constrain memory access."
+      }
+    ]
+  },
+  {
+    "id": "databases",
+    "category": "Computer Science",
+    "title": "How databases organize information",
+    "desc": "Explore tables, keys and transactions.",
+    "art": "network",
+    "diagram": [
+      "Tables",
+      "Keys",
+      "Transactions"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/introduction-computer-science/pages/index",
+    "slides": [
+      {
+        "title": "Rows and columns",
+        "text": "A relational database represents data in tables. A row can describe an order, while columns describe attributes such as amount and date.",
+        "label": "Tables",
+        "art": "network"
+      },
+      {
+        "title": "Identifiers",
+        "text": "A primary key uniquely identifies a row. A foreign key can reference a key in another table, connecting related records.",
+        "label": "Keys",
+        "art": "scales"
+      },
+      {
+        "title": "Queries and indexes",
+        "text": "A query asks for selected data. An index can accelerate suitable lookups at the cost of storage and additional maintenance during writes.",
+        "label": "Queries",
+        "art": "timeline"
+      },
+      {
+        "title": "All or nothing",
+        "text": "A transaction groups operations. Atomicity ensures the transaction's changes either take effect together or do not take effect.",
+        "label": "Transactions",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What does a primary key provide?",
+        "options": [
+          "A unique row identifier",
+          "Automatic encryption of all records",
+          "A required alphabetical order"
+        ],
+        "correct": 0,
+        "why": "Primary keys identify records uniquely."
+      },
+      {
+        "q": "Why might a bank group a debit and credit into one transaction?",
+        "options": [
+          "To prevent every network delay",
+          "To ensure both updates succeed together or neither does",
+          "To eliminate the need for account identifiers"
+        ],
+        "correct": 1,
+        "why": "Atomicity prevents partial completion of related changes."
+      }
+    ]
+  },
+  {
+    "id": "binary",
+    "category": "Computer Science",
+    "title": "How computers represent numbers",
+    "desc": "Learn bits, bytes and binary place value.",
+    "art": "network",
+    "diagram": [
+      "Bits",
+      "Places",
+      "Encoding"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/introduction-computer-science/pages/index",
+    "slides": [
+      {
+        "title": "Two symbols",
+        "text": "Binary uses digits 0 and 1. Each position in an unsigned binary integer represents a power of two.",
+        "label": "Bits",
+        "art": "network"
+      },
+      {
+        "title": "Decode a number",
+        "text": "The binary value 1011 equals 8 + 0 + 2 + 1, or decimal 11. A leading zero does not change its value.",
+        "label": "Place value",
+        "art": "scales"
+      },
+      {
+        "title": "A byte",
+        "text": "A byte conventionally contains eight bits and can represent 256 distinct bit patterns. Those patterns can be interpreted in different ways.",
+        "label": "Byte",
+        "art": "timeline"
+      },
+      {
+        "title": "Meaning depends on encoding",
+        "text": "The same bits may represent a number, a character, or a color component. The interpretation depends on a format or encoding agreement.",
+        "label": "Encoding",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What is binary 1101 in decimal?",
+        "options": [
+          "11",
+          "15",
+          "13"
+        ],
+        "correct": 2,
+        "why": "8 + 4 + 0 + 1 = 13."
+      },
+      {
+        "q": "How many distinct patterns fit in eight bits?",
+        "options": [
+          "128",
+          "256",
+          "512"
+        ],
+        "correct": 1,
+        "why": "Each bit has two possibilities, giving 2⁸ patterns."
+      }
+    ]
+  },
+  {
+    "id": "compression",
+    "category": "Computer Science",
+    "title": "Making information smaller",
+    "desc": "Distinguish lossless and lossy compression.",
+    "art": "network",
+    "diagram": [
+      "Redundancy",
+      "Encoding",
+      "Quality"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/introduction-computer-science/pages/index",
+    "slides": [
+      {
+        "title": "Patterns save space",
+        "text": "A sequence containing many repeated symbols can sometimes be represented using fewer symbols plus instructions for reconstructing the sequence.",
+        "label": "Redundancy",
+        "art": "network"
+      },
+      {
+        "title": "Lossless compression",
+        "text": "Lossless methods reconstruct the original data exactly. ZIP archives and PNG images are common examples.",
+        "label": "Lossless",
+        "art": "scales"
+      },
+      {
+        "title": "Lossy compression",
+        "text": "Lossy methods discard or approximate some information to reduce size. Many audio and image codecs exploit details that may be less perceptible.",
+        "label": "Lossy",
+        "art": "timeline"
+      },
+      {
+        "title": "Trade-offs",
+        "text": "Compression can require processing time and may not shrink already compressed or random-looking data. Choose the method according to required fidelity and cost.",
+        "label": "Trade-off",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Which method is appropriate if every original byte must be recoverable?",
+        "options": [
+          "Lossy image compression",
+          "Lossless compression",
+          "Lowering the display resolution"
+        ],
+        "correct": 1,
+        "why": "Lossless methods preserve the original data."
+      },
+      {
+        "q": "Why might a ZIP archive of an already compressed file be almost the same size?",
+        "options": [
+          "It contains little exploitable redundancy",
+          "ZIP requires a network connection",
+          "Compression always halves data"
+        ],
+        "correct": 0,
+        "why": "Existing compression can remove many easy-to-exploit patterns."
+      }
+    ]
+  },
+  {
+    "id": "derivative",
+    "category": "Mathematics",
+    "title": "Calculus: measuring change",
+    "desc": "Build intuition for slopes and instantaneous rates.",
+    "art": "network",
+    "diagram": [
+      "Function",
+      "Slope",
+      "Rate"
+    ],
+    "difficulty": "Intermediate",
+    "format": "Course",
+    "source": "https://openstax.org/books/calculus-volume-1/pages/index",
+    "slides": [
+      {
+        "title": "Average change",
+        "text": "If a vehicle travels 60 km in two hours, its average speed is 30 km/h. An average does not reveal its speed at every instant.",
+        "label": "Average",
+        "art": "network"
+      },
+      {
+        "title": "Instantaneous change",
+        "text": "A derivative is the limit of difference quotients where that limit exists. Geometrically, it describes the slope of a tangent to a function's graph.",
+        "label": "Derivative",
+        "art": "scales"
+      },
+      {
+        "title": "A simple rule",
+        "text": "For f(x)=x², the derivative is 2x. At x=3, the instantaneous slope is 6, even though the graph's slope changes across its domain.",
+        "label": "Power rule",
+        "art": "timeline"
+      },
+      {
+        "title": "Units tell a story",
+        "text": "If position is measured in meters and time in seconds, the derivative has units of meters per second. Differentiating velocity gives acceleration where defined.",
+        "label": "Units",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "For f(x)=x², what is the slope at x=4?",
+        "options": [
+          "4",
+          "16",
+          "8"
+        ],
+        "correct": 2,
+        "why": "The derivative 2x evaluates to 8."
+      },
+      {
+        "q": "What does differentiating position with respect to time give?",
+        "options": [
+          "Velocity",
+          "Mass",
+          "Total distance in every case"
+        ],
+        "correct": 0,
+        "why": "The derivative of position describes instantaneous velocity."
+      }
+    ]
+  },
+  {
+    "id": "integral",
+    "category": "Mathematics",
+    "title": "Calculus: adding up tiny changes",
+    "desc": "Understand accumulation and definite integrals.",
+    "art": "network",
+    "diagram": [
+      "Rate",
+      "Slices",
+      "Total"
+    ],
+    "difficulty": "Intermediate",
+    "format": "Course",
+    "source": "https://openstax.org/books/calculus-volume-1/pages/index",
+    "slides": [
+      {
+        "title": "Accumulation",
+        "text": "If water enters a container at two liters per minute for five minutes, ten liters enter. A varying rate requires a more general calculation.",
+        "label": "Rate",
+        "art": "network"
+      },
+      {
+        "title": "Approximate with slices",
+        "text": "Split an interval into small pieces and multiply a representative rate by each piece's width. Sum those contributions to approximate accumulation.",
+        "label": "Slices",
+        "art": "scales"
+      },
+      {
+        "title": "A definite integral",
+        "text": "Taking a suitable limit of these sums yields a definite integral. It represents signed area under a curve, with values below the axis subtracting.",
+        "label": "Integral",
+        "art": "timeline"
+      },
+      {
+        "title": "Connection to derivatives",
+        "text": "The fundamental theorem of calculus connects accumulation to differentiation. When conditions hold, an antiderivative evaluated at the interval endpoints gives the integral.",
+        "label": "Connection",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "A constant inflow of 3 L/min lasts 4 min. How much enters?",
+        "options": [
+          "7 L",
+          "12 L",
+          "0.75 L"
+        ],
+        "correct": 1,
+        "why": "Rate multiplied by duration gives 12 liters."
+      },
+      {
+        "q": "What happens to contributions below the horizontal axis in a signed integral?",
+        "options": [
+          "They are ignored",
+          "They are always added as positive area",
+          "They contribute negatively"
+        ],
+        "correct": 2,
+        "why": "A definite integral counts signed area."
+      }
+    ]
+  },
+  {
+    "id": "logarithms",
+    "category": "Mathematics",
+    "title": "Logarithms: turning growth into steps",
+    "desc": "Understand inverse powers and multiplicative scales.",
+    "art": "network",
+    "diagram": [
+      "Base",
+      "Power",
+      "Logarithm"
+    ],
+    "difficulty": "Intermediate",
+    "format": "Course",
+    "source": "https://openstax.org/books/precalculus-2e/pages/1-introduction-to-functions",
+    "slides": [
+      {
+        "title": "An inverse question",
+        "text": "An exponential asks what value a base raised to a power produces. A logarithm asks which exponent produced a given positive value.",
+        "label": "Inverse",
+        "art": "network"
+      },
+      {
+        "title": "Powers of ten",
+        "text": "Because 10³=1000, log₁₀(1000)=3. For base ten, each increase of one in the logarithm corresponds to a tenfold increase in the original value.",
+        "label": "Base ten",
+        "art": "scales"
+      },
+      {
+        "title": "Products become sums",
+        "text": "For positive x and y, log(xy)=log(x)+log(y) using the same valid base. This converts multiplicative relationships into additive ones.",
+        "label": "Products",
+        "art": "timeline"
+      },
+      {
+        "title": "Read scales carefully",
+        "text": "Logarithmic axes can display values spanning many orders of magnitude. Equal distances along such an axis represent equal ratios, not equal absolute differences.",
+        "label": "Scale",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What is log₁₀(100000)?",
+        "options": [
+          "5",
+          "4",
+          "10000"
+        ],
+        "correct": 0,
+        "why": "10 to the fifth power is 100000."
+      },
+      {
+        "q": "On a base-ten logarithmic axis, equal steps usually mean what?",
+        "options": [
+          "Equal absolute differences",
+          "Equal ratios",
+          "Equal elapsed time"
+        ],
+        "correct": 1,
+        "why": "A one-unit logarithmic difference corresponds to a tenfold ratio."
+      }
+    ]
+  },
+  {
+    "id": "trigonometry",
+    "category": "Mathematics",
+    "title": "Triangles that measure the world",
+    "desc": "Use angles and side ratios to reason about distance.",
+    "art": "network",
+    "diagram": [
+      "Angle",
+      "Ratio",
+      "Distance"
+    ],
+    "difficulty": "Intermediate",
+    "format": "Course",
+    "source": "https://openstax.org/books/precalculus-2e/pages/1-introduction-to-functions",
+    "slides": [
+      {
+        "title": "Right triangles",
+        "text": "A right triangle contains a 90-degree angle. Its hypotenuse is the longest side, opposite that right angle.",
+        "label": "Triangle",
+        "art": "network"
+      },
+      {
+        "title": "Three ratios",
+        "text": "For an acute angle, sine equals opposite over hypotenuse, cosine adjacent over hypotenuse, and tangent opposite over adjacent.",
+        "label": "Ratios",
+        "art": "scales"
+      },
+      {
+        "title": "Measure indirectly",
+        "text": "On level ground, an observer 20 m from a vertical pole sees its top at 45 degrees above eye level. Since tan(45°)=1, the top is 20 m above eye level.",
+        "label": "Application",
+        "art": "timeline"
+      },
+      {
+        "title": "Beyond triangles",
+        "text": "Sine and cosine extend to the unit circle. Their periodic behavior helps model idealized waves, rotations and oscillations.",
+        "label": "Periodicity",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Which ratio is tangent in a right triangle?",
+        "options": [
+          "Adjacent/hypotenuse",
+          "Opposite/hypotenuse",
+          "Opposite/adjacent"
+        ],
+        "correct": 2,
+        "why": "Tangent relates the opposite and adjacent legs."
+      },
+      {
+        "q": "Why add eye height in the pole example to find total height?",
+        "options": [
+          "The angle measures height relative to the observer's eye",
+          "Tangent measures the pole's mass",
+          "The ground is always curved"
+        ],
+        "correct": 0,
+        "why": "The calculated vertical difference starts at eye level."
+      }
+    ]
+  },
+  {
+    "id": "neural-signals",
+    "category": "Neuroscience",
+    "title": "How neurons send signals",
+    "desc": "Follow electrical and chemical communication in the nervous system.",
+    "art": "network",
+    "diagram": [
+      "Voltage",
+      "Impulse",
+      "Synapse"
+    ],
+    "difficulty": "Intermediate",
+    "format": "Course",
+    "source": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction",
+    "slides": [
+      {
+        "title": "Specialized cells",
+        "text": "Neurons receive and transmit information through electrical and chemical signals. Their shapes and functions vary across the nervous system.",
+        "label": "Neuron",
+        "art": "network"
+      },
+      {
+        "title": "Electrical gradients",
+        "text": "Ion concentrations and selective membrane permeability help establish a resting membrane potential. Ion channels can change that voltage.",
+        "label": "Voltage",
+        "art": "scales"
+      },
+      {
+        "title": "An action potential",
+        "text": "When appropriate threshold conditions are reached, voltage-dependent channels produce a rapidly propagating electrical signal along an axon.",
+        "label": "Impulse",
+        "art": "timeline"
+      },
+      {
+        "title": "Across a synapse",
+        "text": "At many synapses, an arriving action potential triggers release of neurotransmitter. The transmitter binds receptors and changes the receiving cell's behavior.",
+        "label": "Synapse",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What carries an action potential along an axon?",
+        "options": [
+          "A sequence of membrane voltage changes",
+          "A stream of red blood cells",
+          "A pulse of visible light"
+        ],
+        "correct": 0,
+        "why": "Voltage-dependent ion channels support propagation."
+      },
+      {
+        "q": "At a typical chemical synapse, what crosses the gap?",
+        "options": [
+          "The entire sending neuron",
+          "Neurotransmitter molecules",
+          "A new axon each time"
+        ],
+        "correct": 1,
+        "why": "Released neurotransmitters act on receptors across the synapse."
+      }
+    ]
+  },
+  {
+    "id": "plasticity",
+    "category": "Neuroscience",
+    "title": "How experience changes the brain",
+    "desc": "Explore synaptic plasticity without exaggerated promises.",
+    "art": "network",
+    "diagram": [
+      "Experience",
+      "Synapse",
+      "Change"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction",
+    "slides": [
+      {
+        "title": "A changing network",
+        "text": "Neural plasticity refers to the nervous system's capacity to change with experience, development or injury. Its mechanisms operate at multiple scales.",
+        "label": "Plasticity",
+        "art": "network"
+      },
+      {
+        "title": "Synaptic strength",
+        "text": "Repeated activity under certain conditions can alter how strongly one neuron influences another. Long-term potentiation and depression are examples of synaptic plasticity.",
+        "label": "Synapse",
+        "art": "scales"
+      },
+      {
+        "title": "Practice matters",
+        "text": "Learning a skill can change activity patterns and neural connections. The type of practice and feedback influence what improves.",
+        "label": "Practice",
+        "art": "timeline"
+      },
+      {
+        "title": "Plastic does not mean unlimited",
+        "text": "Changes depend on age, health, environment and the task. Plasticity does not imply every injury is reversible or every skill is equally attainable.",
+        "label": "Limits",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What can synaptic plasticity change?",
+        "options": [
+          "The strength of communication between neurons",
+          "The number of protons in carbon",
+          "The laws of physics"
+        ],
+        "correct": 0,
+        "why": "Synapses can change their influence on receiving cells."
+      },
+      {
+        "q": "Does neuroplasticity guarantee complete recovery from every brain injury?",
+        "options": [
+          "Yes, after enough practice",
+          "No; recovery varies considerably",
+          "Only in adults"
+        ],
+        "correct": 1,
+        "why": "Plasticity has biological and clinical limits."
+      }
+    ]
+  },
+  {
+    "id": "drug-action",
+    "category": "Medicine",
+    "title": "How medicines affect the body",
+    "desc": "Understand dose, receptors and the movement of drugs.",
+    "art": "network",
+    "diagram": [
+      "Absorption",
+      "Action",
+      "Elimination"
+    ],
+    "difficulty": "Intermediate",
+    "format": "Course",
+    "source": "https://medlineplus.gov/",
+    "slides": [
+      {
+        "title": "A drug reaches its target",
+        "text": "Pharmacokinetics describes how the body handles a drug, including absorption, distribution, metabolism and excretion.",
+        "label": "Movement",
+        "art": "network"
+      },
+      {
+        "title": "A drug changes function",
+        "text": "Pharmacodynamics describes what a drug does to the body. Some drugs bind receptors, while others affect enzymes, channels or other processes.",
+        "label": "Action",
+        "art": "scales"
+      },
+      {
+        "title": "Dose and response",
+        "text": "Benefits and adverse effects may change with dose. Different people may respond differently because of physiology, interactions and disease.",
+        "label": "Dose",
+        "art": "timeline"
+      },
+      {
+        "title": "Safe use",
+        "text": "Medicines have specific indications, risks and instructions. Do not change prescribed doses or combine medicines based solely on a general lesson; consult a qualified professional.",
+        "label": "Safety",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Which term describes how the body absorbs and eliminates a drug?",
+        "options": [
+          "Pharmacodynamics",
+          "Pharmacokinetics",
+          "Histology"
+        ],
+        "correct": 1,
+        "why": "Pharmacokinetics concerns the drug's movement and handling."
+      },
+      {
+        "q": "Why can a higher dose be unsafe?",
+        "options": [
+          "Benefits and adverse effects can both depend on dose",
+          "All drugs have identical effects at every dose",
+          "Every medicine is removed instantly"
+        ],
+        "correct": 0,
+        "why": "Dose-response relationships include potential toxicity."
+      }
+    ]
+  },
+  {
+    "id": "immune-system",
+    "category": "Medicine",
+    "title": "The body's layered defenses",
+    "desc": "Distinguish innate and adaptive immune responses.",
+    "art": "network",
+    "diagram": [
+      "Barrier",
+      "Innate",
+      "Adaptive"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction",
+    "slides": [
+      {
+        "title": "Barriers first",
+        "text": "Skin, mucous membranes and other defenses reduce entry of pathogens. These defenses are part of innate protection.",
+        "label": "Barrier",
+        "art": "network"
+      },
+      {
+        "title": "Rapid recognition",
+        "text": "Innate immune cells recognize common danger or microbial patterns. Inflammation can recruit cells and substances to affected tissue.",
+        "label": "Innate",
+        "art": "scales"
+      },
+      {
+        "title": "Specific responses",
+        "text": "Adaptive immunity involves lymphocytes with specific recognition capabilities. B cells can produce antibodies, while T cells have roles in coordination and cellular responses.",
+        "label": "Adaptive",
+        "art": "timeline"
+      },
+      {
+        "title": "Regulation matters",
+        "text": "Immune responses must be controlled as well as activated. Autoimmune conditions involve inappropriate responses against the body's own components.",
+        "label": "Regulation",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Which is an example of a barrier defense?",
+        "options": [
+          "Intact skin",
+          "A memory B cell only",
+          "A red blood cell"
+        ],
+        "correct": 0,
+        "why": "Skin helps prevent pathogens from entering tissues."
+      },
+      {
+        "q": "Which cells can differentiate into antibody-secreting plasma cells?",
+        "options": [
+          "Platelets",
+          "B lymphocytes",
+          "Skeletal muscle cells"
+        ],
+        "correct": 1,
+        "why": "Activated B cells can become plasma cells."
+      }
+    ]
+  },
+  {
+    "id": "hormones",
+    "category": "Human Biology",
+    "title": "How hormones coordinate the body",
+    "desc": "Explore signaling, receptors and feedback.",
+    "art": "network",
+    "diagram": [
+      "Gland",
+      "Signal",
+      "Target"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction",
+    "slides": [
+      {
+        "title": "Chemical messengers",
+        "text": "Endocrine hormones are chemical signals often released into the bloodstream. Target cells respond when they possess suitable receptors and signaling machinery.",
+        "label": "Signal",
+        "art": "network"
+      },
+      {
+        "title": "One signal, different targets",
+        "text": "A hormone may act in multiple tissues. Its effects depend on receptor types, concentrations and the internal state of those tissues.",
+        "label": "Receptors",
+        "art": "scales"
+      },
+      {
+        "title": "Feedback loops",
+        "text": "Many endocrine systems use negative feedback. A rise in a regulated hormone or related variable can reduce further secretion through regulatory pathways.",
+        "label": "Feedback",
+        "art": "timeline"
+      },
+      {
+        "title": "A glucose example",
+        "text": "Insulin helps regulate blood glucose by influencing glucose uptake and storage and reducing glucose production by the liver. Other hormones also contribute.",
+        "label": "Glucose",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Why do only certain cells respond to a particular hormone?",
+        "options": [
+          "They have suitable receptors and signaling mechanisms",
+          "They are always closest to the heart",
+          "Every hormone enters only one cell"
+        ],
+        "correct": 0,
+        "why": "Receptor expression and signaling determine responsiveness."
+      },
+      {
+        "q": "What does negative feedback generally do?",
+        "options": [
+          "Amplifies every disturbance",
+          "Counteracts a deviation in a regulated variable",
+          "Prevents all biological change"
+        ],
+        "correct": 1,
+        "why": "Negative feedback helps stabilize a regulated system."
+      }
+    ]
+  },
+  {
+    "id": "christianity",
+    "category": "World Religions",
+    "title": "Christianity: origins and traditions",
+    "desc": "Explore the central role of Jesus and diverse Christian communities.",
+    "art": "network",
+    "diagram": [
+      "Jesus",
+      "Scripture",
+      "Traditions"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.britannica.com/topic/religion",
+    "slides": [
+      {
+        "title": "Historical origins",
+        "text": "Christianity emerged in the first century CE within the Jewish context of Roman-ruled Judea. Early communities formed around teachings concerning Jesus of Nazareth.",
+        "label": "Origins",
+        "art": "network"
+      },
+      {
+        "title": "Central teachings",
+        "text": "Most Christian traditions affirm Jesus Christ's central role, including his death and resurrection as core articles of faith. Interpretations of salvation and doctrine differ.",
+        "label": "Beliefs",
+        "art": "scales"
+      },
+      {
+        "title": "Sacred texts",
+        "text": "The Christian Bible comprises the Old and New Testaments, with some differences in canon among traditions. The New Testament includes four canonical Gospels.",
+        "label": "Scripture",
+        "art": "timeline"
+      },
+      {
+        "title": "Diverse communities",
+        "text": "Catholic, Orthodox, Protestant and other Christian traditions have distinctive histories, practices and institutions. Individual beliefs also vary within communities.",
+        "label": "Traditions",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "In which historical context did Christianity emerge?",
+        "options": [
+          "Medieval Scandinavia",
+          "First-century Jewish society under Roman rule",
+          "Industrial-era America"
+        ],
+        "correct": 1,
+        "why": "Its earliest communities arose in the first-century eastern Roman world."
+      },
+      {
+        "q": "Do all Christian traditions use exactly the same biblical canon?",
+        "options": [
+          "No, some canons differ",
+          "Yes, without exception",
+          "Only the New Testament exists"
+        ],
+        "correct": 0,
+        "why": "There are differences in accepted Old Testament books."
+      }
+    ]
+  },
+  {
+    "id": "islam",
+    "category": "World Religions",
+    "title": "Islam: belief, practice and community",
+    "desc": "Learn about the Quran, Muhammad and central religious practices.",
+    "art": "network",
+    "diagram": [
+      "Faith",
+      "Scripture",
+      "Practice"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.britannica.com/topic/religion",
+    "slides": [
+      {
+        "title": "Historical setting",
+        "text": "Islam emerged in seventh-century Arabia. Muslims regard Muhammad as a prophet and the Quran as revelation from God.",
+        "label": "Origins",
+        "art": "network"
+      },
+      {
+        "title": "One God",
+        "text": "The oneness of God, or tawhid, is central to Islamic belief. Islamic teachings place importance on worship, moral conduct and accountability.",
+        "label": "Faith",
+        "art": "scales"
+      },
+      {
+        "title": "Five pillars",
+        "text": "The Five Pillars commonly summarize the profession of faith, prayer, charitable giving, fasting during Ramadan and pilgrimage to Mecca for those able to undertake it.",
+        "label": "Practice",
+        "art": "timeline"
+      },
+      {
+        "title": "Diversity",
+        "text": "Sunni and Shia communities have distinct historical developments and traditions. Islamic religious life also varies by legal school, region, community and individual.",
+        "label": "Traditions",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Which text is central to Islam?",
+        "options": [
+          "The Quran",
+          "The Vedas",
+          "The Analects"
+        ],
+        "correct": 0,
+        "why": "Muslims regard the Quran as divine revelation."
+      },
+      {
+        "q": "Does Islam consist of one uniform set of practices in every community?",
+        "options": [
+          "Yes, without any variation",
+          "No; traditions and practices vary",
+          "Only one region has Muslims"
+        ],
+        "correct": 1,
+        "why": "Muslim communities are diverse."
+      }
+    ]
+  },
+  {
+    "id": "hinduism",
+    "category": "World Religions",
+    "title": "Hindu traditions and the paths of life",
+    "desc": "Explore dharma, karma and diverse forms of worship.",
+    "art": "network",
+    "diagram": [
+      "Dharma",
+      "Karma",
+      "Moksha"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.britannica.com/topic/religion",
+    "slides": [
+      {
+        "title": "Many traditions",
+        "text": "Hinduism encompasses diverse religious and philosophical traditions with deep roots in South Asia. It has no single historical founder or universally binding creed.",
+        "label": "Traditions",
+        "art": "network"
+      },
+      {
+        "title": "Dharma and karma",
+        "text": "Dharma can refer to duty, ethics, order or right conduct depending on context. Karma concerns actions and their consequences, understood differently across traditions.",
+        "label": "Ethics",
+        "art": "scales"
+      },
+      {
+        "title": "Liberation",
+        "text": "Many Hindu traditions discuss samsara, the cycle of rebirth, and moksha, liberation from it. Paths to liberation and philosophical accounts differ.",
+        "label": "Liberation",
+        "art": "timeline"
+      },
+      {
+        "title": "Texts and devotion",
+        "text": "The Vedas, Upanishads, Bhagavad Gita and other texts are important in different traditions. Worship can emphasize devotion to particular deities, ritual, knowledge or other approaches.",
+        "label": "Practice",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Which concept commonly refers to liberation from samsara?",
+        "options": [
+          "Moksha",
+          "Tawhid",
+          "Baptism"
+        ],
+        "correct": 0,
+        "why": "Moksha is liberation in many Hindu philosophical traditions."
+      },
+      {
+        "q": "Why is it misleading to describe Hinduism as having one universally accepted creed?",
+        "options": [
+          "It has diverse schools, practices and philosophical views",
+          "It has no sacred texts",
+          "It originated in a single modern congregation"
+        ],
+        "correct": 0,
+        "why": "Hindu traditions vary considerably."
+      }
+    ]
+  },
+  {
+    "id": "judaism",
+    "category": "World Religions",
+    "title": "Judaism: covenant, learning and community",
+    "desc": "Explore Jewish religion, texts and diverse traditions.",
+    "art": "network",
+    "diagram": [
+      "Covenant",
+      "Torah",
+      "Practice"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.britannica.com/topic/religion",
+    "slides": [
+      {
+        "title": "An ancient tradition",
+        "text": "Judaism developed among the ancient Israelites and continues through diverse Jewish religious and cultural communities around the world.",
+        "label": "Origins",
+        "art": "network"
+      },
+      {
+        "title": "Covenant and monotheism",
+        "text": "Jewish religious traditions emphasize a relationship with one God, often described through covenant, obligations and communal remembrance.",
+        "label": "Covenant",
+        "art": "scales"
+      },
+      {
+        "title": "Torah and interpretation",
+        "text": "The Torah includes the Five Books of Moses. Rabbinic traditions draw on interpretation and discussion preserved in texts including the Mishnah and Talmud.",
+        "label": "Learning",
+        "art": "timeline"
+      },
+      {
+        "title": "Diverse Jewish life",
+        "text": "Shabbat, festivals, prayer and dietary practices are significant in many communities. Observance varies among religious movements, individuals and cultural identities.",
+        "label": "Practice",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What does Torah refer to in its narrower textual sense?",
+        "options": [
+          "The Five Books of Moses",
+          "The four canonical Gospels",
+          "The Quran"
+        ],
+        "correct": 0,
+        "why": "The Torah comprises the first five books of the Hebrew Bible."
+      },
+      {
+        "q": "Do all Jewish people follow identical religious practices?",
+        "options": [
+          "Yes",
+          "No, observance and identities vary",
+          "Only one Jewish community exists"
+        ],
+        "correct": 1,
+        "why": "Jewish religious and cultural life is diverse."
+      }
+    ]
+  },
+  {
+    "id": "poetry",
+    "category": "Literature",
+    "title": "How poetry makes meaning",
+    "desc": "Explore imagery, rhythm and figurative language.",
+    "art": "network",
+    "diagram": [
+      "Image",
+      "Sound",
+      "Meaning"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.poetryfoundation.org/education/glossary",
+    "slides": [
+      {
+        "title": "Compression",
+        "text": "Poems often use concentrated language, though they need not be short. Line breaks and spacing may shape emphasis and interpretation.",
+        "label": "Form",
+        "art": "network"
+      },
+      {
+        "title": "Imagery",
+        "text": "Sensory language can evoke sight, sound, smell, taste or touch. A concrete detail can communicate an abstract experience.",
+        "label": "Imagery",
+        "art": "scales"
+      },
+      {
+        "title": "Figurative language",
+        "text": "A metaphor describes one thing in terms of another; a simile makes an explicit comparison, often using like or as.",
+        "label": "Metaphor",
+        "art": "timeline"
+      },
+      {
+        "title": "Read aloud and reread",
+        "text": "Sound patterns, rhythm and pauses can influence meaning. Interpretations should draw on the text and acknowledge ambiguity rather than assume a single hidden code.",
+        "label": "Interpretation",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Which phrase is a simile?",
+        "options": [
+          "Time is a river",
+          "Her voice was like rain",
+          "The door closed"
+        ],
+        "correct": 1,
+        "why": "The phrase uses an explicit comparison."
+      },
+      {
+        "q": "Why consider a poem's line breaks?",
+        "options": [
+          "They can change emphasis, pacing and expectations",
+          "They always indicate the author's age",
+          "They remove all ambiguity"
+        ],
+        "correct": 0,
+        "why": "Lineation is a meaningful feature of many poems."
+      }
+    ]
+  },
+  {
+    "id": "narrative",
+    "category": "Literature",
+    "title": "Who is telling the story?",
+    "desc": "Distinguish narrators, characters and points of view.",
+    "art": "network",
+    "diagram": [
+      "Narrator",
+      "Perspective",
+      "Evidence"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.poetryfoundation.org/education/glossary",
+    "slides": [
+      {
+        "title": "Narrator and author",
+        "text": "A narrator is the voice that tells a story. A fictional narrator's views need not represent the actual author's views.",
+        "label": "Narrator",
+        "art": "network"
+      },
+      {
+        "title": "Point of view",
+        "text": "First-person narration uses an I perspective. Third-person narration may restrict access to one character's experience or move among multiple perspectives.",
+        "label": "Perspective",
+        "art": "scales"
+      },
+      {
+        "title": "Unreliable narration",
+        "text": "A narrator may misinterpret, omit or distort events. Contradictions and discrepancies can give readers reasons to question their account.",
+        "label": "Reliability",
+        "art": "timeline"
+      },
+      {
+        "title": "Interpret from evidence",
+        "text": "Ask what information is available, whose perspective is missing and how the narrative controls disclosure. Support interpretations with details from the text.",
+        "label": "Evidence",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Does a fictional narrator's belief automatically represent the author's own belief?",
+        "options": [
+          "No",
+          "Yes, in every novel",
+          "Only in third-person stories"
+        ],
+        "correct": 0,
+        "why": "Narrative voice and author are distinct."
+      },
+      {
+        "q": "What might signal an unreliable narrator?",
+        "options": [
+          "Consistent independently confirmed events",
+          "Contradictions between their account and other evidence",
+          "The use of paragraph breaks"
+        ],
+        "correct": 1,
+        "why": "Discrepancies can undermine the reliability of the account."
+      }
+    ]
+  },
+  {
+    "id": "rhetoric",
+    "category": "Literature",
+    "title": "The tools of persuasive language",
+    "desc": "Explore credibility, emotion and reasoning in texts.",
+    "art": "network",
+    "diagram": [
+      "Ethos",
+      "Pathos",
+      "Logos"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.poetryfoundation.org/education/glossary",
+    "slides": [
+      {
+        "title": "A rhetorical situation",
+        "text": "Persuasive communication occurs within a context involving an audience, purpose, speaker and constraints.",
+        "label": "Context",
+        "art": "network"
+      },
+      {
+        "title": "Credibility",
+        "text": "Ethos concerns the speaker's perceived character and credibility. Relevant expertise may support credibility but does not make every claim true.",
+        "label": "Ethos",
+        "art": "scales"
+      },
+      {
+        "title": "Emotion",
+        "text": "Pathos appeals to emotions and values. Emotional examples can communicate stakes but should not substitute for reliable evidence.",
+        "label": "Pathos",
+        "art": "timeline"
+      },
+      {
+        "title": "Reasoning",
+        "text": "Logos concerns arguments and evidence. Evaluate the premises, inferential steps and relevance of information, even when the writing is compelling.",
+        "label": "Logos",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "A writer supports a claim with relevant data and reasoning. Which appeal is most directly involved?",
+        "options": [
+          "Pathos",
+          "Logos",
+          "Meter"
+        ],
+        "correct": 1,
+        "why": "Logos concerns rational argument."
+      },
+      {
+        "q": "Does a credible speaker guarantee that an argument is sound?",
+        "options": [
+          "Yes",
+          "No",
+          "Only if the audience agrees"
+        ],
+        "correct": 1,
+        "why": "Credibility is not a substitute for evidence and valid reasoning."
+      }
+    ]
+  },
+  {
+    "id": "diplomacy",
+    "category": "International Relations",
+    "title": "How countries negotiate with each other",
+    "desc": "Understand diplomacy, agreements and national interests.",
+    "art": "network",
+    "diagram": [
+      "Interests",
+      "Dialogue",
+      "Agreement"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.un.org/en/about-us/un-charter",
+    "slides": [
+      {
+        "title": "Many kinds of actors",
+        "text": "International relations includes states, international organizations, businesses and civil society. States remain important actors but are not the only ones.",
+        "label": "Actors",
+        "art": "network"
+      },
+      {
+        "title": "Diplomacy",
+        "text": "Diplomacy uses communication and negotiation to pursue interests, manage disagreement and build agreements. Formal and informal channels can coexist.",
+        "label": "Dialogue",
+        "art": "scales"
+      },
+      {
+        "title": "Treaties",
+        "text": "Treaties are international agreements governed by international law when they meet applicable requirements. Domestic approval processes and implementation vary.",
+        "label": "Treaties",
+        "art": "timeline"
+      },
+      {
+        "title": "Cooperation and conflict",
+        "text": "States may cooperate where interests overlap and disagree where interests diverge. Institutions can facilitate information sharing and commitments but do not eliminate conflict.",
+        "label": "Cooperation",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What is a central tool of diplomacy?",
+        "options": [
+          "Negotiation and communication",
+          "The automatic elimination of borders",
+          "A single worldwide election"
+        ],
+        "correct": 0,
+        "why": "Diplomacy provides channels to manage interests and disputes."
+      },
+      {
+        "q": "Do international institutions automatically eliminate disagreements among states?",
+        "options": [
+          "Yes",
+          "No",
+          "Only if a treaty has a title"
+        ],
+        "correct": 1,
+        "why": "Institutions facilitate cooperation without guaranteeing it."
+      }
+    ]
+  },
+  {
+    "id": "comparative-advantage",
+    "category": "International Relations",
+    "title": "Why trade can benefit different economies",
+    "desc": "Understand opportunity costs and specialization.",
+    "art": "network",
+    "diagram": [
+      "Cost",
+      "Specialization",
+      "Exchange"
+    ],
+    "difficulty": "Intermediate",
+    "format": "Course",
+    "source": "https://openstax.org/books/principles-economics-3e/pages/preface",
+    "slides": [
+      {
+        "title": "Opportunity cost",
+        "text": "The opportunity cost of producing a good is the value of the best forgone alternative. Relative costs matter even when one producer is more productive overall.",
+        "label": "Cost",
+        "art": "network"
+      },
+      {
+        "title": "Comparative advantage",
+        "text": "A producer has comparative advantage in a good when its opportunity cost is lower than another producer's opportunity cost for that good.",
+        "label": "Advantage",
+        "art": "scales"
+      },
+      {
+        "title": "An example",
+        "text": "If A gives up one unit of cloth for an extra unit of grain while B gives up three, A has comparative advantage in grain in this simplified example.",
+        "label": "Specialization",
+        "art": "timeline"
+      },
+      {
+        "title": "Distribution and adjustment",
+        "text": "Trade can increase aggregate gains under suitable conditions while creating costs for particular workers or firms. Policy choices involve distribution, resilience and other goals.",
+        "label": "Distribution",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Who has comparative advantage in grain in the example?",
+        "options": [
+          "A, because its opportunity cost is lower",
+          "B, because its opportunity cost is higher",
+          "Neither, because both can grow grain"
+        ],
+        "correct": 0,
+        "why": "One unit of cloth forgone is less than three."
+      },
+      {
+        "q": "Can an economy gain overall from trade while some workers lose income?",
+        "options": [
+          "No",
+          "Yes",
+          "Only if all production stops"
+        ],
+        "correct": 1,
+        "why": "Aggregate gains do not guarantee gains for every individual."
+      }
+    ]
+  },
+  {
+    "id": "soil",
+    "category": "Agriculture",
+    "title": "Soil: a living foundation",
+    "desc": "Understand texture, organic matter and soil organisms.",
+    "art": "network",
+    "diagram": [
+      "Minerals",
+      "Organic matter",
+      "Life"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.nrcs.usda.gov/conservation-basics/soil/soil-health/soil-health-management",
+    "slides": [
+      {
+        "title": "A complex material",
+        "text": "Soil contains mineral particles, organic matter, water, air and organisms. Their proportions and arrangement influence soil behavior.",
+        "label": "Composition",
+        "art": "network"
+      },
+      {
+        "title": "Texture and structure",
+        "text": "Texture describes relative proportions of sand, silt and clay. Structure describes how particles aggregate, affecting pore space and water movement.",
+        "label": "Texture",
+        "art": "scales"
+      },
+      {
+        "title": "Living processes",
+        "text": "Roots, fungi, bacteria and other organisms participate in nutrient cycling and soil formation. Soil conditions affect their activity.",
+        "label": "Life",
+        "art": "timeline"
+      },
+      {
+        "title": "Protecting the resource",
+        "text": "Ground cover, diverse rotations and appropriate disturbance management can reduce erosion and support soil functioning. Practices should suit local conditions.",
+        "label": "Protection",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What does soil texture describe?",
+        "options": [
+          "The relative amounts of sand, silt and clay",
+          "The exact number of earthworms",
+          "Only its color"
+        ],
+        "correct": 0,
+        "why": "Texture is based on mineral particle-size fractions."
+      },
+      {
+        "q": "Why can ground cover help soil?",
+        "options": [
+          "It prevents all soil chemistry",
+          "It can reduce erosion and protect habitat",
+          "It eliminates the need for water"
+        ],
+        "correct": 1,
+        "why": "Cover reduces exposure to erosive forces."
+      }
+    ]
+  },
+  {
+    "id": "crop-rotation",
+    "category": "Agriculture",
+    "title": "Why farmers rotate crops",
+    "desc": "Explore nutrient needs, pest cycles and diversity.",
+    "art": "network",
+    "diagram": [
+      "Crop",
+      "Rotation",
+      "Soil"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.usda.gov/topics/farming",
+    "slides": [
+      {
+        "title": "A sequence across seasons",
+        "text": "Crop rotation means growing different crops in a planned sequence on the same land rather than continuously planting one crop.",
+        "label": "Rotation",
+        "art": "network"
+      },
+      {
+        "title": "Pest and disease pressures",
+        "text": "Rotating away from a susceptible host can interrupt some pests' and pathogens' life cycles. Effectiveness depends on the organism and crop sequence.",
+        "label": "Pests",
+        "art": "scales"
+      },
+      {
+        "title": "Nitrogen-fixing partnerships",
+        "text": "Some legumes host bacteria that convert atmospheric nitrogen into biologically usable forms. How much nitrogen benefits following crops depends on management and conditions.",
+        "label": "Nitrogen",
+        "art": "timeline"
+      },
+      {
+        "title": "Design for local conditions",
+        "text": "A rotation should consider climate, markets, water, soil, equipment and disease risk. Diversity is a tool, not a guarantee of higher yields every year.",
+        "label": "Design",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Why might rotating away from a host crop reduce a particular pathogen?",
+        "options": [
+          "It can interrupt the pathogen's access to a susceptible host",
+          "All pathogens die immediately without sunlight",
+          "Rotation sterilizes every field"
+        ],
+        "correct": 0,
+        "why": "Host-specific organisms may struggle when their host is absent."
+      },
+      {
+        "q": "What enables many legumes to contribute biologically fixed nitrogen?",
+        "options": [
+          "Root-associated bacteria",
+          "Photosynthesis alone",
+          "Evaporation"
+        ],
+        "correct": 0,
+        "why": "Symbiotic bacteria perform nitrogen fixation."
+      }
+    ]
+  },
+  {
+    "id": "photosynthesis",
+    "category": "Biology",
+    "title": "How plants turn sunlight into sugar",
+    "desc": "Understand energy capture and carbon fixation.",
+    "art": "network",
+    "diagram": [
+      "Light",
+      "Carbon",
+      "Sugar"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/biology-2e/pages/1-introduction",
+    "slides": [
+      {
+        "title": "Capture light",
+        "text": "Photosynthetic organisms use pigments to absorb light. In plants, chloroplasts contain machinery for photosynthesis.",
+        "label": "Light",
+        "art": "network"
+      },
+      {
+        "title": "Light-dependent reactions",
+        "text": "These reactions use light energy to produce ATP and reducing power in the form of NADPH. Oxygen is released when water is split.",
+        "label": "Energy",
+        "art": "scales"
+      },
+      {
+        "title": "Fix carbon",
+        "text": "The Calvin cycle uses energy and reducing power to incorporate carbon dioxide into organic compounds. Products can contribute to sugar synthesis.",
+        "label": "Carbon",
+        "art": "timeline"
+      },
+      {
+        "title": "Plants also respire",
+        "text": "Plants use cellular respiration as well as photosynthesis. Their net gas exchange depends on light, metabolism and environmental conditions.",
+        "label": "Respiration",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Where does the oxygen released in oxygenic photosynthesis originate?",
+        "options": [
+          "Water",
+          "Carbon dioxide directly",
+          "Soil nitrogen"
+        ],
+        "correct": 0,
+        "why": "Water splitting releases oxygen."
+      },
+      {
+        "q": "Do plants perform cellular respiration?",
+        "options": [
+          "No, only animals do",
+          "Yes, plants also extract usable energy from organic molecules",
+          "Only during winter"
+        ],
+        "correct": 1,
+        "why": "Plant cells use respiration to support metabolism."
+      }
+    ]
+  },
+  {
+    "id": "flight",
+    "category": "Transportation",
+    "title": "The four forces of flight",
+    "desc": "Discover lift, weight, thrust and drag.",
+    "art": "network",
+    "diagram": [
+      "Lift",
+      "Weight",
+      "Thrust"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak",
+    "slides": [
+      {
+        "title": "Four forces",
+        "text": "An airplane in flight experiences lift, weight, thrust and drag. These forces influence its motion according to their magnitudes and directions.",
+        "label": "Forces",
+        "art": "network"
+      },
+      {
+        "title": "Lift and airflow",
+        "text": "Wings generate lift by interacting with airflow. Pressure distributions and changes in the air's momentum are related descriptions of that interaction.",
+        "label": "Lift",
+        "art": "scales"
+      },
+      {
+        "title": "Drag and thrust",
+        "text": "Drag opposes motion relative to the surrounding air; thrust from propulsion can offset drag. Drag depends on shape, speed and operating conditions.",
+        "label": "Drag",
+        "art": "timeline"
+      },
+      {
+        "title": "Balanced flight",
+        "text": "In steady straight-and-level unaccelerated flight, the forces sum to zero. Turning, climbing or changing speed can require a different force balance.",
+        "label": "Balance",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What is true of net force in straight, steady, unaccelerated flight?",
+        "options": [
+          "It is zero",
+          "It equals the aircraft's weight",
+          "It must point forward"
+        ],
+        "correct": 0,
+        "why": "No acceleration means zero net force."
+      },
+      {
+        "q": "What distinguishes thrust from drag?",
+        "options": [
+          "Thrust is identical to weight",
+          "Thrust generally drives the aircraft while drag opposes relative airflow motion",
+          "Both always point upward"
+        ],
+        "correct": 1,
+        "why": "They generally act in opposing directions along the flight path."
+      }
+    ]
+  },
+  {
+    "id": "ev-motor",
+    "category": "Transportation",
+    "title": "How electric cars turn energy into motion",
+    "desc": "Follow energy from battery to wheels and back.",
+    "art": "network",
+    "diagram": [
+      "Battery",
+      "Inverter",
+      "Motor"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work",
+    "slides": [
+      {
+        "title": "Stored energy",
+        "text": "An electric vehicle stores electrical energy chemically in its traction battery. Battery capacity and energy use affect range.",
+        "label": "Battery",
+        "art": "network"
+      },
+      {
+        "title": "Motor and control",
+        "text": "Power electronics regulate the electric motor. The motor converts electrical energy into mechanical torque that drives the wheels.",
+        "label": "Motor",
+        "art": "scales"
+      },
+      {
+        "title": "Regenerative braking",
+        "text": "During some deceleration, a motor can act as a generator and convert part of the vehicle's kinetic energy back into electrical energy.",
+        "label": "Regeneration",
+        "art": "timeline"
+      },
+      {
+        "title": "Energy losses",
+        "text": "Conversion, rolling resistance, aerodynamic drag and heating or cooling affect energy use. Regeneration cannot recover all energy or make a vehicle run indefinitely.",
+        "label": "Losses",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What does regenerative braking recover?",
+        "options": [
+          "Some kinetic energy as electrical energy",
+          "All energy consumed during a trip",
+          "Energy from nothing"
+        ],
+        "correct": 0,
+        "why": "Only part of the vehicle's motion energy can be recovered."
+      },
+      {
+        "q": "Which component converts electrical energy into driving torque?",
+        "options": [
+          "The tire tread",
+          "The traction motor",
+          "The windshield"
+        ],
+        "correct": 1,
+        "why": "The motor produces mechanical torque."
+      }
+    ]
+  },
+  {
+    "id": "railways",
+    "category": "Transportation",
+    "title": "Why steel wheels travel so efficiently",
+    "desc": "Explore rolling resistance and rail networks.",
+    "art": "network",
+    "diagram": [
+      "Wheels",
+      "Rails",
+      "Network"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/college-physics-2e/pages/1-introduction-to-science-and-the-realm-of-physics-physical-quantities-and-units",
+    "slides": [
+      {
+        "title": "Rolling resistance",
+        "text": "A steel wheel rolling on a steel rail generally experiences relatively low rolling resistance compared with a rubber tire on many road surfaces.",
+        "label": "Resistance",
+        "art": "network"
+      },
+      {
+        "title": "Guided motion",
+        "text": "Rail vehicles follow a fixed guideway. Wheel and rail geometry help guide motion; switches direct vehicles between routes.",
+        "label": "Guidance",
+        "art": "scales"
+      },
+      {
+        "title": "Traction and braking",
+        "text": "The wheel-rail contact must provide sufficient adhesion for acceleration and braking. Low rolling resistance does not imply unlimited traction.",
+        "label": "Adhesion",
+        "art": "timeline"
+      },
+      {
+        "title": "Network economics",
+        "text": "Rail can move substantial freight or passenger volumes along fixed corridors. Infrastructure, scheduling and transfer costs affect suitability.",
+        "label": "Network",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Why can rail transport be efficient over busy corridors?",
+        "options": [
+          "Low rolling resistance and large combined loads can reduce energy per unit moved",
+          "Trains have no friction at all",
+          "Rails create fuel"
+        ],
+        "correct": 0,
+        "why": "Resistance and load consolidation can improve efficiency."
+      },
+      {
+        "q": "Does low rolling resistance imply unlimited braking force?",
+        "options": [
+          "Yes",
+          "No, available adhesion remains limited",
+          "Only on curved tracks"
+        ],
+        "correct": 1,
+        "why": "Wheel-rail adhesion constrains traction and braking."
+      }
+    ]
+  },
+  {
+    "id": "volcanoes",
+    "category": "Earth Science",
+    "title": "Why volcanoes erupt",
+    "desc": "Understand magma, gases and tectonic settings.",
+    "art": "network",
+    "diagram": [
+      "Magma",
+      "Gas",
+      "Eruption"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.usgs.gov/educational-resources",
+    "slides": [
+      {
+        "title": "Melting underground",
+        "text": "Magma forms when rock partially melts under suitable temperature, pressure and composition conditions. It may rise because of buoyancy and pressure.",
+        "label": "Magma",
+        "art": "network"
+      },
+      {
+        "title": "Different settings",
+        "text": "Volcanism occurs at many plate boundaries and some hotspots. The mechanisms producing magma differ across settings.",
+        "label": "Tectonics",
+        "art": "scales"
+      },
+      {
+        "title": "Gas and viscosity",
+        "text": "Dissolved gases can come out of solution as pressure falls. Magma viscosity, gas escape and other conditions influence whether eruptions are more explosive or effusive.",
+        "label": "Gas",
+        "art": "timeline"
+      },
+      {
+        "title": "Monitoring",
+        "text": "Scientists use seismicity, ground deformation, gas measurements and other observations to assess volcanic activity. Forecasts remain uncertain.",
+        "label": "Monitoring",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What is molten rock below Earth's surface called?",
+        "options": [
+          "Lava",
+          "Magma",
+          "Sediment"
+        ],
+        "correct": 1,
+        "why": "Magma is molten or partially molten material underground."
+      },
+      {
+        "q": "Why do eruption styles vary?",
+        "options": [
+          "Magma properties, gases and pressure conditions differ",
+          "Every volcano contains identical magma",
+          "Only the mountain's color matters"
+        ],
+        "correct": 0,
+        "why": "Multiple physical factors shape eruption behavior."
+      }
+    ]
+  },
+  {
+    "id": "glaciers",
+    "category": "Earth Science",
+    "title": "How glaciers sculpt landscapes",
+    "desc": "Learn accumulation, ice flow and erosion.",
+    "art": "network",
+    "diagram": [
+      "Snow",
+      "Ice flow",
+      "Erosion"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.usgs.gov/educational-resources",
+    "slides": [
+      {
+        "title": "Snow becomes ice",
+        "text": "Where snow persists and accumulates over years, burial and compaction can transform it into dense glacial ice.",
+        "label": "Accumulation",
+        "art": "network"
+      },
+      {
+        "title": "Ice flows",
+        "text": "Glaciers deform internally under gravity and may slide at their beds. They can flow even while their terminus retreats.",
+        "label": "Flow",
+        "art": "scales"
+      },
+      {
+        "title": "Carving and carrying",
+        "text": "Glacial movement can erode bedrock and transport sediment. Deposited debris can form landforms such as moraines.",
+        "label": "Erosion",
+        "art": "timeline"
+      },
+      {
+        "title": "Mass balance",
+        "text": "A glacier gains mass through accumulation and loses mass through ablation processes. Its overall mass balance influences long-term size.",
+        "label": "Balance",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Can a glacier's ice flow downhill while its terminus retreats?",
+        "options": [
+          "Yes",
+          "No",
+          "Only when all ice is melting instantly"
+        ],
+        "correct": 0,
+        "why": "Retreat describes the terminus position, not necessarily the direction of ice motion."
+      },
+      {
+        "q": "What is negative glacier mass balance?",
+        "options": [
+          "A gain exceeding loss",
+          "A net loss of ice mass",
+          "A reversal of gravity"
+        ],
+        "correct": 1,
+        "why": "Loss exceeds accumulation."
+      }
+    ]
+  },
+  {
+    "id": "minerals",
+    "category": "Earth Science",
+    "title": "Minerals, rocks and the rock cycle",
+    "desc": "Learn how geological materials form and transform.",
+    "art": "network",
+    "diagram": [
+      "Igneous",
+      "Sedimentary",
+      "Metamorphic"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.usgs.gov/educational-resources",
+    "slides": [
+      {
+        "title": "Minerals and rocks",
+        "text": "A mineral is generally a naturally occurring crystalline substance with characteristic chemistry and structure. Rocks are aggregates of minerals or other geological material.",
+        "label": "Minerals",
+        "art": "network"
+      },
+      {
+        "title": "Cooling melts",
+        "text": "Igneous rocks form when molten material cools and solidifies. Cooling conditions influence their texture.",
+        "label": "Igneous",
+        "art": "scales"
+      },
+      {
+        "title": "Sediment becomes rock",
+        "text": "Many sedimentary rocks form when deposited particles are compacted and cemented. Others form through chemical or biological processes.",
+        "label": "Sedimentary",
+        "art": "timeline"
+      },
+      {
+        "title": "Change without melting",
+        "text": "Metamorphic rocks form as existing rocks change under heat, pressure or chemically active fluids, without complete melting.",
+        "label": "Metamorphic",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Which rock type forms by solidification of molten material?",
+        "options": [
+          "Metamorphic",
+          "Igneous",
+          "Sedimentary only"
+        ],
+        "correct": 1,
+        "why": "Cooling and crystallization produce igneous rocks."
+      },
+      {
+        "q": "Does metamorphism require complete melting?",
+        "options": [
+          "No",
+          "Yes",
+          "Only for limestone"
+        ],
+        "correct": 0,
+        "why": "Metamorphism occurs without complete melting."
+      }
+    ]
+  },
+  {
+    "id": "hvac",
+    "category": "Home & Infrastructure",
+    "title": "How refrigerators and heat pumps move heat",
+    "desc": "Understand the refrigeration cycle conceptually.",
+    "art": "network",
+    "diagram": [
+      "Evaporator",
+      "Compressor",
+      "Condenser"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.energy.gov/energysaver",
+    "slides": [
+      {
+        "title": "Moving heat",
+        "text": "A refrigeration system uses work to move thermal energy from a cooler region to a warmer one. A heat pump uses the same general principle for useful heating.",
+        "label": "Heat transfer",
+        "art": "network"
+      },
+      {
+        "title": "Absorb heat",
+        "text": "In a vapor-compression system, low-pressure refrigerant evaporates in an evaporator and absorbs heat from its surroundings.",
+        "label": "Evaporation",
+        "art": "scales"
+      },
+      {
+        "title": "Raise pressure",
+        "text": "A compressor raises the refrigerant vapor's pressure and temperature. In the condenser, the refrigerant rejects heat and condenses.",
+        "label": "Compression",
+        "art": "timeline"
+      },
+      {
+        "title": "Repeat the cycle",
+        "text": "An expansion device lowers refrigerant pressure before it returns to the evaporator. Refrigerant circuits and electrical systems require appropriate qualified servicing.",
+        "label": "Expansion",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Why does the evaporator absorb heat?",
+        "options": [
+          "Low-pressure refrigerant evaporates there",
+          "It generates heat from nothing",
+          "It prevents phase changes"
+        ],
+        "correct": 0,
+        "why": "Evaporation absorbs thermal energy."
+      },
+      {
+        "q": "Does a heat pump need energy to move heat from cold to warm?",
+        "options": [
+          "No",
+          "Yes, it requires work",
+          "Only if it uses electricity from solar panels"
+        ],
+        "correct": 1,
+        "why": "External work drives heat transfer against the natural temperature gradient."
+      }
+    ]
+  },
+  {
+    "id": "drinking-water",
+    "category": "Home & Infrastructure",
+    "title": "From a water source to the tap",
+    "desc": "Explore drinking-water treatment and distribution.",
+    "art": "network",
+    "diagram": [
+      "Source",
+      "Treatment",
+      "Distribution"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.epa.gov/ground-water-and-drinking-water",
+    "slides": [
+      {
+        "title": "Different sources",
+        "text": "Public water systems may draw from rivers, lakes, reservoirs or groundwater. Treatment needs depend on source quality and applicable requirements.",
+        "label": "Source",
+        "art": "network"
+      },
+      {
+        "title": "Removing particles",
+        "text": "Many surface-water plants use processes such as coagulation, settling and filtration to remove suspended matter. Treatment trains vary.",
+        "label": "Filtration",
+        "art": "scales"
+      },
+      {
+        "title": "Managing pathogens",
+        "text": "Disinfection helps control harmful microorganisms. Systems monitor water quality and may maintain a disinfectant residual within distribution networks.",
+        "label": "Disinfection",
+        "art": "timeline"
+      },
+      {
+        "title": "A protected network",
+        "text": "Pumps, storage and pipes deliver treated water. Contamination can also occur after treatment, so infrastructure and monitoring matter. Follow local advisories during disruptions.",
+        "label": "Distribution",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Why might water require both filtration and disinfection?",
+        "options": [
+          "They address different kinds of contamination",
+          "Every contaminant is visible",
+          "Both are identical processes"
+        ],
+        "correct": 0,
+        "why": "Particle removal and microbial control are distinct treatment objectives."
+      },
+      {
+        "q": "Does clear water necessarily meet drinking-water standards?",
+        "options": [
+          "Yes",
+          "No",
+          "Only if it is cold"
+        ],
+        "correct": 1,
+        "why": "Some contaminants are invisible and require testing or treatment."
+      }
+    ]
+  },
+  {
+    "id": "wastewater",
+    "category": "Home & Infrastructure",
+    "title": "Where wastewater goes after the drain",
+    "desc": "Understand treatment stages and environmental protection.",
+    "art": "network",
+    "diagram": [
+      "Collection",
+      "Treatment",
+      "Discharge"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.epa.gov/npdes",
+    "slides": [
+      {
+        "title": "Collecting wastewater",
+        "text": "Sanitary sewer networks carry wastewater to treatment facilities. Some systems also receive stormwater, while others keep it separate.",
+        "label": "Collection",
+        "art": "network"
+      },
+      {
+        "title": "Physical removal",
+        "text": "Preliminary and primary treatment can remove large debris, grit and settleable solids using screens and other physical processes.",
+        "label": "Primary",
+        "art": "scales"
+      },
+      {
+        "title": "Biological treatment",
+        "text": "Many plants use microorganisms to transform dissolved and suspended organic material. Operators manage oxygen and other conditions to support treatment.",
+        "label": "Biological",
+        "art": "timeline"
+      },
+      {
+        "title": "Further treatment",
+        "text": "Facilities may remove additional nutrients, disinfect effluent and process sludge depending on requirements. Treated effluent is not automatically suitable for drinking.",
+        "label": "Discharge",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What is one purpose of biological wastewater treatment?",
+        "options": [
+          "To transform organic material using microorganisms",
+          "To add untreated sewage to rivers",
+          "To eliminate every solid with magnets"
+        ],
+        "correct": 0,
+        "why": "Microbial metabolism helps reduce organic pollution."
+      },
+      {
+        "q": "Does treated wastewater automatically qualify as drinking water?",
+        "options": [
+          "Yes",
+          "No, suitability depends on treatment and standards",
+          "Only if it has no odor"
+        ],
+        "correct": 1,
+        "why": "Drinking-water reuse requires appropriate additional safeguards."
+      }
+    ]
+  },
+  {
+    "id": "fermentation",
+    "category": "Food Science",
+    "title": "How microbes transform food",
+    "desc": "Explore yogurt, bread and fermentation chemistry.",
+    "art": "network",
+    "diagram": [
+      "Microbes",
+      "Substrate",
+      "Products"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.fda.gov/food",
+    "slides": [
+      {
+        "title": "Metabolism without oxygen",
+        "text": "In biochemical fermentation, cells regenerate necessary electron carriers without relying on an external electron acceptor such as oxygen. Different pathways produce different substances.",
+        "label": "Metabolism",
+        "art": "network"
+      },
+      {
+        "title": "Bread and yeast",
+        "text": "Baker's yeast can convert sugars into ethanol and carbon dioxide. Trapped carbon dioxide helps dough rise.",
+        "label": "Yeast",
+        "art": "scales"
+      },
+      {
+        "title": "Lactic acid bacteria",
+        "text": "In foods such as yogurt, certain bacteria transform sugars into lactic acid, contributing to acidity and characteristic texture and flavor.",
+        "label": "Acid",
+        "art": "timeline"
+      },
+      {
+        "title": "Controlled conditions",
+        "text": "Food fermentation depends on suitable organisms, ingredients, temperature and time. Fermentation does not automatically make every food safe; use tested procedures.",
+        "label": "Control",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What gas helps yeast-leavened bread rise?",
+        "options": [
+          "Nitrogen",
+          "Carbon dioxide",
+          "Helium"
+        ],
+        "correct": 1,
+        "why": "Yeast fermentation produces carbon dioxide."
+      },
+      {
+        "q": "Why use tested food fermentation procedures?",
+        "options": [
+          "They help manage food safety and process conditions",
+          "Every microorganism is harmless",
+          "Fermentation destroys all toxins automatically"
+        ],
+        "correct": 0,
+        "why": "Safety depends on controlled conditions and the food involved."
+      }
+    ]
+  },
+  {
+    "id": "maillard",
+    "category": "Food Science",
+    "title": "Why cooked food turns golden brown",
+    "desc": "Distinguish Maillard reactions from caramelization.",
+    "art": "network",
+    "diagram": [
+      "Heat",
+      "Sugars",
+      "Amino groups"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/chemistry-2e/pages/1-introduction",
+    "slides": [
+      {
+        "title": "Flavor from reactions",
+        "text": "Heating food can change molecules and produce new flavor compounds. Not all browning follows the same chemistry.",
+        "label": "Browning",
+        "art": "network"
+      },
+      {
+        "title": "Maillard chemistry",
+        "text": "Reducing sugars react with amino groups, leading to complex products associated with aroma and browning in foods such as bread crust.",
+        "label": "Maillard",
+        "art": "scales"
+      },
+      {
+        "title": "Caramelization",
+        "text": "Caramelization involves thermal reactions of sugars. It can occur without amino groups and is distinct from the Maillard reaction.",
+        "label": "Caramelization",
+        "art": "timeline"
+      },
+      {
+        "title": "Conditions matter",
+        "text": "Temperature, time, moisture, acidity and ingredients influence browning. Color alone does not establish safe internal cooking temperature.",
+        "label": "Conditions",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Which ingredients participate in the initial Maillard reaction?",
+        "options": [
+          "Reducing sugars and amino groups",
+          "Water and oxygen only",
+          "Pure salt alone"
+        ],
+        "correct": 0,
+        "why": "Maillard chemistry begins with sugar and amino-group reactions."
+      },
+      {
+        "q": "Can brown surface color reliably establish safe internal temperature?",
+        "options": [
+          "Yes",
+          "No",
+          "Only for thick foods"
+        ],
+        "correct": 1,
+        "why": "Internal temperature is a separate food-safety measure."
+      }
+    ]
+  },
+  {
+    "id": "job-interview",
+    "category": "Career Development",
+    "title": "How to demonstrate a skill in an interview",
+    "desc": "Turn real experiences into concrete evidence.",
+    "art": "network",
+    "diagram": [
+      "Situation",
+      "Action",
+      "Result"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.careeronestop.org/",
+    "slides": [
+      {
+        "title": "Understand the role",
+        "text": "Read the requirements and identify which experiences demonstrate relevant skills. Use examples rather than claiming universal competence.",
+        "label": "Requirements",
+        "art": "network"
+      },
+      {
+        "title": "Describe the context",
+        "text": "Explain the situation and task briefly so the interviewer understands the problem and your responsibility.",
+        "label": "Situation",
+        "art": "scales"
+      },
+      {
+        "title": "Show your actions",
+        "text": "Describe the specific steps you took and decisions you made. Distinguish your own contribution from the team's work.",
+        "label": "Action",
+        "art": "timeline"
+      },
+      {
+        "title": "Explain outcomes honestly",
+        "text": "Describe measurable outcomes where available, or qualitative results and lessons. Do not invent numbers or overstate your authority.",
+        "label": "Result",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Which response gives stronger evidence of troubleshooting ability?",
+        "options": [
+          "A specific problem, actions and outcome",
+          "A claim that you solve every issue perfectly",
+          "A list of unrelated hobbies"
+        ],
+        "correct": 0,
+        "why": "Concrete examples show how a skill was used."
+      },
+      {
+        "q": "What should you do when you do not know an exact outcome metric?",
+        "options": [
+          "Invent a plausible percentage",
+          "Describe the known outcome honestly",
+          "Claim the entire project succeeded because of you"
+        ],
+        "correct": 1,
+        "why": "Credibility depends on accurate representation."
+      }
+    ]
+  },
+  {
+    "id": "feedback-work",
+    "category": "Career Development",
+    "title": "Getting useful feedback at work",
+    "desc": "Turn criticism and praise into actionable next steps.",
+    "art": "network",
+    "diagram": [
+      "Observation",
+      "Impact",
+      "Next step"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.careeronestop.org/",
+    "slides": [
+      {
+        "title": "Ask for specifics",
+        "text": "General feedback can be difficult to act on. Ask for examples of behavior, circumstances and expected standards.",
+        "label": "Specifics",
+        "art": "network"
+      },
+      {
+        "title": "Separate observation and interpretation",
+        "text": "A missed deadline is an observable event. A conclusion about someone's motivation requires additional evidence.",
+        "label": "Evidence",
+        "art": "scales"
+      },
+      {
+        "title": "Agree on a change",
+        "text": "Clarify what improvement looks like, which resources are available and when progress can be revisited.",
+        "label": "Action",
+        "art": "timeline"
+      },
+      {
+        "title": "Evaluate fairly",
+        "text": "Feedback may be incomplete, biased or conflicting. Seek clarification and compare it with other evidence while considering the work context.",
+        "label": "Review",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Which feedback is easier to act on?",
+        "options": [
+          "Be a better person",
+          "Include a rollback plan in each change request",
+          "Everyone dislikes the process"
+        ],
+        "correct": 1,
+        "why": "Specific expectations describe observable behavior."
+      },
+      {
+        "q": "Should every interpretation in feedback be accepted as established fact?",
+        "options": [
+          "No; distinguish evidence from interpretation",
+          "Yes, regardless of evidence",
+          "Only if it is negative"
+        ],
+        "correct": 0,
+        "why": "A judgment may need clarification or corroboration."
+      }
+    ]
+  },
+  {
+    "id": "banks",
+    "category": "Financial Literacy",
+    "title": "What banks do with deposits and loans",
+    "desc": "Distinguish bank assets, liabilities and payment services.",
+    "art": "network",
+    "diagram": [
+      "Deposit",
+      "Loan",
+      "Settlement"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.consumerfinance.gov/consumer-tools/",
+    "slides": [
+      {
+        "title": "Deposits as liabilities",
+        "text": "A customer's deposit is generally money the bank owes to that customer. It is a liability on the bank's balance sheet and an asset for the depositor.",
+        "label": "Deposits",
+        "art": "network"
+      },
+      {
+        "title": "Loans as assets",
+        "text": "When a bank makes a loan, the loan is an asset representing a borrower's repayment obligation. Bank lending can create deposits, subject to constraints.",
+        "label": "Loans",
+        "art": "scales"
+      },
+      {
+        "title": "Payments and liquidity",
+        "text": "Payments between banks require settlement arrangements. Banks manage liquidity to meet withdrawals and payment obligations.",
+        "label": "Settlement",
+        "art": "timeline"
+      },
+      {
+        "title": "Risk and safeguards",
+        "text": "Capital, liquidity regulation, supervision and applicable deposit insurance help address risks. Coverage and eligibility depend on jurisdiction and account conditions.",
+        "label": "Safeguards",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "On a bank's balance sheet, a customer's deposit is generally what?",
+        "options": [
+          "An asset owned by the bank free of obligation",
+          "A liability owed to the customer",
+          "A stock dividend"
+        ],
+        "correct": 1,
+        "why": "The bank owes the depositor the balance."
+      },
+      {
+        "q": "Why must banks manage liquidity?",
+        "options": [
+          "To meet payments and withdrawals",
+          "To eliminate every credit loss",
+          "To avoid recording assets"
+        ],
+        "correct": 0,
+        "why": "Liquidity supports timely payment obligations."
+      }
+    ]
+  },
+  {
+    "id": "renaissance",
+    "category": "World History",
+    "title": "The Renaissance beyond the famous paintings",
+    "desc": "Explore humanism, patronage and knowledge exchange.",
+    "art": "network",
+    "diagram": [
+      "Texts",
+      "Patrons",
+      "Innovation"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/world-history-volume-1/pages/1-introduction",
+    "slides": [
+      {
+        "title": "A changing intellectual movement",
+        "text": "The Renaissance refers to developments in art, scholarship and culture that took shape in Italian cities and spread across Europe over several centuries.",
+        "label": "Origins",
+        "art": "network"
+      },
+      {
+        "title": "Humanist scholarship",
+        "text": "Humanists studied classical Greek and Latin texts and emphasized subjects such as rhetoric, history and moral philosophy. Religious concerns remained important.",
+        "label": "Humanism",
+        "art": "scales"
+      },
+      {
+        "title": "Patronage and trade",
+        "text": "Wealthy households, churches, rulers and institutions supported artists and scholars. Trade and urban life helped sustain cultural production.",
+        "label": "Patronage",
+        "art": "timeline"
+      },
+      {
+        "title": "Connected histories",
+        "text": "European developments drew on older traditions and exchanges across the Mediterranean and beyond. The Renaissance was not an abrupt end to all medieval intellectual life.",
+        "label": "Continuity",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What did Renaissance humanists often study?",
+        "options": [
+          "Classical texts and rhetoric",
+          "Only electronic engineering",
+          "Only modern stock prices"
+        ],
+        "correct": 0,
+        "why": "Classical scholarship was central to humanism."
+      },
+      {
+        "q": "Was the Renaissance an abrupt disappearance of all medieval learning?",
+        "options": [
+          "Yes",
+          "No",
+          "Only in Italy"
+        ],
+        "correct": 1,
+        "why": "Many institutions and intellectual traditions continued and changed."
+      }
+    ]
+  },
+  {
+    "id": "decolonization",
+    "category": "World History",
+    "title": "How colonial empires ended",
+    "desc": "Explore independence movements and the legacies of colonial rule.",
+    "art": "network",
+    "diagram": [
+      "Empire",
+      "Independence",
+      "Statehood"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/world-history-volume-2/pages/1-introduction",
+    "slides": [
+      {
+        "title": "Unequal political control",
+        "text": "Colonial empires exercised different forms of control over territories and populations. Political exclusion, extraction and settlement varied by place and time.",
+        "label": "Colonial rule",
+        "art": "network"
+      },
+      {
+        "title": "Independence movements",
+        "text": "Nationalist movements and other political organizations challenged colonial rule using diverse strategies. Local movements were crucial to many transitions.",
+        "label": "Movements",
+        "art": "scales"
+      },
+      {
+        "title": "A global shift",
+        "text": "The decades after World War II saw many territories gain independence as imperial powers weakened and international political conditions changed.",
+        "label": "Transitions",
+        "art": "timeline"
+      },
+      {
+        "title": "Independence and continuity",
+        "text": "Formal sovereignty did not erase inherited boundaries, economic dependencies or social inequalities. Outcomes differed widely among newly independent states.",
+        "label": "Legacies",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What changed with formal political independence?",
+        "options": [
+          "A territory gained sovereign statehood or a new political status",
+          "All economic inequalities ended immediately",
+          "Every inherited institution disappeared"
+        ],
+        "correct": 0,
+        "why": "Political independence changes legal and governmental authority."
+      },
+      {
+        "q": "Why do decolonization histories differ among countries?",
+        "options": [
+          "Local movements, colonial structures and international conditions varied",
+          "All followed the same treaty",
+          "Every transition occurred in one year"
+        ],
+        "correct": 0,
+        "why": "Each transition had its own political and social context."
+      }
+    ]
+  },
+  {
+    "id": "eclipses",
+    "category": "Astronomy",
+    "title": "Why eclipses do not happen every month",
+    "desc": "Explore orbital alignment and shadows.",
+    "art": "network",
+    "diagram": [
+      "Sun",
+      "Moon",
+      "Earth"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/astronomy-2e/pages/1-introduction",
+    "slides": [
+      {
+        "title": "Solar eclipse",
+        "text": "A solar eclipse occurs when the Moon passes between Earth and the Sun in a suitable alignment and casts a shadow on part of Earth.",
+        "label": "Solar",
+        "art": "network"
+      },
+      {
+        "title": "Lunar eclipse",
+        "text": "A lunar eclipse occurs when the Moon passes through Earth's shadow. It can occur only near full moon.",
+        "label": "Lunar",
+        "art": "scales"
+      },
+      {
+        "title": "Tilted orbits",
+        "text": "The Moon's orbit is tilted relative to Earth's orbital plane around the Sun. Most new and full moons therefore miss the alignment needed for an eclipse.",
+        "label": "Tilt",
+        "art": "timeline"
+      },
+      {
+        "title": "Viewing safely",
+        "text": "Looking directly at the Sun outside the brief total phase of a total solar eclipse can damage the eyes. Use appropriate certified solar viewing protection and follow official guidance.",
+        "label": "Safety",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "When can a lunar eclipse occur?",
+        "options": [
+          "Near new moon",
+          "Near full moon",
+          "Only at noon"
+        ],
+        "correct": 1,
+        "why": "Earth lies between the Sun and Moon near full moon."
+      },
+      {
+        "q": "Why is there not a solar eclipse at every new moon?",
+        "options": [
+          "The Moon's orbit is tilted",
+          "The Sun disappears monthly",
+          "Earth stops rotating"
+        ],
+        "correct": 0,
+        "why": "Most new moons pass above or below the required alignment."
+      }
+    ]
+  },
+  {
+    "id": "accessibility",
+    "category": "Art & Design",
+    "title": "Designing for different abilities",
+    "desc": "Learn why accessible interfaces benefit more people.",
+    "art": "network",
+    "diagram": [
+      "Perceive",
+      "Operate",
+      "Understand"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.w3.org/WAI/fundamentals/accessibility-intro/",
+    "slides": [
+      {
+        "title": "Perceivable information",
+        "text": "Offer text alternatives for meaningful images, readable contrast and captions where appropriate. Information should not rely solely on one sensory channel.",
+        "label": "Perception",
+        "art": "network"
+      },
+      {
+        "title": "Operable controls",
+        "text": "Interfaces should support keyboard interaction and visible focus. Touch targets should be large enough and controls should be understandable.",
+        "label": "Operation",
+        "art": "scales"
+      },
+      {
+        "title": "Understandable behavior",
+        "text": "Use clear labels, consistent navigation and helpful error messages. Unexpected changes can make tasks difficult to complete.",
+        "label": "Clarity",
+        "art": "timeline"
+      },
+      {
+        "title": "Test with real needs",
+        "text": "Automated checks catch some accessibility issues but not all. Manual testing and feedback from people with disabilities help identify barriers.",
+        "label": "Testing",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What helps users who navigate without a mouse?",
+        "options": [
+          "Keyboard-accessible controls and visible focus",
+          "Hover-only menus",
+          "Unlabeled buttons"
+        ],
+        "correct": 0,
+        "why": "Keyboard interaction requires reachable and identifiable controls."
+      },
+      {
+        "q": "Does passing an automated check guarantee full accessibility?",
+        "options": [
+          "Yes",
+          "No",
+          "Only on desktop"
+        ],
+        "correct": 1,
+        "why": "Manual evaluation and real-world use remain important."
+      }
+    ]
+  }
+]);
 const K='lumen-v1', day=(t=Date.now())=>{const d=new Date(t);return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')};
 const fresh=()=>({theme:'light',goal:10,interests:[],onboarded:false,progress:{},saved:{},notes:{},review:{},activity:{},custom:[],attempts:0,correct:0});
 let state=fresh();try{const s=JSON.parse(localStorage.getItem(K));if(s&&typeof s==='object')state={...fresh(),...s};}catch(e){}
