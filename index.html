@@ -103,7 +103,7 @@ h1{font-size:clamp(43px,5.2vw,70px);letter-spacing:-.055em}h2{font-size:clamp(27
 <section id="lesson" class="lesson" hidden role="dialog" aria-modal="true" aria-label="Learning session"></section><dialog id="dialog"></dialog><div id="toast" class="toast" role="status" hidden></div>
 <script src="./experiences-stories.js"></script><script src="./experiences-scenarios.js"></script><script src="./experiences-workshops.js"></script><script src="./experiences-engine.js"></script>
 <script src="./depth-01.js"></script><script src="./depth-02.js"></script><script src="./depth-03.js"></script><script src="./depth-04.js"></script><script src="./depth-05.js"></script><script src="./depth-06.js"></script>
-<script src="./depth-plus-01.js"></script><script src="./depth-plus-02.js"></script><script src="./depth-plus-03.js"></script>
+<script src="./depth-plus-01.js"></script><script src="./depth-plus-02.js"></script><script src="./depth-plus-03.js"></script><script src="./depth-plus-04.js"></script><script src="./depth-plus-05.js"></script><script src="./depth-plus-06.js"></script><script src="./depth-plus-07.js"></script><script src="./depth-plus-08.js"></script><script src="./depth-plus-09.js"></script><script src="./depth-plus-10.js"></script><script src="./depth-plus-11.js"></script><script src="./depth-plus-12.js"></script><script src="./depth-plus-questions.js"></script>
 <script>
 'use strict';
 const icons={Today:'<path d="m3 10 9-7 9 7v10H3z"/><path d="M9 20v-7h6v7"/>',Explore:'<circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/>',Library:'<path d="M4 4h4v16H4zm6 0h4v16h-4zm6 1 4-1 3 15-4 1z"/>',Review:'<path d="M20 11a8 8 0 1 0-2 6M20 4v7h-7M4 13a8 8 0 0 0 2 5"/>',Profile:'<circle cx="12" cy="8" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/>',sun:'<circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l2 2m10 10 2 2M19 5l-2 2M7 17l-2 2"/>',moon:'<path d="M20 15a9 9 0 0 1-11-11 9 9 0 1 0 11 11z"/>',bookmark:'<path d="M6 3h12v18l-6-4-6 4z"/>',close:'<path d="m6 6 12 12M18 6 6 18"/>',back:'<path d="m15 5-7 7 7 7"/>'};
@@ -12014,11 +12014,12 @@ function plusCourse(row,concept=false){
  const split=s=>{const i=s.indexOf('~');return {term:s.slice(0,i).trim(),text:s.slice(i+1).trim()}};
  const parts=row.slice(concept?2:3,concept?6:7).map(split);
  const rotate=(q,options,why,n)=>{let k=n%3;return {q,options:options.slice(k).concat(options.slice(0,k)),correct:(3-k)%3,why}};
- let questions;
- if(concept){const a=seed%3,b=(a+1+(seed%2))%3,others=i=>[parts[i],...parts.slice(0,3).filter((_,j)=>i!==j)];questions=[
- rotate('Which concept is described here? '+parts[a].text,others(a).map(x=>x.term),parts[a].term+': '+parts[a].text,Math.floor(seed/3)),
- rotate('Which explanation best fits '+parts[b].term.toLowerCase()+'?',others(b).map(x=>x.text),parts[b].term+': '+parts[b].text,Math.floor(seed/7)+1)
- ]}else questions=row.slice(7,9).map((s,i)=>{const [q,...options]=s.split('~');const evidence=parts.find(p=>p.text.toLowerCase().includes(options[0].toLowerCase()))||parts[3];return rotate(q,options,options[0]+'. '+evidence.text,Math.floor(seed/(i?7:3))+i)});
+ const stop=new Set('a an the to of in on and or is are was were be been by with for from as at it its what which why how does do can could may might should would when where who not no yes all every always only some more most same one'.split(' '));
+ const tokens=s=>String(s).toLowerCase().match(/[\p{L}\p{N}]+/gu)?.filter(x=>x.length>2&&!stop.has(x))||[];
+ const choose=(q,answer,i)=>{let query=new Set(tokens(q+' '+answer)),best=-Infinity,pick=parts[i];for(const p of parts){let words=tokens(p.term+' '+p.text),term=tokens(p.term),score=words.reduce((n,x)=>n+(query.has(x)?1:0),0)+term.reduce((n,x)=>n+(query.has(x)?2:0),0);if(score>best){best=score;pick=p}}return pick};
+ const written=concept?window.LumenPlusQuestions?.[category+':'+title]:row.slice(7,9);
+ if(!written||written.length!==2)throw Error('Missing authored questions: '+title);
+ const questions=written.map((s,i)=>{const [q,a,b,c,ref]=s.split('~');const p=ref!==undefined?parts[Number(ref)]:choose(q,a,i);return rotate(q,[a,b,c],p.text,Math.floor(seed/(i?7:3))+i)});
  return {id,category,title,desc:parts[0].text,art:'network',diagram:parts.slice(0,3).map(p=>p.term),difficulty:'Beginner',format:'Course',source:depthReferences[category],depth:true,plus:true,layout,
  slides:parts.map(p=>({title:p.term,text:p.text,label:p.term,art:'network'})),questions};
 }
