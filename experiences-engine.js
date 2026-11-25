@@ -1,5 +1,10 @@
 (()=>{'use strict';
 const all=[...window.LumenStoryData,...window.LumenScenarioData,...window.LumenWorkshopData];
+// Rotate answer positions deterministically, so the correct choice is not always first.
+for(const d of all){const seed=[...d.course].reduce((n,c)=>n+c.charCodeAt(0),d.step);
+ if(d.question){const q=d.question,n=seed%q.options.length;q.options=q.options.slice(n).concat(q.options.slice(0,n));q.correct=(q.correct-n+q.options.length)%q.options.length}
+ if(d.rounds)for(const [i,r] of d.rounds.entries()){const n=(seed+i)%r.choices.length;r.choices=r.choices.slice(n).concat(r.choices.slice(0,n))}
+}
 const byKey=new Map(all.map(x=>[x.course+':'+x.step,x]));
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const fmt=(n,d=1)=>Number(n).toFixed(d);
@@ -63,7 +68,7 @@ const btn=(label,action,more='')=>'<button type="button" class="secondary" data-
 const primary=(label,action,disabled=false)=>'<button type="button" class="primary" data-lx="'+action+'" '+(disabled?'disabled':'')+'>'+esc(label)+'</button>';
 const steps=(i,n)=>'<div class="lx-steps" aria-label="Step '+(i+1)+' of '+n+'">'+Array.from({length:n},(_,j)=>'<i class="'+(j<=i?'on':'')+'"></i>').join('')+'</div>';
 const feedback=(s,good)=>'<div class="lx-feedback '+(good?'good':'')+'" role="status">'+esc(s)+'</div>';
-const question=(q,chosen)=>'<h3>'+esc(q.q)+'</h3><div class="lx-options">'+q.options.map((x,i)=>btn(x,'answer:'+i,chosen!==null?'disabled class="secondary" aria-pressed="'+(chosen===i)+'"':'')).join('')+'</div>'+(chosen!==null?feedback((chosen===q.correct?'Correct. ':'Not quite. ')+q.why,chosen===q.correct):'');
+const question=(q,chosen)=>'<h3>'+esc(q.q)+'</h3><div class="lx-options">'+q.options.map((x,i)=>btn(x,'answer:'+i,chosen!==null?'disabled aria-pressed="'+(chosen===i)+'"':'')).join('')+'</div>'+(chosen!==null?feedback((chosen===q.correct?'Correct. ':'Not quite. ')+q.why,chosen===q.correct):'');
 const panel=(inner)=>inner;
 function init(root,d){
  let state={i:0,chosen:null,score:0,visited:new Set(),order:[],done:false};let cancel=()=>{};const reset=()=>{cancel();state={i:0,chosen:null,score:0,visited:new Set(),order:[],done:false};draw()};
@@ -109,7 +114,7 @@ function workshop(root,d,reset){
  const select=(id,opts,value)=>'<select aria-label="'+esc(id)+'" data-select="'+id+'">'+opts.map(([k,l])=>'<option value="'+esc(k)+'" '+(k===value?'selected':'')+'>'+esc(l)+'</option>').join('')+'</select>';
  const local={};let specs=[],extra='',render=()=>{},action=()=>{};
  const set=(id,v)=>local[id]=v;
- const frame=(ms,fn,done)=>{stop();let start=performance.now();const tick=now=>{if(dispose||!root.isConnected)return;let t=Math.min(1,(now-start)/ms);fn(t);if(t<1)raf=requestAnimationFrame(tick);else{raf=0;done?.()}};raf=requestAnimationFrame(tick)};
+ const frame=(ms,fn,done)=>{stop();if(window.matchMedia?.('(prefers-reduced-motion: reduce)').matches){fn(1);done?.();return}let start=performance.now();const tick=now=>{if(dispose||!root.isConnected)return;let t=Math.min(1,(now-start)/ms);fn(t);if(t<1)raf=requestAnimationFrame(tick);else{raf=0;done?.()}};raf=requestAnimationFrame(tick)};
  const show=(s,m='',note='')=>{root.querySelector('.lx-live').innerHTML=s+(m?'<div class="lx-metrics">'+m+'</div>':'')+(note?'<p class="lx-feedback">'+esc(note)+'</p>':'')};
  const update=()=>{for(const [id,, , , , ,unit] of specs){const el=root.querySelector('#lx-out-'+id);if(el)el.textContent=local[id]+unit}render()};
  switch(d.mode){
@@ -117,7 +122,7 @@ function workshop(root,d,reset){
  specs=[['v','Tangential speed',0,12,0.1,7.7,' km/s']];extra=primary('▶ Launch','run')+btn('↻ Reset','restart');let path=[],status='Ready';
  const R=6371,r0=6771,mu=398600.4418,scale=72/R;let pos=[r0,0],vel=[0,7.7];
  const paint=()=>{let pts=path.map(([x,y])=>(180+x*scale)+','+(100-y*scale)).join(' '),px=180+pos[0]*scale,py=100-pos[1]*scale;show(scene('<circle cx="180" cy="100" r="72" fill="#83b3bc"/><path d="M147 62q31-38 50 0l-9 20 21 24-17 39-36-12-15-31Z" fill="#779c70"/><circle cx="180" cy="100" r="76.5" fill="none" stroke="#779a8b" stroke-dasharray="3 5"/><polyline points="'+pts+'" fill="none" stroke="#9d7540" stroke-width="2"/><circle cx="'+px+'" cy="'+py+'" r="5" fill="#d69d45"/>'+text(180,190,status), 'Satellite trajectory near Earth'),metric('Circular speed',fmt(Math.sqrt(mu/r0),2)+' km/s')+metric('Escape speed',fmt(Math.sqrt(2*mu/r0),2)+' km/s'),'Ideal two-body model. The view is clipped at its edges; escape speed is calculated at launch altitude.')};
- render=()=>{stop();pos=[r0,0];vel=[0,local.v];path=[pos.slice()];status='Ready';paint()};action=a=>{if(a==='restart'){render();return}if(a!=='run')return;render();status='Flying';const dt=4;let done=false;frame(6000,t=>{if(done)return;for(let i=0;i<20;i++){const r=Math.hypot(...pos);if(r<=R){status='Impacted Earth';done=true;break}const k=-mu/(r*r*r);vel[0]+=k*pos[0]*dt;vel[1]+=k*pos[1]*dt;pos[0]+=vel[0]*dt;pos[1]+=vel[1]*dt;if(i%4===0)path.push(pos.slice());if(Math.hypot(...pos)>20000){status=local.v>=Math.sqrt(2*mu/r0)?'Escaping trajectory':'Extended orbit (off-screen)';done=true;break}}paint()},()=>{if(!done){status='End of preview';paint()}})};
+ render=()=>{stop();pos=[r0,0];vel=[0,local.v];path=[pos.slice()];status='Ready';paint()};action=a=>{if(a==='restart'){render();return}if(a!=='run')return;render();status='Flying';const dt=4;let done=false,elapsedSteps=0;frame(6000,t=>{if(done)return;const targetSteps=Math.floor(t*1500);for(let i=elapsedSteps;i<targetSteps;i++){const r=Math.hypot(...pos);if(r<=R){status='Impacted Earth';done=true;break}const k=-mu/(r*r*r);vel[0]+=k*pos[0]*dt;vel[1]+=k*pos[1]*dt;pos[0]+=vel[0]*dt;pos[1]+=vel[1]*dt;elapsedSteps=i+1;if(i%4===0)path.push(pos.slice());if(Math.hypot(...pos)>20000){status=local.v>=Math.sqrt(2*mu/r0)?'Escaping trajectory':'Extended orbit (off-screen)';done=true;break}}paint()},()=>{if(!done){status='End of preview';paint()}})};
  break}
  case 'ph':{
  const vals={lemon:[2,'Lemon juice'],vinegar:[3,'Vinegar'],coffee:[5,'Coffee'],water:[7,'Pure water at 25°C'],baking:[8.3,'Baking soda solution'],soap:[10,'Alkaline soap solution']};set('liquid','lemon');extra=select('liquid',Object.entries(vals).map(([k,v])=>[k,v[1]]),'lemon');render=()=>{const [p,name]=vals[local.liquid],cols=['#bb5147','#cd6547','#dc844e','#e4a75a','#d6bb61','#b6bf73','#91ad73','#6eab81','#5b9e9d','#508ba5','#5877aa','#6b65a4','#805b97','#8c508d','#914579'];show(scene('<path d="M139 25V129Q180 153 221 129V25" fill="none" stroke="#7e9083" stroke-width="3"/><path d="M143 68H217V127Q180 147 143 127Z" fill="'+cols[Math.round(p)]+'"/><path d="M195 17V106" stroke="#e8d7b5" stroke-width="12"/><path d="M195 75V106" stroke="'+cols[Math.round(p)]+'" stroke-width="9"/>'+cols.map((c,i)=>'<rect x="'+(12+i*22.4)+'" y="157" width="22.4" height="18" fill="'+c+'"/>').join('')+'<path d="M'+(23+p*22.4)+' 150l-5-8h10Z" fill="#365244"/>'+text(180,191,'0     acidic          7 neutral          basic     14'),name+' pH test'),metric('Approximate pH',p)+metric('Hydrogen-ion activity vs neutral',Math.pow(10,7-p).toPrecision(2)+'×'),'Each pH unit corresponds to a tenfold change in hydrogen-ion activity. Values are illustrative, not measurements.')};break}
