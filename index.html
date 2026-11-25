@@ -109,6 +109,7 @@ h1{font-size:clamp(43px,5.2vw,70px);letter-spacing:-.055em}h2{font-size:clamp(27
 <script src="./knowledge-bank-01.js"></script><script src="./knowledge-bank-02.js"></script>
 <script src="./quality-reviewed-01.js"></script>
 <script src="./quality-reviewed-02.js"></script>
+<script src="./quality-visuals.js"></script>
 <script>
 'use strict';
 const icons={Today:'<path d="m3 10 9-7 9 7v10H3z"/><path d="M9 20v-7h6v7"/>',Explore:'<circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/>',Library:'<path d="M4 4h4v16H4zm6 0h4v16h-4zm6 1 4-1 3 15-4 1z"/>',Review:'<path d="M20 11a8 8 0 1 0-2 6M20 4v7h-7M4 13a8 8 0 0 0 2 5"/>',Profile:'<circle cx="12" cy="8" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/>',sun:'<circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l2 2m10 10 2 2M19 5l-2 2M7 17l-2 2"/>',moon:'<path d="M20 15a9 9 0 0 1-11-11 9 9 0 1 0 11 11z"/>',bookmark:'<path d="M6 3h12v18l-6-4-6 4z"/>',close:'<path d="m6 6 12 12M18 6 6 18"/>',back:'<path d="m15 5-7 7 7 7"/>'};
@@ -12113,6 +12114,7 @@ return '<svg class="'+cls+'" viewBox="0 0 360 220" role="img" aria-label="'+esc(
 }
 
 function editorial(c,cls='cover',step=-1){
+const revisedArt=window.LumenQualityArt?.(c,cls,step);if(revisedArt)return revisedArt;
 if(c.plus)return plusArt(c,cls,step);
 if(c.diagram)return conceptArt(c,cls,step);
 if(!editorialPal[c.id])return artwork(step>=0?c.slides[step].art:c.art,cls);
