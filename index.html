@@ -124,6 +124,2756 @@ const courses=[
 ['Matter cycles','Unlike energy flow, elements such as carbon and nitrogen can cycle among organisms and the environment. Decomposers help return nutrients.','orbit']],
 [['Which organisms usually form the base of a sunlit food web?',['Primary producers','Top predators','Only fungi'],0,'Producers turn light energy into chemical energy.'],['What happens to usable energy at successive trophic levels?',['Generally decreases','Always doubles','Stays exactly the same'],0,'Energy is used and dissipated during each transfer.']]]
 ].map(x=>({id:x[0],category:x[1],title:x[2],desc:x[3],art:x[4],difficulty:x[5],format:x[6],source:x[7],slides:x[8].map(y=>({title:y[0],text:y[1],art:y[2]})),questions:x[9].map(y=>({q:y[0],options:y[1],correct:y[2],why:y[3]}))}));
+// Catalog expansion: original lessons informed by public subject listings; no proprietary course content.
+courses.push(...[
+  {
+    "id": "habits",
+    "category": "Personal Development",
+    "title": "How habits take root",
+    "desc": "Turn a repeated action into a more reliable routine.",
+    "art": "network",
+    "diagram": [
+      "Cue",
+      "Action",
+      "Outcome"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/psychology-2e/pages/1-introduction",
+    "slides": [
+      {
+        "title": "A repeated setting",
+        "text": "Habits are learned tendencies to act in familiar contexts. A location, time, or preceding activity can become a cue.",
+        "label": "Cue",
+        "art": "network"
+      },
+      {
+        "title": "Make the start small",
+        "text": "If you want to read after breakfast, place the book beside your breakfast spot. Reducing the effort of starting makes repetition easier.",
+        "label": "Start",
+        "art": "scales"
+      },
+      {
+        "title": "Repetition over time",
+        "text": "Repeated action in a stable context can increase automaticity. There is no universal number of days required for a habit to form.",
+        "label": "Repeat",
+        "art": "timeline"
+      },
+      {
+        "title": "Design a recovery plan",
+        "text": "Missing a day does not erase learning. Decide what to do when your usual context changes, such as reading after lunch while traveling.",
+        "label": "Recover",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Which plan makes a reading habit easier to repeat?",
+        "options": [
+          "Read whenever motivation strikes",
+          "Read two pages after breakfast",
+          "Wait until a free weekend"
+        ],
+        "correct": 1,
+        "why": "A small action paired with a recurring cue is easier to repeat."
+      },
+      {
+        "q": "Does every habit become automatic after exactly 21 days?",
+        "options": [
+          "Yes",
+          "No",
+          "Only if it is a morning habit"
+        ],
+        "correct": 1,
+        "why": "Habit formation varies with the person, action, and context."
+      }
+    ]
+  },
+  {
+    "id": "motivation",
+    "category": "Psychology",
+    "title": "What moves us to act",
+    "desc": "Distinguish interest, incentives and motivation.",
+    "art": "network",
+    "diagram": [
+      "Interest",
+      "Choice",
+      "Effort"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/psychology-2e/pages/1-introduction",
+    "slides": [
+      {
+        "title": "Two kinds of motivation",
+        "text": "Intrinsic motivation comes from interest or enjoyment of an activity. Extrinsic motivation comes from a separable outcome such as pay or recognition.",
+        "label": "Interest",
+        "art": "network"
+      },
+      {
+        "title": "Motives can coexist",
+        "text": "A person may enjoy teaching and also value their salary. Real motives are often mixtures rather than mutually exclusive categories.",
+        "label": "Mixture",
+        "art": "scales"
+      },
+      {
+        "title": "Support autonomy",
+        "text": "Choice, manageable challenges and useful feedback can help people feel competent and autonomous. Controlling incentives may work differently from supportive ones.",
+        "label": "Choice",
+        "art": "timeline"
+      },
+      {
+        "title": "Redesign the task",
+        "text": "Choose a personally meaningful reason for a task and identify a manageable next step. Motivation can grow through action rather than always preceding it.",
+        "label": "Action",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Which is primarily intrinsic motivation?",
+        "options": [
+          "Drawing because you enjoy it",
+          "Drawing only for a cash prize",
+          "Drawing to avoid a fine"
+        ],
+        "correct": 0,
+        "why": "Enjoyment of the activity itself is an intrinsic reason."
+      },
+      {
+        "q": "Can a worker be both intrinsically and extrinsically motivated?",
+        "options": [
+          "Never",
+          "Yes",
+          "Only if unpaid"
+        ],
+        "correct": 1,
+        "why": "Interest and external rewards can coexist."
+      }
+    ]
+  },
+  {
+    "id": "attention",
+    "category": "Psychology",
+    "title": "The limits of attention",
+    "desc": "Discover why switching tasks feels costly.",
+    "art": "network",
+    "diagram": [
+      "Signal",
+      "Selection",
+      "Switch"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/psychology-2e/pages/1-introduction",
+    "slides": [
+      {
+        "title": "Attention is selective",
+        "text": "The brain prioritizes some information over other inputs. This helps us act, but it means we can miss unexpected details.",
+        "label": "Select",
+        "art": "network"
+      },
+      {
+        "title": "Working memory has limits",
+        "text": "Keeping instructions, numbers or intentions in mind competes for limited mental resources. Complexity can increase the burden.",
+        "label": "Capacity",
+        "art": "scales"
+      },
+      {
+        "title": "Switching has a cost",
+        "text": "Alternating between demanding tasks often produces a short delay or more errors because the relevant rules and goals must be reactivated.",
+        "label": "Switch",
+        "art": "timeline"
+      },
+      {
+        "title": "Reduce competing demands",
+        "text": "Close unrelated tabs, write down unfinished tasks, and group similar work. The aim is to reduce unnecessary switches, not eliminate all multitasking.",
+        "label": "Design",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Why can rapid task switching slow work?",
+        "options": [
+          "The task goals must be reactivated",
+          "The brain stops functioning",
+          "All simple tasks require the same attention"
+        ],
+        "correct": 0,
+        "why": "Switching task sets can take time and produce interference."
+      },
+      {
+        "q": "Which design reduces working-memory load?",
+        "options": [
+          "Keep every step in your head",
+          "Use a short written checklist",
+          "Add unrelated notifications"
+        ],
+        "correct": 1,
+        "why": "A checklist externalizes information."
+      }
+    ]
+  },
+  {
+    "id": "happiness",
+    "category": "Psychology",
+    "title": "The many ingredients of happiness",
+    "desc": "Separate momentary pleasure from life satisfaction.",
+    "art": "network",
+    "diagram": [
+      "Pleasure",
+      "Meaning",
+      "Connection"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/psychology-2e/pages/1-introduction",
+    "slides": [
+      {
+        "title": "More than a mood",
+        "text": "Subjective well-being can include pleasant emotions, fewer unpleasant emotions and judgments about one's life. These measures are related but not identical.",
+        "label": "Well-being",
+        "art": "network"
+      },
+      {
+        "title": "Adaptation is imperfect",
+        "text": "People may become accustomed to some changes in their circumstances. Adaptation varies and does not make every hardship temporary or harmless.",
+        "label": "Adaptation",
+        "art": "scales"
+      },
+      {
+        "title": "Social and material conditions",
+        "text": "Supportive relationships, health, safety, and adequate resources are associated with well-being. Personal habits matter, but circumstances also matter.",
+        "label": "Context",
+        "art": "timeline"
+      },
+      {
+        "title": "Choose sustainable practices",
+        "text": "Consider one manageable activity that supports relationships, rest or meaning. Track whether it actually helps rather than assuming one practice suits everyone.",
+        "label": "Practice",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Which is a measure of evaluative well-being?",
+        "options": [
+          "Life satisfaction",
+          "Height",
+          "Reaction time alone"
+        ],
+        "correct": 0,
+        "why": "Life satisfaction is a person's evaluation of their life."
+      },
+      {
+        "q": "Does adaptation mean every serious hardship becomes harmless?",
+        "options": [
+          "Yes",
+          "No",
+          "Only with gratitude"
+        ],
+        "correct": 1,
+        "why": "Adaptation is variable and adversity can have enduring effects."
+      }
+    ]
+  },
+  {
+    "id": "emotion",
+    "category": "Psychology",
+    "title": "Reading your emotions",
+    "desc": "Learn to notice feelings without assuming they are facts.",
+    "art": "network",
+    "diagram": [
+      "Event",
+      "Appraisal",
+      "Response"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/psychology-2e/pages/1-introduction",
+    "slides": [
+      {
+        "title": "Emotions have components",
+        "text": "Emotions involve experience, bodily changes and tendencies to act. A racing heart can occur in different emotional states.",
+        "label": "Components",
+        "art": "network"
+      },
+      {
+        "title": "Interpretation matters",
+        "text": "Two people may interpret the same ambiguous message differently. Their appraisals can affect the emotions they experience.",
+        "label": "Appraisal",
+        "art": "scales"
+      },
+      {
+        "title": "Name the uncertainty",
+        "text": "Labeling a feeling can help you examine it. It does not prove that your interpretation of an event is correct.",
+        "label": "Label",
+        "art": "timeline"
+      },
+      {
+        "title": "Choose a response",
+        "text": "When possible, distinguish a feeling from an impulse. Consider a response aligned with your goal rather than acting automatically.",
+        "label": "Response",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "A racing heart always proves someone is afraid. True?",
+        "options": [
+          "True",
+          "False"
+        ],
+        "correct": 1,
+        "why": "Bodily arousal can accompany excitement, exercise and other states."
+      },
+      {
+        "q": "What can help when a message seems hostile but is ambiguous?",
+        "options": [
+          "Assume intent",
+          "Ask for clarification",
+          "Treat the feeling as definitive evidence"
+        ],
+        "correct": 1,
+        "why": "Clarification tests an interpretation rather than treating it as fact."
+      }
+    ]
+  },
+  {
+    "id": "social-proof",
+    "category": "Psychology",
+    "title": "Why crowds shape our choices",
+    "desc": "Understand conformity and social influence.",
+    "art": "network",
+    "diagram": [
+      "Group",
+      "Evidence",
+      "Choice"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/psychology-2e/pages/1-introduction",
+    "slides": [
+      {
+        "title": "Informational influence",
+        "text": "When we are uncertain, other people's behavior can provide clues. A crowd may know something we do not, but it can also be mistaken.",
+        "label": "Information",
+        "art": "network"
+      },
+      {
+        "title": "Normative influence",
+        "text": "People sometimes conform because they want acceptance or wish to avoid disapproval, even when they privately disagree.",
+        "label": "Acceptance",
+        "art": "scales"
+      },
+      {
+        "title": "Independent evidence",
+        "text": "Many people repeating one claim do not necessarily provide many independent sources. Check where the claim originated.",
+        "label": "Evidence",
+        "art": "timeline"
+      },
+      {
+        "title": "Create room to disagree",
+        "text": "In a meeting, collect individual judgments before discussion. This can reduce pressure to follow the first confident speaker.",
+        "label": "Independence",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Why might someone publicly agree but privately disagree?",
+        "options": [
+          "Normative influence",
+          "Compound growth",
+          "Natural selection"
+        ],
+        "correct": 0,
+        "why": "Social acceptance can motivate conformity."
+      },
+      {
+        "q": "Ten posts repeat the same unverified claim. How many independent sources is that?",
+        "options": [
+          "Always ten",
+          "Possibly only one",
+          "Automatically zero"
+        ],
+        "correct": 1,
+        "why": "Repeated information may share one origin."
+      }
+    ]
+  },
+  {
+    "id": "personality",
+    "category": "Psychology",
+    "title": "Personality beyond labels",
+    "desc": "Explore traits without boxing people into types.",
+    "art": "network",
+    "diagram": [
+      "Traits",
+      "Context",
+      "Behavior"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/psychology-2e/pages/1-introduction",
+    "slides": [
+      {
+        "title": "Traits are dimensions",
+        "text": "The Big Five model describes broad dimensions such as openness, conscientiousness, extraversion, agreeableness and neuroticism.",
+        "label": "Dimensions",
+        "art": "network"
+      },
+      {
+        "title": "A continuum, not a box",
+        "text": "Extraversion varies by degree. An individual need not belong to one of two absolute groups.",
+        "label": "Continuum",
+        "art": "scales"
+      },
+      {
+        "title": "Context changes behavior",
+        "text": "A normally reserved person may be talkative with close friends. Traits describe tendencies across situations, not guaranteed actions.",
+        "label": "Context",
+        "art": "timeline"
+      },
+      {
+        "title": "Use labels carefully",
+        "text": "Personality tests differ in reliability and validity. Avoid using a casual quiz as a diagnosis or a definitive basis for judging someone.",
+        "label": "Evidence",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What does a trait describe?",
+        "options": [
+          "A tendency across situations",
+          "Every action a person will take",
+          "An unchangeable destiny"
+        ],
+        "correct": 0,
+        "why": "Traits summarize patterns, not certain predictions."
+      },
+      {
+        "q": "Does low extraversion imply poor leadership?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "Leadership depends on numerous skills and circumstances."
+      }
+    ]
+  },
+  {
+    "id": "attachment",
+    "category": "Relationships",
+    "title": "How relationships become secure",
+    "desc": "Learn the basics of attachment research.",
+    "art": "network",
+    "diagram": [
+      "Safety",
+      "Trust",
+      "Repair"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/psychology-2e/pages/1-introduction",
+    "slides": [
+      {
+        "title": "Attachment and proximity",
+        "text": "Attachment theory studies how people seek safety and connection from important others, especially under stress.",
+        "label": "Safety",
+        "art": "network"
+      },
+      {
+        "title": "Patterns are not identities",
+        "text": "Adult attachment research often describes anxiety about rejection and avoidance of closeness as dimensions, rather than fixed lifelong categories.",
+        "label": "Dimensions",
+        "art": "scales"
+      },
+      {
+        "title": "Relationships differ",
+        "text": "A person's expectations may vary between relationships and can change. Childhood experiences are one influence, not the only cause.",
+        "label": "Change",
+        "art": "timeline"
+      },
+      {
+        "title": "Build dependable interaction",
+        "text": "Clear communication, reliability, respect for boundaries and repairing misunderstandings can support trust. Serious relationship distress may need qualified support.",
+        "label": "Repair",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Are adult attachment patterns necessarily permanent?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "Patterns can differ across relationships and change."
+      },
+      {
+        "q": "Which supports trust?",
+        "options": [
+          "Consistent follow-through",
+          "Testing a partner secretly",
+          "Ignoring boundaries"
+        ],
+        "correct": 0,
+        "why": "Reliable and respectful behavior supports security."
+      }
+    ]
+  },
+  {
+    "id": "conflict",
+    "category": "Relationships",
+    "title": "Disagree without destroying trust",
+    "desc": "Separate problems from personal attacks.",
+    "art": "network",
+    "diagram": [
+      "Issue",
+      "Need",
+      "Repair"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.pon.harvard.edu/",
+    "slides": [
+      {
+        "title": "Name the specific issue",
+        "text": "Instead of saying someone never cares, describe the event: a shared task was not completed by the agreed time.",
+        "label": "Issue",
+        "art": "network"
+      },
+      {
+        "title": "Look beneath positions",
+        "text": "Two people arguing about a schedule may have different underlying needs, such as rest, predictability or fairness.",
+        "label": "Need",
+        "art": "scales"
+      },
+      {
+        "title": "Take a useful break",
+        "text": "When a conversation becomes overwhelming, a mutually agreed pause with a clear time to return can help reduce escalation.",
+        "label": "Pause",
+        "art": "timeline"
+      },
+      {
+        "title": "Repair and follow through",
+        "text": "Acknowledge a specific mistake, agree on a feasible change, and revisit whether the change worked. Safety takes priority in abusive situations.",
+        "label": "Repair",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Which statement focuses on the problem?",
+        "options": [
+          "You are always selfish",
+          "The agreed task was not finished yesterday",
+          "You never do anything right"
+        ],
+        "correct": 1,
+        "why": "Specific observations avoid global attacks on character."
+      },
+      {
+        "q": "What makes a conversation break constructive?",
+        "options": [
+          "Disappearing indefinitely",
+          "Agreeing when to return",
+          "Using silence as punishment"
+        ],
+        "correct": 1,
+        "why": "A clear return plan preserves accountability."
+      }
+    ]
+  },
+  {
+    "id": "empathy",
+    "category": "Communication",
+    "title": "Empathy and perspective-taking",
+    "desc": "Understand a view without claiming to read minds.",
+    "art": "network",
+    "diagram": [
+      "Observe",
+      "Ask",
+      "Understand"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/psychology-2e/pages/1-introduction",
+    "slides": [
+      {
+        "title": "Perspective is not telepathy",
+        "text": "Cognitive empathy involves trying to understand another person's perspective. You can make an informed guess without knowing exactly what they feel.",
+        "label": "Perspective",
+        "art": "network"
+      },
+      {
+        "title": "Check your interpretation",
+        "text": "Ask a question rather than assuming a facial expression has one meaning. Culture, context and individual differences influence expression.",
+        "label": "Ask",
+        "art": "scales"
+      },
+      {
+        "title": "Compassion and boundaries",
+        "text": "Caring about someone does not require agreeing with everything or taking responsibility for every problem.",
+        "label": "Boundary",
+        "art": "timeline"
+      },
+      {
+        "title": "Practice with disagreement",
+        "text": "Summarize an opposing argument in terms its supporter would recognize, then explain where your reasoning differs.",
+        "label": "Practice",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What is the best way to test a guess about someone's feelings?",
+        "options": [
+          "Ask respectfully",
+          "Assume facial expressions are universal proof",
+          "Ignore their words"
+        ],
+        "correct": 0,
+        "why": "Direct clarification is usually more reliable than mind-reading."
+      },
+      {
+        "q": "Does empathy require agreement?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "Understanding another perspective is different from endorsing it."
+      }
+    ]
+  },
+  {
+    "id": "negotiation",
+    "category": "Business",
+    "title": "Negotiation beyond winning",
+    "desc": "Find agreements by understanding interests and alternatives.",
+    "art": "network",
+    "diagram": [
+      "Interest",
+      "Options",
+      "Agreement"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.pon.harvard.edu/",
+    "slides": [
+      {
+        "title": "Position versus interest",
+        "text": "A position is a stated demand. An interest is the reason behind it. Different positions may conceal compatible needs.",
+        "label": "Interest",
+        "art": "network"
+      },
+      {
+        "title": "Know your alternative",
+        "text": "Before negotiating, consider the best available alternative if no agreement is reached. A weak deal may be worse than walking away.",
+        "label": "Alternative",
+        "art": "scales"
+      },
+      {
+        "title": "Expand the options",
+        "text": "Price is not the only negotiable factor. Timing, reliability, scope or responsibilities can sometimes create a mutually better arrangement.",
+        "label": "Options",
+        "art": "timeline"
+      },
+      {
+        "title": "Make commitments explicit",
+        "text": "Record what each party will do, by when, and how disagreements will be handled. An agreement should be clear and feasible.",
+        "label": "Agreement",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What is an interest in a salary negotiation?",
+        "options": [
+          "A need for financial stability",
+          "The exact initial offer only",
+          "A signed contract alone"
+        ],
+        "correct": 0,
+        "why": "An interest explains why a position matters."
+      },
+      {
+        "q": "Why identify an alternative before negotiating?",
+        "options": [
+          "To assess whether a proposed deal is worthwhile",
+          "To guarantee victory",
+          "To avoid listening"
+        ],
+        "correct": 0,
+        "why": "Alternatives give a benchmark for judging offers."
+      }
+    ]
+  },
+  {
+    "id": "leadership",
+    "category": "Leadership",
+    "title": "Leading through clarity",
+    "desc": "Build trust through expectations and feedback.",
+    "art": "network",
+    "diagram": [
+      "Purpose",
+      "Roles",
+      "Feedback"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/organizational-behavior/pages/1-introduction",
+    "slides": [
+      {
+        "title": "Leadership is influence",
+        "text": "Leadership involves influencing coordinated action toward a goal. A formal title can provide authority but does not guarantee effective influence.",
+        "label": "Purpose",
+        "art": "network"
+      },
+      {
+        "title": "Clarity before activity",
+        "text": "Teams work better when people understand the goal, their role and how success will be evaluated.",
+        "label": "Roles",
+        "art": "scales"
+      },
+      {
+        "title": "Feedback is a dialogue",
+        "text": "Describe an observed behavior and its effect. Ask for the person's perspective and agree on a specific improvement.",
+        "label": "Feedback",
+        "art": "timeline"
+      },
+      {
+        "title": "Make it safe to speak",
+        "text": "Leaders can invite dissent, admit mistakes and respond constructively to concerns. Accountability and psychological safety can coexist.",
+        "label": "Trust",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Which feedback is most actionable?",
+        "options": [
+          "Be better",
+          "The report missed two required fields; let's review the checklist",
+          "You have a bad attitude"
+        ],
+        "correct": 1,
+        "why": "Specific behavior and a next step are actionable."
+      },
+      {
+        "q": "Can a team combine psychological safety with accountability?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 0,
+        "why": "People can speak up while remaining responsible for quality."
+      }
+    ]
+  },
+  {
+    "id": "teams",
+    "category": "Leadership",
+    "title": "Why teams work—or fail",
+    "desc": "Understand coordination, norms and shared goals.",
+    "art": "network",
+    "diagram": [
+      "Roles",
+      "Norms",
+      "Results"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/organizational-behavior/pages/1-introduction",
+    "slides": [
+      {
+        "title": "Groups need coordination",
+        "text": "A collection of skilled individuals does not automatically become an effective team. Interdependent work requires coordination.",
+        "label": "Coordination",
+        "art": "network"
+      },
+      {
+        "title": "Clarify dependencies",
+        "text": "Map who needs information or completed work from whom. Unclear handoffs can delay everyone even when individuals work hard.",
+        "label": "Dependencies",
+        "art": "scales"
+      },
+      {
+        "title": "Norms guide behavior",
+        "text": "Teams develop expectations about meetings, communication and decisions. Make helpful norms explicit instead of assuming agreement.",
+        "label": "Norms",
+        "art": "timeline"
+      },
+      {
+        "title": "Review the process",
+        "text": "After a project, ask what happened, why, and what should change next time. Improve the system rather than assigning blame reflexively.",
+        "label": "Review",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What can improve a delayed handoff?",
+        "options": [
+          "Clear ownership and delivery expectations",
+          "More vague instructions",
+          "A longer title"
+        ],
+        "correct": 0,
+        "why": "Explicit coordination reduces uncertainty."
+      },
+      {
+        "q": "What should a useful retrospective focus on?",
+        "options": [
+          "Only finding someone to blame",
+          "Learning what to improve",
+          "Hiding mistakes"
+        ],
+        "correct": 1,
+        "why": "Review is intended to improve future performance."
+      }
+    ]
+  },
+  {
+    "id": "storytelling",
+    "category": "Communication",
+    "title": "How to tell an idea as a story",
+    "desc": "Make explanations memorable without sacrificing accuracy.",
+    "art": "network",
+    "diagram": [
+      "Context",
+      "Change",
+      "Meaning"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/organizational-behavior/pages/1-introduction",
+    "slides": [
+      {
+        "title": "Start with a situation",
+        "text": "A story gives information a context: who is involved, what they are trying to accomplish and what is at stake.",
+        "label": "Context",
+        "art": "network"
+      },
+      {
+        "title": "Show a change",
+        "text": "Explain what happened and why it mattered. Cause and effect can give an audience a framework for understanding events.",
+        "label": "Change",
+        "art": "scales"
+      },
+      {
+        "title": "Evidence still matters",
+        "text": "An engaging anecdote is not proof that a general claim is true. Pair representative data with a story where appropriate.",
+        "label": "Evidence",
+        "art": "timeline"
+      },
+      {
+        "title": "End with a clear point",
+        "text": "For a work presentation, connect the outcome to the decision or lesson the audience needs to remember.",
+        "label": "Meaning",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Can one compelling story establish a general statistical claim?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "Anecdotes may illustrate but cannot establish population frequencies."
+      },
+      {
+        "q": "What makes a business story useful?",
+        "options": [
+          "A clear connection to the decision",
+          "Maximum drama regardless of truth",
+          "As many characters as possible"
+        ],
+        "correct": 0,
+        "why": "The story should clarify its practical point."
+      }
+    ]
+  },
+  {
+    "id": "persuasion",
+    "category": "Business",
+    "title": "The ethics of influence",
+    "desc": "Recognize persuasive signals and protect informed choice.",
+    "art": "network",
+    "diagram": [
+      "Claim",
+      "Evidence",
+      "Choice"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/psychology-2e/pages/1-introduction",
+    "slides": [
+      {
+        "title": "Influence is everywhere",
+        "text": "Persuasion can involve reasoning, emotion, authority and social cues. These cues are not necessarily deceptive.",
+        "label": "Signal",
+        "art": "network"
+      },
+      {
+        "title": "Scarcity is not value",
+        "text": "A limited offer may feel more desirable because it is scarce. Scarcity alone does not establish quality or usefulness.",
+        "label": "Scarcity",
+        "art": "scales"
+      },
+      {
+        "title": "Authority has boundaries",
+        "text": "A credential is most relevant when the person has expertise in the subject. A famous person is not automatically an expert in everything.",
+        "label": "Authority",
+        "art": "timeline"
+      },
+      {
+        "title": "Respect informed decisions",
+        "text": "Present accurate evidence, disclose incentives, avoid invented urgency and leave room for refusal. Ethical persuasion preserves choice.",
+        "label": "Choice",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "A product is available for only one hour. What does that prove about quality?",
+        "options": [
+          "It is excellent",
+          "Nothing by itself",
+          "It is dangerous"
+        ],
+        "correct": 1,
+        "why": "Availability is separate from evidence of quality."
+      },
+      {
+        "q": "What supports ethical persuasion?",
+        "options": [
+          "Hidden fees",
+          "Accurate information and freedom to decline",
+          "Invented testimonials"
+        ],
+        "correct": 1,
+        "why": "Informed, voluntary choices require honest information."
+      }
+    ]
+  },
+  {
+    "id": "startup",
+    "category": "Business",
+    "title": "Testing an idea before building it",
+    "desc": "Learn how businesses reduce uncertainty through experiments.",
+    "art": "network",
+    "diagram": [
+      "Hypothesis",
+      "Test",
+      "Learn"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.sba.gov/business-guide",
+    "slides": [
+      {
+        "title": "Start with a problem",
+        "text": "Identify a specific group and a problem they experience. A proposed product is a hypothesis about what could help them.",
+        "label": "Problem",
+        "art": "network"
+      },
+      {
+        "title": "Test the riskiest assumption",
+        "text": "If you do not know whether users need a feature, interview them or test a small prototype before investing heavily.",
+        "label": "Test",
+        "art": "scales"
+      },
+      {
+        "title": "Choose meaningful measures",
+        "text": "Measure behavior related to the problem, such as completed tasks or repeat use, instead of relying only on page views.",
+        "label": "Measure",
+        "art": "timeline"
+      },
+      {
+        "title": "Adapt or stop",
+        "text": "Use results to refine the idea, try a different approach or stop. An unsuccessful experiment can still save resources.",
+        "label": "Learn",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What is a useful early test for an unproven feature?",
+        "options": [
+          "Build every feature first",
+          "Show a small prototype to intended users",
+          "Assume competitors proved demand"
+        ],
+        "correct": 1,
+        "why": "A prototype can reveal problems before large investments."
+      },
+      {
+        "q": "Why can stopping a failed experiment be valuable?",
+        "options": [
+          "It avoids further investment in weak assumptions",
+          "It proves every idea is bad",
+          "It hides evidence"
+        ],
+        "correct": 0,
+        "why": "Learning can prevent unnecessary costs."
+      }
+    ]
+  },
+  {
+    "id": "strategy",
+    "category": "Business",
+    "title": "Strategy is a choice",
+    "desc": "Understand trade-offs, positioning and feedback.",
+    "art": "network",
+    "diagram": [
+      "Goal",
+      "Trade-off",
+      "Action"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/introduction-business-2e/pages/6-1-the-role-of-management",
+    "slides": [
+      {
+        "title": "A direction is not enough",
+        "text": "A strategy identifies how a goal will be pursued, given resources, competitors and constraints. A vague aspiration does not explain how to act.",
+        "label": "Direction",
+        "art": "network"
+      },
+      {
+        "title": "Choose what not to do",
+        "text": "Limited resources mean priorities exclude alternatives. A company that tries to serve every customer may dilute its strengths.",
+        "label": "Trade-off",
+        "art": "scales"
+      },
+      {
+        "title": "Connect decisions",
+        "text": "Product design, pricing, distribution and operations should support a coherent approach rather than working against each other.",
+        "label": "Alignment",
+        "art": "timeline"
+      },
+      {
+        "title": "Reassess the assumptions",
+        "text": "Define signals that would reveal whether the strategy is working. Adjust when evidence or circumstances change.",
+        "label": "Feedback",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Why are trade-offs central to strategy?",
+        "options": [
+          "Resources are limited",
+          "Every strategy must be expensive",
+          "Goals are illegal"
+        ],
+        "correct": 0,
+        "why": "Choosing one use of resources means forgoing others."
+      },
+      {
+        "q": "What is a useful strategic review?",
+        "options": [
+          "Ignore changing conditions",
+          "Compare outcomes with the assumptions",
+          "Only repeat the slogan"
+        ],
+        "correct": 1,
+        "why": "Review allows strategy to respond to evidence."
+      }
+    ]
+  },
+  {
+    "id": "deep-attention",
+    "category": "Productivity",
+    "title": "Making room for demanding work",
+    "desc": "Protect concentration without glorifying overwork.",
+    "art": "network",
+    "diagram": [
+      "Plan",
+      "Work",
+      "Recover"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/psychology-2e/pages/1-introduction",
+    "slides": [
+      {
+        "title": "Identify demanding tasks",
+        "text": "Some work requires sustained reasoning and cannot be efficiently completed in small fragments between interruptions.",
+        "label": "Identify",
+        "art": "network"
+      },
+      {
+        "title": "Protect an interval",
+        "text": "Choose a manageable block of time, decide the desired outcome and reduce avoidable distractions.",
+        "label": "Protect",
+        "art": "scales"
+      },
+      {
+        "title": "Plan interruptions",
+        "text": "If an unrelated task comes to mind, record it for later. Urgent needs may still require a change of plan.",
+        "label": "Capture",
+        "art": "timeline"
+      },
+      {
+        "title": "Allow recovery",
+        "text": "Breaks, sleep and realistic workloads matter. A productive schedule need not consist entirely of uninterrupted demanding work.",
+        "label": "Recover",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What is a useful aim for a concentrated work block?",
+        "options": [
+          "A clear task outcome",
+          "Never taking a break",
+          "Answering every alert immediately"
+        ],
+        "correct": 0,
+        "why": "A clear outcome directs attention."
+      },
+      {
+        "q": "Should an effective schedule ignore rest?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "Recovery and adequate sleep support sustainable performance."
+      }
+    ]
+  },
+  {
+    "id": "priorities",
+    "category": "Productivity",
+    "title": "Choosing what matters first",
+    "desc": "Turn competing tasks into deliberate priorities.",
+    "art": "network",
+    "diagram": [
+      "Urgency",
+      "Value",
+      "Capacity"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/organizational-behavior/pages/1-introduction",
+    "slides": [
+      {
+        "title": "Urgent is not always important",
+        "text": "Urgency describes time pressure. Importance describes consequences or contribution to goals. A task may have one, both or neither.",
+        "label": "Distinction",
+        "art": "network"
+      },
+      {
+        "title": "Estimate consequences",
+        "text": "Ask what happens if a task waits and what value completing it creates. Consider dependencies on other people.",
+        "label": "Value",
+        "art": "scales"
+      },
+      {
+        "title": "Reserve capacity",
+        "text": "Leave room for unplanned work and transitions. A plan that fills every minute can fail after one unexpected demand.",
+        "label": "Capacity",
+        "art": "timeline"
+      },
+      {
+        "title": "Review and adjust",
+        "text": "At the end of the day, compare the plan with reality. Reprioritize unfinished work rather than carrying every old task forward automatically.",
+        "label": "Review",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Which task can be important but not urgent?",
+        "options": [
+          "Preparing for a future certification exam",
+          "An emergency alert requiring immediate action",
+          "A meaningless pop-up"
+        ],
+        "correct": 0,
+        "why": "Long-term preparation may matter without immediate pressure."
+      },
+      {
+        "q": "Why leave room in a schedule?",
+        "options": [
+          "To make a plan less fragile",
+          "Because planning is useless",
+          "To guarantee no emergencies"
+        ],
+        "correct": 0,
+        "why": "Slack accommodates uncertainty."
+      }
+    ]
+  },
+  {
+    "id": "checklists",
+    "category": "Productivity",
+    "title": "Why checklists prevent mistakes",
+    "desc": "Design reminders for critical repeatable steps.",
+    "art": "network",
+    "diagram": [
+      "Steps",
+      "Check",
+      "Confirm"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/introduction-business-2e/pages/6-1-the-role-of-management",
+    "slides": [
+      {
+        "title": "Memory is fallible",
+        "text": "Even experienced people can omit a familiar step under pressure. A checklist provides an external reminder.",
+        "label": "Memory",
+        "art": "network"
+      },
+      {
+        "title": "Identify critical actions",
+        "text": "Include steps whose omission matters, not every trivial movement. Make the wording specific and observable.",
+        "label": "Critical steps",
+        "art": "scales"
+      },
+      {
+        "title": "Choose the right moment",
+        "text": "A checklist works best when used at a meaningful pause, such as before submitting a document or switching responsibility.",
+        "label": "Timing",
+        "art": "timeline"
+      },
+      {
+        "title": "Improve with experience",
+        "text": "Review missed steps and confusing items. Keep the list short enough to be usable and update it when processes change.",
+        "label": "Improve",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Which checklist item is clearest?",
+        "options": [
+          "Do the thing",
+          "Confirm the required attachment is included",
+          "Be careful"
+        ],
+        "correct": 1,
+        "why": "Specific, observable actions can be checked."
+      },
+      {
+        "q": "Why revise a checklist?",
+        "options": [
+          "Processes and failure patterns can change",
+          "It must become longer every time",
+          "Checklists replace judgment"
+        ],
+        "correct": 0,
+        "why": "A good checklist adapts to actual work."
+      }
+    ]
+  },
+  {
+    "id": "procrastination",
+    "category": "Personal Development",
+    "title": "Why we put things off",
+    "desc": "Understand avoidance and build a practical starting point.",
+    "art": "network",
+    "diagram": [
+      "Discomfort",
+      "Delay",
+      "Start"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/psychology-2e/pages/1-introduction",
+    "slides": [
+      {
+        "title": "Delay despite a cost",
+        "text": "Procrastination is unnecessary delay despite expecting negative consequences. Delaying for a good reason is not necessarily procrastination.",
+        "label": "Delay",
+        "art": "network"
+      },
+      {
+        "title": "Short-term relief",
+        "text": "Avoiding an unpleasant task can temporarily reduce discomfort. That relief can reinforce avoidance even when the task becomes harder later.",
+        "label": "Relief",
+        "art": "scales"
+      },
+      {
+        "title": "Shrink the first step",
+        "text": "Replace a vague intention like write a report with open the document and outline three headings. A defined start lowers ambiguity.",
+        "label": "Start",
+        "art": "timeline"
+      },
+      {
+        "title": "Address the cause",
+        "text": "Fatigue, unclear expectations and mental health difficulties can contribute. Strategies differ depending on the actual obstacle.",
+        "label": "Cause",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Why can avoidance become self-reinforcing?",
+        "options": [
+          "It may produce short-term relief",
+          "It always solves the problem",
+          "It increases time available"
+        ],
+        "correct": 0,
+        "why": "Temporary relief can reinforce the delaying behavior."
+      },
+      {
+        "q": "Which is a concrete first step?",
+        "options": [
+          "Finish everything perfectly",
+          "Write three outline headings",
+          "Never feel discomfort"
+        ],
+        "correct": 1,
+        "why": "A small observable action is easier to begin."
+      }
+    ]
+  },
+  {
+    "id": "learning",
+    "category": "Personal Development",
+    "title": "Learning that transfers",
+    "desc": "Build skills you can use outside the lesson.",
+    "art": "network",
+    "diagram": [
+      "Recall",
+      "Practice",
+      "Transfer"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.learningscientists.org/",
+    "slides": [
+      {
+        "title": "Recognition is not recall",
+        "text": "A familiar passage may feel easy to understand when visible. Test whether you can reconstruct the idea without seeing it.",
+        "label": "Recall",
+        "art": "network"
+      },
+      {
+        "title": "Explain the why",
+        "text": "Ask why a procedure works and how it relates to what you already know. Elaborating can build connections.",
+        "label": "Explain",
+        "art": "scales"
+      },
+      {
+        "title": "Mix related problems",
+        "text": "Once foundations are understood, alternate related types of problems to practice identifying which approach is appropriate.",
+        "label": "Practice",
+        "art": "timeline"
+      },
+      {
+        "title": "Transfer to new situations",
+        "text": "Apply a concept to an unfamiliar example, receive feedback and correct errors. This is a stronger test than repeating the original example.",
+        "label": "Transfer",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What tests transfer?",
+        "options": [
+          "Solving a new problem with the principle",
+          "Rereading the original example",
+          "Memorizing the page color"
+        ],
+        "correct": 0,
+        "why": "Transfer means applying learning in a new situation."
+      },
+      {
+        "q": "Why recall without notes?",
+        "options": [
+          "It practices retrieval",
+          "It guarantees perfect memory",
+          "It makes feedback unnecessary"
+        ],
+        "correct": 0,
+        "why": "Retrieval strengthens and tests access to knowledge."
+      }
+    ]
+  },
+  {
+    "id": "growth-mindset",
+    "category": "Personal Development",
+    "title": "Skills can develop",
+    "desc": "Use feedback and effective practice without promising unlimited growth.",
+    "art": "network",
+    "diagram": [
+      "Challenge",
+      "Practice",
+      "Feedback"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/psychology-2e/pages/1-introduction",
+    "slides": [
+      {
+        "title": "Abilities are not all fixed",
+        "text": "Many skills improve with instruction and practice, although opportunities, biology and circumstances influence outcomes.",
+        "label": "Development",
+        "art": "network"
+      },
+      {
+        "title": "Effort needs direction",
+        "text": "Repeating an ineffective strategy indefinitely is not enough. Useful feedback and better methods can matter more than simply increasing effort.",
+        "label": "Strategy",
+        "art": "scales"
+      },
+      {
+        "title": "Choose useful challenges",
+        "text": "A task slightly beyond current competence can expose a gap to practice. A task far beyond your preparation may need scaffolding.",
+        "label": "Challenge",
+        "art": "timeline"
+      },
+      {
+        "title": "Separate identity from performance",
+        "text": "Treat an error as information about current understanding. This is different from denying real limitations or blaming people for every setback.",
+        "label": "Feedback",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What should you do if a practice strategy repeatedly fails?",
+        "options": [
+          "Try a different evidence-informed method",
+          "Keep repeating it unchanged forever",
+          "Conclude nobody can learn"
+        ],
+        "correct": 0,
+        "why": "Effective strategies and feedback support improvement."
+      },
+      {
+        "q": "Does a growth mindset guarantee everyone reaches the same outcome?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "Resources, individual differences and circumstances still matter."
+      }
+    ]
+  },
+  {
+    "id": "buddhism",
+    "category": "Philosophy",
+    "title": "An introduction to Buddhist thought",
+    "desc": "Explore impermanence, suffering and ethical practice.",
+    "art": "network",
+    "diagram": [
+      "Change",
+      "Craving",
+      "Practice"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://plato.stanford.edu/entries/buddha/",
+    "slides": [
+      {
+        "title": "A family of traditions",
+        "text": "Buddhism developed from teachings associated with Siddhartha Gautama in ancient South Asia. Its schools differ in beliefs and practices.",
+        "label": "Tradition",
+        "art": "network"
+      },
+      {
+        "title": "Impermanence",
+        "text": "Many Buddhist traditions emphasize that conditioned phenomena change. Clinging to something as permanently stable can generate dissatisfaction.",
+        "label": "Change",
+        "art": "scales"
+      },
+      {
+        "title": "Understanding suffering",
+        "text": "The Four Noble Truths describe suffering or unsatisfactoriness, its origins, its cessation and a path toward cessation.",
+        "label": "Suffering",
+        "art": "timeline"
+      },
+      {
+        "title": "An ethical path",
+        "text": "The Noble Eightfold Path includes dimensions of understanding, conduct and mental cultivation. It is not merely a relaxation technique.",
+        "label": "Practice",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Is Buddhism a single uniform tradition?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "Buddhist schools have diverse histories and interpretations."
+      },
+      {
+        "q": "What does impermanence emphasize?",
+        "options": [
+          "Conditioned things change",
+          "Everything stays identical",
+          "Ethics is irrelevant"
+        ],
+        "correct": 0,
+        "why": "Change is central to this concept."
+      }
+    ]
+  },
+  {
+    "id": "existentialism",
+    "category": "Philosophy",
+    "title": "Meaning in an uncertain world",
+    "desc": "An introduction to existential questions about freedom and responsibility.",
+    "art": "network",
+    "diagram": [
+      "Choice",
+      "Limits",
+      "Meaning"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://plato.stanford.edu/entries/existentialism/",
+    "slides": [
+      {
+        "title": "The question of existence",
+        "text": "Existential philosophy explores what it means to live as a particular person facing uncertainty, mortality and choices.",
+        "label": "Existence",
+        "art": "network"
+      },
+      {
+        "title": "Freedom and limits",
+        "text": "Existential thinkers often emphasize responsibility for choices while recognizing that we do not choose all the circumstances of our lives.",
+        "label": "Choice",
+        "art": "scales"
+      },
+      {
+        "title": "Authenticity",
+        "text": "Authenticity can involve examining inherited expectations and taking responsibility for commitments instead of following convention without reflection.",
+        "label": "Commitment",
+        "art": "timeline"
+      },
+      {
+        "title": "Different thinkers",
+        "text": "Kierkegaard, Sartre and de Beauvoir differ substantially in their approaches to religion, freedom and ethics. Existentialism is not a single doctrine.",
+        "label": "Plurality",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Does existential freedom mean controlling every circumstance?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "People make choices within limits they did not choose."
+      },
+      {
+        "q": "What is one existential question?",
+        "options": [
+          "How should I live given uncertainty?",
+          "How many atoms are in a mole?",
+          "What is today's exchange rate?"
+        ],
+        "correct": 0,
+        "why": "Existentialism examines lived meaning and responsibility."
+      }
+    ]
+  },
+  {
+    "id": "ethics",
+    "category": "Philosophy",
+    "title": "Three ways to reason about right and wrong",
+    "desc": "Compare consequences, duties and character.",
+    "art": "network",
+    "diagram": [
+      "Outcome",
+      "Duty",
+      "Character"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://plato.stanford.edu/entries/ethics-virtue/",
+    "slides": [
+      {
+        "title": "Consequences",
+        "text": "Consequentialist theories evaluate actions in terms of their outcomes. Different theories define valuable outcomes differently.",
+        "label": "Outcomes",
+        "art": "network"
+      },
+      {
+        "title": "Duties",
+        "text": "Deontological theories give moral significance to duties, rights or constraints, rather than considering only the best aggregate result.",
+        "label": "Duties",
+        "art": "scales"
+      },
+      {
+        "title": "Character",
+        "text": "Virtue ethics asks what kind of person acts well and how traits such as courage, honesty and practical wisdom develop.",
+        "label": "Character",
+        "art": "timeline"
+      },
+      {
+        "title": "Use a dilemma",
+        "text": "Consider whether lying to protect someone's feelings is justified. Different frameworks may prioritize consequences, truthfulness or compassionate judgment.",
+        "label": "Dilemma",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Which framework emphasizes character and practical wisdom?",
+        "options": [
+          "Virtue ethics",
+          "Monetary policy",
+          "Classical conditioning"
+        ],
+        "correct": 0,
+        "why": "Virtue ethics centers on the qualities of an excellent moral agent."
+      },
+      {
+        "q": "Do all moral theories evaluate choices by the same criterion?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "Theories emphasize different dimensions of moral reasoning."
+      }
+    ]
+  },
+  {
+    "id": "logic",
+    "category": "Philosophy",
+    "title": "The anatomy of an argument",
+    "desc": "Distinguish good reasoning from persuasive wording.",
+    "art": "network",
+    "diagram": [
+      "Premise",
+      "Inference",
+      "Conclusion"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://plato.stanford.edu/",
+    "slides": [
+      {
+        "title": "Premises and conclusions",
+        "text": "An argument offers reasons, called premises, in support of a conclusion. A claim without reasons is not yet a developed argument.",
+        "label": "Premise",
+        "art": "network"
+      },
+      {
+        "title": "Validity versus truth",
+        "text": "A deductive argument is valid if true premises would guarantee the conclusion. Valid form does not guarantee that its premises are actually true.",
+        "label": "Validity",
+        "art": "scales"
+      },
+      {
+        "title": "Inductive strength",
+        "text": "Inductive reasoning uses evidence to make a conclusion more probable, rather than guaranteeing it. Strong evidence is still open to revision.",
+        "label": "Evidence",
+        "art": "timeline"
+      },
+      {
+        "title": "Identify a hidden assumption",
+        "text": "When a conclusion seems to follow, ask what unstated premise is necessary. Evaluate that premise separately.",
+        "label": "Assumption",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Can a valid argument have false premises?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 0,
+        "why": "Validity concerns logical structure, not the actual truth of premises."
+      },
+      {
+        "q": "What makes induction different from deduction?",
+        "options": [
+          "Induction supports probability rather than guaranteeing a conclusion",
+          "Induction has no evidence",
+          "Deduction is always factually true"
+        ],
+        "correct": 0,
+        "why": "Inductive support is not deductive necessity."
+      }
+    ]
+  },
+  {
+    "id": "investing",
+    "category": "Finance",
+    "title": "Investing from first principles",
+    "desc": "Understand assets, uncertainty and long-term goals.",
+    "art": "network",
+    "diagram": [
+      "Assets",
+      "Risk",
+      "Horizon"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.investor.gov/introduction-investing/investing-basics/investment-products",
+    "slides": [
+      {
+        "title": "An asset with uncertainty",
+        "text": "Investing involves committing resources in expectation of future benefits. Returns are uncertain and losses are possible.",
+        "label": "Assets",
+        "art": "network"
+      },
+      {
+        "title": "Stocks and bonds",
+        "text": "A stock represents ownership in a company. A bond represents lending to an issuer under agreed terms. Both can carry meaningful risks.",
+        "label": "Ownership and debt",
+        "art": "scales"
+      },
+      {
+        "title": "Match time to risk",
+        "text": "Money needed soon generally calls for different risk considerations than money for a distant goal. Liquidity and volatility matter.",
+        "label": "Horizon",
+        "art": "timeline"
+      },
+      {
+        "title": "Fees and evidence",
+        "text": "Compare costs and understand what an investment owns. Past returns do not guarantee future results, and promises of high returns without risk deserve scrutiny.",
+        "label": "Costs",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What does owning a stock generally represent?",
+        "options": [
+          "Ownership in a company",
+          "A guaranteed interest payment",
+          "A checking account"
+        ],
+        "correct": 0,
+        "why": "Stockholders hold an equity interest."
+      },
+      {
+        "q": "Does strong past performance guarantee future returns?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "Investment results remain uncertain."
+      }
+    ]
+  },
+  {
+    "id": "diversification",
+    "category": "Finance",
+    "title": "Do not put every egg in one basket",
+    "desc": "Explore the difference between concentrated and diversified risk.",
+    "art": "network",
+    "diagram": [
+      "Assets",
+      "Correlation",
+      "Risk"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.investor.gov/introduction-investing/getting-started/asset-allocation",
+    "slides": [
+      {
+        "title": "Concentration risk",
+        "text": "Holding one company's stock exposes an investor to that company's particular fortunes. A broad portfolio can reduce dependence on one issuer.",
+        "label": "Concentration",
+        "art": "network"
+      },
+      {
+        "title": "Assets move differently",
+        "text": "Diversification benefits depend partly on how assets move relative to each other. Owning many highly similar investments may offer less diversification than expected.",
+        "label": "Correlation",
+        "art": "scales"
+      },
+      {
+        "title": "Risk never disappears",
+        "text": "Diversification can reduce certain risks but cannot guarantee profit or eliminate broad market downturns.",
+        "label": "Limits",
+        "art": "timeline"
+      },
+      {
+        "title": "Rebalancing",
+        "text": "Market changes can move a portfolio away from its chosen asset mix. Rebalancing restores that mix, considering transaction costs and taxes.",
+        "label": "Rebalance",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Does owning ten funds that hold the same stocks guarantee diversification?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "Underlying exposures can overlap."
+      },
+      {
+        "q": "Can a diversified portfolio lose money?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 0,
+        "why": "Diversification does not eliminate market risk."
+      }
+    ]
+  },
+  {
+    "id": "budget",
+    "category": "Finance",
+    "title": "Where your money goes",
+    "desc": "Create a simple model of cash flow and financial flexibility.",
+    "art": "network",
+    "diagram": [
+      "Income",
+      "Expenses",
+      "Savings"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.consumerfinance.gov/consumer-tools/",
+    "slides": [
+      {
+        "title": "Track cash flow",
+        "text": "Cash flow is money entering and leaving over a period. It is different from net worth, which is assets minus liabilities at a point in time.",
+        "label": "Cash flow",
+        "art": "network"
+      },
+      {
+        "title": "Distinguish expense types",
+        "text": "Some expenses are regular and predictable; others vary or arrive irregularly. Plan for both rather than treating annual bills as surprises.",
+        "label": "Expenses",
+        "art": "scales"
+      },
+      {
+        "title": "Create a buffer",
+        "text": "An accessible emergency fund can reduce reliance on costly borrowing after a financial shock. The appropriate size depends on circumstances.",
+        "label": "Buffer",
+        "art": "timeline"
+      },
+      {
+        "title": "Review the actual numbers",
+        "text": "Compare expected and actual spending, then adjust a realistic plan. A budget is a decision aid, not a moral judgment.",
+        "label": "Review",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "If monthly income is $2,500 and spending is $2,200, what is the surplus?",
+        "options": [
+          "$300",
+          "$700",
+          "$4,700"
+        ],
+        "correct": 0,
+        "why": "Income minus spending is $300."
+      },
+      {
+        "q": "Why account for irregular bills?",
+        "options": [
+          "They still affect cash flow",
+          "They never need paying",
+          "They are automatically investments"
+        ],
+        "correct": 0,
+        "why": "Future expenses can be planned for even when infrequent."
+      }
+    ]
+  },
+  {
+    "id": "stockmarket",
+    "category": "Finance",
+    "title": "What happens on a stock exchange",
+    "desc": "Understand prices, orders and indexes.",
+    "art": "network",
+    "diagram": [
+      "Company",
+      "Exchange",
+      "Investor"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.investor.gov/introduction-investing/investing-basics/investment-products",
+    "slides": [
+      {
+        "title": "Primary and secondary markets",
+        "text": "Companies can raise money by issuing shares. Most everyday exchange trading occurs between investors who buy and sell existing shares.",
+        "label": "Markets",
+        "art": "network"
+      },
+      {
+        "title": "Bid and ask",
+        "text": "The bid is a price a buyer offers; the ask is a price a seller requests. Their difference is the spread.",
+        "label": "Quotes",
+        "art": "scales"
+      },
+      {
+        "title": "Market and limit orders",
+        "text": "A market order prioritizes execution at available prices. A limit order sets a price condition but may never execute.",
+        "label": "Orders",
+        "art": "timeline"
+      },
+      {
+        "title": "Indexes are measures",
+        "text": "A stock index tracks a defined basket according to rules. It is not itself a stock, though funds can attempt to track it.",
+        "label": "Index",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What does a buy limit order control?",
+        "options": [
+          "The maximum acceptable purchase price",
+          "A guaranteed fill",
+          "Future investment profit"
+        ],
+        "correct": 0,
+        "why": "A limit sets a price condition, not an execution guarantee."
+      },
+      {
+        "q": "What is a stock index?",
+        "options": [
+          "A measure of a defined basket of securities",
+          "A single company's guaranteed dividend",
+          "A government savings account"
+        ],
+        "correct": 0,
+        "why": "An index summarizes selected securities using a defined methodology."
+      }
+    ]
+  },
+  {
+    "id": "central-bank",
+    "category": "Economics",
+    "title": "How central banks influence inflation",
+    "desc": "Explore interest rates, borrowing and demand.",
+    "art": "network",
+    "diagram": [
+      "Rates",
+      "Credit",
+      "Demand"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/principles-economics-3e/pages/28-introduction-to-monetary-policy-and-bank-regulation",
+    "slides": [
+      {
+        "title": "Policy and prices",
+        "text": "Central banks often aim for price stability and sometimes other objectives such as employment. They influence financial conditions rather than setting every retail price.",
+        "label": "Mandate",
+        "art": "network"
+      },
+      {
+        "title": "Interest-rate channel",
+        "text": "Higher policy rates can make borrowing more expensive, reduce some spending and affect asset values. Lower rates can work in the opposite direction.",
+        "label": "Rates",
+        "art": "scales"
+      },
+      {
+        "title": "Transmission is delayed",
+        "text": "Changes spread through banks, financial markets, investment and spending over time. Effects vary with the economic environment.",
+        "label": "Transmission",
+        "art": "timeline"
+      },
+      {
+        "title": "Supply shocks complicate policy",
+        "text": "A disruption in energy or food supply can raise prices while weakening growth. Central banks face trade-offs when shocks affect both prices and output.",
+        "label": "Trade-off",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "How might higher interest rates reduce demand?",
+        "options": [
+          "By making some borrowing more expensive",
+          "By directly fixing all shop prices",
+          "By increasing everyone's salary"
+        ],
+        "correct": 0,
+        "why": "Borrowing and spending can respond to financial conditions."
+      },
+      {
+        "q": "Do policy changes affect all prices immediately?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "Monetary transmission takes time and varies."
+      }
+    ]
+  },
+  {
+    "id": "public-debt",
+    "category": "Economics",
+    "title": "Government budgets and public debt",
+    "desc": "Separate annual deficits from accumulated obligations.",
+    "art": "network",
+    "diagram": [
+      "Revenue",
+      "Spending",
+      "Debt"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/principles-economics-3e/pages/30-introduction-to-government-budgets-and-fiscal-policy",
+    "slides": [
+      {
+        "title": "The annual balance",
+        "text": "A government deficit occurs when spending exceeds revenue during a period. A surplus is the reverse.",
+        "label": "Balance",
+        "art": "network"
+      },
+      {
+        "title": "Debt is a stock",
+        "text": "Government debt reflects accumulated borrowing and other adjustments over time. It is distinct from a single year's deficit.",
+        "label": "Debt",
+        "art": "scales"
+      },
+      {
+        "title": "Compare with the economy",
+        "text": "Debt-to-GDP and interest costs can help assess sustainability. The debt level alone does not capture borrowing costs, economic capacity or currency arrangements.",
+        "label": "Capacity",
+        "art": "timeline"
+      },
+      {
+        "title": "Policy involves trade-offs",
+        "text": "Taxes and spending affect public services, distribution and economic activity. Different economic conditions can justify different policy choices.",
+        "label": "Policy",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What is a deficit?",
+        "options": [
+          "Spending exceeds revenue in a period",
+          "The entire accumulated debt",
+          "Every tax payment"
+        ],
+        "correct": 0,
+        "why": "The deficit is a flow over a period."
+      },
+      {
+        "q": "Which measure gives context to the size of public debt?",
+        "options": [
+          "Debt relative to GDP",
+          "The number of letters in the country's name",
+          "The weather"
+        ],
+        "correct": 0,
+        "why": "Relative measures help compare obligations with economic capacity."
+      }
+    ]
+  },
+  {
+    "id": "inequality",
+    "category": "Social Issues",
+    "title": "Understanding income and wealth inequality",
+    "desc": "Learn how different measures tell different stories.",
+    "art": "network",
+    "diagram": [
+      "Income",
+      "Wealth",
+      "Opportunity"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/principles-economics-3e/pages/15-5-government-policies-to-reduce-income-inequality",
+    "slides": [
+      {
+        "title": "Income and wealth differ",
+        "text": "Income is a flow of earnings or receipts. Wealth is the value of assets minus debts. A high income does not automatically imply high net worth.",
+        "label": "Measure",
+        "art": "network"
+      },
+      {
+        "title": "Distribution matters",
+        "text": "An average can conceal differences across households. Medians, percentiles and distribution measures provide additional information.",
+        "label": "Distribution",
+        "art": "scales"
+      },
+      {
+        "title": "Multiple influences",
+        "text": "Education, inheritance, labor markets, public policy, discrimination and historical conditions can influence economic outcomes. Their relative roles differ by context.",
+        "label": "Causes",
+        "art": "timeline"
+      },
+      {
+        "title": "Compare policy objectives",
+        "text": "Policies may prioritize poverty reduction, opportunity, efficiency or redistribution. Evaluate evidence and trade-offs rather than assuming one measure answers every question.",
+        "label": "Policy",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Which is a measure of wealth?",
+        "options": [
+          "Assets minus debts",
+          "Monthly wages alone",
+          "Hours worked"
+        ],
+        "correct": 0,
+        "why": "Net wealth is a balance-sheet measure."
+      },
+      {
+        "q": "Why compare the median and mean?",
+        "options": [
+          "They can reveal differences in the distribution",
+          "They are always equal",
+          "They measure weather"
+        ],
+        "correct": 0,
+        "why": "A skewed distribution can make the mean and median diverge."
+      }
+    ]
+  },
+  {
+    "id": "rome",
+    "category": "History",
+    "title": "Rome: from republic to empire",
+    "desc": "Understand political change in the ancient Mediterranean.",
+    "art": "network",
+    "diagram": [
+      "Republic",
+      "Conflict",
+      "Empire"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.britannica.com/place/ancient-Rome",
+    "slides": [
+      {
+        "title": "A republic with limits",
+        "text": "Roman republican institutions included elected magistrates, assemblies and a Senate. Political participation and power were unequal.",
+        "label": "Republic",
+        "art": "network"
+      },
+      {
+        "title": "Expansion and conflict",
+        "text": "Conquest expanded Roman wealth and territory while generating social tensions, military competition and conflicts over political authority.",
+        "label": "Expansion",
+        "art": "scales"
+      },
+      {
+        "title": "The imperial transition",
+        "text": "Civil wars weakened republican institutions. Augustus established a new political order that preserved republican forms while concentrating authority.",
+        "label": "Empire",
+        "art": "timeline"
+      },
+      {
+        "title": "Long transformations",
+        "text": "The western imperial government fragmented in the fifth century CE, while the eastern Roman Empire continued for centuries. Roman institutions and culture changed rather than simply disappearing.",
+        "label": "Legacy",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Who established the political order known as the Principate?",
+        "options": [
+          "Augustus",
+          "Plato",
+          "Charlemagne"
+        ],
+        "correct": 0,
+        "why": "Augustus consolidated authority after civil conflict."
+      },
+      {
+        "q": "Did the eastern Roman Empire end when western imperial rule fragmented?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "Eastern Roman government continued for centuries."
+      }
+    ]
+  },
+  {
+    "id": "human-origins",
+    "category": "History",
+    "title": "How humans became a global species",
+    "desc": "Explore evidence from fossils, tools and migration.",
+    "art": "network",
+    "diagram": [
+      "Origins",
+      "Migration",
+      "Culture"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://humanorigins.si.edu/",
+    "slides": [
+      {
+        "title": "Shared evolutionary ancestry",
+        "text": "Homo sapiens evolved in Africa. Fossils, genetics and archaeology provide complementary evidence about our origins.",
+        "label": "Origins",
+        "art": "network"
+      },
+      {
+        "title": "Migration in waves",
+        "text": "Human populations dispersed across regions over long periods, interacting with environments and sometimes with other human groups.",
+        "label": "Migration",
+        "art": "scales"
+      },
+      {
+        "title": "Culture accumulates",
+        "text": "Social learning enables techniques and knowledge to be passed across generations. Language and material evidence help researchers investigate cultural change.",
+        "label": "Culture",
+        "art": "timeline"
+      },
+      {
+        "title": "No single path to civilization",
+        "text": "Societies developed diverse forms of subsistence, settlement and governance. History is not a single inevitable sequence from simple to advanced.",
+        "label": "Diversity",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Where did Homo sapiens evolve?",
+        "options": [
+          "Africa",
+          "Antarctica",
+          "North America"
+        ],
+        "correct": 0,
+        "why": "Evidence supports African origins of our species."
+      },
+      {
+        "q": "What helps investigate human history?",
+        "options": [
+          "Fossils, archaeology and genetics",
+          "A single myth as definitive evidence",
+          "Only modern borders"
+        ],
+        "correct": 0,
+        "why": "Different evidence types complement each other."
+      }
+    ]
+  },
+  {
+    "id": "climate",
+    "category": "Science",
+    "title": "The physics of a warming planet",
+    "desc": "Understand greenhouse gases, feedback and climate evidence.",
+    "art": "network",
+    "diagram": [
+      "Energy",
+      "Atmosphere",
+      "Temperature"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://science.nasa.gov/climate-change/",
+    "slides": [
+      {
+        "title": "Earth's energy balance",
+        "text": "Sunlight warms Earth's surface, which emits infrared radiation. Temperature responds to the balance between absorbed and outgoing energy.",
+        "label": "Energy",
+        "art": "network"
+      },
+      {
+        "title": "Greenhouse gases",
+        "text": "Gases including carbon dioxide and methane absorb and emit infrared radiation. Increasing their concentration alters the energy balance.",
+        "label": "Atmosphere",
+        "art": "scales"
+      },
+      {
+        "title": "Evidence across systems",
+        "text": "Temperature records, ocean heat, ice observations and atmospheric measurements help scientists assess changing climate conditions.",
+        "label": "Evidence",
+        "art": "timeline"
+      },
+      {
+        "title": "Feedback and responses",
+        "text": "Warming can trigger feedbacks such as changes in ice reflectivity. Mitigation addresses emissions; adaptation addresses impacts and vulnerability.",
+        "label": "Feedback",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What does an increase in greenhouse gases affect?",
+        "options": [
+          "The planet's outgoing infrared energy balance",
+          "The number of hours in a day",
+          "The Moon's mass"
+        ],
+        "correct": 0,
+        "why": "Greenhouse gases interact with infrared radiation."
+      },
+      {
+        "q": "What is climate adaptation?",
+        "options": [
+          "Reducing vulnerability to impacts",
+          "Pretending climate cannot change",
+          "Only measuring carbon emissions"
+        ],
+        "correct": 0,
+        "why": "Adaptation prepares for actual or expected impacts."
+      }
+    ]
+  },
+  {
+    "id": "vaccines",
+    "category": "Health",
+    "title": "How vaccines prepare the immune system",
+    "desc": "Understand immune memory and mRNA technology.",
+    "art": "network",
+    "diagram": [
+      "Antigen",
+      "Response",
+      "Memory"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.cdc.gov/vaccines/",
+    "slides": [
+      {
+        "title": "Recognizing a target",
+        "text": "The adaptive immune system learns to recognize specific molecular targets. Antibodies and immune cells can contribute to protection.",
+        "label": "Antigen",
+        "art": "network"
+      },
+      {
+        "title": "Practice before infection",
+        "text": "Vaccines expose the immune system to an antigen or instructions for making one, using different technologies. This can prepare responses before encountering the pathogen.",
+        "label": "Preparation",
+        "art": "scales"
+      },
+      {
+        "title": "mRNA as instructions",
+        "text": "Certain vaccines deliver temporary messenger RNA instructions that cells use to make an antigen. This is distinct from changing a person's DNA.",
+        "label": "mRNA",
+        "art": "timeline"
+      },
+      {
+        "title": "Protection varies",
+        "text": "Vaccine effectiveness differs by disease, product, outcome and time. Safety and effectiveness are monitored, and recommendations depend on individual circumstances.",
+        "label": "Evidence",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What is the purpose of immune memory?",
+        "options": [
+          "To help respond to a previously recognized target",
+          "To remember a password",
+          "To eliminate every possible infection"
+        ],
+        "correct": 0,
+        "why": "Adaptive immune memory supports later responses."
+      },
+      {
+        "q": "Do mRNA vaccines need to alter a person's DNA to work?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "Their instructions are used to produce an antigen without changing DNA."
+      }
+    ]
+  },
+  {
+    "id": "biodiversity",
+    "category": "Nature",
+    "title": "Why biodiversity matters",
+    "desc": "Explore genetic, species and ecosystem diversity.",
+    "art": "network",
+    "diagram": [
+      "Genes",
+      "Species",
+      "Ecosystems"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/biology-2e/pages/1-introduction",
+    "slides": [
+      {
+        "title": "Three levels of diversity",
+        "text": "Biodiversity includes variation within species, the variety of species, and the variety of ecosystems.",
+        "label": "Levels",
+        "art": "network"
+      },
+      {
+        "title": "Connections create functions",
+        "text": "Pollination, nutrient cycling and food-web relationships depend on organisms interacting in their environment.",
+        "label": "Function",
+        "art": "scales"
+      },
+      {
+        "title": "Pressures on diversity",
+        "text": "Habitat loss, invasive species, overexploitation, pollution and climate change can threaten biodiversity. Effects vary by place and species.",
+        "label": "Pressures",
+        "art": "timeline"
+      },
+      {
+        "title": "Conservation is contextual",
+        "text": "Protecting habitat, reducing pressures and restoring ecological processes can help, but interventions must be tailored to local conditions.",
+        "label": "Conservation",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Is genetic variation part of biodiversity?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 0,
+        "why": "Diversity exists within species as well as among them."
+      },
+      {
+        "q": "Which is an example of an ecosystem function?",
+        "options": [
+          "Pollination",
+          "A stock dividend",
+          "A browser update"
+        ],
+        "correct": 0,
+        "why": "Pollination links organisms and supports reproduction."
+      }
+    ]
+  },
+  {
+    "id": "mindfulness",
+    "category": "Health",
+    "title": "Attention to the present moment",
+    "desc": "Understand mindfulness practices and their limitations.",
+    "art": "network",
+    "diagram": [
+      "Notice",
+      "Return",
+      "Reflect"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.nccih.nih.gov/health",
+    "slides": [
+      {
+        "title": "A way of attending",
+        "text": "Mindfulness practices commonly involve attending to present experience with less automatic judgment. Practices differ across traditions and clinical programs.",
+        "label": "Notice",
+        "art": "network"
+      },
+      {
+        "title": "Wandering is normal",
+        "text": "During a short attention exercise, thoughts may wander. Returning attention to an anchor is part of the practice, not a failure.",
+        "label": "Return",
+        "art": "scales"
+      },
+      {
+        "title": "Evidence has boundaries",
+        "text": "Some structured mindfulness programs may help certain people with stress or symptoms. Effects vary and research does not establish a universal cure.",
+        "label": "Evidence",
+        "art": "timeline"
+      },
+      {
+        "title": "Choose what fits",
+        "text": "Try a brief comfortable practice if interested; stop if it causes distress. Mindfulness is not a substitute for needed medical or mental-health care.",
+        "label": "Choice",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "When attention wanders during a practice, what can you do?",
+        "options": [
+          "Gently return to the chosen anchor",
+          "Assume the practice failed",
+          "Force every thought away"
+        ],
+        "correct": 0,
+        "why": "Returning attention is part of the exercise."
+      },
+      {
+        "q": "Is mindfulness a universal cure for mental illness?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "Benefits and suitability vary; appropriate clinical care may be needed."
+      }
+    ]
+  },
+  {
+    "id": "nutrition",
+    "category": "Health",
+    "title": "Nutrition without the noise",
+    "desc": "Learn to evaluate basic dietary claims.",
+    "art": "network",
+    "diagram": [
+      "Energy",
+      "Nutrients",
+      "Pattern"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.myplate.gov/",
+    "slides": [
+      {
+        "title": "Food supplies energy and nutrients",
+        "text": "Carbohydrates, fats and proteins contribute energy and other functions. Vitamins and minerals support many physiological processes.",
+        "label": "Nutrients",
+        "art": "network"
+      },
+      {
+        "title": "Patterns matter",
+        "text": "Overall dietary patterns and adequate nutrition matter more than assuming one isolated food determines health.",
+        "label": "Pattern",
+        "art": "scales"
+      },
+      {
+        "title": "Labels need context",
+        "text": "Compare serving sizes, nutrient amounts and ingredients. A marketing phrase on the package may not describe the whole nutritional profile.",
+        "label": "Labels",
+        "art": "timeline"
+      },
+      {
+        "title": "Individual needs differ",
+        "text": "Age, activity, medical conditions, culture and access affect dietary needs. Seek appropriate professional advice for medical dietary restrictions.",
+        "label": "Context",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Does one food determine an entire diet's quality?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "Overall patterns and individual needs are important."
+      },
+      {
+        "q": "What should you check when comparing nutrient labels?",
+        "options": [
+          "Serving sizes",
+          "Package color only",
+          "Brand popularity only"
+        ],
+        "correct": 0,
+        "why": "Different serving sizes can distort comparisons."
+      }
+    ]
+  },
+  {
+    "id": "blockchain",
+    "category": "Technology",
+    "title": "What a blockchain actually records",
+    "desc": "Understand distributed ledgers and tokens.",
+    "art": "network",
+    "diagram": [
+      "Record",
+      "Validation",
+      "Ledger"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.nist.gov/blockchain",
+    "slides": [
+      {
+        "title": "Shared transaction history",
+        "text": "A blockchain is a kind of distributed ledger where records are grouped and linked cryptographically. Implementations differ.",
+        "label": "Ledger",
+        "art": "network"
+      },
+      {
+        "title": "Agreement among participants",
+        "text": "Consensus mechanisms help participants agree on valid additions. Different systems use different rules and trust assumptions.",
+        "label": "Consensus",
+        "art": "scales"
+      },
+      {
+        "title": "Tokens and ownership",
+        "text": "Tokens can represent units or digital identifiers on a ledger. A token does not automatically establish legal ownership of an associated image or real-world asset.",
+        "label": "Tokens",
+        "art": "timeline"
+      },
+      {
+        "title": "Understand the trade-offs",
+        "text": "Distributed systems can face scalability, energy, security and governance challenges. A conventional database may be more suitable for many tasks.",
+        "label": "Trade-offs",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Does a token always transfer copyright to its associated image?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "Legal rights depend on applicable agreements and law."
+      },
+      {
+        "q": "Is blockchain required for every database?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "Many tasks are better served by conventional databases."
+      }
+    ]
+  },
+  {
+    "id": "anxiety",
+    "category": "Psychology",
+    "title": "Understanding the anxiety response",
+    "desc": "Learn how threat anticipation can affect behavior.",
+    "art": "network",
+    "diagram": [
+      "Threat",
+      "Body",
+      "Response"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.nimh.nih.gov/health/topics/anxiety-disorders",
+    "slides": [
+      {
+        "title": "Anticipating uncertainty",
+        "text": "Anxiety can involve anticipating danger or uncertainty, with cognitive, physical and behavioral responses.",
+        "label": "Anticipation",
+        "art": "network"
+      },
+      {
+        "title": "A protective system",
+        "text": "Some anxiety is adaptive: it can prompt preparation. Persistent or disproportionate anxiety may interfere with daily life.",
+        "label": "Protection",
+        "art": "scales"
+      },
+      {
+        "title": "Avoidance and learning",
+        "text": "Avoiding a feared situation can provide immediate relief and sometimes maintain fear over time. Clinical treatment should be tailored by qualified professionals.",
+        "label": "Avoidance",
+        "art": "timeline"
+      },
+      {
+        "title": "When to seek support",
+        "text": "If anxiety is persistent, distressing or disrupts work, relationships or sleep, professional evaluation can help identify appropriate treatment.",
+        "label": "Support",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Is every experience of anxiety a disorder?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "Anxiety is also a normal response; diagnosis depends on symptoms and impact."
+      },
+      {
+        "q": "What is appropriate if anxiety seriously disrupts daily life?",
+        "options": [
+          "Seek qualified professional support",
+          "Assume it can never improve",
+          "Ignore all symptoms"
+        ],
+        "correct": 0,
+        "why": "Assessment can identify effective, individualized support."
+      }
+    ]
+  },
+  {
+    "id": "gerrymander",
+    "category": "Government",
+    "title": "How electoral districts shape representation",
+    "desc": "Understand district boundaries, packing and cracking.",
+    "art": "network",
+    "diagram": [
+      "Voters",
+      "Districts",
+      "Seats"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://constitution.congress.gov/",
+    "slides": [
+      {
+        "title": "District-based elections",
+        "text": "In many elections, voters are grouped into geographic districts that each elect a representative. Boundaries affect which voters are grouped together.",
+        "label": "Districts",
+        "art": "network"
+      },
+      {
+        "title": "Packing and cracking",
+        "text": "Packing concentrates a group in fewer districts. Cracking splits a group among districts, potentially reducing its influence. These are descriptive concepts, not automatic proof of illegality.",
+        "label": "Mechanisms",
+        "art": "scales"
+      },
+      {
+        "title": "Other constraints",
+        "text": "Population equality, geography, legal protections and community interests can affect district design. Rules vary across jurisdictions.",
+        "label": "Constraints",
+        "art": "timeline"
+      },
+      {
+        "title": "Evaluate with care",
+        "text": "Compare alternative maps, election patterns and legal requirements. A single visual shape or election outcome cannot establish all relevant facts.",
+        "label": "Evaluation",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What does packing describe?",
+        "options": [
+          "Concentrating voters of a group in a smaller number of districts",
+          "Counting all votes twice",
+          "Holding elections earlier"
+        ],
+        "correct": 0,
+        "why": "Packing concentrates a voting group."
+      },
+      {
+        "q": "Does an unusual district shape alone prove unlawful intent?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "Legal and factual evaluation requires more evidence."
+      }
+    ]
+  }
+]);
 const K='lumen-v1', day=(t=Date.now())=>{const d=new Date(t);return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')};
 const fresh=()=>({theme:'light',goal:10,interests:[],onboarded:false,progress:{},saved:{},notes:{},review:{},activity:{},custom:[],attempts:0,correct:0});
 let state=fresh();try{const s=JSON.parse(localStorage.getItem(K));if(s&&typeof s==='object')state={...fresh(),...s};}catch(e){}
@@ -147,7 +2897,21 @@ else a='<path d="M78 83 180 53 281 84 254 159 180 110 106 159 78 83 180 110 281 
 return '<svg class="'+cls+'" viewBox="0 0 360 220" role="img" aria-label="'+E(k+' conceptual illustration')+'" preserveAspectRatio="xMidYMid meet" style="background:'+bg+'"><rect width="360" height="220" fill="'+bg+'"/><circle cx="180" cy="110" r="97" fill="none" stroke="'+ink+'" stroke-opacity=".13"/><path d="M20 27h27m-13-13v27M325 193h14m-7-7v14" stroke="'+ink+'" stroke-opacity=".45"/>'+a+'</svg>'}
 
 const editorialPal={bias:['#e8cdb0','#6d483e','#b96d53'],memory:['#d9dfd3','#38564b','#b38b50'],compound:['#dce7ce','#315b45','#d0a04d'],inflation:['#f1dfb5','#8a6340','#bc7e4e'],supply:['#e1dfc8','#3e654e','#bf8753'],stoic:['#e6d7ca','#795747','#a98463'],evolution:['#dbe1c4','#536945','#b48e4d'],space:['#d9d9ea','#414c73','#d7a56a'],internet:['#d5e4df','#2d645b','#b78565'],ai:['#d8dfe6','#4c6175','#c78e63'],history:['#ecd9bf','#77563c','#ab714b'],probability:['#e3d9e9','#634c78','#b9875c'],sleep:['#d4dce7','#465878','#cbb080'],listening:['#eddbc9','#785d54','#b77d69'],government:['#e0e3d6','#52644f','#b28a55'],nature:['#dce4ce','#435f44','#c59b61']};
+
+function conceptArt(c,cls='cover',step=-1){
+const palettes=[['#e7d9bb','#73543b','#bc8554'],['#dce5d3','#355b48','#bd9052'],['#dfd9eb','#5b4a76','#bc8d61'],['#d4e4df','#35665d','#bc8966'],['#efd9cc','#815949','#bb7c69'],['#d9e1ed','#4a5c7a','#c5a26c']];
+const seed=[...c.id].reduce((a,b)=>a+b.charCodeAt(0),0),[bg,ink,acc]=palettes[seed%palettes.length];
+const labels=step<0?c.diagram:[c.slides[step].label,...c.diagram.filter(x=>x!==c.slides[step].label)].slice(0,3);
+const esc=E, txt=(x,y,t,size=10)=>'<text x="'+x+'" y="'+y+'" fill="'+ink+'" font-size="'+size+'" font-weight="700" text-anchor="middle" font-family="system-ui,sans-serif">'+esc(t)+'</text>';
+const node=(x,y,n,t)=>'<circle cx="'+x+'" cy="'+y+'" r="29" fill="'+(n===1?acc:bg)+'" stroke="'+ink+'" stroke-width="1.8"/><text x="'+x+'" y="'+(y+6)+'" font-size="19" font-family="Georgia" fill="'+ink+'" text-anchor="middle">'+(n+1)+'</text>'+txt(x,y+47,t,t.length>17?9:11);
+const pts=[[69,96],[180,96],[291,96]];
+let body=pts.map((p,i)=>node(p[0],p[1],i,labels[i]||'')).join('');
+body+='<path d="M101 96h47m64 0h47" stroke="'+ink+'" stroke-width="1.6" stroke-dasharray="3 5" fill="none"/>';
+return '<svg class="'+cls+'" viewBox="0 0 360 220" role="img" aria-label="'+esc('Key ideas: '+labels.join(', '))+'" preserveAspectRatio="xMidYMid meet" style="background:'+bg+'"><rect width="360" height="220" fill="'+bg+'"/><circle cx="180" cy="107" r="96" stroke="'+ink+'" fill="none" opacity=".09"/><path d="M19 27v-8h8m306 174h8v-8" stroke="'+ink+'" fill="none" opacity=".5"/>'+body+txt(180,188,step<0?'THREE KEY IDEAS':'KEY CONCEPTS',10)+'</svg>';
+}
+
 function editorial(c,cls='cover',step=-1){
+if(c.diagram)return conceptArt(c,cls,step);
 if(!editorialPal[c.id])return artwork(step>=0?c.slides[step].art:c.art,cls);
 const [bg,ink,acc]=editorialPal[c.id], line='stroke="'+ink+'" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"', fill='fill="'+ink+'"', gold='fill="'+acc+'"';let a='';
 const path=(d,extra='')=>'<path d="'+d+'" '+line+' fill="none" '+extra+'/>';
@@ -201,7 +2965,7 @@ function closeLesson(){if(session){log((Date.now()-started)/1000);session=null}l
 function questionUI(q){return '<div class="eyebrow">Check your understanding</div><h1>'+E(q.q)+'</h1><div class="list">'+q.options.map((o,i)=>'<button class="option '+(answered!==null&&i===q.correct?'correct':answered===i&&i!==q.correct?'wrong':'')+'" data-answer="'+i+'" '+(answered!==null?'disabled':'')+'><b>'+String.fromCharCode(65+i)+'</b> '+E(o)+'</button>').join('')+'</div>'+(answered!==null?'<div class="feedback" role="status"><h3>'+(answered===q.correct?'Exactly right.':'Here’s why.')+'</h3><p>'+E(q.why)+'</p></div>':'')}
 function sourceUI(c){return /^https:\/\//i.test(c.source)?'<small>Read further: <a href="'+E(c.source)+'" target="_blank" rel="noopener noreferrer">Educational reference ↗</a></small>':''}
 function simulation(art){if(art==='compound')return '<div class="panel"><label for="rate">Annual growth rate: <b id="rateLabel">7%</b></label><input id="rate" type="range" min="0" max="15" value="7"><div id="compoundChart" class="chart" role="img" aria-label="Modeled investment values"></div><h3 id="balance"></h3><small>Starting value $1,000 · annual compounding · 20 years</small></div>';if(art==='supply')return '<div class="panel"><label for="demand">Demand intercept: <b id="demandLabel">90</b></label><input id="demand" type="range" min="60" max="120" value="90"><svg id="market" viewBox="0 0 340 210" role="img" aria-label="Supply and demand graph"></svg><h3 id="equilibrium"></h3><small>Model: Qd = intercept − 2P; Qs = 10 + 2P. Illustrative only.</small></div>';if(art==='coin')return '<div class="panel"><h3>Fair coin experiment</h3><div class="row"><button class="secondary" data-toss="10">Toss 10</button><button class="secondary" data-toss="100">Toss 100</button><button class="link" data-toss="reset">Reset</button></div><div class="bar"><span id="coinbar" style="width:50%"></span></div><h3 id="coinresult">No tosses yet.</h3><small>Uses simulated random independent tosses.</small></div>';return ''}
-function renderLesson(){if(!session)return;let c,body='',total,step=session.step,q,bookmark='';if(session.mode==='review'){const k=session.queue[step];if(!k){closeLesson();notify('Review complete.');return}const [id,i]=k.split(':');c=get(id);q=c.questions[+i];total=session.queue.length;body=questionUI(q)}else{c=get(session.id);total=c.slides.length+c.questions.length;if(step<c.slides.length){const s=c.slides[step];const key=c.id+':s'+step;bookmark='<button class="iconbtn" data-save="'+E(key)+'" aria-label="'+(state.saved[key]?'Remove bookmark':'Save insight')+'" aria-pressed="'+!!state.saved[key]+'">'+icon('bookmark')+(state.saved[key]?'✓':'')+'</button>';body='<div class="eyebrow">'+E(c.category)+' · '+E(c.format)+'</div><h1>'+E(s.title)+'</h1>'+(step===0?editorial(c,'lessonart',step):artwork(s.art,'lessonart'))+'<p>'+E(s.text)+'</p>'+simulation(s.art)+sourceUI(c)}else{q=c.questions[step-c.slides.length];body=questionUI(q)}}
+function renderLesson(){if(!session)return;let c,body='',total,step=session.step,q,bookmark='';if(session.mode==='review'){const k=session.queue[step];if(!k){closeLesson();notify('Review complete.');return}const [id,i]=k.split(':');c=get(id);q=c.questions[+i];total=session.queue.length;body=questionUI(q)}else{c=get(session.id);total=c.slides.length+c.questions.length;if(step<c.slides.length){const s=c.slides[step];const key=c.id+':s'+step;bookmark='<button class="iconbtn" data-save="'+E(key)+'" aria-label="'+(state.saved[key]?'Remove bookmark':'Save insight')+'" aria-pressed="'+!!state.saved[key]+'">'+icon('bookmark')+(state.saved[key]?'✓':'')+'</button>';body='<div class="eyebrow">'+E(c.category)+' · '+E(c.format)+'</div><h1>'+E(s.title)+'</h1>'+(c.diagram||step===0?editorial(c,'lessonart',step):artwork(s.art,'lessonart'))+'<p>'+E(s.text)+'</p>'+simulation(s.art)+sourceUI(c)}else{q=c.questions[step-c.slides.length];body=questionUI(q)}}
 lesson.innerHTML='<div class="lessonhead"><div class="row between"><button class="iconbtn" data-action="close" aria-label="Exit lesson">'+icon('close')+'</button><small>'+E(c.title)+' · '+(step+1)+'/'+total+'</small>'+bookmark+'</div><div class="bar"><span style="width:'+((step+1)/total*100)+'%"></span></div></div><div class="lessonbody">'+body+'</div><div class="lessonfoot"><button class="secondary" data-action="prev" '+(session.mode==='review'||step===0||q?'disabled':'')+'>← Back</button><button class="primary" data-action="next" '+(q&&answered===null?'disabled':'')+'>'+(step===total-1?'Finish':'Continue')+' →</button></div>';if(document.getElementById('rate'))drawCompound(7);if(document.getElementById('demand'))drawSupply(90);if(document.getElementById('coinresult'))drawCoin();lesson.scrollTop=0}
 function answer(i){if(!session||answered!==null)return;let c,j;if(session.mode==='review'){const [id,index]=session.queue[session.step].split(':');c=get(id);j=+index}else{c=get(session.id);j=session.step-c.slides.length}let q=c.questions[j];if(!q||i<0||i>=q.options.length)return;answered=i;state.attempts++;state.correct+=Number(i===q.correct);schedule(c.id,j,i===q.correct);persist();renderLesson()}
 function next(){if(!session)return;if(session.mode==='review'){if(answered===null)return;session.step++;answered=null;renderLesson();return}const c=get(session.id),total=c.slides.length+c.questions.length;if(session.step>=c.slides.length&&answered===null)return;session.step++;answered=null;if(session.step>=total){state.progress[c.id]={step:0,done:true};log((Date.now()-started)/1000,1);session=null;closeLesson();notify('Lesson complete — new knowledge unlocked!');return}state.progress[c.id]={step:session.step,done:progress(c.id).done};persist();renderLesson()}
