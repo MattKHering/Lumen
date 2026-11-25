@@ -2874,6 +2874,3124 @@ courses.push(...[
     ]
   }
 ]);
+// Cross-disciplinary catalog expansion: independently authored educational modules.
+courses.push(...[
+  {
+    "id": "electricity",
+    "category": "Physics",
+    "title": "Electricity: the invisible flow",
+    "desc": "Understand voltage, current and resistance.",
+    "art": "network",
+    "diagram": [
+      "Charge",
+      "Voltage",
+      "Current"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/college-physics-2e/pages/1-introduction-to-science-and-the-realm-of-physics-physical-quantities-and-units",
+    "slides": [
+      {
+        "title": "Charge and motion",
+        "text": "Electric current measures the rate at which charge passes a point. One ampere is one coulomb per second.",
+        "label": "Charge",
+        "art": "network"
+      },
+      {
+        "title": "The driving difference",
+        "text": "Voltage is energy transferred per unit charge. A battery establishes a potential difference across a circuit.",
+        "label": "Voltage",
+        "art": "scales"
+      },
+      {
+        "title": "Resistance",
+        "text": "For an ohmic resistor at constant temperature, current equals voltage divided by resistance. At 6 V across 3 ohms, current is 2 A.",
+        "label": "Resistance",
+        "art": "timeline"
+      },
+      {
+        "title": "Energy in a circuit",
+        "text": "Electrical power is voltage multiplied by current. The example resistor receives 12 watts. Real components have ratings that must be respected.",
+        "label": "Power",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What current flows through a 4-ohm ideal resistor at 12 V?",
+        "options": [
+          "3 A",
+          "48 A",
+          "0.33 A"
+        ],
+        "correct": 0,
+        "why": "Ohm's law gives 12 ÷ 4 = 3 amperes."
+      },
+      {
+        "q": "What does a watt measure?",
+        "options": [
+          "Charge",
+          "Power",
+          "Resistance"
+        ],
+        "correct": 1,
+        "why": "Power is the rate of energy transfer."
+      }
+    ]
+  },
+  {
+    "id": "motion",
+    "category": "Physics",
+    "title": "Why things keep moving",
+    "desc": "Discover inertia, forces and acceleration.",
+    "art": "network",
+    "diagram": [
+      "Inertia",
+      "Force",
+      "Acceleration"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/college-physics-2e/pages/1-introduction-to-science-and-the-realm-of-physics-physical-quantities-and-units",
+    "slides": [
+      {
+        "title": "Inertia",
+        "text": "Without a net external force, an object keeps a constant velocity. This includes staying at rest.",
+        "label": "Inertia",
+        "art": "network"
+      },
+      {
+        "title": "Net force",
+        "text": "For constant mass, acceleration equals net force divided by mass. Forces in opposite directions may cancel.",
+        "label": "Net force",
+        "art": "scales"
+      },
+      {
+        "title": "A real example",
+        "text": "A 2 kg cart pushed with a net force of 6 N accelerates at 3 m/s². Friction would reduce the net force if it opposed the push.",
+        "label": "Acceleration",
+        "art": "timeline"
+      },
+      {
+        "title": "Action and reaction",
+        "text": "When a person pushes a wall, the wall pushes back with equal magnitude and opposite direction. These forces act on different bodies.",
+        "label": "Interaction",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What is the acceleration of a 5 kg object under a net force of 10 N?",
+        "options": [
+          "2 m/s²",
+          "50 m/s²",
+          "0.5 m/s²"
+        ],
+        "correct": 0,
+        "why": "Acceleration = net force ÷ mass."
+      },
+      {
+        "q": "Why do action-reaction forces not cancel on one object?",
+        "options": [
+          "They act on different objects",
+          "One is always weaker",
+          "They act at different times"
+        ],
+        "correct": 0,
+        "why": "The two forces belong to different free-body diagrams."
+      }
+    ]
+  },
+  {
+    "id": "heat",
+    "category": "Physics",
+    "title": "How heat travels",
+    "desc": "Distinguish temperature, heat and insulation.",
+    "art": "network",
+    "diagram": [
+      "Conduction",
+      "Convection",
+      "Radiation"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/college-physics-2e/pages/1-introduction-to-science-and-the-realm-of-physics-physical-quantities-and-units",
+    "slides": [
+      {
+        "title": "Energy in motion",
+        "text": "Temperature relates to the thermal state of matter. Heat is energy transferred because of a temperature difference.",
+        "label": "Temperature",
+        "art": "network"
+      },
+      {
+        "title": "Conduction",
+        "text": "A metal spoon in hot soup warms as energy passes through the material. Metals often conduct thermal energy well.",
+        "label": "Conduction",
+        "art": "scales"
+      },
+      {
+        "title": "Convection",
+        "text": "Moving fluids carry thermal energy. Warmer, less dense fluid may rise while cooler fluid sinks under gravity.",
+        "label": "Convection",
+        "art": "timeline"
+      },
+      {
+        "title": "Radiation",
+        "text": "Electromagnetic radiation transfers energy even through a vacuum. Sunlight warms Earth without air connecting the two.",
+        "label": "Radiation",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Which mechanism carries energy from the Sun through space?",
+        "options": [
+          "Radiation",
+          "Conduction",
+          "Convection"
+        ],
+        "correct": 0,
+        "why": "Electromagnetic radiation does not require a material medium."
+      },
+      {
+        "q": "What does insulation generally do?",
+        "options": [
+          "Slows heat transfer",
+          "Creates energy",
+          "Eliminates all temperature differences"
+        ],
+        "correct": 0,
+        "why": "Insulation reduces the rate of thermal exchange."
+      }
+    ]
+  },
+  {
+    "id": "waves",
+    "category": "Physics",
+    "title": "From sound to light",
+    "desc": "Explore frequency, wavelength and wave speed.",
+    "art": "network",
+    "diagram": [
+      "Frequency",
+      "Wavelength",
+      "Speed"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/college-physics-2e/pages/1-introduction-to-science-and-the-realm-of-physics-physical-quantities-and-units",
+    "slides": [
+      {
+        "title": "A moving disturbance",
+        "text": "A wave carries energy through a medium or, for electromagnetic waves, through space. Matter need not travel with the wave.",
+        "label": "Wave",
+        "art": "network"
+      },
+      {
+        "title": "Frequency and wavelength",
+        "text": "Frequency counts cycles per second; wavelength is the distance between equivalent points in consecutive cycles.",
+        "label": "Frequency",
+        "art": "scales"
+      },
+      {
+        "title": "The relationship",
+        "text": "Wave speed equals frequency multiplied by wavelength. At fixed speed, higher frequency corresponds to shorter wavelength.",
+        "label": "Wavelength",
+        "art": "timeline"
+      },
+      {
+        "title": "Sound and light differ",
+        "text": "Sound is a mechanical wave and requires a medium. Light is electromagnetic radiation and can travel through a vacuum.",
+        "label": "Medium",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "At fixed speed, doubling frequency does what to wavelength?",
+        "options": [
+          "Halves it",
+          "Doubles it",
+          "Leaves it unchanged"
+        ],
+        "correct": 0,
+        "why": "v = fλ, so wavelength is inversely related to frequency."
+      },
+      {
+        "q": "Which can travel through an ideal vacuum?",
+        "options": [
+          "Sound",
+          "Light",
+          "Both"
+        ],
+        "correct": 1,
+        "why": "Light does not need a material medium."
+      }
+    ]
+  },
+  {
+    "id": "atoms",
+    "category": "Chemistry",
+    "title": "The architecture of atoms",
+    "desc": "Discover what elements and isotopes are.",
+    "art": "network",
+    "diagram": [
+      "Protons",
+      "Electrons",
+      "Neutrons"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/chemistry-2e/pages/1-introduction",
+    "slides": [
+      {
+        "title": "The nucleus",
+        "text": "Atoms contain a nucleus with protons and usually neutrons, surrounded by electrons described by quantum states.",
+        "label": "Nucleus",
+        "art": "network"
+      },
+      {
+        "title": "What defines an element",
+        "text": "The number of protons determines the element. Carbon has six protons, regardless of its neutron count.",
+        "label": "Protons",
+        "art": "scales"
+      },
+      {
+        "title": "Isotopes",
+        "text": "Atoms of one element can have different numbers of neutrons. Carbon-12 and carbon-14 are isotopes of carbon.",
+        "label": "Isotopes",
+        "art": "timeline"
+      },
+      {
+        "title": "Ions",
+        "text": "An atom or molecule becomes an ion when it has a net electric charge. Losing electrons gives a positive charge; gaining them gives a negative charge.",
+        "label": "Ions",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What determines which element an atom is?",
+        "options": [
+          "Proton count",
+          "Neutron count alone",
+          "Temperature"
+        ],
+        "correct": 0,
+        "why": "Atomic number equals the number of protons."
+      },
+      {
+        "q": "What changes when a neutral atom loses one electron?",
+        "options": [
+          "It becomes positively charged",
+          "It becomes a different element",
+          "It gains a neutron"
+        ],
+        "correct": 0,
+        "why": "Removing negative charge leaves a net positive charge."
+      }
+    ]
+  },
+  {
+    "id": "chem-bonds",
+    "category": "Chemistry",
+    "title": "Why atoms stick together",
+    "desc": "Learn the basics of chemical bonding.",
+    "art": "network",
+    "diagram": [
+      "Ionic",
+      "Covalent",
+      "Metallic"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/chemistry-2e/pages/1-introduction",
+    "slides": [
+      {
+        "title": "Bonding lowers energy",
+        "text": "Chemical bonds can form when an arrangement of atoms has lower energy than separated alternatives under the relevant conditions.",
+        "label": "Energy",
+        "art": "network"
+      },
+      {
+        "title": "Ionic attraction",
+        "text": "Oppositely charged ions attract. Solid sodium chloride contains a repeating arrangement of sodium and chloride ions.",
+        "label": "Ionic",
+        "art": "scales"
+      },
+      {
+        "title": "Covalent sharing",
+        "text": "Covalent bonding involves shared electron density. Water contains covalent bonds between oxygen and hydrogen.",
+        "label": "Covalent",
+        "art": "timeline"
+      },
+      {
+        "title": "Metallic bonding",
+        "text": "In metals, electron density is shared across many atoms. This helps explain electrical conductivity and other metallic properties.",
+        "label": "Metallic",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Which describes a covalent bond?",
+        "options": [
+          "Shared electron density",
+          "A neutron leaving the nucleus",
+          "A change in gravity"
+        ],
+        "correct": 0,
+        "why": "Covalent bonds involve electron sharing."
+      },
+      {
+        "q": "What holds positive and negative ions together in an ionic solid?",
+        "options": [
+          "Electrostatic attraction",
+          "Sound waves",
+          "Magnetism alone"
+        ],
+        "correct": 0,
+        "why": "Opposite electrical charges attract."
+      }
+    ]
+  },
+  {
+    "id": "ph-scale",
+    "category": "Chemistry",
+    "title": "Acids, bases and the pH scale",
+    "desc": "Understand a logarithmic measure of acidity.",
+    "art": "network",
+    "diagram": [
+      "Acid",
+      "Neutral",
+      "Base"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/chemistry-2e/pages/1-introduction",
+    "slides": [
+      {
+        "title": "Acidity",
+        "text": "In the usual aqueous introductory model, acids increase hydronium concentration and bases can decrease it.",
+        "label": "Acid",
+        "art": "network"
+      },
+      {
+        "title": "A logarithmic scale",
+        "text": "pH is the negative base-10 logarithm of hydrogen-ion activity. Each unit difference represents a factor of ten in that activity.",
+        "label": "pH",
+        "art": "scales"
+      },
+      {
+        "title": "Compare two values",
+        "text": "A solution at pH 3 has about ten times the hydrogen-ion activity of one at pH 4. Equal numerical steps are multiplicative, not additive.",
+        "label": "Logarithm",
+        "art": "timeline"
+      },
+      {
+        "title": "Neutrality and temperature",
+        "text": "Pure water is neutral when hydrogen and hydroxide ion activities are equal. Neutral pH is about 7 at 25°C but changes with temperature.",
+        "label": "Neutral",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "How much greater is hydrogen-ion activity at pH 3 than pH 5?",
+        "options": [
+          "2 times",
+          "100 times",
+          "10 times"
+        ],
+        "correct": 1,
+        "why": "Two logarithmic units correspond to 10²."
+      },
+      {
+        "q": "Is neutral pH always exactly 7 at all temperatures?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "The neutral point depends on temperature."
+      }
+    ]
+  },
+  {
+    "id": "plate-tectonics",
+    "category": "Earth Science",
+    "title": "The planet beneath our feet",
+    "desc": "See how moving plates reshape Earth.",
+    "art": "network",
+    "diagram": [
+      "Divergence",
+      "Convergence",
+      "Transform"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.usgs.gov/educational-resources/geology-education",
+    "slides": [
+      {
+        "title": "A moving shell",
+        "text": "Earth's rigid outer lithosphere is divided into plates moving slowly relative to one another over more deformable material beneath.",
+        "label": "Plates",
+        "art": "network"
+      },
+      {
+        "title": "Divergent boundaries",
+        "text": "Where plates separate, new oceanic crust can form as magma rises and cools along spreading ridges.",
+        "label": "Divergence",
+        "art": "scales"
+      },
+      {
+        "title": "Convergent boundaries",
+        "text": "When plates meet, one may subduct beneath another or continental crust may thicken, building mountains.",
+        "label": "Convergence",
+        "art": "timeline"
+      },
+      {
+        "title": "Transform boundaries",
+        "text": "Plates can slide past one another. Stress may accumulate on faults and release during earthquakes.",
+        "label": "Transform",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Where is new oceanic crust commonly formed?",
+        "options": [
+          "Divergent ridges",
+          "Every transform fault",
+          "The center of Earth"
+        ],
+        "correct": 0,
+        "why": "Seafloor spreading creates new crust at ridges."
+      },
+      {
+        "q": "Which boundary primarily involves plates sliding past each other?",
+        "options": [
+          "Transform",
+          "Divergent",
+          "Convergent"
+        ],
+        "correct": 0,
+        "why": "Transform motion is lateral relative motion."
+      }
+    ]
+  },
+  {
+    "id": "water-cycle",
+    "category": "Earth Science",
+    "title": "The journey of a drop of water",
+    "desc": "Follow water through the atmosphere, land and oceans.",
+    "art": "network",
+    "diagram": [
+      "Evaporation",
+      "Condensation",
+      "Runoff"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.usgs.gov/special-topics/water-science-school",
+    "slides": [
+      {
+        "title": "Water moves among reservoirs",
+        "text": "Oceans, glaciers, groundwater, rivers and the atmosphere store water for different lengths of time.",
+        "label": "Storage",
+        "art": "network"
+      },
+      {
+        "title": "Evaporation and transpiration",
+        "text": "Solar energy drives evaporation. Plants also release water vapor through transpiration.",
+        "label": "Evaporation",
+        "art": "scales"
+      },
+      {
+        "title": "Condensation and precipitation",
+        "text": "Cooling moist air can produce water droplets or ice crystals. Under suitable conditions they grow and fall as precipitation.",
+        "label": "Precipitation",
+        "art": "timeline"
+      },
+      {
+        "title": "Runoff and infiltration",
+        "text": "Some water flows over land; some infiltrates soil and can replenish groundwater. Human land use can alter these pathways.",
+        "label": "Runoff",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What moves liquid surface water into the atmosphere as vapor?",
+        "options": [
+          "Evaporation",
+          "Precipitation",
+          "Infiltration"
+        ],
+        "correct": 0,
+        "why": "Evaporation changes liquid water into vapor."
+      },
+      {
+        "q": "Which process moves water into soil?",
+        "options": [
+          "Infiltration",
+          "Radiation",
+          "Sublimation only"
+        ],
+        "correct": 0,
+        "why": "Infiltration is entry of water into the ground."
+      }
+    ]
+  },
+  {
+    "id": "weather-fronts",
+    "category": "Earth Science",
+    "title": "How weather fronts work",
+    "desc": "Understand air masses, pressure and changing weather.",
+    "art": "network",
+    "diagram": [
+      "Air mass",
+      "Front",
+      "Cloud"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.noaa.gov/education/resource-collections",
+    "slides": [
+      {
+        "title": "Air masses",
+        "text": "Large bodies of air can have characteristic temperature and moisture. Their properties evolve as they move.",
+        "label": "Air mass",
+        "art": "network"
+      },
+      {
+        "title": "A cold front",
+        "text": "When colder air advances, it can lift warmer air. Rising moist air may cool and produce clouds or precipitation.",
+        "label": "Cold front",
+        "art": "scales"
+      },
+      {
+        "title": "A warm front",
+        "text": "Warmer air can rise over retreating colder air along a sloping boundary. Cloud patterns depend on moisture and atmospheric conditions.",
+        "label": "Warm front",
+        "art": "timeline"
+      },
+      {
+        "title": "Forecasts are probabilistic",
+        "text": "Meteorologists use observations and models. Forecast uncertainty increases when the atmospheric state or future developments are less well constrained.",
+        "label": "Forecast",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What can happen when moist air rises and cools?",
+        "options": [
+          "Condensation and cloud formation",
+          "All water disappears",
+          "Gravity reverses"
+        ],
+        "correct": 0,
+        "why": "Cooling can bring water vapor toward saturation."
+      },
+      {
+        "q": "Does every cold front produce a thunderstorm?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "Storm development also requires appropriate moisture, instability and lifting."
+      }
+    ]
+  },
+  {
+    "id": "ocean-currents",
+    "category": "Oceanography",
+    "title": "The ocean's moving highways",
+    "desc": "Follow currents that redistribute heat and nutrients.",
+    "art": "network",
+    "diagram": [
+      "Wind",
+      "Density",
+      "Circulation"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.noaa.gov/education/resource-collections/ocean-coasts/ocean-currents",
+    "slides": [
+      {
+        "title": "Surface movement",
+        "text": "Winds transfer momentum to the upper ocean. Earth's rotation and continental boundaries help shape current patterns.",
+        "label": "Wind",
+        "art": "network"
+      },
+      {
+        "title": "Density differences",
+        "text": "Temperature and salinity affect seawater density. Dense water can sink under suitable conditions, contributing to deep circulation.",
+        "label": "Density",
+        "art": "scales"
+      },
+      {
+        "title": "Climate connections",
+        "text": "Ocean currents redistribute heat and influence regional climate. They interact with the atmosphere rather than operating independently.",
+        "label": "Heat",
+        "art": "timeline"
+      },
+      {
+        "title": "Upwelling",
+        "text": "Winds and circulation can bring deeper, nutrient-rich water toward the surface, supporting marine productivity in some regions.",
+        "label": "Upwelling",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Which factors affect seawater density?",
+        "options": [
+          "Temperature and salinity",
+          "Latitude alone",
+          "Wave height alone"
+        ],
+        "correct": 0,
+        "why": "Both temperature and dissolved salt influence density."
+      },
+      {
+        "q": "Why can upwelling support productive fisheries?",
+        "options": [
+          "It can supply nutrients to surface waters",
+          "It eliminates all predators",
+          "It stops photosynthesis"
+        ],
+        "correct": 0,
+        "why": "Nutrients can support phytoplankton and food webs."
+      }
+    ]
+  },
+  {
+    "id": "stars",
+    "category": "Astronomy",
+    "title": "The life and death of stars",
+    "desc": "Explore fusion, mass and stellar evolution.",
+    "art": "network",
+    "diagram": [
+      "Cloud",
+      "Fusion",
+      "Remnant"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/astronomy-2e/pages/1-introduction",
+    "slides": [
+      {
+        "title": "From gas to star",
+        "text": "Gravity can concentrate gas in molecular clouds. A protostar grows as surrounding material falls inward.",
+        "label": "Formation",
+        "art": "network"
+      },
+      {
+        "title": "Fusion and balance",
+        "text": "In a main-sequence star, hydrogen fusion supplies energy. Pressure gradients oppose gravity in approximate hydrostatic equilibrium.",
+        "label": "Fusion",
+        "art": "scales"
+      },
+      {
+        "title": "Mass changes the story",
+        "text": "A star's initial mass strongly influences its lifetime and later evolution. Massive stars generally exhaust their fuel faster than smaller stars.",
+        "label": "Mass",
+        "art": "timeline"
+      },
+      {
+        "title": "Stellar remnants",
+        "text": "Sun-like stars can leave white dwarfs. Some massive stars undergo core collapse and leave neutron stars or black holes.",
+        "label": "Remnants",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What powers a main-sequence star?",
+        "options": [
+          "Nuclear fusion",
+          "Combustion with oxygen",
+          "Chemical batteries"
+        ],
+        "correct": 0,
+        "why": "Fusion in the core releases energy."
+      },
+      {
+        "q": "Will the Sun eventually become a core-collapse supernova?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "The Sun is not massive enough for that evolutionary pathway."
+      }
+    ]
+  },
+  {
+    "id": "black-holes",
+    "category": "Astronomy",
+    "title": "What makes a black hole black",
+    "desc": "Understand horizons without science-fiction shortcuts.",
+    "art": "network",
+    "diagram": [
+      "Gravity",
+      "Horizon",
+      "Evidence"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/astronomy-2e/pages/1-introduction",
+    "slides": [
+      {
+        "title": "Extreme spacetime curvature",
+        "text": "A black hole is a region of spacetime from which signals cannot escape to distant observers once inside its event horizon.",
+        "label": "Gravity",
+        "art": "network"
+      },
+      {
+        "title": "The event horizon",
+        "text": "The horizon is a causal boundary, not a solid surface. Light can move locally but cannot carry a signal outward from inside.",
+        "label": "Horizon",
+        "art": "scales"
+      },
+      {
+        "title": "Not a cosmic vacuum cleaner",
+        "text": "Far away, gravity depends on mass and other properties. Replacing a star with a black hole of the same mass would not automatically suck in distant orbiting objects.",
+        "label": "Orbit",
+        "art": "timeline"
+      },
+      {
+        "title": "How we infer them",
+        "text": "Astronomers use stellar motion, radiation from surrounding matter, gravitational waves and horizon-scale imaging to study black holes.",
+        "label": "Evidence",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Is the event horizon a material surface?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "It is a boundary in spacetime."
+      },
+      {
+        "q": "How can a black hole be studied despite emitting no ordinary light from inside its horizon?",
+        "options": [
+          "Observe nearby matter and gravitational effects",
+          "Only visit its interior",
+          "It cannot be studied at all"
+        ],
+        "correct": 0,
+        "why": "Its environment and gravitational signatures reveal information."
+      }
+    ]
+  },
+  {
+    "id": "dna",
+    "category": "Biology",
+    "title": "DNA: information that cells inherit",
+    "desc": "Understand genes, expression and variation.",
+    "art": "network",
+    "diagram": [
+      "DNA",
+      "RNA",
+      "Protein"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/biology-2e/pages/1-introduction",
+    "slides": [
+      {
+        "title": "A molecular alphabet",
+        "text": "DNA stores information in sequences of four nucleotide bases. Complementary base pairing helps make copying possible.",
+        "label": "DNA",
+        "art": "network"
+      },
+      {
+        "title": "Genes and regulation",
+        "text": "Genes contain information used to produce functional RNA or proteins. Regulatory processes influence when and where genes are expressed.",
+        "label": "Genes",
+        "art": "scales"
+      },
+      {
+        "title": "From sequence to function",
+        "text": "For protein-coding genes, transcription produces RNA and translation uses its information to assemble a protein.",
+        "label": "Expression",
+        "art": "timeline"
+      },
+      {
+        "title": "Variation and inheritance",
+        "text": "DNA sequence differences can arise through mutation and be inherited. Effects range from neutral to harmful or beneficial, depending on context.",
+        "label": "Variation",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What is transcription?",
+        "options": [
+          "Making RNA using a DNA template",
+          "Making DNA from protein in ordinary cells",
+          "Dividing the entire organism"
+        ],
+        "correct": 0,
+        "why": "Transcription produces RNA from DNA information."
+      },
+      {
+        "q": "Do all genetic variants cause disease?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "Many variants have little or no harmful effect."
+      }
+    ]
+  },
+  {
+    "id": "microbes",
+    "category": "Biology",
+    "title": "The world of microorganisms",
+    "desc": "Meet bacteria, archaea, fungi and viruses.",
+    "art": "network",
+    "diagram": [
+      "Cells",
+      "Microbes",
+      "Viruses"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/microbiology/pages/1-introduction",
+    "slides": [
+      {
+        "title": "Small but diverse",
+        "text": "Microorganisms include bacteria, archaea and many microscopic eukaryotes. They perform numerous ecological functions.",
+        "label": "Diversity",
+        "art": "network"
+      },
+      {
+        "title": "Viruses are different",
+        "text": "Viruses contain genetic material and depend on host cells for replication. They do not have the independent cellular machinery of bacteria.",
+        "label": "Viruses",
+        "art": "scales"
+      },
+      {
+        "title": "Helpful and harmful",
+        "text": "Some microbes support digestion, fermentation or nutrient cycles. Others can cause disease under particular circumstances.",
+        "label": "Functions",
+        "art": "timeline"
+      },
+      {
+        "title": "Antibiotics and resistance",
+        "text": "Antibiotics target bacteria, not viruses. Bacterial populations can evolve resistance, making appropriate prescribing and infection prevention important.",
+        "label": "Resistance",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Do antibiotics directly treat viral infections?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "Antibiotics target bacteria; viral infections may need other treatments."
+      },
+      {
+        "q": "Are all bacteria harmful?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "Many bacteria perform useful or neutral functions."
+      }
+    ]
+  },
+  {
+    "id": "heart",
+    "category": "Human Biology",
+    "title": "How the heart moves blood",
+    "desc": "Trace the double circulation of the cardiovascular system.",
+    "art": "network",
+    "diagram": [
+      "Heart",
+      "Lungs",
+      "Body"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction",
+    "slides": [
+      {
+        "title": "Two circuits",
+        "text": "The right side of the heart pumps blood toward the lungs; the left side pumps blood into systemic circulation.",
+        "label": "Circuits",
+        "art": "network"
+      },
+      {
+        "title": "Gas exchange",
+        "text": "At lung capillaries, oxygen enters blood and carbon dioxide leaves. Hemoglobin carries much of the oxygen.",
+        "label": "Lungs",
+        "art": "scales"
+      },
+      {
+        "title": "Valves maintain direction",
+        "text": "Heart valves open and close in response to pressure differences, helping prevent backward flow.",
+        "label": "Valves",
+        "art": "timeline"
+      },
+      {
+        "title": "Delivery and return",
+        "text": "Arteries carry blood away from the heart; veins carry it toward the heart. The distinction is direction, not oxygen content.",
+        "label": "Vessels",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Which circuit carries blood from the right heart to the lungs?",
+        "options": [
+          "Pulmonary",
+          "Systemic",
+          "Digestive"
+        ],
+        "correct": 0,
+        "why": "Pulmonary circulation connects heart and lungs."
+      },
+      {
+        "q": "What defines an artery?",
+        "options": [
+          "It carries blood away from the heart",
+          "It always carries oxygen-rich blood",
+          "It has no pressure"
+        ],
+        "correct": 0,
+        "why": "Direction defines arterial circulation."
+      }
+    ]
+  },
+  {
+    "id": "kidneys",
+    "category": "Human Biology",
+    "title": "How kidneys keep blood in balance",
+    "desc": "Explore filtration, reabsorption and regulation.",
+    "art": "network",
+    "diagram": [
+      "Filter",
+      "Reabsorb",
+      "Excrete"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-introduction",
+    "slides": [
+      {
+        "title": "Many tiny units",
+        "text": "Nephrons are functional units of the kidneys. They help regulate fluid, electrolytes and waste products.",
+        "label": "Nephron",
+        "art": "network"
+      },
+      {
+        "title": "Filtration",
+        "text": "Pressure drives fluid and small solutes from glomerular capillaries into the nephron. Blood cells and most large proteins normally remain in circulation.",
+        "label": "Filter",
+        "art": "scales"
+      },
+      {
+        "title": "Selective reabsorption",
+        "text": "Tubules return much filtered water and useful solutes to the blood. Transport processes also secrete some substances into tubular fluid.",
+        "label": "Reabsorb",
+        "art": "timeline"
+      },
+      {
+        "title": "Regulation",
+        "text": "Hormones and local mechanisms influence water and salt handling. Kidneys also contribute to blood pressure and acid-base regulation.",
+        "label": "Regulate",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What happens to much of the filtered water?",
+        "options": [
+          "It is reabsorbed",
+          "It all leaves as urine",
+          "It becomes blood cells"
+        ],
+        "correct": 0,
+        "why": "Tubular reabsorption returns most filtered water."
+      },
+      {
+        "q": "Do kidneys only remove waste?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "They also regulate fluids, electrolytes and other functions."
+      }
+    ]
+  },
+  {
+    "id": "research-methods",
+    "category": "Scientific Literacy",
+    "title": "How a scientific study earns trust",
+    "desc": "Distinguish hypotheses, controls and replication.",
+    "art": "network",
+    "diagram": [
+      "Hypothesis",
+      "Test",
+      "Evidence"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/introductory-statistics-2e/pages/1-introduction",
+    "slides": [
+      {
+        "title": "A testable question",
+        "text": "A scientific hypothesis makes a claim that evidence could support or challenge. A prediction describes an expected observation.",
+        "label": "Hypothesis",
+        "art": "network"
+      },
+      {
+        "title": "Control comparisons",
+        "text": "A comparison group can help distinguish an intervention's effects from other changes. Random assignment can balance confounding factors in expectation.",
+        "label": "Controls",
+        "art": "scales"
+      },
+      {
+        "title": "Uncertainty",
+        "text": "Samples vary and measurements can contain error. Report effect sizes and uncertainty rather than treating a result as perfectly precise.",
+        "label": "Uncertainty",
+        "art": "timeline"
+      },
+      {
+        "title": "Replication and convergence",
+        "text": "Independent studies, transparent methods and different evidence types help assess reliability. One study rarely settles a complex question.",
+        "label": "Replication",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Why use random assignment in an experiment?",
+        "options": [
+          "To reduce systematic group differences",
+          "To guarantee a positive result",
+          "To remove all uncertainty"
+        ],
+        "correct": 0,
+        "why": "Random assignment helps balance confounding factors on average."
+      },
+      {
+        "q": "Does a single study always establish a universal truth?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "Reliable conclusions often require converging evidence."
+      }
+    ]
+  },
+  {
+    "id": "correlation",
+    "category": "Statistics",
+    "title": "When two things move together",
+    "desc": "Learn why association is not always causation.",
+    "art": "network",
+    "diagram": [
+      "Association",
+      "Confounding",
+      "Cause"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/introductory-statistics-2e/pages/1-introduction",
+    "slides": [
+      {
+        "title": "Measure association",
+        "text": "Two variables can vary together. Correlation measures aspects of association, not necessarily a causal relationship.",
+        "label": "Association",
+        "art": "network"
+      },
+      {
+        "title": "A third variable",
+        "text": "Ice cream sales and swimming activity can both increase in warm weather. Temperature helps explain their association.",
+        "label": "Confounding",
+        "art": "scales"
+      },
+      {
+        "title": "Direction and alternatives",
+        "text": "An association may reflect A causing B, B causing A, a common cause, or other processes. Study design helps distinguish them.",
+        "label": "Direction",
+        "art": "timeline"
+      },
+      {
+        "title": "Evidence for causes",
+        "text": "Experiments and carefully designed observational studies can strengthen causal inference. The appropriate method depends on the question and assumptions.",
+        "label": "Inference",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Ice cream and swimming both rise in summer. What is a plausible confounder?",
+        "options": [
+          "Temperature",
+          "Ice cream flavor alone",
+          "The name of the survey"
+        ],
+        "correct": 0,
+        "why": "Warm conditions may influence both variables."
+      },
+      {
+        "q": "Does correlation by itself establish causation?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "Association alone cannot rule out alternative explanations."
+      }
+    ]
+  },
+  {
+    "id": "base-rates",
+    "category": "Statistics",
+    "title": "Why rare events fool our intuition",
+    "desc": "Understand conditional probability and false positives.",
+    "art": "network",
+    "diagram": [
+      "Prevalence",
+      "Test",
+      "Posterior"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/introductory-statistics-2e/pages/1-introduction",
+    "slides": [
+      {
+        "title": "Start with frequency",
+        "text": "Suppose 10 of 1,000 people have a condition. The prevalence in this illustrative group is 1%.",
+        "label": "Prevalence",
+        "art": "network"
+      },
+      {
+        "title": "Test characteristics",
+        "text": "Imagine a test detects 9 of those 10 cases and falsely flags 5% of the 990 unaffected people, about 50 individuals.",
+        "label": "Test",
+        "art": "scales"
+      },
+      {
+        "title": "Count the outcomes",
+        "text": "There are approximately 59 positive results: 9 true positives and 50 false positives. Around 15% of positives are true cases in this example.",
+        "label": "Outcomes",
+        "art": "timeline"
+      },
+      {
+        "title": "Context matters",
+        "text": "Predictive values depend on prevalence and test performance. This is a mathematical example, not a clinical interpretation of any real test.",
+        "label": "Context",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "In this example, how many true positives are expected?",
+        "options": [
+          "9",
+          "59",
+          "990"
+        ],
+        "correct": 0,
+        "why": "The test detects nine of the ten actual cases."
+      },
+      {
+        "q": "What happens to positive predictive value when prevalence falls, all else equal?",
+        "options": [
+          "It generally falls",
+          "It always rises",
+          "It never changes"
+        ],
+        "correct": 0,
+        "why": "False positives make up a larger fraction of positives when the condition is rarer."
+      }
+    ]
+  },
+  {
+    "id": "sampling",
+    "category": "Statistics",
+    "title": "Can a sample speak for a population?",
+    "desc": "Discover selection bias and sampling uncertainty.",
+    "art": "network",
+    "diagram": [
+      "Population",
+      "Sample",
+      "Estimate"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/introductory-statistics-2e/pages/1-introduction",
+    "slides": [
+      {
+        "title": "Population and sample",
+        "text": "A population is the group of interest; a sample is the subset observed. Define the population before interpreting results.",
+        "label": "Population",
+        "art": "network"
+      },
+      {
+        "title": "Selection matters",
+        "text": "Surveying only people at a gym may misrepresent exercise habits of the whole city. Increasing a biased sample's size does not necessarily fix bias.",
+        "label": "Selection",
+        "art": "scales"
+      },
+      {
+        "title": "Random variation",
+        "text": "Different probability samples can yield different estimates. Sampling uncertainty reflects this variation under a specified sampling design.",
+        "label": "Uncertainty",
+        "art": "timeline"
+      },
+      {
+        "title": "Read the method",
+        "text": "Check who was included, how respondents were selected, nonresponse and question wording before drawing broad conclusions.",
+        "label": "Method",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Does a very large convenience sample automatically remove selection bias?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "Size does not correct a systematically unrepresentative selection process."
+      },
+      {
+        "q": "What is the population when estimating all city residents' habits?",
+        "options": [
+          "All city residents",
+          "Only survey respondents",
+          "Only gym members"
+        ],
+        "correct": 0,
+        "why": "The population is the full group the estimate concerns."
+      }
+    ]
+  },
+  {
+    "id": "charts",
+    "category": "Data Literacy",
+    "title": "How charts can mislead",
+    "desc": "Read axes, denominators and scales critically.",
+    "art": "network",
+    "diagram": [
+      "Scale",
+      "Context",
+      "Comparison"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/introductory-statistics-2e/pages/1-introduction",
+    "slides": [
+      {
+        "title": "Start with the axes",
+        "text": "Check what each axis measures and its units. A line chart's visible slope depends partly on the displayed range.",
+        "label": "Axes",
+        "art": "network"
+      },
+      {
+        "title": "Bars and baselines",
+        "text": "Bar lengths encode magnitude. A truncated baseline can exaggerate relative differences; zero baselines are generally appropriate for magnitude bars.",
+        "label": "Baseline",
+        "art": "scales"
+      },
+      {
+        "title": "Count versus rate",
+        "text": "A region with more incidents may also have a larger population. Rates per comparable population can answer a different question from totals.",
+        "label": "Denominator",
+        "art": "timeline"
+      },
+      {
+        "title": "Show uncertainty and context",
+        "text": "Look for missing categories, time windows, sample sizes and uncertainty. A clean visual is not a substitute for a sound comparison.",
+        "label": "Context",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What helps compare incident frequency between populations of very different sizes?",
+        "options": [
+          "A rate using a comparable denominator",
+          "Raw counts alone",
+          "The darkest chart color"
+        ],
+        "correct": 0,
+        "why": "Rates account for the population at risk."
+      },
+      {
+        "q": "Why inspect a bar chart's baseline?",
+        "options": [
+          "Truncation can exaggerate magnitude differences",
+          "It determines the author's age",
+          "Bars never encode quantity"
+        ],
+        "correct": 0,
+        "why": "Displayed length affects perception of magnitude."
+      }
+    ]
+  },
+  {
+    "id": "source-check",
+    "category": "Media Literacy",
+    "title": "How to verify a claim online",
+    "desc": "Learn to investigate the source before trusting the story.",
+    "art": "network",
+    "diagram": [
+      "Source",
+      "Evidence",
+      "Cross-check"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://style.mla.org/lateral-reading/",
+    "slides": [
+      {
+        "title": "Leave the page",
+        "text": "A professional-looking site can still mislead. Search independently for who runs it, its reputation and its incentives.",
+        "label": "Source",
+        "art": "network"
+      },
+      {
+        "title": "Find the original evidence",
+        "text": "Trace a claim to the original document, dataset or statement. Check whether the article accurately represents it.",
+        "label": "Evidence",
+        "art": "scales"
+      },
+      {
+        "title": "Cross-check independently",
+        "text": "Multiple sites may simply repeat one source. Seek independent reporting or primary evidence rather than counting repetitions.",
+        "label": "Cross-check",
+        "art": "timeline"
+      },
+      {
+        "title": "Know when to withhold judgment",
+        "text": "If credible evidence is incomplete or contradictory, distinguish verified facts from speculation. Updating your view is part of evaluating information.",
+        "label": "Judgment",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What is a first step in lateral reading?",
+        "options": [
+          "Open other sources to investigate the publisher",
+          "Trust the site's design",
+          "Read only its testimonials"
+        ],
+        "correct": 0,
+        "why": "Lateral reading investigates a source externally."
+      },
+      {
+        "q": "Five websites copy one press release. Is that five independent confirmations?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "Shared origin limits independence."
+      }
+    ]
+  },
+  {
+    "id": "image-context",
+    "category": "Media Literacy",
+    "title": "Seeing is not always believing",
+    "desc": "Investigate images, captions and missing context.",
+    "art": "network",
+    "diagram": [
+      "Image",
+      "Origin",
+      "Context"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://style.mla.org/lateral-reading/",
+    "slides": [
+      {
+        "title": "Separate image from claim",
+        "text": "A genuine photograph can be paired with a false caption. Authentic pixels do not establish time, place or meaning.",
+        "label": "Claim",
+        "art": "network"
+      },
+      {
+        "title": "Look for earlier appearances",
+        "text": "Reverse-image search and original publication records can sometimes reveal that a picture predates the event it supposedly shows.",
+        "label": "Origin",
+        "art": "scales"
+      },
+      {
+        "title": "Consider edits and crops",
+        "text": "A crop can hide important context. Image-generation and editing tools add other possibilities, but visual oddities alone are not definitive proof.",
+        "label": "Edits",
+        "art": "timeline"
+      },
+      {
+        "title": "Corroborate the event",
+        "text": "Check independent reports, reliable records and known context. State uncertainty when an image's origin cannot be established.",
+        "label": "Context",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Can a real photo be used to support a false claim?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 0,
+        "why": "An accurate image may be miscaptioned or taken from another event."
+      },
+      {
+        "q": "Do visual artifacts alone prove an image is AI-generated?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "Compression, lighting and editing can also create artifacts."
+      }
+    ]
+  },
+  {
+    "id": "cyber-safety",
+    "category": "Cybersecurity",
+    "title": "Recognizing digital deception",
+    "desc": "Learn protective habits against common phishing scams.",
+    "art": "network",
+    "diagram": [
+      "Message",
+      "Verify",
+      "Protect"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.consumerfinance.gov/ask-cfpb/what-are-some-common-types-of-fraud-and-scams-en-2092/",
+    "slides": [
+      {
+        "title": "An impersonated request",
+        "text": "Phishing messages may imitate a bank, employer or service to obtain credentials, money or access.",
+        "label": "Impersonation",
+        "art": "network"
+      },
+      {
+        "title": "Urgency and trust",
+        "text": "Pressure to act immediately can discourage verification. A familiar logo or display name does not establish the sender's identity.",
+        "label": "Urgency",
+        "art": "scales"
+      },
+      {
+        "title": "Verify independently",
+        "text": "Use a known official address or contact method rather than following an unsolicited request. Never share authentication codes with an unexpected caller.",
+        "label": "Verify",
+        "art": "timeline"
+      },
+      {
+        "title": "Limit account damage",
+        "text": "Unique passwords, password managers and strong multifactor authentication can reduce account takeover risk. Report suspicious messages through appropriate channels.",
+        "label": "Protect",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "A message claims your bank account will close immediately. What is a safer next step?",
+        "options": [
+          "Contact the bank using a known official channel",
+          "Send your password",
+          "Follow the message's login link immediately"
+        ],
+        "correct": 0,
+        "why": "Independent verification avoids relying on the suspect message."
+      },
+      {
+        "q": "Should you give an unexpected caller a one-time login code?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "Such codes can enable access to your account."
+      }
+    ]
+  },
+  {
+    "id": "passwords",
+    "category": "Cybersecurity",
+    "title": "Why passwords should not be reused",
+    "desc": "Understand credentials, breaches and authentication.",
+    "art": "network",
+    "diagram": [
+      "Password",
+      "Breach",
+      "MFA"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://consumer.ftc.gov/",
+    "slides": [
+      {
+        "title": "One secret per service",
+        "text": "If a password is reused, a breach at one service can expose accounts elsewhere through credential reuse.",
+        "label": "Reuse",
+        "art": "network"
+      },
+      {
+        "title": "Long and unique",
+        "text": "A password manager can generate and store distinct, strong passwords. A memorable long passphrase may suit a master password.",
+        "label": "Strength",
+        "art": "scales"
+      },
+      {
+        "title": "Additional proof",
+        "text": "Multifactor authentication requires different types of evidence, such as possession of a security key in addition to a password.",
+        "label": "MFA",
+        "art": "timeline"
+      },
+      {
+        "title": "Recovery matters",
+        "text": "Keep recovery methods up to date and store backup codes securely. Phishing-resistant authentication can reduce certain risks, but no method removes every threat.",
+        "label": "Recovery",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Why is password reuse risky?",
+        "options": [
+          "A single leak can affect multiple accounts",
+          "It makes screens brighter",
+          "It prevents encryption"
+        ],
+        "correct": 0,
+        "why": "Attackers can attempt exposed credentials at other services."
+      },
+      {
+        "q": "What does MFA add?",
+        "options": [
+          "Another type of authentication evidence",
+          "A second username only",
+          "Guaranteed immunity to fraud"
+        ],
+        "correct": 0,
+        "why": "Additional factors reduce reliance on a single secret."
+      }
+    ]
+  },
+  {
+    "id": "credit",
+    "category": "Financial Literacy",
+    "title": "What credit reports actually contain",
+    "desc": "Distinguish borrowing records, scores and interest rates.",
+    "art": "network",
+    "diagram": [
+      "Report",
+      "Score",
+      "Loan"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.consumerfinance.gov/consumer-tools/educator-tools/adult-financial-education/tools-and-resources/",
+    "slides": [
+      {
+        "title": "A borrowing record",
+        "text": "Credit reports contain information about certain credit accounts and payment history. Coverage and accuracy can vary.",
+        "label": "Report",
+        "art": "network"
+      },
+      {
+        "title": "A score is a model",
+        "text": "Credit scoring models estimate aspects of lending risk using report information. Different models and versions may produce different scores.",
+        "label": "Score",
+        "art": "scales"
+      },
+      {
+        "title": "Interest and fees",
+        "text": "APR expresses borrowing costs on an annualized basis under applicable rules. Actual total cost depends on balances, fees, terms and repayment.",
+        "label": "Cost",
+        "art": "timeline"
+      },
+      {
+        "title": "Check and correct",
+        "text": "Review reports for unfamiliar or incorrect information and use official dispute channels. Accurate information may remain according to applicable rules.",
+        "label": "Review",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Are a credit report and a credit score identical?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "A report contains records; a score is a model-derived measure."
+      },
+      {
+        "q": "Why compare loan costs as well as monthly payments?",
+        "options": [
+          "A longer term may change the total cost",
+          "Payments always reveal every fee",
+          "APR never matters"
+        ],
+        "correct": 0,
+        "why": "Monthly affordability and total borrowing cost differ."
+      }
+    ]
+  },
+  {
+    "id": "insurance",
+    "category": "Financial Literacy",
+    "title": "Insurance and the price of risk",
+    "desc": "Understand premiums, deductibles and coverage.",
+    "art": "network",
+    "diagram": [
+      "Premium",
+      "Deductible",
+      "Coverage"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.consumerfinance.gov/consumer-tools/educator-tools/adult-financial-education/tools-and-resources/",
+    "slides": [
+      {
+        "title": "Pooling uncertain losses",
+        "text": "Insurance exchanges a premium for specified financial protection against covered risks. Contract terms determine what is protected.",
+        "label": "Pooling",
+        "art": "network"
+      },
+      {
+        "title": "Premium and deductible",
+        "text": "A premium is the price of coverage. A deductible is an amount the insured may owe before certain benefits apply, depending on the policy.",
+        "label": "Deductible",
+        "art": "scales"
+      },
+      {
+        "title": "Limits and exclusions",
+        "text": "Policies can restrict covered events, benefit amounts and providers. A low premium does not prove that a plan offers adequate protection.",
+        "label": "Limits",
+        "art": "timeline"
+      },
+      {
+        "title": "Compare scenarios",
+        "text": "Consider regular premiums, likely claims and the financial impact of a major covered or excluded loss. Read the actual policy before buying.",
+        "label": "Comparison",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What is a premium?",
+        "options": [
+          "The price paid for insurance coverage",
+          "Always the claim amount",
+          "An investment guarantee"
+        ],
+        "correct": 0,
+        "why": "Premiums purchase specified coverage."
+      },
+      {
+        "q": "Does insurance cover every possible loss?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "Policies have conditions, limits and exclusions."
+      }
+    ]
+  },
+  {
+    "id": "legal-systems",
+    "category": "Law & Civics",
+    "title": "Civil law and criminal law",
+    "desc": "Learn how different legal disputes reach courts.",
+    "art": "network",
+    "diagram": [
+      "Dispute",
+      "Charge",
+      "Judgment"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.uscourts.gov/about-federal-courts",
+    "slides": [
+      {
+        "title": "Civil disputes",
+        "text": "Civil cases commonly involve disputes over rights, obligations or remedies. Parties may seek damages, injunctions or other relief.",
+        "label": "Civil",
+        "art": "network"
+      },
+      {
+        "title": "Criminal prosecution",
+        "text": "Criminal cases involve alleged offenses prosecuted by public authorities. Conviction can carry penalties, subject to legal procedures.",
+        "label": "Criminal",
+        "art": "scales"
+      },
+      {
+        "title": "Different standards",
+        "text": "In the United States, criminal guilt must be proved beyond a reasonable doubt. Many civil claims use a preponderance standard, with exceptions.",
+        "label": "Proof",
+        "art": "timeline"
+      },
+      {
+        "title": "Jurisdiction matters",
+        "text": "Courts have authority over particular kinds of cases and geographic areas. Rules vary across jurisdictions and case types; this is general education.",
+        "label": "Jurisdiction",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Who ordinarily prosecutes a criminal case?",
+        "options": [
+          "A public prosecuting authority",
+          "Any civil plaintiff acting privately",
+          "A jury"
+        ],
+        "correct": 0,
+        "why": "Criminal prosecution is generally brought by the state or federal government."
+      },
+      {
+        "q": "Are all civil claims subject to exactly the same proof standard?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "Some claims require different standards."
+      }
+    ]
+  },
+  {
+    "id": "contracts",
+    "category": "Law & Civics",
+    "title": "Reading an agreement before signing",
+    "desc": "Recognize obligations, terms and dispute clauses.",
+    "art": "network",
+    "diagram": [
+      "Terms",
+      "Obligations",
+      "Remedies"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://consumer.ftc.gov/",
+    "slides": [
+      {
+        "title": "An exchange of promises",
+        "text": "Contracts can create enforceable obligations. Requirements differ by jurisdiction and subject; not every promise is enforceable.",
+        "label": "Agreement",
+        "art": "network"
+      },
+      {
+        "title": "Identify the parties",
+        "text": "Check who is bound, what is promised, the payment schedule, duration and renewal terms.",
+        "label": "Terms",
+        "art": "scales"
+      },
+      {
+        "title": "Look for contingencies",
+        "text": "Read cancellation, termination, penalties, exclusions and dispute-resolution clauses. Ask about unclear wording before agreeing.",
+        "label": "Contingencies",
+        "art": "timeline"
+      },
+      {
+        "title": "Keep a record",
+        "text": "Retain the signed agreement and important written communications. For significant or unclear legal obligations, consult qualified local advice.",
+        "label": "Records",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What should you check in a recurring subscription contract?",
+        "options": [
+          "Renewal and cancellation terms",
+          "Only the logo",
+          "Only the first day's price"
+        ],
+        "correct": 0,
+        "why": "Recurring obligations depend on ongoing contract terms."
+      },
+      {
+        "q": "Does every informal promise automatically form an enforceable contract?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "Legal enforceability depends on the applicable requirements."
+      }
+    ]
+  },
+  {
+    "id": "sociology",
+    "category": "Sociology",
+    "title": "How society shapes everyday choices",
+    "desc": "Explore norms, roles and institutions.",
+    "art": "network",
+    "diagram": [
+      "Norms",
+      "Roles",
+      "Institutions"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/books/introduction-sociology-3e/pages/1-introduction",
+    "slides": [
+      {
+        "title": "Norms",
+        "text": "Social norms are shared expectations about behavior. They can differ across groups, settings and historical periods.",
+        "label": "Norms",
+        "art": "network"
+      },
+      {
+        "title": "Roles",
+        "text": "A role is a set of expectations associated with a social position. The same person may face conflicting expectations in different roles.",
+        "label": "Roles",
+        "art": "scales"
+      },
+      {
+        "title": "Institutions",
+        "text": "Education, families, law and markets organize patterns of social activity. Institutions both constrain and enable choices.",
+        "label": "Institutions",
+        "art": "timeline"
+      },
+      {
+        "title": "Agency and structure",
+        "text": "People make choices within social conditions, and collective action can change those conditions. Sociology studies both levels.",
+        "label": "Agency",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What is a social role?",
+        "options": [
+          "Expectations associated with a social position",
+          "An inherited DNA sequence",
+          "A universal personality type"
+        ],
+        "correct": 0,
+        "why": "Roles concern expected behavior in social positions."
+      },
+      {
+        "q": "Can social norms change over time?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 0,
+        "why": "Norms vary across societies and historical periods."
+      }
+    ]
+  },
+  {
+    "id": "culture",
+    "category": "Anthropology",
+    "title": "Culture beyond stereotypes",
+    "desc": "Understand cultural learning and context.",
+    "art": "network",
+    "diagram": [
+      "Practice",
+      "Context",
+      "Variation"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://library.si.edu/topic",
+    "slides": [
+      {
+        "title": "Learned patterns",
+        "text": "Culture includes learned meanings, practices, knowledge and ways of organizing life. It is transmitted and transformed through interaction.",
+        "label": "Learning",
+        "art": "network"
+      },
+      {
+        "title": "Context before judgment",
+        "text": "A practice can have different meanings in different settings. Anthropologists investigate its social and historical context.",
+        "label": "Context",
+        "art": "scales"
+      },
+      {
+        "title": "Variation within groups",
+        "text": "No cultural group is homogeneous. Age, region, class, migration and individual experiences can produce substantial variation.",
+        "label": "Variation",
+        "art": "timeline"
+      },
+      {
+        "title": "Change and exchange",
+        "text": "Cultural practices change through innovation, interaction, migration and power relations. Cultures are not sealed, unchanging objects.",
+        "label": "Change",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Are all members of a cultural group necessarily identical in beliefs?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "Variation exists within every large cultural group."
+      },
+      {
+        "q": "Why study a practice in context?",
+        "options": [
+          "Its meaning may depend on local relationships and history",
+          "It proves every practice is harmless",
+          "Context makes evidence irrelevant"
+        ],
+        "correct": 0,
+        "why": "Context helps explain meaning without requiring moral endorsement."
+      }
+    ]
+  },
+  {
+    "id": "maps",
+    "category": "Geography",
+    "title": "Why no flat map is perfect",
+    "desc": "Explore projections, scale and distortion.",
+    "art": "network",
+    "diagram": [
+      "Globe",
+      "Projection",
+      "Distortion"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://education.nationalgeographic.org/",
+    "slides": [
+      {
+        "title": "A curved surface",
+        "text": "Earth is approximately an oblate spheroid. Representing its curved surface on a flat map requires distortion.",
+        "label": "Globe",
+        "art": "network"
+      },
+      {
+        "title": "Projection trade-offs",
+        "text": "Map projections may preserve local angles, area, distances along selected lines or other properties, but cannot preserve all properties everywhere.",
+        "label": "Projection",
+        "art": "scales"
+      },
+      {
+        "title": "Scale changes interpretation",
+        "text": "Scale relates map distance to actual distance under specified conditions. Generalization removes details to make a map readable.",
+        "label": "Scale",
+        "art": "timeline"
+      },
+      {
+        "title": "Choose by purpose",
+        "text": "Equal-area maps suit many size comparisons; other projections serve navigation or regional mapping. A map's usefulness depends on the question.",
+        "label": "Purpose",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Can one flat world map preserve all distances, areas and angles everywhere?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "Flattening a curved surface requires distortion."
+      },
+      {
+        "q": "Which projection property helps compare land areas?",
+        "options": [
+          "Equal area",
+          "A bright color scheme",
+          "Maximum zoom"
+        ],
+        "correct": 0,
+        "why": "Equal-area projections preserve relative area."
+      }
+    ]
+  },
+  {
+    "id": "language",
+    "category": "Linguistics",
+    "title": "How language builds meaning",
+    "desc": "Explore sounds, words and sentences.",
+    "art": "network",
+    "diagram": [
+      "Sounds",
+      "Words",
+      "Syntax"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.linguisticsociety.org/",
+    "slides": [
+      {
+        "title": "Sound patterns",
+        "text": "Languages organize sounds or signs into contrastive units. Spoken and signed languages have rich structured systems.",
+        "label": "Sound",
+        "art": "network"
+      },
+      {
+        "title": "Word structure",
+        "text": "Morphemes are meaningful units such as roots and affixes. Languages combine these units in different ways.",
+        "label": "Morphology",
+        "art": "scales"
+      },
+      {
+        "title": "Sentence structure",
+        "text": "Syntax concerns how words and phrases combine. Languages differ in typical word order and grammatical marking.",
+        "label": "Syntax",
+        "art": "timeline"
+      },
+      {
+        "title": "Meaning in context",
+        "text": "A sentence's interpretation depends on literal meaning, context and shared assumptions. Language changes through use across generations.",
+        "label": "Pragmatics",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What is a morpheme?",
+        "options": [
+          "A meaningful unit of language",
+          "A planet's orbit",
+          "A sentence with no words"
+        ],
+        "correct": 0,
+        "why": "Roots and affixes are common examples."
+      },
+      {
+        "q": "Do signed languages have grammar?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 0,
+        "why": "Signed languages have complex linguistic structure."
+      }
+    ]
+  },
+  {
+    "id": "etymology",
+    "category": "Linguistics",
+    "title": "How words travel and change",
+    "desc": "Discover borrowing and historical sound changes.",
+    "art": "network",
+    "diagram": [
+      "Borrowing",
+      "Change",
+      "Meaning"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.linguisticsociety.org/",
+    "slides": [
+      {
+        "title": "Borrowed words",
+        "text": "Languages adopt words through contact, trade, migration and cultural exchange. Borrowings may adapt to local pronunciation.",
+        "label": "Borrowing",
+        "art": "network"
+      },
+      {
+        "title": "Sound change",
+        "text": "Sounds can change in systematic patterns across generations. Comparing related languages helps reconstruct earlier forms.",
+        "label": "Sound change",
+        "art": "scales"
+      },
+      {
+        "title": "Meaning changes",
+        "text": "Words can broaden, narrow or shift in meaning. An older meaning is not necessarily the correct modern one.",
+        "label": "Semantics",
+        "art": "timeline"
+      },
+      {
+        "title": "Evidence over resemblance",
+        "text": "Two similar-looking words are not automatically related. Historical records and regular sound correspondences help establish relationships.",
+        "label": "Evidence",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Does a word's oldest known meaning dictate its present meaning?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "Meanings evolve through use."
+      },
+      {
+        "q": "What supports a claim of shared linguistic ancestry?",
+        "options": [
+          "Systematic sound correspondences and evidence",
+          "A single accidental resemblance",
+          "Identical fonts"
+        ],
+        "correct": 0,
+        "why": "Historical linguistics relies on patterns and documentation."
+      }
+    ]
+  },
+  {
+    "id": "visual-composition",
+    "category": "Art & Design",
+    "title": "How artists guide the eye",
+    "desc": "Explore contrast, balance and visual hierarchy.",
+    "art": "network",
+    "diagram": [
+      "Contrast",
+      "Balance",
+      "Focal point"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.si.edu/educators/art-resources",
+    "slides": [
+      {
+        "title": "Visual hierarchy",
+        "text": "Size, placement, contrast and other features can guide attention toward particular elements in an image.",
+        "label": "Hierarchy",
+        "art": "network"
+      },
+      {
+        "title": "Balance",
+        "text": "Visual weight can be distributed symmetrically or asymmetrically. Balance does not require every element to be identical.",
+        "label": "Balance",
+        "art": "scales"
+      },
+      {
+        "title": "Negative space",
+        "text": "Unoccupied areas can help define shapes, establish breathing room and emphasize a subject.",
+        "label": "Space",
+        "art": "timeline"
+      },
+      {
+        "title": "Interpretation varies",
+        "text": "Compositions operate in cultural and historical contexts. Formal design analysis is one tool, not a complete explanation of an artwork's meaning.",
+        "label": "Context",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What can help make one object a focal point?",
+        "options": [
+          "Contrast with its surroundings",
+          "Making every feature equally prominent",
+          "Removing all relationships"
+        ],
+        "correct": 0,
+        "why": "Contrast can guide attention."
+      },
+      {
+        "q": "Does balance require exact mirror symmetry?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "Asymmetric arrangements can also be balanced."
+      }
+    ]
+  },
+  {
+    "id": "color-theory",
+    "category": "Art & Design",
+    "title": "How colors interact",
+    "desc": "Distinguish light mixing, pigments and contrast.",
+    "art": "network",
+    "diagram": [
+      "Hue",
+      "Value",
+      "Saturation"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.si.edu/educators/art-resources",
+    "slides": [
+      {
+        "title": "Three useful properties",
+        "text": "Hue refers to color family, value to relative lightness or darkness, and saturation to color intensity in a given model.",
+        "label": "Properties",
+        "art": "network"
+      },
+      {
+        "title": "Additive light",
+        "text": "Screens combine red, green and blue light. Adding all three at high intensity can produce a white appearance.",
+        "label": "Additive",
+        "art": "scales"
+      },
+      {
+        "title": "Subtractive color",
+        "text": "Inks and pigments absorb portions of incoming light. Their mixing behaves differently from combining emitted light.",
+        "label": "Subtractive",
+        "art": "timeline"
+      },
+      {
+        "title": "Accessible contrast",
+        "text": "A design should not rely on color alone to communicate essential meaning. Lightness contrast, text and shapes can make information clearer.",
+        "label": "Contrast",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What mixing model is commonly used by screens?",
+        "options": [
+          "Additive RGB",
+          "Subtractive paint only",
+          "Sound mixing"
+        ],
+        "correct": 0,
+        "why": "Displays combine emitted light."
+      },
+      {
+        "q": "Should a warning be communicated only by red color?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "Text or icons provide another accessible cue."
+      }
+    ]
+  },
+  {
+    "id": "music-rhythm",
+    "category": "Music",
+    "title": "How rhythm organizes time",
+    "desc": "Understand pulse, tempo and meter.",
+    "art": "network",
+    "diagram": [
+      "Pulse",
+      "Tempo",
+      "Meter"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://library.si.edu/topic",
+    "slides": [
+      {
+        "title": "Pulse",
+        "text": "A pulse is a recurring beat that listeners may perceive. Not all music has a steady or obvious pulse.",
+        "label": "Pulse",
+        "art": "network"
+      },
+      {
+        "title": "Tempo",
+        "text": "Tempo describes the rate of beats, often measured in beats per minute. At 120 BPM, a steady beat lasts half a second.",
+        "label": "Tempo",
+        "art": "scales"
+      },
+      {
+        "title": "Meter",
+        "text": "Meter groups beats into recurring patterns. A common triple meter groups beats in threes, while other traditions use more varied patterns.",
+        "label": "Meter",
+        "art": "timeline"
+      },
+      {
+        "title": "Syncopation",
+        "text": "Accenting unexpected parts of a metrical pattern can create rhythmic tension or surprise. It depends on an established expectation.",
+        "label": "Syncopation",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "At 60 BPM, how long is one beat?",
+        "options": [
+          "1 second",
+          "2 seconds",
+          "0.1 seconds"
+        ],
+        "correct": 0,
+        "why": "Sixty beats per minute is one beat per second."
+      },
+      {
+        "q": "What does meter describe?",
+        "options": [
+          "How beats are grouped",
+          "The loudness of a note only",
+          "The instrument's price"
+        ],
+        "correct": 0,
+        "why": "Meter organizes recurring beat patterns."
+      }
+    ]
+  },
+  {
+    "id": "music-harmony",
+    "category": "Music",
+    "title": "Why notes sound different together",
+    "desc": "Explore intervals, harmony and musical context.",
+    "art": "network",
+    "diagram": [
+      "Pitch",
+      "Interval",
+      "Harmony"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://library.si.edu/topic",
+    "slides": [
+      {
+        "title": "Pitch",
+        "text": "Pitch is the perceived highness or lowness of a sound and is strongly related to frequency. Complex tones contain multiple frequency components.",
+        "label": "Pitch",
+        "art": "network"
+      },
+      {
+        "title": "Intervals",
+        "text": "An interval describes the relationship between two pitches. An octave corresponds to a frequency ratio of two to one.",
+        "label": "Intervals",
+        "art": "scales"
+      },
+      {
+        "title": "Harmony",
+        "text": "Harmony concerns simultaneous or implied combinations of pitches. Different musical traditions organize these relationships in different ways.",
+        "label": "Harmony",
+        "art": "timeline"
+      },
+      {
+        "title": "Tension and expectation",
+        "text": "Listeners learn patterns from musical experience. Expectations and context influence how combinations feel, so musical meaning is not wholly universal.",
+        "label": "Context",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What is the frequency ratio of an octave?",
+        "options": [
+          "2:1",
+          "3:1",
+          "1:1"
+        ],
+        "correct": 0,
+        "why": "Doubling frequency raises a pitch by one octave."
+      },
+      {
+        "q": "Are all musical harmony conventions universal across cultures?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "Traditions use different musical systems and expectations."
+      }
+    ]
+  },
+  {
+    "id": "architecture",
+    "category": "Architecture",
+    "title": "How buildings stand up",
+    "desc": "Learn how loads move through a structure.",
+    "art": "network",
+    "diagram": [
+      "Load",
+      "Support",
+      "Foundation"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://library.si.edu/topic",
+    "slides": [
+      {
+        "title": "Loads",
+        "text": "Buildings must resist their own weight, occupancy loads, wind and other forces relevant to the site.",
+        "label": "Loads",
+        "art": "network"
+      },
+      {
+        "title": "Load paths",
+        "text": "Structural elements transfer forces through beams, columns, walls and connections to foundations and the ground.",
+        "label": "Load path",
+        "art": "scales"
+      },
+      {
+        "title": "Compression and tension",
+        "text": "Compression pushes material together; tension pulls it apart. Material properties and member shape influence structural behavior.",
+        "label": "Forces",
+        "art": "timeline"
+      },
+      {
+        "title": "Safety and context",
+        "text": "Structural design must account for local conditions, codes and qualified engineering. A conceptual diagram is not sufficient to design a real building.",
+        "label": "Safety",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Where does a typical building's gravity load eventually transfer?",
+        "options": [
+          "Through foundations into the ground",
+          "Into the air without support",
+          "Only into windows"
+        ],
+        "correct": 0,
+        "why": "Load paths transfer forces to the ground."
+      },
+      {
+        "q": "What is tension?",
+        "options": [
+          "A pulling force",
+          "A pushing force",
+          "A temperature reading"
+        ],
+        "correct": 0,
+        "why": "Tension acts to pull material apart."
+      }
+    ]
+  },
+  {
+    "id": "engineering",
+    "category": "Engineering",
+    "title": "How engineers solve problems",
+    "desc": "Explore requirements, constraints and iteration.",
+    "art": "network",
+    "diagram": [
+      "Requirements",
+      "Prototype",
+      "Test"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/k12/cte",
+    "slides": [
+      {
+        "title": "Define the problem",
+        "text": "Engineering begins by identifying what a solution must do, who uses it and what constraints apply.",
+        "label": "Requirements",
+        "art": "network"
+      },
+      {
+        "title": "Compare alternatives",
+        "text": "Different designs can trade cost, safety, reliability, efficiency and ease of repair. No single metric captures every priority.",
+        "label": "Trade-offs",
+        "art": "scales"
+      },
+      {
+        "title": "Build and test",
+        "text": "A prototype can test key assumptions. Testing must represent relevant conditions and failure modes.",
+        "label": "Prototype",
+        "art": "timeline"
+      },
+      {
+        "title": "Improve and document",
+        "text": "Review results, refine the design and document decisions. Safety-critical designs require appropriate standards and professional review.",
+        "label": "Iteration",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Why test a prototype?",
+        "options": [
+          "To check assumptions before committing to a design",
+          "To avoid gathering evidence",
+          "To guarantee zero future failures"
+        ],
+        "correct": 0,
+        "why": "Prototypes help reveal design weaknesses."
+      },
+      {
+        "q": "Is the lowest-cost design always best?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "Cost is only one constraint among many."
+      }
+    ]
+  },
+  {
+    "id": "energy-grid",
+    "category": "Engineering",
+    "title": "How electricity reaches a home",
+    "desc": "Trace generation, transmission and distribution.",
+    "art": "network",
+    "diagram": [
+      "Generation",
+      "Grid",
+      "Distribution"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.energy.gov/energysaver",
+    "slides": [
+      {
+        "title": "Generation",
+        "text": "Electricity is produced through several technologies, including turbines, solar photovoltaics and other systems.",
+        "label": "Generation",
+        "art": "network"
+      },
+      {
+        "title": "Transmission",
+        "text": "High-voltage networks carry power over long distances. For a given power, higher voltage allows lower current, reducing resistive losses.",
+        "label": "Transmission",
+        "art": "scales"
+      },
+      {
+        "title": "Distribution",
+        "text": "Substations and transformers help adjust voltage for regional and local delivery. Distribution networks connect customers to the grid.",
+        "label": "Distribution",
+        "art": "timeline"
+      },
+      {
+        "title": "Balance and resilience",
+        "text": "Grid operators maintain supply-demand balance and respond to disturbances. Storage, flexible demand and diverse resources can support reliability.",
+        "label": "Balance",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Why use high voltage for long-distance transmission?",
+        "options": [
+          "Lower current can reduce resistive losses",
+          "It eliminates the need for wires",
+          "It makes electricity free"
+        ],
+        "correct": 0,
+        "why": "Resistive loss scales with current squared for a given resistance."
+      },
+      {
+        "q": "What does a transformer do in an AC power system?",
+        "options": [
+          "Changes voltage levels",
+          "Creates unlimited energy",
+          "Replaces every generator"
+        ],
+        "correct": 0,
+        "why": "Transformers help adapt voltage for transmission and use."
+      }
+    ]
+  },
+  {
+    "id": "food-safety",
+    "category": "Practical Skills",
+    "title": "The science of safer food",
+    "desc": "Learn why temperature and cross-contamination matter.",
+    "art": "network",
+    "diagram": [
+      "Separate",
+      "Cook",
+      "Chill"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.foodsafety.gov/",
+    "slides": [
+      {
+        "title": "Microbes and food",
+        "text": "Some microorganisms can cause illness when contaminated food is eaten. You cannot reliably detect harmful contamination by smell alone.",
+        "label": "Microbes",
+        "art": "network"
+      },
+      {
+        "title": "Prevent cross-contamination",
+        "text": "Keep raw animal products separate from ready-to-eat foods. Wash hands and clean utensils and surfaces appropriately.",
+        "label": "Separate",
+        "art": "scales"
+      },
+      {
+        "title": "Use appropriate temperatures",
+        "text": "A food thermometer helps verify safe cooking according to food-specific guidance. Appearance alone may not establish safe internal temperature.",
+        "label": "Cook",
+        "art": "timeline"
+      },
+      {
+        "title": "Store promptly",
+        "text": "Refrigerate perishable food promptly and follow official storage and leftover guidance. Discard food when safety cannot reasonably be established.",
+        "label": "Chill",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Can smell reliably identify all dangerous food contamination?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "Pathogens can be present without obvious spoilage."
+      },
+      {
+        "q": "What helps verify cooking temperature?",
+        "options": [
+          "A food thermometer",
+          "The package color",
+          "Only the cooking time"
+        ],
+        "correct": 0,
+        "why": "A thermometer measures internal temperature."
+      }
+    ]
+  },
+  {
+    "id": "preparedness",
+    "category": "Practical Skills",
+    "title": "Preparing for everyday emergencies",
+    "desc": "Make plans around realistic disruptions.",
+    "art": "network",
+    "diagram": [
+      "Plan",
+      "Supplies",
+      "Communication"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://www.ready.gov/",
+    "slides": [
+      {
+        "title": "Identify likely disruptions",
+        "text": "Consider local weather, power outages, water interruptions and household needs. A useful plan addresses realistic risks.",
+        "label": "Risks",
+        "art": "network"
+      },
+      {
+        "title": "Make a communication plan",
+        "text": "Agree on how household members will contact one another and where to meet if normal routines are disrupted.",
+        "label": "Communication",
+        "art": "scales"
+      },
+      {
+        "title": "Gather essentials",
+        "text": "Build a kit around water, food, lighting, essential medications, chargers and other individual needs. Check official guidance and expiration dates.",
+        "label": "Supplies",
+        "art": "timeline"
+      },
+      {
+        "title": "Use equipment safely",
+        "text": "Never run fuel-burning generators indoors or in garages. Follow equipment instructions and official guidance about carbon monoxide and fire safety.",
+        "label": "Safety",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Where should a portable fuel-burning generator be operated?",
+        "options": [
+          "Outdoors, safely away from openings as directed",
+          "Inside a garage with the door open",
+          "In a bedroom"
+        ],
+        "correct": 0,
+        "why": "Outdoor placement away from openings reduces carbon monoxide risk."
+      },
+      {
+        "q": "Why review emergency supplies periodically?",
+        "options": [
+          "Needs and expiration dates change",
+          "Supplies always last forever",
+          "Planning replaces safety instructions"
+        ],
+        "correct": 0,
+        "why": "Maintenance keeps the kit suitable and usable."
+      }
+    ]
+  },
+  {
+    "id": "ancient-egypt",
+    "category": "World History",
+    "title": "Ancient Egypt and the river Nile",
+    "desc": "Understand geography, state formation and daily life.",
+    "art": "network",
+    "diagram": [
+      "River",
+      "Agriculture",
+      "State"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/k12/social-studies",
+    "slides": [
+      {
+        "title": "River and settlement",
+        "text": "The Nile supplied water, fertile floodplain soils and transportation. Its seasonal patterns shaped agriculture and settlement.",
+        "label": "River",
+        "art": "network"
+      },
+      {
+        "title": "A changing state",
+        "text": "Ancient Egypt experienced periods of political unification, fragmentation and foreign rule across millennia. Institutions changed over time.",
+        "label": "State",
+        "art": "scales"
+      },
+      {
+        "title": "Labor and writing",
+        "text": "Agriculture, skilled crafts, administration and religious institutions sustained complex society. Writing helped record transactions and beliefs.",
+        "label": "Society",
+        "art": "timeline"
+      },
+      {
+        "title": "Reading evidence",
+        "text": "Archaeology, inscriptions and material remains reveal different aspects of life. Elite monuments are not complete records of every social group.",
+        "label": "Evidence",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Why was the Nile important to ancient Egyptian settlement?",
+        "options": [
+          "Water, fertile land and transport",
+          "It prevented all conflict",
+          "It was the only source of stone"
+        ],
+        "correct": 0,
+        "why": "The river supported agriculture and communication."
+      },
+      {
+        "q": "Do elite tombs alone provide a complete account of society?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "Different sources reveal different groups and experiences."
+      }
+    ]
+  },
+  {
+    "id": "silk-roads",
+    "category": "World History",
+    "title": "The networks called the Silk Roads",
+    "desc": "Explore exchange across Eurasia and beyond.",
+    "art": "network",
+    "diagram": [
+      "Routes",
+      "Exchange",
+      "Ideas"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/k12/social-studies",
+    "slides": [
+      {
+        "title": "Not one road",
+        "text": "The Silk Roads were overlapping land and maritime networks linking many regions. Routes changed with politics, geography and trade.",
+        "label": "Networks",
+        "art": "network"
+      },
+      {
+        "title": "More than silk",
+        "text": "Goods, technologies, religious ideas and artistic practices moved through these networks, often through multiple intermediaries.",
+        "label": "Exchange",
+        "art": "scales"
+      },
+      {
+        "title": "Cities and institutions",
+        "text": "Markets, caravan stops and ports helped organize exchange. Governments and local communities shaped trade through taxes, protection and rules.",
+        "label": "Cities",
+        "art": "timeline"
+      },
+      {
+        "title": "Costs and consequences",
+        "text": "Long-distance connections could spread disease as well as knowledge and goods. Exchange was unequal and changed societies in diverse ways.",
+        "label": "Consequences",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Were the Silk Roads a single continuous highway?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "They were interconnected and changing routes."
+      },
+      {
+        "q": "What besides goods moved through these networks?",
+        "options": [
+          "Ideas and technologies",
+          "Nothing else",
+          "Only coins"
+        ],
+        "correct": 0,
+        "why": "Trade networks also carried cultural and technical knowledge."
+      }
+    ]
+  },
+  {
+    "id": "printing",
+    "category": "World History",
+    "title": "How printing transformed information",
+    "desc": "Explore technologies that changed access to texts.",
+    "art": "network",
+    "diagram": [
+      "Printing",
+      "Copies",
+      "Readers"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/k12/social-studies",
+    "slides": [
+      {
+        "title": "Multiple histories",
+        "text": "Printing techniques developed in different societies. East Asian traditions included woodblock and movable-type printing before Gutenberg's European press.",
+        "label": "Origins",
+        "art": "network"
+      },
+      {
+        "title": "Repeatable production",
+        "text": "Movable type and mechanical printing could reproduce texts at scale under suitable economic and technical conditions.",
+        "label": "Production",
+        "art": "scales"
+      },
+      {
+        "title": "Access and institutions",
+        "text": "Printing affected religious debates, scholarship, administration and commerce. Literacy and access remained uneven.",
+        "label": "Access",
+        "art": "timeline"
+      },
+      {
+        "title": "New information problems",
+        "text": "Easier reproduction spread accurate and inaccurate claims alike. Censorship, copyright and publishing institutions evolved in response.",
+        "label": "Consequences",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Did printing exist in East Asia before Gutenberg?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 0,
+        "why": "Woodblock and movable-type techniques had earlier East Asian histories."
+      },
+      {
+        "q": "Does cheaper reproduction guarantee accurate information?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "The technology can spread both reliable and unreliable material."
+      }
+    ]
+  },
+  {
+    "id": "archaeology",
+    "category": "Anthropology",
+    "title": "How archaeologists read the past",
+    "desc": "Discover material evidence, context and dating.",
+    "art": "network",
+    "diagram": [
+      "Artifact",
+      "Context",
+      "Date"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://library.si.edu/topic",
+    "slides": [
+      {
+        "title": "Material traces",
+        "text": "Artifacts, structures, environmental remains and human-made changes can provide evidence about past activities.",
+        "label": "Evidence",
+        "art": "network"
+      },
+      {
+        "title": "Context matters",
+        "text": "An object's location and relationships with surrounding material help interpret it. Removing it without documentation can destroy information.",
+        "label": "Context",
+        "art": "scales"
+      },
+      {
+        "title": "Dating methods",
+        "text": "Relative dating establishes sequences; methods such as radiocarbon dating estimate ages for suitable materials under specific assumptions.",
+        "label": "Dating",
+        "art": "timeline"
+      },
+      {
+        "title": "Interpretation and ethics",
+        "text": "Archaeological conclusions can change with new evidence. Work should respect legal requirements, communities and cultural heritage.",
+        "label": "Ethics",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Why document where an artifact was found?",
+        "options": [
+          "Its context can reveal relationships and use",
+          "Location is never relevant",
+          "It makes the artifact newer"
+        ],
+        "correct": 0,
+        "why": "Context is central to archaeological interpretation."
+      },
+      {
+        "q": "Can radiocarbon dating directly date every kind of object?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 1,
+        "why": "It applies to appropriate carbon-bearing materials and conditions."
+      }
+    ]
+  },
+  {
+    "id": "supply-chains",
+    "category": "Systems & Logistics",
+    "title": "How products reach the shelf",
+    "desc": "Understand the networks behind everyday goods.",
+    "art": "network",
+    "diagram": [
+      "Supplier",
+      "Production",
+      "Delivery"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/k12/cte",
+    "slides": [
+      {
+        "title": "A connected network",
+        "text": "Supply chains include suppliers, production, storage, transport and customers. Information and money flow alongside goods.",
+        "label": "Network",
+        "art": "network"
+      },
+      {
+        "title": "Lead time",
+        "text": "Lead time is the interval between initiating a process or order and its completion. Delays can propagate through dependent activities.",
+        "label": "Lead time",
+        "art": "scales"
+      },
+      {
+        "title": "Buffers and trade-offs",
+        "text": "Inventory and backup suppliers can reduce certain disruption risks, but they carry costs. Optimal buffers depend on demand and uncertainty.",
+        "label": "Buffers",
+        "art": "timeline"
+      },
+      {
+        "title": "The bullwhip effect",
+        "text": "Small shifts in consumer demand can produce larger order fluctuations upstream when participants react to incomplete information.",
+        "label": "Feedback",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "What is lead time?",
+        "options": [
+          "Time from initiation to completion",
+          "The total price of a product",
+          "The number of employees"
+        ],
+        "correct": 0,
+        "why": "Lead time describes elapsed time across a process."
+      },
+      {
+        "q": "Why maintain a buffer?",
+        "options": [
+          "To reduce exposure to some disruptions",
+          "To eliminate all costs",
+          "To ensure demand never changes"
+        ],
+        "correct": 0,
+        "why": "Buffers can absorb variability, at a cost."
+      }
+    ]
+  },
+  {
+    "id": "systems-thinking",
+    "category": "Systems & Logistics",
+    "title": "Thinking in feedback loops",
+    "desc": "Understand why systems respond in unexpected ways.",
+    "art": "network",
+    "diagram": [
+      "Input",
+      "Feedback",
+      "Outcome"
+    ],
+    "difficulty": "Beginner",
+    "format": "Course",
+    "source": "https://openstax.org/k12/cte",
+    "slides": [
+      {
+        "title": "Connections matter",
+        "text": "A system contains interacting elements. Changing one part can alter behavior elsewhere, sometimes after a delay.",
+        "label": "Connections",
+        "art": "network"
+      },
+      {
+        "title": "Reinforcing loops",
+        "text": "A reinforcing loop amplifies a change. For example, accumulated positive returns can increase the amount earning future returns.",
+        "label": "Reinforcement",
+        "art": "scales"
+      },
+      {
+        "title": "Balancing loops",
+        "text": "A balancing loop counteracts deviation. A thermostat can turn heating on when temperature falls below a chosen setpoint.",
+        "label": "Balance",
+        "art": "timeline"
+      },
+      {
+        "title": "Delays and boundaries",
+        "text": "Feedback may arrive late, causing overshoot or instability. Define what is inside the system and what assumptions are being made.",
+        "label": "Delays",
+        "art": "growth"
+      }
+    ],
+    "questions": [
+      {
+        "q": "Which is an example of balancing feedback?",
+        "options": [
+          "A thermostat responding to a temperature gap",
+          "Unbounded compound growth",
+          "A disconnected switch"
+        ],
+        "correct": 0,
+        "why": "The response counteracts a deviation from a target."
+      },
+      {
+        "q": "Can delays make feedback harder to manage?",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "correct": 0,
+        "why": "Delayed responses may cause overcorrection or oscillation."
+      }
+    ]
+  }
+]);
 const K='lumen-v1', day=(t=Date.now())=>{const d=new Date(t);return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')};
 const fresh=()=>({theme:'light',goal:10,interests:[],onboarded:false,progress:{},saved:{},notes:{},review:{},activity:{},custom:[],attempts:0,correct:0});
 let state=fresh();try{const s=JSON.parse(localStorage.getItem(K));if(s&&typeof s==='object')state={...fresh(),...s};}catch(e){}
