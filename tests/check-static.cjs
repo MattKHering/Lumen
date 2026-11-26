@@ -55,8 +55,11 @@ assert.equal(catalog.filter(c=>c.format==='Quick read').length,4);
 assert.equal(new Set(catalog.map(c=>c.category)).size,68);
 assert.equal(vm.runInContext('experienceEntries().length', context),100);
 const revised = catalog.filter(c=>c.editorialRevision);
-assert.equal(revised.filter(c=>c.format==='Course').length,248);
+assert.equal(revised.filter(c=>c.format==='Course').length,268);
 assert.equal(context.window.LumenQualityBatch6.length,39);
+assert.equal(context.window.LumenQualityBatch7.length,20);
+assert.equal(context.window.LumenQualityBatch8.length,20);
+for(const row of context.window.LumenQualityBatch8){const art=context.window.LumenQualityArt(byId.get(row[0]));assert(art.includes('<svg')&&art.includes('<desc>'),row[0]+' diagram');}
 assert.equal(context.window.LumenQualityBatch5.length,38);
 assert.equal(revised.filter(c=>c.format==='Quick read').length,2);
 assert.equal(context.window.LumenQualityBatch4.length,37);
@@ -68,7 +71,7 @@ for(const c of revised) {
   assert(c.questions.every(q=>q.q && q.why && q.options.length===3 && new Set(q.options).size===3 && Number.isInteger(q.correct) && q.correct>=0 && q.correct<3),c.id);
   assert(c.source.startsWith('https://'),c.id);
 }
-for (const cat of ['Physics','Computer Science','Psychology','Finance','Health','Mathematics','Statistics','Cybersecurity','Financial Literacy','Biology','Chemistry','Astronomy']) {
+for (const cat of ['Physics','Computer Science','Psychology','Finance','Health','Mathematics','Statistics','Cybersecurity','Financial Literacy','Biology','Chemistry','Astronomy','Earth Science']) {
   const list = catalog.filter(c=>c.category===cat&&c.format==='Course');
   assert.equal(list.length,20,cat);
   for (const [level,count] of [['Beginner',10],['Intermediate',6],['Advanced',4]]) {
@@ -82,7 +85,7 @@ for (const [id,related] of Object.entries(prerequisites)) {
   assert(byId.has(id),id);
   assert(related.every(x=>x!==id&&byId.has(x)),id+' related IDs');
 }
-console.log('Catalog, 250 revised titles, 12 guided paths, and background references passed.');
+console.log('Catalog, 270 revised titles, 13 guided paths, and background references passed.');
 
 assert.equal(context.window.LumenAccounts.enabled(),false,'Accounts must be disabled on public main');
 assert.equal(context.window.LumenAccountConfig.enabled,false);
