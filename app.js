@@ -11953,7 +11953,7 @@ function plusArt(c,cls='cover',step=-1){
 
 /* Content revisions retain stable course IDs and question positions. */
 const qualityRevision='2026-11-25.1';
-const qualityRows=[...(window.LumenQualityReviewed||[]).map(row=>[qualityRevision,row]),...(window.LumenQualityNext||[]).map(row=>['2026-11-25.2',row]),...(window.LumenQualityBatch3||[]).map(row=>['2026-11-25.3',row]),...(window.LumenQualityBatch4||[]).map(row=>['2026-11-26.1',row]),...(window.LumenQualityBatch5||[]).map(row=>['2026-11-26.2',row]),...(window.LumenQualityBatch6||[]).map(row=>['2026-11-26.3',row])];
+const qualityRows=[...(window.LumenQualityReviewed||[]).map(row=>[qualityRevision,row]),...(window.LumenQualityNext||[]).map(row=>['2026-11-25.2',row]),...(window.LumenQualityBatch3||[]).map(row=>['2026-11-25.3',row]),...(window.LumenQualityBatch4||[]).map(row=>['2026-11-26.1',row]),...(window.LumenQualityBatch5||[]).map(row=>['2026-11-26.2',row]),...(window.LumenQualityBatch6||[]).map(row=>['2026-11-26.3',row]),...(window.LumenQualityBatch7||[]).map(row=>['2026-11-26.4',row])];
 for(const [revision,[id,difficulty,source,...parts]] of qualityRows){
  const c=courses.find(x=>x.id===id);if(!c)throw Error('Unknown revised course: '+id);
  if(parts.length!==6)throw Error('Malformed revised lesson: '+id);

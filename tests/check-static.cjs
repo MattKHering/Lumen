@@ -55,7 +55,7 @@ assert.equal(catalog.filter(c=>c.format==='Quick read').length,4);
 assert.equal(new Set(catalog.map(c=>c.category)).size,68);
 assert.equal(vm.runInContext('experienceEntries().length', context),100);
 const revised = catalog.filter(c=>c.editorialRevision);
-assert.equal(revised.filter(c=>c.format==='Course').length,228);
+assert.equal(revised.filter(c=>c.format==='Course').length,238);
 assert.equal(context.window.LumenQualityBatch6.length,39);
 assert.equal(context.window.LumenQualityBatch5.length,38);
 assert.equal(revised.filter(c=>c.format==='Quick read').length,2);
@@ -82,7 +82,7 @@ for (const [id,related] of Object.entries(prerequisites)) {
   assert(byId.has(id),id);
   assert(related.every(x=>x!==id&&byId.has(x)),id+' related IDs');
 }
-console.log('Catalog, 230 revised titles, 11 guided paths, and background references passed.');
+console.log('Catalog, 240 revised titles, 11 guided paths, and background references passed.');
 
 assert.equal(context.window.LumenAccounts.enabled(),false,'Accounts must be disabled on public main');
 assert.equal(context.window.LumenAccountConfig.enabled,false);
