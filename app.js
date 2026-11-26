@@ -11953,7 +11953,7 @@ function plusArt(c,cls='cover',step=-1){
 
 /* Content revisions retain stable course IDs and question positions. */
 const qualityRevision='2026-11-25.1';
-const qualityRows=[...(window.LumenQualityReviewed||[]).map(row=>[qualityRevision,row]),...(window.LumenQualityNext||[]).map(row=>['2026-11-25.2',row]),...(window.LumenQualityBatch3||[]).map(row=>['2026-11-25.3',row]),...(window.LumenQualityBatch4||[]).map(row=>['2026-11-26.1',row])];
+const qualityRows=[...(window.LumenQualityReviewed||[]).map(row=>[qualityRevision,row]),...(window.LumenQualityNext||[]).map(row=>['2026-11-25.2',row]),...(window.LumenQualityBatch3||[]).map(row=>['2026-11-25.3',row]),...(window.LumenQualityBatch4||[]).map(row=>['2026-11-26.1',row]),...(window.LumenQualityBatch5||[]).map(row=>['2026-11-26.2',row])];
 for(const [revision,[id,difficulty,source,...parts]] of qualityRows){
  const c=courses.find(x=>x.id===id);if(!c)throw Error('Unknown revised course: '+id);
  if(parts.length!==6)throw Error('Malformed revised lesson: '+id);
@@ -12119,6 +12119,28 @@ Object.assign(prerequisites,{
  'depth-statistics-what-regression-models-describe':['correlation','plus-statistics-why-residual-plots-are-useful'],
  'plus-statistics-understanding-interaction-effects':['depth-statistics-what-regression-models-describe'],
  'plus-statistics-how-multiple-comparisons-create-false-positives':['depth-statistics-how-hypothesis-tests-work','probability']
+});
+for(const cat of ['Cybersecurity','Financial Literacy']){
+ subjectPaths[cat]=courses.filter(c=>c.category===cat&&c.format==='Course').sort((a,b)=>['Beginner','Intermediate','Advanced'].indexOf(a.difficulty)-['Beginner','Intermediate','Advanced'].indexOf(b.difficulty)).map(c=>c.id);
+}
+Object.assign(prerequisites,{
+ 'depth-cybersecurity-what-multifactor-authentication-protects':['passwords','cyber-safety'],
+ 'depth-cybersecurity-understanding-ransomware-defense':['depth-cybersecurity-why-backups-must-be-tested','depth-cybersecurity-how-software-patches-reduce-risk'],
+ 'plus-cybersecurity-how-access-reviews-reduce-risk':['depth-cybersecurity-the-principle-of-least-privilege'],
+ 'plus-cybersecurity-what-security-segmentation-achieves':['depth-cybersecurity-understanding-secure-network-connections','depth-cybersecurity-the-principle-of-least-privilege'],
+ 'plus-cybersecurity-what-an-incident-response-plan-contains':['depth-cybersecurity-how-security-logs-help-investigations','depth-cybersecurity-understanding-ransomware-defense'],
+ 'plus-cybersecurity-understanding-threat-modeling':['plus-cybersecurity-what-security-segmentation-achieves','plus-cybersecurity-why-asset-inventories-matter'],
+ 'plus-cybersecurity-understanding-session-security':['depth-cybersecurity-what-multifactor-authentication-protects','depth-cybersecurity-understanding-secure-network-connections'],
+ 'plus-cybersecurity-how-vulnerability-prioritization-works':['depth-cybersecurity-how-software-patches-reduce-risk','plus-cybersecurity-why-asset-inventories-matter'],
+ 'plus-cybersecurity-what-a-security-baseline-does':['plus-cybersecurity-how-secure-defaults-help','plus-cybersecurity-how-access-reviews-reduce-risk'],
+ 'plus-financial-literacy-how-overdrafts-happen':['plus-financial-literacy-how-checking-accounts-settle-payments'],
+ 'depth-financial-literacy-how-loan-amortization-works':['depth-financial-literacy-why-apr-and-apy-differ'],
+ 'depth-financial-literacy-how-credit-card-interest-accumulates':['depth-financial-literacy-why-apr-and-apy-differ','credit'],
+ 'plus-financial-literacy-understanding-credit-utilization':['credit'],
+ 'plus-financial-literacy-how-a-deductible-differs-from-a-premium':['insurance'],
+ 'plus-financial-literacy-how-to-compare-fixed-and-variable-interest':['depth-financial-literacy-how-loan-amortization-works','depth-financial-literacy-comparing-total-borrowing-cost'],
+ 'plus-financial-literacy-what-loan-to-value-means':['depth-financial-literacy-how-loan-amortization-works'],
+ 'depth-financial-literacy-understanding-retirement-accounts':['depth-financial-literacy-building-an-emergency-fund','plus-financial-literacy-what-beneficiaries-do-in-financial-accounts']
 });
 function subjectPathUI(cat){
  const list=(subjectPaths[cat]||[]).map(get).filter(Boolean);if(!list.length)return '';
