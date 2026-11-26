@@ -112,6 +112,9 @@ h1{font-size:clamp(43px,5.2vw,70px);letter-spacing:-.055em}h2{font-size:clamp(27
 <script src="./quality-reviewed-02.js"></script>
 <script src="./quality-physics.js"></script>
 <script src="./quality-computer-science.js"></script>
+<script src="./quality-psychology.js"></script>
+<script src="./quality-finance.js"></script>
+<script src="./quality-health.js"></script>
 <script src="./quality-visuals.js"></script>
 <script>
 'use strict';
@@ -12068,7 +12071,7 @@ function plusArt(c,cls='cover',step=-1){
 
 /* Content revisions retain stable course IDs and question positions. */
 const qualityRevision='2026-11-25.1';
-const qualityRows=[...(window.LumenQualityReviewed||[]).map(row=>[qualityRevision,row]),...(window.LumenQualityNext||[]).map(row=>['2026-11-25.2',row])];
+const qualityRows=[...(window.LumenQualityReviewed||[]).map(row=>[qualityRevision,row]),...(window.LumenQualityNext||[]).map(row=>['2026-11-25.2',row]),...(window.LumenQualityBatch3||[]).map(row=>['2026-11-25.3',row])];
 for(const [revision,[id,difficulty,source,...parts]] of qualityRows){
  const c=courses.find(x=>x.id===id);if(!c)throw Error('Unknown revised course: '+id);
  if(parts.length!==6)throw Error('Malformed revised lesson: '+id);
@@ -12186,6 +12189,30 @@ function renderCourseComplete(){const c=get(session.id);lesson.innerHTML='<div c
 
 const subjectPaths={"Physics":["motion","depth-physics-how-friction-changes-motion","depth-physics-energy-and-work","depth-physics-why-objects-float","heat","plus-physics-what-heat-capacity-means","plus-physics-how-phase-transitions-absorb-energy","waves","electricity","plus-physics-how-electric-fields-act-on-charges","plus-physics-understanding-relative-motion","depth-physics-how-momentum-works","depth-physics-understanding-rotational-motion","plus-physics-how-springs-store-elastic-energy","plus-physics-why-sound-changes-pitch-with-motion","plus-physics-how-lenses-bend-light","depth-physics-how-pressure-works-in-fluids","plus-physics-how-oscillations-transfer-energy","plus-physics-understanding-electromagnetic-induction","plus-physics-why-interference-creates-patterns"],"Computer Science":["binary","depth-computer-science-how-programming-functions-work","algorithms","depth-computer-science-how-data-structures-organize-work","operating-systems","databases","depth-computer-science-why-networks-use-protocols","compression","depth-computer-science-how-software-testing-finds-defects","plus-computer-science-how-version-control-merges-changes","depth-computer-science-understanding-recursion","plus-computer-science-how-stacks-and-queues-differ","plus-computer-science-how-hash-tables-find-records","plus-computer-science-how-indexes-speed-database-queries","plus-computer-science-what-caching-trades-for-speed","plus-computer-science-how-processes-and-threads-differ","plus-computer-science-understanding-time-complexity","plus-computer-science-why-balanced-search-trees-help","plus-computer-science-how-transactions-prevent-partial-updates","plus-computer-science-why-deadlocks-occur"]};
 const prerequisites={"depth-physics-how-momentum-works":["motion","depth-physics-energy-and-work"],"depth-physics-understanding-rotational-motion":["motion","depth-physics-how-momentum-works"],"plus-physics-how-springs-store-elastic-energy":["depth-physics-energy-and-work"],"plus-physics-how-oscillations-transfer-energy":["motion","plus-physics-how-springs-store-elastic-energy"],"plus-physics-understanding-electromagnetic-induction":["electricity","plus-physics-how-electric-fields-act-on-charges"],"plus-physics-why-interference-creates-patterns":["waves"],"plus-physics-why-sound-changes-pitch-with-motion":["waves","plus-physics-understanding-relative-motion"],"depth-physics-how-pressure-works-in-fluids":["depth-physics-why-objects-float","depth-physics-energy-and-work"],"plus-physics-how-phase-transitions-absorb-energy":["plus-physics-what-heat-capacity-means"],"depth-computer-science-understanding-recursion":["depth-computer-science-how-programming-functions-work"],"plus-computer-science-how-stacks-and-queues-differ":["depth-computer-science-how-data-structures-organize-work"],"plus-computer-science-how-hash-tables-find-records":["depth-computer-science-how-data-structures-organize-work"],"plus-computer-science-why-balanced-search-trees-help":["algorithms","plus-computer-science-understanding-time-complexity"],"plus-computer-science-understanding-time-complexity":["algorithms","depth-computer-science-understanding-recursion"],"plus-computer-science-how-indexes-speed-database-queries":["databases","algorithms"],"plus-computer-science-how-transactions-prevent-partial-updates":["databases","plus-computer-science-how-processes-and-threads-differ"],"plus-computer-science-why-deadlocks-occur":["plus-computer-science-how-processes-and-threads-differ"],"plus-computer-science-how-processes-and-threads-differ":["operating-systems"],"plus-computer-science-what-caching-trades-for-speed":["depth-computer-science-why-networks-use-protocols"]};
+for(const cat of ['Psychology','Finance','Health']){
+ const ids=(window.LumenQualityBatch3||[]).map(row=>row[0]);
+ subjectPaths[cat]=ids.filter(id=>{const c=courses.find(x=>x.id===id);return c?.category===cat&&c.format==='Course'});
+}
+Object.assign(prerequisites,{
+ 'plus-psychology-how-confirmation-bias-affects-belief-updating':['bias','plus-psychology-understanding-the-availability-heuristic'],
+ 'plus-psychology-why-framing-can-change-decisions':['bias'],
+ 'plus-psychology-understanding-cognitive-dissonance':['motivation','plus-psychology-why-people-infer-causes-differently'],
+ 'plus-psychology-how-expectations-affect-perception':['attention','bias'],
+ 'plus-psychology-understanding-the-spacing-effect':['memory'],
+ 'plus-psychology-why-social-comparison-affects-self-evaluation':['social-proof','happiness'],
+ 'plus-psychology-what-emotional-regulation-involves':['emotion'],
+ 'plus-finance-how-index-funds-track-markets':['stockmarket','diversification'],
+ 'plus-finance-why-rebalancing-changes-portfolio-risk':['depth-finance-understanding-asset-allocation'],
+ 'plus-finance-understanding-risk-adjusted-returns':['investing','plus-finance-understanding-investment-drawdowns'],
+ 'plus-finance-how-duration-relates-to-bond-sensitivity':['depth-finance-understanding-bond-prices'],
+ 'plus-finance-how-inflation-linked-bonds-differ':['depth-finance-understanding-bond-prices','depth-finance-inflation-and-real-returns'],
+ 'plus-finance-why-sequence-of-returns-matters':['compound','plus-finance-understanding-investment-drawdowns'],
+ 'plus-health-how-caffeine-affects-alertness':['sleep','plus-health-how-sleep-pressure-builds'],
+ 'plus-health-understanding-exercise-recovery':['depth-health-how-physical-activity-supports-health','sleep'],
+ 'plus-health-why-health-screening-can-produce-false-alarms':['depth-health-what-preventive-care-means'],
+ 'plus-health-how-energy-balance-relates-to-weight':['nutrition','depth-health-reading-nutrition-labels'],
+ 'plus-health-what-blood-cholesterol-measures':['nutrition']
+});
 function subjectPathUI(cat){
  const list=(subjectPaths[cat]||[]).map(get).filter(Boolean);if(!list.length)return '';
  const passed=list.filter(c=>checkResult(c)?.correct===c.questions.length).length, unread=list.filter(c=>!progress(c.id).done),ordered=unread.slice().sort((a,b)=>knowledgeRank(b)-knowledgeRank(a)), nextCourse=ordered[0];

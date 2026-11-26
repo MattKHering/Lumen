@@ -37,3 +37,11 @@ Physics and Computer Science each now have 20 editorially revised courses, with 
 Account preparation: `supabase/schema.sql` defines per-user row-level security and a revision guard; `supabase/SETUP.md` documents project configuration, client-side synchronization requirements and release tests. The schema has not been deployed, and authentication and cloud sync are not active. Guest access remains unchanged.
 
 Next: Psychology, Finance and Health, then remaining subjects. 1,287 full courses and four quick reads have not yet received a complete editorial rewrite. The global 50/30/20 target remains incomplete.
+
+### Subject-by-subject overhaul — batch 2026-11-25.3
+
+Psychology, Finance and Health each have 20 revised full courses (10 Beginner, 6 Intermediate, 4 Advanced); the Health sleep quick read is also revised. The 61 revisions include eight previously revised full courses, bringing unique editorial coverage to 115 of 1,350 full courses and one of four quick reads. Stable IDs and reading progress are retained; old knowledge checks for these revised lessons are not counted as current passes. The three subjects have optional guided paths, related background links and new worked examples and assessment explanations. Sources are educational reference starting points, not independent claim-by-claim verification.
+
+Pages now stages all root JavaScript assets, and a catalog regression test checks the staged files, script syntax, course counts, unique IDs, revision structure, difficulty balance, guided paths and related course references. Run `node tests/check-static.cjs .` locally. Real-browser/device testing and independent factual review remain outstanding.
+
+Remaining: 1,235 full courses and three quick reads need editorial revisions; overall difficulty target, further course-specific visuals, and the account frontend and live Supabase configuration are not complete. Guest mode remains available.
