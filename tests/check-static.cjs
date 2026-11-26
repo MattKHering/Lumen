@@ -26,6 +26,10 @@ for (const [, attrs, inline] of scripts) {
     const pathEnd = inline.indexOf('function subjectPathUI(cat){');
     assert(pathStart > start && pathEnd > pathStart, 'Path boundary missing');
     new vm.Script(inline.slice(pathStart, pathEnd), {filename:'guided paths'}).runInContext(context, {timeout:10000});
+    const xpStart=inline.indexOf('const originalExperiences=[');
+    const xpEnd=inline.indexOf('function filteredExperiences(){');
+    assert(xpStart>start && xpEnd>xpStart, 'Experience boundary missing');
+    new vm.Script(inline.slice(xpStart,xpEnd), {filename:'experience catalog'}).runInContext(context, {timeout:10000});
   }
 }
 for (const file of ['manifest.webmanifest', 'icon.svg', '.nojekyll']) {
@@ -41,7 +45,7 @@ assert.equal(byId.size, catalog.length, 'Duplicate course ID');
 assert.equal(catalog.filter(c=>c.format==='Course').length,1350);
 assert.equal(catalog.filter(c=>c.format==='Quick read').length,4);
 assert.equal(new Set(catalog.map(c=>c.category)).size,68);
-assert.equal(context.window.LumenExperiences.all.length,100);
+assert.equal(vm.runInContext('experienceEntries().length', context),100);
 const revised = catalog.filter(c=>c.editorialRevision);
 assert.equal(revised.filter(c=>c.format==='Course').length,115);
 assert.equal(revised.filter(c=>c.format==='Quick read').length,1);
