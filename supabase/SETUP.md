@@ -1,6 +1,6 @@
 # Lumen accounts — deployment checklist
 
-Status: design and SQL migration prepared; authentication and sync are **not enabled**.
+Status: SQL migration and disabled account frontend prepared; authentication and sync are **not enabled**. The pilot is not approved for public use until integration and security tests pass.
 
 ## Owner setup
 
@@ -17,7 +17,7 @@ Official references:
 - https://supabase.com/docs/guides/auth/auth-smtp
 - https://supabase.com/docs/guides/api/api-keys
 
-## Frontend integration (not implemented yet)
+## Frontend pilot (implemented, disabled and not live-tested)
 
 - Offer sign in, register, verify email, recover password, sign out, and continue as guest. Use Supabase Auth; do not implement password storage.
 - Keep guest and each signed-in account in separate local-storage namespaces. Never show a previous user's private notes when another user signs in.
@@ -38,3 +38,9 @@ Official references:
 - Concurrent changes, offline recovery, migration, account switching, and actual account deletion are tested.
 - Rate limits, email delivery and error reporting are configured.
 - SQL has been drafted but not executed or validated against a live Supabase instance.
+
+## Pilot activation — development only
+
+Keep `account-config.js` disabled on main until all release tests pass. On an isolated development branch, vendor the reviewed, exact-version official Supabase JS v2 browser UMD bundle as `supabase-client.js` (the module loads it only when enabled). Record its exact version, checksum and license; do not use a floating CDN version. Set the HTTPS project URL and public `sb_publishable_...` key in `account-config.js`. Set `enabled: true` only against the isolated test project. The frontend uses sessionStorage for the SDK session, verifies the authenticated email user before loading account data, keeps the guest profile untouched and uses per-account local cache keys. Sync requires a manual action or explicit automatic-sync opt-in; local/remote conflicts require an explicit choice. Custom lesson definitions and their related records stay local; guest imports exclude them. Account-specific local data remains on the device after sign-out. A production forget-device flow, account deletion service, retention policy, and real-device and two-account security testing are still required; do not enable public registration before those are complete.
+
+Check the pilot in a real browser with two independent accounts, separate browser profiles and concurrent writes. The catalog tests validate default-off behavior and payload/optimistic revision logic with fake clients only. They do not validate a live Supabase deployment.

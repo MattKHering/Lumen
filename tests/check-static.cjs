@@ -72,3 +72,27 @@ for (const [id,related] of Object.entries(prerequisites)) {
   assert(related.every(x=>x!==id&&byId.has(x)),id+' related IDs');
 }
 console.log('Catalog, 116 revised titles, 5 guided paths, and background references passed.');
+
+assert.equal(context.window.LumenAccounts.enabled(),false,'Accounts must be disabled on public main');
+assert.equal(context.window.LumenAccounts.isActive(),false);
+const accountCore=context.window.LumenAccounts;
+context.TextEncoder=TextEncoder;
+const baseProfile={theme:'dark',goal:10,interests:['Physics'],onboarded:true,progress:{motion:{step:0,done:true}},saved:{},notes:{'motion:s0':'A note'},review:{},activity:{},knowledge:{},attempts:2,correct:1,custom:[{id:'custom-1'}],secret:'do not copy'};
+const cloud=accountCore.payload(baseProfile,catalog);
+assert.equal(cloud.theme,'dark');assert.equal(cloud.notes['motion:s0'],'A note');assert.equal(cloud.progress.motion.done,true);
+assert.equal('custom' in cloud,false);assert.equal('secret' in cloud,false);
+assert.throws(()=>accountCore.payload({...baseProfile,correct:3},catalog),/quiz totals/);
+assert.throws(()=>accountCore.payload({...baseProfile,schemaVersion:2},catalog),/schema version/);
+assert.throws(()=>accountCore.payload({...baseProfile,notes:{'motion:s0':'x'.repeat(20001)}},catalog),/note length/);
+(async()=>{
+ const filters=[];let written;
+ const table={update(x){written=x;return this},insert(x){written=x;return this},eq(k,v){filters.push([k,v]);return this},select(){return this},async maybeSingle(){return {data:{revision:written.revision},error:null}}};
+ const client={from(name){assert.equal(name,'learning_profiles');return table}};
+ const result=await accountCore.saveRemote(client,'account-a',7,cloud);
+ assert.equal(result.revision,8);assert.deepEqual(filters,[['user_id','account-a'],['revision',7]]);assert.equal(written.revision,8);
+ table.maybeSingle=async()=>({data:null,error:null});
+ assert.equal((await accountCore.saveRemote(client,'account-a',7,cloud)).conflict,true);
+ table.maybeSingle=async()=>({data:null,error:{code:'23505'}});
+ assert.equal((await accountCore.saveRemote(client,'account-a',null,cloud)).conflict,true);
+ console.log('Disabled account pilot, payload allowlist, and mocked revision guards passed.');
+})().catch(e=>{console.error(e);process.exitCode=1});

@@ -45,3 +45,7 @@ Psychology, Finance and Health each have 20 revised full courses (10 Beginner, 6
 Pages now stages all root JavaScript assets, and a catalog regression test checks the staged files, script syntax, course counts, unique IDs, revision structure, difficulty balance, guided paths and related course references. Run `node tests/check-static.cjs .` locally. Real-browser/device testing and independent factual review remain outstanding.
 
 Remaining: 1,235 full courses and three quick reads need editorial revisions; overall difficulty target, further course-specific visuals, and the account frontend and live Supabase configuration are not complete. Guest mode remains available.
+
+### Account pilot and illustrations
+
+The default-off `account-config.js` and `accounts.js` provide a pilot sign-in/register/recovery UI, separate account caches, explicit guest import, manual and opt-in debounced cloud saves, and guarded revision conflict handling. The SDK is not vendored and no project configuration is present; no auth requests occur in guest mode. Live backend, complete privacy/deletion flows and real-browser security testing are outstanding. See `supabase/SETUP.md` before enabling. Screening and rebalancing illustrations were corrected to match the revised lessons, and three new worked-example diagrams were added.
