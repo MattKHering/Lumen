@@ -57,3 +57,5 @@ GitHub Pages remains guest-only. A restrictive CSP blocks backend connections, r
 ### Local learning profiles
 
 Profile → Local learning profiles supports creating and unlocking independent, device-only learning profiles. No accounts are predefined and nothing is sent to a server. A unique 12+ character password derives an AES-GCM encryption key using Web Crypto PBKDF2-SHA-256 (600,000 iterations) and a random salt. Each save uses a fresh nonce. The username is visible in browser storage; progress is encrypted at rest, not protected from scripts while unlocked. Guest learning remains separate. Lock before sharing a device; export your data before closing a tab with pending saves. Clearing site data or forgetting the password can permanently lose the profile. Exports are readable JSON. Modern HTTPS browsers with Web Crypto and Web Locks are required. Cloud accounts remain disabled.
+
+Cloudflare family pilot: optional separate build command `node tests/stage-cloudflare.cjs`; requires explicit production configuration and remains invite-only. See supabase/SETUP.md. GitHub Pages remains local-only.

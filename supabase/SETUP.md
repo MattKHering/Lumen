@@ -56,3 +56,9 @@ Check the pilot in a real browser with two independent accounts, separate browse
 - Enable private vulnerability reporting and secret scanning/push protection if available in GitHub settings. Require admin MFA, and review deployment changes before merging.
 
 Official checklists: https://supabase.com/docs/guides/security/production-checklist and https://docs.github.com/en/actions/reference/security/secure-use
+
+## Cloudflare Pages family pilot
+
+The dedicated site is https://lumen-5dk.pages.dev. Leave the existing public build command unchanged until account configuration is ready. For a controlled pilot, change the Cloudflare **production** build command to `node tests/stage-cloudflare.cjs`, retain output directory `_site`, and set production build variables `LUMEN_ACCOUNT_PILOT=1` and `LUMEN_PUBLISHABLE_KEY` to the public publishable key. Keep preview builds guest-only. The script first validates the guest-only output, then generates account configuration only for Cloudflare main, downloads the exact version of the official SDK with package integrity checking and browser SRI, and writes restrictive HTTP headers. The SDK has not been independently code-audited or executed in a real browser in this environment. GitHub Pages remains on its original build command, with no configuration or backend access. The account panel is locked to the canonical HTTPS origin; local encrypted profiles are hidden in the pilot to avoid mixing local and cloud state.
+
+Set Supabase Site URL to https://lumen-5dk.pages.dev and its permitted redirect URL to https://lumen-5dk.pages.dev/ only. Disable self-service registration and anonymous sign-ins until the pilot is validated. Set up custom SMTP to email non-team members. Do not invite family as Supabase dashboard team members. Test on two dummy users before using real progress. No public sign-up is enabled by this build; changing the build command alone without the pilot variables does not enable accounts.
