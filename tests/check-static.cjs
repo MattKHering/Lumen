@@ -111,3 +111,26 @@ assert.throws(()=>accountCore.payload({...baseProfile,notes:{'motion:s0':'x'.rep
  assert.equal((await accountCore.saveRemote(client,'account-a',null,cloud)).conflict,true);
  console.log('Disabled account pilot, payload allowlist, and mocked revision guards passed.');
 })().catch(e=>{console.error(e);process.exitCode=1});
+
+const localSource=fs.readFileSync(path.join(root,'local-profiles.js'),'utf8');
+const localCtx=vm.createContext({window:{},crypto:require('node:crypto').webcrypto,TextEncoder,TextDecoder,Uint8Array,btoa,atob});
+new vm.Script(localSource).runInContext(localCtx);
+const local=localCtx.window.LumenLocalProfiles;
+assert.equal(local.validPassword('short'),false);
+assert.equal(local.validPassword('test-only-long-passphrase'),true);
+(async()=>{
+ const salt=localCtx.crypto.getRandomValues(new Uint8Array(16));
+ const pw='test-only-long-passphrase';
+ const key=await local.derive(pw,salt);
+ const profile={progress:{motion:{done:true}},notes:{'motion:s0':'example private note'}};
+ const raw=await local.seal(key,'Test profile',profile,salt);
+ assert(!raw.includes('example private note')&&!raw.includes(pw),'No cleartext profile or password in storage record');
+ const restored=await local.open('test profile',pw,raw);
+ assert.equal(restored.state.notes['motion:s0'],'example private note');
+ await assert.rejects(()=>local.open('test profile','wrong-test-passphrase',raw));
+ await assert.rejects(()=>local.open('other profile',pw,raw));
+ const modified=JSON.parse(raw);const data=Buffer.from(modified.ciphertext,'base64');data[0]^=1;modified.ciphertext=data.toString('base64');
+ await assert.rejects(()=>local.open('Test profile',pw,JSON.stringify(modified)));
+ assert.notEqual(JSON.parse(await local.seal(key,'Test profile',profile,salt)).iv,JSON.parse(raw).iv);
+ console.log('Local profile encryption, wrong-password, tamper and random IV tests passed.');
+})().catch(e=>{console.error(e);process.exitCode=1});
