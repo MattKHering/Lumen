@@ -11953,7 +11953,7 @@ function plusArt(c,cls='cover',step=-1){
 
 /* Content revisions retain stable course IDs and question positions. */
 const qualityRevision='2026-11-25.1';
-const qualityRows=[...(window.LumenQualityReviewed||[]).map(row=>[qualityRevision,row]),...(window.LumenQualityNext||[]).map(row=>['2026-11-25.2',row]),...(window.LumenQualityBatch3||[]).map(row=>['2026-11-25.3',row]),...(window.LumenQualityBatch4||[]).map(row=>['2026-11-26.1',row]),...(window.LumenQualityBatch5||[]).map(row=>['2026-11-26.2',row])];
+const qualityRows=[...(window.LumenQualityReviewed||[]).map(row=>[qualityRevision,row]),...(window.LumenQualityNext||[]).map(row=>['2026-11-25.2',row]),...(window.LumenQualityBatch3||[]).map(row=>['2026-11-25.3',row]),...(window.LumenQualityBatch4||[]).map(row=>['2026-11-26.1',row]),...(window.LumenQualityBatch5||[]).map(row=>['2026-11-26.2',row]),...(window.LumenQualityBatch6||[]).map(row=>['2026-11-26.3',row])];
 for(const [revision,[id,difficulty,source,...parts]] of qualityRows){
  const c=courses.find(x=>x.id===id);if(!c)throw Error('Unknown revised course: '+id);
  if(parts.length!==6)throw Error('Malformed revised lesson: '+id);
@@ -12141,6 +12141,33 @@ Object.assign(prerequisites,{
  'plus-financial-literacy-how-to-compare-fixed-and-variable-interest':['depth-financial-literacy-how-loan-amortization-works','depth-financial-literacy-comparing-total-borrowing-cost'],
  'plus-financial-literacy-what-loan-to-value-means':['depth-financial-literacy-how-loan-amortization-works'],
  'depth-financial-literacy-understanding-retirement-accounts':['depth-financial-literacy-building-an-emergency-fund','plus-financial-literacy-what-beneficiaries-do-in-financial-accounts']
+});
+for(const cat of ['Biology','Chemistry']){
+ subjectPaths[cat]=courses.filter(c=>c.category===cat&&c.format==='Course').sort((a,b)=>['Beginner','Intermediate','Advanced'].indexOf(a.difficulty)-['Beginner','Intermediate','Advanced'].indexOf(b.difficulty)).map(c=>c.id);
+}
+Object.assign(prerequisites,{
+ 'depth-biology-how-cells-divide':['dna'],
+ 'depth-biology-what-makes-a-cell-membrane-selective':['plus-biology-why-organelles-have-membranes'],
+ 'depth-biology-where-cells-obtain-usable-energy':['depth-biology-how-enzymes-speed-reactions','depth-biology-what-makes-a-cell-membrane-selective'],
+ 'photosynthesis':['depth-biology-where-cells-obtain-usable-energy'],
+ 'depth-biology-how-meiosis-creates-variation':['dna','depth-biology-how-cells-divide'],
+ 'depth-biology-how-ecosystems-recycle-nitrogen':['microbes','plus-biology-how-fungi-obtain-food'],
+ 'plus-biology-how-mutations-arise':['dna'],
+ 'plus-biology-how-cells-dispose-of-damaged-parts':['plus-biology-why-organelles-have-membranes','depth-biology-the-anatomy-of-a-protein'],
+ 'plus-biology-how-genes-are-switched-on':['dna','plus-biology-how-cells-send-chemical-messages'],
+ 'plus-biology-why-proteins-need-folding':['depth-biology-the-anatomy-of-a-protein'],
+ 'plus-biology-how-membranes-maintain-gradients':['depth-biology-what-makes-a-cell-membrane-selective','depth-biology-where-cells-obtain-usable-energy'],
+ 'plus-biology-how-populations-exchange-genes':['depth-biology-how-meiosis-creates-variation','plus-biology-how-mutations-arise'],
+ 'chem-bonds':['atoms','depth-chemistry-what-the-periodic-table-tells-us'],
+ 'depth-chemistry-how-concentration-changes-solutions':['plus-chemistry-what-a-mole-measures'],
+ 'plus-chemistry-why-water-dissolves-many-salts':['chem-bonds'],
+ 'plus-chemistry-why-molecules-have-different-shapes':['chem-bonds'],
+ 'plus-chemistry-understanding-intermolecular-forces':['plus-chemistry-why-molecules-have-different-shapes'],
+ 'plus-chemistry-how-gases-dissolve-in-liquids':['plus-chemistry-how-gas-pressure-arises','depth-chemistry-how-concentration-changes-solutions'],
+ 'depth-chemistry-understanding-chemical-equilibrium':['depth-chemistry-how-chemical-equations-conserve-matter','depth-chemistry-how-concentration-changes-solutions'],
+ 'plus-chemistry-how-buffers-resist-ph-changes':['ph-scale','depth-chemistry-understanding-chemical-equilibrium'],
+ 'plus-chemistry-why-reaction-rates-depend-on-temperature':['depth-chemistry-why-catalysts-change-reaction-rates'],
+ 'plus-chemistry-how-chromatography-separates-mixtures':['plus-chemistry-understanding-intermolecular-forces','plus-chemistry-why-water-dissolves-many-salts']
 });
 function subjectPathUI(cat){
  const list=(subjectPaths[cat]||[]).map(get).filter(Boolean);if(!list.length)return '';
