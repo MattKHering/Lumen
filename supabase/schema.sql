@@ -23,7 +23,7 @@ grant usage on schema lumen_private to authenticated;
 create or replace function lumen_private.verified_email_user()
 returns boolean
 language sql stable security definer set search_path = ''
-as $
+as $verified_email$
   select exists (
     select 1 from auth.users u
     where u.id = (select auth.uid())
@@ -32,7 +32,7 @@ as $
       and coalesce(u.is_anonymous, false) = false
       and (u.banned_until is null or u.banned_until <= now())
   );
-$;
+$verified_email$;
 revoke all on function lumen_private.verified_email_user() from public, anon, authenticated;
 grant execute on function lumen_private.verified_email_user() to authenticated;
 
