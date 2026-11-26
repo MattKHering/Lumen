@@ -11953,7 +11953,7 @@ function plusArt(c,cls='cover',step=-1){
 
 /* Content revisions retain stable course IDs and question positions. */
 const qualityRevision='2026-11-25.1';
-const qualityRows=[...(window.LumenQualityReviewed||[]).map(row=>[qualityRevision,row]),...(window.LumenQualityNext||[]).map(row=>['2026-11-25.2',row]),...(window.LumenQualityBatch3||[]).map(row=>['2026-11-25.3',row])];
+const qualityRows=[...(window.LumenQualityReviewed||[]).map(row=>[qualityRevision,row]),...(window.LumenQualityNext||[]).map(row=>['2026-11-25.2',row]),...(window.LumenQualityBatch3||[]).map(row=>['2026-11-25.3',row]),...(window.LumenQualityBatch4||[]).map(row=>['2026-11-26.1',row])];
 for(const [revision,[id,difficulty,source,...parts]] of qualityRows){
  const c=courses.find(x=>x.id===id);if(!c)throw Error('Unknown revised course: '+id);
  if(parts.length!==6)throw Error('Malformed revised lesson: '+id);
@@ -12094,6 +12094,31 @@ Object.assign(prerequisites,{
  'plus-health-why-health-screening-can-produce-false-alarms':['depth-health-what-preventive-care-means'],
  'plus-health-how-energy-balance-relates-to-weight':['nutrition','depth-health-reading-nutrition-labels'],
  'plus-health-what-blood-cholesterol-measures':['nutrition']
+});
+for(const cat of ['Mathematics','Statistics']){
+ subjectPaths[cat]=courses.filter(c=>c.category===cat&&c.format==='Course').sort((a,b)=>['Beginner','Intermediate','Advanced'].indexOf(a.difficulty)-['Beginner','Intermediate','Advanced'].indexOf(b.difficulty)).map(c=>c.id);
+}
+Object.assign(prerequisites,{
+ 'depth-mathematics-how-ratios-and-proportions-work':['depth-mathematics-understanding-fractions'],
+ 'depth-mathematics-reading-linear-equations':['depth-mathematics-what-functions-describe'],
+ 'logarithms':['depth-mathematics-how-exponential-growth-works'],
+ 'trigonometry':['depth-mathematics-how-ratios-and-proportions-work','plus-mathematics-understanding-geometric-similarity'],
+ 'plus-mathematics-how-systems-of-equations-intersect':['depth-mathematics-reading-linear-equations'],
+ 'plus-mathematics-what-logarithmic-graphs-reveal':['logarithms','depth-mathematics-how-exponential-growth-works'],
+ 'plus-mathematics-how-quadratic-equations-model-motion':['depth-mathematics-what-functions-describe'],
+ 'plus-mathematics-understanding-conditional-probability':['probability'],
+ 'derivative':['depth-mathematics-reading-linear-equations','depth-mathematics-what-functions-describe'],
+ 'integral':['derivative','depth-mathematics-understanding-geometric-area'],
+ 'plus-mathematics-how-matrices-transform-coordinates':['plus-mathematics-understanding-vectors','plus-mathematics-how-systems-of-equations-intersect'],
+ 'plus-mathematics-reading-sequences-and-series':['depth-mathematics-how-exponential-growth-works'],
+ 'plus-statistics-understanding-standard-error':['depth-statistics-how-standard-deviation-measures-spread','plus-statistics-how-a-sampling-distribution-works'],
+ 'depth-statistics-understanding-confidence-intervals':['plus-statistics-understanding-standard-error','sampling'],
+ 'plus-statistics-how-confidence-levels-affect-intervals':['depth-statistics-understanding-confidence-intervals'],
+ 'depth-statistics-how-hypothesis-tests-work':['plus-statistics-how-a-sampling-distribution-works','depth-statistics-understanding-confidence-intervals'],
+ 'depth-statistics-understanding-statistical-power':['depth-statistics-how-hypothesis-tests-work','plus-statistics-understanding-standard-error'],
+ 'depth-statistics-what-regression-models-describe':['correlation','plus-statistics-why-residual-plots-are-useful'],
+ 'plus-statistics-understanding-interaction-effects':['depth-statistics-what-regression-models-describe'],
+ 'plus-statistics-how-multiple-comparisons-create-false-positives':['depth-statistics-how-hypothesis-tests-work','probability']
 });
 function subjectPathUI(cat){
  const list=(subjectPaths[cat]||[]).map(get).filter(Boolean);if(!list.length)return '';
