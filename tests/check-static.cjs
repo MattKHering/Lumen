@@ -5,7 +5,10 @@ const assert = require('node:assert/strict');
 const root = process.argv[2] || '.';
 const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
 const scripts = [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)];
-assert(scripts.length > 1, 'Expected external curriculum scripts and inline app');
+assert(scripts.length > 1, 'Expected external curriculum and app scripts');
+assert(html.includes("connect-src 'none'"),'Public site must not contact a backend');
+assert(html.includes("form-action 'none'"),'Public forms must not submit credentials');
+assert(html.includes("script-src 'self'"),'Public CSP must block inline and remote scripts');
 const context = vm.createContext({ window: {} });
 let count = 0;
 for (const [, attrs, inline] of scripts) {
@@ -15,10 +18,13 @@ for (const [, attrs, inline] of scripts) {
     const full = path.join(root, src);
     assert(fs.existsSync(full), 'Missing staged script: ' + src);
     const code = fs.readFileSync(full, 'utf8');
-    new vm.Script(code, { filename: full }).runInContext(context, { timeout: 10000 });
+    new vm.Script(code, { filename: full });
     count++;
-  } else {
-    new vm.Script(inline, { filename: 'index.html (inline script)' });
+    if (src !== './app.js') {
+      new vm.Script(code, { filename: full }).runInContext(context, { timeout: 10000 });
+      continue;
+    }
+    const inline = code;
     const start = inline.indexOf("const K='lumen-v1'");
     assert(start > 0, 'Catalog boundary missing');
     new vm.Script(inline.slice(0, start), { filename: 'catalog' }).runInContext(context, { timeout: 10000 });
@@ -30,6 +36,8 @@ for (const [, attrs, inline] of scripts) {
     const xpEnd=inline.indexOf('function filteredExperiences(){');
     assert(xpStart>start && xpEnd>xpStart, 'Experience boundary missing');
     new vm.Script(inline.slice(xpStart,xpEnd), {filename:'experience catalog'}).runInContext(context, {timeout:10000});
+  } else {
+    assert.fail('Inline JavaScript is forbidden by the public CSP');
   }
 }
 for (const file of ['manifest.webmanifest', 'icon.svg', '.nojekyll']) {
@@ -74,6 +82,13 @@ for (const [id,related] of Object.entries(prerequisites)) {
 console.log('Catalog, 116 revised titles, 5 guided paths, and background references passed.');
 
 assert.equal(context.window.LumenAccounts.enabled(),false,'Accounts must be disabled on public main');
+assert.equal(context.window.LumenAccountConfig.enabled,false);
+assert.equal(context.window.LumenAccountConfig.allowRegistration,false);
+for(const k of ['siteOrigin','url','publishableKey','sdkIntegrity'])assert.equal(context.window.LumenAccountConfig[k],'','Public config must be empty: '+k);
+const accountSource=fs.readFileSync(path.join(root,'accounts.js'),'utf8');
+const blocked=vm.createContext({window:{LumenAccountConfig:{enabled:true,siteOrigin:'https://example.github.io'}},location:{protocol:'https:',hostname:'example.github.io',origin:'https://example.github.io'}});
+new vm.Script(accountSource).runInContext(blocked);
+assert.equal(blocked.window.LumenAccounts.enabled(),false,'Never enable accounts on shared GitHub Pages origin');
 assert.equal(context.window.LumenAccounts.isActive(),false);
 const accountCore=context.window.LumenAccounts;
 context.TextEncoder=TextEncoder;

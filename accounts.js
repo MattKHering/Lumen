@@ -1,7 +1,7 @@
 /* Opt-in account pilot. No network or SDK loading while disabled. */
 (function(){
 'use strict';
-const config=window.LumenAccountConfig||{},enabled=config.enabled===true;
+const config=window.LumenAccountConfig||{},enabled=config.enabled===true && typeof location!=='undefined' && location.protocol==='https:' && !/(^|\.)github\.io$/i.test(location.hostname) && config.siteOrigin===location.origin;
 let api,adapter,account=null,authUser=null,busy=false,notice='',recovery=false,epoch=0,timer=null,writeInFlight=false;
 const levels=['Not specified','Beginner','Intermediate','Advanced','Expert'];
 const own=(o,k)=>Object.prototype.hasOwnProperty.call(o,k);
@@ -58,10 +58,10 @@ function withLocalCustom(remote,local){
  for(const key of ['progress','saved','notes','review'])for(const [id,v] of Object.entries(local?.[key]||{}))if(id.startsWith('custom-'))result[key][id]=v;
  return result;
 }
-function configValid(){return /^https:\/\/[a-z0-9-]+\.supabase\.co\/?$/.test(config.url||'')&&/^sb_publishable_[A-Za-z0-9_-]+$/.test(config.publishableKey||'');}
-function storageKey(uid){return 'lumen-v1:account:'+uid;}
-function readCache(uid){try{let c=JSON.parse(localStorage.getItem(storageKey(uid)));return object(c)&&object(c.state)&&(c.revision===null||num(c.revision))?c:null;}catch{return null;}}
-function store(){if(!account)return;try{localStorage.setItem(storageKey(account.uid),JSON.stringify({state:adapter.get(),revision:account.revision,dirty:account.dirty,auto:account.auto,conflict:account.conflict}));}catch{notice='Account data could not be saved on this device. Export a copy before leaving.';}}
+function configValid(){return enabled&&/^https:\/\/[a-z0-9-]+\.supabase\.co\/?$/.test(config.url||'')&&/^sb_publishable_[A-Za-z0-9_-]+$/.test(config.publishableKey||'')&&/^sha384-[A-Za-z0-9+/]{64}$/.test(config.sdkIntegrity||'');}
+function storageKey(uid){return 'lumen-v2:session-account:'+uid;}
+function readCache(uid){try{let c=JSON.parse(sessionStorage.getItem(storageKey(uid)));return object(c)&&object(c.state)&&(c.revision===null||num(c.revision))?c:null;}catch{return null;}}
+function store(){if(!account)return;try{sessionStorage.setItem(storageKey(account.uid),JSON.stringify({state:adapter.get(),revision:account.revision,dirty:account.dirty,auto:account.auto,conflict:account.conflict}));}catch{notice='Account data could not be saved on this device. Export a copy before leaving.';}}
 function refresh(message){if(message!==undefined)notice=message;adapter?.refresh();}
 function markChanged(){
  if(!account)return false;
@@ -88,21 +88,21 @@ async function saveRemote(client,uid,revision,data){
 }
 function leaveAccount(){
  clearTimeout(timer);
- if(account){store();account=null;adapter.swap(adapter.guest());}
+ if(account){const uid=account.uid;account=null;try{sessionStorage.removeItem(storageKey(uid));}catch{}adapter.swap(adapter.guest());}
 }
 async function handleAuth(event,session){
  if(event==='TOKEN_REFRESHED'&&session?.user?.id===authUser?.id)return;
  if(!session){epoch++;authUser=null;recovery=false;leaveAccount();busy=false;refresh();return;}
- if(event==='PASSWORD_RECOVERY')recovery=true;
+ if(event==='PASSWORD_RECOVERY'){recovery=true;leaveAccount();}
  const uid=session.user?.id;if(!uid)return;
- if(account?.uid===uid&&authUser?.id===uid){refresh();return;}
+ if(!recovery&&account?.uid===uid&&authUser?.id===uid){refresh();return;}
  const generation=++epoch;
  if(account&&account.uid!==uid)leaveAccount();
  authUser=null;busy=true;refresh('Checking account…');
  try{
   const {data,error}=await api.auth.getUser();
   if(generation!==epoch)return;
-  if(error||data?.user?.id!==uid||!data.user.email_confirmed_at)throw Error('A verified email account is required.');
+  if(error||data?.user?.id!==uid||!data.user.email_confirmed_at||data.user.is_anonymous===true)throw Error('A verified email account is required.');
   authUser=data.user;
   if(recovery){busy=false;refresh('Choose a new password before continuing.');return;}
   const remote=await readRemote(uid);if(generation!==epoch)return;
@@ -127,7 +127,7 @@ async function sync(forceRevision){
   if(result.conflict){current.conflict=true;current.dirty=true;current.auto=false;refresh('Another device changed this profile. Choose cloud or local progress.');}
   else{current.revision=result.revision;current.conflict=false;current.dirty=JSON.stringify(payload(adapter.get(),adapter.catalog()))!==json;refresh(current.dirty?'New changes are waiting to sync.':'Cloud progress saved.');}
   store();
- }catch(e){if(account===current){current.dirty=true;store();refresh('Cloud save failed. Your local copy is retained; retry when online.');}}
+ }catch(e){if(account===current){current.dirty=true;store();refresh('Cloud save failed. Your tab copy is retained; retry when online or export it before leaving.');}}
  finally{writeInFlight=false;if(account===current&&current.dirty&&current.auto&&!current.conflict&&notice==='New changes are waiting to sync.')schedule();adapter?.refresh();}
 }
 async function resolve(useLocal){
@@ -145,17 +145,17 @@ async function resolve(useLocal){
 function panel(){
  if(!enabled)return '';
  let body='';
- if(recovery&&authUser){body='<form id="lumen-account-form" data-mode="password"><label>New password<input name="password" type="password" autocomplete="new-password" required minlength="8"></label><button class="primary" type="submit">Update password</button></form>';}
+ if(recovery&&authUser){body='<form id="lumen-account-form" method="post" data-mode="password"><label>New password<input name="password" type="password" autocomplete="new-password" required minlength="12"></label><button class="primary" type="submit">Update password</button></form>';}
  else if(account){
-  body='<p>'+esc(authUser?.email||'Verified account')+'</p><small>Progress stays in a separate device profile. Custom lessons stay on this device.</small><div class="row" style="flex-wrap:wrap;margin-top:12px">'+(account.conflict?'<button class="secondary" data-account-action="cloud">Use cloud copy</button><button class="secondary" data-account-action="local">Keep local copy</button>':'<button class="primary" data-account-action="sync">Sync now</button><button class="secondary" data-account-action="auto">'+(account.auto?'Turn automatic sync off':'Turn automatic sync on')+'</button>')+(account.revision===null&&!account.conflict?'<button class="secondary" data-account-action="import">Import guest progress</button>':'')+'<button class="secondary" data-account-action="signout">Sign out</button></div><p class="muted">'+(account.dirty?'Local changes not synced.':'No pending local changes.')+'</p>';
+  body='<p>'+esc(authUser?.email||'Verified account')+'</p><small>Account progress is cached only in this tab until sign-out or tab closure. Custom lessons stay in this tab; export anything you want to keep.</small><div class="row" style="flex-wrap:wrap;margin-top:12px">'+(account.conflict?'<button class="secondary" data-account-action="cloud">Use cloud copy</button><button class="secondary" data-account-action="local">Keep local copy</button>':'<button class="primary" data-account-action="sync">Sync now</button><button class="secondary" data-account-action="auto">'+(account.auto?'Turn automatic sync off':'Turn automatic sync on')+'</button>')+(account.revision===null&&!account.conflict?'<button class="secondary" data-account-action="import">Import guest progress</button>':'')+'<button class="secondary" data-account-action="signout">Sign out</button></div><p class="muted">'+(account.dirty?'Local changes not synced. Export a copy before closing this tab.':'No pending local changes.')+'</p>';
  }else if(authUser){body='<button class="secondary" data-account-action="signout">Sign out</button><button class="secondary" data-account-action="retry">Retry loading profile</button>';}
- else if(api){body='<form id="lumen-account-form"><label>Email<input name="email" type="email" required autocomplete="email"></label><label>Password<input name="password" type="password" autocomplete="current-password" required></label><div class="row"><button class="primary" type="submit" value="signin">Sign in</button><button class="secondary" type="submit" value="signup">Register</button></div><button class="link" type="button" data-account-action="recover">Forgot password?</button></form><p class="muted">Optional: accounts use Supabase to store learning progress, bookmarks, and notes. Guest learning remains available.</p>';}
+ else if(api){body='<form id="lumen-account-form" method="post"><label>Email<input name="email" type="email" required autocomplete="email"></label><label>Password<input name="password" type="password" autocomplete="current-password" required></label><div class="row"><button class="primary" type="submit" value="signin">Sign in</button>'+(config.allowRegistration===true?'<button class="secondary" type="submit" value="signup">Register</button>':'')+'</div><button class="link" type="button" data-account-action="recover">Forgot password?</button></form><p class="muted">Optional: accounts use Supabase to store learning progress, bookmarks, and notes. Guest learning remains available.</p>';}
  else body='<p>Accounts are not available at the moment. Continue learning as a guest.</p>';
  return '<section class="section"><div class="sectionhead"><h2>Account</h2></div><div class="panel" aria-busy="'+busy+'">'+body+(notice?'<p role="status">'+esc(notice)+'</p>':'')+'</div></section>';
 }
 async function action(kind){
  if(!api||busy||writeInFlight)return;
- if(kind==='sync')return sync();
+ if(kind==='sync'){if(!confirm('Send this account’s learning progress, bookmarks and notes to Supabase? Do not sync sensitive personal information.'))return;return sync();}
  if(kind==='cloud'||kind==='local')return resolve(kind==='local');
  if(kind==='auto'&&account){if(account.auto){account.auto=false;clearTimeout(timer);}else{if(!confirm('Automatically send this account’s learning progress, bookmarks and notes to Supabase?'))return;account.auto=true;}store();refresh(account.auto?'Automatic sync enabled.':'Automatic sync disabled.');schedule();return;}
  if(kind==='import'&&account&&account.revision===null&&!account.conflict){
@@ -164,7 +164,7 @@ async function action(kind){
  }
  if(kind==='retry'){const {data}=await api.auth.getSession();return handleAuth('SIGNED_IN',data?.session);}
  if(kind==='signout'){
-  if(account?.dirty&&!confirm('Sign out with unsynced changes? They remain in this account’s local device profile.'))return;
+  if(account&&(account.dirty||adapter.get().custom?.length)&&!confirm('Sign out and discard unsynced account changes and local custom lessons? Export a copy before leaving if needed.'))return;
   busy=true;try{const {error}=await api.auth.signOut({scope:'local'});if(error)throw error;epoch++;leaveAccount();authUser=null;recovery=false;refresh('Signed out. Guest progress restored.');}catch{refresh('Could not sign out. Try again.');}finally{busy=false;adapter?.refresh();}return;
  }
  if(kind==='recover'){const email=document.querySelector('#lumen-account-form input[name="email"]');if(!email?.reportValidity())return;busy=true;try{const {error}=await api.auth.resetPasswordForEmail(email.value,{redirectTo:location.origin+location.pathname});if(error)throw error;refresh('If the account exists, a recovery email will be sent.');}catch{refresh('Could not request recovery. Try again later.');}finally{busy=false;adapter?.refresh();}}
@@ -172,7 +172,7 @@ async function action(kind){
 async function submit(e){
  if(e.target.id!=='lumen-account-form')return;e.preventDefault();if(!api||busy)return;
  const form=new FormData(e.target),password=String(form.get('password')||''),email=String(form.get('email')||'').trim(),mode=e.target.dataset.mode||e.submitter?.value||'signin';
- if((mode==='signup'||mode==='password')&&password.length<8){refresh('Use a password of at least eight characters.');return;}
+ if(mode==='signup'&&config.allowRegistration!==true){refresh('Public registration is closed.');return;}if((mode==='signup'||mode==='password')&&password.length<12){refresh('Use a password of at least twelve characters.');return;}
  busy=true;
  try{
   if(mode==='password'){
@@ -194,9 +194,9 @@ async function start(a){
  document.addEventListener('click',e=>{const b=e.target.closest('[data-account-action]');if(b){e.preventDefault();action(b.dataset.accountAction);}});
  window.addEventListener('online',()=>schedule());
  try{
-  await new Promise((resolve,reject)=>{const script=document.createElement('script');script.src='./supabase-client.js';script.onload=resolve;script.onerror=reject;document.head.append(script);});
+  await new Promise((resolve,reject)=>{const script=document.createElement('script');script.src='./supabase-client.js';script.integrity=config.sdkIntegrity;script.crossOrigin='anonymous';script.onload=resolve;script.onerror=reject;document.head.append(script);});
   if(!window.supabase?.createClient)throw Error('Missing reviewed SDK');
-  api=window.supabase.createClient(config.url,config.publishableKey,{auth:{storage:sessionStorage,persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}});
+  api=window.supabase.createClient(config.url,config.publishableKey,{auth:{storage:sessionStorage,persistSession:true,autoRefreshToken:true,detectSessionInUrl:true,flowType:'pkce'}});
   api.auth.onAuthStateChange((event,session)=>setTimeout(()=>handleAuth(event,session),0));
   refresh();
  }catch{refresh('Account service is unavailable. Guest mode still works.');}

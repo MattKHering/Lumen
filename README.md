@@ -49,3 +49,7 @@ Remaining: 1,235 full courses and three quick reads need editorial revisions; ov
 ### Account pilot and illustrations
 
 The default-off `account-config.js` and `accounts.js` provide a pilot sign-in/register/recovery UI, separate account caches, explicit guest import, manual and opt-in debounced cloud saves, and guarded revision conflict handling. The SDK is not vendored and no project configuration is present; no auth requests occur in guest mode. Live backend, complete privacy/deletion flows and real-browser security testing are outstanding. See `supabase/SETUP.md` before enabling. Screening and rebalancing illustrations were corrected to match the revised lessons, and three new worked-example diagrams were added.
+
+### Public-repository security boundary
+
+GitHub Pages remains guest-only. A restrictive CSP blocks backend connections, remote and inline scripts, and native form submissions. The public build publishes only explicit assets, rejects nonempty account configuration and detects common credential patterns; actions are pinned to immutable commits. Account pilot access requires a separate HTTPS origin, integrity-checked SDK, verified user and opt-in sync. The revised SQL adds restrictive verified-owner policies and server-side payload checks. These are code safeguards, not a live penetration test or approval to enable public registration. See [SECURITY.md](SECURITY.md) and [supabase/SETUP.md](supabase/SETUP.md).

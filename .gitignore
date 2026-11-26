@@ -1,0 +1,21 @@
+# Local configuration and credentials (never commit these)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+*.backup
+*.log
+node_modules/
+_site/
+supabase/.temp/
+supabase/.branches/
+account-config.local.js
+supabase-client.js
+lumen-learning-data*.json
