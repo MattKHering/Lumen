@@ -47,11 +47,11 @@ window.LumenQualityArt=function(c,cls='cover',step=-1){
  break;
  case 'depth-mathematics-reading-linear-equations':
  title='Slope and intercept';desc='The line y=2x+1 crosses the vertical axis at 1 and passes through (2,5) and (6,13). Rise 8 divided by run 4 gives slope 2.';
- a=line(44,178,328,178)+line(44,178,44,20)+line(44,166,300,22,ink,3)+line(124,118,284,118,gold,2,'stroke-dasharray="5 4"')+line(284,118,284,22,gold,2,'stroke-dasharray="5 4"')+dot(44,166,4)+dot(124,118,5)+dot(284,22,5)+t(42,156,'1',11,'end')+t(117,106,'(2,5)',11)+t(271,15,'(6,13)',11)+t(204,132,'Run = 4',12)+t(293,73,'Rise = 8',11,'start')+t(180,203,'Slope = 8 ÷ 4 = 2',15);
+ a=line(44,178,328,178)+line(44,178,44,20)+line(44,166,284,22,ink,3)+line(124,118,284,118,gold,2,'stroke-dasharray="5 4"')+line(284,118,284,22,gold,2,'stroke-dasharray="5 4"')+dot(44,166,4)+dot(124,118,5)+dot(284,22,5)+t(42,156,'1',11,'end')+t(117,106,'(2,5)',11)+t(271,15,'(6,13)',11)+t(204,132,'Run = 4',12)+t(293,73,'Rise = 8',11,'start')+t(180,203,'Slope = 8 ÷ 4 = 2',15);
  break;
  case 'plus-mathematics-understanding-vectors':
  title='Vector components';desc='Vector (3,4) has horizontal component 3, vertical component 4 and length 5.';
- a=line(55,170,310,170)+line(55,170,55,22)+line(55,170,205,170,gold,3)+line(205,170,205,30,gold,3,'stroke-dasharray="5 4"')+line(55,170,205,30,ink,3)+'<path d="M191 35l14 -5 -5 14" stroke="'+ink+'" fill="none" stroke-width="3"/>'+t(130,187,'3',13)+t(216,104,'4',13,'start')+t(112,88,'Length = 5',13)+t(205,21,'(3,4)',12)+t(180,210,'√(3² + 4²) = 5',15);
+ a=line(55,170,310,170)+line(55,170,55,22)+line(55,170,160,170,gold,3)+line(160,170,160,30,gold,3,'stroke-dasharray="5 4"')+line(55,170,160,30,ink,3)+'<path d="M146 36l14 -6 -4 15" stroke="'+ink+'" fill="none" stroke-width="3"/>'+t(108,187,'3',13)+t(171,104,'4',13,'start')+t(84,88,'Length = 5',13)+t(160,21,'(3,4)',12)+t(180,210,'√(3² + 4²) = 5',15);
  break;
  case 'depth-statistics-understanding-mean-and-median':
  title='An extreme value pulls the mean';desc='The values 2, 4, 6, 8 have mean and median 5. Replacing 8 with 80 moves the mean to 23; the median remains 5.';
