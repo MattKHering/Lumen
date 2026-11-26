@@ -101,6 +101,14 @@ h1{font-size:clamp(43px,5.2vw,70px);letter-spacing:-.055em}h2{font-size:clamp(27
 .kp-subject{padding:18px 0;border-top:1px solid var(--line);display:grid;gap:8px}.kp-subject label{font-size:.84rem}.kp-subject select{width:100%}.kp-result{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}.kp-test{white-space:nowrap}.kp-subject[data-kp-focus]{border-left:3px solid #a68a54;padding-left:12px}.lessonbody details{margin-top:18px}.lessonbody summary{cursor:pointer;font-weight:600}.lessonbody details .panel{margin-top:12px}
 .quality-meta{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:16px;padding-top:10px;border-top:1px solid var(--line)}.quality-meta small{font-size:.76rem}.quality-meta a{text-decoration:underline;text-underline-offset:3px}
 .path-list{display:grid;gap:6px;margin:10px 0 18px}.path-item{display:flex;justify-content:space-between;align-items:center;gap:12px;text-align:left;border:1px solid var(--line);border-radius:8px;padding:10px;background:transparent;color:inherit}.path-item small{flex-shrink:0;max-width:45%;text-align:right}.panel details{margin:15px 0}.panel details summary{cursor:pointer;font-weight:600}
+
+/* Account and encrypted local-profile forms: stacked, legible fields on mobile. */
+#lumen-account-form,#local-profile-form{display:grid;gap:14px;width:100%;min-width:0;max-width:100%;}
+#lumen-account-form label,#local-profile-form label{display:grid;gap:6px;min-width:0;font-size:14px;font-weight:650;}
+#lumen-account-form input,#local-profile-form input{display:block;width:100%;min-width:0;max-width:100%;min-height:48px;padding:11px 14px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);font-size:16px;}
+#lumen-account-form .row,#local-profile-form .row{display:flex;flex-wrap:wrap;gap:8px;min-width:0;}
+#lumen-account-form .link{justify-self:start;text-align:left;padding-left:0;}
+#lumen-account-form input:focus-visible,#local-profile-form input:focus-visible{outline-offset:2px;}
 </style></head><body>
 <div class="shell"><aside class="sidebar"><div><div class="brand"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><circle cx="20" cy="20" r="8" fill="currentColor"/><path d="M20 1v8m0 22v8M1 20h8m22 0h8M6 6l6 6m16 16 6 6M34 6l-6 6M12 28l-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg><span>lumen.</span></div><div class="tagline">A little wiser every day.</div></div><nav id="nav" aria-label="Main navigation"></nav><div class="sidefoot">Made for curious minds.<br>Learning, not scrolling.</div></aside><main id="main"></main></div>
 <section id="lesson" class="lesson" hidden role="dialog" aria-modal="true" aria-label="Learning session"></section><dialog id="dialog"></dialog><div id="toast" class="toast" role="status" hidden></div>
