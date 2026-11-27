@@ -3202,3 +3202,137 @@ window.LumenSlideArtBatch20Render=function renderer(c,cls="cover",step=-1){
  const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch20Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* Food Science: dedicated slide artwork, batch 21. */
+window.LumenSlideArtBatch21={
+  "fermentation": [
+    "b 25 65 95 55 Sugars;a 120 92 132 92;b 132 65 95 55 Microbes;a 227 92 239 92;b 239 65 95 55 Products;t 180 165 Microbial metabolism changes food",
+    "c 70 95 23;c 85 75 12;c 135 85 7;c 155 65 10;c 175 45 13;p M220 65L240 85L260 65L280 85L300 65;t 95 150 Yeast → CO₂ + ethanol;t 260 150 Bacteria → acids;t 180 195 Bread vs yogurt fermentation",
+    "b 25 45 145 50 Temperature;b 190 45 145 50 Salt / acidity;b 25 115 145 50 Oxygen;b 190 115 145 50 Starter culture;t 180 195 Control conditions for desired microbes",
+    "l 35 175 325 175;p M35 65Q120 155 325 160;t 180 35 pH may decrease;t 180 195 Acid alone does not establish food safety"
+  ],
+  "maillard": [
+    "b 25 55 145 50 Reducing sugar;b 190 55 145 50 Amino group;a 97 105 180 150;a 262 105 180 150;t 180 175 Aromas and brown pigments;t 180 200 Maillard reaction",
+    "r 35 100 130 65;r 195 100 130 65;a 70 95 70 45;a 105 95 105 45;d 70 80 5;d 105 80 5;t 100 185 Wet surface;t 260 185 Dry surface;t 180 25 Evaporation consumes heat",
+    "b 25 65 145 55 Sugar + amino;b 190 65 145 55 Sugar alone;t 97 150 Maillard;t 262 150 Caramelization;t 180 195 Both may occur during cooking",
+    "r 35 75 120 80;r 205 75 120 80;d 65 90 5;d 100 105 5;d 125 90 5;a 155 115 205 115;t 95 175 Excess moisture;t 265 175 Drier surface;t 180 195 Drying can promote browning"
+  ],
+  "depth-food-science-why-emulsions-hold-together": [
+    "r 35 45 130 130;r 35 45 130 55;r 195 45 130 130;c 225 65 8;c 285 85 8;c 245 130 8;c 305 150 8;t 100 195 Two phases;t 260 195 Dispersed droplets",
+    "c 90 100 50;a 140 100 190 100;c 220 65 20;c 280 65 20;c 220 135 20;c 280 135 20;t 180 30 Breaking droplets increases interface;t 180 195 Unprotected drops may merge",
+    "c 180 100 55;c 180 100 40;p M180 45V60M235 100H220M180 155V140M125 100H140;t 180 105 Oil;t 180 25 Water-facing emulsifier heads;t 180 195 Protective interfacial film reduces coalescence",
+    "r 35 45 130 130;r 195 45 130 130;c 65 65 10;c 95 65 10;c 125 65 10;c 230 90 22;c 285 110 32;t 100 195 Creaming;t 260 195 Coalescence;t 180 25 Migration without merging vs merged drops"
+  ],
+  "depth-food-science-how-starch-thickens-food": [
+    "c 180 100 60;p M140 80L160 65L180 80L200 65L220 80M140 110L160 95L180 110L200 95L220 110M180 110L180 140L210 145;t 180 25 Starch granule;t 180 195 Linear amylose and branched amylopectin",
+    "c 90 95 25;c 270 95 55;a 115 95 215 95;p M240 80L250 110L270 80L290 110;t 90 150 Dry granule;t 270 165 Swollen granule;t 180 195 Heat + water disrupt ordered structure",
+    "p M35 70L65 100L95 70L125 100M35 130L65 160L95 130L125 160M205 85L235 100L265 85L295 100M205 110L235 125L265 110L295 125;t 95 185 Dispersed chains;t 265 185 Reassociated chains;t 180 205 Cooling can firm gel and expel water",
+    "r 35 60 130 105;r 195 60 130 105;d 65 85 5;d 95 125 5;d 135 145 5;c 260 105 30;t 100 185 Cold slurry;t 260 185 Dry starch in hot liquid;t 180 205 Hydrated outer layer can trap dry interior"
+  ],
+  "depth-food-science-why-freezing-changes-texture": [
+    "r 35 45 290 130;p M80 75V135M50 105H110M60 85L100 125M60 125L100 85;d 180 80 5;d 215 100 5;d 260 135 5;t 180 25 Ice excludes solutes;t 180 195 Remaining liquid becomes concentrated",
+    "c 70 90 35;c 135 130 25;c 225 65 10;c 255 95 10;c 295 65 10;c 225 135 10;c 270 140 10;c 305 115 10;t 95 185 Slow freezing;t 265 185 Rapid freezing;t 180 205 Faster heat removal often favors smaller crystals",
+    "r 35 55 130 110;r 195 55 130 110;l 35 110 165 110;l 100 55 100 165;p M195 110L240 105L250 130L280 95L325 110M260 55L250 130L260 165;d 280 180 7;t 100 40 Intact cells;t 260 40 Damaged cells;t 180 205 Thawing can release liquid and soften tissue",
+    "c 75 85 12;c 110 115 12;c 145 85 12;a 160 100 215 100;c 270 105 45;t 110 170 Small crystals;t 270 170 Larger crystal;t 180 195 Temperature cycling promotes recrystallization"
+  ],
+  "depth-food-science-how-gluten-affects-dough": [
+    "p M35 65L90 110L145 65L200 110L255 65L325 110M35 135L90 90L145 135L200 90L255 135L325 90;l 90 110 90 90;l 200 110 200 90;t 180 35 Hydrated gluten protein network;t 180 195 Stretch and elastic recovery",
+    "r 35 85 130 40;r 195 85 130 40;a 55 65 145 65;a 215 65 305 65;t 100 150 Mix to develop;t 260 150 Rest to relax;t 180 195 Hydration and deformation change network",
+    "r 35 45 290 130;c 95 90 30;c 180 135 25;c 265 80 25;p M35 110L65 110M125 90L240 80M205 135L325 130;t 180 25 Expanding gas held by gluten;t 180 195 Baking sets network and starch",
+    "p M35 70L80 115L125 70L165 115M35 130L80 85L125 130L165 85M195 70L225 90M270 120L325 100;t 100 175 Bread network;t 260 175 Tender pastry;t 180 205 Texture goals require different gluten development"
+  ],
+  "depth-food-science-what-makes-food-go-stale": [
+    "b 25 65 145 55 Staling;b 190 65 145 55 Spoilage;t 97 150 Texture / flavor;t 262 150 Microbial growth;t 180 195 Distinct changes can coexist",
+    "p M35 70L65 100L95 70L125 100M195 85L225 100L255 85L285 100M195 110L225 125L255 110L285 125;a 140 100 185 100;t 95 155 Fresh crumb;t 250 155 Ordered starch;t 180 195 Retrogradation contributes to firming",
+    "r 35 95 290 55;d 85 50 5;d 140 50 5;d 195 50 5;d 250 50 5;a 85 55 85 95;a 195 55 195 95;t 180 35 Humid air;t 180 195 Absorbed water reduces brittleness",
+    "l 35 175 325 175;p M35 65H110L145 150H200L245 90L325 65;t 100 50 Stale;t 170 165 Reheated;t 285 55 Cooled;t 180 195 Temporary softening does not establish safety"
+  ],
+  "depth-food-science-why-salt-changes-food": [
+    "b 25 65 145 55 NaCl;a 170 92 190 92;c 225 90 22;c 295 90 22;t 225 94 Na⁺;t 295 94 Cl⁻;t 180 165 Dissolved ions interact with water and proteins",
+    "r 110 65 140 90;d 60 80 5;d 60 120 5;d 300 85 5;d 300 120 5;a 110 95 60 95;a 250 95 300 95;t 180 110 Tissue;t 180 195 Salt changes water chemical potential",
+    "p M35 75Q80 45 125 75T215 75T325 75;p M35 135Q80 105 125 135T215 135T325 135;d 95 105 5;d 180 105 5;d 265 105 5;t 180 35 Ions affect protein interactions;t 180 195 Salt can modify texture and bitterness",
+    "r 35 75 290 50;f 35 75 120 50;t 95 105 Lower aw;t 230 105 Higher aw;t 180 55 Water availability affects growth;t 180 195 Seasoning alone is not validated preservation"
+  ],
+  "depth-food-science-why-fruit-ripens": [
+    "c 90 100 45;c 270 100 45;a 135 100 225 100;t 90 160 Firm / unripe;t 270 160 Soft / ripe;t 180 195 Pigments, aroma, sweetness and acidity change",
+    "l 35 175 325 175;p M35 150Q100 150 150 45T325 150;p M35 160Q125 160 180 70T325 145;t 180 30 Climacteric rise;t 180 195 Respiration and ethylene increase during ripening",
+    "r 35 55 130 100;r 195 55 130 100;p M45 80H155M45 110H155M75 55V155M115 55V155;p M205 80H255M275 80H315M205 110H245M265 110H315;t 100 175 Intact walls;t 260 175 Modified walls;t 180 205 Starch may also convert to sugars",
+    "c 95 95 40;c 265 95 40;p M70 65L95 40L120 65M240 65L265 40L290 65;t 95 150 Banana: can ripen;t 265 150 Strawberry: limited;t 180 195 After-harvest ripening varies by species"
+  ],
+  "plus-food-science-how-proteins-set-when-heated": [
+    "p M35 65Q85 25 130 65Q150 125 85 140Q35 120 65 90;a 150 100 195 100;p M205 55L225 85L245 65L265 125L285 95L325 145;t 95 175 Folded;t 265 175 Unfolded;t 180 205 Heat disrupts folding interactions",
+    "p M35 60L80 110L125 60L170 110M35 150L80 100L125 150L170 100M195 60L240 110L285 60L325 110M195 150L240 100L285 150L325 100;l 170 110 195 60;l 170 100 195 150;t 180 35 Unfolded proteins associate;t 180 195 Egg white forms an opaque network",
+    "r 35 55 130 105;r 195 55 130 105;p M45 70L155 145M45 145L155 70M205 80L315 135M205 135L315 80;d 100 105 8;d 260 175 8;a 260 135 260 170;t 100 185 Water retained;t 260 195 Water expelled",
+    "b 25 65 95 55 Egg;b 132 65 95 55 Meat;b 239 65 95 55 Dairy;t 180 155 Different proteins, different heat response;t 180 195 Texture alone does not establish microbial safety"
+  ],
+  "plus-food-science-why-pectin-helps-jams-gel": [
+    "p M35 95L80 65L125 95L170 65L215 95L260 65L305 95;d 80 65 5;d 170 65 5;d 260 65 5;t 180 35 Galacturonic acid polymer;t 180 160 Esterification changes interactions",
+    "p M35 65L95 90L155 65L215 90L275 65L325 90M35 125L95 150L155 125L215 150L275 125L325 150;l 95 90 95 150;l 215 90 215 150;t 180 35 Sugar + acid support chain association;t 180 195 High-methoxyl pectin gel",
+    "p M35 65H325M35 145H325;c 95 105 12;c 180 105 12;c 265 105 12;l 95 65 95 93;l 95 117 95 145;l 180 65 180 93;l 180 117 180 145;l 265 65 265 93;l 265 117 265 145;t 180 105 Ca²⁺;t 180 195 Calcium bridges low-methoxyl pectin chains",
+    "b 25 45 145 45 Sugar;b 190 45 145 45 pH;b 25 115 145 45 Calcium;b 190 115 145 45 Heating;t 180 195 Gel success does not validate canning safety"
+  ],
+  "plus-food-science-why-food-oxidizes": [
+    "b 25 65 145 55 Food molecule;a 170 92 190 92;b 190 65 145 55 Oxidized product;t 180 155 Electron loss / oxidation-state change;t 180 195 Oxygen participates in many reactions",
+    "b 25 65 95 55 Unsaturated fat;a 120 92 132 92;b 132 65 95 55 Hydroperoxide;a 227 92 239 92;b 239 65 95 55 Volatiles;t 180 165 Radical chain reactions produce rancid odors",
+    "b 25 45 145 45 Heat / light;b 190 45 145 45 Oxygen / metals;a 97 90 180 135;a 262 90 180 135;b 105 135 150 45 Oxidation rate;t 180 205 Antioxidants may interrupt pathways",
+    "b 25 65 145 55 Oxidative rancidity;b 190 65 145 55 Microbial spoilage;t 180 150 Distinct quality and safety processes;t 180 195 Lack of odor does not prove safety"
+  ],
+  "plus-food-science-how-foams-hold-air": [
+    "r 35 45 290 130;c 85 85 23;c 155 120 26;c 235 80 20;c 285 140 18;t 180 25 Gas dispersed in matrix;t 180 195 Foam creates large interfacial area",
+    "c 180 100 60;c 180 100 48;d 180 42 4;d 238 100 4;d 180 158 4;d 122 100 4;t 180 105 Gas;t 180 25 Protein film;t 180 195 Adsorbed molecules resist bubble merging",
+    "c 85 85 25;c 140 85 25;c 265 100 45;a 112 115 112 165;a 170 85 220 85;t 100 185 Film drains;t 265 165 Larger bubble;t 180 205 Drainage, merging and gas transfer change foam",
+    "c 90 95 40;c 270 95 40;d 55 95 5;d 125 95 5;d 90 55 5;d 270 135 8;d 285 130 8;d 295 120 8;t 90 155 Stable cream foam;t 270 155 Fat aggregation;t 180 195 Excess whipping can destabilize structure"
+  ],
+  "plus-food-science-what-makes-ice-cream-smooth": [
+    "r 35 45 290 130;c 95 85 20;c 235 130 22;p M145 55L165 75L145 95L125 75ZM270 60L290 80L270 100L250 80Z;d 155 140 5;d 180 130 5;t 180 25 Ice crystals, air, fat, liquid;t 180 195 Sizes and proportions determine texture",
+    "l 35 175 325 175;p M35 55L325 145;t 180 35 Freezing temperature;t 180 195 More dissolved solute generally lowers freezing point",
+    "c 85 100 30;c 145 80 10;c 145 135 10;c 225 70 10;c 255 100 10;c 285 135 10;a 170 100 205 100;t 105 175 Coarse crystals;t 260 175 Fine crystals;t 180 205 Rapid cooling and agitation help structure",
+    "c 75 90 10;c 105 115 10;c 135 85 10;a 155 100 210 100;c 270 100 45;t 105 170 Small crystals;t 270 170 Recrystallized;t 180 195 Stable cold storage limits crystal growth"
+  ],
+  "plus-food-science-why-browning-fruit-is-not-always-spoilage": [
+    "p M35 65H125V155H35ZM235 65H325V155H235Z;p M80 65L100 95L80 125;a 125 110 235 110;d 255 90 5;d 275 110 5;d 295 130 5;t 80 175 Cell rupture;t 280 175 Brown pigments;t 180 205 PPO + phenolics + oxygen",
+    "b 25 45 145 45 Acidity;b 190 45 145 45 Antioxidants;b 25 115 145 45 Less oxygen;b 190 115 145 45 Heat treatment;t 180 195 Can reduce enzyme-driven browning",
+    "c 95 95 45;c 265 95 45;d 85 90 5;d 100 110 5;d 245 75 5;d 270 95 5;d 280 115 5;t 95 160 Enzymatic color;t 265 160 Microbial changes;t 180 195 Similar appearance can have different causes",
+    "b 25 65 145 55 Appearance;b 190 65 145 55 Storage history;t 180 155 Check time and temperature guidance;t 180 195 Color cannot prove food safety"
+  ],
+  "depth-food-science-how-chocolate-is-tempered": [
+    "p M35 65H145M35 90H145M35 115H145M35 140H145M205 65L235 90L265 65L295 90M205 115L235 140L265 115L295 140;t 95 175 Ordered packing;t 265 175 Alternate packing;t 180 205 Cocoa butter has several crystal forms",
+    "l 35 175 325 175;p M35 75L95 35L180 145L245 95H325;t 95 25 Heat;t 180 165 Cool;t 280 85 Rewarm;t 180 205 Tempering selects crystal populations, temperatures vary",
+    "p M155 85L180 60L205 85L180 110ZM115 125L140 100L165 125L140 150ZM195 125L220 100L245 125L220 150Z;a 140 100 165 85;a 220 100 195 85;t 180 35 Seed crystals promote growth;t 180 195 Excess reheating can melt useful seeds",
+    "r 35 65 130 85;r 195 65 130 85;d 65 85 5;d 95 110 5;d 125 90 5;p M210 75L225 90L240 75M260 100L275 115L290 100;t 100 175 Fat bloom;t 260 175 Sugar bloom;t 180 205 Different physical processes can whiten surface"
+  ],
+  "plus-food-science-understanding-water-activity": [
+    "r 35 75 130 90;r 195 75 130 90;d 65 55 5;d 95 55 5;d 125 55 5;d 250 55 5;t 100 120 Pure water;t 260 120 Food;t 180 195 aw = vapor pressure ratio at same temperature",
+    "r 35 65 130 95;r 195 65 130 95;d 220 95 5;d 250 115 5;d 280 90 5;t 100 175 Less solute;t 260 175 More solute;t 180 205 Same moisture can have different water activity",
+    "r 35 75 290 50;f 35 75 217.5 50;t 143 105 75% RH;t 180 55 Equilibrium;t 180 195 aw .75 × 100 = 75% RH",
+    "l 35 105 325 105;d 95 105 6;d 180 105 6;d 265 105 6;t 95 85 Organism A;t 180 130 Organism B;t 265 85 Organism C;t 180 195 Growth requirements differ, other controls matter"
+  ],
+  "plus-food-science-why-oils-have-different-melting-behavior": [
+    "p M60 45V165M60 65H300M60 105H300M60 145H300;t 180 25 Triacylglycerol schematic;t 180 195 Three fatty-acid chains affect packing",
+    "p M35 65H150M35 90H150M35 115H150M35 140H150M205 65L250 65L275 90L325 90M205 115L250 115L275 140L325 140;t 95 175 Straight saturated;t 265 175 Bent cis unsaturated;t 180 205 Cis bends often reduce packing efficiency",
+    "l 35 175 325 175;p M35 45Q120 50 180 105T325 165;t 180 35 Solid fraction decreases over range;t 180 195 Natural fats contain multiple molecular species",
+    "r 35 75 290 50;f 35 75 115 50;t 92 105 Solid fraction;t 235 105 Liquid fraction;t 180 55 At a specified temperature;t 180 195 Thermal history affects spreadability"
+  ],
+  "plus-food-science-how-pressure-cooking-changes-boiling": [
+    "l 35 175 325 175;l 35 175 35 35;p M35 165Q180 145 325 35;l 35 105 325 105;d 250 105 5;t 180 25 Vapor pressure rises with temperature;t 180 195 Boiling when vapor pressure equals surroundings",
+    "r 75 75 210 95;l 75 75 285 75;c 180 55 12;a 180 75 180 35;t 180 110 Retained steam;t 180 150 Heated water;t 180 195 Regulated higher pressure raises boiling temperature",
+    "r 65 70 90 100;r 205 50 90 120;t 110 60 100°C;t 250 40 ~120°C;t 110 190 1 atm absolute;t 250 190 2 atm absolute;t 180 210 Approximate pure water saturation temperatures",
+    "b 25 65 145 55 Pressure cooking;b 190 65 145 55 Pressure canning;t 180 155 Different equipment and validation;t 180 195 Boiling calculation cannot establish preservation safety"
+  ]
+};
+window.LumenSlideArtBatch21Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch21;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch21Render(c,cls,step)||prior(c,cls,step);};})();
