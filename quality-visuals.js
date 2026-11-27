@@ -7285,3 +7285,124 @@ window.LumenSlideArtBatch55={
 };
 window.LumenSlideArtBatch55Render=function(c,cls='cover',step=-1){return window.LumenSlideArtSharedRender(window.LumenSlideArtBatch55,c,cls,step);};
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch55Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* World Religions: dedicated slide artwork, batch 56. */
+window.LumenSlideArtBatch56={
+  "christianity": [
+    "l 35 105 325 105;d 95 105 7;d 265 105 7;t 95 85 First century CE;t 265 85 Early churches;t 180 155 Jewish context under Roman rule",
+    "r 45 55 110 100;r 205 55 110 100;t 100 105 Jesus;t 260 105 New Testament;l 155 105 205 105;t 180 195 Faith and early writings",
+    "p M35 145Q70 125 105 145T175 145;c 260 85 30;r 230 135 60 20;t 105 175 Baptism;t 260 175 Eucharist",
+    "d 180 50 7;p M180 57V90H65V140M180 90V140M180 90H295V140;t 65 165 Orthodox;t 180 165 Catholic;t 295 165 Protestant;t 180 25 Historical branching, schematic"
+  ],
+  "islam": [
+    "l 35 105 325 105;d 65 105 7;d 295 105 7;t 65 85 Seventh-century Arabia;t 295 85 Quran;t 180 155 Revelation and prophetic tradition",
+    "b 20 65 60 65 Faith;b 85 65 60 65 Prayer;b 150 65 60 65 Giving;b 215 65 60 65 Fasting;b 280 65 60 65 Hajj;t 180 175 Five Pillars",
+    "d 180 50 7;p M180 57V95H85V145M180 95H275V145;t 85 165 Sunni;t 275 165 Shia;t 180 25 Histories of authority and leadership",
+    "c 180 105 60;c 180 105 32;t 180 109 Practice;t 180 55 Community;t 180 195 Religion is not identical to state policy"
+  ],
+  "hinduism": [
+    "d 180 100 8;d 65 55 6;d 295 55 6;d 65 155 6;d 295 155 6;l 65 55 180 100;l 295 55 180 100;l 65 155 180 100;l 295 155 180 100;t 65 35 Texts;t 295 35 Schools;t 65 185 Rituals;t 295 185 Deities;t 180 210 Diverse South Asian traditions",
+    "b 35 65 85 65 Dharma;a 120 97 137 97;b 137 65 85 65 Karma;a 222 97 239 97;b 239 65 85 65 Moksha;t 180 175 Duty, action and liberation: related concepts",
+    "p M35 130L85 75L135 130M165 130L215 45L265 130M280 130L310 95L340 130;t 85 155 Home;t 215 155 Temple;t 310 155 Pilgrimage;t 180 195 Multiple devotional settings",
+    "r 35 65 65 95;r 110 50 65 110;r 185 75 65 85;r 260 60 65 100;t 67 105 Vedas;t 142 95 Upanishads;t 217 115 Gita;t 292 105 Epics;t 180 195 Varying textual authority"
+  ],
+  "judaism": [
+    "c 180 105 35;c 65 55 20;c 295 55 20;c 180 175 20;l 65 55 150 85;l 295 55 210 85;l 180 140 180 155;t 180 110 Covenant;t 65 25 God;t 295 25 Torah;t 180 205 Peoplehood",
+    "r 45 55 115 110;r 200 55 115 110;l 55 85 150 85;l 210 85 305 85;t 102 115 Tanakh;t 257 115 Talmud;t 180 195 Scripture and rabbinic interpretation",
+    "l 35 105 325 105;d 65 105 7;d 180 105 7;d 295 105 7;t 65 85 Study;t 180 85 Shabbat;t 295 85 Festivals;t 180 160 Recurring communal practices",
+    "d 180 100 8;d 65 55 6;d 295 55 6;d 65 155 6;d 295 155 6;l 65 55 180 100;l 295 55 180 100;l 65 155 180 100;l 295 155 180 100;t 180 25 Diaspora communities;t 180 195 Diverse movements and local histories"
+  ],
+  "depth-world-religions-sikhism-and-the-guru-tradition": [
+    "l 35 105 325 105;d 65 105 7;d 295 105 7;t 65 85 Guru Nanak;t 295 85 Later Gurus;t 180 155 Punjab, late fifteenth century onward",
+    "b 35 45 135 55 Remembrance;b 190 45 135 55 Honest work;b 35 120 135 55 Sharing;b 190 120 135 55 Equality;t 180 205 Devotion to one God",
+    "p M65 55Q125 35 180 65Q235 35 295 55V155Q235 135 180 165Q125 135 65 155Z;l 180 65 180 165;t 180 35 Guru Granth Sahib;t 180 195 Enduring spiritual authority",
+    "r 55 55 250 110;r 75 75 100 70;r 195 75 90 70;t 125 110 Worship;t 240 110 Langar;t 180 195 Gurdwara: service and shared meals"
+  ],
+  "depth-world-religions-understanding-buddhist-traditions": [
+    "d 65 105 8;d 180 105 8;d 295 105 8;a 75 105 170 105;a 190 105 285 105;t 65 85 Buddha;t 180 85 Teachings;t 295 85 Communities;t 180 175 Transmission across centuries",
+    "b 35 45 135 55 Dukkha;b 190 45 135 55 Arising;b 35 120 135 55 Cessation;b 190 120 135 55 Path;t 180 205 Four Noble Truths",
+    "p M180 55V90H65V145M180 90V145M180 90H295V145;t 180 35 Buddhist traditions;t 65 165 Theravada;t 180 165 Mahayana;t 295 165 Vajrayana",
+    "c 85 105 35;c 275 105 35;a 120 85 240 85;a 240 125 120 125;t 85 110 Lay;t 275 110 Monastic;t 180 65 Generosity;t 180 155 Teaching"
+  ],
+  "depth-world-religions-shinto-and-shrine-practices": [
+    "p M35 150L105 55L175 150ZM185 150L245 85L325 150Z;c 245 50 18;t 180 195 Kami associated with places and natural phenomena",
+    "p M75 60H285M90 80H270M115 60V175M245 60V175;t 180 45 Torii;t 180 195 Threshold into shrine precinct",
+    "p M85 80Q105 50 125 80Q125 110 105 115Q85 110 85 80ZM235 80Q255 50 275 80Q275 110 255 115Q235 110 235 80Z;a 135 105 225 105;t 180 165 Purification before sacred space",
+    "c 125 105 65;c 235 105 65;t 100 105 Shinto;t 260 105 Buddhist;t 180 195 Historical interaction and separation"
+  ],
+  "depth-world-religions-jainism-and-nonviolence": [
+    "c 180 105 60;d 155 80 7;d 205 80 7;d 155 130 7;d 205 130 7;t 180 25 Living beings;t 180 195 Ahimsa guides disciplined nonviolence",
+    "b 35 45 135 55 Right faith;b 190 45 135 55 Right knowledge;b 35 120 290 55 Right conduct;t 180 205 Purification toward liberation",
+    "r 35 55 130 110;r 195 55 130 110;t 100 105 Monastic vows;t 260 105 Household ethics;t 180 195 Commitments differ by role",
+    "b 35 65 135 65 Digambara;b 190 65 135 65 Shvetambara;t 180 175 Distinct traditions, shared emphasis on ahimsa"
+  ],
+  "depth-world-religions-taoism-and-the-dao": [
+    "p M35 135Q105 35 180 105T325 75;t 180 35 Dao: the Way;t 180 195 Course of reality, multiple interpretations",
+    "r 55 55 110 110;r 195 55 110 110;t 110 105 Daodejing;t 250 105 Zhuangzi;t 180 195 Naturalness and flexible distinctions",
+    "p M45 140Q105 55 165 140T315 140;a 95 85 155 115;t 180 35 Follow conditions rather than force;t 180 195 Wu wei is not simple inactivity",
+    "p M55 85L180 35L305 85ZM75 85V165H285V85;t 180 115 Temple;t 180 195 Ritual, liturgy and cultivation"
+  ],
+  "depth-world-religions-how-religions-preserve-sacred-texts": [
+    "r 35 55 65 100;r 110 55 65 100;r 185 55 65 100;r 260 55 65 100;t 67 105 Copy;t 142 105 Recite;t 217 105 Print;t 292 105 Digital;t 180 195 Several preservation channels",
+    "c 180 105 35;c 65 65 20;c 295 65 20;c 180 175 20;l 65 65 150 85;l 295 65 210 85;l 180 140 180 155;t 180 110 Authority;t 65 35 Canon;t 295 35 Language;t 180 205 Interpretation",
+    "p M35 100Q55 55 75 100T115 100T155 100;r 205 55 105 100;l 220 85 295 85;l 220 115 295 115;t 95 165 Recitation;t 257 165 Written copy;t 180 195 Quranic oral and written transmission",
+    "p M180 40V75H65V140M180 75V140M180 75H295V140;t 65 165 Manuscript;t 180 165 Edition;t 295 165 Translation;t 180 205 Transmission history is not a truth verdict"
+  ],
+  "plus-world-religions-how-religious-pilgrimage-works-across-traditions": [
+    "d 45 145 8;d 315 65 8;p M45 145Q110 40 180 105T315 65;t 45 175 Home;t 315 45 Sacred site;t 180 195 Journey can carry devotion or obligation",
+    "d 65 105 8;d 180 105 8;d 295 105 8;t 65 80 Mecca;t 180 80 Temple;t 295 80 Shrine;t 180 155 Different destinations and requirements",
+    "l 35 105 325 105;d 65 105 6;d 180 105 6;d 295 105 6;t 65 85 Prepare;t 180 85 Ritual visit;t 295 85 Return;t 180 175 Meaning extends beyond arrival",
+    "b 35 45 135 55 Cost;b 190 45 135 55 Health;b 35 120 135 55 Access;b 190 120 135 55 Infrastructure;t 180 205 Conditions shape pilgrimage participation"
+  ],
+  "plus-world-religions-understanding-sacred-time-and-religious-calendars": [
+    "c 180 105 65;d 180 40 7;d 245 105 7;d 180 170 7;d 115 105 7;t 180 105 Year;t 180 195 Recurring sacred occasions",
+    "c 90 105 35;c 270 105 55;t 90 110 Lunar;t 270 110 Solar;t 180 195 Lunisolar calendars reconcile cycles",
+    "l 35 75 325 75;l 35 145 325 145;d 250 75 7;d 195 145 7;t 180 45 Solar seasons;t 180 185 Ramadan shifts through seasons;t 180 105 Jewish festivals remain seasonal via adjustment",
+    "r 35 55 290 110;l 105 55 105 165;l 175 55 175 165;l 245 55 245 165;t 180 35 Shared calendar;t 180 195 Local schedules and observance differ"
+  ],
+  "plus-world-religions-how-religious-communities-preserve-oral-traditions": [
+    "p M35 105Q55 55 75 105T115 105T155 105T195 105T235 105T275 105T315 105;t 180 45 Recitation and performance;t 180 195 Transmit teachings without requiring writing",
+    "c 65 105 25;c 180 105 25;c 295 105 25;a 90 105 155 105;a 205 105 270 105;t 65 110 Learn;t 180 110 Repeat;t 295 110 Correct;t 180 195 Continuity with possible variation",
+    "c 180 60 24;c 85 145 20;c 275 145 20;a 160 80 100 125;a 200 80 260 125;t 180 65 Teacher;t 85 175 Recite;t 275 175 Recite;t 180 205 Pronunciation and order preserved",
+    "p M35 75Q65 35 95 75T155 75M205 145Q235 105 265 145T325 145;t 180 35 Compare recorded variants;t 180 195 Oral transmission is neither inherently false nor infallible"
+  ],
+  "plus-world-religions-what-monastic-life-means-in-different-traditions": [
+    "r 55 55 250 110;r 75 75 90 70;r 195 75 90 70;t 120 110 Community;t 240 110 Solitude;t 180 195 Disciplined religious commitments",
+    "b 35 55 90 100 Christian;b 135 55 90 100 Buddhist;b 235 55 90 100 Jain;t 180 195 Distinct vows, livelihoods and authorities",
+    "c 95 105 35;c 265 105 35;a 130 85 230 85;t 95 110 Lay gifts;t 265 110 Monastics;t 180 165 Other communities may rely on shared work",
+    "r 35 55 130 110;r 195 55 130 110;t 100 105 Rules;t 260 105 Goals;t 180 195 Renunciation does not imply identical practices"
+  ],
+  "plus-world-religions-understanding-religious-dietary-practices": [
+    "c 180 105 55;c 180 105 35;t 180 110 Meal;t 180 25 Identity, discipline and compassion;t 180 195 Meanings depend on tradition",
+    "b 35 45 135 55 Kashrut;b 190 45 135 55 Halal;b 35 120 135 55 Jain discipline;b 190 120 135 55 Christian fasting;t 180 205 Different foundations and rules",
+    "r 35 65 90 90;r 135 65 90 90;r 235 65 90 90;t 80 105 Ingredients;t 180 105 Preparation;t 280 105 Timing;t 180 195 Rules may address different aspects of food",
+    "c 95 105 35;c 265 105 35;t 95 110 Affiliation;t 265 110 Actual needs;a 130 105 230 105;t 180 195 Ask about individual observance"
+  ],
+  "plus-world-religions-how-sacred-architecture-supports-worship": [
+    "r 45 55 270 110;p M65 145H295M180 145V75;a 180 145 180 75;t 180 35 Worship space;t 180 195 Movement, gathering and orientation",
+    "r 35 55 90 110;r 135 55 90 110;r 235 55 90 110;p M70 55Q80 25 90 55M165 75H195M260 75H300V105H260Z;t 80 185 Mihrab;t 180 185 Altar;t 280 185 Sanctum;t 180 205 Distinct architectural focal points",
+    "p M35 85L180 35L325 85ZM55 85V165H305V85;l 180 35 180 165;t 95 125 Light;t 255 125 Sound;t 180 195 Materials and symbolism shape worship",
+    "r 35 55 130 110;r 195 55 130 110;t 100 105 Similar form;t 260 105 Different use;t 180 195 Interpret through community and history"
+  ],
+  "plus-world-religions-understanding-religious-reform-movements": [
+    "b 35 55 135 65 Existing practice;a 170 87 190 87;b 190 55 135 65 Proposed reform;t 180 165 Changes in authority, practice or teaching",
+    "c 180 105 35;c 65 65 20;c 295 65 20;l 65 65 150 85;l 295 65 210 85;t 180 110 Reform;t 65 35 Return to texts;t 295 35 Reinterpret;t 180 195 Different goals",
+    "d 180 50 7;p M180 57V95H65V150M180 95V150M180 95H295V150;t 180 25 Reformation disputes;t 180 195 Multiple Protestant movements emerge",
+    "b 35 45 135 55 Reform claims;b 190 45 135 55 Responses;b 35 120 290 55 Changes in actual practice;t 180 205 Reform is not necessarily secularization"
+  ],
+  "plus-world-religions-how-ritual-objects-carry-meaning": [
+    "c 180 105 35;c 65 65 20;c 295 65 20;c 180 175 20;l 65 65 150 85;l 295 65 210 85;l 180 140 180 155;t 180 110 Object;t 65 35 Memory;t 295 35 Devotion;t 180 205 Ritual",
+    "c 180 105 65;d 180 40 8;d 226 59 8;d 245 105 8;d 226 151 8;d 180 170 8;d 134 151 8;d 115 105 8;d 134 59 8;t 180 110 Recitation;t 180 195 Beads structure prayers in distinct ways",
+    "r 35 55 130 110;r 195 55 130 110;c 100 105 25;c 260 105 25;t 100 185 Ordinary object;t 260 185 Ritual object;t 180 205 Context determines significance",
+    "b 35 45 135 55 Participant account;b 190 45 135 55 Handling rules;b 35 120 290 55 Appropriate sources;t 180 205 Respect display and access restrictions"
+  ],
+  "plus-world-religions-how-scholars-compare-religious-traditions": [
+    "r 35 55 130 110;r 195 55 130 110;t 100 105 Tradition A;t 260 105 Tradition B;l 165 105 195 105;t 180 195 Compare one defined feature",
+    "c 95 105 35;c 265 105 35;t 95 110 Category;t 265 110 Local term;t 180 195 Translation may not be one-to-one",
+    "b 35 45 135 55 Duration;b 190 45 135 55 Intention;b 35 120 135 55 Exemptions;b 190 120 135 55 Community;t 180 205 Compare fasting in context",
+    "b 35 55 135 65 Believer's account;b 190 55 135 65 Scholarly analysis;t 180 165 Different standpoints, not a verdict on faith"
+  ]
+};
+window.LumenSlideArtBatch56Render=function(c,cls='cover',step=-1){return window.LumenSlideArtSharedRender(window.LumenSlideArtBatch56,c,cls,step);};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch56Render(c,cls,step)||prior(c,cls,step);};})();
