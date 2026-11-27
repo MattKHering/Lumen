@@ -4056,3 +4056,143 @@ window.LumenSlideArtBatch27Render=function renderer(c,cls="cover",step=-1){
  const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch27Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* Technology: dedicated slide artwork, batch 28. */
+window.LumenSlideArtBatch28={
+  "blockchain": [
+    "b 25 65 95 55 Block A: hA;a 120 92 132 92;b 132 65 95 55 B: prev hA;a 227 92 239 92;b 239 65 95 55 C: prev hB;t 180 150 Edit A → changed hA;t 180 195 B's stored reference no longer matches",
+    "c 180 95 25;c 65 55 17;c 295 55 17;c 65 155 17;c 295 155 17;l 82 55 158 85;l 278 55 202 85;l 82 155 158 105;l 278 155 202 105;t 180 95 History;t 180 195 Consensus determines accepted ledger",
+    "b 25 55 145 55 External claim;a 170 82 190 82;b 190 55 145 55 Ledger entry;t 97 150 Trust data source;t 262 150 Check protocol rules;t 180 195 Valid entry does not prove external claim",
+    "r 35 45 130 130;r 195 45 130 130;r 55 65 90 30;r 55 105 90 30;r 215 65 90 30;r 215 105 90 30;t 100 195 Copy A;t 260 195 Copy B;t 180 25 Replication consumes storage"
+  ],
+  "depth-technology-how-cloud-computing-works": [
+    "r 25 75 85 65;r 135 75 70 65;r 230 45 105 125;l 230 87 335 87;l 230 129 335 129;a 110 107 135 107;a 205 107 230 107;t 67 160 Client;t 170 160 Network;t 282 195 Provider servers",
+    "r 35 45 90 130;r 135 45 90 130;r 235 45 90 130;l 35 85 125 85;l 135 115 225 115;t 80 65 User app;t 80 110 OS;t 80 150 Infra;t 180 70 User app;t 180 145 Platform;t 280 110 SaaS app;t 180 195 Provider manages progressively more",
+    "r 35 55 65 65;r 115 55 65 65;r 195 55 65 65;r 275 55 50 65;a 35 140 325 140;t 180 155 Scale out: more instances;r 90 175 180 25;t 180 192 Scale up: larger instance",
+    "l 35 175 325 175;p M35 155L95 140L155 65L215 95L275 150L325 145;p M35 155H95V75H155V95H215V155H325;t 180 35 Demand vs billed allocation;t 180 195 Identity and data controls remain customer duties"
+  ],
+  "depth-technology-what-software-apis-do": [
+    "b 25 65 105 55 Caller;a 130 82 230 82;a 230 105 130 105;b 230 65 105 55 Service;t 180 55 Defined input;t 180 145 Output contract;t 180 195 Implementation hidden behind interface",
+    "r 35 55 290 40;r 35 125 290 40;t 180 80 GET /items/7;a 180 95 180 125;t 180 150 200 OK + item data;t 180 195 Request method, path, response status",
+    "b 25 45 145 45 200: valid result;b 190 45 145 45 401: authenticate;b 25 115 145 45 429: rate limit;b 190 115 145 45 503: unavailable;t 180 195 Handle expected errors explicitly",
+    "b 25 55 145 55 Client v1;a 170 82 190 82;b 190 55 145 55 API v1;t 180 150 Compatible internal changes;t 180 195 Breaking contract needs version or migration"
+  ],
+  "depth-technology-how-wireless-networks-carry-data": [
+    "l 35 105 325 105;p M35 105Q55 65 75 105T115 105Q135 25 155 105T195 105Q215 65 235 105T275 105T315 105;t 75 45 Lower amplitude;t 175 25 Higher amplitude;t 180 195 Symbols encode information in wave properties",
+    "l 35 175 325 175;r 35 75 90 50;r 135 75 90 50;r 235 75 90 50;t 80 105 Ch A;t 180 105 Ch B;t 280 105 Ch C;t 180 55 Shared frequency spectrum;t 180 195 Devices coordinate access to airtime",
+    "d 35 105 8;r 145 35 35 115;d 325 105 8;p M35 105L325 105M35 105L200 25L325 105;t 162 165 Wall;t 180 195 Direct and reflected signals affect reception",
+    "r 35 65 290 40;l 90 65 90 105;l 270 65 270 105;t 62 90 Address;t 180 90 Payload;t 297 90 CRC;a 35 140 325 140;a 325 165 35 165;t 180 195 Retries consume airtime and increase delay"
+  ],
+  "depth-technology-how-batteries-power-devices": [
+    "r 65 65 230 100;r 65 65 35 100;r 260 65 35 100;p M82 65V35H277V65;a 110 35 245 35;a 110 115 245 115;t 180 25 Electron path through load;t 180 105 Ion path through electrolyte;t 180 195 Separate electrode reactions drive current",
+    "b 25 65 145 55 Voltage (J/C);b 190 65 145 55 Capacity (Ah);t 180 155 Wh ≈ nominal V × Ah;t 180 195 Energy and charge are different quantities",
+    "r 35 75 290 50;f 35 75 214.6 50;t 180 55 3.7 V × 2 Ah;t 180 105 Nominal 7.4 Wh;t 180 195 Actual energy depends on discharge conditions",
+    "r 65 65 230 100;r 65 65 35 100;r 260 65 35 100;p M82 65V35H277V65;a 245 35 110 35;a 245 115 110 115;t 180 25 Charger drives reverse reaction;t 180 195 Protection limits voltage, current and temperature"
+  ],
+  "depth-technology-how-touchscreens-sense-fingers": [
+    "r 35 55 290 120;p M35 85H325M35 115H325M35 145H325M95 55V175M155 55V175M215 55V175M275 55V175;c 180 100 27;t 180 35 Finger alters local field coupling;t 180 195 Transparent electrode grid",
+    "r 35 45 290 130;p M35 75H325M35 105H325M35 135H325M95 45V175M155 45V175M215 45V175M275 45V175;d 95 75 9;d 275 135 9;t 180 195 Scan electrode pairs to locate two touches",
+    "r 35 65 290 15;r 35 130 290 15;p M35 65H120Q180 195 240 65H325;a 180 25 180 105;d 180 130 5;t 180 195 Resistive layers contact under pressure",
+    "r 35 55 290 115;d 80 85 8;d 135 115 8;d 190 100 8;d 245 145 8;p M80 85L135 115L190 100L245 145;t 180 35 Track successive touch coordinates;t 180 195 Water, gloves and noise can distort estimates"
+  ],
+  "depth-technology-understanding-satellite-navigation": [
+    "d 45 50 9;d 315 155 9;a 55 55 305 150;t 45 30 Send time;t 315 180 Receive time;t 180 85 Range ≈ c × travel time;t 180 195 Satellite broadcasts orbit data too",
+    "b 25 65 145 55 1 µs clock error;b 190 65 145 55 c≈300 m/µs;t 180 155 Apparent range error;t 180 195 ≈300 m before correction",
+    "d 180 120 8;d 35 45 7;d 130 25 7;d 230 25 7;d 325 45 7;l 35 45 180 120;l 130 25 180 120;l 230 25 180 120;l 325 45 180 120;t 180 160 Spread satellite directions;t 180 195 Solve 3 coordinates + clock offset",
+    "r 155 55 55 120;d 35 35 6;d 325 35 6;d 90 170 6;p M35 35L90 170M325 35L210 90L90 170;t 180 195 Obstruction and reflection degrade positioning"
+  ],
+  "depth-technology-how-software-updates-improve-systems": [
+    "r 35 55 130 110;r 195 55 130 110;l 45 85 155 85;l 45 115 155 115;l 205 85 315 85;l 205 115 315 115;d 100 115 7;d 260 85 7;a 165 105 195 105;t 100 185 Old release;t 260 185 Patched release",
+    "b 25 65 95 55 Review;a 120 92 132 92;b 132 65 95 55 Tests;a 227 92 239 92;b 239 65 95 55 Build;t 180 155 Test representative configurations;t 180 195 Passing tests cannot exclude all regressions",
+    "r 35 65 290 35;f 35 65 29 35;r 35 125 290 35;f 35 125 145 35;t 180 55 Early rollout 10%;t 180 115 Expand to 50% if healthy;t 180 195 Monitor before broader deployment",
+    "b 25 55 145 55 Signed package;a 170 82 190 82;b 190 55 145 55 Verify signature;t 180 150 Trusted key checks provenance;t 180 195 Integrity is distinct from correctness"
+  ],
+  "plus-technology-how-content-delivery-networks-shorten-requests": [
+    "d 55 105 7;d 135 80 10;d 285 45 10;d 285 165 10;l 55 105 135 80;l 135 80 285 45;l 135 80 285 165;t 55 135 User;t 135 60 Edge;t 285 25 Origin;t 180 195 Route toward suitable nearby cache",
+    "b 25 65 95 55 Client;a 120 92 132 92;b 132 65 95 55 Edge;a 227 92 239 92;b 239 65 95 55 Origin;a 180 120 75 150;t 180 45 Miss → origin;t 180 195 Hit returns stored object without origin fetch",
+    "r 35 65 290 35;r 35 125 58 35;t 180 55 Origin RTT 100 ms;t 145 145 Edge RTT 20 ms;t 180 195 Network round-trip reduction 80 ms",
+    "l 35 105 325 105;d 65 105 6;d 180 105 6;d 295 105 6;t 65 85 Store;t 180 85 Expire;t 295 85 Revalidate;t 180 175 Sensitive data needs appropriate cache rules"
+  ],
+  "internet": [
+    "b 25 55 145 55 example.com;a 170 82 190 82;b 190 55 145 55 DNS answer;t 180 150 Hostname → network address;t 180 195 Cached records may avoid fresh lookup",
+    "d 35 105 8;d 110 65 8;d 180 140 8;d 250 65 8;d 325 105 8;l 35 105 110 65;l 110 65 180 140;l 180 140 250 65;l 250 65 325 105;a 55 95 95 75;t 180 195 Routers forward packets across networks",
+    "r 35 65 290 85;l 35 90 325 90;l 35 120 325 120;t 180 82 HTTP message;t 180 112 TLS protection;t 180 142 TCP or QUIC transport;t 180 195 HTTPS encrypts data in transit",
+    "b 25 45 95 45 DNS;a 120 67 132 67;b 132 45 95 45 Connect;a 227 67 239 67;b 239 45 95 45 Request;b 25 125 95 45 Response;a 120 147 132 147;b 132 125 95 45 Parse;a 227 147 239 147;b 239 125 95 45 Render;t 180 195 Each stage contributes to response time"
+  ],
+  "plus-technology-how-data-centers-distribute-workloads": [
+    "r 35 55 130 110;r 195 55 130 110;l 35 90 165 90;l 35 125 165 125;l 195 90 325 90;l 195 125 325 125;t 100 75 CPU;t 100 110 RAM;t 100 145 Storage;t 260 75 CPU;t 260 110 RAM;t 260 145 Accelerator;t 180 195 Scheduler matches workload requirements",
+    "b 25 80 95 50 Load balancer;a 120 105 190 50;a 120 105 190 105;a 120 105 190 160;b 190 30 145 40 Healthy A;b 190 85 145 40 Healthy B;b 190 140 145 40 Unhealthy C;t 180 205 Route to healthy instances only",
+    "r 35 45 130 130;r 195 45 130 130;r 50 75 100 60;r 210 75 100 60;t 100 65 Power A;t 260 65 Power B;t 100 110 Replica A;t 260 110 Replica B;t 180 195 Separate failure domains reduce correlated outage",
+    "r 35 65 290 50;f 35 65 203 50;t 136 95 Used capacity;t 280 95 Reserve;t 180 55 70% used (example);t 180 195 Headroom accommodates peaks and failures"
+  ],
+  "plus-technology-what-containers-isolate-in-software": [
+    "r 35 145 290 35;t 180 167 Shared host kernel;r 35 45 130 85;r 195 45 130 85;t 100 80 App A;t 260 80 App B;t 180 195 Separate processes share kernel",
+    "r 35 55 130 110;r 195 55 130 110;f 35 55 65 110;f 195 55 100 110;t 100 185 CPU cap A;t 260 185 CPU cap B;t 180 25 Namespaces isolate views, cgroups manage resources",
+    "r 65 125 230 35;r 65 85 230 35;r 65 45 230 35;t 180 147 Base layer;t 180 107 App dependencies;t 180 67 Writable runtime;t 180 195 Image layers reused, runtime may be ephemeral",
+    "r 35 125 290 40;r 65 45 100 65;r 195 45 100 65;a 245 110 245 125;t 115 80 Restricted;t 245 80 Privileged;t 180 148 Host kernel;t 180 195 Elevated access weakens boundary"
+  ],
+  "plus-technology-how-virtual-machines-share-hardware": [
+    "r 35 150 290 30;r 35 115 290 30;r 35 45 130 65;r 195 45 130 65;t 100 70 Guest OS A;t 260 70 Guest OS B;t 180 135 Hypervisor;t 180 170 Physical hardware;t 180 200 Each guest has its own kernel",
+    "b 25 65 95 55 Guest virtual;a 120 92 132 92;b 132 65 95 55 Guest physical;a 227 92 239 92;b 239 65 95 55 Host physical;t 180 195 Address translation and access isolation",
+    "r 35 45 130 60;r 195 45 130 60;r 95 145 170 35;a 100 105 145 145;a 260 105 215 145;t 100 75 Virtual disk A;t 260 75 Virtual disk B;t 180 167 Physical storage;t 180 205 Shared I/O can bottleneck",
+    "r 35 65 290 35;r 35 125 290 35;f 35 125 232 35;t 180 55 Physical capacity;t 180 115 Allocated capacity (may exceed physical);t 180 195 Simultaneous guest demand causes contention"
+  ],
+  "plus-technology-why-data-redundancy-is-not-a-backup": [
+    "r 35 65 130 85;r 195 65 130 85;a 165 85 195 85;a 195 125 165 125;t 100 110 Live disk A;t 260 110 Live disk B;t 180 195 Mirroring can preserve service after disk failure",
+    "r 35 65 130 85;r 195 65 130 85;p M65 85L135 135M135 85L65 135M225 85L295 135M295 85L225 135;a 165 105 195 105;t 180 45 Deletion replicated;t 180 195 Live replicas share current state",
+    "l 35 105 325 105;d 65 105 7;d 145 105 7;d 225 105 7;d 305 105 7;t 65 85 Mon;t 145 85 Tue;t 225 85 Wed;t 305 85 Thu;a 305 140 145 140;t 180 195 Restore a retained earlier version",
+    "l 35 105 325 105;d 35 105 6;d 265 105 6;d 325 105 6;t 65 85 Backup;t 265 85 Failure;t 325 85 Restore;t 145 150 Data loss window;t 180 195 RPO ≠ RTO, test both"
+  ],
+  "plus-technology-how-search-engines-organize-web-information": [
+    "r 35 65 65 60;r 145 35 65 60;r 145 135 65 60;r 255 65 65 60;a 100 85 145 65;a 100 105 145 155;a 210 65 255 85;a 210 155 255 105;t 180 215 Crawler discovers pages through links",
+    "b 25 55 95 45 Term: oak;a 120 77 150 77;b 150 55 185 45 Docs 2, 7, 9;b 25 125 95 45 Term: leaf;a 120 147 150 147;b 150 125 185 45 Docs 1, 7, 8;t 180 195 Inverted index maps terms to documents",
+    "r 35 55 290 35;r 35 100 230 35;r 35 145 160 35;t 180 77 Highest score;t 150 122 Next;t 115 167 Lower;t 180 205 Ranking estimates relevance, not truth",
+    "c 125 100 65;c 235 100 65;t 95 80 2, 9;t 265 80 1, 8;t 180 105 7;t 180 195 Both terms occur in document 7"
+  ],
+  "ai": [
+    "l 35 175 325 175;l 35 175 35 35;d 65 155 5;d 105 125 5;d 145 110 5;d 195 95 5;d 245 65 5;d 295 45 5;p M35 170L325 35;t 180 25 Price target;t 180 195 Feature: house area",
+    "l 35 175 325 175;l 35 175 35 35;p M35 155L325 45;d 180 65 6;l 180 65 180 100;t 180 55 Target y;t 230 105 Prediction ŷ;t 180 195 Squared loss = (y−ŷ)²",
+    "b 25 65 145 55 2×3+1=7;b 190 65 145 55 Target 9;t 180 155 Residual 9−7=2;t 180 195 Squared error =4",
+    "l 35 175 325 175;p M35 150L325 45;d 80 130 5;d 130 115 5;d 185 95 5;d 240 80 5;c 280 105 6;t 180 25 Filled: training examples;t 180 195 Open test example checks generalization"
+  ],
+  "plus-technology-what-machine-learning-training-and-inference-mean": [
+    "b 25 65 95 55 Examples;a 120 92 132 92;b 132 65 95 55 Model;a 227 92 239 92;b 239 65 95 55 Loss;a 285 120 285 150;a 285 150 180 150;a 180 150 180 120;t 180 195 Learning adjusts parameters",
+    "l 35 175 325 175;l 35 175 35 35;p M35 45Q180 275 325 45;d 90 115 6;d 130 143 6;a 97 120 125 140;t 180 25 Objective landscape;t 180 195 Gradient updates toward lower loss",
+    "l 35 175 325 175;p M35 55Q140 130 325 165;p M35 65Q140 145 210 105T325 65;t 270 155 Train loss;t 270 55 Test loss;t 180 195 Divergence may indicate overfitting",
+    "b 25 65 95 55 New input;a 120 92 132 92;b 132 65 95 55 Fixed weights;a 227 92 239 92;b 239 65 95 55 Prediction;t 180 155 No automatic weight update;t 180 195 Inference applies trained model"
+  ],
+  "plus-technology-how-recommendation-systems-learn-preferences": [
+    "r 35 55 290 110;l 35 90 325 90;l 35 125 325 125;t 105 75 Viewed;t 105 110 Rated;t 105 145 Purchased;t 245 75 Position bias;t 245 110 Explicit signal;t 245 145 Availability;t 180 195 Interactions are imperfect preference proxies",
+    "l 35 175 325 175;l 35 175 35 35;d 80 65 6;d 105 75 6;d 85 100 6;d 240 125 6;d 270 145 6;d 290 115 6;t 95 40 Cluster A;t 260 90 Cluster B;t 180 195 Embeddings place similar items nearby",
+    "b 25 65 145 55 Rank items;a 170 82 190 82;b 190 65 145 55 User sees items;a 262 120 262 155;a 262 155 97 155;a 97 155 97 120;t 180 145 Interaction logs;t 180 195 Exposure shapes future training data",
+    "r 35 65 130 95;r 195 65 130 95;t 100 105 Offline ranking;t 260 105 Online A/B;t 180 35 Different evaluation settings;t 180 195 Measure satisfaction, diversity and bias too"
+  ],
+  "plus-technology-why-software-services-use-message-queues": [
+    "b 25 65 95 55 Producer;a 120 92 132 92;r 132 65 95 55;l 163 65 163 120;l 195 65 195 120;a 227 92 239 92;b 239 65 95 55 Consumer;t 180 155 Queue buffers pending work;t 180 195 Arrival and completion rates may differ",
+    "r 35 65 75 55;r 145 65 75 55;r 255 65 75 55;t 72 95 ID 42;t 182 95 ID 42;t 292 95 Done once;a 110 92 145 92;a 220 92 255 92;t 180 155 Retry can deliver duplicate;t 180 195 Idempotent consumer avoids double effect",
+    "l 35 175 325 175;l 35 175 35 35;p M35 175L325 55;t 180 35 Backlog grows;t 180 195 120 arrivals/s −100 done/s =20 jobs/s",
+    "b 25 65 95 55 Broker;a 120 92 132 92;b 132 65 95 55 Consumer;a 227 92 239 92;b 239 65 95 55 Ack;a 180 120 180 150;b 105 150 150 40 Failed messages;t 180 210 Retry / dead-letter policy"
+  ],
+  "plus-technology-how-sensors-support-automated-systems": [
+    "c 65 105 25;a 90 105 145 105;r 145 75 70 60;a 215 105 270 105;r 270 75 55 60;t 65 145 Sensor;t 180 150 Condition;t 297 150 ADC;t 180 195 Physical measurement becomes sampled data",
+    "b 25 65 95 55 Controller;a 120 92 132 92;b 132 65 95 55 Actuator;a 227 92 239 92;b 239 65 95 55 Process;a 285 120 285 155;a 285 155 72 155;a 72 155 72 120;t 180 195 Sensor feedback corrects disturbance",
+    "l 35 105 325 105;d 115 105 7;d 245 105 7;a 122 75 238 75;t 115 130 Actual 18°C;t 245 130 Reported 20°C;t 180 55 Sensor bias +2°C;t 180 195 Controller can reach target reading, not actual target",
+    "b 25 45 145 45 Sensor A: 20°C;b 190 45 145 45 Sensor B: 35°C;a 97 90 180 135;a 262 90 180 135;b 95 135 170 45 Plausibility check;t 180 205 Disagreement triggers defined fault response"
+  ]
+};
+window.LumenSlideArtBatch28Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch28;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch28Render(c,cls,step)||prior(c,cls,step);};})();
