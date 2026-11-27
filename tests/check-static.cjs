@@ -55,7 +55,7 @@ assert.equal(catalog.filter(c=>c.format==='Quick read').length,4);
 assert.equal(new Set(catalog.map(c=>c.category)).size,68);
 assert.equal(vm.runInContext('experienceEntries().length', context),100);
 const revised = catalog.filter(c=>c.editorialRevision);
-assert.equal(revised.filter(c=>c.format==='Course').length,779);
+assert.equal(revised.filter(c=>c.format==='Course').length,781);
 assert.equal(context.window.LumenQualityBatch6.length,39);
 assert.equal(context.window.LumenQualityBatch7.length,20);
 assert.equal(context.window.LumenQualityBatch8.length,20);
@@ -68,7 +68,7 @@ assert.equal(context.window.LumenQualityBatch26.length,20);
 assert.equal(context.window.LumenQualityBatch27.length,20);
 assert.equal(context.window.LumenQualityBatch28.length,20);
 assert.equal(context.window.LumenQualityBatch29.length,20);
-assert.equal(context.window.LumenQualityBatch30.length,18);
+assert.equal(context.window.LumenQualityBatch30.length,20);
 assert.equal(context.window.LumenQualityBatch31.length,20);
 assert.equal(context.window.LumenQualityBatch32.length,19);
 assert.equal(context.window.LumenQualityBatch33.length,19);
@@ -88,11 +88,11 @@ for(const c of revised) {
 }
 for (const cat of ['Physics','Computer Science','Psychology','Finance','Health','Mathematics','Statistics','Cybersecurity','Financial Literacy','Biology','Chemistry','Astronomy','Earth Science','Meteorology','Oceanography','Geography','Botany','Zoology','Human Biology','Neuroscience','Medicine','Food Science','Scientific Literacy','Engineering','Electronics','Materials Science','Aerospace','Technology','Architecture','Transportation','Urban Planning','Home & Infrastructure','Systems & Logistics','Agriculture','Economics','Business','Accounting','Game Theory','Data Literacy']) {
   const list = catalog.filter(c=>c.category===cat&&c.format==='Course');
-  assert.equal(list.length,['Food Science','Accounting','Game Theory'].includes(cat)?19:cat==='Economics'?18:20,cat);
-  for (const [level,count] of [['Beginner',['Food Science','Economics','Accounting','Game Theory'].includes(cat)?9:10],['Intermediate',cat==='Economics'?5:6],['Advanced',4]]) {
+  assert.equal(list.length,['Food Science','Accounting','Game Theory'].includes(cat)?19:20,cat);
+  for (const [level,count] of [['Beginner',['Food Science','Accounting','Game Theory'].includes(cat)?9:10],['Intermediate',6],['Advanced',4]]) {
     assert.equal(list.filter(c=>c.difficulty===level).length,count,cat+' '+level);
   }
-  assert.equal(new Set(paths[cat]).size,['Food Science','Accounting','Game Theory'].includes(cat)?19:cat==='Economics'?18:20,cat+' unique path entries');
+  assert.equal(new Set(paths[cat]).size,['Food Science','Accounting','Game Theory'].includes(cat)?19:20,cat+' unique path entries');
   assert(paths[cat].every(id=>byId.get(id)?.category===cat&&byId.get(id)?.format==='Course'),cat);
   assert(list.every(c=>c.editorialRevision && paths[cat].includes(c.id)),cat+' coverage');
 }
@@ -100,7 +100,7 @@ for (const [id,related] of Object.entries(prerequisites)) {
   assert(byId.has(id),id);
   assert(related.every(x=>x!==id&&byId.has(x)),id+' related IDs');
 }
-console.log('Catalog, 781 revised titles, 39 guided paths, and background references passed.');
+console.log('Catalog, 783 revised titles, 39 guided paths, and background references passed.');
 
 assert.equal(context.window.LumenAccounts.enabled(),false,'Accounts must be disabled on public main');
 assert.equal(context.window.LumenAccountConfig.enabled,false);
