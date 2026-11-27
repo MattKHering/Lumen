@@ -5450,3 +5450,137 @@ window.LumenSlideArtBatch37Render=function renderer(c,cls="cover",step=-1){
  const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch37Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* Game Theory: dedicated slide artwork, batch 38. */
+window.LumenSlideArtBatch38={
+  "prisoners-dilemma": [
+    "r 90 65 180 110;l 180 65 180 175;l 90 120 270 120;t 135 50 Cooperate;t 225 50 Defect;t 48 95 C;t 48 150 D;t 135 95 Both gain;t 225 95 P2 gains;t 135 150 P1 gains;t 225 150 Both lose;t 180 195 Individual incentives conflict with joint outcomes",
+    "r 90 65 180 110;l 180 65 180 175;l 90 120 270 120;t 135 50 C;t 225 50 D;t 55 95 C;t 55 150 D;t 135 95 3,3;t 225 95 0,5;t 135 150 5,0;t 225 150 1,1;t 180 195 Defect pays more against either action",
+    "r 90 65 180 110;l 180 65 180 175;l 90 120 270 120;f 180 120 90 55;t 135 95 3,3;t 225 95 0,5;t 135 150 5,0;t 225 150 1,1;t 180 50 Nash equilibrium at D,D;t 180 195 C,C gives both higher payoffs",
+    "b 25 65 145 55 One-shot choice;b 190 65 145 55 Repeated interaction;t 97 150 Immediate payoff;t 262 150 Future consequences;t 180 195 Different rules can change cooperation incentives"
+  ],
+  "nash-equilibrium": [
+    "c 95 105 35;c 265 105 35;a 130 95 230 95;a 230 115 130 115;t 95 110 Player 1;t 265 110 Player 2;t 180 195 Each strategy best responds to the other",
+    "r 90 65 180 110;l 180 65 180 175;l 90 120 270 120;d 135 95 6;d 225 150 6;t 135 50 A;t 225 50 B;t 55 95 A;t 55 150 B;t 180 195 Mark cells where best responses coincide",
+    "r 90 65 180 110;l 180 65 180 175;l 90 120 270 120;f 90 65 90 55;f 180 120 90 55;t 135 95 4,4;t 225 95 0,0;t 135 150 0,0;t 225 150 4,4;t 180 195 Both A and both B are equilibria",
+    "d 95 95 8;d 265 95 8;l 95 95 265 95;t 95 75 Equilibrium A;t 265 75 Equilibrium B;t 180 155 Expectations influence which is reached;t 180 195 Equilibrium alone is not a fairness or efficiency criterion"
+  ],
+  "depth-game-theory-coordination-games-explained": [
+    "b 25 65 145 55 Standard A;b 190 65 145 55 Standard B;t 180 150 Matching devices interoperate;t 180 195 Mismatched standards can prevent compatibility",
+    "r 90 65 180 110;l 180 65 180 175;l 90 120 270 120;f 90 65 90 55;f 180 120 90 55;t 135 95 5,5;t 225 95 0,0;t 135 150 0,0;t 225 150 3,3;t 180 195 Two equilibria, different joint payoffs",
+    "c 95 105 35;c 265 105 35;a 130 95 230 95;a 230 115 130 115;t 95 110 Expect B;t 265 110 Choose B;t 180 195 Existing expectations can sustain lower-payoff convention",
+    "r 35 65 130 95;r 195 65 130 95;t 100 90 Old standard;t 260 90 New standard;a 165 105 195 105;t 180 195 Coordinated switch avoids isolated incompatibility"
+  ],
+  "depth-game-theory-zero-sum-games-explained": [
+    "r 35 75 145 50;r 180 75 145 50;t 107 105 +5;t 252 105 −5;t 180 55 One outcome;t 180 195 Sum of payoffs is zero for every outcome",
+    "r 90 65 180 110;l 180 65 180 175;l 90 120 270 120;t 135 95 +2;t 225 95 −1;t 135 150 −3;t 225 150 +4;t 180 50 Player 1 matrix;t 180 195 Player 2 receives the negative of each value",
+    "r 90 65 180 110;l 180 65 180 175;l 90 120 270 120;t 135 95 3;t 225 95 1;t 135 150 2;t 225 150 0;t 310 95 min 1;t 310 150 min 0;t 180 195 Choose row maximizing its minimum: 1",
+    "r 90 65 180 110;l 180 65 180 175;l 90 120 270 120;t 135 95 +1;t 225 95 −1;t 135 150 −1;t 225 150 +1;t 180 50 Matching pennies;t 180 195 Randomizing half heads and half tails prevents exploitation"
+  ],
+  "depth-game-theory-dominant-strategies": [
+    "r 90 65 180 110;l 180 65 180 175;l 90 120 270 120;t 135 50 X;t 225 50 Y;t 50 95 A;t 50 150 B;a 135 145 135 100;a 225 145 225 100;t 180 195 A must improve payoff in every column",
+    "r 90 65 180 110;l 180 65 180 175;l 90 120 270 120;f 90 65 180 55;t 135 95 4;t 225 95 3;t 135 150 2;t 225 150 1;t 180 50 A strictly dominates B;t 180 195 4>2 and 3>1",
+    "r 90 65 180 110;l 180 65 180 175;l 90 120 270 120;t 135 95 4;t 225 95 3;t 135 150 4;t 225 150 1;t 180 50 Weak dominance example;t 180 195 Tie against X, better against Y",
+    "b 25 65 145 55 Dominant strategy;b 190 65 145 55 Nash equilibrium;a 170 92 190 92;t 180 155 All players dominant → equilibrium;t 180 195 Equilibrium need not involve dominant strategies"
+  ],
+  "depth-game-theory-mixed-strategies": [
+    "r 35 75 290 50;f 35 75 72.5 50;t 71 105 A 25%;t 216 105 B 75%;t 180 55 Probability distribution;t 180 195 Probabilities sum to one",
+    "r 35 75 290 50;f 35 75 72.5 50;t 71 105 .25×4;t 216 105 .75×0;t 180 55 Weighted outcomes;t 180 195 Expected payoff=1",
+    "l 35 175 325 175;l 35 175 35 35;p M35 165L325 45M35 45L325 165;d 180 105 6;t 180 25 Expected payoffs;t 180 195 Interior mix makes opponent indifferent at intersection",
+    "r 90 65 180 110;l 180 65 180 175;l 90 120 270 120;t 135 50 H;t 225 50 T;t 55 95 H;t 55 150 T;t 135 95 +1,−1;t 225 95 −1,+1;t 135 150 −1,+1;t 225 150 +1,−1;t 180 195 Both mix 50/50 → expected payoff zero"
+  ],
+  "depth-game-theory-sequential-games": [
+    "d 55 105 8;d 180 65 8;d 180 145 8;l 55 105 180 65;l 55 105 180 145;l 180 65 315 35;l 180 65 315 95;l 180 145 315 125;l 180 145 315 175;t 55 85 First;t 180 45 Second;t 180 195 Later action can depend on observed first move",
+    "d 55 105 8;d 180 55 8;d 180 155 8;l 55 105 180 55;l 55 105 180 155;l 180 55 315 35;l 180 55 315 75;l 180 155 315 135;l 180 155 315 175;l 180 65 180 145;t 230 105 Information set;t 180 195 Terminal nodes carry payoffs",
+    "d 55 105 8;d 180 65 8;l 55 105 180 65;l 180 65 315 35;l 180 65 315 95;a 305 35 190 65;a 170 65 65 105;t 315 25 Higher;t 315 115 Lower;t 180 195 Work backward from optimal last decisions",
+    "d 75 105 8;d 180 105 8;l 75 105 180 105;l 180 105 315 55;l 180 105 315 155;t 75 85 Offer;t 265 55 Accept: 2;t 265 155 Reject: 0;t 180 195 Buyer accepts at this node, seller anticipates response"
+  ],
+  "depth-game-theory-credible-commitments": [
+    "b 25 65 145 55 Threat now;a 170 92 190 92;b 190 65 145 55 Incentive later;t 180 155 Future choice must support stated intention;t 180 195 Otherwise threat may be noncredible",
+    "d 75 105 8;l 75 105 285 55;l 75 105 285 155;t 230 45 Accommodate: 4;t 230 175 Retaliate: 1;t 75 85 Entry;t 180 195 Retaliation not optimal once entry occurs",
+    "b 25 55 145 55 Before commitment;b 190 55 145 55 After commitment;t 97 150 Actions A or B;t 262 150 B unavailable;t 180 195 Observable enforceable commitment can change expectations",
+    "r 35 75 290 50;l 180 75 180 125;t 107 105 Credibility;t 252 105 Flexibility;t 180 195 Commitment gains influence but reduces adaptation"
+  ],
+  "depth-game-theory-public-goods-games": [
+    "c 180 105 35;c 65 55 15;c 295 55 15;c 65 155 15;c 295 155 15;a 80 55 150 90;a 280 55 210 90;a 80 155 150 120;a 280 155 210 120;t 180 110 Pool;t 180 195 Contributions create shared benefits",
+    "r 35 75 290 50;l 107.5 75 107.5 125;l 180 75 180 125;l 252.5 75 252.5 125;t 71 105 .5;t 143 105 .5;t 216 105 .5;t 288 105 .5;t 180 55 One contributed token doubles to 2;t 180 195 Giver pays 1, receives .5, group receives 2",
+    "r 65 110 90 60;r 205 50 90 120;t 110 100 10 each;t 250 40 20 each;t 110 190 None give;t 250 190 All give;t 180 210 Individual withholding conflicts with collective benefit",
+    "b 25 45 145 45 Repetition;b 190 45 145 45 Monitoring;b 25 115 145 45 Contribution rules;b 190 115 145 45 Social preferences;t 180 195 Institutions can alter monetary incentives"
+  ],
+  "depth-game-theory-signaling-games": [
+    "b 25 65 95 55 Sender type;a 120 92 132 92;b 132 65 95 55 Signal;a 227 92 239 92;b 239 65 95 55 Receiver;t 180 155 Receiver observes signal, not necessarily type",
+    "r 65 95 90 75;r 205 45 90 125;t 110 85 Type A cost;t 250 35 Type B cost;t 180 195 Same signal can have different costs across types",
+    "d 45 65 7;d 45 145 7;d 145 105 7;d 215 65 7;d 215 145 7;d 315 65 7;d 315 145 7;l 45 65 145 105;l 45 145 145 105;l 215 65 315 65;l 215 145 315 145;t 95 185 Pooling;t 265 185 Separation;t 180 205 Different types send same versus different signals",
+    "b 25 65 145 55 Prior belief;a 170 92 190 92;b 190 65 145 55 Posterior belief;t 180 155 Observed signal changes type probabilities;t 180 195 Off-path beliefs also matter in equilibrium"
+  ],
+  "plus-game-theory-how-auction-formats-change-bidding": [
+    "r 35 75 290 50;l 130 75 130 125;l 230 75 230 125;t 82 105 Bid A;t 180 105 Bid B;t 277 105 Bid C;t 180 195 Allocation rule and payment rule are separate",
+    "r 65 45 90 125;r 205 70 90 100;t 110 35 Value;t 250 60 Bid;t 180 195 First price: bidder may shade below value",
+    "r 65 45 90 125;r 205 80 90 90;t 110 35 Own value bid;t 250 70 Second bid;t 180 195 Second price: winner pays next-highest bid",
+    "r 65 45 65 125;r 147 70 65 100;r 230 95 65 75;t 97 35 100;t 179 60 80;t 262 85 60;t 180 195 First-price payment 100, second-price payment 80"
+  ],
+  "plus-game-theory-understanding-bargaining-games": [
+    "l 35 175 325 175;l 35 175 35 35;p M35 35L325 175;d 95 130 7;t 95 145 Disagreement;t 180 25 Feasible frontier;t 180 195 Agreement chooses feasible joint payoffs",
+    "l 35 175 325 175;l 35 175 35 35;l 95 35 95 175;l 35 130 325 130;r 95 35 230 95;t 180 80 Individually rational region;t 180 195 Each must receive at least disagreement payoff",
+    "r 35 75 290 50;l 93 75 93 125;l 180 75 180 125;l 252.5 75 252.5 125;t 64 105 20;t 136 105 30;t 216 105 25;t 288 105 25;t 180 55 Total 100, disagreement 50;t 180 195 Equal extra surplus gives 45 and 55",
+    "l 35 105 325 105;d 65 105 6;d 180 105 6;d 295 105 6;t 65 85 Offer;t 180 85 Counter;t 295 85 Deadline;t 180 175 Patience and disagreement payoffs influence division"
+  ],
+  "plus-game-theory-how-repeated-games-sustain-cooperation": [
+    "l 35 105 325 105;d 65 105 6;d 145 105 6;d 225 105 6;d 305 105 6;t 65 85 Now;t 145 85 Next;t 225 85 Later;t 305 85 Later;t 180 175 Current action can change future responses",
+    "r 45 45 55 125;r 115 70 55 100;r 185 90 55 80;r 255 106 55 64;t 72 35 1;t 142 60 δ;t 212 80 δ²;t 282 96 δ³;t 180 195 Future payoffs weighted by discount factor",
+    "b 25 55 145 55 Cooperate: 3/(1−δ);b 190 55 145 55 Defect: 5+δ/(1−δ);t 180 150 Cooperation payoff ≥ deviation payoff;t 180 195 Grim-trigger threshold δ≥.5",
+    "b 25 45 145 45 Monitoring errors;b 190 45 145 45 Uncertain horizon;b 25 115 145 45 Unequal payoffs;b 190 115 145 45 Credible sanctions;t 180 195 Repetition alone does not ensure cooperation"
+  ],
+  "plus-game-theory-the-tragedy-of-the-commons": [
+    "r 105 65 150 90;d 135 95 5;d 180 115 5;d 225 95 5;a 105 85 35 45;a 255 85 325 45;a 105 135 35 175;a 255 135 325 175;t 180 55 Shared stock;t 180 195 Extraction reduces resource left for others",
+    "b 25 65 145 55 Private benefit;b 190 65 145 55 Shared depletion cost;t 180 155 Extractor bears only part of total harm;t 180 195 Individual and group incentives diverge",
+    "r 35 65 290 35;f 35 65 241.67 35;r 35 125 290 35;f 35 125 72.5 35;t 180 55 Benefit 10;t 180 115 Group cost 12, own share 3;t 180 195 Private +7, group −2",
+    "r 35 75 290 50;f 35 75 174 50;t 122 105 Permitted use;t 267 105 Reserve;t 180 55 Illustrative collective limit;t 180 195 Governance aligns incentives with resource dynamics"
+  ],
+  "plus-game-theory-understanding-the-free-rider-problem": [
+    "c 180 105 40;c 65 105 20;c 295 105 20;a 85 105 140 105;a 220 105 275 105;t 180 110 Public good;t 65 145 Pays;t 295 145 Benefits;t 180 195 Nonpayer may still receive benefit",
+    "b 25 65 145 55 Individual withholds;b 190 65 145 55 Many withhold;t 97 150 Small perceived effect;t 262 150 Provision falls;t 180 195 Individual reasoning can undermine group outcome",
+    "r 35 55 130 110;r 195 55 130 110;t 100 90 Nonrival;t 100 125 Public good;t 260 90 Rival;t 260 125 Common stock;t 180 195 Free riding concerns provision, overuse concerns depletion",
+    "b 25 45 145 45 Collective financing;b 190 45 145 45 Membership;b 25 115 145 45 Selective incentives;b 190 115 145 45 Social norms;t 180 195 Balance fairness, enforcement and provision"
+  ],
+  "plus-game-theory-how-mechanism-design-changes-incentives": [
+    "b 25 65 95 55 Private types;a 120 92 132 92;b 132 65 95 55 Rules;a 227 92 239 92;b 239 65 95 55 Outcome;t 180 155 Design rules to align individual choices with goal",
+    "r 65 45 90 125;r 205 85 90 85;t 110 35 Truthful payoff;t 250 75 Deviation payoff;t 180 195 Incentive compatibility compares possible deviations",
+    "l 35 105 325 105;d 95 105 6;d 180 105 6;d 265 105 6;t 95 85 Bid low;t 180 85 True value;t 265 85 Bid high;t 180 155 Lose profitable win / risk overpaying;t 180 195 Truthful bid weakly dominant in standard second-price model",
+    "b 25 45 145 45 Budget balance;b 190 45 145 45 Participation;b 25 115 145 45 Information;b 190 115 145 45 Fairness;t 180 195 Desired guarantees can conflict"
+  ],
+  "plus-game-theory-what-pareto-efficiency-means": [
+    "l 35 175 325 175;l 35 175 35 35;d 115 135 6;d 225 75 6;a 125 130 215 80;t 115 155 Initial;t 225 65 Improvement;t 180 195 Both gain in this example",
+    "l 35 175 325 175;l 35 175 35 35;d 150 95 6;d 210 95 6;d 270 175 6;a 156 95 204 95;t 135 80 2,2;t 210 80 3,2;t 270 160 4,0;t 180 195 (3,2) dominates (2,2), not (4,0)",
+    "l 35 175 325 175;l 35 175 35 35;p M35 45L325 175;d 95 72 6;d 265 148 6;t 180 25 Feasible frontier;t 180 195 Unequal efficient allocations may coexist",
+    "d 95 145 7;d 265 65 7;a 105 140 255 70;t 95 165 D,D (1,1);t 265 45 C,C (3,3);t 180 195 Joint improvement exists despite Nash equilibrium"
+  ],
+  "plus-game-theory-how-coordination-can-fail": [
+    "c 95 105 35;c 265 105 35;t 95 110 Choose A;t 265 110 Choose B;p M160 85L200 125M200 85L160 125;t 180 195 Conflicting expectations can produce mismatch",
+    "l 35 175 325 175;l 35 175 35 35;p M35 175L325 45M35 93.75L325 175;d 146.54 125 6;t 275 35 8p;t 75 85 5(1−p);t 180 195 Choose A when p>5/13≈.385",
+    "r 90 65 180 110;l 180 65 180 175;l 90 120 270 120;t 135 95 8,8;t 225 95 0,0;t 135 150 0,0;t 225 150 5,5;t 180 195 Mismatch losses determine risk comparison",
+    "b 25 65 145 55 Shared announcement;a 170 92 190 92;b 190 65 145 55 Aligned beliefs;t 180 155 Standards or compatible transition;t 180 195 Coordination depends on common knowledge"
+  ],
+  "plus-game-theory-understanding-asymmetric-information-games": [
+    "r 35 55 130 110;r 195 55 130 110;t 100 90 Knows quality;t 100 125 Private type;t 260 90 Observes price;t 260 125 Uncertain quality;t 180 195 Different players know different facts",
+    "r 65 45 90 125;r 205 95 90 75;t 110 35 High quality;t 250 85 Pooled price;t 180 195 Hidden quality before agreement can drive high types out",
+    "l 35 105 325 105;d 95 105 6;d 265 105 6;t 95 85 Contract;t 265 85 Hidden action;t 180 155 Shared consequences alter incentives;t 180 195 Moral hazard concerns action after agreement",
+    "b 25 55 145 55 Uninformed screens;b 190 55 145 55 Informed signals;t 97 150 Offer menu;t 262 150 Credible evidence;t 180 195 Beliefs and expected payoffs depend on private types"
+  ]
+};
+window.LumenSlideArtBatch38Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch38;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch38Render(c,cls,step)||prior(c,cls,step);};})();
