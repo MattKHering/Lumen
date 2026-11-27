@@ -5036,3 +5036,143 @@ window.LumenSlideArtBatch34Render=function renderer(c,cls="cover",step=-1){
  const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch34Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* Economics: dedicated slide artwork, batch 35. */
+window.LumenSlideArtBatch35={
+  "inflation": [
+    "r 35 75 290 45;l 107.5 75 107.5 120;l 180 75 180 120;l 252.5 75 252.5 120;t 71 102 Food;t 143 102 Rent;t 216 102 Travel;t 288 102 Other;t 180 55 General price basket;t 180 195 One item rising is not necessarily inflation",
+    "r 35 65 290 45;f 35 65 116 45;l 209 65 209 110;t 93 92 Housing;t 151 92 Food;t 267 92 Other;t 180 145 Weighted basket price changes;t 180 195 Household spending weights can differ",
+    "r 65 45 90 125;r 205 40 90 130;t 110 35 125;t 250 30 130;t 110 190 Year 1;t 250 190 Year 2;t 180 210 (130−125)/125=4%",
+    "l 35 175 325 175;p M35 155L105 95L175 65L245 50L325 40;p M35 155L105 125L175 105L245 90L325 110;t 180 25 Price-level paths;t 180 195 Slower rise = disinflation, actual fall = deflation"
+  ],
+  "central-bank": [
+    "l 35 175 325 175;p M35 145L105 120L175 95L245 70L325 45;l 35 120 325 120;t 180 25 General price level;t 180 195 Monetary policy seeks stable inflation over time",
+    "b 25 65 95 55 Rate rises;a 120 92 132 92;b 132 65 95 55 Credit cost rises;a 227 92 239 92;b 239 65 95 55 Demand slows;t 180 195 Transmission varies by borrower and market",
+    "l 35 175 325 175;p M35 145H95V65H325;p M35 155H150Q235 155 325 75;t 180 45 Policy rate;t 275 95 Loan repricing;t 180 195 Fixed-rate contracts delay some effects",
+    "l 35 175 325 175;l 35 175 35 35;p M35 45L325 155;p M35 165L325 65;p M35 115L250 35;t 180 25 Adverse supply shift;t 180 195 Higher price, lower output create policy tradeoff"
+  ],
+  "public-debt": [
+    "r 115 65 130 90;a 25 105 115 105;a 245 105 335 105;t 180 110 Debt stock;t 70 85 Borrowing;t 290 85 Repayment;t 180 195 Deficit is period flow, debt is outstanding stock",
+    "r 35 75 290 50;f 35 75 278.85 50;t 175 105 $500bn opening;t 180 55 $20bn new borrowing;t 180 195 Closing debt $520bn (ignoring adjustments)",
+    "b 25 65 145 55 Debt balance;b 190 65 145 55 Interest rate;t 180 155 Interest expense depends on maturity and rates;t 180 195 Refinancing changes cost over time",
+    "b 25 55 145 55 Debt 100 / GDP 100;b 190 55 145 55 Debt 105 / GDP 110;t 97 150 100%;t 262 150 95.5%;t 180 195 Ratio can fall while nominal debt rises"
+  ],
+  "depth-economics-the-cost-of-choosing": [
+    "b 105 35 150 45 One free hour;a 180 80 95 125;a 180 80 265 125;b 25 125 140 45 Study;b 195 125 140 45 Work;t 180 205 One choice displaces another",
+    "b 25 55 95 55 Choice A;b 132 55 95 55 Alternative B;b 239 55 95 55 Alternative C;t 180 150 Best feasible rejected option B;t 180 195 Opportunity cost is not B plus C",
+    "b 25 65 145 55 Study 1 hour;b 190 65 145 55 Work 1 hour;t 97 150 Learning benefit;t 262 150 $20 forgone;t 180 195 Compare study benefit with next-best alternative",
+    "l 35 105 325 105;d 65 105 6;d 180 105 6;d 295 105 6;t 65 85 Paid already;t 180 85 Decide now;t 295 85 Future costs;t 180 175 Irreversible past spending is sunk"
+  ],
+  "depth-economics-why-demand-responds-to-price": [
+    "l 35 175 325 175;l 35 175 35 35;p M45 45L305 165;d 110 75 5;d 240 135 5;t 180 25 Price;t 180 195 Quantity demanded (other factors fixed)",
+    "b 25 65 145 55 Product A price ↑;a 170 92 190 92;b 190 65 145 55 Substitute B;t 180 155 Buyers switch when alternatives are available",
+    "r 35 65 290 40;r 35 125 145 40;t 180 55 Same budget at lower price;t 215 145 Price doubled;t 180 195 Fixed money buys fewer units, income can shift demand",
+    "b 25 65 145 55 Price +10%;b 190 65 145 55 Quantity −20%;t 180 155 −20% / 10%;t 180 195 Elasticity ≈−2 using stated bases"
+  ],
+  "depth-economics-what-gross-domestic-product-measures": [
+    "p M35 75H325V155H35Z;b 45 95 110 40 Domestic output;b 205 95 110 40 Final goods;t 180 55 Within national production boundary;t 180 195 Avoid counting intermediate inputs twice",
+    "r 35 75 290 50;f 35 75 116 50;t 93 105 Inputs $2;t 238 105 Value added $3;t 180 55 Bread sells for $5;t 180 195 Bakery contributes $3 in value added",
+    "b 25 45 145 45 Consumption;b 190 45 145 45 Investment;b 25 115 145 45 Government purchases;b 190 115 145 45 Exports − imports;t 180 195 GDP = C+I+G+X−M",
+    "r 35 55 130 105;r 195 55 130 105;t 100 105 Market output;t 260 90 Unpaid work;t 260 125 Environment;t 180 195 GDP is production, not comprehensive well-being"
+  ],
+  "depth-economics-why-markets-sometimes-fail": [
+    "l 35 175 325 175;l 35 175 35 35;p M35 45L325 165M35 165L325 45;d 180 105 6;t 180 25 Competitive benchmark;t 180 195 Efficiency depends on information and external effects",
+    "l 35 175 325 175;l 35 175 35 35;p M35 45L325 165M35 165L325 65M35 125L295 35;d 209 117 5;d 151 93 5;t 255 55 Private cost;t 200 35 Social cost;t 180 195 External harm shifts efficient quantity lower",
+    "c 180 105 40;c 65 55 15;c 295 55 15;c 65 155 15;c 295 155 15;l 80 55 145 90;l 280 55 215 90;l 80 155 145 120;l 280 155 215 120;t 180 110 Public good;t 180 195 Nonrival, nonexcludable benefits make charging difficult",
+    "b 25 45 145 45 Tax external harm;b 190 45 145 45 Standards;b 25 115 145 45 Public provision;b 190 115 145 45 Information rules;t 180 195 Compare policy effects, costs and implementation"
+  ],
+  "depth-economics-how-labor-markets-work": [
+    "l 35 175 325 175;l 35 175 35 35;p M35 45L325 165;t 180 25 Wage;t 180 195 Labor demand depends on productivity and output demand",
+    "l 35 175 325 175;l 35 175 35 35;p M35 155L325 45;t 180 25 Wage;t 180 195 Labor supply depends on time, skills and constraints",
+    "c 65 65 18;c 65 145 18;c 295 65 18;c 295 145 18;l 83 65 277 65;l 83 145 277 145;t 65 35 Workers;t 295 35 Vacancies;t 180 195 Unmatched skills or locations can coexist",
+    "b 25 45 145 45 Bargaining power;b 190 45 145 45 Contracts;b 25 115 145 45 Mobility;b 190 115 145 45 Labor protections;t 180 195 Institutions shape wage and employment outcomes"
+  ],
+  "depth-economics-why-productivity-changes-living-standards": [
+    "b 25 65 145 55 Output units;b 190 65 145 55 Labor hours;t 180 155 Output / hours;t 180 195 Productivity rises through skills, equipment and organization",
+    "r 65 74 90 96;r 205 50 90 120;t 110 64 12/hour;t 250 40 15/hour;t 180 195 120/10 →150/10, +25%",
+    "r 35 75 290 50;l 135 75 135 125;l 230 75 230 125;t 85 105 Pay;t 182 105 Invest;t 277 105 Leisure;t 180 55 Larger output creates options;t 180 195 Distribution depends on institutions and ownership",
+    "b 25 65 145 55 More total output;b 190 65 145 55 More hours worked;t 180 155 Output/hour can remain unchanged;t 180 195 Quality and service output are difficult to measure"
+  ],
+  "plus-economics-understanding-consumer-surplus": [
+    "l 35 105 325 105;d 95 105 6;d 265 105 6;t 95 85 Actual payment;t 265 85 Max willingness;t 180 155 Difference is consumer surplus",
+    "r 35 75 290 50;f 35 75 203 50;t 136 105 Payment $35;t 281 105 Surplus $15;t 180 55 Willing to pay $50;t 180 195 $50−$35=$15",
+    "l 35 175 325 175;l 35 175 35 35;p M35 45L265 145L325 171;l 35 145 265 145;p M35 45L265 145H35Z;t 105 120 Consumer surplus;t 270 135 Price;t 180 195 Area under demand and above price",
+    "c 90 105 35;c 270 105 35;t 90 105 Income A;t 270 105 Income B;t 180 55 Willingness to pay depends on resources;t 180 195 Surplus alone does not establish fairness"
+  ],
+  "supply": [
+    "l 35 175 325 175;l 35 175 35 35;p M35 45L325 165M35 165L325 45;d 180 105 6;t 180 25 Price;t 260 155 Demand;t 265 55 Supply;t 180 195 Equilibrium where quantity supplied equals demanded",
+    "b 25 65 145 55 Qd=100−2P;b 190 65 145 55 Qs=20+2P;t 180 155 100−2P=20+2P;t 180 195 P=20, Q=60",
+    "l 35 175 325 175;l 35 175 35 35;p M35 45L325 165M35 165L325 45M35 125L250 35;d 180 105 5;d 130 84 5;t 180 25 Higher costs shift supply left;t 180 195 New equilibrium: higher price, lower quantity",
+    "l 35 175 325 175;l 35 175 35 35;p M35 45L325 165M35 165L325 45;l 35 135 325 135;l 108 135 252 135;t 180 125 Shortage at low price;t 180 195 Inventories, contracts and queues affect adjustment"
+  ],
+  "plus-economics-how-price-ceilings-affect-markets": [
+    "l 35 175 325 175;l 35 175 35 35;p M35 45L325 165M35 165L325 45;l 35 65 325 65;d 180 105 6;t 180 55 Ceiling above equilibrium;t 180 195 Nonbinding ceiling in competitive model",
+    "l 35 175 325 175;l 35 175 35 35;p M35 45L325 165M35 165L325 45;l 35 135 325 135;d 107.5 135 6;d 252.5 135 6;t 180 125 Binding price cap;t 180 195 Quantity demanded exceeds supply",
+    "r 35 65 290 35;r 35 125 193.33 35;t 180 55 Demand 120;t 132 115 Supply 80;t 180 195 Modeled shortage=40 units",
+    "b 25 45 145 45 Enforcement;b 190 45 145 45 Market structure;b 25 115 145 45 Time horizon;b 190 115 145 45 Supply policy;t 180 195 Distributional outcomes depend on design"
+  ],
+  "plus-economics-what-a-marginal-decision-means": [
+    "r 35 75 290 50;l 250 75 250 125;f 250 75 75 50;t 142 105 Existing output;t 287 105 +1 unit;t 180 195 Compare additional benefit and additional cost",
+    "r 35 65 290 35;r 35 125 212.67 35;t 180 55 Additional revenue $30;t 141 115 Additional cost $22;t 180 195 Incremental contribution $8",
+    "l 35 175 325 175;l 35 175 35 35;p M35 45L325 155M35 155L325 45;d 180 100 6;t 95 55 Marginal benefit;t 265 55 Marginal cost;t 180 195 Incremental values change with quantity",
+    "l 35 175 325 175;l 35 175 35 35;p M35 45L325 155M35 155L325 45;d 180 100 6;l 180 100 180 175;t 180 195 Interior optimum MB=MC, boundaries may dominate"
+  ],
+  "plus-economics-how-monopolies-influence-prices": [
+    "b 25 55 145 55 One supplier;b 190 55 145 55 Potential entrants;l 170 45 170 145;t 180 155 Entry barrier;t 180 195 Substitutes and market definition affect power",
+    "l 35 175 325 175;l 35 175 35 35;p M35 45L325 145M35 45L240 175;t 270 130 Demand;t 195 165 MR;t 180 195 Selling more may require a lower price",
+    "l 35 175 325 175;l 35 175 35 35;p M35 45L325 145M35 45L240 175;l 35 115 325 115;d 145 115 5;l 145 83 145 175;d 145 83 5;t 180 25 Price from demand;t 180 195 Choose output where MR=MC in interior model",
+    "l 35 175 325 175;l 35 175 35 35;p M35 45L325 145M35 45L240 175;l 35 115 325 115;p M145 83L238 115H145Z;t 185 100 Lost surplus;t 180 195 Lower output can create deadweight loss"
+  ],
+  "plus-economics-why-taxes-can-change-behavior": [
+    "l 35 105 325 105;d 95 105 7;d 265 105 7;t 95 85 Seller receives;t 265 85 Buyer pays;t 180 155 Per-unit tax wedge;t 180 195 Incentives change on both sides",
+    "l 35 175 325 175;l 35 175 35 35;p M35 55L325 155M35 165L325 45M35 125L250 35;t 180 25 Tax shifts effective supply;t 180 195 Relative elasticities determine economic incidence",
+    "r 35 75 290 50;f 35 75 217.5 50;t 143 105 Buyer $1.50;t 288 105 $.50;t 180 55 Tax $2/unit;t 180 195 Sellers bear remaining $.50 per traded unit",
+    "l 35 175 325 175;l 35 175 35 35;p M35 175Q180 -15 325 175;t 180 25 Revenue can be nonmonotonic;t 180 195 Tax rate may shrink tax base"
+  ],
+  "plus-economics-what-economic-growth-measures": [
+    "r 65 65 90 105;r 205 45 90 125;t 110 55 Nominal;t 250 35 Real (concept);t 180 195 Adjust prices to compare output volume",
+    "r 65 70 90 100;r 205 66 90 104;t 110 60 100;t 250 56 104;t 180 195 (104−100)/100=4% growth",
+    "b 25 65 145 55 Output ×1.04;b 190 65 145 55 Population ×1.02;t 180 155 1.04/1.02−1;t 180 195 Per-person real output +1.96%",
+    "b 25 45 145 45 Capital;b 190 45 145 45 Labor;b 25 115 145 45 Innovation;b 190 115 145 45 Productivity;t 180 195 Growth does not guarantee equitable distribution"
+  ],
+  "plus-economics-understanding-unemployment-measures": [
+    "r 35 75 290 50;f 35 75 240 50;t 155 105 Employed + unemployed;t 180 55 Labor force subset;t 180 195 Outside labor force excluded from rate denominator",
+    "r 35 75 290 50;f 35 75 275.5 50;t 170 105 950 employed;t 180 55 1,000 in labor force;t 180 195 50 unemployed /1,000=5%",
+    "b 25 65 145 55 Searching;b 190 65 145 55 Stops searching;a 170 92 190 92;t 180 155 Moves outside labor force;t 180 195 Unemployment can fall without new employment",
+    "b 25 45 145 45 Job search;b 190 45 145 45 Skills mismatch;b 25 115 145 45 Cyclical weakness;b 190 115 145 45 Underutilization;t 180 195 Different indicators capture distinct labor conditions"
+  ],
+  "plus-economics-how-exchange-rates-affect-imports": [
+    "b 25 65 145 55 USD per EUR;b 190 65 145 55 EUR per USD;t 180 155 Reciprocal quote conventions;t 180 195 Identify quote before describing appreciation",
+    "r 65 60 90 110;r 205 50 90 120;t 110 50 $110;t 250 40 $120;t 110 190 $1.10/€;t 250 190 $1.20/€;t 180 210 Same €100 import before fees",
+    "r 35 65 290 40;r 35 125 145 40;t 180 55 Exchange-rate change;t 205 145 Partial pass-through;t 180 195 Contracts, margins and distribution affect retail price",
+    "b 25 65 145 55 Domestic currency ↓;a 170 80 190 80;b 190 55 145 45 Imports costlier;b 190 115 145 45 Exports cheaper;t 180 195 Trade volume depends on elasticities and capacity"
+  ],
+  "plus-economics-why-business-cycles-occur": [
+    "l 35 175 325 175;p M35 155L325 55;p M35 155Q85 65 135 120T235 85T325 45;t 180 25 Output fluctuates around trend;t 180 195 Cycles are not perfectly periodic",
+    "b 25 55 145 55 Spending shock;b 190 55 145 55 Supply shock;t 97 150 Demand shifts;t 262 150 Capacity / cost shifts;t 180 195 Different shocks affect prices and output",
+    "c 95 95 42;c 265 95 42;a 137 80 223 80;a 223 110 137 110;t 95 100 Income falls;t 265 100 Sales fall;t 180 195 Feedback amplifies downturn, stabilizers may dampen",
+    "l 35 175 325 175;p M35 45L325 155;p M35 65L325 135;p M35 85L325 115;t 180 25 Output, jobs and income;t 180 195 Multiple indicators and revisions inform cycle dating"
+  ],
+  "plus-economics-understanding-economies-of-scale": [
+    "l 35 175 325 175;l 35 175 35 35;p M35 45Q110 145 325 155;t 180 25 Long-run average cost;t 180 195 Cost per unit falls as scale increases",
+    "r 35 65 290 35;l 180 65 180 100;r 35 125 290 35;l 93 125 93 160;l 151 125 151 160;l 209 125 209 160;l 267 125 267 160;t 180 55 Fixed setup spread across output;t 180 195 Specialization and purchasing can further lower cost",
+    "b 25 65 145 55 Q=100: $1,500;b 190 65 145 55 Q=500: $3,500;t 97 150 AC=$15;t 262 150 AC=$7;t 180 195 C=1,000+5Q illustrates fixed-cost spreading",
+    "l 35 175 325 175;l 35 175 35 35;p M35 45Q145 195 230 150T325 55;t 180 25 Long-run average cost;t 180 195 Coordination and congestion may eventually raise cost"
+  ]
+};
+window.LumenSlideArtBatch35Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch35;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch35Render(c,cls,step)||prior(c,cls,step);};})();
