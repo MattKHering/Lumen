@@ -4896,3 +4896,143 @@ window.LumenSlideArtBatch33Render=function renderer(c,cls="cover",step=-1){
  const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch33Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* Agriculture: dedicated slide artwork, batch 34. */
+window.LumenSlideArtBatch34={
+  "soil": [
+    "r 35 55 290 110;c 85 85 18;c 145 120 25;c 225 90 22;d 275 135 5;p M180 55V100L160 145M180 100L200 145;t 180 35 Mineral grains, water, air, roots;t 180 195 Living soil structure matters",
+    "c 65 80 22;c 120 80 22;c 92 130 22;d 210 70 5;d 230 85 5;d 250 70 5;d 270 85 5;d 290 70 5;t 95 175 Larger pores;t 255 175 Fine grains;t 180 195 Texture differs from aggregation",
+    "p M35 65L100 75L165 65M180 35V100L145 155M180 100L215 155;p M245 65Q290 40 280 95T245 155;t 100 50 Residue;t 265 175 Worm channels;t 180 195 Decomposers cycle nutrients and create pores",
+    "r 35 55 130 110;r 195 55 130 110;p M45 75H155M45 90H155M45 105H155M205 75L235 100L265 75L295 100;t 100 185 Compacted soil;t 260 185 Aggregated soil;t 180 205 Ground cover and controlled traffic protect structure"
+  ],
+  "crop-rotation": [
+    "r 35 65 90 85;r 135 65 90 85;r 235 65 90 85;t 80 105 Wheat;t 180 105 Legume;t 280 105 Maize;a 125 105 135 105;a 225 105 235 105;t 180 195 Planned seasonal sequence on same field",
+    "l 35 175 325 175;p M35 80L120 55L200 145L325 160;t 95 35 Host present;t 255 130 Host absent;t 180 195 Host-dependent pest population may decline",
+    "p M180 35V95L140 155M180 95L220 155;c 145 125 8;c 215 135 8;a 95 65 145 125;t 95 50 Atmospheric N₂;t 180 195 Root nodule bacteria fix nitrogen, residue releases some",
+    "r 35 55 130 110;r 195 55 130 110;t 100 90 Crop A;t 100 135 Similar host;t 260 90 Crop A;t 260 135 Nonhost;t 180 195 Host range and farm constraints guide rotation"
+  ],
+  "depth-agriculture-how-seeds-germinate": [
+    "c 90 100 25;c 270 100 45;a 115 100 225 100;d 190 60 6;d 220 55 6;t 90 155 Dry seed;t 270 165 Hydrated seed;t 180 195 Imbibition restarts metabolic activity",
+    "r 35 65 130 100;r 195 65 130 100;d 65 85 5;d 100 100 5;d 135 125 5;c 260 110 20;t 100 185 Air-filled pores;t 260 185 Saturated pores;t 180 205 Waterlogging restricts oxygen for respiration",
+    "c 95 95 45;c 265 95 45;c 265 95 35;a 140 95 220 95;t 95 160 Dormant;t 265 160 Ready to germinate;t 180 195 Species-specific cue can release dormancy",
+    "c 180 65 30;p M180 95Q145 130 175 175M180 60Q200 30 240 35;t 95 150 Radicle;t 270 35 Shoot;t 180 205 Reserves support early growth before photosynthesis"
+  ],
+  "depth-agriculture-how-fertilizers-supply-nutrients": [
+    "p M180 25V95L140 165M180 95L220 165;d 95 125 6;d 265 125 6;d 180 155 6;a 95 125 145 140;a 265 125 215 140;t 95 115 N;t 265 115 K;t 180 145 P;t 180 195 Roots absorb available nutrient forms",
+    "r 55 55 250 110;l 138 55 138 165;l 222 55 222 165;t 96 95 10%;t 180 95 5%;t 264 95 5%;t 96 130 N;t 180 130 P₂O₅;t 264 130 K₂O;t 180 195 Label uses oxide-equivalent conventions",
+    "r 35 75 290 50;f 35 75 29 50;r 64 75 14.5 50;r 78.5 75 14.5 50;t 180 55 10 kg bag, 10-5-5;t 180 155 N 1 kg, P₂O₅ .5 kg, K₂O .5 kg;t 180 195 Label mass ≠ actual plant uptake",
+    "p M35 80L180 80L325 145;a 85 85 140 140;a 215 95 285 145;p M140 80V35M140 50L110 35M140 50L170 35;t 180 25 Crop uptake;t 180 195 Excess can leach below roots or run off"
+  ],
+  "depth-agriculture-irrigation-and-water-efficiency": [
+    "p M180 25V90L135 160M180 90L225 160;r 35 95 290 80;a 95 35 95 100;a 265 35 265 100;t 180 195 Supply water to active root zone when needed",
+    "r 35 120 130 45;r 195 120 130 45;l 35 95 165 95;d 65 115 5;d 105 115 5;d 145 115 5;p M260 120V65M260 65Q215 40 195 85M260 65Q305 40 325 85;t 100 185 Drip;t 260 185 Sprinkler;t 180 205 Application patterns affect losses",
+    "r 35 75 290 50;f 35 75 217.5 50;t 143 105 75 m³ stored;t 288 105 25 loss;t 180 55 100 m³ applied;t 180 195 Application efficiency=75%",
+    "r 35 55 290 110;d 95 105 7;d 180 135 7;d 265 105 7;l 35 145 325 145;t 180 35 Soil moisture measurements;t 180 195 Field efficiency does not guarantee watershed savings"
+  ],
+  "depth-agriculture-integrated-pest-management": [
+    "p M35 105Q100 45 165 105Q100 165 35 105Z;c 100 100 8;c 260 100 40;c 260 100 15;t 100 175 Crop damage;t 260 175 Identify organism;t 180 205 Inspect before choosing intervention",
+    "l 35 175 325 175;p M35 155L95 145L155 125L215 80L325 45;l 35 105 325 105;d 185 105 5;t 180 95 Illustrative threshold;t 180 195 Economic threshold depends on crop, pest and cost",
+    "b 25 45 145 45 Rotation;b 190 45 145 45 Resistant variety;b 25 115 145 45 Biological control;b 190 115 145 45 Suitable treatment;t 180 195 Combine compatible approaches",
+    "l 35 175 325 175;p M35 65L95 45L155 140L215 145L325 110;t 155 155 After intervention;t 180 195 Track pests, crop and unintended effects"
+  ],
+  "depth-agriculture-how-compost-returns-nutrients": [
+    "p M35 165Q180 20 325 165Z;d 100 135 5;d 180 95 5;d 260 135 5;a 180 65 180 25;t 180 15 Heat / CO₂;t 180 195 Microbes decompose residues with moisture and oxygen",
+    "b 25 65 145 55 Carbon-rich feed;b 190 65 145 55 Nitrogen-rich feed;a 97 120 180 155;a 262 120 180 155;t 180 180 Microbial growth;t 180 205 Composition affects decomposition and losses",
+    "l 35 175 325 175;p M35 155Q105 25 175 85T325 160;t 110 35 Active heating;t 275 145 Stabilization;t 180 195 Maturity needs more evidence than appearance",
+    "r 35 75 290 50;f 35 75 95 50;t 82 105 Released;t 230 105 Organic reserve;t 180 55 Nutrients in compost;t 180 195 Mineralization gradually makes some nutrients available"
+  ],
+  "depth-agriculture-protecting-soil-from-erosion": [
+    "p M35 65L325 165;a 85 25 85 85;a 155 105 265 145;d 120 95 5;d 200 125 5;t 180 35 Raindrop detachment;t 180 195 Runoff transports soil downslope",
+    "p M35 105L325 165;p M95 117V60L75 40M95 75L115 40M180 135V80L160 60M180 95L200 60M265 153V100L245 80M265 115L285 80;t 180 25 Vegetative cover;t 180 195 Roots stabilize soil and cover intercepts rain",
+    "p M35 55Q180 25 325 55M35 105Q180 75 325 105M35 155Q180 125 325 155;a 180 40 180 145;t 180 195 Contour barriers interrupt downslope runoff",
+    "p M35 75L165 110L240 155H325;d 95 95 5;d 150 115 5;d 205 145 5;a 110 100 235 150;t 180 35 Topsoil loss;t 180 195 Sediment and nutrients enter waterways"
+  ],
+  "depth-agriculture-how-plant-breeding-changes-crops": [
+    "p M65 175V95M135 175V70M205 175V115M275 175V45;t 180 25 Heritable variation in height;t 180 195 Select useful genetic variation, not height alone",
+    "c 95 65 25;c 265 65 25;a 120 65 180 115;a 240 65 180 115;c 145 155 15;c 180 155 15;c 215 155 15;t 95 30 Parent A;t 265 30 Parent B;t 180 195 Crossing creates combinations in offspring",
+    "r 35 65 130 100;r 195 65 130 100;r 45 105 45 60;r 105 75 45 90;r 205 75 45 90;r 265 115 45 50;t 100 185 Site 1;t 260 185 Site 2;t 180 205 Genotype ranking can change across environments",
+    "b 25 45 145 45 Yield;b 190 45 145 45 Quality;b 25 115 145 45 Resistance;b 190 115 145 45 Efficiency;t 180 195 Breeding goals can conflict, evaluate several traits"
+  ],
+  "depth-agriculture-understanding-crop-yield": [
+    "r 65 55 230 110;l 180 55 180 165;l 65 110 295 110;t 180 35 Harvested area;t 180 195 Yield=harvested mass / area on consistent moisture basis",
+    "b 25 45 145 45 Plants per m²;b 190 45 145 45 Heads per plant;b 25 115 145 45 Grains per head;b 190 115 145 45 Mass per grain;t 180 195 Multiplying components gives grain mass per area",
+    "b 25 65 145 55 12,000 kg;b 190 65 145 55 3 hectares;t 180 155 12,000/3;t 180 195 Yield=4,000 kg/ha",
+    "b 25 45 145 45 Water;b 190 45 145 45 Nutrients;b 25 115 145 45 Weather / pests;b 190 115 145 45 Genetics;t 180 195 Compare yield across seasons and conditions"
+  ],
+  "plus-agriculture-what-soil-ph-changes-for-crops": [
+    "l 35 105 325 105;d 100 105 6;d 245 105 6;t 100 85 pH 5;t 245 85 pH 6;t 180 155 H⁺ activity ratio 10:1;t 180 195 Logarithmic pH scale",
+    "l 35 175 325 175;p M35 155Q180 35 325 155;p M35 65Q180 130 325 165;t 180 25 Nutrient availability differs;t 180 195 pH affects solubility and microbial processes",
+    "r 35 55 130 110;r 195 55 130 110;d 65 75 7;d 95 110 7;d 125 145 7;d 215 75 7;d 235 95 7;d 255 115 7;d 275 135 7;d 295 155 7;t 100 185 Less buffering;t 260 185 More buffering;t 180 205 Same pH can require different amendment amounts",
+    "b 25 65 145 55 Laboratory test;a 170 92 190 92;b 190 65 145 55 Crop target;t 180 155 Buffer capacity informs amendment;t 180 195 Excessive liming can reduce nutrient availability"
+  ],
+  "plus-agriculture-why-cover-crops-are-planted": [
+    "l 35 145 325 145;p M65 145V65L45 45M65 85L85 45M180 145V65L160 45M180 85L200 45M295 145V65L275 45M295 85L315 45;t 180 25 Living cover between cash crops;t 180 195 Protect soil and capture nutrients",
+    "p M95 35V95L55 155M95 95L75 155M95 95L115 155M95 95L135 155M265 35V95L225 155M265 95L305 155;c 235 135 8;c 295 135 8;t 95 180 Grass fibrous roots;t 265 180 Legume nodules;t 180 205 Different functional roles",
+    "l 35 105 325 105;d 65 105 6;d 180 105 6;d 295 105 6;t 65 85 Establish;t 180 85 Terminate;t 295 85 Next crop;t 180 175 Water use and planting window affect timing",
+    "r 65 80 90 90;r 205 105 90 65;t 110 70 Cover biomass;t 250 95 Next crop yield;t 180 195 Evaluate benefits, costs and subsequent crop response"
+  ],
+  "plus-agriculture-how-precision-agriculture-uses-maps": [
+    "r 35 45 290 130;l 130 45 130 175;l 230 45 230 175;f 130 45 100 130;t 82 105 Dry;t 180 105 Moist;t 277 105 Dry;t 180 195 Field properties vary spatially",
+    "r 35 45 130 130;r 195 45 130 130;d 65 75 5;d 100 110 5;d 135 145 5;l 195 90 325 90;l 195 135 325 135;t 100 195 Samples;t 260 195 Yield map;t 180 25 Align location and calibration",
+    "r 35 55 290 110;l 130 55 130 165;l 230 55 230 165;t 82 105 Low rate;t 180 105 Medium;t 277 105 High;t 180 195 Prescriptions need agronomic cause, not yield map alone",
+    "r 35 55 290 110;l 80 55 80 165;l 125 55 125 165;l 170 55 170 165;l 215 55 215 165;l 260 55 260 165;f 80 55 45 110;f 170 55 45 110;t 180 35 Alternating treatment strips;t 180 195 Compare yield, costs and environmental outcomes"
+  ],
+  "plus-agriculture-how-crop-pests-develop-resistance": [
+    "c 55 85 10;c 90 85 10;c 125 85 10;c 55 125 10;c 90 125 10;d 125 125 10;a 150 105 210 105;d 260 105 12;t 95 165 Mixed susceptibility;t 260 165 Survivor;t 180 195 Heritable resistance can survive selection",
+    "c 65 95 9;c 100 95 9;d 135 95 9;d 225 95 9;d 260 95 9;d 295 95 9;a 145 125 215 125;t 100 60 Earlier;t 260 60 Later;t 180 195 Resistant survivors reproduce disproportionately",
+    "b 25 45 145 45 Altered target;b 190 45 145 45 Detoxification;b 25 115 145 45 Reduced uptake;b 190 115 145 45 Behavior;t 180 195 Mechanisms may affect more than one control",
+    "b 25 45 145 45 Monitor susceptibility;b 190 45 145 45 Diverse controls;b 25 115 145 45 Effective modes;b 190 115 145 45 Expert guidance;t 180 195 Reduce selection pressure through integrated management"
+  ],
+  "plus-agriculture-why-fields-need-drainage": [
+    "r 35 55 290 110;f 35 55 290 110;p M180 35V95L140 150M180 95L220 150;t 180 25 Saturated soil;t 180 195 Water-filled pores limit oxygen diffusion",
+    "p M35 65L325 105;l 35 155 325 155;l 35 130 325 130;a 180 95 180 130;a 210 130 325 130;t 180 45 Surface runoff;t 180 145 Subsurface drain;t 180 195 Different pathways remove excess water",
+    "r 35 55 130 110;r 195 55 130 110;p M100 35V90L85 115M260 35V90L220 155M260 90L300 155;t 100 185 Saturated roots;t 260 185 Aerated roots;t 180 205 Excessive drainage can worsen drought risk",
+    "r 35 65 290 90;a 95 85 95 155;a 180 85 180 155;a 265 85 265 155;d 95 125 5;d 180 125 5;d 265 125 5;t 180 45 Dissolved nutrients travel with drainage;t 180 195 Buffers and controlled drainage may reduce losses"
+  ],
+  "plus-agriculture-how-plant-density-affects-harvests": [
+    "p M55 175V65M145 175V65M215 175V85M245 175V85M275 175V85M305 175V85;t 100 45 Sparse;t 260 65 Dense;t 180 195 Density changes resource competition",
+    "l 35 175 325 175;l 35 175 35 35;p M35 55Q150 85 325 155;p M35 155Q180 35 325 95;t 270 145 Per plant;t 180 30 Per area;t 180 195 Compensation creates different response curves",
+    "b 25 65 145 55 5 plants ×40 g;b 190 65 145 55 10 plants ×25 g;t 97 150 200 g/m²;t 262 150 250 g/m²;t 180 195 Lower per-plant output, higher area yield",
+    "r 35 65 90 100;r 135 65 90 100;r 235 65 90 100;t 80 110 Low;t 180 110 Medium;t 280 110 High;t 180 195 Compare density trials under relevant conditions"
+  ],
+  "plus-agriculture-how-a-grain-elevator-stores-harvests": [
+    "r 35 120 85 45;c 55 170 8;c 100 170 8;p M120 140H170V45H245V165H170V140;a 170 135 170 55;t 180 25 Elevator conveyor;t 180 195 Receiving, weighing and quality checks precede storage",
+    "r 65 45 230 130;d 105 85 5;d 155 115 5;d 205 85 5;d 255 115 5;a 95 175 95 65;a 265 175 265 65;t 180 25 Aeration;t 180 195 Moisture and temperature affect insect and fungal growth",
+    "b 25 65 95 55 Received;a 120 92 132 92;b 132 65 95 55 Stored;a 227 92 239 92;b 239 65 95 55 Shipped;t 180 155 Reconcile weights and moisture basis;t 180 195 Keep grades and inventory records distinct",
+    "l 35 175 325 175;p M35 145L95 145L155 135L215 95L275 45;t 180 25 Temperature trend alarm;t 180 195 Grain handling requires trained safety procedures"
+  ],
+  "plus-agriculture-how-livestock-feed-is-balanced": [
+    "b 25 45 145 45 Energy;b 190 45 145 45 Protein;b 25 115 145 45 Minerals / vitamins;b 190 115 145 45 Water;t 180 195 Requirements vary by species and production stage",
+    "r 35 75 290 50;f 35 75 116 50;t 93 105 4 kg dry;t 238 105 6 kg water;t 180 55 10 kg feed, 40% dry matter;t 180 195 Compare nutrients on consistent dry-matter basis",
+    "r 35 65 290 45;l 95 65 95 110;l 210 65 210 110;t 180 45 Ration ingredient mix;t 180 155 Digestibility, intake and nutrient limits;t 180 195 Excesses and deficiencies both matter",
+    "b 25 65 145 55 Ingredient costs;b 190 65 145 55 Nutrient limits;t 180 155 Find least-cost feasible mix;t 180 195 Actual formulation requires analysis and qualified guidance"
+  ],
+  "plus-agriculture-how-greenhouse-growing-changes-the-environment": [
+    "p M65 175V85L180 25L295 85V175H65;a 35 45 130 95;a 230 95 325 45;a 180 175 180 105;t 180 15 Solar input;t 180 195 Ventilation and heating alter energy balance",
+    "p M180 175V95L140 65M180 115L220 80;c 140 65 15;c 220 80 15;a 140 50 140 20;a 220 65 220 35;t 180 195 Leaf temperature and humidity affect transpiration",
+    "b 25 65 145 55 200 µmol/m²/s;b 190 65 145 55 12 h =43,200 s;t 180 155 200×43,200 /10⁶;t 180 195 DLI=8.64 mol/m²/day",
+    "b 25 45 145 45 Heat / shade;b 190 45 145 45 Ventilation;b 25 115 145 45 Irrigation;b 190 115 145 45 Light / CO₂;t 180 195 Interacting controls affect energy and crop response"
+  ],
+  "plus-agriculture-understanding-farm-irrigation-scheduling": [
+    "r 85 75 190 90;a 125 25 125 75;a 235 25 235 75;a 180 75 180 25;a 180 165 180 195;t 125 15 Rain;t 235 15 Irrigation;t 180 110 Root-zone storage;t 180 215 ET, runoff and drainage remove water",
+    "b 25 65 145 55 Reference ETo;b 190 65 145 55 Crop factor Kc;t 180 155 ETc=Kc×ETo;t 180 195 Adjust coefficient to crop stage and conditions",
+    "b 25 45 145 45 ETo 5 mm/day;b 190 45 145 45 Kc=.8;b 105 115 150 45 3 days ×4 mm;t 180 195 12 mm depletion / .8=15 mm gross",
+    "r 35 55 290 110;l 35 115 325 115;d 95 100 7;d 180 135 7;d 265 90 7;t 180 35 Soil moisture sensors;t 180 195 Root depth, rain and system capacity guide timing"
+  ]
+};
+window.LumenSlideArtBatch34Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch34;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch34Render(c,cls,step)||prior(c,cls,step);};})();
