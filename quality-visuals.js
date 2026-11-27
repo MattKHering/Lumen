@@ -2922,3 +2922,143 @@ window.LumenSlideArtBatch18Render=function renderer(c,cls="cover",step=-1){
  const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch18Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* Neuroscience: dedicated slide artwork, batch 19. */
+window.LumenSlideArtBatch19={
+  "neural-signals": [
+    "r 35 75 290 50;d 65 55 5;d 95 55 5;d 125 55 5;d 250 150 5;d 280 150 5;t 180 45 Na⁺ high outside;t 180 165 K⁺ high inside;t 180 195 Selective permeability gives negative resting voltage",
+    "l 35 175 325 175;p M35 145H105L130 120L150 35L175 145L200 165L235 145H325;l 35 120 325 120;t 75 110 Threshold;t 150 25 Na⁺ entry;t 225 180 K⁺ exit;t 180 205 Depolarization and repolarization",
+    "r 25 85 310 40;d 70 105 7;d 145 105 7;d 220 105 7;a 75 65 140 65;a 150 65 215 65;a 225 65 290 65;t 180 45 Local current regenerates spike;t 180 195 Refractory region behind wave",
+    "l 35 75 325 75;l 35 155 325 155;p M65 75V35V75M165 75V35V75M265 75V35V75M55 155V115V155M105 155V115V155M155 155V115V155M205 155V115V155M255 155V115V155M305 155V115V155;t 180 195 Stronger stimulus may raise rate, not spike height"
+  ],
+  "plasticity": [
+    "c 65 95 25;c 295 95 25;l 90 95 270 95;l 90 100 270 100;t 180 75 Synaptic strength changes;t 180 170 Connections may remodel",
+    "l 35 175 325 175;p M35 135H120V65H325;p M35 135H120V160H325;t 240 55 Potentiation;t 240 150 Depression;t 180 195 Activity-dependent changes in efficacy",
+    "c 75 65 14;c 75 145 14;c 180 105 18;c 285 65 14;c 285 145 14;l 89 65 162 105;l 89 145 162 105;l 198 105 271 65;l 198 105 271 145;t 180 35 Practice refines timing and selection;t 180 195 Existing networks can coordinate better",
+    "p M35 65H145M35 145H145M205 65H325M205 145H325M145 65L205 145M145 145L205 65;p M165 45L195 85M195 45L165 85;t 180 195 Alternative pathways may compensate, not guarantee recovery"
+  ],
+  "depth-neuroscience-how-brain-regions-cooperate": [
+    "c 180 105 65;c 130 75 17;c 230 75 17;c 130 135 17;c 230 135 17;l 147 75 213 75;l 130 92 130 118;l 230 92 230 118;l 147 135 213 135;t 180 25 Reading recruits distributed networks;t 130 78 V;t 230 78 L;t 130 138 A;t 230 138 M;t 180 195 Vision, language, attention and memory",
+    "c 65 95 30;c 295 95 30;c 180 150 20;a 95 80 265 80;a 265 105 95 105;a 85 120 160 150;a 200 150 275 120;t 180 45 White-matter axons;t 180 195 Relays and feedback connect regions",
+    "l 35 75 325 75;l 35 145 325 145;p M55 75V45V75M135 75V45V75M215 75V45V75M65 145V115V145M145 145V115V145M225 145V115V145;t 180 195 Relative timing can coordinate neural populations",
+    "b 25 45 145 45 Activity imaging;b 190 45 145 45 Lesion evidence;b 25 115 145 45 Stimulation;b 190 115 145 45 Recordings;t 180 195 Activity alone does not establish causal necessity"
+  ],
+  "depth-neuroscience-how-synapses-communicate": [
+    "p M35 35H145V95Q180 125 215 95V35H325;l 35 165 325 165;c 165 80 12;c 195 80 12;d 165 130 4;d 195 140 4;a 105 45 145 85;t 180 20 Spike opens Ca²⁺ channels;t 180 195 Vesicle fusion releases transmitter",
+    "l 35 65 325 65;l 35 145 325 145;d 95 95 5;d 265 95 5;r 80 130 30 30;r 250 130 30 30;a 95 100 95 135;a 265 100 265 135;t 95 185 Ion channel;t 265 185 Signaling receptor;t 180 205 Receptor types have different effects",
+    "c 180 105 35;a 50 55 150 90;a 50 155 150 120;a 210 105 315 105;t 50 40 Excite;t 50 175 Inhibit;t 280 85 Spike?;t 180 200 Timing and location affect threshold",
+    "l 35 65 325 65;l 35 145 325 145;d 95 95 5;d 150 105 5;d 230 105 5;a 95 95 95 65;a 230 105 300 105;t 95 45 Reuptake;t 270 90 Diffusion;t 180 195 Transporters and enzymes end signal"
+  ],
+  "depth-neuroscience-what-myelin-does": [
+    "r 35 95 290 20;r 55 70 75 70;r 145 70 75 70;r 235 70 75 70;t 180 45 Insulating multilayer sheath;t 180 195 CNS oligodendrocytes / PNS Schwann cells",
+    "r 35 95 290 20;r 55 75 75 60;r 155 75 75 60;r 255 75 55 60;d 142 105 5;d 242 105 5;a 142 45 142 95;t 142 35 Node of Ranvier;t 180 195 Channels cluster at exposed gaps",
+    "r 35 95 290 20;r 55 75 75 60;r 155 75 75 60;r 255 75 55 60;a 42 60 142 60;a 142 60 242 60;t 180 35 Saltatory conduction;t 180 195 Spikes regenerate at nodes",
+    "r 35 95 290 20;r 55 75 75 60;r 255 75 55 60;a 130 105 210 105;a 175 105 175 45;t 180 35 Current leaks at damaged region;t 180 195 Conduction may slow or block"
+  ],
+  "depth-neuroscience-how-sensory-adaptation-works": [
+    "l 35 175 325 175;p M35 155H75V65H325;p M35 155H75V35Q120 100 325 145;t 220 55 Constant stimulus;t 220 130 Response falls;t 180 195 Strong initial response adapts",
+    "l 35 75 325 75;l 35 155 325 155;p M65 75V35V75M285 75V35V75M65 155V115V155M105 155V125V155M145 155V125V155M185 155V125V155M225 155V125V155M265 155V125V155;t 180 95 Rapid vs sustained receptor firing;t 180 195 Same maintained pressure",
+    "b 25 65 95 55 Receptor;a 120 92 132 92;b 132 65 95 55 Synapse;a 227 92 239 92;b 239 65 95 55 Cortex;t 180 155 Adaptation can occur at several levels",
+    "r 100 55 160 110;r 145 70 70 75;c 180 107 25;t 180 110 Watch;t 180 195 Pressure persists as salience fades;a 260 80 300 80;t 285 65 Shift restores salience"
+  ],
+  "plus-neuroscience-how-reflex-pathways-respond-quickly": [
+    "b 25 65 95 55 Spindle;a 120 92 132 92;b 132 65 95 55 Spinal cord;a 227 92 239 92;b 239 65 95 55 Motor neuron;t 180 155 Stretch evokes contraction of same muscle",
+    "c 180 45 18;a 180 63 95 110;a 180 63 265 110;b 25 110 140 45 Agonist;b 195 110 140 45 Antagonist;t 95 175 Excite;t 265 175 Inhibit;t 180 200 Reciprocal inhibition coordinates response",
+    "b 25 65 110 55 Sensory input;a 135 92 165 92;b 165 65 170 55 Spinal response;a 205 65 205 30;t 270 30 Cortex;t 180 165 Higher centers receive and modulate signal",
+    "p M75 45L135 105L235 105L285 155;l 135 105 135 165;a 180 35 180 90;t 180 25 Tendon tap;t 180 195 Brief stretch activates spindle and contraction"
+  ],
+  "plus-neuroscience-what-the-blood-brain-barrier-does": [
+    "r 35 65 290 45;l 95 65 95 110;l 155 65 155 110;l 215 65 215 110;l 275 65 275 110;d 155 88 5;d 215 88 5;c 180 150 18;t 180 45 Endothelial tight junctions;t 180 195 Pericytes and astrocyte-associated structures",
+    "r 35 80 290 35;r 160 70 40 55;a 80 45 80 150;a 180 45 180 150;a 280 150 280 45;t 80 170 Lipid soluble;t 180 170 Glucose carrier;t 280 170 Efflux;t 180 205 Selective entry and removal",
+    "r 35 75 290 35;d 65 45 5;d 95 45 5;d 125 45 5;d 255 45 5;d 285 45 5;c 180 150 25;t 180 45 Circulating substances;t 180 195 Barrier stabilizes neuronal environment",
+    "r 35 65 130 45;r 195 65 130 45;p M250 65V110M265 65V110;a 257 45 257 145;t 100 155 Intact;t 260 155 Altered;t 180 195 Regional variation and injury affect permeability"
+  ],
+  "plus-neuroscience-how-sensory-maps-represent-the-body": [
+    "p M65 50V155M65 80L35 110M65 80L95 110M65 155L35 185M65 155L95 185;r 200 45 110 135;l 200 80 310 80;l 200 120 310 120;a 95 110 200 100;t 255 25 Cortex;t 180 205 Nearby skin areas often map nearby",
+    "r 35 75 290 50;f 35 75 105 50;f 250 75 75 50;t 87 105 Fingers;t 195 105 Trunk;t 287 105 Lips;t 180 195 Representation size reflects sampling, not body size",
+    "r 35 55 130 105;r 195 55 130 105;l 35 90 165 90;l 195 120 325 120;a 165 105 195 105;t 100 180 Map A;t 260 180 Map B;t 180 205 Texture, position and movement integrate",
+    "r 35 70 290 35;r 35 130 290 35;l 135 70 135 105;l 195 130 195 165;t 180 55 Before altered input;t 180 120 After practice;t 180 195 Functional map boundaries can shift"
+  ],
+  "plus-neuroscience-understanding-habituation-and-sensitization": [
+    "l 35 175 325 175;r 45 55 35 120;r 105 95 35 80;r 165 125 35 50;r 225 145 35 30;r 285 155 35 20;t 180 30 Repeated harmless stimulus;t 180 195 Behavioral response declines",
+    "l 35 175 325 175;r 65 135 85 40;r 215 55 85 120;t 107 125 Before;t 257 45 After strong event;t 180 195 Sensitization increases later response",
+    "l 35 175 325 175;p M35 65L95 110L155 145L215 160L275 55;t 275 45 Novel sound;t 180 195 Response returns, distinguishing fatigue",
+    "c 75 95 25;c 285 95 25;d 150 95 5;d 180 95 5;d 210 95 5;a 100 95 260 95;t 180 45 Transmitter release can change;t 180 195 Modulatory pathways alter defensive reflexes"
+  ],
+  "depth-neuroscience-how-motor-control-is-coordinated": [
+    "b 25 65 95 55 Goal;a 120 92 132 92;b 132 65 95 55 Cortex;a 227 92 239 92;b 239 65 95 55 Spinal motor;t 180 155 Muscle activation executes selected movement",
+    "b 25 65 145 55 Cortex;b 190 65 145 55 Basal ganglia;a 170 80 190 80;a 190 105 170 105;t 180 155 Via thalamic / brainstem relays;t 180 195 Supports action selection and reinforcement",
+    "b 25 55 145 55 Predicted movement;b 190 55 145 55 Sensory outcome;a 97 110 180 150;a 262 110 180 150;t 180 175 Cerebellar error comparison;t 180 200 Updates timing and prediction",
+    "p M35 145L125 65L225 95L325 45;p M125 65L225 135L325 45;t 125 55 Plan;t 225 155 Actual heavy object;t 180 195 Feedback error guides next attempt"
+  ],
+  "depth-neuroscience-how-the-brain-encodes-memory": [
+    "b 25 65 95 55 Input;a 120 92 132 92;b 132 65 95 55 Attention;a 227 92 239 92;b 239 65 95 55 Encoding;t 180 155 Meaning and prior knowledge affect representation",
+    "c 180 105 35;c 65 55 15;c 295 55 15;c 65 155 15;c 295 155 15;l 80 55 155 90;l 280 55 205 90;l 80 155 155 120;l 280 155 205 120;t 180 105 Hippocampus;t 180 200 Binds elements of episodic experience",
+    "l 35 175 325 175;p M35 145Q100 95 180 90T325 65;d 95 105 5;d 180 90 5;d 265 75 5;t 180 35 Consolidation over time;t 180 195 Sleep and retrieval can support stability",
+    "c 65 95 22;c 180 95 22;c 295 95 22;a 87 95 158 95;a 202 95 273 95;t 65 140 Cue;t 180 140 Reactivate;t 295 140 Recall;t 180 195 Recognition and recall use different supports"
+  ],
+  "depth-neuroscience-what-reward-learning-means": [
+    "b 25 65 145 55 Expected value;b 190 65 145 55 Received value;t 180 155 Prediction error = received − expected;t 180 195 Updates future expectation",
+    "l 35 75 325 75;l 35 155 325 155;p M245 75V35V75M95 155V115V155;t 95 95 Cue;t 245 95 Reward;t 180 195 Learned cue can evoke earlier dopamine response",
+    "b 25 65 145 55 V=4, r=8;b 190 65 145 55 α=.25;t 180 155 4 + .25(8−4) = 5;t 180 195 Simplified expectation update",
+    "b 25 45 145 45 Timing;b 190 45 145 45 Context;b 25 115 145 45 Motivation;b 190 115 145 45 Competing goals;t 180 195 Reinforcement is not identical to pleasure"
+  ],
+  "depth-neuroscience-how-neurons-use-energy": [
+    "r 35 95 290 25;r 150 75 60 65;a 170 155 170 35;a 190 35 190 155;t 90 55 3 Na⁺ out;t 270 55 2 K⁺ in;t 180 195 ATP maintains ion gradients",
+    "r 35 45 290 45;c 180 145 35;a 100 90 155 125;a 260 90 205 125;t 180 70 Blood: O₂ + glucose;t 180 150 Neuron;t 180 195 Astrocytes help provide metabolic support",
+    "b 25 55 95 55 Resting pumps;b 132 55 95 55 Spikes;b 239 55 95 55 Synapses;t 180 155 Each requires ATP;t 180 195 Quiet circuits still consume energy",
+    "c 80 95 25;r 175 70 150 50;a 105 95 175 95;t 80 145 Neural activity;t 250 95 Blood response;t 180 195 BOLD fMRI indirectly measures oxygenation changes"
+  ],
+  "plus-neuroscience-how-attention-selects-sensory-information": [
+    "c 70 95 20;c 180 95 35;c 290 95 20;d 180 95 10;t 180 40 Selected target;t 180 195 Present stimuli receive unequal processing",
+    "b 25 55 145 55 Goal: find target;b 190 55 145 55 Sudden flash;a 97 110 180 145;a 262 110 180 145;t 180 175 Competing priorities;t 180 200 Top-down and bottom-up interact",
+    "l 35 175 325 175;p M35 155Q180 35 325 155;p M35 155Q180 95 325 155;t 180 40 Higher response gain;t 180 195 Attention changes population competition",
+    "r 25 55 145 95;r 190 55 145 95;a 60 100 130 100;a 225 100 295 100;d 135 100 6;d 225 120 6;t 97 175 Valid cue;t 262 175 Invalid cue;t 180 205 Compare reaction times, control expectation"
+  ],
+  "plus-neuroscience-how-the-brain-processes-visual-motion": [
+    "c 95 105 30;c 265 105 30;a 50 105 140 105;a 310 105 220 105;t 95 160 Preferred motion;t 265 160 Opposite motion;t 180 195 Direction-selective response differs",
+    "c 180 100 55;l 140 140 220 60;a 180 100 220 140;a 180 100 240 100;t 180 25 Edge seen through aperture;t 180 195 Only perpendicular motion is unambiguous",
+    "a 45 65 120 95;a 45 145 120 115;a 125 95 230 105;a 125 115 230 105;c 265 105 35;t 265 105 MT/V5;t 180 195 Local signals integrate into motion estimate",
+    "r 25 55 145 100;r 190 55 145 100;a 45 75 75 75;a 85 100 115 100;a 115 130 145 130;a 210 75 240 75;a 250 100 250 75;a 285 130 265 145;t 97 175 High coherence;t 262 175 Low coherence;t 180 205 Measure direction discrimination"
+  ],
+  "plus-neuroscience-understanding-inhibitory-neural-signals": [
+    "r 35 85 290 35;r 95 75 40 55;r 225 75 40 55;a 115 45 115 155;a 245 155 245 45;t 115 35 Cl⁻ conductance;t 245 35 K⁺ conductance;t 180 195 GABA-A channel vs GABA-B signaling",
+    "l 35 105 325 105;d 95 105 6;d 245 105 6;a 100 75 240 75;t 95 130 Vm;t 245 130 Erev;t 180 55 Driving force = Vm − Erev;t 180 195 Conductance × driving force gives current",
+    "l 35 175 325 175;p M35 145H100Q150 35 220 145H325;p M35 145H100Q150 105 220 145H325;t 155 45 Excitation alone;t 230 120 With shunt;t 180 195 Higher conductance reduces voltage deflection",
+    "c 65 105 22;c 180 105 22;c 295 105 22;l 87 105 158 105;l 202 105 273 105;l 150 95 150 115;l 265 95 265 115;t 65 145 Inhibitor;t 180 145 Inhibitor;t 295 145 Target;t 180 195 Inhibiting an inhibitor can disinhibit target"
+  ],
+  "plus-neuroscience-why-working-memory-has-limits": [
+    "b 25 65 145 55 Current items;b 190 65 145 55 Task operation;a 170 92 190 92;t 180 155 Temporary maintenance and manipulation;t 180 195 Interference limits performance",
+    "r 35 60 65 65;r 110 60 65 65;r 185 60 65 65;r 260 60 65 65;d 67 92 8;d 142 92 8;d 217 92 8;d 292 92 8;t 180 160 Few independent objects in some tasks;t 180 195 Capacity and precision models differ",
+    "c 80 105 30;c 180 65 30;c 280 105 30;l 110 95 150 75;l 210 75 250 95;l 110 115 250 115;t 80 150 Sensory;t 180 25 Frontal;t 280 150 Parietal;t 180 195 Distributed retention and dynamic activity",
+    "l 35 175 325 175;p M35 45L105 65L175 95L245 130L325 155;t 180 30 Recall precision;t 180 195 Increasing set size often lowers accuracy"
+  ],
+  "plus-neuroscience-how-neural-circuits-regulate-alertness": [
+    "c 180 55 25;c 75 145 25;c 180 145 25;c 285 145 25;a 75 120 160 75;a 180 120 180 80;a 285 120 200 75;t 180 25 Cortex;t 75 185 Brainstem;t 180 185 Hypothalamus;t 285 185 Basal forebrain",
+    "l 35 175 325 175;p M35 155L225 45L325 155;p M35 100Q105 25 180 100T325 100;t 145 35 Sleep pressure;t 250 125 Circadian signal;t 180 195 Adenosine and SCN participate in distinct processes",
+    "b 25 65 145 55 Orexin arousal;b 190 65 145 55 Sleep-promoting;a 170 80 190 80;a 190 105 170 105;t 180 155 Opposing networks stabilize states;t 180 195 Not a single alertness switch",
+    "l 35 75 325 75;p M35 75L55 45L75 85L95 65L115 85L135 45L155 75L175 85L195 45L215 75L235 85L255 55L275 75L325 65;l 35 155 325 155;d 85 155 5;d 145 155 5;d 285 155 5;t 180 30 EEG patterns;t 180 195 Reaction time can reveal lapses"
+  ],
+  "plus-neuroscience-how-the-brain-integrates-multisensory-cues": [
+    "c 90 95 30;c 270 95 30;a 120 95 180 145;a 240 95 180 145;t 90 55 Vision;t 270 55 Hearing;t 180 170 Combined estimate;t 180 195 Common-event cues can reduce uncertainty",
+    "r 35 75 290 50;f 35 75 232 50;t 151 105 Vision .8;t 296 105 Aud. .2;t 180 55 Variances 1 and 4;t 180 195 Weights proportional to inverse variance",
+    "l 35 105 325 105;d 95 105 6;d 145 105 6;d 345 105 6;t 95 85 Visual 10;t 145 140 Fused 11;t 325 85 Audio 15;t 180 195 .8×10 + .2×15 = 11",
+    "c 65 95 20;c 295 95 20;t 65 145 Flash;t 295 145 Sound;t 180 65 Large space/time mismatch;t 180 195 Separate causes may be inferred"
+  ]
+};
+window.LumenSlideArtBatch19Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch19;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch19Render(c,cls,step)||prior(c,cls,step);};})();
