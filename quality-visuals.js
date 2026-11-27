@@ -4756,3 +4756,143 @@ window.LumenSlideArtBatch32Render=function renderer(c,cls="cover",step=-1){
  const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch32Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* Systems & Logistics: dedicated slide artwork, batch 33. */
+window.LumenSlideArtBatch33={
+  "supply-chains": [
+    "b 15 65 75 50 Supplier;a 90 90 102 90;b 102 65 75 50 Factory;a 177 90 189 90;b 189 65 75 50 Storage;a 264 90 276 90;b 276 65 70 50 Customer;a 325 145 35 145;t 180 165 Orders and forecasts flow upstream too",
+    "b 25 65 95 55 Purchase;a 120 92 132 92;b 132 65 95 55 Transform;a 227 92 239 92;b 239 65 95 55 Distribute;t 180 155 Coordinate quantities and timing across stages",
+    "l 35 105 325 105;d 65 105 6;d 295 105 6;t 65 85 Order;t 295 85 Receive;a 65 135 295 135;t 180 155 Replenishment lead time;t 180 195 Delays affect when stock must be ordered",
+    "r 35 75 290 50;l 93 75 93 125;l 151 75 151 125;l 209 75 209 125;l 267 75 267 125;t 180 55 Five days of demand;t 180 105 20 units/day;t 180 195 Expected demand=100 units plus chosen buffer"
+  ],
+  "systems-thinking": [
+    "r 115 65 130 90;a 25 105 115 105;a 245 105 335 105;t 180 112 Stock;t 70 85 Inflow;t 290 85 Outflow;t 180 195 Change = inflow − outflow",
+    "b 25 65 95 55 Target;a 120 92 132 92;b 132 65 95 55 Thermostat;a 227 92 239 92;b 239 65 95 55 Heat / room;a 285 120 285 155;a 285 155 180 155;a 180 155 180 120;t 180 195 Measured temperature reduces deviation",
+    "c 95 95 42;c 265 95 42;a 137 80 223 80;a 223 110 137 110;t 95 100 Adoption;t 265 100 Visibility;t 180 195 Reinforcing loop can amplify growth",
+    "l 35 175 325 175;l 35 105 325 105;p M35 105L95 145L155 45L215 65L275 115L325 105;t 180 30 Delayed orders can overshoot;t 180 195 Inventory target is horizontal line"
+  ],
+  "depth-systems-logistics-how-bottlenecks-limit-throughput": [
+    "b 25 65 95 55 60/h;a 120 92 132 92;b 132 65 95 55 40/h;a 227 92 239 92;b 239 65 95 55 50/h;t 180 155 Constraint: middle stage;t 180 195 Steady throughput ≤40/hour",
+    "r 45 70 70 100;r 145 120 70 50;r 245 107.5 70 62.5;t 80 60 80/h;t 180 110 40/h;t 280 97 50/h;t 180 195 Faster first stage leaves bottleneck unchanged",
+    "d 45 105 6;d 65 105 6;d 85 105 6;d 105 105 6;d 125 105 6;b 145 75 70 60 40/h;a 215 105 325 105;t 85 85 Queue;t 180 195 Buffer stores work but does not raise long-run capacity",
+    "r 45 80 70 90;r 145 65 70 105;r 245 95 70 75;t 80 70 60/h;t 180 55 70/h;t 280 85 50/h;t 180 195 Improving former constraint shifts limit to last stage"
+  ],
+  "depth-systems-logistics-how-inventory-replenishment-works": [
+    "b 25 55 95 55 On hand;b 132 55 95 55 On order;b 239 55 95 55 Backorders;t 126 145 +;t 233 145 −;t 180 195 Inventory position combines all three",
+    "l 35 175 325 175;l 35 105 325 105;p M35 45L180 105L245 155L245 45L325 85;d 180 105 6;t 180 95 Reorder point;t 180 195 Place order before delivery lead time elapses",
+    "r 35 75 290 50;f 35 75 232 50;t 151 105 Demand 48;t 296 105 12;t 180 55 8 units/day ×6 days;t 180 195 Reorder point =60 units",
+    "p M35 45L125 145V45L215 145V45L305 145;l 35 175 325 175;t 180 25 Replenishment sawtooth;t 180 195 Order quantity changes jump size, not reorder trigger"
+  ],
+  "depth-systems-logistics-understanding-warehouse-layout": [
+    "r 35 45 290 130;r 45 55 65 45;r 125 55 95 90;r 235 55 80 45;a 110 75 125 75;a 220 75 235 75;t 77 75 Receive;t 172 105 Storage;t 275 75 Pack;t 275 155 Dispatch;t 180 195 Layout links receiving to shipment",
+    "r 35 45 290 130;f 35 130 290 45;r 65 55 40 60;r 160 55 40 60;r 255 55 40 60;t 85 85 A;t 180 85 B;t 275 85 C;t 180 155 Pick route;t 180 195 Frequent items near convenient access",
+    "r 35 55 130 110;r 195 55 130 110;l 65 55 65 165;l 95 55 95 165;l 125 55 125 165;l 235 55 235 165;l 285 55 285 165;t 100 185 Narrow aisles;t 260 185 Wider aisles;t 180 205 Storage density versus maneuvering",
+    "p M35 75H325M35 145H325M95 75V145M265 75V145;d 95 75 6;d 265 145 6;p M95 75H265V145;t 180 55 Congested crossing;t 180 195 Compare measured travel, accuracy and safety"
+  ],
+  "depth-systems-logistics-what-queueing-systems-reveal": [
+    "d 45 105 6;d 70 105 6;d 95 105 6;d 120 105 6;b 145 75 95 60 Server;a 240 105 325 105;t 85 85 Waiting jobs;t 180 195 Variability creates temporary queues",
+    "r 35 75 290 50;f 35 75 232 50;t 151 105 Busy fraction .8;t 180 55 λ=8/h, μ=10/h;t 180 195 Utilization =80%",
+    "b 25 65 145 55 Flow 12 jobs/h;b 190 65 145 55 Time .5 h;t 180 155 L=λW;t 180 195 Average in system=6 jobs",
+    "b 25 45 145 45 Smooth arrivals;b 190 45 145 45 Add capacity;b 25 115 145 45 Reduce variability;b 190 115 145 45 Manage priorities;t 180 195 Select intervention based on observed queue cause"
+  ],
+  "depth-systems-logistics-why-forecasting-is-uncertain": [
+    "l 35 175 325 175;l 35 175 35 35;p M35 135L90 115L145 125L200 85;d 200 85 5;p M200 85L325 55;t 120 35 Historical observations;t 270 45 Forecast;t 180 195 Define target, units and horizon",
+    "l 35 175 325 175;p M35 145L65 115L95 145L125 95L155 125L185 75L215 105L245 55L275 85L325 35;t 180 25 Trend + seasonality;t 180 195 Promotions or shocks can alter historical pattern",
+    "r 65 50 90 120;r 205 70 90 100;t 110 40 Forecast 120;t 250 60 Actual 100;t 180 195 Absolute error=20 units",
+    "l 35 175 325 175;p M35 125L155 105L325 85;p M155 105L325 35M155 105L325 155;t 270 25 Upper scenario;t 270 175 Lower scenario;t 180 195 Prediction uncertainty typically widens with horizon"
+  ],
+  "depth-systems-logistics-how-route-planning-works": [
+    "d 45 105 7;d 145 55 7;d 215 155 7;d 315 105 7;p M45 105L145 55L315 105M45 105L215 155L315 105;t 100 65 3 min;t 240 65 7 min;t 130 155 5 min;t 275 155 2 min;t 180 195 Network path minimizes defined link cost",
+    "d 180 35 8;d 55 105 8;d 305 105 8;d 180 175 8;p M180 35L55 105L180 175L305 105L180 35;t 180 25 Depot;t 180 205 Sequence determines total tour cost",
+    "b 25 45 145 45 Vehicle capacity;b 190 45 145 45 Time windows;b 25 115 145 45 Depot location;b 190 115 145 45 Road restrictions;t 180 195 Shortest geometric tour may be infeasible",
+    "b 25 65 145 55 70 km /100 min;b 190 65 145 55 80 km /90 min;t 97 150 Less distance;t 262 150 Less time;t 180 195 Choose based on objective and constraints"
+  ],
+  "depth-systems-logistics-how-capacity-planning-works": [
+    "r 35 65 290 40;f 35 125 232 40;r 35 125 290 40;t 180 55 Nominal 100%;t 151 150 Productive 80%;t 180 195 Downtime, staffing and mix reduce effective capacity",
+    "l 35 105 325 105;d 65 105 6;d 295 105 6;t 65 85 Near term;t 295 85 Long term;t 95 155 Staffing / shifts;t 260 155 Equipment / buildings;t 180 195 Different investment and lead-time horizons",
+    "r 35 75 290 50;f 35 75 232 50;t 151 105 320 units;t 180 55 50/h ×8 h ×.8;t 180 195 Target 360 exceeds simplified effective capacity",
+    "r 35 75 290 50;f 35 75 217.5 50;t 143 105 Used .75;t 288 105 Reserve;t 180 55 Headroom for disruptions;t 180 195 Reserve capacity costs money but supports recovery"
+  ],
+  "depth-systems-logistics-designing-resilient-supply-networks": [
+    "d 45 105 8;d 180 105 8;d 315 105 8;l 45 105 180 105;l 180 105 315 105;p M165 90L195 120M195 90L165 120;t 180 45 Supplier outage example;t 180 195 Critical dependency interrupts downstream service",
+    "d 45 65 7;d 45 145 7;d 180 105 8;d 315 105 8;l 45 65 180 105;l 45 145 180 105;l 180 105 315 105;t 45 40 Source A;t 45 175 Source B;t 180 195 Shared upstream dependency can defeat nominal diversity",
+    "r 35 75 290 50;f 35 75 145 50;t 107 105 Buffer;t 252 105 Disruption demand;t 180 55 Inventory bridges finite interruption;t 180 195 Recovery time must fit available resources",
+    "l 35 175 325 175;p M35 45H95V135L155 95L215 65L325 45;p M35 45H95V165L215 165L325 65;t 180 25 Service level after failure;t 180 195 Compare recovery speed and retained service"
+  ],
+  "plus-systems-logistics-how-lead-times-affect-inventory": [
+    "b 25 65 95 55 Supplier;a 120 92 132 92;r 132 65 95 55;d 150 92 5;d 175 92 5;d 200 92 5;a 227 92 239 92;b 239 65 95 55 Receiver;t 180 155 Units in transit;t 180 195 Pipeline stock≈flow × lead time",
+    "r 35 65 290 35;r 35 125 181.25 35;t 180 55 8 days ×30/day=240;t 210 145 5 days ×30/day=150;t 180 195 Lead-time reduction frees 90 units",
+    "l 35 175 325 175;p M35 175Q105 35 175 175;p M155 175Q225 65 295 175;t 105 35 Variable lead time;t 225 55 Reliable slower;t 180 195 Variability affects uncertainty buffer",
+    "b 25 45 145 45 Faster shipping;b 190 45 145 45 Higher cost;b 25 115 145 45 Lower pipeline;b 190 115 145 45 Service outcome;t 180 195 Compare total cost and service, not speed alone"
+  ],
+  "plus-systems-logistics-understanding-the-bullwhip-effect": [
+    "l 35 75 325 75;l 35 145 325 145;p M35 75L95 70L155 80L215 70L275 80L325 75;p M35 145L95 95L155 195L215 95L275 195L325 145;t 180 45 Consumer demand;t 180 115 Upstream orders;t 180 215 Variability can amplify upstream",
+    "b 25 45 145 45 Forecast revision;b 190 45 145 45 Batch orders;b 25 115 145 45 Promotions;b 190 115 145 45 Shortage response;t 180 195 Lead-time delay amplifies unresolved decisions",
+    "l 35 175 325 175;r 45 125 55 50;r 105 25 55 150;r 165 125 55 50;r 225 25 55 150;l 35 75 325 75;t 180 15 Orders alternate 50/150;t 180 195 Final sales near 100 per week",
+    "d 45 105 7;d 180 105 7;d 315 105 7;l 45 105 315 105;a 315 65 45 65;t 180 55 Share actual consumption;t 180 195 Shorter lead times and aligned ordering rules"
+  ],
+  "plus-systems-logistics-how-inventory-turnover-is-interpreted": [
+    "b 25 65 145 55 COGS at cost;b 190 65 145 55 Avg inventory cost;t 180 155 Turnover=COGS / average stock;t 180 195 Use same period and valuation",
+    "b 25 65 145 55 $600,000/year;b 190 65 145 55 $100,000 avg;t 180 155 Six turns/year;t 180 195 365/6≈61 days of inventory",
+    "r 65 45 90 125;r 205 105 90 65;t 110 35 High turns;t 250 95 Low turns;t 180 195 Stockout risk versus deliberate seasonal buildup",
+    "b 25 45 145 45 Turnover;b 190 45 145 45 Stockouts;b 25 115 145 45 Service;b 190 115 145 45 Obsolescence;t 180 195 Interpret consistent product mix and period"
+  ],
+  "plus-systems-logistics-what-cross-docking-changes": [
+    "r 35 65 95 85;r 230 65 95 85;a 130 105 230 105;t 82 105 Inbound;t 277 105 Outbound;t 180 55 Brief transfer area;t 180 195 Little or no long-term storage",
+    "l 35 75 325 75;l 35 145 325 145;d 115 75 6;d 180 145 6;a 115 75 180 145;t 115 55 Arrival;t 180 165 Departure;t 180 195 Match timing, quantity and destination",
+    "d 45 55 7;d 45 105 7;d 45 155 7;r 140 65 80 80;a 52 55 140 90;a 52 105 140 105;a 52 155 140 120;a 220 105 315 105;t 180 105 Sort;t 180 195 Consolidate inputs into outbound load",
+    "l 35 75 325 75;l 35 145 325 145;d 250 75 6;d 180 145 6;p M235 130L265 160M265 130L235 160;t 250 55 Late inbound;t 180 165 Scheduled departure;t 180 195 Less inventory buffer increases coordination reliance"
+  ],
+  "plus-systems-logistics-how-service-level-metrics-differ": [
+    "r 35 75 290 50;l 93 75 93 125;l 151 75 151 125;l 209 75 209 125;l 267 75 267 125;f 209 75 58 50;t 180 55 Five cycles, one stockout;t 180 195 Four stockout-free cycles /5 =80%",
+    "r 35 75 290 50;f 35 75 275.5 50;t 170 105 Immediately supplied units;t 180 55 Unit fill rate counts units;t 180 195 Timing convention matters",
+    "r 35 65 290 35;f 35 65 275.5 35;r 35 125 290 35;f 35 125 261 35;t 180 55 95/100 units=95%;t 180 115 9/10 complete orders=90%;t 180 195 Different denominators describe different service",
+    "r 35 75 290 50;l 93 75 93 125;l 151 75 151 125;l 209 75 209 125;l 267 75 267 125;f 267 75 58 50;t 180 55 Rare stockout may affect many units;t 180 195 High cycle service need not imply high unit fill"
+  ],
+  "plus-systems-logistics-how-a-bill-of-materials-supports-production": [
+    "b 105 35 150 40 Product rev A;a 180 75 95 125;a 180 75 265 125;b 25 125 140 45 Module;b 195 125 140 45 Housing;t 180 205 Hierarchy lists components and quantities",
+    "b 105 35 150 40 One product;a 180 75 95 110;a 180 75 265 110;b 25 110 140 40 Module 1;b 195 110 140 40 Module 2;t 95 175 3 fasteners;t 265 175 3 fasteners;t 180 205 Total =6 fasteners per finished unit",
+    "b 25 45 145 45 Gross need;b 190 45 145 45 Available stock;b 25 115 145 45 Scheduled receipts;b 190 115 145 45 Net order;t 180 195 Timing, scrap and yield affect requirements",
+    "r 35 55 130 105;r 195 55 130 105;l 45 85 155 85;l 205 85 315 85;d 95 115 7;d 260 135 7;t 100 180 Revision A;t 260 180 Revision B;t 180 205 Effective date and compatibility govern change"
+  ],
+  "plus-systems-logistics-why-queues-grow-near-capacity": [
+    "b 25 65 145 55 Arrival λ;b 190 65 145 55 Service μ;t 180 155 ρ=λ/μ;t 180 195 Stable M/M/1 requires λ below μ",
+    "r 65 110 90 60;r 205 50 90 120;t 110 100 .5 hour;t 250 40 1 hour;t 110 190 λ=10/h;t 250 190 λ=11/h;t 180 210 μ=12/h, W=1/(μ−λ)",
+    "l 35 175 325 175;l 35 175 35 35;p M35 165Q180 155 250 125Q300 100 315 35;t 315 195 100%;t 180 25 Mean time in system;t 180 210 Delay grows rapidly near capacity",
+    "b 25 45 145 45 Multiple servers;b 190 45 145 45 Priority classes;b 25 115 145 45 Batch arrivals;b 190 115 145 45 Other service times;t 180 195 M/M/1 assumptions do not fit every queue"
+  ],
+  "plus-systems-logistics-how-safety-stock-balances-service-and-cost": [
+    "l 35 175 325 175;p M35 175Q180 -75 325 175;l 180 55 180 175;l 255 110 255 175;t 180 45 Mean demand;t 260 95 Buffer;t 180 195 Safety stock covers above-mean lead-time demand",
+    "b 25 65 145 55 Daily SD σd;b 190 65 145 55 Fixed L days;t 180 155 Lead-time SD=σd√L;t 180 195 Safety stock=zσd√L under assumptions",
+    "b 25 45 145 45 σd=5 units;b 190 45 145 45 L=4 days;b 105 115 150 45 z=1.645;t 180 195 1.645×5×2=16.45 units",
+    "l 35 175 325 175;p M35 160L325 45;p M35 45Q105 140 325 165;t 275 35 Holding cost;t 260 155 Shortage risk;t 180 195 Select buffer for service goal and demand model"
+  ],
+  "plus-systems-logistics-how-route-optimization-handles-constraints": [
+    "d 55 105 7;d 180 55 7;d 305 105 7;d 180 155 7;p M55 105L180 55L305 105L180 155L55 105;t 180 35 Selected links;t 180 195 Assign stops and choose sequence",
+    "r 35 75 290 50;f 35 75 174 50;t 122 105 Loaded 60%;t 267 105 Reserve;t 180 55 Vehicle capacity constraint;t 180 195 Arrival time windows further restrict routes",
+    "l 35 175 325 175;l 35 175 35 35;p M35 170L105 167L175 155L245 115L325 35;t 180 25 Possible orders grow rapidly;t 180 195 Heuristic solutions may lack optimality proof",
+    "b 25 45 145 45 Feasible routes;b 190 45 145 45 Cost objective;b 25 115 145 45 Disruption scenarios;b 190 115 145 45 Lateness penalties;t 180 195 Evaluate operational robustness, not only nominal optimum"
+  ],
+  "plus-systems-logistics-understanding-supply-chain-traceability": [
+    "l 35 105 325 105;d 65 105 6;d 180 105 6;d 295 105 6;t 65 85 Make;t 180 85 Ship;t 295 85 Receive;t 180 155 Lot ID follows event records;t 180 195 Traceability needs identity and history",
+    "b 25 45 145 45 Input lot A;b 190 45 145 45 Input lot B;a 97 90 180 135;a 262 90 180 135;b 105 135 150 45 Output lot C;t 180 205 Preserve transformation relationships",
+    "d 45 105 8;d 165 65 7;d 165 145 7;d 305 45 7;d 305 105 7;d 305 165 7;l 45 105 165 65;l 45 105 165 145;l 165 65 305 45;l 165 65 305 105;l 165 145 305 165;t 180 195 Affected input can reach several downstream destinations",
+    "r 35 65 130 85;r 195 65 130 85;t 100 110 Physical label;t 260 110 Digital record;a 165 105 195 105;t 180 45 Match identity at capture;t 180 195 Data integrity cannot prove physical correspondence"
+  ]
+};
+window.LumenSlideArtBatch33Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch33;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch33Render(c,cls,step)||prior(c,cls,step);};})();
