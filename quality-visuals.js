@@ -5176,3 +5176,143 @@ window.LumenSlideArtBatch35Render=function renderer(c,cls="cover",step=-1){
  const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch35Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* Business: dedicated slide artwork, batch 36. */
+window.LumenSlideArtBatch36={
+  "negotiation": [
+    "b 25 55 145 55 Position: lower price;a 170 82 190 82;b 190 55 145 55 Interest: cash flow;t 180 155 Payment terms may address underlying need;t 180 195 Different positions can share interests",
+    "l 35 105 325 105;d 115 105 7;d 265 105 7;t 115 85 BATNA;t 265 85 Offer;t 180 155 Compare offer to feasible alternative;t 180 195 Agreement should beat the next-best option",
+    "b 25 55 145 55 Lower price;b 190 55 145 55 Longer commitment;a 170 75 190 75;a 190 105 170 105;t 180 150 Supplier gains predictability;t 180 195 Trade issues valued differently",
+    "r 85 35 190 145;l 105 65 255 65;l 105 95 255 95;l 105 125 255 125;t 180 55 Obligations;t 180 85 Dates;t 180 115 Remedies;t 180 195 Written terms make implementation testable"
+  ],
+  "persuasion": [
+    "r 35 55 130 110;r 195 55 130 110;t 100 90 Measured data;t 100 125 Source;t 260 90 Estimate;t 260 125 Assumptions;t 180 195 Clearly distinguish evidence from projections",
+    "b 105 35 150 45 Same verified fact;a 180 80 95 125;a 180 80 265 125;b 25 125 140 45 Buyer benefit;b 195 125 140 45 Technical detail;t 180 205 Tailor emphasis without changing facts",
+    "r 35 65 290 85;l 35 105 325 105;t 180 85 Benefits and price;t 180 130 Limitations and fees;t 180 195 Material terms visible before decision",
+    "r 65 55 90 115;r 205 115 90 55;t 110 45 Purchases;t 250 105 Refunds;t 180 195 Evaluate satisfaction and cancellations, not conversions alone"
+  ],
+  "startup": [
+    "b 25 45 145 45 Customer;b 190 45 145 45 Problem;b 25 115 145 45 Solution;b 190 115 145 45 Willingness to pay;t 180 195 Each assumption should admit contradictory evidence",
+    "b 25 55 145 55 Past purchase;b 190 55 145 55 Hypothetical interest;t 97 150 Behavior;t 262 150 Stated intention;t 180 195 Actual behavior offers different evidence",
+    "r 35 65 290 85;f 35 65 174 85;t 122 110 Completed;t 267 110 Did not;t 180 45 Prototype task test;t 180 195 Define measurable success and cost beforehand",
+    "b 105 35 150 45 Pilot evidence;a 180 80 95 125;a 180 80 265 125;b 25 125 140 45 Revise / stop;b 195 125 140 45 Proceed carefully;t 180 205 Pilot success does not establish scalability"
+  ],
+  "strategy": [
+    "b 25 65 145 55 Objective;a 170 82 190 82;b 190 65 145 55 Chosen approach;t 180 155 Limited resources require choices;t 180 195 A goal list alone is not strategy",
+    "r 35 55 290 110;l 130 55 130 165;l 230 55 230 165;f 130 55 100 110;t 82 110 Segment A;t 180 110 Focus B;t 277 110 Segment C;t 180 195 Select needs that capabilities can serve",
+    "b 25 65 95 55 Capability;a 120 92 132 92;b 132 65 95 55 Reliable ops;a 227 92 239 92;b 239 65 95 55 Customer value;t 180 195 Competitive promise must be supported by execution",
+    "r 35 75 290 50;f 35 75 203 50;t 136 105 Chosen priorities;t 281 105 Other;t 180 55 Finite resources;t 180 195 Explicitly identify what will not be pursued"
+  ],
+  "depth-business-understanding-a-business-model": [
+    "b 25 65 95 55 Customer need;a 120 92 132 92;b 132 65 95 55 Offering;a 227 92 239 92;b 239 65 95 55 Channel;t 180 195 Value creation includes delivery activities",
+    "c 95 95 35;c 265 95 35;a 130 95 230 95;t 95 100 Payer;t 265 100 User;t 180 155 Payer and beneficiary may differ;t 180 195 Transaction, subscription and commission models",
+    "l 35 175 325 175;l 35 175 35 35;l 35 125 325 125;p M35 125L325 45;t 260 115 Fixed cost;t 260 35 Total cost;t 180 195 Variable cost rises with output",
+    "l 35 175 325 175;l 35 175 35 35;p M35 175L325 45M35 125L325 95;d 180 110 6;t 265 45 Revenue;t 265 90 Cost;t 180 195 Positive contribution must cover fixed costs"
+  ],
+  "depth-business-finding-product-market-fit": [
+    "c 95 105 50;c 265 105 50;l 145 105 215 105;t 95 105 Need;t 265 105 Offering;t 180 195 Fit means meaningful demand in defined market",
+    "l 35 175 325 175;p M35 45L95 70L155 80L215 85L325 85;t 180 25 Repeat-use cohort;t 180 195 Retention should fit natural product usage cycle",
+    "l 35 175 325 175;p M35 45L95 65L155 75L325 85;p M35 45L95 105L155 145L325 165;t 260 75 Segment A;t 260 155 Segment B;t 180 195 Different retention suggests different use cases",
+    "l 35 175 325 175;p M35 45L95 60L155 75L215 85L325 90;p M35 45L95 75L155 115L215 145L325 165;t 180 25 Retention with/without incentives;t 180 195 Subsidized signups may not sustain value"
+  ],
+  "depth-business-why-unit-economics-matter": [
+    "b 25 65 145 55 One order;b 190 65 145 55 One customer;t 97 150 Transaction costs;t 262 150 Lifetime costs;t 180 195 Define unit and measurement period",
+    "r 35 75 290 50;f 35 75 174 50;t 122 105 Cost $30;t 267 105 $20;t 180 55 Order revenue $50;t 180 195 Contribution $20 before remaining costs",
+    "l 35 105 325 105;p M35 105L325 45;p M35 105L325 165;t 275 35 Positive margin;t 275 155 Negative margin;t 180 195 Scaling multiplies each unit's contribution or loss",
+    "r 35 65 290 45;l 130 65 130 110;l 240 65 240 110;t 82 90 Delivery;t 185 90 Acquisition;t 282 90 Other;t 180 195 State included costs before comparing unit economics"
+  ],
+  "depth-business-how-businesses-choose-prices": [
+    "b 25 45 145 45 Relevant cost;b 190 45 145 45 Willingness to pay;b 25 115 145 45 Substitutes;b 190 115 145 45 Customer demand;t 180 195 Markup alone ignores customer response",
+    "l 35 175 325 175;l 35 175 35 35;p M35 45L325 165;p M95 45L325 115;t 180 25 Price sensitivity varies by segment;t 180 195 Higher price often reduces quantity",
+    "b 25 55 145 55 100×($20−$10);b 190 55 145 55 80×($24−$10);t 97 150 $1,000 margin;t 262 150 $1,120 margin;t 180 195 Lower sales revenue can still yield higher contribution",
+    "r 35 55 130 110;r 195 55 130 110;t 100 90 Price A;t 100 130 Retention A;t 260 90 Price B;t 260 130 Retention B;t 180 195 Compare controlled pricing tests and outcomes"
+  ],
+  "depth-business-understanding-competitive-advantage": [
+    "l 35 175 325 175;r 65 80 90 95;r 205 45 90 130;t 110 70 Rival value;t 250 35 Our value;t 180 195 Advantage is relative to competing alternatives",
+    "b 25 45 145 45 Skills;b 190 45 145 45 Scale;b 25 115 145 45 Distribution;b 190 115 145 45 Reputation;t 180 195 Capabilities underpin cost or value advantage",
+    "l 35 175 325 175;p M35 45L325 105;p M35 155L325 105;t 95 35 First mover;t 95 145 Imitator;t 180 195 Easily copied advantages may erode",
+    "b 25 45 145 45 Choice reasons;b 190 45 145 45 Repeat use;b 25 115 145 45 Margins;b 190 115 145 45 Rival conditions;t 180 195 Temporary competitor outage can inflate sales"
+  ],
+  "depth-business-how-operational-bottlenecks-work": [
+    "b 25 65 95 55 Prepare;a 120 92 132 92;b 132 65 95 55 Pack;a 227 92 239 92;b 239 65 95 55 Dispatch;t 180 155 Lowest effective capacity constrains output",
+    "r 45 70 70 100;r 145 103.33 70 66.67;r 245 86.67 70 83.33;t 80 60 30/h;t 180 93 20/h;t 280 76 25/h;t 180 195 Maximum steady output 20 orders/hour",
+    "d 45 105 5;d 65 105 5;d 85 105 5;d 105 105 5;d 125 105 5;b 145 75 95 60 Pack 20/h;a 240 105 325 105;t 85 85 Prepare 40/h;t 180 195 Local speedup creates work-in-process",
+    "r 45 70 70 100;r 145 70 70 100;r 245 86.67 70 83.33;t 80 60 30/h;t 180 60 30/h;t 280 76 25/h;t 180 195 Improved packing shifts constraint to dispatch"
+  ],
+  "plus-business-how-customer-acquisition-cost-works": [
+    "b 25 45 145 45 Marketing;b 190 45 145 45 Sales labor;b 105 115 150 45 New customers;t 180 195 CAC=attributable acquisition spending / new customers",
+    "b 25 65 145 55 Spend $12,000;b 190 65 145 55 200 new payers;t 180 155 $12,000/200;t 180 195 CAC=$60",
+    "l 35 105 325 105;d 65 105 6;d 180 105 6;d 295 105 6;t 65 85 Campaign;t 180 85 Lead;t 295 85 Purchase;t 180 175 Match costs to acquisition cohort where possible",
+    "l 35 175 325 175;l 35 105 325 105;p M35 175L325 45;d 191 105 5;t 180 95 CAC threshold;t 180 195 Cumulative contribution crosses acquisition cost"
+  ],
+  "plus-business-understanding-customer-lifetime-value": [
+    "l 35 175 325 175;r 45 90 35 85;r 105 90 35 85;r 165 90 35 85;r 225 90 35 85;r 285 90 35 85;t 180 55 Expected contribution stream;t 180 195 Subtract variable delivery/support costs",
+    "r 35 75 290 50;l 59.17 75 59.17 125;l 83.33 75 83.33 125;l 107.5 75 107.5 125;l 131.67 75 131.67 125;l 155.83 75 155.83 125;l 180 75 180 125;l 204.17 75 204.17 125;l 228.33 75 228.33 125;l 252.5 75 252.5 125;l 276.67 75 276.67 125;l 300.83 75 300.83 125;t 180 55 12 months ×$20;t 180 195 $240 undiscounted before acquisition",
+    "l 35 175 325 175;p M35 45Q95 105 325 155;p M35 45L95 95L155 105L325 110;t 180 25 Different cohort survival curves;t 180 195 Retention need not be constant over tenure",
+    "r 65 65 90 105;r 205 100 90 70;t 110 55 Future $;t 250 90 Present $;t 180 195 Discount and probability-weight future contribution"
+  ],
+  "plus-business-why-businesses-track-cash-conversion": [
+    "l 35 105 325 105;d 35 105 6;d 120 105 6;d 220 105 6;d 325 105 6;t 35 85 Buy;t 120 85 Pay;t 220 85 Sell;t 315 85 Collect;t 180 155 Cash outflow precedes collection;t 180 195 Supplier credit affects timing",
+    "b 25 55 95 55 Inventory days;b 132 55 95 55 Receivable days;b 239 55 95 55 Payable days;t 126 145 +;t 233 145 −;t 180 195 Cash conversion cycle = DIO+DSO−DPO",
+    "r 35 65 174 35;r 209 65 116 35;r 35 125 96.67 35;t 122 85 45 days;t 267 85 30 days;t 83 145 −25 days;t 180 195 45+30−25=50 days",
+    "l 35 105 325 105;d 95 105 6;d 265 105 6;a 265 75 210 75;t 95 85 Pay supplier;t 265 130 Collect;t 180 55 Earlier collection frees cash;t 180 195 Excessive payment delays may harm supplier relationships"
+  ],
+  "plus-business-how-sales-funnels-are-measured": [
+    "p M35 45H325L265 105H95ZM95 105H265L215 165H145Z;t 180 75 Qualified leads;t 180 130 Demonstrations;t 180 155 Sales;t 180 195 Define stage entry and exit criteria",
+    "r 35 55 290 35;r 35 105 116 35;r 35 155 29 35;t 180 45 200 leads;t 215 125 80 demos;t 135 175 20 sales;t 180 210 Lead-to-sale 10%, demo-to-sale 25%",
+    "l 35 75 325 75;l 35 145 325 145;d 65 75 6;d 180 145 6;d 295 75 6;a 65 75 180 145;t 65 55 Earlier lead;t 180 165 Later sale;t 180 195 Match stage counts within same cohort",
+    "b 25 45 145 45 Conversion;b 190 45 145 45 Time to close;b 25 115 145 45 Loss reasons;b 190 115 145 45 Customer outcomes;t 180 195 More leads alone do not establish improvement"
+  ],
+  "plus-business-what-customer-segmentation-does": [
+    "c 95 105 50;c 265 105 50;d 75 85 5;d 115 85 5;d 95 125 5;d 245 85 5;d 285 85 5;d 265 125 5;t 95 175 Need A;t 265 175 Need B;t 180 195 Group actionable differences rather than arbitrary labels",
+    "b 25 45 145 45 Use case;b 190 45 145 45 Purchase frequency;b 25 115 145 45 Organization size;b 190 115 145 45 Service needs;t 180 195 Choose decision-relevant variables",
+    "r 65 60 90 110;r 205 105 90 65;t 110 50 Segment A;t 250 95 Segment B;t 180 195 Compare retention, conversion and cost to serve",
+    "c 135 105 65;c 225 105 65;t 100 105 A;t 260 105 B;t 180 105 Overlap;t 180 195 Members differ from averages and can change groups"
+  ],
+  "plus-business-why-recurring-revenue-is-not-guaranteed": [
+    "l 35 175 325 175;p M35 155L95 85H155L155 105H215L215 135H325;t 180 35 Recurring revenue can shrink;t 180 195 Cancellation and nonrenewal change expected payments",
+    "r 35 65 130 100;r 195 65 130 100;d 55 100 5;d 85 100 5;d 115 100 5;d 145 100 5;c 260 115 35;t 100 185 Several small accounts;t 260 185 One large account;t 180 205 Account churn and revenue churn differ",
+    "b 25 45 145 45 Opening $10,000;b 190 45 145 45 Lost $800;b 105 115 150 45 Expansion $300;t 180 195 NRR=(10,000−800+300)/10,000=95%",
+    "l 35 175 325 175;p M35 105L325 45;p M35 105L325 105;p M35 105L325 165;t 180 25 Renewal scenarios;t 180 195 Model retention, concentration and expansion separately"
+  ],
+  "plus-business-understanding-product-positioning": [
+    "l 35 175 325 175;l 35 175 35 35;d 85 125 6;d 180 85 6;d 275 55 6;t 180 25 Relative value dimensions;t 180 195 Position offering against relevant alternatives",
+    "r 65 55 90 115;r 205 95 90 75;t 110 45 Old task time;t 250 85 New task time;t 180 195 Demonstrated benefit supports positioning claim",
+    "b 25 45 145 45 Features;b 190 45 145 45 Price;b 25 115 145 45 Channels;b 190 115 145 45 Service;t 180 195 Delivery must support intended position",
+    "b 25 55 145 55 Intended message;b 190 55 145 55 Customer interpretation;t 180 150 Compare reasons for choice and rejection;t 180 195 Test whether benefit is communicated accurately"
+  ],
+  "plus-business-how-a-pilot-reduces-business-risk": [
+    "r 35 55 290 110;r 95 80 170 60;t 180 110 Pilot group;t 180 35 Wider population;t 180 195 Test limited deployment before large investment",
+    "b 25 45 145 45 Eligibility;b 190 45 145 45 Baseline;b 25 115 145 45 Duration;b 190 115 145 45 Success measure;t 180 195 Participant selection affects generalization",
+    "r 35 75 290 50;f 35 75 174 50;t 122 105 30 completed;t 267 105 20 other;t 180 55 50 eligible participants;t 180 195 Observed completion=60%",
+    "l 35 175 325 175;p M35 155L325 55;p M35 155Q180 140 325 25;t 180 15 Scaling costs may be nonlinear;t 180 195 Identify capacity and support constraints before expansion"
+  ],
+  "plus-business-how-businesses-manage-service-quality": [
+    "b 25 45 145 45 Accuracy;b 190 45 145 45 Reliability;b 25 115 145 45 Resolution;b 190 115 145 45 Timeliness;t 180 195 Define quality for specific service requirements",
+    "l 35 175 325 175;r 35 172.5 23 2.5;r 65 172.5 23 2.5;r 95 172.5 23 2.5;r 125 172.5 23 2.5;r 155 172.5 23 2.5;r 185 172.5 23 2.5;r 215 172.5 23 2.5;r 245 172.5 23 2.5;r 275 172.5 23 2.5;r 305 47.5 20 127.5;t 180 35 Nine 1-min waits, one 51-min wait;t 180 195 Average 6 min hides long tail",
+    "l 35 175 325 175;p M35 105L65 85L95 120L125 95L155 110L185 140L215 130L245 145L275 135L325 140;l 180 45 180 175;t 180 35 Change implemented;t 180 195 Compare variation before and after improvement",
+    "b 25 55 145 55 Fast response;b 190 55 145 55 Actual resolution;t 180 150 Track repeat contacts too;t 180 195 Speed metric alone can reward incomplete service"
+  ],
+  "plus-business-why-channel-strategy-matters": [
+    "b 25 65 95 55 Producer;a 120 82 239 82;b 239 65 95 55 Customer;a 72 120 180 150;a 180 150 286 120;t 180 170 Intermediary route;t 180 195 Direct and indirect channels differ",
+    "r 35 75 290 50;f 35 75 130.5 50;t 100 105 Costs;t 245 105 Contribution;t 180 55 Direct sales retain revenue but add service costs;t 180 195 Intermediary takes margin for access or services",
+    "b 25 55 145 55 $100−$45;b 190 55 145 55 $70−$20;t 97 150 $55 direct;t 262 150 $50 distributor;t 180 195 Volume and fixed costs can alter choice",
+    "c 135 105 65;c 225 105 65;t 100 105 Existing;t 260 105 New;t 180 105 Overlap;t 180 195 Assess incremental sales versus channel switching"
+  ]
+};
+window.LumenSlideArtBatch36Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch36;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch36Render(c,cls,step)||prior(c,cls,step);};})();
