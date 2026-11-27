@@ -7788,3 +7788,130 @@ window.LumenSlideArtBatch59={
 };
 window.LumenSlideArtBatch59Render=function(c,cls='cover',step=-1){return window.LumenSlideArtSharedRender(window.LumenSlideArtBatch59,c,cls,step);};
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch59Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* career-development: dedicated slide artwork, batch 60. */
+window.LumenSlideArtBatch60={
+  "job-interview": [
+    "b 35 55 135 65 I solve problems;b 190 55 135 65 Resolved recurring fault;t 180 165 Evidence beats unsupported trait claims",
+    "b 20 65 75 60 Situation;b 100 65 75 60 Task;b 180 65 75 60 Action;b 260 65 75 60 Result;t 180 170 Identify your own contribution",
+    "p M35 85H125V145H35ZM50 55H110V85M50 145V165H110V145;a 135 105 215 105;b 215 65 110 85 Driver test;t 180 195 Isolate fault, test fix, compare repeat tickets",
+    "l 35 175 325 175;r 65 65 90 110;r 205 105 90 70;t 110 55 Measured before;t 250 95 Measured after;t 180 195 Label estimates and actual results"
+  ],
+  "feedback-work": [
+    "b 35 45 90 80 Behavior;b 135 45 90 80 Impact;b 235 45 90 80 Next step;t 180 165 Actionable feedback specifies all three",
+    "c 95 105 35;c 265 105 35;t 95 110 Example?;t 265 110 Standard?;a 130 105 230 105;t 180 195 Clarify specific feedback",
+    "r 35 55 130 110;r 195 55 130 110;l 50 85 150 85;l 210 85 310 85;l 210 115 310 115;l 210 145 310 145;t 100 185 Thin ticket;t 260 185 Steps and outcome;t 180 205 Agree on documentation content",
+    "l 35 105 325 105;d 65 105 6;d 180 105 6;d 295 105 6;t 65 85 Feedback;t 180 85 Apply;t 295 85 Review;t 180 175 Test improved behavior, not personal worth"
+  ],
+  "depth-career-development-how-to-write-an-evidence-based-resume": [
+    "r 35 55 130 110;r 195 55 130 110;t 100 105 Job duties;t 260 105 Resume proof;a 165 105 195 105;t 180 195 Match relevant skills to experience",
+    "b 25 65 100 65 Action;b 132 65 95 65 Scope;b 239 65 95 65 Outcome;t 180 175 Strong bullet combines all three",
+    "r 35 65 290 90;t 180 90 Resolved ~25 requests/week;t 180 125 Documented recurring fixes;t 180 195 Only use verified numbers",
+    "r 55 35 250 145;l 75 75 285 75;l 75 105 285 105;l 75 135 285 135;t 180 205 Accurate titles, clean layout, relevant terms"
+  ],
+  "depth-career-development-how-to-evaluate-a-job-offer": [
+    "r 35 75 290 50;l 160 75 160 125;l 225 75 225 125;l 285 75 285 125;t 97 105 Base;t 192 105 Bonus;t 255 105 Benefits;t 305 105 PTO;t 180 195 Compare whole compensation package",
+    "r 35 65 290 40;r 35 125 200 40;t 180 55 Gross pay;t 135 115 Usable income;t 180 195 Commuting, premiums and taxes affect outcome",
+    "b 35 65 135 65 $2 ×40 hours;b 190 65 135 65 ×52 weeks;t 180 165 $4,160 gross annual difference",
+    "b 35 45 135 55 Responsibilities;b 190 45 135 55 Manager;b 35 120 135 55 Growth;b 190 120 135 55 Written terms;t 180 205 Clarify uncertainties before acceptance"
+  ],
+  "depth-career-development-making-a-professional-portfolio": [
+    "r 35 55 130 110;r 195 55 130 110;t 100 105 Target role;t 260 105 Work sample;a 165 105 195 105;t 180 195 Demonstrate relevant skill",
+    "b 25 65 75 60 Problem;b 105 65 75 60 Constraints;b 185 65 75 60 Decisions;b 265 65 75 60 Result;t 180 175 Explain your contribution",
+    "r 55 35 250 145;l 75 75 285 75;l 75 105 285 105;f 75 125 210 20;t 180 60 Troubleshooting guide;t 180 205 Redacted example with validation notes",
+    "r 35 55 130 110;r 195 55 130 110;f 50 85 100 15;f 50 115 100 15;t 100 185 Confidential;t 260 185 Sanitized;t 180 205 Share only permitted work"
+  ],
+  "depth-career-development-how-to-learn-a-new-workplace": [
+    "c 180 105 35;c 65 65 20;c 295 65 20;c 180 175 20;l 65 65 150 85;l 295 65 210 85;l 180 140 180 155;t 180 110 Team;t 65 35 Systems;t 295 35 Services;t 180 205 Escalations",
+    "b 35 55 135 65 Observe procedure;b 190 55 135 65 Ask before change;t 180 165 High-impact work needs proper authorization",
+    "b 25 65 95 65 Request;a 120 97 132 97;b 132 65 95 65 Approval;a 227 97 239 97;b 239 65 95 65 Resolution;t 180 195 Trace an actual request through handoffs",
+    "c 95 105 35;c 265 105 35;a 130 85 230 85;a 230 125 130 125;t 95 110 Learner;t 265 110 Colleague;t 180 195 Explain back, practice with supervision"
+  ],
+  "depth-career-development-building-useful-professional-networks": [
+    "d 65 105 8;d 180 55 8;d 295 105 8;d 180 155 8;p M65 105L180 55L295 105L180 155Z;t 180 195 Repeated useful interactions form professional ties",
+    "c 95 105 35;c 265 105 35;a 130 85 230 85;a 230 125 130 125;t 95 110 Ask;t 265 110 Share;t 180 195 Follow through on commitments",
+    "r 55 45 250 130;l 75 85 285 85;l 75 115 285 115;t 180 70 Mention specific discussion;t 180 150 Relevant resource;t 180 195 Concise follow-up after event",
+    "l 35 105 325 105;d 65 105 6;d 180 105 6;d 295 105 6;t 65 85 Meet;t 180 85 Follow up;t 295 85 Check in;t 180 175 Maintain connection beyond requests"
+  ],
+  "depth-career-development-handling-mistakes-at-work": [
+    "b 35 65 135 65 Contain harm;a 170 97 190 97;b 190 65 135 65 Notify owner;t 180 165 Follow established procedures promptly",
+    "b 35 45 135 55 Known facts;b 190 45 135 55 Known impact;b 35 120 290 55 Unknowns;t 180 205 Avoid speculation and minimization",
+    "r 35 55 130 110;r 195 55 130 110;p M55 75L145 145M145 75L55 145;t 260 105 Correct version;t 180 195 Notify recipients and coordinate correction",
+    "b 35 55 135 65 Cause review;a 170 87 190 87;b 190 55 135 65 Safeguard;t 180 165 Validate or review before repeating task"
+  ],
+  "depth-career-development-planning-a-career-transition": [
+    "r 35 55 130 110;r 195 55 130 110;t 100 105 Current work;t 260 105 Target duties;a 165 105 195 105;t 180 195 Define destination by tasks and conditions",
+    "r 35 65 290 30;f 35 65 200 30;r 35 115 290 30;f 35 115 100 30;t 180 55 Skill A readiness;t 180 105 Skill B readiness;t 180 195 Prioritize gaps important to role",
+    "b 35 45 135 55 Server maintenance;b 190 45 135 55 Scripting;b 35 120 290 55 Change control evidence;t 180 205 Support to systems administration",
+    "l 35 105 325 105;d 65 105 6;d 145 105 6;d 225 105 6;d 305 105 6;t 65 85 Learn;t 145 85 Project;t 225 85 Apply;t 305 85 Review;t 180 175 Milestones, not guaranteed hiring date"
+  ],
+  "depth-career-development-how-to-document-your-accomplishments": [
+    "r 55 35 250 145;l 75 75 285 75;l 75 105 285 105;l 75 135 285 135;t 180 60 Date and problem;t 180 95 Action;t 180 125 Outcome;t 180 205 Record work while details are fresh",
+    "c 95 105 35;c 265 105 35;t 95 110 Team result;t 265 110 My role;t 180 195 Keep approved metrics and deliverables separate",
+    "r 35 65 130 90;r 195 65 130 90;l 50 85 150 85;l 50 105 150 105;l 50 125 150 125;l 210 85 310 85;t 100 175 Before;t 260 175 After;t 180 205 Three duplicate onboarding steps removed",
+    "b 35 45 135 55 Skill categories;b 190 45 135 55 Business impact;b 35 120 290 55 Sanitized external summary;t 180 205 Keep sensitive evidence in approved systems"
+  ],
+  "plus-career-development-reading-a-job-description-critically": [
+    "r 55 35 250 145;l 55 80 305 80;l 55 125 305 125;t 180 60 Essential;t 180 105 Preferred;t 180 150 Duties;t 180 205 Job descriptions may use categories inconsistently",
+    "b 35 45 135 55 Daily tasks;b 190 45 135 55 Reporting;b 35 120 135 55 Schedule;b 190 120 135 55 Themes;t 180 205 Actual work matters more than title",
+    "r 35 55 130 110;r 195 55 130 110;t 100 105 Analyst title;t 260 105 Tickets and support;t 180 195 Repeated troubleshooting duties indicate role focus",
+    "b 35 55 135 65 Promotional claim;b 190 55 135 65 Concrete example;t 180 165 Verify travel and success expectations"
+  ],
+  "plus-career-development-preparing-a-reference-list": [
+    "c 180 105 35;c 65 65 20;c 295 65 20;l 65 65 150 85;l 295 65 210 85;t 180 110 Applicant;t 65 35 Supervisor;t 295 35 Project lead;t 180 195 Choose people who saw relevant work",
+    "b 35 55 135 65 Ask permission;a 170 87 190 87;b 190 55 135 65 Verify contact;t 180 165 Do not list a reference without consent",
+    "r 35 55 130 110;r 195 55 130 110;t 100 105 Reliability;t 260 105 Project delivery;t 180 195 Different references offer distinct observations",
+    "r 55 45 250 130;l 75 85 285 85;l 75 115 285 115;t 180 70 Target role;t 180 150 Shared project reminder;t 180 195 Provide context, not a false script"
+  ],
+  "plus-career-development-handling-a-skills-gap": [
+    "b 35 55 135 65 Broad gap;a 170 87 190 87;b 190 55 135 65 Observable tasks;t 180 165 Define missing capability concretely",
+    "r 35 75 290 60;l 130 75 130 135;l 230 75 230 135;t 82 105 Required;t 180 105 Learnable;t 277 105 Preferred;t 180 195 Prioritize by starting requirements",
+    "b 25 65 95 65 Read inputs;a 120 97 132 97;b 132 65 95 65 Handle errors;a 227 97 239 97;b 239 65 95 65 Automate;t 180 195 Scripting gap: practice a repeatable task",
+    "b 35 55 135 65 Practice artifact;b 190 55 135 65 Verified result;t 180 165 Demonstrate actual current proficiency"
+  ],
+  "plus-career-development-negotiating-non-salary-benefits": [
+    "b 35 45 135 55 Schedule;b 190 45 135 55 Training;b 35 120 135 55 Leave;b 190 120 135 55 Start date;t 180 205 Negotiability depends on employer policy",
+    "l 35 175 325 175;l 35 175 35 35;d 95 125 8;d 180 65 8;d 270 105 8;t 180 25 Personal value;t 180 195 Feasibility increases rightward",
+    "b 35 55 135 65 Fixed salary;b 190 55 135 65 Training budget;t 180 165 Request defined development benefit or review date",
+    "r 55 35 250 145;l 75 75 285 75;l 75 105 285 105;l 75 135 285 135;t 180 60 Agreed term;t 180 95 Conditions;t 180 125 Eligibility;t 180 205 Written review date is not a guaranteed raise"
+  ],
+  "plus-career-development-planning-a-first-ninety-days": [
+    "l 35 105 325 105;d 65 105 6;d 180 105 6;d 295 105 6;t 65 85 Learn;t 180 85 Practice;t 295 85 Improve;t 180 175 Begin by understanding work and relationships",
+    "r 35 65 90 85;r 135 65 90 85;r 235 65 90 85;t 80 105 30 days;t 180 105 60 days;t 280 105 90 days;t 180 195 Agree realistic milestones with manager",
+    "b 25 65 95 65 Ticket flow;a 120 97 132 97;b 132 65 95 65 Routine cases;a 227 97 239 97;b 239 65 95 65 Better docs;t 180 195 Example first three months of support",
+    "l 35 105 325 105;d 65 105 6;d 145 105 6;d 225 105 6;d 305 105 6;t 65 85 Plan;t 145 85 Check;t 225 85 Adjust;t 305 85 Review;t 180 175 Planning horizon, not universal probation"
+  ],
+  "plus-career-development-choosing-a-professional-certification": [
+    "b 35 55 135 65 Job tasks;b 190 55 135 65 Credential scope;t 180 165 Match exam objectives to actual responsibilities",
+    "b 35 45 135 55 Exam fee;b 190 45 135 55 Prep hours;b 35 120 135 55 Renewal;b 190 120 135 55 Prerequisites;t 180 205 Compare full investment",
+    "r 35 55 130 110;r 195 55 130 110;t 100 105 Troubleshooting;t 260 105 Unrelated specialty;t 180 195 Choose relevance over advanced title",
+    "b 35 55 135 65 Completion badge;b 190 55 135 65 Standardized exam;t 180 165 Credential type and demonstrated work differ"
+  ],
+  "plus-career-development-preparing-for-a-behavioral-interview": [
+    "b 35 45 135 55 Teamwork;b 190 45 135 55 Judgment;b 35 120 135 55 Problem solving;b 190 120 135 55 Learning;t 180 205 Map interview questions to competencies",
+    "r 35 55 90 110;r 135 55 90 110;r 235 55 90 110;t 80 105 Case A;t 180 105 Case B;t 280 105 Case C;t 180 195 Build bank of real experiences",
+    "b 35 55 135 65 Concise answer;b 190 55 135 65 Follow-up detail;t 180 165 Rehearse alternatives, reasoning and lessons",
+    "b 25 65 95 65 Own error;a 120 97 132 97;b 132 65 95 65 Correct;a 227 97 239 97;b 239 65 95 65 Verify;t 180 195 Failure example shows accountability"
+  ],
+  "plus-career-development-understanding-a-performance-review": [
+    "r 55 45 250 130;l 55 85 305 85;l 55 125 305 125;t 180 70 Responsibilities;t 180 110 Criteria;t 180 150 Review period;t 180 195 Assess against agreed expectations",
+    "r 35 55 130 110;r 195 55 130 110;t 100 105 Observed work;t 260 105 Interpretation;t 180 195 Support judgments with actual examples",
+    "l 35 175 325 175;r 55 65 60 110;r 150 90 60 85;r 245 115 60 60;t 85 55 Demand ↑;t 180 80 Output;t 275 105 Staffing ↓;t 180 195 Context matters when a target is missed",
+    "b 35 45 135 55 Development goal;b 190 45 135 55 Support;b 35 120 290 55 Check-in date;t 180 205 Rating does not automatically determine raise"
+  ],
+  "plus-career-development-how-to-request-professional-development": [
+    "b 35 55 135 65 Work capability gap;a 170 87 190 87;b 190 55 135 65 Training proposal;t 180 165 Connect learning to work requirements",
+    "r 35 65 130 85;r 195 65 130 85;t 100 105 Course A;t 260 105 Course B;t 180 195 Compare cost, time and application",
+    "b 25 65 95 65 Access work;a 120 97 132 97;b 132 65 95 65 Security class;a 227 97 239 97;b 239 65 95 65 Better procedure;t 180 195 Training request includes application plan",
+    "r 55 35 250 145;l 75 75 285 75;l 75 105 285 105;l 75 135 285 135;t 180 60 Approval and cost;t 180 95 Work time;t 180 125 Repayment terms;t 180 205 Agree how learning will be evaluated"
+  ],
+  "plus-career-development-evaluating-a-job-s-working-conditions": [
+    "c 180 105 35;c 65 55 20;c 295 55 20;c 65 155 20;c 295 155 20;l 65 55 150 85;l 295 55 210 85;l 65 155 150 125;l 295 155 210 125;t 180 110 Job;t 65 25 Workload;t 295 25 Safety;t 65 185 Schedule;t 295 185 Autonomy",
+    "b 35 45 135 55 Typical week;b 190 45 135 55 Staffing;b 35 120 135 55 Escalation;b 190 120 135 55 Written policy;t 180 205 Compare concrete evidence from interviews",
+    "r 35 65 290 60;l 107 65 107 125;l 180 65 180 125;l 252 65 252 125;f 35 65 72 60;t 71 95 On call;t 143 95 Off;t 216 95 Off;t 288 95 Off;t 180 195 Clarify rotation, incidents and pay",
+    "b 35 55 135 65 Personal constraints;b 190 55 135 65 Alternatives;t 180 165 Weigh conditions, not one review or anecdote"
+  ]
+};
+window.LumenSlideArtBatch60Render=function(c,cls='cover',step=-1){return window.LumenSlideArtSharedRender(window.LumenSlideArtBatch60,c,cls,step);};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch60Render(c,cls,step)||prior(c,cls,step);};})();
