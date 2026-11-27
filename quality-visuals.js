@@ -7661,3 +7661,130 @@ window.LumenSlideArtBatch58={
 };
 window.LumenSlideArtBatch58Render=function(c,cls='cover',step=-1){return window.LumenSlideArtSharedRender(window.LumenSlideArtBatch58,c,cls,step);};
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch58Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* music: dedicated slide artwork, batch 59. */
+window.LumenSlideArtBatch59={
+  "music-rhythm": [
+    "l 35 75 325 75;d 65 75 6;d 135 75 6;d 205 75 6;d 275 75 6;l 35 145 325 145;r 65 135 30 20;r 135 135 60 20;r 240 135 35 20;t 180 45 Pulse;t 180 195 Rhythm: varied durations and rests",
+    "l 35 105 325 105;d 65 105 9;d 125 105 5;d 185 105 5;d 245 105 9;d 305 105 5;t 180 65 Meter groups recurring beats;t 180 165 Tempo sets their speed",
+    "l 35 105 325 105;d 65 105 8;d 180 105 8;d 295 105 8;l 122.5 95 122.5 115;l 237.5 95 237.5 115;t 65 85 0 s;t 180 85 .5 s;t 295 85 1 s;t 180 165 120 BPM: two eighths per quarter beat",
+    "l 35 75 325 75;l 35 145 325 145;r 55 65 100 20;r 180 65 50 20;r 240 65 50 20;r 55 135 60 20;r 130 135 30 20;r 166 135 30 20;t 180 45 Slower;t 180 185 Faster: same relative rhythm"
+  ],
+  "music-harmony": [
+    "l 65 45 65 165;d 65 75 8;d 65 105 8;d 65 135 8;p M135 135L215 105L295 75;d 135 135 8;d 215 105 8;d 295 75 8;t 180 195 Simultaneous or implied pitch relationships",
+    "l 35 175 325 175;d 75 135 7;d 125 85 7;d 235 135 7;d 235 85 7;d 235 45 7;t 100 195 Interval;t 235 195 Chord",
+    "l 35 175 325 175;d 95 145 7;d 95 95 7;d 95 55 7;d 265 145 7;d 265 108 7;d 265 55 7;t 95 165 C E G;t 265 165 C E♭ G;t 180 195 Lower third by a semitone to make minor",
+    "p M35 130Q100 40 180 130T325 130;t 180 35 Tension and resolution depend on context;t 180 195 Different styles organize harmony differently"
+  ],
+  "depth-music-how-musical-scales-organize-pitch": [
+    "l 35 165 325 165;p M45 155L95 135L145 110L170 95L220 75L270 55L320 35;t 180 195 Ordered pitches span an octave",
+    "l 35 105 325 105;d 35 105 6;d 83 105 6;d 131 105 6;d 155 105 6;d 203 105 6;d 251 105 6;d 299 105 6;d 323 105 6;t 35 85 C;t 83 85 D;t 131 85 E;t 155 85 F;t 203 85 G;t 251 85 A;t 299 85 B;t 323 85 C;t 180 165 Steps: 2 2 1 2 2 2 1",
+    "l 35 105 325 105;d 35 105 6;d 83 105 6;d 131 105 6;d 155 105 6;d 203 105 6;d 251 105 6;d 299 105 6;d 323 105 6;t 35 85 G;t 83 85 A;t 131 85 B;t 155 85 C;t 203 85 D;t 251 85 E;t 299 85 F♯;t 323 85 G;t 180 165 Same intervals, different starting pitch",
+    "l 35 75 325 75;l 35 145 325 145;d 35 75 6;d 83 75 6;d 131 75 6;d 155 75 6;d 203 75 6;d 251 75 6;d 299 75 6;d 35 145 6;d 95 145 6;d 155 145 6;d 215 145 6;d 275 145 6;t 180 195 Different scale systems divide pitch space differently"
+  ],
+  "depth-music-what-musical-keys-do": [
+    "c 180 105 32;d 65 65 7;d 295 65 7;d 180 175 7;a 75 65 150 90;a 285 65 210 90;a 180 165 180 137;t 180 110 Tonic;t 65 45 Chord;t 295 45 Chord;t 180 205 Pitch",
+    "r 35 55 130 110;r 195 55 130 110;t 100 105 Scale: pitches;t 260 105 Key: relations;t 180 195 Tonal organization can include outside notes",
+    "b 35 65 135 65 G major;a 170 97 190 97;b 190 65 135 65 C major;t 180 165 C tonic can feel like arrival",
+    "l 35 105 325 105;d 65 105 8;d 295 105 8;t 65 85 Old tonic;t 295 85 New tonic;t 180 165 Modulation establishes a new tonal center"
+  ],
+  "depth-music-understanding-musical-texture": [
+    "p M35 65L95 45L155 85L215 55L325 75M35 145L95 115L155 135L215 155L325 125;t 180 195 Musical lines and their relationships",
+    "p M35 130L95 85L155 105L215 55L275 85L325 65;t 180 195 One melodic line, even with multiple unison performers",
+    "p M35 75L95 45L155 85L215 55L325 65M35 145H125V125H225V145H325;t 180 195 Melody over chordal support, homophony",
+    "p M35 80L95 45L155 85L215 55L325 75M35 130L95 155L155 115L215 145L325 105;t 180 195 Two independent melodic contours: polyphony"
+  ],
+  "depth-music-how-melody-develops": [
+    "p M35 145L95 105L155 65L215 65L275 125L325 95;d 35 145 5;d 95 105 5;d 155 65 5;d 215 65 5;d 275 125 5;d 325 95 5;t 180 195 Rise, repeat and fall in melodic contour",
+    "p M45 145L95 115L145 85M215 145L265 115L315 85;t 95 165 Motif;t 265 165 Recurrence;t 180 195 Recognizable short musical idea",
+    "p M45 145L95 125L145 105M215 85L265 65L315 45;t 95 165 C D E;t 265 105 G A B;t 180 195 Transposition retains rising interval pattern",
+    "p M35 145L65 125L95 105L125 145L155 125L185 105L215 85L245 125L275 145L325 145;t 180 195 Motifs combine into a longer phrase"
+  ],
+  "depth-music-why-musical-instruments-sound-different": [
+    "p M35 75Q50 35 65 75T95 75T125 75T155 75M205 75L220 35L235 75L250 115L265 75L280 35L295 75L310 115L325 75;t 180 165 Same fundamental, different waveform;t 180 195 Timbre depends on spectrum and time",
+    "l 35 175 325 175;l 65 175 65 45;l 125 175 125 85;l 185 175 185 115;l 245 175 245 145;t 65 195 f;t 125 195 2f;t 185 195 3f;t 245 195 4f;t 180 25 Fundamental and higher partials",
+    "l 35 175 325 175;r 45 65 20 110;r 75 115 20 60;r 105 140 20 35;r 205 65 20 110;r 235 85 20 90;r 265 105 20 70;r 295 130 20 45;t 85 45 Flute;t 255 45 Violin;t 180 195 Both 440 Hz fundamental, illustrative spectra",
+    "p M35 175L65 45L95 100L245 100L325 175;t 65 35 Attack;t 115 85 Decay;t 200 85 Sustain;t 285 155 Release;t 180 195 Envelope changes over time"
+  ],
+  "depth-music-how-dynamics-shape-music": [
+    "r 55 105 100 30;r 205 65 100 70;t 105 155 p: soft;t 255 155 f: loud;t 180 195 Relative loudness notation",
+    "p M35 105L165 65M35 105L165 145M195 65L325 105M195 145L325 105;t 100 175 Crescendo;t 260 175 Diminuendo",
+    "p M35 95Q55 45 75 95T115 95T155 95M205 95Q225 80 245 95T285 95T325 95;t 95 155 First phrase;t 265 155 Softer repeat;t 180 195 Same rhythm, changed emphasis",
+    "b 35 55 135 65 Marking: forte;b 190 55 135 65 Actual loudness;t 180 165 Register, ensemble and room affect perceived level"
+  ],
+  "depth-music-understanding-musical-form": [
+    "r 35 75 95 65;r 132 75 95 65;r 229 75 96 65;t 82 110 Intro;t 180 110 Contrast;t 277 110 Return;t 180 195 Large-scale organization",
+    "r 35 75 95 65;f 132 75 95 65;r 229 75 96 65;t 82 110 A;t 180 110 B;t 277 110 A;t 180 195 Ternary form: repetition, contrast, return",
+    "p M35 115L65 65L95 115L125 85M135 125L165 140L195 90L225 125M235 115L265 65L295 115L325 85;t 80 155 A;t 180 155 B;t 280 155 A′;t 180 195 Return can preserve melody while changing instrumentation",
+    "l 35 105 325 105;l 130 75 130 135;l 230 75 230 135;t 82 85 Melody;t 180 85 Texture;t 277 85 Cadence;t 180 195 Section boundaries have multiple musical cues"
+  ],
+  "depth-music-how-chords-progress": [
+    "b 25 65 95 65 Chord 1;a 120 97 132 97;b 132 65 95 65 Chord 2;a 227 97 239 97;b 239 65 95 65 Chord 3;t 180 195 Ordered harmonies establish progression",
+    "b 25 65 95 65 Predominant;a 120 97 132 97;b 132 65 95 65 Dominant;a 227 97 239 97;b 239 65 95 65 Tonic;t 180 195 Preparation, tension and stability",
+    "b 35 65 90 65 D minor;a 125 97 135 97;b 135 65 90 65 G major;a 225 97 235 97;b 235 65 90 65 C major;t 80 155 ii;t 180 155 V;t 280 155 I;t 180 195 Common tonal ii–V–I",
+    "c 95 105 40;c 265 105 40;p M55 105Q95 40 135 105M225 105Q265 40 305 105;t 95 110 Loop;t 265 110 Modal;t 180 195 Functional harmony is not universal"
+  ],
+  "plus-music-understanding-musical-intervals": [
+    "l 35 165 325 165;d 85 145 7;d 265 65 7;l 85 145 265 65;t 85 165 Low pitch;t 265 55 High pitch;t 180 195 Interval measures pitch distance",
+    "l 35 75 325 75;l 35 145 325 145;d 65 75 7;d 265 75 7;d 65 145 7;d 215 145 7;t 180 45 C to E: 4 semitones;t 180 185 C to E♭: 3 semitones",
+    "l 35 175 325 175;d 95 145 7;d 95 100 7;d 265 100 7;d 265 35 7;t 95 195 Major third;t 265 195 Minor sixth;t 180 25 Invert by raising lower pitch one octave",
+    "b 35 55 135 65 Sound distance;b 190 55 135 65 Written function;t 180 165 Enharmonic spellings may differ despite equal pitch"
+  ],
+  "plus-music-how-syncopation-shifts-musical-emphasis": [
+    "l 35 105 325 105;d 65 105 10;d 145 105 5;d 225 105 8;d 305 105 5;t 65 85 1;t 145 85 2;t 225 85 3;t 305 85 4;t 180 165 Meter establishes expected accents",
+    "l 35 105 325 105;d 65 105 5;d 145 105 5;d 225 105 5;d 305 105 5;r 170 75 30 20;t 180 55 Offbeat accent;t 180 165 Syncopation contrasts with meter",
+    "l 35 105 325 105;d 65 105 5;d 145 105 5;d 225 105 5;d 305 105 5;d 185 85 10;t 65 125 1;t 145 125 2;t 185 55 and;t 225 125 3;t 305 125 4;t 180 195 Accent after beat two",
+    "l 35 75 325 75;l 35 145 325 145;d 65 75 6;d 145 75 6;d 225 75 6;d 305 75 6;d 105 145 10;d 185 145 10;d 265 145 10;t 180 45 Steady pulse;t 180 185 Displaced accents"
+  ],
+  "plus-music-how-musical-meter-differs-from-tempo": [
+    "l 35 105 325 105;d 65 105 6;d 145 105 6;d 225 105 6;d 305 105 6;t 180 65 Equal beat spacing;t 180 165 BPM measures speed",
+    "l 35 105 325 105;d 65 105 9;d 105 105 5;d 145 105 5;d 185 105 9;d 225 105 5;d 265 105 5;t 180 65 Groups of three;t 180 165 Meter organizes relative strengths",
+    "l 35 75 325 75;l 35 145 325 145;d 65 75 8;d 125 75 5;d 185 75 5;d 245 75 8;d 65 145 8;d 125 145 5;d 185 145 5;d 245 145 5;d 305 145 8;t 180 45 3/4 at 90 BPM;t 180 185 4/4 at same tempo",
+    "r 35 65 180 30;r 35 125 240 30;t 125 55 Three beats: 2 s;t 155 115 Four beats: 2.667 s;t 180 195 Each beat lasts about .667 s at 90 BPM"
+  ],
+  "plus-music-what-musical-articulation-changes": [
+    "l 35 105 325 105;r 55 80 75 25;r 130 80 75 25;r 205 80 75 25;t 180 65 Connected sound segments;t 180 165 Articulation changes note attack and release",
+    "r 35 75 80 25;r 115 75 80 25;r 195 75 80 25;r 35 135 35 25;r 115 135 35 25;r 195 135 35 25;t 180 55 Legato;t 180 185 Staccato",
+    "p M35 75H115V65H195V55H275V45H325M35 145H75M115 135H155M195 125H235M275 115H315;t 180 195 Same pitches and durations, different connections",
+    "r 35 75 100 25;r 35 135 40 25;r 195 75 100 25;r 195 135 65 25;t 180 195 Detached length varies with style and instrument"
+  ],
+  "plus-music-why-musical-tuning-systems-differ": [
+    "p M35 85Q55 45 75 85T115 85T155 85M195 85Q205 45 215 85T235 85T255 85T275 85T295 85T315 85;t 95 155 f;t 265 155 2f;t 180 195 Octave doubles frequency",
+    "l 35 105 325 105;d 35 105 4;d 59 105 4;d 83 105 4;d 107 105 4;d 131 105 4;d 155 105 4;d 179 105 4;d 203 105 4;d 227 105 4;d 251 105 4;d 275 105 4;d 299 105 4;d 323 105 4;t 180 165 12 equal logarithmic steps, ratio 2^(1/12)",
+    "l 35 105 325 105;d 35 105 7;d 203 105 7;d 323 105 7;t 35 85 440 Hz;t 203 85 659.3 Hz;t 323 85 880 Hz;t 180 165 Equal-tempered fifth differs slightly from 660 Hz",
+    "b 35 55 135 65 Pure intervals;b 190 55 135 65 Flexible keys;t 180 165 Tuning systems prioritize different properties"
+  ],
+  "plus-music-how-musical-themes-are-transformed": [
+    "p M45 145L95 95L145 125M215 145L265 95L315 125;t 95 165 Theme;t 265 165 Restatement;t 180 195 Recognizable idea reappears",
+    "p M35 135L75 95L115 115M135 95L175 55L215 75M245 65L285 105L325 85;t 75 165 Original;t 175 165 Transposed;t 285 165 Inverted;t 180 195 Transformation alters selected properties",
+    "r 35 75 45 25;r 90 75 45 25;r 145 75 45 25;r 35 135 90 25;r 135 135 90 25;r 235 135 90 25;t 180 55 C D E: quarters;t 180 185 C D E: halves, doubled duration",
+    "p M35 145L95 95L155 125M195 105L255 55L315 85;t 180 195 Contour preserved even when pitch level changes"
+  ],
+  "plus-music-what-counterpoint-organizes": [
+    "p M35 75L95 45L155 85L215 55L325 75M35 130L95 155L155 115L215 145L325 105;l 95 45 95 155;l 215 55 215 145;t 180 195 Independent lines plus vertical intervals",
+    "p M35 65L115 105M35 145L115 105M140 95L220 55M140 145L220 105M245 65H325M245 145L325 95;t 75 175 Contrary;t 180 175 Similar;t 285 175 Oblique",
+    "p M65 145L295 105M65 55L295 85;d 65 145 6;d 295 105 6;d 65 55 6;d 295 85 6;t 65 165 C;t 295 125 D;t 65 45 G;t 295 75 F;t 180 195 Contrary motion changes vertical interval",
+    "p M35 75L95 45L155 85L215 55L325 75M35 145L95 115L155 135L215 155L325 125;t 180 195 Analyze horizontal continuity and vertical relationships"
+  ],
+  "plus-music-how-orchestration-shapes-sound": [
+    "r 35 65 90 80;r 135 65 90 80;r 235 65 90 80;t 80 105 Winds;t 180 105 Strings;t 280 105 Brass;t 180 195 Assign material by range, timbre and balance",
+    "p M35 75L95 45L155 85M205 145L265 115L325 155;t 95 105 High register;t 265 175 Low register;t 180 195 Same contour at different registers",
+    "p M35 75L95 45L155 85M205 145L265 115L325 155;t 95 115 Flute;t 265 175 Low strings;t 180 195 Register and instrument affect projection",
+    "r 65 85 90 85;r 205 45 90 125;t 110 75 Melody;t 250 35 Ensemble;t 180 195 Adjust dynamics so melody remains audible"
+  ],
+  "plus-music-understanding-musical-dissonance": [
+    "p M35 105Q55 65 75 105T115 105T155 105M205 105Q225 35 245 105T285 105T325 105;t 180 165 Relative tension depends on musical grammar",
+    "p M35 105Q50 50 65 105T95 105T125 105T155 105M35 105Q55 145 75 105T115 105T155 105;t 180 165 Nearby frequencies can create roughness;t 180 195 Roughness is not the whole concept of dissonance",
+    "l 35 175 325 175;d 95 65 7;d 265 85 7;d 95 145 7;d 265 145 7;l 95 65 265 85;l 95 145 265 145;t 95 50 F;t 265 65 E;t 180 195 Suspended F resolves to E over C",
+    "r 35 55 130 110;r 195 55 130 110;t 100 105 Earlier style;t 260 105 Later style;t 180 195 Expectations for handling tension can change"
+  ],
+  "plus-music-how-recording-microphones-capture-sound": [
+    "p M35 105Q50 65 65 105T95 105T125 105;r 145 65 60 80;p M225 105Q240 65 255 105T285 105T315 105;t 175 155 Transducer;t 75 175 Pressure;t 270 175 Voltage",
+    "d 65 105 10;c 205 105 20;l 75 105 185 105;p M75 95L145 45L205 85M75 115L145 165L205 125;t 180 195 Direct and reflected paths change with placement",
+    "d 55 105 10;c 115 105 15;c 295 105 15;l 65 105 100 105;l 65 105 280 105;t 115 145 Near;t 295 145 Far;t 180 195 Closer often means higher direct-to-reverberant ratio",
+    "p M180 105C90 30 80 180 180 105C280 30 270 180 180 105Z;d 180 105 6;t 180 195 Directional sensitivity plus gain limits clipping"
+  ]
+};
+window.LumenSlideArtBatch59Render=function(c,cls='cover',step=-1){return window.LumenSlideArtSharedRender(window.LumenSlideArtBatch59,c,cls,step);};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch59Render(c,cls,step)||prior(c,cls,step);};})();
