@@ -4336,3 +4336,143 @@ window.LumenSlideArtBatch29Render=function renderer(c,cls="cover",step=-1){
  const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch29Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* Transportation: dedicated slide artwork, batch 30. */
+window.LumenSlideArtBatch30={
+  "flight": [
+    "p M85 105L140 90H255L285 105L255 120H140Z;a 180 90 180 25;a 180 120 180 185;a 285 105 335 105;a 85 105 25 105;t 180 15 Lift;t 180 205 Weight;t 300 90 Thrust;t 55 90 Drag",
+    "p M100 105H260;a 180 105 180 45;a 180 105 180 165;a 180 105 270 105;a 180 105 90 105;t 180 35 L=W;t 285 90 T=D;t 180 195 Straight level unaccelerated flight",
+    "p M100 105H260;a 180 105 310 105;a 180 105 115 105;t 280 85 Thrust;t 100 85 Drag;a 130 150 280 150;t 180 175 Acceleration forward;t 180 195 Net force = thrust − drag",
+    "l 90 145 270 65;a 180 105 130 25;a 180 105 180 25;a 180 105 130 105;a 180 105 180 185;t 115 15 Tilted lift;t 100 125 Inward;t 210 185 Weight;t 180 205 Vertical lift must balance weight to hold altitude"
+  ],
+  "ev-motor": [
+    "b 25 65 95 55 DC battery;a 120 92 132 92;b 132 65 95 55 Inverter;a 227 92 239 92;c 285 92 38;t 285 95 Motor;t 180 155 Switched winding currents generate rotating field",
+    "c 135 105 65;c 135 105 30;d 135 105 8;p M135 40V75M200 105H165M135 170V135M70 105H105;a 165 80 185 105;c 255 105 25;c 305 105 20;t 135 25 Stator / rotor;t 280 145 Reduction gear;t 180 195 Torque transfers to wheels",
+    "c 65 105 30;b 132 65 95 55 Generator;b 239 65 95 55 Battery;a 95 105 132 105;a 227 105 239 105;t 65 155 Wheel motion;t 180 195 Grip, battery temperature and charge limit recovery",
+    "r 35 75 290 50;f 35 75 261 50;t 165 105 18 kWh to wheels;t 180 55 20 kWh input;t 180 155 2 kWh loss;t 180 195 90% drivetrain efficiency"
+  ],
+  "railways": [
+    "c 95 85 50;l 35 135 155 135;c 265 85 50;p M205 135Q265 145 325 135;t 95 165 Steel wheel/rail;t 265 165 Deforming tire;t 180 195 Less deformation can reduce rolling resistance",
+    "p M65 65L115 80V145L65 130ZM245 80L295 65V130L245 145;l 115 105 245 105;l 35 145 325 145;t 180 45 Rigid axle;t 180 195 Tapered treads change effective rolling radius",
+    "c 180 90 50;l 35 140 325 140;a 180 140 260 140;a 180 90 180 140;t 180 30 Normal load;t 260 160 Adhesion;t 180 195 Wet or contaminated rail reduces available force",
+    "r 35 75 90 65;r 130 75 60 65;r 195 75 60 65;r 260 75 60 65;c 65 145 8;c 105 145 8;c 145 145 8;c 175 145 8;c 210 145 8;c 240 145 8;c 275 145 8;c 305 145 8;a 25 55 105 55;t 180 195 Train length and payload spread energy costs"
+  ],
+  "depth-transportation-how-braking-distance-changes-with-speed": [
+    "l 35 105 325 105;d 35 105 7;d 180 105 7;a 45 85 170 85;t 35 130 Detect;t 180 130 Brake begins;t 180 55 20 m/s ×1 s;t 180 195 Reaction travel 20 m",
+    "r 35 65 72.5 35;r 35 125 290 35;t 150 85 20 m/s: 40 m;t 180 145 40 m/s: 160 m;t 180 195 v²/(2a), a=5 m/s²",
+    "r 35 75 96.67 50;f 131.67 75 193.33 50;t 83 105 React 20 m;t 228 105 Brake 40 m;t 180 55 Speed 20 m/s, reaction 1 s;t 180 195 Total stopping distance 60 m",
+    "p M35 135H165M195 135L325 95;c 100 115 20;c 260 115 20;d 235 130 4;d 280 125 4;t 100 165 Level dry;t 260 165 Slope / surface;t 180 195 Actual stopping varies with grip and response"
+  ],
+  "depth-transportation-why-tires-need-traction": [
+    "c 180 90 50;l 35 140 325 140;a 180 140 285 140;a 180 140 180 185;t 180 25 Tire-road contact;t 280 125 Longitudinal;t 235 185 Lateral (plan component);t 180 205 Grip supports propulsion, braking and cornering",
+    "r 35 60 130 100;r 195 60 130 100;p M55 65V155M95 65V155M135 65V155M215 65V155M255 65V155M295 65V155;a 215 105 205 155;a 295 105 305 155;t 100 180 Dry;t 260 180 Wet;t 180 205 Grooves channel water but cannot eliminate hydroplaning",
+    "c 180 105 70;l 110 105 250 105;l 180 35 180 175;a 180 105 235 65;l 235 65 235 105;l 180 65 235 65;t 180 25 Shared grip envelope;t 270 105 Brake;t 225 55 Turn;t 180 195 Combined force must fit available traction",
+    "b 25 65 145 55 Normal load N;b 190 65 145 55 Friction factor μ;t 180 155 Simplified F≈μN;t 180 195 Actual tire force varies with slip, load and temperature"
+  ],
+  "depth-transportation-how-traffic-congestion-forms": [
+    "r 35 75 290 70;d 55 110 6;d 75 110 6;d 95 110 6;d 115 110 6;d 135 110 6;d 240 110 6;d 300 110 6;a 35 55 150 55;a 220 55 325 55;t 95 45 Arrivals;t 270 45 Departures;t 180 195 More enter than leave → queue grows",
+    "p M35 65H185L230 105H325M35 145H185L230 105M35 105H185;d 60 85 6;d 90 85 6;d 120 85 6;d 150 85 6;d 180 85 6;t 180 195 Merge reduces discharge capacity",
+    "l 35 175 325 175;l 35 175 35 35;p M55 155L95 65M105 155L145 85M155 155L195 105M205 155L245 125M255 155L295 145;p M95 65L295 145;t 180 25 Position / time diagram;t 180 195 Disturbance propagates backward relative to cars",
+    "l 35 175 325 175;l 35 175 35 35;p M35 175L325 55;t 180 35 Queue growth;t 180 195 1,200−1,000=200 vehicles after one hour"
+  ],
+  "depth-transportation-how-freight-moves-by-container": [
+    "r 35 45 95 55;r 135 45 95 55;r 235 45 90 55;p M35 130H130L115 160H50ZM135 130H230V155H135ZM235 130H325V155H235Z;c 150 160 6;c 215 160 6;c 250 160 6;c 310 160 6;t 82 120 Ship;t 182 120 Rail;t 280 120 Truck;t 180 195 Same box transfers without unpacking",
+    "p M45 175V35H225L270 60V105;l 270 105 270 130;r 235 130 70 35;r 35 165 290 15;t 140 25 Gantry crane;t 180 205 ID and seals track cargo during transfer",
+    "r 35 55 130 70;r 195 55 130 70;f 35 55 130 70;t 100 90 Loaded;t 260 90 Empty;t 180 150 Empty repositioning still uses capacity;t 180 195 Handling and terminal dwell add cost",
+    "r 35 65 145 45;r 35 125 290 45;l 180 125 180 170;t 107 90 20 ft = 1 TEU;t 180 150 40 ft = 2 TEU;t 180 195 Nominal space, not cargo weight"
+  ],
+  "depth-transportation-why-road-geometry-matters": [
+    "p M35 145Q105 35 180 105T325 65;p M35 165Q105 55 180 125T325 85;t 180 25 Horizontal alignment (plan);p M35 195Q180 155 325 195;t 180 215 Vertical grade transitions",
+    "p M35 150Q180 -20 325 150;p M55 165Q180 15 305 165;d 180 105 6;l 180 105 180 75;a 180 75 180 105;t 230 100 Radius r;t 180 195 Inward acceleration v²/r",
+    "p M35 165Q180 15 325 165;d 95 115 7;d 265 115 7;l 95 115 265 115;t 180 35 Crest blocks sightline;t 180 195 Available sight distance must account for reaction and braking",
+    "r 35 55 290 110;l 35 85 325 85;l 35 135 325 135;l 180 85 180 135;t 180 75 Walking;t 180 115 Vehicles;t 180 155 Cycling / drainage;t 180 195 Road layout accommodates multiple users"
+  ],
+  "depth-transportation-how-hybrid-vehicles-save-energy": [
+    "b 25 45 145 45 Engine;b 25 115 145 45 Battery;a 170 70 220 105;a 170 137 220 105;b 220 80 115 50 Wheels;t 180 195 Mechanical/electrical paths vary by hybrid design",
+    "c 65 105 30;b 132 65 95 55 Motor-generator;b 239 65 95 55 Battery;a 95 105 132 105;a 227 105 239 105;t 180 155 Braking recovers some kinetic energy;t 180 195 Conversion and battery losses remain",
+    "l 35 175 325 175;p M35 155L75 70L110 155L150 70L185 155L225 70L265 155L305 70;t 180 25 Stop-start driving;t 180 195 Engine-off stops and electric assistance reduce some losses",
+    "r 35 75 290 50;f 35 75 174 50;t 122 105 60 kJ stored;t 267 105 40 kJ loss;t 180 55 100 kJ braking energy;t 180 195 Later battery-to-wheel conversion also loses energy"
+  ],
+  "depth-transportation-how-airports-manage-passenger-flow": [
+    "b 15 70 75 55 Check-in;a 90 97 102 97;b 102 70 75 55 Security;a 177 97 189 97;b 189 70 75 55 Gate;a 264 97 276 97;b 276 70 70 55 Board;t 180 195 Each process has limited capacity",
+    "l 35 175 325 175;p M35 155L95 155L125 45L155 155L215 155L245 65L275 155H325;l 35 105 325 105;t 180 95 Processing rate;t 180 195 Peak arrivals exceed capacity despite sufficient daily average",
+    "r 35 45 290 130;l 35 100 325 100;p M65 65H295M65 85H295;a 55 140 305 140;t 180 60 Queue space;t 180 130 Clear movement route;t 180 195 Accessible paths and emergency egress remain usable",
+    "r 35 65 290 40;r 35 125 193.33 40;t 180 90 300 arrivals;t 132 150 200 processed;t 180 195 400/hour × .5 h=200, backlog=100"
+  ],
+  "plus-transportation-how-vehicle-suspensions-manage-road-motion": [
+    "r 85 45 190 45;p M180 90V100L165 110L195 120L165 130L180 140V150;c 180 165 15;l 35 180 325 180;t 180 70 Sprung mass;t 260 165 Unsprung mass;t 180 205 Spring supports body while wheel moves",
+    "l 35 105 325 105;p M35 105Q70 25 105 105T175 105T245 105T315 105;p M35 105Q70 65 105 105T175 105Q210 90 245 105T315 105;t 180 25 Undamped vs damped response;t 180 195 Damper dissipates oscillation energy",
+    "r 110 45 140 55;p M180 100L165 110L195 120L165 130L195 140L180 150V175;l 35 175 325 175;t 180 75 Mass m;t 230 125 Spring k;t 180 195 fn=√(k/m)/(2π) for simple model",
+    "l 35 175 325 175;p M35 155Q70 65 105 155T175 155;p M195 155Q230 110 265 155T335 155;t 105 45 Softer spring;t 265 95 Stiffer spring;t 180 195 Isolation versus body travel and tire contact"
+  ],
+  "plus-transportation-how-anti-lock-braking-systems-work": [
+    "c 180 90 50;l 35 140 325 140;a 180 40 225 65;a 90 165 270 165;t 180 25 Wheel rotation;t 180 185 Vehicle motion;t 180 205 Excessive braking slip can lock wheel",
+    "c 65 95 35;d 65 60 5;a 100 95 140 95;b 140 65 95 60 Controller;a 235 95 265 95;b 265 65 70 60 Brake;t 180 195 Wheel-speed feedback adjusts pressure",
+    "l 35 175 325 175;p M35 155L75 55L95 115H125L155 55L175 115H205L235 55L255 115H285L315 55;t 180 25 Brake pressure modulation;t 180 195 Increase, hold and reduce as needed",
+    "c 90 100 45;c 270 100 45;a 90 100 125 65;a 270 100 305 65;l 35 145 145 145;l 215 145 325 145;d 240 145 4;d 280 145 4;t 90 175 Dry grip;t 270 175 Low grip;t 180 205 ABS cannot create traction"
+  ],
+  "plus-transportation-why-tires-heat-up-while-rolling": [
+    "c 180 95 60;p M125 150Q180 165 235 150;l 35 155 325 155;a 130 145 160 145;a 200 145 230 145;t 180 25 Cyclic deformation;t 180 195 Viscoelastic energy loss generates heat",
+    "b 25 45 145 45 Crr=.01;b 190 45 145 45 Load=4,000 N;b 105 115 150 45 Speed=25 m/s;t 180 195 Force=40 N, power=1,000 W",
+    "c 180 105 55;a 180 50 180 20;a 235 105 315 105;a 125 105 45 105;t 180 15 Air;t 285 90 Wheel;t 75 90 Road;t 180 195 Heat rejection competes with deformation loss",
+    "p M65 45A55 55 0 0 1 135 145H65A55 55 0 0 1 65 45ZM225 45A55 55 0 0 1 295 135Q260 165 225 135A55 55 0 0 1 225 45Z;l 35 155 325 155;t 100 185 Less deflection;t 260 185 Greater deflection;t 180 205 Use vehicle-specific inflation specifications"
+  ],
+  "plus-transportation-how-vehicle-aerodynamics-affects-energy-use": [
+    "p M65 125L85 90L155 75H235L280 125Z;c 115 135 15;c 235 135 15;a 35 65 290 65;a 290 95 235 95;t 180 45 Relative airflow;t 270 85 Drag;t 180 195 Fd=½ρCdAv²",
+    "r 65 145 90 25;r 205 45 90 125;t 110 135 P;t 250 35 8P;t 110 190 Speed v;t 250 190 Speed 2v;t 180 210 Drag power ∝v³ at fixed conditions",
+    "b 25 55 145 55 200 N ×20 m/s;b 190 55 145 55 800 N ×40 m/s;t 97 150 4 kW;t 262 150 32 kW;t 180 195 Double airspeed → eightfold drag power",
+    "p M35 105Q100 45 165 105H35ZM195 105L220 65H310L325 105Z;p M215 65V45H285V65;t 100 155 Streamlined;t 260 155 Roof cargo;t 180 195 Body geometry and attachments change drag"
+  ],
+  "plus-transportation-how-railway-signals-protect-train-separation": [
+    "l 25 125 335 125;r 45 90 100 35;r 235 90 85 35;a 145 105 225 105;t 180 80 Separation;t 180 195 Movement authority must account for stopping capability",
+    "l 35 85 325 85;l 35 125 325 125;l 130 65 130 145;l 230 65 230 145;r 145 90 70 30;t 180 45 Track section occupied;t 180 195 Detection and interlocking coordinate permissions",
+    "r 35 75 95 65;r 130 75 95 65;r 225 75 100 65;f 130 75 95 65;t 82 110 A;t 177 110 B;t 275 110 C;t 180 55 Fixed block example;t 180 195 Other systems use updated movement information",
+    "b 25 45 145 45 Authority;b 190 45 145 45 Speed supervision;b 25 115 145 45 Equipment state;b 190 115 145 45 Operating rules;t 180 195 Protection depends on multiple coordinated layers"
+  ],
+  "plus-transportation-why-freight-trains-use-classification-yards": [
+    "r 35 55 70 35;r 110 55 70 35;r 185 55 70 35;r 260 55 65 35;t 70 77 A;t 145 77 B;t 220 77 A;t 292 77 B;a 145 100 95 130;a 220 100 265 130;r 35 130 130 40;r 195 130 130 40;t 100 155 Group A;t 260 155 Group B;t 180 195 Sort cars by onward route",
+    "p M35 105H120L220 45H325M120 105H325M120 105L220 165H325;d 120 105 6;r 240 30 65 25;r 240 90 65 25;r 240 150 65 25;t 180 195 Switches distribute cars among classification tracks",
+    "r 35 65 65 35;r 105 65 65 35;r 175 65 65 35;r 245 65 65 35;a 35 125 310 125;t 180 150 Shared line-haul segment;t 180 195 Consolidation trades handling for train utilization",
+    "p M35 65H325M35 145H130L180 105L230 145H325;d 180 105 10;t 180 45 Through train;t 180 95 Yard;t 180 195 Direct service bypasses sorting when volume allows"
+  ],
+  "plus-transportation-how-shipping-ports-handle-containers": [
+    "p M35 125H165L140 165H65Z;r 65 95 40 30;r 110 95 40 30;p M195 175V35H300L325 55;l 245 35 245 105;r 225 105 40 30;a 185 120 225 120;t 180 195 Quay crane transfers boxes between ship and shore",
+    "r 35 125 95 40;r 35 85 95 40;r 35 45 95 40;r 195 125 95 40;r 195 85 95 40;a 82 45 82 20;t 82 185 Buried box;t 242 185 Shorter stack;t 180 205 Density versus retrieval moves",
+    "b 25 65 95 55 Yard;a 120 92 132 92;b 132 65 95 55 Gate / rail;a 227 92 239 92;b 239 65 95 55 Inland;t 180 155 Customs and appointments affect dwell;t 180 195 Crane rate is not the only constraint",
+    "r 35 75 290 50;l 71.25 75 71.25 125;l 107.5 75 107.5 125;l 143.75 75 143.75 125;l 180 75 180 125;l 216.25 75 216.25 125;l 252.5 75 252.5 125;l 288.75 75 288.75 125;t 180 55 8 productive hours;t 180 155 25 moves/hour ×8;t 180 195 200 crane moves"
+  ],
+  "plus-transportation-how-traffic-signals-allocate-road-time": [
+    "p M35 75H145V25H215V75H325V145H215V195H145V145H35Z;a 55 105 305 105;a 180 45 180 75;t 180 15 One compatible phase;t 180 215 Clearance separates conflicting movements",
+    "r 35 75 290 50;f 35 75 116 50;t 93 105 Green .4;t 238 105 Other .6;t 180 55 Saturation flow 1,800 veh/h;t 180 195 Capacity 1,800×.4=720 veh/h",
+    "l 35 75 325 75;l 35 145 325 145;f 55 65 70 20;f 125 135 70 20;a 90 75 160 145;t 180 25 Green windows offset by travel time;t 180 195 Coordination supports progression",
+    "r 35 65 290 40;f 35 65 116 40;r 35 125 290 40;f 35 125 174 40;t 180 55 Original allocation;t 180 115 More green for one approach;t 180 195 Less time remains for competing needs"
+  ],
+  "plus-transportation-why-transport-networks-need-maintenance": [
+    "r 35 80 130 70;r 195 80 130 70;p M95 80L105 100L95 125M250 80L265 105L245 125L275 150;t 100 175 Small defect;t 260 175 Grown defect;t 180 205 Repeated loads and environment accumulate damage",
+    "l 35 175 325 175;p M35 45L95 65L155 85L215 115L275 150L325 165;d 95 65 5;d 215 115 5;t 180 25 Condition declines over time;t 180 195 Inspections sample deterioration with uncertainty",
+    "l 35 175 325 175;p M35 65L120 115L120 70L205 125L205 75L325 145;p M35 65L325 165;t 180 35 Maintenance restores some condition;t 180 195 Compare lifecycle cost and disruption",
+    "d 35 105 7;d 130 105 7;d 230 105 7;d 325 105 7;l 35 105 130 105;l 230 105 325 105;p M130 105L180 45L230 105M130 105L180 165L230 105;p M165 90L195 120M195 90L165 120;t 180 195 Alternative links preserve access during closure"
+  ],
+  "plus-transportation-how-passenger-transfers-affect-travel-time": [
+    "r 35 75 290 50;l 75 75 75 125;l 115 75 115 125;l 235 75 235 125;l 285 75 285 125;t 55 105 Walk;t 95 105 Wait;t 175 105 Ride;t 260 105 Xfer;t 305 105 Walk;t 180 195 Door-to-door time includes every stage",
+    "l 35 105 325 105;d 35 105 6;d 325 105 6;d 180 105 5;t 35 85 Bus;t 325 85 Next bus;t 180 145 Mean wait 6 min;t 180 195 Random arrival, evenly spaced 12-min service",
+    "l 35 75 325 75;l 35 145 325 145;d 170 75 6;d 210 145 6;d 250 75 6;a 170 75 210 145;t 170 55 On time;t 250 55 Delayed;t 210 165 Connection;t 180 195 Delay can turn a planned transfer into a missed one",
+    "r 35 65 290 35;f 35 65 174 35;r 35 125 290 35;f 35 125 116 35;t 180 55 Route A: more riding, less waiting;t 180 115 Route B: less riding, more waiting;t 180 195 Weight time, reliability and monetary cost separately"
+  ]
+};
+window.LumenSlideArtBatch30Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch30;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch30Render(c,cls,step)||prior(c,cls,step);};})();
