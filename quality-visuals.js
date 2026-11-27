@@ -2532,3 +2532,113 @@ window.LumenSlideArtBatch15Render=function renderer(c,cls="cover",step=-1){
  const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch15Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* Botany: remaining dedicated slide artwork, batch 16. */
+window.LumenSlideArtBatch16={
+  "depth-botany-the-two-vascular-transport-systems": [
+    "r 80 35 75 140;l 95 35 95 175;l 140 35 140 175;a 117 165 117 45;t 240 65 Leaves;t 240 155 Roots;t 180 200 Lignified xylem conducts water upward",
+    "r 85 35 75 140;l 85 75 160 75;l 85 125 160 125;r 165 45 35 55;r 165 115 35 55;a 123 50 123 160;t 265 75 Companion cells;t 265 130 Sieve plates;t 180 200 Living phloem transports sugars",
+    "p M180 175V50M180 70Q85 20 60 70Q110 110 180 70M180 105L260 105;c 270 105 20;a 100 75 175 75;a 180 85 180 165;a 185 100 245 100;t 90 35 Source leaf;t 270 145 Fruit sink;t 180 200 Roots and storage can be sinks or sources",
+    "r 35 45 85 130;r 240 45 85 130;a 77 165 77 55;a 282 55 282 165;a 120 65 240 65;t 180 35 Sugar loading;t 180 85 Water enters phloem;t 77 195 Xylem tension;t 282 195 Phloem pressure"
+  ],
+  "depth-botany-how-plants-respond-to-light": [
+    "c 60 65 22;a 85 65 165 65;a 85 85 165 85;p M190 170V75Q190 35 245 45Q245 85 190 85;t 180 25 Blue light detected by phototropins;t 180 200 Directional shoot growth",
+    "p M220 175Q220 95 150 45M240 175Q240 80 165 30;a 40 65 130 65;l 230 145 230 95;t 90 45 Light;t 285 120 Longer cells;t 180 200 Shaded side elongates more",
+    "b 25 60 145 55 Red light;b 190 60 145 55 Far-red light;a 170 78 190 78;a 190 100 170 100;t 180 150 Phytochrome states shift;t 180 195 Germination and shade responses",
+    "r 70 145 80 30;r 230 145 80 30;p M110 145Q110 80 65 55M270 145Q270 80 315 55;a 25 65 60 65;a 335 65 320 65;t 110 195 Before rotation;t 270 195 New growth bends after rotation"
+  ],
+  "depth-botany-how-plants-survive-winter": [
+    "l 35 175 325 175;p M35 60Q180 75 325 145;p M35 85Q180 100 325 165;t 100 45 Day length;t 255 125 Temperature;t 180 200 Short days and cooling can cue dormancy",
+    "p M180 165V75M180 90L110 45M180 115L250 65;p M180 75Q145 40 180 25Q215 40 180 75Z;p M110 45L100 30L125 35Z;t 250 40 Protected bud;t 180 195 Leaf loss reduces exposed tissue",
+    "r 45 45 125 125;c 107 107 35;d 95 100 5;d 120 110 5;p M205 60L230 85L205 110L230 135L205 160;t 107 185 Sugar accumulation;t 270 185 Ice outside cell;t 180 205 Intracellular ice can damage cells",
+    "l 35 110 325 110;d 65 110 6;d 180 110 6;d 295 110 6;t 65 85 Chill;t 180 85 Warmth;t 295 85 Budbreak;t 180 170 Early warming may increase frost exposure"
+  ],
+  "depth-botany-what-fruits-actually-are": [
+    "p M90 145V80Q50 35 90 30Q130 35 90 80;c 90 115 22;a 130 105 220 105;c 270 105 45;d 255 100 6;d 285 110 6;t 90 175 Flower ovary;t 270 175 Mature fruit;t 180 205 Ovary develops around seeds",
+    "c 180 105 75;c 180 105 58;c 180 105 35;d 180 105 12;a 265 45 237 65;t 290 35 Pericarp;t 180 195 Ovary wall may form multiple layers",
+    "c 65 105 35;d 55 95 4;d 75 115 4;p M135 65Q180 30 225 65Q180 135 135 65Z;c 160 68 6;c 180 68 6;c 200 68 6;c 290 105 38;c 290 105 13;t 65 165 Tomato berry;t 180 165 Pea pod;t 290 165 Apple accessory;t 180 195 Botanical fruit categories",
+    "c 65 95 32;d 65 95 12;c 180 95 32;d 165 85 5;d 195 85 5;d 180 110 5;c 295 95 32;t 65 145 One seed;t 180 145 Many seeds;t 295 145 Seedless;t 180 195 Fruit identity is based on origin"
+  ],
+  "plus-botany-why-leaves-change-color-in-autumn": [
+    "p M35 105Q100 35 165 105Q100 175 35 105ZM195 105Q260 35 325 105Q260 175 195 105Z;l 35 105 165 105;l 195 105 325 105;d 65 95 5;d 85 110 5;d 105 85 5;d 125 115 5;d 245 100 5;t 100 165 Many chlorophylls;t 260 165 Fewer;t 180 195 Nutrient recovery during senescence",
+    "r 35 55 290 35;f 35 90 290 35;f 35 150 290 25;t 180 75 Chlorophyll masks other pigments;t 180 112 Carotenoids present already;t 180 142 Chlorophyll declines;t 180 195 Yellow and orange become visible",
+    "b 25 45 145 50 Light;b 190 45 145 50 Sugars;b 25 110 145 50 Temperature;b 190 110 145 50 Genetics;t 180 195 Anthocyanin synthesis can produce red/purple",
+    "p M35 125H150L180 95Q245 30 315 95Q245 160 180 95;l 150 110 150 140;a 180 125 180 175;t 100 105 Stem;t 180 200 Abscission layer releases leaf"
+  ],
+  "depth-botany-how-plants-reproduce-without-seeds": [
+    "p M55 150V70M55 85L25 55M55 85L85 55M55 150Q135 100 215 150M215 150V85M215 95L185 65M215 95L245 65;c 285 135 22;d 285 115 5;t 135 170 Runner;t 285 175 Tuber;t 180 200 Vegetative offspring form without fertilization",
+    "c 180 55 22;d 180 55 5;a 165 75 95 120;a 195 75 265 120;c 95 140 22;c 265 140 22;d 95 140 5;d 265 140 5;t 180 195 Mitosis copies genome, mutations still possible",
+    "b 25 50 95 55 Sporophyte;a 120 77 132 77;b 132 50 95 55 Spores;a 227 77 239 77;b 239 50 95 55 Gametophyte;a 285 105 180 155;a 180 155 72 105;t 180 175 Fertilization returns sporophyte;t 180 200 Meiosis makes spores",
+    "c 90 90 30;c 270 90 30;d 80 90 5;d 100 90 5;d 260 80 5;d 280 100 5;t 90 145 Similar clones;t 270 145 Variable offspring;t 180 195 Rapid establishment versus shared vulnerability"
+  ],
+  "plus-botany-how-plant-stems-support-growth": [
+    "p M160 175V70Q180 30 200 70V175;l 160 100 200 100;l 160 140 200 140;a 180 70 180 25;t 250 55 Apical meristem;t 250 120 Internode;t 180 195 Division and elongation lengthen stem",
+    "p M50 50Q95 20 140 50V175H50Z;p M220 50Q265 20 310 50V175H220Z;l 70 60 70 170;l 120 60 120 170;l 240 60 240 170;l 290 60 290 170;t 95 195 Flexible tissue;t 265 195 Lignified tissue;t 180 25 Turgor and cell walls support shoots",
+    "c 180 100 75;c 180 100 58;c 180 100 48;c 180 100 20;a 180 45 180 70;a 235 100 250 100;t 180 35 Cambium;t 180 100 Xylem inward;t 180 195 Phloem outward during secondary growth",
+    "c 90 100 25;c 270 100 50;t 90 145 r;t 270 170 2r;t 180 35 Ideal solid beam;t 180 200 Bending stiffness ∝ r⁴, 16× at 2r"
+  ],
+  "plus-botany-what-tree-rings-record": [
+    "r 35 55 150 110;r 185 55 140 110;c 65 80 18;c 115 80 18;c 65 135 18;c 115 135 18;c 205 75 8;c 230 75 8;c 255 75 8;c 280 75 8;c 205 105 8;c 230 105 8;c 255 105 8;c 280 105 8;t 110 185 Earlywood;t 255 185 Latewood;t 180 205 Large thin walls vs smaller thick walls",
+    "c 180 105 75;c 180 105 62;c 180 105 55;c 180 105 30;t 180 20 Annual rings often form;t 180 200 False or missing rings can disrupt counts",
+    "r 35 50 40 35;r 75 50 15 35;r 90 50 65 35;r 155 50 25 35;r 180 50 50 35;r 230 50 15 35;r 90 125 65 35;r 155 125 25 35;r 180 125 50 35;r 230 125 15 35;r 245 125 70 35;l 90 85 90 125;l 155 85 155 125;l 180 85 180 125;t 180 195 Match overlapping wide and narrow ring patterns",
+    "l 35 175 325 175;p M35 145L85 75L135 120L185 45L235 100L285 65L325 95;t 180 30 Ring width varies;t 180 195 Moisture, temperature, age and competition"
+  ],
+  "plus-botany-why-roots-associate-with-fungi": [
+    "r 140 40 80 135;p M140 65L75 45L35 80M140 95L75 125L35 105M220 70L285 45L325 80M220 115L285 145L325 115;t 180 105 Root;t 180 195 Hyphae extend into surrounding soil",
+    "b 25 65 145 55 Fungus;b 190 65 145 55 Plant;a 170 80 190 80;a 190 105 170 105;t 180 55 P / N;t 180 145 Carbon compounds;t 180 195 Exchange varies with partners",
+    "l 35 175 325 175;r 65 65 80 110;r 215 100 80 75;t 105 55 Nutrient gain;t 255 90 Carbon cost;t 180 195 Net benefit depends on conditions",
+    "b 25 45 145 50 Low P + fungus;b 190 45 145 50 Low P control;b 25 115 145 50 High P + fungus;b 190 115 145 50 High P control;t 180 195 Compare biomass and phosphorus uptake"
+  ],
+  "plus-botany-how-bulbs-store-energy": [
+    "p M180 30Q75 75 85 150Q180 195 275 150Q285 75 180 30Z;p M180 45Q110 90 115 150M180 45Q250 90 245 150M180 45V160;l 115 160 245 160;t 180 20 Shoot bud;t 180 200 Fleshy leaf bases surround short basal stem",
+    "p M180 165V40M180 65Q100 15 65 55Q110 100 180 65M180 80Q260 30 295 70Q250 115 180 80;c 180 160 25;a 105 65 165 135;a 255 80 195 135;t 180 205 Leaves export sugars to storage",
+    "c 180 145 40;p M180 120V35M180 70L145 45M180 85L220 55;a 180 150 180 85;t 180 20 Emerging shoot;t 180 205 Stored carbon fuels growth before leaves mature",
+    "p M90 165V45M90 75L45 35M90 90L135 50M270 165V110;c 90 150 25;c 270 150 25;t 90 190 Leaves retained;t 270 190 Leaves removed;t 180 210 Reserve replenishment depends on photosynthesis"
+  ],
+  "plus-botany-how-vines-climb": [
+    "l 65 35 65 175;p M40 165Q100 145 40 125T40 85T40 45;l 180 35 180 175;p M135 125Q210 125 180 85Q145 65 180 55;l 295 35 295 175;p M245 175V50M245 75L295 75M245 110L295 110;t 65 195 Twining;t 180 195 Tendril;t 275 195 Adhesive roots",
+    "l 270 35 270 175;p M90 175Q95 80 160 70Q225 70 220 115Q215 150 170 120;a 220 115 270 115;t 180 30 Growing tip sweeps space;t 180 195 Circumnutation increases contact chance",
+    "l 225 35 225 175;p M35 135Q120 135 180 80Q225 40 250 80Q260 115 225 120;t 95 115 Tendril;a 170 40 210 60;t 155 25 Touch;t 180 200 Contact triggers asymmetric growth and coiling",
+    "l 255 25 255 175;p M240 175Q280 150 240 125T240 75T240 25;p M65 175V45M65 70L35 55M65 90L95 55;t 65 195 Self-support;t 255 195 External support;t 180 215 Climbing reduces trunk investment but adds dependency"
+  ],
+  "plus-botany-why-flowers-have-different-shapes": [
+    "p M35 55Q90 30 145 55L120 145H60Z;p M195 105Q260 35 325 105Q260 175 195 105Z;d 90 135 6;d 260 105 6;a 90 35 90 125;a 260 35 260 95;t 90 175 Tubular;t 260 175 Open;t 180 205 Geometry positions nectar, anthers and stigma",
+    "c 75 95 20;p M95 95L135 125;p M130 135L170 155L210 135;d 145 125 5;a 180 95 260 95;c 280 95 20;t 180 35 Effective pollen transfer;t 180 195 Reproductive success can favor floral variants",
+    "p M35 55H115L100 155H50Z;a 75 30 75 145;p M200 140V70M200 85L250 55M200 100L280 85;d 250 55 5;d 280 85 5;a 280 55 325 55;t 75 180 Long visitor reach;t 260 180 Exposed wind pollen",
+    "r 45 65 100 90;r 215 110 100 45;t 95 55 Many visits;t 265 100 Few visits;t 95 175 Low pollen delivery;t 265 175 High delivery possible;t 180 205 Measure pollen and seed set, not visits alone"
+  ],
+  "plus-botany-how-plant-hormones-guide-growth": [
+    "b 25 45 95 45 Auxin;b 132 45 95 45 Cytokinin;b 239 45 95 45 Gibberellin;b 65 110 110 45 ABA;b 185 110 110 45 Ethylene;t 180 195 Overlapping receptor and signaling networks",
+    "r 115 35 130 45;r 115 85 130 45;r 115 135 130 45;a 180 60 180 105;a 180 110 180 155;d 180 73 5;d 180 123 5;t 65 105 Auxin flow;t 285 105 Polar carriers;t 180 205 Asymmetric transport creates gradients",
+    "b 25 60 145 55 Auxin-rich;b 190 60 145 55 Cytokinin-rich;p M95 120V175M95 140L65 170M95 145L125 175M265 175V125M265 140L235 120M265 150L295 120;t 180 205 Relative signals can influence organs in culture",
+    "b 25 55 145 55 Solvent control;b 190 55 145 55 Transport inhibited;a 35 140 85 140;a 200 140 250 140;t 180 180 One-sided light in both groups;t 180 205 Compare bending and overall growth"
+  ],
+  "plus-botany-how-plants-defend-themselves": [
+    "p M35 105Q100 35 165 105Q100 175 35 105Z;l 35 105 165 105;p M235 170V45M235 75L280 55L235 90M235 120L195 95L235 135;t 100 175 Waxy cuticle;t 260 185 Spines / bark;t 180 205 Pre-existing physical and chemical barriers",
+    "b 25 65 95 55 Damage cue;a 120 92 132 92;b 132 65 95 55 Receptor;a 227 92 239 92;b 239 65 95 55 Defense genes;t 180 155 Wall reinforcement and defense compounds",
+    "b 25 65 145 55 Jasmonate;b 190 65 145 55 Salicylic acid;t 97 150 Chewing herbivores;t 262 150 Biotrophic pathogens;t 180 195 Pathways overlap, with exceptions",
+    "b 25 45 145 50 Damaged / normal;b 190 45 145 50 Damaged / altered;b 25 115 145 50 Intact / normal;b 190 115 145 50 Intact / altered;t 180 195 Factorial test of jasmonate and damage"
+  ],
+  "plus-botany-why-stomata-close-during-drought": [
+    "p M35 105Q100 45 165 105Q100 165 35 105Z;p M195 105Q260 45 325 105Q260 165 195 105Z;a 100 105 100 35;a 260 105 260 75;t 100 185 Open: higher loss;t 260 185 Closed: less loss;t 180 205 Dry soil raises hydraulic risk",
+    "b 25 65 95 55 ABA;a 120 92 132 92;b 132 65 95 55 Receptor;a 227 92 239 92;b 239 65 95 55 Ion channels;t 180 150 Anion loss alters membrane potential;t 180 195 Potassium movement follows",
+    "c 90 100 50;c 270 100 35;a 140 100 225 100;a 90 55 90 25;a 270 65 270 35;t 90 160 Turgid;t 270 160 Reduced turgor;t 180 195 Solute loss draws water out, pore narrows",
+    "b 25 55 145 55 A=12, gs=.3;b 190 55 145 55 A=9, gs=.1;t 97 145 A/gs=40;t 262 145 A/gs=90;t 180 195 Water-use efficiency rises while carbon gain falls"
+  ]
+};
+window.LumenSlideArtBatch16Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch16;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch16Render(c,cls,step)||prior(c,cls,step);};})();
