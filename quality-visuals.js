@@ -4196,3 +4196,143 @@ window.LumenSlideArtBatch28Render=function renderer(c,cls="cover",step=-1){
  const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch28Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* Architecture: dedicated slide artwork, batch 29. */
+window.LumenSlideArtBatch29={
+  "architecture": [
+    "r 55 120 250 20;r 80 90 50 30;c 180 65 12;l 180 77 180 112;a 105 45 105 85;a 180 35 180 60;a 265 65 265 120;t 105 35 Dead;t 180 25 Live;t 265 55 Snow;t 180 195 Permanent, movable and environmental loads",
+    "r 45 55 270 20;r 80 75 35 90;r 245 75 35 90;r 60 165 75 20;r 225 165 75 20;a 97 80 97 160;a 262 80 262 160;t 180 40 Floor → beams → columns;t 180 205 Footings spread loads into ground",
+    "r 55 55 250 120;l 55 115 305 115;l 180 55 180 175;l 55 55 180 175;l 180 55 305 175;a 25 80 55 80;a 25 140 55 140;t 180 35 Lateral bracing;t 180 195 Vertical supports and lateral system both required",
+    "r 75 55 210 105;l 75 90 285 90;l 75 125 285 125;l 127.5 55 127.5 160;l 180 55 180 160;l 232.5 55 232.5 160;t 180 45 12 m² floor;t 180 180 2 kN/m² × 12 m²;t 180 205 Total load =24 kN"
+  ],
+  "depth-architecture-how-arches-carry-loads": [
+    "p M55 175Q180 -45 305 175M85 175Q180 15 275 175;a 180 15 180 65;a 120 75 95 125;a 240 75 265 125;t 180 195 Compression follows curved path",
+    "p M55 165Q180 -30 305 165M75 165Q180 20 285 165;a 55 165 15 165;a 305 165 345 165;l 55 185 305 185;t 180 35 Outward thrust at supports;t 180 205 Tie or abutment prevents spreading",
+    "p M35 65Q100 165 165 65M195 165Q260 65 325 165;a 180 115 180 75;t 100 45 Hanging cable;t 260 45 Inverted shape;t 180 195 Funicular shape depends on loading",
+    "p M55 175A125 125 0 0 1 305 175M85 175A95 95 0 0 1 275 175M72 112L99 125M118 67L137 91M180 50V80M242 67L223 91M288 112L261 125;t 180 35 Keystone;t 180 205 Voussoirs transmit compression to abutments"
+  ],
+  "depth-architecture-reading-a-floor-plan": [
+    "r 45 40 270 140;r 55 50 250 120;l 180 50 180 170;l 55 110 180 110;t 117 80 Room A;t 117 145 Room B;t 242 110 Room C;t 180 200 Horizontal cut viewed from above",
+    "p M45 45H315V175H205M145 175H45V45M145 175V115M145 115A60 60 0 0 1 205 175;l 230 65 290 65;l 230 80 290 80;l 230 95 290 95;l 230 110 290 110;a 260 120 260 55;t 260 145 Up;t 175 195 Door swing;t 180 215 Check drawing legend",
+    "r 75 55 210 110;l 75 40 285 40;l 75 32 75 48;l 285 32 285 48;t 180 30 6 m;a 320 105 320 55;t 320 45 N;t 180 190 Dimension states real length regardless of screen scale",
+    "r 35 45 290 130;l 120 45 120 175;l 240 45 240 175;l 120 95 240 95;a 60 150 180 150;a 180 150 180 70;a 180 70 280 70;t 60 170 Entry;t 180 140 Hall;t 280 90 Room;t 180 195 Trace movement, use section for heights"
+  ],
+  "depth-architecture-designing-with-daylight": [
+    "p M35 175V45H325V175H35M35 75V125M180 45H240;a 15 65 95 115;a 210 20 210 115;l 35 150 325 150;t 65 35 Window;t 210 15 Skylight;t 180 195 Direct, sky and reflected light",
+    "p M35 175V45H325V175H35M35 55V105;a 20 45 175 135;a 20 65 260 150;p M55 50L240 55L290 100;t 180 25 Higher window head distributes light deeper;t 180 195 Bright finishes reflect light",
+    "p M35 175V45H325V175H35M35 85V145;l 15 75 90 75;a 15 35 65 75;a 15 115 140 165;t 95 60 Exterior shade;t 180 195 Block direct glare while admitting useful sky light",
+    "l 35 175 325 175;l 35 175 35 35;p M35 45Q100 105 325 155;l 35 105 325 105;t 180 25 Illuminance on work plane;t 180 195 Near window → room center, compare task needs"
+  ],
+  "depth-architecture-understanding-building-envelopes": [
+    "p M35 175V75L180 25L325 75V175Z;r 70 90 50 50;r 240 90 50 50;r 155 115 50 60;t 180 60 Roof;t 180 100 Inside;t 180 195 Roof, walls, glazing and ground boundary",
+    "r 65 45 30 130;r 110 45 30 130;r 155 45 30 130;a 40 50 65 75;a 102 75 102 155;a 102 155 35 165;t 80 35 Cladding;t 200 100 Drainage path;t 180 195 Flashing directs infiltrated water outward",
+    "r 95 45 25 130;f 130 45 90 130;r 230 45 25 130;a 35 105 95 105;a 255 105 325 105;t 107 35 Air layer;t 175 110 Insulation;t 180 195 Separate functions require continuous layers",
+    "r 70 45 220 130;f 100 45 160 130;r 70 95 220 30;a 35 110 325 110;t 180 80 Insulated bay;t 180 120 Bridge;t 180 195 Conductive slab bypasses insulation"
+  ],
+  "depth-architecture-why-foundations-differ": [
+    "r 150 35 60 90;r 95 125 170 25;l 35 150 325 150;a 120 150 90 180;a 180 150 180 180;a 240 150 270 180;t 180 25 Column force;t 180 205 Footing spreads pressure into soil",
+    "r 65 55 35 85;r 65 140 90 25;r 210 55 35 85;r 285 55 35 85;r 190 140 145 25;l 35 165 335 165;t 100 190 Spread footing;t 262 190 Mat supports several loads",
+    "r 35 65 290 65;r 35 130 290 45;r 130 35 100 20;r 150 55 20 115;r 190 55 20 115;a 150 100 120 100;a 210 100 240 100;a 160 170 160 190;t 180 25 Pile cap;t 265 145 Stronger layer;t 180 205 Shaft friction and end bearing",
+    "p M35 100H325M35 145L325 175;r 75 65 65 35;r 230 65 65 35;a 107 100 107 130;a 262 100 262 150;t 180 45 Uneven soil stiffness;t 180 195 Differential settlement requires site assessment"
+  ],
+  "depth-architecture-the-logic-of-architectural-sections": [
+    "p M45 175V70L180 25L315 70V175H45M45 115H315M180 70V175;t 100 95 Upper;t 100 150 Lower;t 250 95 Upper;t 180 195 Vertical cut reveals heights and roof geometry",
+    "r 45 45 20 130;r 295 45 20 130;r 65 110 230 15;l 100 60 100 105;l 260 60 260 105;t 180 30 Cut walls and slab drawn prominently;t 180 195 Thin lines show objects beyond section plane",
+    "p M35 175H325M35 105H150M210 105H325M35 45H325M150 175L210 105;t 95 95 Upper level;t 95 165 Lower level;t 260 80 Double height;t 180 195 Stair links reference elevations",
+    "r 35 55 130 110;l 100 45 100 175;a 100 65 145 65;a 100 145 145 145;p M195 165V65H325V165M195 115H325;t 100 185 Plan cut A–A;t 260 185 Section A–A;t 180 205 Compare viewing direction and levels"
+  ],
+  "depth-architecture-adaptive-reuse-of-buildings": [
+    "r 35 55 130 110;r 195 55 130 110;l 205 110 315 110;l 260 55 260 165;a 165 105 195 105;t 100 185 Warehouse;t 260 185 Housing;t 180 205 Existing shell retained",
+    "r 35 55 290 110;d 95 85 6;d 180 85 6;d 265 85 6;d 95 135 6;d 180 135 6;d 265 135 6;l 95 35 180 35;t 137 25 Bay spacing;t 180 195 Check structure, daylight and existing services",
+    "r 35 55 290 110;l 130 55 130 165;l 230 55 230 165;a 85 140 85 75;a 280 140 280 75;t 180 35 New occupancy requirements;t 180 195 Egress, access and services may need modification",
+    "r 35 65 130 95;r 195 65 130 95;f 35 115 130 45;f 195 85 130 75;t 100 180 Reuse;t 260 180 Replace;t 180 205 Compare embodied and operating impacts over life"
+  ],
+  "plus-architecture-what-architectural-circulation-means": [
+    "r 35 45 290 130;l 105 45 105 175;l 245 45 245 175;l 105 95 245 95;a 60 145 175 145;a 175 145 175 65;a 175 65 285 65;t 180 195 Route through entrance, corridor and rooms",
+    "r 35 45 290 130;l 180 45 180 175;a 180 165 180 55;a 180 75 65 75;a 180 125 295 125;t 180 30 Main spine;t 180 195 Secondary branches serve smaller destinations",
+    "p M35 155H155L155 95H35M205 155L325 95;l 35 135 155 135;l 35 115 155 115;t 95 175 Stairs;t 265 175 Ramp route;t 180 205 Accessible routes consider level changes and clearances",
+    "r 35 45 290 130;l 35 105 325 105;a 55 75 305 75;a 305 135 55 135;t 180 65 Visitors;t 180 155 Service flow;t 180 195 Separate flows where appropriate, preserve safe egress"
+  ],
+  "plus-architecture-why-architects-study-solar-orientation": [
+    "r 145 60 70 100;c 45 80 15;c 180 25 15;c 315 80 15;a 60 80 145 100;a 180 40 180 60;a 300 80 215 100;t 45 110 East;t 315 110 West;t 180 195 Sun exposure changes through day",
+    "p M115 175V45H325M115 95H185;a 35 30 115 95;a 35 105 115 135;t 85 20 Summer;t 55 150 Winter;t 180 195 Overhang shades high-angle summer sun",
+    "r 115 55 150 110;l 115 55 115 165;l 95 55 95 165;l 75 55 75 165;a 25 85 75 85;a 25 125 75 125;t 180 35 Vertical exterior shading;t 180 195 Low-angle sun may bypass horizontal overhang",
+    "b 25 45 145 45 Winter heating;b 190 45 145 45 Summer cooling;b 25 115 145 45 Nearby shade;b 190 115 145 45 Occupancy;t 180 195 Balance solar gains using site and climate"
+  ],
+  "plus-architecture-why-buildings-use-expansion-joints": [
+    "r 35 65 130 80;r 195 65 130 80;a 95 45 155 45;a 265 45 205 45;t 180 35 Thermal expansion closes gap;t 180 165 Shrinkage or settlement may also move parts;t 180 195 Restrained motion generates stress",
+    "b 25 45 145 45 Length 30 m;b 190 45 145 45 α=12×10⁻⁶/K;b 105 115 150 45 ΔT=40 K;t 180 195 ΔL=30×12×10⁻⁶×40=14.4 mm",
+    "r 35 75 135 75;r 190 75 135 75;p M145 75Q180 35 215 75;a 170 105 145 105;a 190 105 215 105;t 180 35 Flexible cover;t 180 195 Planned gap accommodates motion",
+    "r 35 55 130 110;r 195 55 130 110;p M165 75L175 85L185 75L195 85M165 135L175 145L185 135L195 145;t 180 35 Flexible seals connect layers;t 180 195 Coordinate weather, fire and finish systems"
+  ],
+  "plus-architecture-how-trusses-carry-forces": [
+    "p M35 155L105 55L180 155L255 55L325 155ZM35 155H325M105 55H255;t 180 35 Triangles resist geometric distortion;t 180 195 Members meet at joints",
+    "l 45 65 145 65;a 45 65 15 65;a 145 65 175 65;l 215 65 315 65;a 195 65 215 65;a 335 65 315 65;t 95 100 Tension: pull;t 265 100 Compression: push;t 180 195 Ideal pin-jointed members carry axial force",
+    "p M35 155L180 71.28L325 155;a 180 20 180 71.28;a 130 100 180 71.28;a 230 100 180 71.28;t 180 15 10 kN;t 75 175 30°;t 285 175 30°;t 180 205 5 kN/sin30°=10 kN compression each",
+    "p M35 155L180 55L325 155ZM35 155H325;a 105 30 105 105;c 180 55 8;t 180 25 Joint details matter;t 180 195 Off-joint load introduces bending"
+  ],
+  "plus-architecture-understanding-cantilevers": [
+    "r 35 45 35 130;r 70 95 250 25;a 310 65 310 95;t 180 80 Free span;t 52 195 Fixed;t 180 205 Support resists translation and rotation",
+    "r 35 55 30 115;r 65 85 250 20;a 315 35 315 85;p M65 165L315 105L315 165Z;t 315 25 2 kN;t 180 185 3 m span;t 180 205 Support moment 2×3=6 kN·m",
+    "r 35 45 30 120;l 65 75 325 75;p M65 75Q180 75 325 145;a 325 75 325 145;t 180 35 Deflected shape (exaggerated);t 180 195 Tip deflection PL³/(3EI)",
+    "r 35 45 80 130;r 115 85 210 25;d 115 95 8;a 115 95 65 95;a 115 110 115 155;t 180 35 Moment and shear at connection;t 180 195 Check stiffness, connection and exposure"
+  ],
+  "plus-architecture-understanding-facade-systems": [
+    "r 35 45 130 130;r 195 45 130 130;l 35 90 165 90;l 35 135 165 135;l 215 45 215 175;l 305 45 305 175;l 215 90 305 90;l 215 135 305 135;t 100 195 Bearing wall;t 260 195 Curtain wall;t 180 25 Facade may be structurally supported",
+    "r 45 45 25 130;r 85 45 25 130;f 125 45 70 130;a 20 60 45 85;a 78 85 78 155;a 78 155 35 170;t 57 35 Cladding;t 160 110 Inner layer;t 180 195 Drained cavity routes water out",
+    "r 65 45 45 130;r 185 45 125 130;r 110 105 75 20;a 110 85 150 85;a 150 85 110 85;t 87 35 Facade;t 245 110 Frame;t 180 195 Anchor transfers force and permits expected movement",
+    "b 25 45 145 45 U=.4 W/m²K;b 190 45 145 45 Area 50 m²;b 105 115 150 45 ΔT=20 K;t 180 195 Q̇=.4×50×20=400 W"
+  ],
+  "plus-architecture-how-modular-construction-works": [
+    "p M35 85L100 45L165 85V165H35ZM35 85H165M100 45V125L165 165;p M205 65H325V95H205ZM205 115H325V145H205Z;t 100 185 Volumetric unit;t 265 185 Panels;t 180 205 Offsite assemblies differ in size and integration",
+    "r 35 55 130 110;r 195 55 130 110;l 165 85 195 85;l 165 135 195 135;d 165 85 5;d 195 85 5;d 165 135 5;d 195 135 5;t 180 35 Interface alignment;t 180 195 Coordinate structure, services and enclosure",
+    "r 35 65 160 30;r 35 125 140 30;r 195 65 130 90;t 115 85 Factory;t 105 145 Site preparation;t 260 115 Assembly;t 180 195 Parallel work can shorten schedule",
+    "r 35 95 290 50;r 75 55 190 40;c 90 155 10;c 270 155 10;t 180 80 Module;t 180 35 Shipping envelope;t 180 195 Transport, lifting and handling constrain dimensions"
+  ],
+  "plus-architecture-how-green-roofs-function": [
+    "r 35 145 290 25;r 35 120 290 25;r 35 95 290 25;f 35 65 290 30;p M85 65V35L65 25M85 45L105 25M180 65V35L160 25M180 45L200 25M275 65V35L255 25;t 180 84 Growing medium;t 180 112 Drainage;t 180 138 Waterproofing;t 180 195 Layer arrangement is system-specific",
+    "r 35 95 290 65;d 75 110 5;d 105 135 5;d 150 115 5;a 85 25 85 95;a 180 95 180 25;a 290 145 325 175;t 85 20 Rain;t 230 35 ET;t 180 195 Storage and drainage depend on prior moisture",
+    "b 25 65 145 55 100 m² roof;b 190 65 145 55 10 mm rainfall;t 180 155 Volume 100×.01=1 m³;t 180 195 Water mass ≈1,000 kg",
+    "r 35 105 290 60;p M70 105V45L50 35M70 70L90 35M180 105V45L160 35M180 70L200 35;r 275 115 35 35;a 290 145 325 175;t 180 25 Plant and drainage maintenance;t 180 195 Retention does not eliminate discharge"
+  ],
+  "depth-architecture-why-columns-buckle": [
+    "r 75 45 25 130;p M250 45Q310 110 250 175;a 87 15 87 45;a 250 15 250 45;t 87 195 Straight;t 250 195 Buckled;t 180 25 Axial load",
+    "b 25 55 145 55 E × I;b 190 55 145 55 Effective length KL;t 180 155 Pcr=π²EI/(KL)²;t 180 195 Ideal elastic centered column",
+    "r 65 100 20 70;r 215 30 20 140;t 75 90 L;t 225 20 2L;t 100 195 Pcr;t 250 195 Pcr/4;t 180 215 Length doubles → capacity quarter",
+    "p M95 45Q110 110 95 175M245 45Q275 110 245 175;a 115 15 115 45;a 255 15 255 45;t 95 195 Initial crookedness;t 245 195 Amplified deflection;t 180 215 Eccentricity and material behavior change capacity"
+  ],
+  "depth-architecture-how-buildings-respond-to-earthquakes": [
+    "r 95 45 170 120;r 55 165 250 15;a 55 195 305 195;a 180 105 85 105;t 180 30 Mass 1,000 kg;t 180 95 Inertia 2 kN;t 180 215 Ground acceleration 2 m/s²",
+    "p M65 175V45H115V175M215 175Q240 110 285 45H305Q260 110 235 175;t 95 25 Rest;t 260 25 Mode shape;t 180 195 T=2π√(m/k) in simple oscillator",
+    "r 75 45 210 130;l 75 90 285 90;l 75 135 285 135;p M75 45L285 90L75 135L285 175;a 35 65 75 65;t 180 30 Braced lateral load path;t 180 195 Ductile details dissipate energy",
+    "r 55 45 250 95;r 55 150 250 25;c 95 145 10;c 180 145 10;c 265 145 10;t 180 35 Isolated structure;t 180 195 Bearings change response, dampers dissipate energy"
+  ],
+  "plus-architecture-how-acoustic-design-shapes-rooms": [
+    "r 35 45 290 130;d 70 105 8;d 285 105 8;l 70 105 285 105;p M70 105L180 45L285 105M70 105L180 175L285 105;t 180 25 Direct and reflected sound paths;t 180 195 Reflections arrive later",
+    "r 35 45 130 130;r 195 45 130 130;f 35 45 20 130;r 255 45 20 130;p M55 105L115 70M215 105L255 105M275 105L305 105;t 100 195 Absorption;t 260 195 Isolation;t 180 25 Different acoustic functions",
+    "b 25 65 145 55 V=300 m³;b 190 65 145 55 A=60 m²;t 180 155 T60≈.161×300/60;t 180 195 ≈.81 seconds (diffuse-room estimate)",
+    "l 35 175 325 175;l 35 175 35 35;p M35 100L325 100;p M35 145Q180 105 325 60;t 180 25 Absorption by frequency;t 180 195 Speech and music need different acoustic targets"
+  ],
+  "plus-architecture-what-passive-building-design-aims-to-do": [
+    "p M65 175V75L180 25L295 75V175Z;r 100 85 45 45;r 215 85 45 45;a 35 65 100 100;a 260 105 325 105;t 180 15 Form + enclosure + orientation;t 180 195 Reduce loads before sizing mechanical systems",
+    "b 25 45 145 45 A=100 m²;b 190 45 145 45 U=.2 W/m²K;b 105 115 150 45 ΔT=25 K;t 180 195 Conductive heat loss=500 W",
+    "l 35 175 325 175;p M35 105Q105 25 180 105T325 105;p M35 105Q135 65 210 105T325 125;t 180 25 Outdoor vs moderated indoor peak;t 180 195 Thermal mass delays and reduces temperature swings",
+    "b 25 45 145 45 Daylight / shading;b 190 45 145 45 Airtight enclosure;b 25 115 145 45 Ventilation;b 190 115 145 45 Comfort / energy;t 180 195 Evaluate climate-specific annual performance"
+  ]
+};
+window.LumenSlideArtBatch29Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch29;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch29Render(c,cls,step)||prior(c,cls,step);};})();
