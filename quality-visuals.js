@@ -7031,3 +7031,130 @@ window.LumenSlideArtBatch53={
 };
 window.LumenSlideArtBatch53Render=function(c,cls='cover',step=-1){return window.LumenSlideArtSharedRender(window.LumenSlideArtBatch53,c,cls,step);};
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch53Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* history: dedicated slide artwork, batch 54. */
+window.LumenSlideArtBatch54={
+  "history": [
+    "p M35 155V85H90V155M120 155V55H325V155M150 55V25H175V55M200 55V25H225V55;t 70 180 Workshop;t 225 180 Factory;t 180 205 Mechanization and concentrated energy",
+    "c 95 105 42;l 95 63 95 147;l 53 105 137 105;c 265 105 30;l 137 105 235 105;t 95 165 Water / steam power;t 265 165 Textile machinery",
+    "r 35 55 290 110;l 130 55 130 165;l 230 55 230 165;c 82 105 20;c 180 105 20;c 277 105 20;t 180 195 Coordinated machines, shifts and workers",
+    "r 65 65 90 105;r 205 95 90 75;t 110 55 Output;t 250 85 Housing / safety;t 180 195 Industrial growth and uneven conditions"
+  ],
+  "rome": [
+    "c 180 105 30;c 65 65 20;c 295 65 20;c 180 175 20;l 65 65 150 90;l 295 65 210 90;l 180 135 180 155;t 180 110 Republic;t 65 35 Magistrates;t 295 35 Senate;t 180 205 Assemblies",
+    "d 180 105 12;d 65 55 7;d 295 55 7;d 65 155 7;d 295 155 7;l 65 55 180 105;l 295 55 180 105;l 65 155 180 105;l 295 155 180 105;t 180 80 Rome;t 180 195 Provinces bring wealth, labor and political rivalry",
+    "l 35 105 325 105;d 65 105 6;d 180 105 6;d 295 105 6;t 65 85 Civil war;t 180 85 Caesar;t 295 85 Further wars;t 180 175 Republican arrangements unravel",
+    "r 35 55 290 110;r 95 75 170 70;t 180 110 Augustus 27 BCE;t 180 195 Concentrated power retains republican forms"
+  ],
+  "human-origins": [
+    "c 180 105 60;d 130 80 7;d 205 65 7;d 220 130 7;d 145 140 7;l 130 80 205 65;l 205 65 220 130;l 220 130 145 140;l 145 140 130 80;t 180 25 Africa;t 180 195 Interacting populations, not a single simple lineage",
+    "d 65 105 8;d 180 55 8;d 295 105 8;d 180 155 8;p M65 105L180 55L295 105M65 105L180 155L295 105M180 55L180 155;t 180 25 Dispersal and interbreeding;t 180 195 Neanderthal and Denisovan ancestry in some populations",
+    "p M65 65Q95 35 125 65L110 115H80Z;r 145 55 70 70;p M245 55Q305 85 245 115M305 55Q245 85 305 115;t 95 155 Fossils;t 180 155 Artifacts;t 275 155 DNA;t 180 195 Distinct lines of evidence",
+    "p M35 175L85 125L135 75M85 125L185 95M135 75L235 35M185 95L285 65M185 95L235 155;t 180 205 Branching and interconnected human history"
+  ],
+  "depth-history-how-historians-use-primary-sources": [
+    "r 65 40 230 140;l 85 75 275 75;l 85 105 275 105;l 85 135 275 135;t 180 60 Contemporary record;t 180 155 Firsthand testimony may also qualify",
+    "b 35 45 135 55 Creator;b 190 45 135 55 Date;b 35 120 135 55 Audience;b 190 120 135 55 Purpose;t 180 205 Authenticity is not reliability",
+    "r 35 55 130 110;r 195 55 130 110;l 50 85 150 85;l 50 115 150 115;l 210 85 310 85;l 210 125 310 125;t 100 185 Wage ledger;t 260 185 Worker letter;t 180 205 Compare perspectives on factory life",
+    "d 65 65 7;d 295 65 7;d 180 165 7;l 65 65 180 165;l 295 65 180 165;t 65 45 Record A;t 295 45 Record B;t 180 195 Independent corroboration"
+  ],
+  "depth-history-the-origins-of-settled-agriculture": [
+    "d 65 55 8;d 295 55 8;d 65 155 8;d 295 155 8;t 65 35 SW Asia;t 295 35 China;t 65 185 Americas;t 295 185 New Guinea;t 180 105 Multiple origins of food production",
+    "p M65 165V90L45 65M65 105L85 65M180 165V65L150 35M180 95L210 35M295 165V45L265 25M295 75L325 25;t 180 195 Selection changes traits over generations",
+    "l 35 105 325 105;d 95 105 6;d 265 105 6;t 95 85 Settled life;t 265 85 Farming;t 180 175 Sedentism can precede reliance on crops",
+    "b 35 45 135 55 Food storage;b 190 45 135 55 Larger populations;b 35 120 135 55 Labor demands;b 190 120 135 55 Disease exposure;t 180 205 Costs and benefits varied"
+  ],
+  "depth-history-how-the-black-death-changed-society": [
+    "l 35 105 325 105;d 180 105 8;t 180 75 Mid-1300s;t 180 150 Black Death in Europe;t 180 195 Part of wider Yersinia pestis pandemic",
+    "r 65 65 90 105;r 205 115 90 55;t 110 55 Labor before;t 250 105 After losses;t 180 195 Scarcity changed bargaining in some regions",
+    "b 35 45 135 55 Households;b 190 45 135 55 Administration;b 35 120 135 55 Religious life;b 190 120 135 55 Persecution;t 180 205 Pandemic disrupted institutions and communities",
+    "r 35 55 130 110;r 195 55 130 110;t 100 105 Region A;t 260 105 Region B;t 180 195 Landholding and wage responses varied"
+  ],
+  "depth-history-the-atlantic-revolutions": [
+    "l 35 105 325 105;d 65 105 6;d 130 105 6;d 205 105 6;d 295 105 6;t 65 85 American;t 130 125 French;t 205 85 Haitian;t 295 125 Spanish America;t 180 195 Distinct Atlantic revolutions",
+    "d 65 55 7;d 295 55 7;d 65 155 7;d 295 155 7;p M65 55L295 155M295 55L65 155M65 55L295 55;t 180 105 Rights and citizenship circulate;t 180 195 Print, migration and networks",
+    "b 35 55 135 65 Universal rights;b 190 55 135 65 Actual exclusion;t 180 165 Slavery and restricted citizenship contradicted ideals",
+    "b 35 45 135 55 New institutions;b 190 45 135 55 Imperial change;b 35 120 290 55 Different political outcomes;t 180 205 Shared ideas did not make revolutions identical"
+  ],
+  "depth-history-how-the-first-world-war-changed-borders": [
+    "r 35 55 290 110;l 110 55 110 165;l 180 55 180 165;l 250 55 250 165;t 72 100 German;t 145 100 Habsburg;t 215 100 Ottoman;t 287 100 Russian;t 180 195 Imperial collapse around WWI",
+    "r 35 55 130 110;r 195 55 130 110;p M65 55V165M125 55V165M235 55V165M195 110H325;t 100 185 Earlier borders;t 260 185 New borders;t 180 205 Treaties and local political struggles",
+    "l 35 105 325 105;d 95 105 6;d 265 105 6;t 95 85 Poland;t 265 85 Czechoslovakia;t 180 175 Postwar independence and territorial reorganization",
+    "r 35 55 290 110;l 180 55 180 165;d 95 85 6;d 145 125 6;d 215 85 6;d 265 125 6;t 180 195 Political boundaries did not align with all communities"
+  ],
+  "depth-history-how-labor-movements-developed": [
+    "c 180 105 30;c 65 55 20;c 295 55 20;c 65 155 20;c 295 155 20;l 65 55 155 85;l 295 55 205 85;l 65 155 155 125;l 295 155 205 125;t 180 110 Union;t 65 25 Wages;t 295 25 Hours;t 65 185 Safety;t 295 185 Conditions",
+    "d 65 85 7;d 95 85 7;d 125 85 7;b 145 65 90 60 Bargain;a 135 95 145 95;a 235 95 315 95;t 180 165 Collective negotiation changes bargaining power",
+    "l 35 105 325 105;d 65 105 6;d 180 105 6;d 295 105 6;t 65 85 Organize;t 180 85 Advocate;t 295 85 Shorter hours;t 180 175 Workplace and political campaigns",
+    "b 35 45 135 55 Occupation;b 190 45 135 55 Region;b 35 120 135 55 Race / gender;b 190 120 135 55 Politics;t 180 205 Movements and gains varied"
+  ],
+  "plus-history-how-archives-preserve-evidence": [
+    "r 35 55 290 110;r 75 75 210 70;t 180 105 Preserved records;t 180 195 Archives are selected, not complete",
+    "r 35 55 130 110;r 195 55 130 110;l 50 85 150 85;l 50 115 150 115;l 210 85 310 85;l 210 115 310 115;t 100 185 Creator A;t 260 185 Creator B;t 180 205 Provenance and original order retain context",
+    "r 35 55 130 110;r 195 55 130 110;l 50 85 150 85;l 50 115 150 115;d 55 140 5;l 210 85 310 85;l 210 115 310 115;t 100 185 Original letter;t 260 185 Digital text;t 180 205 Annotations and folder context may be lost",
+    "b 35 45 135 55 Preservation;b 190 45 135 55 Privacy;b 35 120 135 55 Classification;b 190 120 135 55 Past power;t 180 205 Missing record is not proof of no event"
+  ],
+  "plus-history-why-ancient-writing-developed": [
+    "l 35 105 325 105;d 95 105 6;d 265 105 6;t 95 85 Mesopotamia;t 265 85 Egypt;t 180 175 Late fourth millennium BCE, other independent traditions",
+    "r 70 45 220 130;l 70 85 290 85;l 70 125 290 125;t 180 70 Goods;t 180 110 Labor;t 180 150 Obligations;t 180 195 Writing supports administration",
+    "b 35 45 135 55 Laws;b 190 45 135 55 Ritual;b 35 120 135 55 Literature;b 190 120 135 55 Letters;t 180 205 Uses expanded beyond recordkeeping",
+    "r 35 55 130 110;r 195 55 130 110;t 100 105 Durable tablet;t 260 105 Lost material;t 180 195 Surviving evidence biases reconstruction"
+  ],
+  "plus-history-how-medieval-towns-gained-autonomy": [
+    "c 180 105 30;c 65 55 20;c 295 55 20;c 180 175 20;l 65 55 155 85;l 295 55 205 85;l 180 135 180 155;t 180 110 Town;t 65 25 King;t 295 25 Lord;t 180 205 Church",
+    "r 70 40 220 140;l 90 75 270 75;l 90 105 270 105;l 90 135 270 135;t 180 60 Charter;t 180 155 Privileges over markets and courts",
+    "b 35 55 135 65 Elect officials;b 190 55 135 65 Pay dues;t 180 165 Municipal privileges coexist with obligations",
+    "r 35 55 290 110;r 95 75 170 70;t 180 110 Eligible residents;t 180 195 Urban autonomy did not imply universal political rights"
+  ],
+  "plus-history-how-historical-maps-reflect-power": [
+    "b 35 45 135 55 Navigation;b 190 45 135 55 Taxation;b 35 120 135 55 Administration;b 190 120 135 55 Territorial claim;t 180 205 Map purpose shapes selection",
+    "r 35 55 290 110;p M35 105L165 65L325 145;d 95 85 6;d 265 125 6;t 180 35 Names, borders, scale and symbols;t 180 195 Mapmaker chooses what to emphasize",
+    "r 35 55 290 110;f 35 55 220 110;d 75 85 6;d 120 125 6;d 270 85 6;t 180 195 Shaded imperial claim ≠ effective control",
+    "b 35 45 135 55 Date;b 190 45 135 55 Legend;b 35 120 135 55 Creator;b 190 120 135 55 Other evidence;t 180 205 Compare before interpreting power"
+  ],
+  "plus-history-why-canals-changed-transportation": [
+    "p M35 135H325M35 155H325M65 135L95 105H135L165 135;t 100 85 Boat freight;t 180 195 Water routes can move bulky goods efficiently",
+    "p M35 145H130V115H230V75H325M130 145V115M230 115V75;t 180 45 Canal lock;t 180 195 Lock chambers change vessel elevation",
+    "d 45 105 7;d 180 105 7;d 315 105 7;l 45 105 315 105;t 45 85 Hudson;t 180 85 Erie Canal;t 315 85 Lake Erie;t 180 175 Opened 1825, linked inland and Atlantic markets",
+    "l 35 105 325 105;d 65 105 6;d 180 105 6;d 295 105 6;t 65 85 Canal;t 180 85 Town growth;t 295 85 Rail rivalry;t 180 175 Transport networks changed land and trade values"
+  ],
+  "plus-history-how-newspapers-shaped-public-debate": [
+    "r 65 40 230 140;l 85 75 275 75;l 85 105 275 105;l 85 135 275 135;t 180 60 Newspaper;t 180 155 Reports, comment and advertisements",
+    "d 65 65 7;d 295 65 7;d 65 155 7;d 295 155 7;c 180 105 28;l 65 65 155 90;l 295 65 205 90;l 65 155 155 120;l 295 155 205 120;t 180 110 News;t 180 195 Shared reading supports public discussion",
+    "r 35 55 130 110;r 195 55 130 110;t 100 105 Proceedings;t 260 105 Editorial framing;a 165 105 195 105;t 180 195 Publication widens access but selects emphasis",
+    "b 35 45 135 55 Literacy;b 190 45 135 55 Price;b 35 120 135 55 Censorship;b 190 120 135 55 Ownership;t 180 205 Access and independence were limited"
+  ],
+  "plus-history-how-oral-traditions-preserve-history": [
+    "c 65 105 25;c 180 105 25;c 295 105 25;a 90 105 155 105;a 205 105 270 105;t 65 110 Gen. 1;t 180 110 Gen. 2;t 295 110 Gen. 3;t 180 195 Oral performance transmits accounts",
+    "p M35 95Q55 45 75 95T115 95T155 95M205 95Q225 45 245 95T285 95T325 95;t 180 155 Repeated structure and social correction;t 180 195 Specialized performers may preserve information",
+    "c 180 45 20;c 85 145 20;c 275 145 20;l 180 65 85 125;l 180 65 275 125;t 180 25 Ancestor;t 85 175 Line A;t 275 175 Line B;t 180 205 Genealogy can express political legitimacy",
+    "b 35 45 135 55 Performer;b 190 45 135 55 Audience;b 35 120 135 55 Variants;b 190 120 135 55 Other evidence;t 180 205 Record context and respect protocols"
+  ],
+  "depth-history-the-cold-war-beyond-two-superpowers": [
+    "c 65 65 25;c 295 65 25;c 180 145 35;l 65 65 180 145;l 295 65 180 145;t 65 35 US;t 295 35 USSR;t 180 150 Local actors;t 180 195 Rivalry interacts with regional agendas",
+    "d 65 65 7;d 295 65 7;d 65 155 7;d 295 155 7;p M65 65L295 155M295 65L65 155M65 65L295 65;t 180 105 Bandung 1955;t 180 195 Nonaligned actors sought varying autonomy",
+    "c 180 105 35;c 65 55 20;c 295 55 20;l 65 55 150 85;l 295 55 210 85;t 180 110 Local state;t 65 25 Aid A;t 295 25 Aid B;t 180 195 Domestic goals not reducible to donors",
+    "b 35 55 135 65 Superpower rivalry;b 190 55 135 65 Regional history;t 180 165 Both shape conflict and alliances"
+  ],
+  "plus-history-why-industrial-cities-changed-living-conditions": [
+    "l 35 175 325 175;p M35 155Q180 140 325 45;p M35 155L325 105;t 180 25 Population vs housing;t 180 195 Infrastructure can lag rapid industrial growth",
+    "p M35 165V85H85V165M115 165V65H175V165M220 165V95H325V165M245 95V35H265V95;p M255 35Q275 15 295 35;t 180 195 Smoke, crowding and unsafe work exposures",
+    "r 35 65 290 35;r 35 125 145 35;t 180 55 Residents increase;t 107 115 Drainage fixed;t 180 195 Higher population strains sanitation capacity",
+    "b 35 45 135 55 Public works;b 190 45 135 55 Housing reform;b 35 120 135 55 Labor organizing;b 190 120 135 55 Technology;t 180 205 Welfare changes need specific measures"
+  ],
+  "plus-history-understanding-the-history-of-public-sanitation": [
+    "p M35 65H325M65 65V145H295M180 65V145;t 180 45 Water supply and drainage;t 180 195 Sanitation requires coordinated infrastructure",
+    "c 95 105 35;c 265 105 35;a 130 105 230 105;t 95 110 Water source;t 265 110 Illness;t 180 195 Evidence distinguished waterborne transmission from rival theories",
+    "r 35 55 290 110;d 180 105 10;d 145 75 6;d 155 135 6;d 215 80 6;d 200 145 6;t 180 95 Pump;t 180 195 Snow 1854: geographic and exposure evidence",
+    "b 35 45 135 55 Engineering;b 190 45 135 55 Finance;b 35 120 135 55 Legal authority;b 190 120 135 55 Maintenance;t 180 205 Multiple conditions determine population benefit"
+  ],
+  "plus-history-how-historical-periodization-works": [
+    "l 35 105 325 105;l 180 55 180 155;t 95 85 Period A;t 265 85 Period B;t 180 175 Analytical boundary, not a universal break",
+    "l 35 75 325 75;l 35 145 325 145;l 125 55 125 95;l 245 125 245 165;t 125 45 Political change;t 245 185 Economic change;t 180 205 Transitions need not coincide",
+    "l 35 105 325 105;d 180 105 8;t 180 75 1492;t 95 155 Before;t 265 155 After;t 180 195 Atlantic significance, not identical global transition",
+    "l 35 105 325 105;l 180 55 180 155;a 65 125 295 125;t 180 45 Chosen boundary;t 180 175 Continuities cross period labels"
+  ]
+};
+window.LumenSlideArtBatch54Render=function(c,cls='cover',step=-1){return window.LumenSlideArtSharedRender(window.LumenSlideArtBatch54,c,cls,step);};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch54Render(c,cls,step)||prior(c,cls,step);};})();
