@@ -3336,3 +3336,143 @@ window.LumenSlideArtBatch21Render=function renderer(c,cls="cover",step=-1){
  const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch21Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* Scientific Literacy: dedicated slide artwork, batch 22. */
+window.LumenSlideArtBatch22={
+  "research-methods": [
+    "b 25 45 145 50 Population: seedlings;b 190 45 145 50 Outcome: height;b 25 115 145 50 Comparison: light;b 190 115 145 50 Time: 14 days;t 180 195 Specify measurable question",
+    "b 105 35 150 40 Eligible sample;a 180 75 95 120;a 180 75 265 120;b 25 120 140 45 Randomized treatment;b 195 120 140 45 Randomized control;t 180 195 Observational designs require different assumptions",
+    "l 35 105 325 105;l 75 95 75 115;l 250 95 250 115;l 75 105 250 105;d 162 105 6;t 162 85 Estimate;t 180 170 Uncertainty around measured effect;t 180 195 Significance does not eliminate bias",
+    "b 25 45 145 45 Methods;b 190 45 145 45 Data access;b 25 115 145 45 Analysis decisions;b 190 115 145 45 Limitations;t 180 195 Transparent record enables scrutiny"
+  ],
+  "depth-scientific-literacy-what-makes-a-claim-testable": [
+    "p M95 175V85M95 100L65 70M95 100L125 70M265 175V50M265 80L235 50M265 80L295 50;l 35 175 325 175;t 95 195 Control;t 265 195 Light treatment;t 180 25 Predict a measurable height difference",
+    "b 25 55 145 50 Light condition A;b 190 55 145 50 Light condition B;a 97 105 97 145;a 262 105 262 145;t 180 170 Measure height at day 14;t 180 195 Specify procedure before collecting data",
+    "l 35 105 325 105;d 95 105 6;d 265 105 6;t 95 85 No increase;t 265 85 Increase;t 180 155 Prediction permits contradictory evidence;t 180 195 Not every possible result can support it",
+    "b 25 45 145 45 Hypothesis;b 190 45 145 45 Test conditions;b 25 115 145 45 Measurement;b 190 115 145 45 Replication;t 180 195 Failed prediction has multiple possible causes"
+  ],
+  "depth-scientific-literacy-reading-a-scientific-paper": [
+    "r 85 35 190 140;f 95 45 170 35;l 95 95 265 95;l 95 115 265 115;l 95 135 265 135;t 180 67 Abstract;t 180 195 Identify question, sample and main finding",
+    "b 25 55 95 55 Recruit;a 120 82 132 82;b 132 55 95 55 Measure;a 227 82 239 82;b 239 55 95 55 Analyze;t 180 150 Check controls, exclusions and allocation;t 180 195 Methods determine what can be inferred",
+    "l 35 105 325 105;l 75 95 75 115;l 245 95 245 115;l 75 105 245 105;d 160 105 6;t 160 80 Effect estimate;t 180 165 Examine interval and actual figure;t 180 195 Separate planned and exploratory results",
+    "r 35 55 290 110;r 95 80 170 60;t 180 115 Studied population;t 180 40 Conclusions beyond this boundary need support;t 180 195 Discussion should recognize limitations"
+  ],
+  "depth-scientific-literacy-understanding-peer-review": [
+    "b 25 65 110 55 Manuscript;a 135 92 165 92;b 165 65 170 55 Expert review;t 180 155 Methods, reasoning and contribution;t 180 195 Procedures differ between journals",
+    "b 25 55 95 55 Review;a 120 82 132 82;b 132 55 95 55 Revise;a 227 82 239 82;b 239 55 95 55 Editor;t 180 155 Clarify analyses or narrow conclusions;t 180 195 Editor considers reviews",
+    "r 35 65 290 95;r 65 85 90 55;t 110 115 Reviewed;t 240 115 Not independently replicated;t 180 195 Review can miss errors and bias",
+    "l 35 105 325 105;d 55 105 6;d 145 105 6;d 235 105 6;d 325 105 6;t 55 85 Publish;t 145 85 Replicate;t 235 85 Reanalyze;t 315 85 Correct;t 180 195 Evidence evaluation continues after publication"
+  ],
+  "depth-scientific-literacy-why-replication-matters": [
+    "r 35 55 130 110;r 195 55 130 110;d 65 95 5;d 95 75 5;d 125 115 5;d 225 85 5;d 255 115 5;d 285 75 5;t 100 185 Original data;t 260 185 New independent data",
+    "b 25 55 145 55 Same procedure;b 190 55 145 55 Different measure;t 97 150 Direct replication;t 262 150 Conceptual replication;t 180 195 Both test the underlying finding",
+    "l 35 105 325 105;l 85 65 245 65;l 100 145 270 145;d 165 65 5;d 185 145 5;t 180 30 Different estimates can be compatible;t 180 195 Sampling and methods change results",
+    "l 35 35 35 175;l 180 35 180 175;l 90 65 240 65;d 165 65 5;l 130 105 270 105;d 200 105 5;l 150 145 230 145;d 190 145 5;t 180 195 Compare study estimates and uncertainty"
+  ],
+  "depth-scientific-literacy-distinguishing-a-theory-from-a-guess": [
+    "b 25 55 145 50 Observations;a 170 80 190 80;b 190 55 145 50 Theory;a 262 105 262 145;b 190 145 145 40 Predictions;t 180 205 Explanation links evidence to new predictions",
+    "b 25 65 95 55 Theory;a 120 92 132 92;b 132 65 95 55 Hypothesis;a 227 92 239 92;b 239 65 95 55 Test;t 180 165 Revise when evidence conflicts",
+    "b 25 65 145 55 Law: F = ma;b 190 65 145 55 Theory: mechanics;t 97 150 Describes relation;t 262 150 Explains patterns;t 180 195 Theories do not mature into laws",
+    "l 35 175 325 175;p M35 155L325 65;p M35 155Q180 110 325 35;t 95 145 Low-speed agreement;t 255 30 High-speed divergence;t 180 195 Newtonian model useful within limits"
+  ],
+  "depth-scientific-literacy-how-controls-isolate-effects": [
+    "l 35 175 325 175;p M35 155L325 60;p M35 155L325 105;t 265 50 Treatment;t 265 120 Reference;t 180 195 Compare change against background",
+    "r 35 65 130 85;r 195 65 130 85;d 95 105 5;d 115 105 5;t 100 175 No active factor;t 260 175 Baseline response;t 180 205 Negative control detects artifacts",
+    "r 35 65 130 85;r 195 65 130 85;d 95 105 5;d 115 105 5;d 225 90 5;d 250 110 5;d 280 85 5;d 300 120 5;t 100 175 Unknown condition;t 260 175 Known response;t 180 205 Positive control checks whether method works",
+    "b 25 55 145 50 Group A;b 190 55 145 50 Group B;t 180 145 Same timing, measurement and setting;t 180 195 Randomize when appropriate"
+  ],
+  "depth-scientific-literacy-how-scientific-consensus-develops": [
+    "b 25 45 95 45 Method A;b 132 45 95 45 Method B;b 239 45 95 45 Method C;a 72 90 180 135;a 180 90 180 135;a 286 90 180 135;b 100 135 160 45 Shared conclusion;t 180 205 Convergence across lines of evidence",
+    "l 35 65 325 65;l 35 105 325 105;l 35 145 325 145;l 90 65 245 65;d 170 65 5;l 130 105 260 105;d 195 105 5;l 110 145 225 145;d 168 145 5;t 180 195 Independent methods give compatible estimates",
+    "c 180 105 55;c 180 105 28;t 180 105 Core claim;t 180 30 Open questions around core;t 180 195 Consensus can coexist with debate on details",
+    "l 35 105 325 105;d 65 105 6;d 180 105 6;d 295 105 6;t 65 85 Evidence;t 180 85 Evaluate;t 295 85 Revise;t 180 175 New strong evidence can change consensus"
+  ],
+  "depth-scientific-literacy-recognizing-conflicts-of-interest": [
+    "b 25 55 145 55 Primary judgment;b 190 55 145 55 Secondary interest;a 262 110 180 150;a 97 110 180 150;t 180 175 Potential conflict;t 180 200 Incentive can influence judgment",
+    "r 85 35 190 140;l 95 65 265 65;l 95 95 265 95;l 95 125 265 125;t 180 55 Funding;t 180 85 Relationships;t 180 115 Sponsor role;t 180 195 Disclosure makes potential influence visible",
+    "b 25 45 145 45 Design;b 190 45 145 45 Comparator;b 25 115 145 45 Analysis;b 190 115 145 45 Publication;t 180 195 Incentives can influence multiple stages",
+    "b 25 45 145 45 Preregistration;b 190 45 145 45 Data access;b 25 115 145 45 Independent tests;b 190 115 145 45 Evidence vs claims;t 180 195 Conflict prompts scrutiny, not automatic rejection"
+  ],
+  "plus-scientific-literacy-how-to-read-a-scientific-figure": [
+    "l 35 175 325 175;l 35 175 35 35;p M35 155L120 145L210 95L325 65;t 180 25 Outcome (units);t 180 195 Time (days);t 180 210 Check axis range and scale",
+    "l 35 175 325 175;d 75 125 4;d 95 95 4;d 115 115 4;d 255 75 4;d 275 100 4;d 295 65 4;l 65 112 125 112;l 245 80 305 80;t 95 195 Group A;t 275 195 Group B;t 180 35 Dots are observations, lines are means",
+    "l 35 175 325 175;r 65 100 80 75;r 215 70 80 105;l 105 80 105 120;l 95 80 115 80;l 95 120 115 120;l 255 40 255 100;l 245 40 265 40;l 245 100 265 100;t 180 195 Check whether error bars are SD, SE or CI",
+    "r 65 70 90 100;r 205 50 90 120;t 110 60 10 units;t 250 40 12 units;t 180 195 Difference = 2 units, whatever axis range"
+  ],
+  "depth-scientific-literacy-understanding-measurement-uncertainty": [
+    "l 35 105 325 105;d 155 105 5;d 170 105 5;d 180 105 5;d 190 105 5;d 205 105 5;t 180 75 Repeated readings vary;t 180 175 Spread describes consistency under conditions",
+    "c 90 105 50;c 90 105 25;c 270 105 50;c 270 105 25;d 85 100 4;d 95 110 4;d 90 105 4;d 290 80 4;d 295 85 4;d 285 85 4;t 90 175 Accurate and precise;t 270 175 Precise but biased",
+    "b 25 65 145 55 Independent u₁;b 190 65 145 55 Independent u₂;t 180 155 Combined u=√(u₁²+u₂²);t 180 195 Correlated errors need covariance",
+    "p M85 165H175V45Z;t 130 185 3 mm;t 205 105 4 mm;t 115 85 5 mm;t 180 210 √(3²+4²) = 5 mm standard uncertainty"
+  ],
+  "plus-scientific-literacy-understanding-systematic-reviews": [
+    "b 25 45 145 45 Population;b 190 45 145 45 Intervention;b 25 115 145 45 Comparator;b 190 115 145 45 Outcome;t 180 195 Define question and eligibility before searching",
+    "p M35 45H325L255 100L215 165H145L105 100Z;t 180 65 Retrieved records;t 180 100 Screen criteria;t 180 150 Included studies;t 180 195 Document search and exclusions",
+    "b 25 55 145 55 Study A: bias;b 190 55 145 55 Study B: same bias;t 180 150 Shared weakness is not cured by count;t 180 195 Appraise methods and relevance",
+    "b 25 55 145 55 Narrative synthesis;b 190 55 145 55 Quantitative pool;t 180 150 Choose according to comparability;t 180 195 Report heterogeneity and missing evidence"
+  ],
+  "plus-scientific-literacy-why-pre-registration-matters": [
+    "l 35 105 325 105;d 65 105 6;d 180 105 6;d 295 105 6;t 65 85 Plan;t 180 85 Collect;t 295 85 Analyze;t 180 175 Timestamp plan before results",
+    "c 180 45 12;a 180 57 65 125;a 180 57 180 125;a 180 57 295 125;b 15 125 100 45 Exclude;b 130 125 100 45 Transform;b 245 125 100 45 Select model;t 180 195 Flexibility can favor chance findings",
+    "b 25 55 145 55 Prespecified plan;b 190 55 145 55 Actual analysis;t 180 150 Record reason for deviation;t 180 195 Label exploratory analyses",
+    "b 25 55 145 55 Plan timestamp;b 190 55 145 55 Study execution;t 97 150 Transparency;t 262 150 Actual validity;t 180 195 Preregistration cannot fix poor design"
+  ],
+  "plus-scientific-literacy-how-operational-definitions-shape-research": [
+    "b 105 35 150 45 Sleep quality;a 180 80 95 125;a 180 80 265 125;b 25 125 140 45 Questionnaire;b 195 125 140 45 Sleep efficiency;t 180 205 Abstract concept becomes observable variable",
+    "c 90 105 45;c 270 105 45;d 90 105 5;d 290 85 5;t 90 165 Intended measure;t 270 165 Wrong construct;t 180 195 Reliable readings can lack construct validity",
+    "b 25 55 145 55 Steps per day;b 190 55 145 55 Aerobic fitness;t 180 150 Both relate to activity differently;t 180 195 Different definitions can yield different results",
+    "b 25 45 145 45 Repeatability;b 190 45 145 45 Criterion validity;b 25 115 145 45 Other indicators;b 190 115 145 45 Across populations;t 180 195 Test proxy rather than assuming equivalence"
+  ],
+  "plus-scientific-literacy-why-negative-results-are-informative": [
+    "b 25 55 95 55 Near zero;b 132 55 95 55 Not significant;b 239 55 95 55 Opposite result;t 180 165 Different meanings of negative finding",
+    "l 35 65 325 65;l 45 105 315 105;l 155 145 205 145;d 180 105 5;d 180 145 5;t 180 45 Zero effect;t 180 175 Wide vs narrow confidence interval",
+    "l 35 75 325 75;l 35 65 35 85;l 325 65 325 85;d 180 75 5;l 165.5 145 194.5 145;d 180 145 5;t 35 55 −10;t 325 55 +10;t 180 130 −1 to +1;t 180 195 Narrow interval constrains smaller effects",
+    "b 25 55 145 55 Failed prediction;a 170 82 190 82;b 190 55 145 55 Revise theory;t 180 150 Report methods and uncertainty;t 180 195 Avoid repeating uninformative failures"
+  ],
+  "plus-scientific-literacy-how-conflicts-of-interest-are-managed": [
+    "b 25 55 145 55 Relationship;b 190 55 145 55 Decision affected;t 180 150 Assess relevance and influence;t 180 195 Risk depends on connection to work",
+    "b 25 45 145 45 Independent analysis;b 190 45 145 45 Prespecified outcomes;b 25 115 145 45 Monitoring;b 190 115 145 45 Publication rights;t 180 195 Structural safeguards limit control",
+    "b 25 55 95 55 Disclose;a 120 82 132 82;b 132 55 95 55 Assess;a 227 82 239 82;b 239 55 95 55 Recuse if needed;t 180 175 Disclosure alone may be insufficient",
+    "r 35 55 130 105;r 195 55 130 105;l 45 85 155 85;l 45 115 155 115;l 205 85 315 85;l 205 115 315 115;t 100 180 Registered plan;t 260 180 Published report;t 180 205 Check safeguards were implemented"
+  ],
+  "plus-scientific-literacy-how-to-evaluate-a-causal-claim": [
+    "b 105 35 150 45 Same target group;a 180 80 95 125;a 180 80 265 125;b 25 125 140 45 Outcome if treated;b 195 125 140 45 Outcome if untreated;t 180 205 Counterfactual outcomes cannot both be observed",
+    "b 115 35 130 40 Common cause;a 180 75 90 125;a 180 75 270 125;b 25 125 130 45 Exposure;b 205 125 130 45 Outcome;a 155 147 205 147;t 180 205 Confounding distorts observed association",
+    "b 25 55 145 55 Random assignment;b 190 55 145 55 Observational design;t 97 150 Exchangeability;t 262 150 Adjustment / assumptions;t 180 195 Each design has identification conditions",
+    "b 25 45 145 45 Effect estimate;b 190 45 145 45 Uncertainty;b 25 115 145 45 Bias risks;b 190 115 145 45 Target population;t 180 195 Association plus mechanism does not prove causality"
+  ],
+  "plus-scientific-literacy-what-meta-analysis-combines": [
+    "b 25 55 145 55 Study A: risk ratio;b 190 55 145 55 Study B: risk ratio;a 97 110 180 150;a 262 110 180 150;t 180 175 Pool comparable estimands;t 180 200 Convert to common measure first",
+    "l 35 65 325 65;l 35 145 325 145;l 145 65 215 65;d 180 65 8;l 75 145 285 145;d 180 145 4;t 180 40 Precise study gets more weight;t 180 195 Weight ∝ inverse sampling variance",
+    "r 35 75 290 50;f 35 75 217.5 50;t 143 105 Weight 3 × effect 2;t 288 105 1 × 4;t 180 55 Weighted sum = 10;t 180 195 Divide by total weight 4 → 2.5 units",
+    "l 35 35 35 175;l 180 35 180 175;l 65 65 145 65;d 105 65 5;l 195 105 295 105;d 245 105 5;l 130 145 230 145;d 180 145 5;t 180 195 Heterogeneity may require between-study variance"
+  ],
+  "plus-scientific-literacy-how-publication-bias-distorts-evidence": [
+    "r 35 55 130 105;r 195 55 130 105;d 65 85 5;d 95 105 5;d 125 125 5;d 225 85 5;t 100 180 All studies;t 260 180 Visible subset;t 180 205 Availability can depend on result",
+    "l 35 175 325 175;p M35 155Q120 35 205 155;p M155 155Q235 35 315 155;t 105 35 All evidence;t 255 35 Selected evidence;t 180 195 Missing weak studies may inflate pooled effects",
+    "p M180 35L55 175H305Z;d 180 50 4;d 165 80 4;d 205 90 4;d 240 125 4;d 270 150 4;d 190 145 4;t 180 195 Funnel asymmetry is not proof of publication bias",
+    "b 25 45 145 45 Trial registries;b 190 45 145 45 Protocols;b 25 115 145 45 Unpublished results;b 190 115 145 45 Sensitivity analysis;t 180 195 Search missing evidence and compare outcomes"
+  ],
+  "plus-scientific-literacy-understanding-effect-sizes": [
+    "r 65 95 90 75;r 205 60 90 110;t 110 85 Outcome A;t 250 50 Outcome B;t 180 195 Quantify magnitude, not merely significance",
+    "r 65 70 90 100;r 205 90 90 80;t 110 60 10% risk;t 250 80 8% risk;t 180 175 Absolute reduction: 2 percentage points;t 180 200 Relative reduction: 20%",
+    "b 25 65 145 55 Mean difference 4;b 190 65 145 55 Pooled SD 8;t 180 155 Standardized difference = 4/8;t 180 195 0.5 SD units",
+    "l 35 105 325 105;l 125 95 125 115;l 220 95 220 115;l 125 105 220 105;d 172 105 5;l 270 65 270 145;t 270 55 Meaningful size;t 180 195 Small p-value need not imply useful effect"
+  ]
+};
+window.LumenSlideArtBatch22Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch22;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch22Render(c,cls,step)||prior(c,cls,step);};})();
