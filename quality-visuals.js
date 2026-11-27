@@ -8042,3 +8042,130 @@ window.LumenSlideArtBatch61={
 };
 window.LumenSlideArtBatch61Render=function(c,cls='cover',step=-1){return window.LumenSlideArtSharedRender(window.LumenSlideArtBatch61,c,cls,step);};
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch61Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* personal-development: dedicated slide artwork, batch 62. */
+window.LumenSlideArtBatch62={
+  "habits": [
+    "c 95 105 35;c 265 105 35;a 130 85 230 85;a 230 125 130 125;t 95 110 Cue;t 265 110 Action;t 180 195 Repeated stable context builds automatic response",
+    "b 35 65 135 65 Stable cue;a 170 97 190 97;b 190 65 135 65 Small action;t 180 165 Choose repeatable behavior",
+    "c 90 105 40;c 90 105 25;r 225 65 80 80;l 265 65 265 145;a 135 105 215 105;t 180 195 Breakfast plate away → read one page",
+    "l 35 105 325 105;d 65 105 6;d 125 105 6;c 185 105 7;d 245 105 6;d 305 105 6;t 180 65 Missed day;t 180 165 Resume at next opportunity"
+  ],
+  "procrastination": [
+    "l 35 105 325 105;d 65 105 6;d 295 105 6;t 65 85 Intended start;t 295 85 Delayed start;t 180 175 Delay despite expected disadvantage",
+    "c 95 105 35;c 265 105 35;a 130 105 230 105;t 95 110 Discomfort;t 265 110 Avoidance;t 180 195 Short-term relief can reinforce postponement",
+    "r 55 35 250 145;l 75 75 285 75;l 75 105 285 105;l 75 135 285 135;t 180 60 Heading 1;t 180 95 Heading 2;t 180 125 Heading 3;t 180 205 Start with three headings, not whole report",
+    "b 35 55 135 65 Notice trigger;a 170 87 190 87;b 190 55 135 65 Change task or setting;t 180 165 Plan feasible restart, seek help if impairment persists"
+  ],
+  "learning": [
+    "b 35 55 135 65 Learned task;a 170 87 190 87;b 190 55 135 65 New context;t 180 165 Transfer requires applicable knowledge",
+    "r 35 65 130 85;r 195 65 130 85;t 100 105 Surface detail;t 260 105 Shared relation;t 180 195 Identify underlying principle",
+    "b 35 65 135 65 $100 × 10%;b 190 65 135 65 100 people × 10%;t 102 155 $10 discount;t 257 155 10 more people;t 180 195 Same proportional reasoning, different context",
+    "d 65 75 7;d 145 125 7;d 225 75 7;d 305 125 7;p M65 75L145 125L225 75L305 125;t 180 195 Vary examples and test without prompts"
+  ],
+  "growth-mindset": [
+    "l 35 175 325 175;p M35 145L325 55;t 180 25 Capability can develop;t 180 195 Growth mindset concerns belief, not guaranteed result",
+    "b 35 45 135 55 Strategy;b 190 45 135 55 Feedback;b 35 120 135 55 Practice;b 190 120 135 55 Opportunity;t 180 205 Effort alone is not sufficient",
+    "r 35 75 130 50;l 100 75 100 125;r 195 75 130 50;l 227.5 75 227.5 125;l 260 75 260 125;l 292.5 75 292.5 125;t 100 150 1/2;t 260 150 2/4;t 180 195 Target the misconception, check equivalent fractions",
+    "l 35 175 325 175;d 65 145 7;d 145 125 7;d 225 105 7;d 305 65 7;t 180 25 Demonstrated improvement;t 180 195 Assess actual progress, not belief alone"
+  ],
+  "depth-personal-development-how-to-set-a-useful-goal": [
+    "b 35 55 135 65 Vague wish;b 190 55 135 65 Observable result;t 180 165 Goal specifies evidence of completion",
+    "c 180 105 65;c 180 105 35;t 180 110 Actions;t 180 55 Constraints;t 180 195 Distinguish controllable steps from outcome",
+    "r 35 65 290 90;l 107 65 107 155;l 180 65 180 155;l 252 65 252 155;t 71 105 Session 1;t 143 105 Session 2;t 216 105 Session 3;t 288 105 Verify;t 180 195 Build budget workbook in four sessions",
+    "l 35 105 325 105;d 65 105 6;d 180 105 6;d 295 105 6;t 65 85 Set goal;t 180 85 Check-in;t 295 85 Evidence;t 180 175 Revise scope when constraints change"
+  ],
+  "depth-personal-development-building-a-reflection-habit": [
+    "b 35 55 135 65 Experience;a 170 87 190 87;b 190 55 135 65 Next experiment;t 180 165 Reflection turns observations into learning",
+    "r 55 45 250 130;l 55 85 305 85;l 55 125 305 125;t 180 70 Event;t 180 110 Response / result;t 180 150 Next test;t 180 195 Separate observation from interpretation",
+    "l 35 75 325 75;l 35 145 325 145;r 180 65 115 20;r 65 135 45 20;t 180 45 Late appointment blocks evening;t 180 185 Test shorter morning practice",
+    "r 35 65 290 80;l 107 65 107 145;l 180 65 180 145;l 252 65 252 145;d 65 105 6;d 145 105 6;d 225 105 6;t 180 195 Brief notes reveal recurring patterns"
+  ],
+  "depth-personal-development-learning-to-tolerate-uncertainty": [
+    "c 95 105 40;c 265 105 40;t 95 110 Known;t 265 110 Unknown;t 180 195 Action can be possible without certainty",
+    "b 35 55 135 65 Checkable fact;b 190 55 135 65 Unresolved outcome;t 180 165 Distinguish useful checking from repeated uncertainty",
+    "l 35 105 325 105;d 65 105 6;d 180 105 6;d 295 105 6;t 65 85 Submit;t 180 85 Confirm once;t 295 85 Continue search;t 180 175 Employer decision remains uncertain",
+    "b 35 55 135 65 Manageable step;b 190 55 135 65 Remaining uncertainty;t 180 165 Act despite incomplete certainty when appropriate"
+  ],
+  "depth-personal-development-how-to-practice-a-skill-deliberately": [
+    "l 35 175 325 175;r 55 105 90 70;r 205 65 90 110;t 100 95 Reliable skill;t 250 55 Target skill;t 180 195 Practice defined component beyond current ability",
+    "b 25 65 95 65 Attempt;a 120 97 132 97;b 132 65 95 65 Feedback;a 227 97 239 97;b 239 65 95 65 Adjust;t 180 195 Informative errors guide technique",
+    "r 35 65 290 50;l 105 65 105 115;l 175 65 175 115;l 245 65 245 115;t 70 95 th;t 140 95 er;t 210 95 io;t 285 95 ng;t 180 155 Isolate frequent typing errors;t 180 195 Improve accuracy before speed",
+    "l 35 105 325 105;r 65 75 60 60;r 150 90 35 30;r 210 75 60 60;t 95 65 Practice;t 167 80 Rest;t 240 65 Practice;t 180 175 Manage workload and assess progress"
+  ],
+  "depth-personal-development-understanding-values-and-choices": [
+    "c 180 105 35;c 65 65 20;c 295 65 20;c 180 175 20;l 65 65 150 85;l 295 65 210 85;l 180 140 180 155;t 180 110 Values;t 65 35 Honesty;t 295 35 Care;t 180 205 Independence",
+    "c 95 105 35;c 265 105 35;t 95 110 Security;t 265 110 Family time;t 180 195 Name both values in a conflict",
+    "r 35 75 290 50;f 35 75 165 50;t 117 105 Paid work;t 262 105 Family time;t 180 195 More work may improve income but reduce time",
+    "b 35 55 135 65 Value: care;a 170 87 190 87;b 190 55 135 65 Feasible action;t 180 165 Review fit with real circumstances"
+  ],
+  "depth-personal-development-why-self-monitoring-can-help": [
+    "r 55 45 250 130;l 55 85 305 85;l 55 125 305 125;t 180 70 Date;t 180 110 Behavior;t 180 150 Outcome;t 180 195 Record relevant patterns",
+    "b 35 55 135 65 Useful measure;b 190 55 135 65 Extra metrics;t 180 165 Prefer simple consistent definitions",
+    "r 35 55 290 110;l 76 55 76 165;l 117 55 117 165;l 158 55 158 165;l 199 55 199 165;l 240 55 240 165;l 281 55 281 165;d 55 105 6;d 96 105 6;d 178 105 6;d 219 105 6;t 180 195 Weekly reading checkmarks and duration",
+    "b 35 55 135 65 Tracking helps;b 190 55 135 65 Tracking burdens;t 180 165 Simplify if measurement crowds out activity"
+  ],
+  "plus-personal-development-how-implementation-intentions-turn-goals-into-actions": [
+    "b 35 65 135 65 If situation X;a 170 97 190 97;b 190 65 135 65 Then action Y;t 180 165 Specific situation-action link",
+    "c 95 105 35;c 265 105 35;t 95 110 Observable;t 265 110 Controllable;t 180 195 Reliable cue and feasible action",
+    "c 85 105 35;r 230 65 75 80;l 240 85 295 85;l 240 105 295 105;l 240 125 295 125;a 120 105 220 105;t 180 195 Finish lunch → review five cards",
+    "p M180 45V90H85V145M180 90H275V145;t 180 25 Cue occurs?;t 85 165 Usual action;t 275 165 Fallback;t 180 195 Revise when cue is unreliable"
+  ],
+  "plus-personal-development-how-to-learn-from-a-failed-attempt": [
+    "r 35 55 130 110;r 195 55 130 110;t 100 105 Expected;t 260 105 Actual;t 180 195 Identify performance gap, not global self-judgment",
+    "b 35 55 135 65 Evidence-supported;b 190 55 135 65 Speculative cause;t 180 165 Test competing explanations",
+    "l 35 105 325 105;l 180 85 180 125;d 125 105 7;t 125 85 −3;t 180 85 0;t 235 85 +3;t 180 165 Repeated sign errors point to targeted practice",
+    "b 25 65 95 65 Change one factor;a 120 97 132 97;b 132 65 95 65 Repeat;a 227 97 239 97;b 239 65 95 65 Compare;t 180 195 External constraints may also explain failure"
+  ],
+  "plus-personal-development-designing-a-supportive-environment": [
+    "r 35 65 130 90;r 195 65 130 90;t 100 105 Desk;t 260 105 Phone;t 180 195 Physical and digital cues alter ease of action",
+    "l 35 175 325 175;r 65 135 90 40;r 205 65 90 110;t 110 125 Desired effort;t 250 55 Distraction effort;t 180 195 Reduce useful friction, increase competing friction",
+    "r 35 75 130 75;l 50 95 150 95;l 50 115 150 115;r 235 65 45 85;p M225 55L290 160;t 180 195 Prepare materials and silence nonessential notifications",
+    "b 35 55 135 65 Before change;b 190 55 135 65 After change;t 180 165 Compare actual behavior and burden"
+  ],
+  "plus-personal-development-how-to-distinguish-goals-from-systems": [
+    "b 35 55 135 65 Goal: result;b 190 55 135 65 System: repeated work;t 180 165 Distinguish destination from process",
+    "b 35 55 135 65 Finish course;b 190 55 135 65 Retrieve, speak, review;t 180 165 Goal and learning routine",
+    "l 35 175 325 175;p M35 145L325 55;p M35 130H325;t 180 25 Outcome trend vs routine adherence;t 180 195 Consistency alone does not guarantee improvement",
+    "b 35 45 135 55 Strategy;b 190 45 135 55 Resources;b 35 120 290 55 Goal scope;t 180 205 Revise system when results stall"
+  ],
+  "plus-personal-development-building-a-sustainable-learning-routine": [
+    "r 35 75 290 50;l 150 75 150 125;l 235 75 235 125;t 92 105 Obligations;t 192 105 Learning;t 280 105 Rest;t 180 195 Allocate realistic attention and recovery",
+    "l 35 105 325 105;d 65 105 6;d 145 105 6;d 225 105 6;d 305 105 6;t 180 65 Spaced retrieval;t 180 165 Review earlier concepts at intervals",
+    "r 35 65 60 75;r 110 65 60 75;r 185 65 60 75;r 260 65 60 75;t 65 105 25m;t 140 105 25m;t 215 105 25m;t 290 105 25m;t 180 195 Four distributed sessions rather than one exhausting block",
+    "r 35 75 290 50;l 107 75 107 125;l 180 75 180 125;l 252 75 252 125;d 71 100 6;d 143 100 6;c 216 100 8;d 288 100 6;t 180 195 Missed session? Adjust workload and resume"
+  ],
+  "plus-personal-development-understanding-perfectionistic-standards": [
+    "l 35 175 325 175;p M35 160Q125 55 325 45;t 180 25 Quality gains diminish;t 180 195 Rigid checking may cost time without benefit",
+    "r 35 55 290 110;r 75 75 210 70;t 180 110 Essential criteria;t 180 195 Optional refinements lie outside minimum",
+    "r 35 55 130 110;r 195 55 130 110;l 50 85 150 85;l 50 115 150 115;l 210 85 310 85;l 210 115 310 115;t 100 185 Accurate note;t 260 185 Restyled note;t 180 205 Routine note needs clarity, not endless formatting",
+    "b 35 55 135 65 Define sufficient;a 170 87 190 87;b 190 55 135 65 Stop and evaluate;t 180 165 Test completion criteria, seek help for persistent distress"
+  ],
+  "plus-personal-development-how-to-seek-useful-feedback": [
+    "b 35 55 135 65 General opinion;b 190 55 135 65 Specific criterion;t 180 165 Ask observable questions",
+    "b 35 45 135 55 Example;b 190 45 135 55 Standard;b 35 120 290 55 Possible alternative;t 180 205 Separate preference from demonstrated problem",
+    "r 55 35 250 145;l 75 75 285 75;l 75 105 285 105;f 75 125 210 20;t 180 60 Recommendation;t 180 205 Ask which paragraph fails to connect evidence",
+    "b 25 65 95 65 Compare;a 120 97 132 97;b 132 65 95 65 Prioritize;a 227 97 239 97;b 239 65 95 65 Test;t 180 195 Feedback is information, not automatic instruction"
+  ],
+  "plus-personal-development-understanding-delayed-rewards": [
+    "l 35 175 325 175;p M35 45Q100 130 325 160;t 180 25 Present subjective value;t 180 195 Delayed rewards often feel less valuable",
+    "c 95 105 35;c 265 105 35;t 95 110 Now certain;t 265 110 Later risky;t 180 195 Waiting has costs and uncertainty",
+    "b 35 55 135 65 Small certain reward;b 190 55 135 65 Larger uncertain reward;t 180 165 Immediate needs can justify earlier choice",
+    "l 35 105 325 105;d 65 105 6;d 145 105 6;d 225 105 6;d 305 105 6;t 65 85 Start;t 145 85 Progress;t 225 85 Progress;t 305 85 Goal;t 180 175 Intermediate milestones make delay concrete"
+  ],
+  "plus-personal-development-making-decisions-under-uncertainty": [
+    "c 180 55 25;t 180 60 Choice;p M180 80V100H65V145M180 100V145M180 100H295V145;t 65 165 A;t 180 165 B;t 295 165 Defer;t 180 195 Include feasible alternatives",
+    "b 35 55 135 65 Useful unknown;b 190 55 135 65 Cost to resolve;t 180 165 Seek facts likely to change choice",
+    "r 35 65 130 85;r 195 65 130 85;t 100 105 Paid course;t 260 105 Free practice;t 180 195 Verify job requirements before paying",
+    "r 35 55 290 110;l 130 55 130 165;l 230 55 230 165;t 82 105 Low case;t 180 105 Base case;t 277 105 High case;t 180 195 Favor options acceptable across scenarios"
+  ],
+  "plus-personal-development-how-to-maintain-personal-commitments": [
+    "l 35 105 325 105;d 65 105 6;d 145 105 6;d 225 105 6;d 305 105 6;t 180 65 Chosen repeated action;t 180 175 Commitment persists through changing conditions",
+    "r 35 75 290 50;l 180 75 180 125;t 107 105 Minimum action;t 252 105 Available capacity;t 180 195 Define cues and realistic resources",
+    "b 35 55 135 65 Travel disrupts session;b 190 55 135 65 Short alternative;t 180 165 Return to normal routine when feasible",
+    "l 35 105 325 105;d 65 105 6;d 180 105 6;d 295 105 6;t 65 85 Commit;t 180 85 Review;t 295 85 Adjust or end;t 180 175 Renegotiation can be responsible"
+  ]
+};
+window.LumenSlideArtBatch62Render=function(c,cls='cover',step=-1){return window.LumenSlideArtSharedRender(window.LumenSlideArtBatch62,c,cls,step);};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch62Render(c,cls,step)||prior(c,cls,step);};})();
