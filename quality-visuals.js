@@ -1922,3 +1922,143 @@ window.LumenSlideArtBatch10Render=function renderer(c,cls="cover",step=-1){
  const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch10Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* Earth Science: dedicated slide artwork, batch 11. */
+window.LumenSlideArtBatch11={
+  "plate-tectonics": [
+    "r 25 55 310 20;r 25 75 310 45;r 25 120 310 55;l 140 55 140 120;l 245 55 245 120;a 80 45 130 45;a 180 45 230 45;t 180 69 Crust;t 180 105 Rigid upper mantle;t 180 150 Asthenosphere;t 180 195 Moving lithosphere over weaker solid mantle",
+    "p M25 90H75L95 65L115 90H160M200 85H335M235 85L300 165;l 25 120 160 120;a 95 115 45 115;a 95 115 145 115;a 210 60 260 60;a 335 60 285 60;t 95 185 Divergent ridge;t 270 185 Convergent subduction",
+    "r 35 50 290 120;l 180 50 180 170;a 145 145 145 75;a 215 75 215 145;p M35 110H180M180 130H325;t 180 195 Transform: horizontal sliding",
+    "b 25 65 145 55 5 cm/year;b 190 65 145 55 1 million years;t 180 150 5,000,000 cm;t 180 195 50 km of plate travel"
+  ],
+  "water-cycle": [
+    "r 25 135 310 40;c 70 50 22;a 90 70 120 120;a 120 135 120 80;p M235 135V75M235 90L210 65M235 100L260 75;a 250 65 250 35;t 120 65 Evaporation;t 250 25 Transpiration;t 180 195 Solar energy drives water vapor",
+    "p M35 85Q40 40 90 60Q120 15 160 65Q215 25 245 65Q315 50 325 85Z;a 90 165 90 90;d 210 120 4;d 240 140 4;d 270 155 4;t 180 35 Condensation / ice growth;t 90 185 Rising moist air;t 260 185 Precipitation",
+    "p M25 85L100 50L180 100L260 70L335 95;l 25 155 335 155;a 100 60 180 100;a 180 100 270 95;a 210 105 210 155;a 210 160 290 160;t 105 120 Runoff;t 250 145 Infiltration;t 180 195 Groundwater can feed streams",
+    "r 35 60 290 40;f 35 130 116 35;r 151 130 130.5 35;f 281.5 130 43.5 35;t 180 50 Input 100 mm;t 93 152 ET 40;t 216 152 Flow 45;t 303 152 15;t 180 200 Storage gain = 15 mm"
+  ],
+  "weather-fronts": [
+    "p M35 175H325M80 175L240 45;a 65 145 125 145;a 275 110 205 110;t 95 110 Cold air;t 265 75 Warm air;t 180 195 Sloping boundary, not a wall",
+    "p M25 175H335M55 60L180 175;a 35 145 150 145;a 185 155 120 75;p M95 70Q130 30 160 65Q185 40 215 75;t 80 190 Cold wedge;t 255 145 Warm air rises;t 180 205 Showers possible if moist and unstable",
+    "p M25 175H335M65 175L315 70;a 285 140 285 80;a 185 130 130 95;p M105 80Q150 40 190 75Q245 30 300 65;t 110 145 Cold air;t 255 45 Warm air above;t 180 205 Precipitation may precede surface front",
+    "l 35 65 325 65;p M80 65L95 85L110 65M155 65L170 85L185 65M230 65L245 85L260 65;l 35 145 325 145;p M80 145Q95 110 110 145M155 145Q170 110 185 145M230 145Q245 110 260 145;t 180 45 Cold-front triangles;t 180 190 Warm-front semicircles"
+  ],
+  "volcanoes": [
+    "p M25 150L140 45L180 65L220 45L335 150Z;p M165 150V85L180 65L195 85V150;c 180 165 23;a 180 150 180 80;t 235 145 Magma;t 180 205 Lava reaches the surface",
+    "r 50 45 105 125;r 205 45 105 125;c 80 135 5;c 110 135 5;c 85 90 9;c 115 60 15;c 235 125 18;c 280 80 25;t 102 190 Rising magma;t 258 190 Expanding gas;t 180 25 Pressure drops upward",
+    "p M25 100L95 65L165 100L165 155H25Z;p M195 100L265 45L335 100V155H195Z;c 265 110 13;c 280 75 9;t 95 180 Runny basaltic;t 265 180 Viscous magma;t 180 205 Viscosity affects gas escape",
+    "b 25 45 145 50 Deformation;b 190 45 145 50 Earthquakes;b 25 120 145 50 Gas emissions;b 190 120 145 50 Heat;t 180 205 Combine signals, no exact countdown"
+  ],
+  "glaciers": [
+    "r 35 45 290 35;r 35 80 290 35;r 35 115 290 55;t 180 67 Snow;t 180 102 Firn;t 180 147 Dense glacial ice;a 180 20 180 45;t 180 195 Burial compacts snow",
+    "p M25 50L120 65L230 130L335 160M25 80L120 95L230 160L335 190;a 90 75 165 115;a 190 130 250 165;l 290 130 290 185;t 290 120 Earlier terminus;t 180 205 Ice still flows while margin retreats",
+    "p M25 50L75 130Q180 185 285 130L335 50;p M95 50L180 150L265 50;t 180 35 River V vs glacial U valley;t 180 200 Abrasion and quarrying reshape bedrock",
+    "r 35 60 130 100;r 195 60 130 100;c 55 90 8;c 115 135 14;c 140 80 4;c 80 125 4;l 195 90 325 90;l 195 125 325 125;t 100 185 Unsorted till;t 260 185 Sorted meltwater deposits"
+  ],
+  "minerals": [
+    "p M35 50L70 35L105 50L105 90L70 105L35 90Z;p M175 50L210 40L240 65L275 45L325 80L300 150L245 165L185 145Z;d 220 80 6;d 260 110 6;d 290 85 6;t 70 130 Mineral crystal;t 250 185 Rock: mixed materials;t 180 205 Granite: quartz, feldspar, mica",
+    "r 35 60 130 100;r 195 60 130 100;p M45 65L85 155M85 65L125 155M125 65L160 155;d 205 80 3;d 225 100 3;d 245 75 3;d 265 140 3;d 285 90 3;d 305 120 3;t 100 185 Slow cooling;t 260 185 Rapid cooling;t 180 205 Grain size differs",
+    "r 35 45 290 40;r 35 85 290 40;r 35 125 290 45;d 55 70 5;d 80 65 5;d 110 72 5;d 145 66 5;a 180 15 180 45;t 180 102 Compaction;t 180 150 Cemented rock;t 180 195 Burial and lithification",
+    "p M35 65L135 85L35 105L135 125L35 145M225 65Q270 20 315 65T315 145Q270 190 225 145Z;a 145 105 215 105;t 85 175 Existing rock;t 270 175 Recrystallized;t 180 205 Solid-state change, not melting"
+  ],
+  "earthquakes": [
+    "r 35 45 290 130;l 180 45 180 175;p M35 90Q150 90 180 70Q210 90 325 90M35 135Q150 135 180 115Q210 135 325 135;a 145 150 145 70;a 215 70 215 150;t 180 195 Locked fault stores elastic strain",
+    "l 30 65 330 65;l 30 145 330 145;d 50 65 4;d 75 65 4;d 82 65 4;d 89 65 4;d 120 65 4;d 150 65 4;p M30 145Q55 100 80 145T130 145T180 145T230 145T280 145T330 145;a 240 35 320 35;t 180 85 P: compression parallel;t 180 190 S: shear perpendicular",
+    "d 180 100 7;c 180 100 35;c 180 100 70;d 205 85 5;d 285 125 5;t 180 25 Single earthquake magnitude;t 210 60 Stronger nearby;t 285 150 Different intensity;t 180 200 Local shaking varies",
+    "r 55 165 75 2;r 145 165 75 5;f 235 25 75 145;t 92 155 M4;t 182 155 M5;t 272 20 M6;t 180 195 M6 vs M4 ≈1,000× energy"
+  ],
+  "depth-earth-science-how-rivers-shape-landscapes": [
+    "p M25 45L100 75L180 110L260 145L335 175;a 65 65 155 105;d 110 90 5;d 175 125 5;d 245 150 5;t 180 30 Flow carries abrasive grains;t 180 205 Slope and discharge affect erosion",
+    "r 25 70 310 105;d 80 100 3;d 120 110 3;d 170 85 3;d 225 120 3;c 75 155 8;c 150 160 8;c 240 155 8;a 90 155 130 155;t 180 50 Suspended fine sediment;t 180 195 Coarse grains roll or hop on bed",
+    "p M35 40Q300 30 255 105Q210 175 35 160M35 70Q250 60 225 105Q190 145 35 130;a 250 65 280 65;a 205 125 180 125;t 280 50 Outer erosion;t 105 110 Inner deposition;t 180 205 Meander migrates",
+    "p M160 30L160 100L75 175M180 30L180 100L285 175M170 100L170 175M170 100L115 175M170 100L230 175;l 25 175 335 175;t 180 20 River;t 180 195 Delta grows when supply exceeds removal"
+  ],
+  "depth-earth-science-how-sedimentary-layers-tell-time": [
+    "r 35 45 290 42;r 35 87 290 42;r 35 129 290 42;t 180 67 Younger;t 180 110 Intermediate;t 180 151 Older;t 180 200 Undisturbed beds: relative order",
+    "r 35 45 290 40;r 35 85 290 45;r 35 130 290 45;p M155 175L215 85L235 85L175 175Z;t 180 35 Younger cover;t 260 150 Older beds;t 180 200 Dike younger than beds it cuts",
+    "p M35 105L325 105L325 175H35ZM35 135L125 105M65 175L275 105M205 175L325 135;r 35 45 290 60;t 180 75 Younger horizontal beds;t 180 200 Tilt, erosion, renewed deposition",
+    "r 25 55 125 110;r 210 55 125 110;l 25 105 150 105;l 210 105 335 105;d 90 105 7;d 270 105 7;l 90 105 270 105;t 180 45 Same marker fossil/ash;t 180 195 Correlate distant layers"
+  ],
+  "depth-earth-science-why-groundwater-matters": [
+    "c 55 70 22;c 105 70 22;c 80 115 22;c 130 115 22;d 80 90 5;d 105 95 5;a 60 145 130 145;d 230 65 5;d 250 65 5;d 270 65 5;d 290 65 5;d 230 85 5;d 250 85 5;d 270 85 5;d 290 85 5;t 95 175 Larger connected pores;t 260 120 Small pores;t 180 205 Porosity ≠ permeability",
+    "r 35 65 290 100;l 35 75 325 145;a 95 110 240 135;t 95 55 Higher head;t 275 55 Lower head;t 180 195 Q = KA Δh/L",
+    "r 35 65 290 110;p M35 85Q135 85 180 155Q225 85 325 85;l 180 35 180 175;a 180 140 180 30;t 180 25 Pumping well;t 180 200 Cone of depression",
+    "b 25 55 145 55 1 km² × 1 m;b 190 55 145 55 Specific yield .20;t 180 150 1,000,000 × 1 × .20;t 180 195 200,000 m³ drainable storage loss"
+  ],
+  "plus-earth-science-how-rocks-record-past-environments": [
+    "c 45 90 10;c 80 90 10;c 115 90 10;c 150 90 10;p M210 60L230 80L215 115L195 100ZM255 50L300 60L310 110L265 120ZM315 130L330 145L315 160Z;t 100 150 Well sorted;t 265 180 Mixed sizes/shapes;t 180 205 Transport leaves grain clues",
+    "p M25 100H335M25 135H335M25 170H335M45 135L95 100M100 135L150 100M155 135L205 100M210 135L260 100M265 135L315 100;p M25 70L55 55L85 70L115 55L145 70L175 55L205 70L235 55L265 70L295 55L325 70;t 180 35 Ripples above cross-beds;t 180 200 Migrating currents build inclined beds",
+    "p M45 110Q70 45 95 110Z;p M60 105L70 70L80 105;c 230 95 35;d 230 95 8;t 70 145 Shell fossil;t 230 145 Mineral evidence;t 180 195 Independent clues to deposition",
+    "p M25 125H335M25 160H335M25 195H335;p M35 115L50 105L65 115L80 105L95 115L110 105L125 115M200 130Q215 105 230 130Z;p M250 160L265 145L280 160L295 145L310 160;t 180 35 Ripples + marine shells + mud cracks;t 180 75 Periodically exposed shallow coast?;t 180 215 Check transport and bed context"
+  ],
+  "plus-earth-science-why-mountains-rise-and-wear-down": [
+    "p M25 120L130 110L180 40L230 110L335 120L335 165H25Z;a 45 130 130 130;a 315 130 230 130;t 180 25 Collision;t 180 195 Shortens and thickens crust",
+    "p M50 65L125 45L185 80L160 150L70 160Z;p M125 45L115 85L145 110L105 160;a 115 20 115 85;t 230 75 Water / roots;t 230 110 Chemical alteration;t 180 200 Weathering weakens rock in place",
+    "p M25 155L85 55L145 125L200 45L275 130L335 155;a 145 120 180 170;a 200 45 200 15;t 95 190 Erosion removes material;t 270 30 Isostatic uplift;t 180 205 Both can occur together",
+    "a 115 150 115 50;a 245 50 245 120;t 115 35 +1 mm/yr;t 245 140 −0.7 mm/yr;t 180 180 Net surface rise;t 180 205 0.3 mm/year"
+  ],
+  "plus-earth-science-how-caves-form-in-limestone": [
+    "p M25 75H335M25 110H335M25 145H335;a 95 35 95 110;a 235 35 235 110;t 180 25 Rain + soil CO₂;t 180 95 Carbonic acid in water;t 180 195 Calcite dissolves",
+    "p M25 45H335V175H25ZM160 45L175 85L155 125L180 175M200 45L185 85L205 125L180 175;a 180 25 180 80;t 90 110 Limestone;t 270 110 Widened joint;t 180 205 Dissolved material carried away",
+    "r 25 45 310 130;p M25 125Q80 85 135 125T245 125T335 125;l 25 150 335 150;t 180 70 Air-filled passage;t 180 170 Lower water table;t 180 200 Former saturated conduit",
+    "p M35 45H325M35 175H325M100 45L125 115L145 45M220 175L245 95L265 175;d 125 130 5;d 245 80 5;t 125 30 Stalactite;t 245 195 Stalagmite;t 180 215 Calcite precipitates as CO₂ escapes"
+  ],
+  "plus-earth-science-what-a-geological-fault-is": [
+    "p M35 55H325V165H35ZM140 55L220 165M35 100H173M190 120H325;t 100 85 Bed offset;t 255 140 Displacement;t 180 195 Fault = fracture with motion",
+    "p M25 60H145L225 170H25ZM155 80H335V170H235Z;a 250 65 250 120;t 90 45 Footwall;t 260 45 Hanging wall;t 180 205 Hanging wall moves down",
+    "p M25 90H155L215 170H25ZM145 55H335V170H225Z;a 255 130 255 75;t 85 75 Footwall;t 270 40 Hanging wall;t 180 205 Hanging wall moves up",
+    "a 80 165 170 165;a 170 165 170 45;a 80 165 170 45;t 125 185 3 m strike;t 200 105 4 m dip;t 115 80 5 m;t 180 210 Perpendicular slip components"
+  ],
+  "plus-earth-science-how-sand-dunes-move": [
+    "l 25 155 335 155;d 65 150 4;d 105 150 4;d 145 150 4;d 185 150 4;a 35 95 280 95;a 105 145 145 120;t 180 70 Wind shear;t 180 195 Threshold depends on moisture and grain size",
+    "l 25 155 335 155;p M45 150Q80 75 115 150Q150 75 185 150Q220 75 255 150;d 115 150 5;d 185 150 5;a 255 150 290 150;t 180 45 Saltation hops;t 180 195 Impact moves larger grains by creep",
+    "p M25 170L230 65L280 170H335;a 80 135 200 78;a 240 85 270 155;t 130 105 Windward;t 280 65 Slip face;t 180 205 Sand transfer migrates dune downwind",
+    "p M35 155L100 100L135 155M180 155L280 45L335 155;a 100 75 160 75;a 280 30 310 30;t 95 180 Small dune;t 265 180 Large dune;t 180 205 Similar flux: smaller often faster"
+  ],
+  "plus-earth-science-why-coastlines-change": [
+    "p M25 130H190L220 50H335M25 145H190L210 165H335;p M25 100Q45 75 65 100T105 100T145 100;a 145 100 205 100;t 275 40 Cliff;t 180 195 Breaking waves move sand and erode rock",
+    "p M25 130H335;l 180 130 180 60;a 55 45 105 105;a 115 45 165 105;a 215 45 265 105;a 65 150 160 150;a 195 150 290 150;t 180 35 Oblique waves;t 180 195 Alongshore transport, structure traps sand",
+    "p M25 130H130L185 65L240 130H335;p M25 110Q80 85 135 110T245 110;a 110 105 230 75;t 185 50 Dune;t 280 150 Overwash;t 180 200 Storms may erode or deposit",
+    "r 45 65 216 30;f 45 130 270 30;t 153 55 Gain 12,000 m³/yr;t 180 120 Loss 15,000 m³/yr;t 180 195 Net −3,000 m³/year"
+  ],
+  "plus-earth-science-how-soil-forms-from-rock": [
+    "r 35 55 130 50;r 35 105 130 70;r 195 55 130 50;r 195 105 130 70;d 225 125 5;d 245 145 5;d 275 120 5;t 100 185 Weathered bedrock;t 260 185 Transported sediment;t 180 35 Parent material",
+    "p M35 65L115 45L180 80L155 170L65 170Z;p M115 45L100 95L135 130L105 170;a 100 20 100 95;t 265 70 Physical cracks;t 265 110 Chemical changes;t 180 200 Water moves solutes and particles",
+    "p M180 25V95L120 145M180 95L240 145M180 65L220 45M180 65L140 45;r 25 105 310 70;d 75 125 5;d 105 150 5;d 270 130 5;d 290 155 5;t 180 200 Litter, roots, microbes form aggregates",
+    "r 75 35 160 35;r 75 70 160 30;r 75 100 160 40;r 75 140 160 40;t 155 57 A;t 155 90 E;t 155 125 B;t 155 165 C;a 260 80 260 120;t 285 95 Leach;t 285 138 Accumulate;t 180 205 Idealized soil horizons"
+  ],
+  "plus-earth-science-how-radiometric-dating-works": [
+    "l 35 175 325 175;p M35 45Q105 110 180 145T325 165;l 130 175 130 110;t 130 195 t½;t 180 30 Parent isotope decays;t 180 210 N=N₀e^(−λt)",
+    "r 35 65 290 30;r 35 105 145 30;r 35 145 72.5 30;t 180 55 Initial;t 220 125 ½ remains;t 180 165 ¼ remains;t 180 200 2 × 1.25 Ga = 2.5 Ga",
+    "l 35 110 325 110;p M35 55L125 145L205 65L285 155;l 35 115 325 115;t 180 30 Heating may reset clock;t 180 195 Retention begins below closure temperature",
+    "l 35 175 325 175;l 35 175 35 35;d 75 135 5;d 135 115 5;d 195 95 5;d 255 75 5;p M35 148L325 51;t 115 145 Initial intercept;t 180 200 Isochron slope constrains age"
+  ],
+  "plus-earth-science-understanding-metamorphic-rocks": [
+    "p M35 55L130 40L160 95L130 155L45 165Z;p M215 55L310 40L335 95L305 155L220 165Z;a 160 100 215 100;l 235 75 305 75;l 235 100 305 100;l 235 125 305 125;t 100 185 Existing rock;t 275 185 New texture;t 180 205 Solid-state recrystallization",
+    "r 100 65 160 95;a 180 25 180 65;a 180 195 180 160;l 120 90 240 90;l 120 110 240 110;l 120 130 240 130;t 180 15 Directed stress;t 180 215 Preferred mineral orientation",
+    "c 95 100 45;c 265 100 45;p M80 85L110 85L120 110L95 130L70 110Z;p M250 65L265 135L280 65;t 95 165 Garnet;t 265 165 Sillimanite;t 180 205 Grade depends on composition and P–T",
+    "c 180 100 65;c 180 100 40;d 165 85 6;d 195 110 6;a 95 50 130 75;t 75 40 Rim;t 180 105 Inclusion;t 180 195 Early inclusions and late rims record history"
+  ],
+  "plus-earth-science-what-seismic-waves-reveal-about-earth": [
+    "l 35 65 325 65;l 35 145 325 145;d 55 65 4;d 85 65 4;d 92 65 4;d 99 65 4;d 135 65 4;p M35 145Q60 100 85 145T135 145T185 145T235 145T285 145T335 145;t 180 45 P: √((K+4G/3)/ρ);t 180 195 S: √(G/ρ), zero in liquid",
+    "r 35 65 290 45;r 35 110 290 65;p M55 45L135 110L255 160M135 110L235 45;d 135 110 5;t 180 30 Reflection + refraction;t 180 195 Velocity contrasts bend paths",
+    "c 180 105 85;c 180 105 42;c 180 105 20;p M110 55Q85 105 110 155M250 55Q275 105 250 155;p M130 40L150 70L145 130L130 170;t 180 105 Liquid outer core;t 180 205 S blocked, P strongly refracted",
+    "c 180 100 75;l 105 70 255 130;l 105 130 255 70;l 180 25 180 175;l 130 40 230 160;c 195 110 18;t 180 15 Intersecting travel paths;t 180 195 Velocity anomalies require interpretation"
+  ]
+};
+window.LumenSlideArtBatch11Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch11;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch11Render(c,cls,step)||prior(c,cls,step);};})();
