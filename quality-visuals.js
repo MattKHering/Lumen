@@ -1782,3 +1782,143 @@ window.LumenSlideArtBatch09Render=function renderer(c,cls="cover",step=-1){
  const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch09Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* Astronomy: dedicated slide artwork, batch 10. */
+window.LumenSlideArtBatch10={
+  "space": [
+    "c 180 105 23;p M180 30A105 75 0 1 1 179.9 30;d 285 105 8;a 285 105 285 45;a 285 105 207 105;t 270 35 Sideways v;t 235 95 Gravity;t 180 200 Orbit is continuous free fall",
+    "c 180 105 20;c 180 105 80;d 260 105 7;a 260 105 200 105;a 260 105 260 45;t 230 90 r;t 275 40 v;t 180 195 v²/r = GM/r²",
+    "c 70 100 12;c 70 100 24;c 250 100 12;c 250 100 96;d 94 100 5;d 346 100 5;t 70 145 r;t 250 205 4r;t 180 25 Speed ½, period 8×",
+    "p M35 105A145 75 0 1 0 325 105A145 75 0 1 0 35 105;c 75 105 13;d 35 105 7;d 325 105 7;a 35 105 35 45;a 325 105 325 135;t 75 40 Faster near Sun;t 270 160 Slower far away;t 180 205 Stable elliptical path"
+  ],
+  "stars": [
+    "c 60 95 35;c 45 80 15;c 80 110 16;a 95 95 140 95;c 180 95 30;a 210 95 255 95;c 290 95 28;t 60 150 Cloud;t 180 150 Protostar;t 290 150 Fusion;t 180 195 Gravity contracts dense gas",
+    "c 180 105 65;c 180 105 24;a 180 25 180 75;a 180 185 180 135;a 100 105 150 105;a 260 105 210 105;a 180 85 180 45;a 180 125 180 165;t 180 109 Core;t 180 205 Inward gravity and pressure gradient balance",
+    "c 95 95 22;c 265 95 55;t 95 145 Sun;t 265 165 10 solar masses;t 180 35 Higher mass, faster fuel use;t 180 200 Much shorter main-sequence lifetime",
+    "c 180 35 15;a 180 50 80 90;a 180 50 280 90;c 80 105 23;c 280 105 35;a 80 128 80 160;a 280 140 280 160;c 80 175 10;d 280 175 12;t 80 205 White dwarf;t 280 205 Neutron star / black hole"
+  ],
+  "black-holes": [
+    "c 180 105 60;d 180 105 45;a 235 65 310 25;a 145 105 175 105;t 180 35 Event horizon;t 180 200 No outward signal from inside",
+    "c 90 100 15;c 270 100 45;t 90 140 1 M☉ ~3 km;t 270 165 3 M☉ ~9 km;t 180 35 rₛ = 2GM/c²;t 180 195 Nonrotating uncharged case",
+    "c 180 105 60;d 180 105 48;l 180 105 240 105;t 210 90 ~30 km;t 180 28 Ten solar masses;t 180 195 Far field depends on mass",
+    "d 180 95 25;p M85 95A95 45 0 1 0 275 95A95 45 0 1 0 85 95;d 265 80 8;p M35 160Q55 135 75 160T115 160T155 160;t 180 25 Accreting gas / orbiting stars;t 180 200 Waves and imaging give evidence"
+  ],
+  "eclipses": [
+    "c 45 65 25;c 160 65 10;c 295 65 24;p M70 50L160 58L295 63M70 80L160 72L295 67;c 45 150 25;c 180 150 24;c 300 150 10;p M70 130L180 126L325 145M70 170L180 174L325 155;t 180 25 Solar eclipse;t 180 210 Lunar eclipse",
+    "p M35 105H325M35 130L325 80;c 180 105 24;d 270 90 7;t 180 30 Orbital planes tilted ~5°;t 180 195 Most new/full Moons miss alignment",
+    "p M35 105H325M50 105A130 50 0 1 0 310 105A130 50 0 1 0 50 105;d 50 105 7;d 310 105 7;c 180 105 19;t 180 30 Nodes cross orbital plane;t 180 195 Sun near node enables eclipse season",
+    "c 65 85 30;p M125 65H200V105H125Z;l 162 65 162 105;a 95 85 125 85;b 235 65 100 40 Solar viewer;t 180 160 Certified viewer or indirect projection;t 180 195 Never use ordinary sunglasses"
+  ],
+  "depth-astronomy-how-telescopes-gather-light": [
+    "a 35 55 230 55;a 35 95 230 95;a 35 135 230 135;p M230 35Q300 95 230 155;p M230 55L150 95M230 135L150 95;d 150 95 5;t 180 195 Aperture collects photons and focuses light",
+    "c 95 105 30;c 265 105 60;t 95 155 D;t 265 185 2D;t 180 35 Area ∝ D²;t 180 205 Double diameter, quadruple area",
+    "c 95 100 32;c 265 100 64;t 95 150 10 cm;t 265 180 20 cm;t 180 30 Four times the light;t 180 205 Equal exposure and efficiency",
+    "c 95 95 25;c 265 95 10;c 290 95 10;t 95 140 Small aperture;t 265 140 Larger aperture;t 180 175 Angular resolution ∝ λ/D;t 180 205 Turbulence can blur images"
+  ],
+  "depth-astronomy-why-planets-have-seasons": [
+    "c 180 100 26;c 60 100 17;c 300 100 17;l 50 123 70 77;l 290 123 310 77;t 180 35 Axial tilt 23.4°;t 60 150 North toward Sun;t 300 150 North away;t 180 195 Axis keeps its orientation",
+    "l 35 155 165 155;l 195 155 325 155;a 80 35 80 155;a 105 35 105 155;a 195 75 275 155;a 220 75 300 155;l 80 160 105 160;l 275 160 300 160;t 95 185 High angle;t 265 185 Low angle;t 180 205 Lower angle spreads same energy",
+    "c 180 100 65;l 155 40 205 160;l 115 100 245 100;a 25 60 115 60;a 25 100 115 100;a 25 140 115 140;t 180 35 June: north toward Sun;t 180 185 North longer days, south shorter",
+    "c 165 100 22;p M35 100A145 55 0 1 0 325 100A145 55 0 1 0 35 100;d 35 100 7;d 325 100 7;t 45 180 January nearer;t 300 180 July farther;t 180 205 Distance cannot explain opposite seasons"
+  ],
+  "depth-astronomy-reading-starlight-through-spectra": [
+    "a 25 105 100 105;p M100 145L150 45L200 145Z;p M150 100L320 45M150 100L320 145;t 275 35 Short λ;t 275 165 Long λ;t 180 195 Spectrograph separates wavelength",
+    "r 35 65 290 25;r 35 135 290 25;l 85 65 85 90;l 155 65 155 90;l 240 65 240 90;l 85 135 85 160;l 155 135 155 160;l 240 135 240 160;t 180 55 Laboratory;t 180 125 Star;t 180 195 Matching lines identify species",
+    "l 35 85 325 85;l 35 145 325 145;l 160 60 160 105;l 220 120 220 165;a 160 110 220 110;t 160 50 500 nm;t 220 180 500.1 nm;t 180 205 Δλ/λ=.0002 → ~60 km/s",
+    "r 35 65 290 30;r 35 135 290 30;r 100 65 5 30;r 200 65 12 30;r 100 135 12 30;r 200 135 5 30;t 180 45 Different line strengths;t 180 195 Temperature, abundance and ionization matter"
+  ],
+  "depth-astronomy-how-galaxies-are-organized": [
+    "p M30 105A150 40 0 1 0 330 105A150 40 0 1 0 30 105;c 180 105 35;c 180 105 90;t 180 35 Extended halo;t 180 110 Bulge;t 275 150 Disk;t 180 205 Stars, gas, dust and dark matter",
+    "p M20 95Q75 35 120 95Q75 155 20 95M50 95Q75 65 100 95Q75 125 50 95;c 180 95 46;p M245 70L275 45L325 80L305 130L265 140L250 105Z;t 70 165 Spiral;t 180 165 Elliptical;t 285 165 Irregular",
+    "p M35 110Q120 20 220 100T325 105M35 140Q135 55 220 130T325 135;d 90 80 5;d 145 75 5;d 235 125 5;d 280 140 5;t 180 35 Young hot stars trace spiral arms;t 180 195 Redder regions may be older or dusty",
+    "c 65 60 18;c 95 90 18;c 65 120 18;c 270 70 18;c 300 100 18;c 270 130 18;p M95 90Q180 45 270 70M65 120Q180 170 270 130;t 180 195 Galaxy groups linked by filaments"
+  ],
+  "depth-astronomy-how-astronomers-measure-distance": [
+    "c 65 160 8;c 295 160 8;c 180 160 12;d 180 45 6;l 65 160 180 45;l 295 160 180 45;l 180 45 180 160;t 65 185 Earth A;t 295 185 Earth B;t 180 28 Nearby star;t 180 205 Parallax uses Earth's orbital baseline",
+    "b 25 65 145 55 p = .05 arcsec;b 190 65 145 55 d = 1/p;t 180 155 20 parsecs;t 180 195 About 65 light-years",
+    "c 60 105 12;c 60 105 45;c 60 105 90;d 150 105 6;d 240 105 6;t 150 130 r;t 240 130 2r;t 180 35 Known luminosity;t 180 195 Flux falls as 1/r²",
+    "r 35 150 95 25;r 95 115 115 25;r 175 80 130 25;t 82 145 Parallax;t 152 110 Variable stars;t 240 75 Supernovae;t 180 195 Overlapping distance calibrations"
+  ],
+  "depth-astronomy-what-exoplanets-reveal": [
+    "c 180 85 48;d 180 85 12;l 35 180 325 180;p M35 155H115V170H245V155H325;t 180 30 Transit blocks star area;t 180 205 Depth ≈ (Rp/R★)²",
+    "c 180 105 75;d 180 105 7.5;t 180 20 1% transit depth;t 180 195 Rp/R★ = √.01 = .1",
+    "c 180 100 45;d 185 100 6;p M40 100A140 65 0 1 0 320 100A140 65 0 1 0 40 100;d 320 100 9;t 180 35 Common center of mass;t 180 195 Stellar Doppler wobble",
+    "c 60 105 20;c 60 105 55;c 60 105 90;d 150 105 7;b 205 55 130 45 Atmosphere;b 205 125 130 45 Reflectivity;t 180 205 Habitable zone ≠ proof of life"
+  ],
+  "plus-astronomy-how-craters-form": [
+    "l 25 145 335 145;d 140 35 12;a 140 47 180 135;p M180 145Q115 125 85 150M180 145Q245 125 275 150;t 180 195 Shock compresses, heats and fractures rock",
+    "p M25 100H100Q180 220 260 100H335;a 115 115 60 55;a 245 115 300 55;d 55 50 5;d 305 50 5;t 180 195 Bowl excavated, ejecta beyond rim",
+    "r 65 135 85 35;f 215 30 85 140;t 107 125 E;t 257 20 4E;t 107 190 v;t 257 190 2v;t 180 210 Same mass: E ∝ v²",
+    "p M25 65H45Q95 155 145 65H165M190 65H205L225 100L245 120L265 90L285 120L305 100L325 65H340;t 95 165 Simple bowl;t 265 165 Terraces + peak;t 180 205 Large cavities can collapse"
+  ],
+  "plus-astronomy-why-the-moon-has-phases": [
+    "c 70 100 30;c 265 100 55;p M265 45A55 55 0 0 0 265 155Z;a 105 75 210 75;a 105 100 210 100;a 105 125 210 125;t 70 150 Sun;t 265 175 Lit half faces Sun;t 180 205 Viewed fraction defines phase",
+    "c 180 105 21;c 65 105 16;c 180 35 16;c 295 105 16;c 180 175 16;t 180 109 Earth;t 65 140 New;t 180 20 Quarter;t 295 140 Full;t 180 205 Quarter;t 35 105 Sun →",
+    "l 35 110 325 110;d 35 110 6;d 107 110 6;d 180 110 6;d 252 110 6;d 325 110 6;t 35 85 New;t 107 85 First Q;t 180 85 Full;t 252 85 Third Q;t 325 85 New;t 180 175 Cycle ≈29.5 days",
+    "c 60 90 24;c 180 90 21;c 300 120 12;p M84 70L180 69L325 90M84 110L180 111L325 90;t 180 160 Ordinary full Moon misses shadow;t 180 195 Eclipse requires special alignment"
+  ],
+  "plus-astronomy-how-comets-develop-tails": [
+    "c 65 100 25;d 250 100 20;c 250 100 45;a 90 80 205 80;a 90 120 205 120;d 290 80 4;d 295 115 4;t 65 145 Sun;t 250 160 Coma;t 180 200 Sublimating ice releases gas and dust",
+    "c 65 100 25;d 180 100 10;p M180 90Q250 60 335 105M180 110Q250 125 335 170;t 65 145 Sun;t 275 55 Curved dust tail;t 180 200 Dust retains orbital motion",
+    "c 65 105 25;d 180 105 10;p M180 100L335 85M180 110L335 125;a 95 105 160 105;t 180 35 Solar wind;t 280 70 Ion tail;t 180 195 Charged particles swept away from Sun",
+    "c 60 105 25;d 180 105 10;p M180 100L335 90M180 110L335 120;a 180 145 280 145;t 230 168 Motion outward;t 180 195 Tail can point ahead of motion"
+  ],
+  "plus-astronomy-what-a-supernova-leaves-behind": [
+    "c 180 105 65;c 180 105 23;a 100 105 153 105;a 260 105 207 105;a 180 25 180 82;a 180 185 180 128;t 180 109 Core;t 180 205 Iron-rich core collapses",
+    "c 90 100 55;d 90 100 8;c 270 100 55;d 270 100 14;t 90 170 Neutron star;t 270 170 Black hole;t 180 205 Compact survivor distinct from ejecta",
+    "d 180 105 9;c 180 105 55;c 180 105 85;a 180 50 180 20;a 235 105 270 105;a 125 105 90 105;t 180 205 Expanding shocks heat gas and accelerate particles",
+    "c 90 100 50;d 90 100 10;c 270 100 50;t 90 170 Core collapse;t 270 170 Normal Type Ia;t 180 195 Type Ia generally no compact survivor"
+  ],
+  "plus-astronomy-how-white-dwarfs-cool": [
+    "c 180 105 50;c 180 105 32;a 180 20 180 55;a 260 105 230 105;a 100 105 130 105;t 180 109 C/O core;t 180 195 Electron degeneracy supports remnant",
+    "c 180 105 45;a 180 60 180 25;a 225 105 280 105;a 135 105 80 105;a 180 150 180 185;t 180 109 Stored heat;t 180 205 L = 4πR²σT⁴",
+    "r 65 25 85 144;f 215 160 85 9;t 107 20 16L;t 257 150 L;t 107 190 10,000 K;t 257 190 5,000 K;t 180 210 Equal radii",
+    "l 35 175 325 175;p M35 40Q100 100 150 120H215Q275 145 325 165;t 180 100 Crystallization delay;t 180 195 Cooling time + progenitor lifetime"
+  ],
+  "plus-astronomy-what-pulsars-reveal": [
+    "c 180 105 30;l 180 25 180 185;p M180 105L60 55L75 85ZM180 105L300 155L285 125Z;a 225 65 255 105;t 180 20 Spin axis;t 180 205 Beam crossing produces pulse",
+    "l 35 165 325 165;p M35 165H55V55H65V165H145V55H155V165H235V55H245V165H325;l 60 40 150 40;t 105 30 P=.02 s;t 180 195 1/P = 50 rotations/s",
+    "l 35 175 325 175;p M35 155L325 65;t 180 35 Period increases;t 180 200 Spin-down loses rotational energy",
+    "l 35 100 325 100;d 65 100 5;d 125 95 5;d 185 110 5;d 245 105 5;d 305 90 5;t 180 70 Predicted arrival time;t 180 160 Timing residuals after corrections;t 180 195 Companions or gravitational waves"
+  ],
+  "plus-astronomy-how-a-planet-s-atmosphere-is-studied": [
+    "c 180 100 75;c 180 100 30;d 180 100 25;a 95 100 145 100;t 180 20 Starlight;t 180 195 Atmosphere adds wavelength-dependent blocking",
+    "c 80 105 55;d 80 105 48;l 128 105 135 105;t 80 180 Thin annulus;b 175 65 160 55 Δδ≈2Rpz/R★²;t 255 150 2×10,000×100 / 10¹⁰;t 255 185 200 ppm",
+    "l 35 175 325 175;p M35 40Q90 110 180 145T325 170;p M35 40Q160 90 325 145;t 180 30 Density vs altitude;t 180 195 H=kT/(μg): hotter/lighter → larger H",
+    "l 35 170 325 170;p M35 140L70 135L100 85L130 135L170 130L210 65L240 135L280 125L325 135;p M35 145L70 140L100 95L130 140L170 135L210 72L240 140L280 132L325 140;t 180 35 Similar spectra, different models;t 180 195 More wavelengths help distinguish"
+  ],
+  "plus-astronomy-why-galaxies-rotate-unexpectedly": [
+    "p M35 100A145 45 0 1 0 325 100A145 45 0 1 0 35 100;d 180 100 10;d 70 100 6;d 290 100 6;a 70 100 70 60;a 290 100 290 140;t 180 195 Doppler velocities corrected for inclination",
+    "l 35 175 325 175;p M55 40Q100 105 325 150;t 180 30 Fixed enclosed mass;t 180 195 v ∝ r⁻¹ᐟ² (spherical model)",
+    "l 35 175 325 175;p M35 65H325;p M125 65Q180 100 285 97;d 125 65 5;d 285 65 5;t 125 50 10 kpc;t 285 50 20 kpc;t 180 190 Flat 200 km/s → double mass;t 180 208 Fixed mass predicts ~141 km/s",
+    "l 35 175 325 175;p M35 165Q90 65 145 65H325;p M35 165Q90 65 145 65Q225 115 325 155;t 245 55 Observed;t 260 145 Visible matter;t 180 200 Additional gravitating mass"
+  ],
+  "plus-astronomy-how-gravitational-lensing-works": [
+    "d 35 105 7;c 180 105 30;d 325 105 7;p M35 105Q130 25 180 65T325 105M35 105Q130 185 180 145T325 105;t 35 145 Source;t 180 40 Lens mass;t 325 145 Observer;t 180 195 Mass redirects light",
+    "c 180 105 65;d 180 105 15;c 180 105 50;t 180 25 Exact alignment;t 180 195 Einstein ring radius θE",
+    "c 90 100 25;c 270 100 50;d 90 100 6;d 270 100 12;t 90 150 M;t 270 170 4M;t 180 30 Ring radius doubles;t 180 205 θE ∝ √M for fixed distances",
+    "c 180 105 30;p M100 50Q50 105 100 160M260 50Q310 105 260 160;p M35 35L55 45M305 35L325 25M35 180L55 165M305 180L325 195;t 180 20 Strong arcs / weak distortions;t 180 205 Infer projected mass with models"
+  ],
+  "plus-astronomy-how-astronomers-detect-stellar-motion": [
+    "l 35 85 325 85;l 35 145 325 145;l 145 65 145 105;l 215 125 215 165;a 145 110 215 110;t 145 50 Rest λ₀;t 215 180 Observed λ;t 180 205 Positive shift = recession",
+    "b 25 65 145 55 600.000 nm;b 190 65 145 55 600.006 nm;t 180 155 Δλ/λ = 0.00001;t 180 195 vr ≈ 3 km/s",
+    "l 35 105 325 105;p M35 105Q107.5 35 180 105T325 105;t 180 25 Periodic velocity;t 180 175 a★ sin i = KP/(2π);t 180 200 Inclination affects amplitude",
+    "b 25 45 145 50 Orbital signal;b 190 45 145 50 Starspots / drift;b 25 120 145 50 Repeat cycles;b 190 120 145 50 Activity indicators;t 180 205 Check independent evidence"
+  ]
+};
+window.LumenSlideArtBatch10Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch10;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch10Render(c,cls,step)||prior(c,cls,step);};})();
