@@ -6777,3 +6777,130 @@ window.LumenSlideArtBatch51={
 };
 window.LumenSlideArtBatch51Render=function(c,cls='cover',step=-1){return window.LumenSlideArtSharedRender(window.LumenSlideArtBatch51,c,cls,step);};
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch51Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* international-relations: dedicated slide artwork, batch 52. */
+window.LumenSlideArtBatch52={
+  "diplomacy": [
+    "c 65 105 28;c 295 105 28;a 95 90 265 90;a 265 120 95 120;t 65 109 State A;t 295 109 State B;t 180 65 Proposals and positions",
+    "b 30 65 95 60 Embassy;b 132 65 95 60 Ministry;b 234 65 95 60 Envoy;t 180 160 Bilateral and multilateral channels",
+    "p M35 100Q105 35 180 100T325 100;l 180 35 180 175;t 80 50 State A;t 280 50 State B;t 180 195 Shared river allocation requires coordination",
+    "c 105 105 55;c 255 105 55;t 105 110 Goals A;t 255 110 Goals B;t 180 195 Incompatible goals can block settlement"
+  ],
+  "comparative-advantage": [
+    "l 40 170 320 170;l 40 170 40 35;l 40 45 320 170;t 180 25 Production possibilities;t 180 195 More cloth means forgone grain",
+    "b 35 55 135 65 A: 10 grain / 5 cloth;b 190 55 135 65 B: 6 grain / 4 cloth;t 102 155 Cost 2 grain;t 257 155 Cost 1.5 grain;t 180 195 Per cloth",
+    "a 45 80 315 80;a 315 140 45 140;t 180 60 A exports grain;t 180 160 B exports cloth;t 180 195 Specialize by lower opportunity cost",
+    "r 35 75 290 50;f 35 75 170 50;t 120 105 Gains;t 265 105 Costs;t 180 195 Transport and distribution affect actual outcomes"
+  ],
+  "depth-international-relations-how-treaties-work": [
+    "r 75 40 210 140;l 95 75 265 75;l 95 105 265 105;l 95 135 265 135;t 180 60 Treaty;t 180 155 Parties and obligations",
+    "b 25 65 95 60 Negotiate;a 120 95 132 95;b 132 65 95 60 Sign;a 227 95 239 95;b 239 65 95 60 Ratify;t 180 180 Procedures vary",
+    "l 35 105 325 105;d 65 105 6;d 180 105 6;d 295 105 6;t 65 80 Sign;t 180 80 Domestic review;t 295 80 Consent;t 180 175 Environmental agreement may require ratification",
+    "l 35 105 325 105;d 65 105 6;d 180 105 6;d 295 105 6;t 65 80 Entry into force;t 180 80 Implement;t 295 80 Monitor;t 180 175 Follow treaty rules for withdrawal"
+  ],
+  "depth-international-relations-understanding-sovereignty": [
+    "r 55 45 250 130;c 180 105 35;t 180 110 Authority;t 180 25 Territory;t 180 195 Legal independence and government",
+    "r 35 55 130 110;r 195 55 130 110;t 100 105 Internal authority;t 260 105 External status;t 180 195 Distinct dimensions",
+    "c 75 105 30;c 285 105 30;b 135 75 90 60 Treaty;l 105 105 135 105;l 225 105 255 105;t 75 110 A;t 285 110 B;t 180 195 Sovereign consent to obligations",
+    "r 35 55 290 110;r 100 75 160 70;t 180 110 Available actions;t 180 195 Legal and practical constraints"
+  ],
+  "depth-international-relations-how-international-organizations-work": [
+    "c 180 105 32;d 65 65 8;d 295 65 8;d 65 145 8;d 295 145 8;l 65 65 150 90;l 295 65 210 90;l 65 145 150 120;l 295 145 210 120;t 180 110 Charter;t 180 195 Members establish functions and rules",
+    "b 35 45 135 55 Assembly;b 190 45 135 55 Secretariat;b 35 120 290 55 Specialized agencies;t 180 205 Distinct institutional tasks",
+    "d 65 65 7;d 65 145 7;b 135 75 90 60 Org;a 72 65 135 95;a 72 145 135 115;a 225 105 315 105;t 65 40 Reports;t 315 85 Guidance;t 180 195 Disease surveillance coordination",
+    "b 35 55 135 65 Recommendation;b 190 55 135 65 Binding decision;t 180 165 Legal effect depends on delegated powers"
+  ],
+  "depth-international-relations-what-economic-sanctions-do": [
+    "r 35 65 130 85;r 195 65 130 85;l 165 105 195 105;l 180 75 180 135;t 100 110 Sender;t 260 110 Target;t 180 195 Restriction on defined economic links",
+    "b 35 45 135 55 Trade restriction;b 190 45 135 55 Asset freeze;b 35 120 290 55 Financial restriction;t 180 205 Scope defined by applicable rules",
+    "r 35 55 290 110;r 105 75 150 70;t 180 110 Designated assets;t 180 195 Targeted freeze is not universal trade ban",
+    "c 180 105 32;c 65 65 22;c 295 65 22;c 180 175 22;l 65 65 150 90;l 295 65 210 90;l 180 137 180 153;t 180 110 Effects;t 65 35 Enforcement;t 295 35 Substitution;t 180 205 Civilian costs"
+  ],
+  "depth-international-relations-why-alliances-form": [
+    "c 95 105 40;c 265 105 40;l 135 105 225 105;t 95 110 Ally A;t 265 110 Ally B;t 180 85 Commitment;t 180 195 Security cooperation under agreed terms",
+    "b 35 45 135 55 Deterrence;b 190 45 135 55 Capability;b 35 120 135 55 Reassurance;b 190 120 135 55 Shared costs;t 180 205 Incentives for alliance formation",
+    "b 35 55 135 65 State A;b 190 55 135 65 State B;l 170 87 190 87;t 180 165 Mutual defense arrangement;t 180 195 Terms determine obligations",
+    "b 35 45 135 55 Capability;b 190 45 135 55 Commitment;b 35 120 135 55 Abandonment;b 190 120 135 55 Entanglement;t 180 205 Credibility and risks"
+  ],
+  "depth-international-relations-how-humanitarian-assistance-is-coordinated": [
+    "b 35 45 135 55 Food;b 190 45 135 55 Shelter;b 35 120 135 55 Safe water;b 190 120 135 55 Health care;t 180 205 Urgent humanitarian needs",
+    "c 180 105 30;c 65 65 20;c 295 65 20;c 180 175 20;l 65 65 150 90;l 295 65 210 90;l 180 135 180 155;t 180 110 Needs;t 65 35 Authorities;t 295 35 NGOs;t 180 205 Community",
+    "r 35 55 130 110;r 195 55 130 110;d 75 85 8;d 125 85 8;d 75 135 8;a 165 105 195 105;t 100 185 Duplicate supplies;t 260 185 Unmet needs;t 180 205 Coordinate flood relief",
+    "b 35 45 135 55 Humanity;b 190 45 135 55 Impartiality;b 35 120 135 55 Neutrality;b 190 120 135 55 Independence;t 180 205 Access and capacity constrain delivery"
+  ],
+  "depth-international-relations-understanding-international-trade-institutions": [
+    "c 75 105 30;c 285 105 30;a 105 85 255 85;a 255 125 105 125;t 75 110 A;t 285 110 B;t 180 65 Cross-border trade;t 180 195 Shared rules",
+    "b 35 45 135 55 Market access;b 190 45 135 55 Tariffs;b 35 120 135 55 Transparency;b 190 120 135 55 Disputes;t 180 205 Negotiated commitments",
+    "r 35 65 290 50;f 35 65 145 50;t 107 95 Agreed limit;t 252 95 New tariff;t 180 195 Check consistency with obligations",
+    "r 35 55 290 110;r 95 75 170 70;t 180 110 Domestic choices;t 180 195 Exceptions and conditions preserve policy space"
+  ],
+  "depth-international-relations-what-soft-power-means": [
+    "c 95 105 40;c 265 105 40;a 135 105 225 105;t 95 110 Attraction;t 265 110 Influence;t 180 195 Not coercion or payment",
+    "b 35 45 135 55 Culture;b 190 45 135 55 Values;b 35 120 135 55 Institutions;b 190 120 135 55 Credible policy;t 180 205 Appeal depends on audience",
+    "p M35 145L95 75L155 145ZM205 145L265 75L325 145Z;a 145 95 215 95;t 95 175 Home;t 265 175 Host;t 180 205 Student exchange creates connections",
+    "b 35 55 135 65 Popular culture;b 190 55 135 65 Policy support;t 180 165 Attraction need not transfer to government policy"
+  ],
+  "plus-international-relations-how-diplomacy-manages-crises": [
+    "c 75 105 30;c 285 105 30;a 105 90 255 90;a 255 120 105 120;t 75 110 A;t 285 110 B;t 180 65 Emergency contact;t 180 195 Reduce uncertainty and escalation",
+    "b 35 45 135 55 Direct contact;b 190 45 135 55 Public signal;b 35 120 290 55 Intermediary;t 180 205 Ambiguity can cause misreading",
+    "p M35 145Q95 125 155 145T275 145T325 145;d 95 105 8;d 265 105 8;l 95 105 265 105;t 180 85 Hotline;t 180 195 Clarify maritime incident and coordinate investigation",
+    "b 35 45 135 55 Reliable channel;b 190 45 135 55 Verification;b 35 120 290 55 Reciprocal steps;t 180 205 Communication cannot settle every dispute"
+  ],
+  "plus-international-relations-understanding-diplomatic-recognition": [
+    "c 95 105 35;c 265 105 35;a 130 105 230 105;t 95 110 State A;t 265 110 State B;t 180 85 Recognition;t 180 195 Acknowledgment of status",
+    "b 35 45 135 55 Statehood;b 190 45 135 55 Government;b 35 120 290 55 Diplomatic relations;t 180 205 Related but distinct choices",
+    "c 95 105 35;c 265 105 35;l 130 105 230 105;t 95 110 A;t 265 110 B;t 180 85 Recognized;t 180 195 Formal embassies may still be absent",
+    "b 35 55 135 65 Recognition;b 190 55 135 65 Territorial claim;t 180 165 One does not settle every political dispute"
+  ],
+  "plus-international-relations-why-international-agreements-include-reservations": [
+    "r 35 55 290 110;l 35 90 325 90;l 35 130 325 130;f 35 90 290 40;t 180 75 Provision 1;t 180 115 Provision 2;t 180 150 Provision 3;t 180 195 Reservation seeks altered legal effect",
+    "c 180 105 35;c 65 105 25;c 295 105 25;l 90 105 145 105;l 215 105 270 105;t 180 110 Treaty;t 65 105 A;t 295 105 B;t 180 195 Reservations can facilitate participation",
+    "r 35 55 290 110;r 95 75 170 70;t 180 110 Reserved clause;t 180 195 Exclusion only where legally permitted",
+    "b 35 45 135 55 Treaty terms;b 190 45 135 55 Object / purpose;b 35 120 290 55 Other parties' responses;t 180 205 Limits and legal consequences vary"
+  ],
+  "plus-international-relations-what-peacekeeping-missions-do": [
+    "r 35 55 290 110;r 95 75 170 70;t 180 110 Mandated tasks;t 180 195 Peacekeeping authority has defined scope",
+    "b 35 45 135 55 Monitor;b 190 45 135 55 Local support;b 35 120 290 55 Political process;t 180 205 Roles depend on mandate",
+    "l 35 105 325 105;d 65 105 6;d 180 105 6;d 295 105 6;t 65 85 Observe;t 180 85 Verify;t 295 85 Report;t 180 175 Ceasefire monitoring",
+    "b 35 45 135 55 Consent;b 190 45 135 55 Impartiality;b 35 120 290 55 Restrictions on force;t 180 205 Mandate-specific qualifications apply"
+  ],
+  "plus-international-relations-how-international-mediation-differs-from-arbitration": [
+    "c 65 105 25;c 180 105 25;c 295 105 25;l 90 105 155 105;l 205 105 270 105;t 65 110 A;t 180 110 Mediator;t 295 110 B;t 180 195 Facilitate voluntary settlement",
+    "b 35 55 135 65 Dispute;a 170 87 190 87;b 190 55 135 65 Tribunal;t 180 165 Arbitration issues decision under authority",
+    "r 35 55 130 110;r 195 55 130 110;l 100 55 100 165;l 260 55 260 165;t 100 185 Negotiate boundary;t 260 185 Submit question;t 180 205 Alternative dispute processes",
+    "b 35 45 135 55 Consent;b 190 45 135 55 Scope;b 35 120 135 55 Procedure;b 190 120 135 55 Enforcement;t 180 205 Negotiation vs authoritative ruling"
+  ],
+  "plus-international-relations-how-trade-disputes-are-negotiated": [
+    "r 35 55 290 110;f 130 55 100 110;t 82 105 Trade;t 180 105 Measure;t 277 105 Rule;t 180 195 Identify challenged measure",
+    "c 95 105 35;c 265 105 35;a 130 85 230 85;a 230 125 130 125;t 95 110 A;t 265 110 B;t 180 195 Exchange evidence and interpretations",
+    "b 35 55 135 65 Safety objective;b 190 55 135 65 Product requirement;t 180 165 Examine evidence and alternatives",
+    "b 35 55 135 65 Negotiated change;b 190 55 135 65 Formal procedure;t 180 165 Settlement need not create precedent"
+  ],
+  "plus-international-relations-understanding-diplomatic-immunity": [
+    "r 35 55 290 110;r 95 75 170 70;t 180 110 Mission function;t 180 195 Immunity protects effective diplomacy",
+    "b 35 45 135 55 Diplomatic status;b 190 45 135 55 Activity;b 35 120 290 55 Applicable law;t 180 205 Scope varies",
+    "c 95 105 35;c 265 105 35;t 95 110 Receiving;t 265 110 Sending;t 180 165 Sending state may waive or recall;t 180 195 Local jurisdiction can be restricted",
+    "b 35 55 135 65 Immunity;b 190 55 135 65 Lawfulness;t 180 165 Immunity does not authorize unlawful conduct"
+  ],
+  "plus-international-relations-what-development-assistance-aims-to-achieve": [
+    "b 35 45 135 55 Health;b 190 45 135 55 Education;b 35 120 135 55 Infrastructure;b 190 120 135 55 Capacity;t 180 205 Long-term development",
+    "b 35 45 135 55 Local priorities;b 190 45 135 55 Responsibilities;b 35 120 290 55 Outcome indicators;t 180 205 Define and measure improvement",
+    "p M65 145V75H125V145M95 75V45H155V75;c 265 105 35;t 95 175 Well installed;t 265 105 Safe water;t 180 195 Output vs health and access outcomes",
+    "b 35 45 135 55 Durability;b 190 45 135 55 Distribution;b 35 120 135 55 Side effects;b 190 120 135 55 Attribution;t 180 205 Completion does not prove success"
+  ],
+  "plus-international-relations-understanding-international-maritime-cooperation": [
+    "p M35 105Q95 75 155 105T275 105T325 105;d 95 65 6;d 265 145 6;t 95 45 Navigation;t 265 165 Resources;t 180 195 Shared maritime interests",
+    "l 35 45 35 175;l 95 45 95 175;l 285 45 285 175;t 65 85 Territorial sea;t 190 125 EEZ;t 180 195 Different rights, schematic boundaries",
+    "d 65 105 8;d 295 105 8;c 180 105 30;l 65 105 150 105;l 210 105 295 105;t 180 110 Rescue;t 180 195 Joint rescue despite other disputes",
+    "b 35 45 135 55 Treaties;b 190 45 135 55 Regional bodies;b 35 120 290 55 Operational coordination;t 180 205 Legal claims require separate assessment"
+  ],
+  "plus-international-relations-how-humanitarian-law-differs-from-human-rights-law": [
+    "r 35 55 290 110;r 95 75 170 70;t 180 110 Armed conflict;t 180 195 IHL protects persons and regulates warfare",
+    "l 35 105 325 105;d 95 105 6;d 265 105 6;t 95 85 Peace;t 265 85 Conflict;t 180 175 Human rights protections generally apply in both",
+    "c 125 105 65;c 235 105 65;t 100 105 IHL;t 260 105 Human rights;t 180 195 May overlap during conflict",
+    "b 35 55 135 65 Detention during conflict;b 190 55 135 65 Applicable protections;t 180 165 Analyze both legal bodies and facts"
+  ]
+};
+window.LumenSlideArtBatch52Render=function(c,cls='cover',step=-1){return window.LumenSlideArtSharedRender(window.LumenSlideArtBatch52,c,cls,step);};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch52Render(c,cls,step)||prior(c,cls,step);};})();
