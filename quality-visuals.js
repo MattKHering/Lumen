@@ -1380,3 +1380,131 @@ window.LumenSlideArtBatch06Render=function renderer(c,cls="cover",step=-1){
  const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch06Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* Financial Literacy: dedicated slide artwork, batch 07. */
+window.LumenSlideArtBatch07={
+  "credit": [
+    "b 25 65 145 55 Credit report;a 170 92 190 92;b 190 65 145 55 Score model;t 97 150 Account history;t 262 150 Numeric summary;t 180 195 Report ≠ score",
+    "b 45 35 270 40 Account: own / joint;b 45 75 270 40 Balance and limit;b 45 115 270 40 Payments and inquiries;t 180 195 Reporting coverage varies",
+    "b 25 65 95 55 Find error;a 120 92 132 92;b 132 65 95 55 Dispute;a 227 92 239 92;b 239 65 95 55 Verify;t 180 170 Reporting company + provider",
+    "b 25 45 145 50 Report / score;b 190 45 145 50 Income;b 25 120 145 50 Collateral;b 190 120 145 50 Underwriting;t 180 205 Lender decisions use more than a score"
+  ],
+  "insurance": [
+    "c 55 70 13;c 105 70 13;c 155 70 13;c 205 70 13;c 255 70 13;c 305 70 13;a 55 83 180 135;a 155 83 180 135;a 255 83 180 135;b 110 135 140 45 Pooled premiums;t 180 205 Pay covered losses from pool",
+    "r 35 70 290 55;f 35 70 58 55;t 64 102 Deduct.;t 210 102 Covered portion;t 180 155 Exclusions and limits matter",
+    "r 35 75 290 50;f 35 75 48.33 50;t 60 105 $500;t 205 105 $2,500;t 180 55 Covered loss $3,000;t 180 180 Simplified payment = $2,500",
+    "b 25 55 145 55 Low premium;b 190 55 145 55 Higher premium;t 97 150 Check deductible;t 262 150 Check coverage;t 180 195 Compare whole contract"
+  ],
+  "banks": [
+    "b 25 55 145 60 Assets;b 190 55 145 60 Liabilities;t 97 145 Loans owed to bank;t 262 145 Deposits owed to savers;t 180 195 Bank balance sheet",
+    "b 20 55 100 55 Payer bank;a 120 82 130 82;b 130 55 100 55 Settlement;a 230 82 240 82;b 240 55 100 55 Payee bank;t 180 175 One transfer can involve several institutions",
+    "b 25 45 145 50 Interest income;b 190 45 145 50 Funding costs;b 25 120 145 50 Operating cost;b 190 120 145 50 Credit losses;t 180 205 Revenue and risk",
+    "b 25 55 145 55 Eligible deposit;b 190 55 145 55 Investment fund;t 97 150 May be insured;t 262 150 Not a deposit;t 180 195 Check institution and ownership category"
+  ],
+  "depth-financial-literacy-building-an-emergency-fund": [
+    "b 25 65 145 55 Unexpected bill;a 170 92 190 92;b 190 65 145 55 Savings buffer;t 180 160 Reduce immediate need for costly debt",
+    "r 35 75 96.67 55;r 131.67 75 96.67 55;r 228.34 75 96.66 55;t 83 107 $1,500;t 180 107 $1,500;t 277 107 $1,500;t 180 180 3 months = $4,500",
+    "l 35 170 325 170;p M35 155H95V135H155V115H215V95H275V75H325;t 180 45 Small scheduled transfers;t 180 200 Adjust target to circumstances",
+    "b 25 65 95 55 Save;a 120 92 132 92;b 132 65 95 55 Emergency;a 227 92 239 92;b 239 65 95 55 Refill;t 180 170 Accessible, appropriately safe savings"
+  ],
+  "depth-financial-literacy-reading-a-paycheck": [
+    "r 35 75 290 50;f 35 75 65 50;t 67 105 Deductions;t 212 105 Net pay;t 180 55 Gross earnings;t 180 190 Gross − deductions = net",
+    "r 35 75 290 55;f 35 75 58 55;t 64 107 $160;t 209 107 $640;t 180 55 40 h × $20 = $800;t 180 190 Net pay $640",
+    "b 25 45 145 50 Tax withholding;b 190 45 145 50 Insurance;b 25 120 145 50 Retirement;b 190 120 145 50 Other deductions;t 180 205 Withholding ≠ final tax liability",
+    "b 25 55 145 55 Your timesheet;b 190 55 145 55 Pay statement;t 180 150 Match hours, rate and pay period;t 180 195 Ask payroll about discrepancies"
+  ],
+  "plus-financial-literacy-how-checking-accounts-settle-payments": [
+    "l 35 110 325 110;d 65 110 6;d 180 110 6;d 295 110 6;t 65 85 Authorize;t 180 85 Clear;t 295 85 Settle;t 180 175 Pending ≠ final debit",
+    "r 35 75 290 50;f 35 75 80 50;t 75 105 Holds;t 220 105 Available;t 180 55 Posted balance;t 180 190 Availability depends on rules",
+    "r 35 75 290 50;f 35 75 77.33 50;t 73 105 $80 hold;t 223 105 $220 available;t 180 55 Posted $300;t 180 190 Simplified authorization example",
+    "l 35 110 325 110;d 65 110 6;d 180 110 6;d 295 110 6;t 65 85 Pending;t 180 85 Disappears;t 295 85 Posts;t 180 175 Track outstanding transactions"
+  ],
+  "plus-financial-literacy-how-overdrafts-happen": [
+    "r 35 75 180 50;r 215 75 80 50;t 125 105 Available;t 255 105 Shortfall;t 180 55 Payment exceeds funds;t 180 190 If paid, overdraft can result",
+    "l 35 110 325 110;l 135 85 135 135;d 295 110 6;d 75 110 6;t 135 75 $0;t 295 90 $40;t 75 90 −$15;a 295 140 75 140;t 180 175 $55 payment before fees",
+    "b 25 55 145 55 Payment type;b 190 55 145 55 Account rules;t 180 150 Paid / declined / returned;t 180 195 Fees and protections vary",
+    "b 25 55 145 55 Low balance alert;b 190 55 145 55 Pending bills;t 180 150 Check before payment;t 180 195 Understand transfer or decline options"
+  ],
+  "plus-financial-literacy-what-beneficiaries-do-in-financial-accounts": [
+    "b 25 65 145 55 Account;a 170 92 190 92;b 190 65 145 55 Beneficiary;t 180 155 Applicable triggering event;t 180 190 Designation identifies recipient",
+    "b 25 55 95 55 Retirement;b 132 55 95 55 Insurance;b 239 55 95 55 POD account;t 180 150 Rules and consent may differ;t 180 195 Check account-specific restrictions",
+    "b 105 35 150 40 Account;a 180 75 95 125;a 180 75 265 125;b 25 125 140 45 Primary;b 195 125 140 45 Contingent;t 180 205 Contingent if primary cannot take effect",
+    "b 25 55 145 55 Life change;a 170 82 190 82;b 190 55 145 55 Review records;t 180 150 Check rules and designations;t 180 195 A will may not override them"
+  ],
+  "plus-financial-literacy-how-automatic-saving-works": [
+    "b 25 65 145 55 Paycheck;a 170 92 190 92;b 190 65 145 55 Savings;t 180 150 Scheduled allocation;t 180 195 Automatic recurring transfer",
+    "l 35 170 325 170;p M35 165L325 45;t 35 190 Week 0;t 325 190 Week 52;t 300 35 $1,300;t 180 95 $25/week;t 180 210 Contributions before interest",
+    "l 35 110 325 110;d 65 110 6;d 180 110 6;d 295 110 6;t 65 85 Income;t 180 85 Bills;t 295 85 Save;t 180 175 Avoid transferring unavailable funds",
+    "b 25 55 145 55 Income changes;b 190 55 145 55 Expenses change;a 97 110 180 150;a 262 110 180 150;t 180 175 Adjust scheduled transfer"
+  ],
+  "plus-financial-literacy-how-to-recognize-recurring-charges": [
+    "l 35 110 325 110;d 65 110 6;d 145 110 6;d 225 110 6;d 305 110 6;t 65 85 $12;t 145 85 $12;t 225 85 $12;t 305 85 $12;t 180 175 Repeating merchant charges",
+    "r 35 75 24 45;r 59 75 24 45;r 83 75 24 45;r 107 75 24 45;r 131 75 24 45;r 155 75 24 45;r 179 75 24 45;r 203 75 24 45;r 227 75 24 45;r 251 75 24 45;r 275 75 24 45;r 299 75 24 45;t 180 55 12 months × $12;t 180 180 $144 annually",
+    "l 35 110 325 110;d 35 110 6;d 325 110 6;t 35 85 Jan;t 325 85 Dec;t 180 145 Annual renewal can be missed;t 180 195 Review more than one month",
+    "b 25 55 95 55 Cancel;a 120 82 132 82;b 132 55 95 55 Keep proof;a 227 82 239 82;b 239 55 95 55 Verify;t 180 175 Report unauthorized charges promptly"
+  ],
+  "depth-financial-literacy-how-loan-amortization-works": [
+    "r 35 75 290 50;f 35 75 100 50;t 85 105 Interest;t 230 105 Principal;t 180 55 Payment split;t 180 190 Outstanding balance declines",
+    "r 35 75 290 50;f 35 75 96.67 50;t 83 105 $100 interest;t 228 105 $200 principal;t 180 55 $300 payment;t 180 190 $10,000 × 1% = $100",
+    "r 35 75 290 50;f 35 75 94.73 50;t 82 105 $98 interest;t 227 105 $202 principal;t 180 55 $9,800 × 1%;t 180 190 New balance $9,598",
+    "l 35 175 325 175;p M35 45Q180 70 325 175;p M35 150Q180 115 325 45;t 100 45 Balance falls;t 265 75 Principal share rises;t 180 200 Model assumes fixed payment and rate"
+  ],
+  "depth-financial-literacy-how-credit-card-interest-accumulates": [
+    "b 25 55 95 55 Purchases;b 132 55 95 55 Transfers;b 239 55 95 55 Advances;t 180 150 Different APRs and rules;t 180 195 Interest depends on balances",
+    "b 25 60 145 55 $1,000 balance;b 190 60 145 55 24% APR;t 180 160 24% / 12 = 2% monthly;t 180 195 Illustrative interest $20",
+    "l 35 110 325 110;d 55 110 6;d 180 110 6;d 305 110 6;t 55 85 Purchase;t 180 85 Statement;t 305 85 Due date;t 180 175 Qualifying full payment may avoid interest",
+    "l 35 170 325 170;p M35 45L325 155;p M35 45Q180 70 325 100;t 260 145 Larger payments;t 270 85 Small payments;t 180 195 Illustrative balance paths"
+  ],
+  "plus-financial-literacy-understanding-credit-utilization": [
+    "r 35 75 290 50;f 35 75 87 50;t 78 105 Balance;t 224 105 Unused limit;t 180 55 Reported balance ÷ limit;t 180 190 Individual and aggregate ratios",
+    "r 35 55 200 30;f 35 55 60 30;r 35 105 100 30;f 35 105 10 30;t 265 74 $600/$2,000;t 195 124 $100/$1,000;t 180 180 $700/$3,000 ≈ 23.3%",
+    "l 35 110 325 110;d 65 110 6;d 180 110 6;d 295 110 6;t 65 85 Report;t 180 85 Pay;t 295 85 View app;t 180 175 Report may lag current balance",
+    "b 25 55 145 55 Utilization;b 190 55 145 55 Other factors;t 180 150 Model-dependent score impact;t 180 195 Do not pay interest just to report balance"
+  ],
+  "plus-financial-literacy-how-a-deductible-differs-from-a-premium": [
+    "b 25 55 145 55 Premium;b 190 55 145 55 Deductible;t 97 145 Buy coverage;t 262 145 Pay covered loss share;t 180 195 Different costs",
+    "r 45 65 180 35;f 45 130 108 35;t 135 55 A: $600/yr;t 99 120 B: $360/yr;t 180 195 No claims: B costs $240 less",
+    "r 45 60 120 35;f 165 60 100 35;r 45 130 72 35;f 117 130 200 35;t 155 50 A: $1,100;t 181 120 B: $1,360;t 180 195 Premium + deductible for one covered loss",
+    "b 25 45 145 50 Copays;b 190 45 145 50 Coinsurance;b 25 120 145 50 Limits;b 190 120 145 50 Exclusions;t 180 205 Model realistic total costs"
+  ],
+  "depth-financial-literacy-understanding-retirement-accounts": [
+    "r 35 45 290 125;b 60 80 115 55 Stocks;b 185 80 115 55 Bonds;t 180 35 Account structure;t 180 195 Holdings determine exposure",
+    "l 35 75 325 75;l 35 150 325 150;d 65 75 6;d 300 75 6;d 65 150 6;d 300 150 6;t 65 55 Contribute;t 300 55 Withdraw;t 180 95 Traditional: tax may be later;t 180 175 Roth: qualified withdrawals may be tax-free",
+    "r 35 75 290 50;f 35 75 193.33 50;t 131 105 $1,000;t 277 105 $500 gain;t 180 55 $1,500 before taxes;t 180 190 After-tax proceeds depend on rules",
+    "b 25 45 145 50 Match / vesting;b 190 45 145 50 Fees;b 25 120 145 50 Investments;b 190 120 145 50 Withdrawal rules;t 180 205 Compare plan design"
+  ],
+  "plus-financial-literacy-how-to-compare-fixed-and-variable-interest": [
+    "l 35 175 325 175;p M35 100H325;p M35 140H120V110H205V65H325;t 180 90 Fixed;t 265 55 Variable;t 180 200 Contractual reset periods",
+    "b 25 65 145 55 Index 4%;b 190 65 145 55 Margin 2%;t 180 165 4% + 2% = 6%;t 180 195 Before adjustments",
+    "r 65 90 90 80;f 205 50 90 120;t 110 80 $600;t 250 40 $900;t 110 190 6%;t 250 190 9%;t 180 210 On $10,000 simple annual interest",
+    "b 25 45 145 50 Reset timing;b 190 45 145 50 Floors / caps;b 25 120 145 50 Fees;b 190 120 145 50 Payment resets;t 180 205 Compare lifetime cost, not starting rate"
+  ],
+  "plus-financial-literacy-what-loan-to-value-means": [
+    "r 35 75 290 50;f 35 75 203 50;t 136 105 Loan;t 280 105 Equity;t 180 55 Collateral valuation;t 180 195 LTV = loan / value",
+    "r 35 60 290 30;f 35 60 232 30;r 35 130 290 30;f 35 130 261 30;t 180 50 $160k/$200k = 80%;t 180 120 $180k/$200k = 90%",
+    "r 35 75 261 50;f 35 75 232 50;t 151 105 $160k loan;t 180 55 Value falls to $180k;t 180 185 LTV ≈88.9%",
+    "b 25 55 145 55 LTV ratio;b 190 55 145 55 Monthly budget;t 97 150 Collateral risk;t 262 150 Affordability;t 180 195 Different underwriting considerations"
+  ],
+  "plus-financial-literacy-how-to-compare-currency-exchange-costs": [
+    "b 25 65 145 55 USD;a 170 92 190 92;b 190 65 145 55 EUR;t 180 145 EUR per USD;t 180 190 Compare same direction and amount",
+    "b 25 50 145 55 $500 × .90;b 190 50 145 55 $490 × .92;t 97 145 €450.00;t 262 145 €450.80;t 180 195 Second offer deducts $10 first",
+    "b 25 65 145 55 Reference rate;b 190 65 145 55 Customer rate;t 180 150 Difference may include markup;t 180 195 Also check sending / receiving fees",
+    "b 25 55 145 55 Total cost;b 190 55 145 55 Net received;t 180 150 Compare at equal total cost;t 180 195 Include speed and reliability"
+  ]
+};
+window.LumenSlideArtBatch07Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch07;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch07Render(c,cls,step)||prior(c,cls,step);};})();
