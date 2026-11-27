@@ -3896,3 +3896,59 @@ window.LumenSlideArtBatch25Render=function renderer(c,cls="cover",step=-1){
  const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch25Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* Aerospace: first six courses, dedicated slide artwork, batch 26. */
+window.LumenSlideArtBatch26={
+  "jet-engines": [
+    "p M65 75H240L290 95V125L240 145H65Z;a 25 110 95 110;a 240 110 335 110;a 180 45 80 45;t 130 35 Forward thrust;t 290 95 Exhaust;t 180 195 Rearward gas momentum produces forward thrust",
+    "p M35 75H325V145H35Z;p M65 80L95 140M95 80L125 140M125 80L155 140;c 215 110 25;a 35 110 60 110;a 240 110 315 110;t 110 55 Compressor;t 215 55 Combustor;t 180 195 Compression raises pressure, combustion adds energy",
+    "p M35 65H220L310 95V125L220 155H35Z;p M100 65L130 155M135 65L165 155M170 65L200 155;l 65 110 205 110;a 220 110 335 110;t 140 45 Turbine drives shaft;t 280 75 Nozzle;t 180 195 Expansion powers compressor and accelerates exhaust",
+    "a 35 70 155 70;a 35 95 155 95;a 35 120 155 120;a 35 145 155 145;a 205 105 325 105;t 95 45 Large air mass;t 265 85 Smaller mass;t 180 175 At equal thrust, smaller velocity increase can improve efficiency;t 180 200 Subsonic propulsion also depends on engine mass and drag"
+  ],
+  "rocket-flight": [
+    "p M140 55Q180 5 220 55V145H140Z;r 150 65 60 35;r 150 105 60 30;p M140 145L165 175H195L220 145Z;t 180 85 Oxidizer;t 180 125 Fuel;t 180 195 Vehicle carries propellant, no atmospheric oxygen needed",
+    "p M145 45Q180 5 215 45V105H145Z;p M145 105L165 125H195L215 105Z;a 180 130 180 190;a 110 95 110 25;t 75 70 Thrust;t 245 165 Exhaust;t 180 205 Momentum exchange works in vacuum",
+    "b 25 65 145 55 Mass flow ṁ;b 190 65 145 55 Exhaust speed ve;t 180 155 Momentum thrust = ṁ ve;t 180 195 Exit pressure can add a separate force term",
+    "r 55 55 100 105;r 205 95 100 65;a 105 55 105 25;a 255 95 255 25;t 105 180 Greater mass;t 255 180 Lower mass;t 180 205 At constant thrust, acceleration increases as mass falls"
+  ],
+  "satellite-orbits": [
+    "c 180 110 45;c 180 110 78;d 258 110 7;a 258 110 258 55;a 258 110 218 110;t 295 65 Velocity;t 237 130 Gravity;t 180 205 Continuous fall bends tangential motion into orbit",
+    "c 180 105 30;c 180 105 55;c 180 105 85;d 235 105 6;d 265 105 6;a 235 105 235 65;a 265 105 265 80;t 180 15 Larger orbital radius;t 180 205 Circular orbit: higher altitude, lower speed, longer period",
+    "c 180 105 36;c 180 105 54;c 180 105 85;l 95 105 265 105;d 180 51 6;d 265 105 6;t 110 45 LEO close view;t 280 130 GEO;t 180 205 Geostationary orbit matches Earth's sidereal rotation",
+    "c 180 105 30;c 180 105 55;p M125 105Q180 15 300 105Q180 195 125 105Z;d 235 105 6;a 235 105 235 60;t 180 15 Velocity change alters trajectory;t 180 205 Drag and perturbations influence orbit evolution"
+  ],
+  "space-stations": [
+    "c 180 110 43;c 180 110 80;r 245 90 30 12;l 260 90 260 112;a 260 96 220 104;a 260 110 220 118;t 180 15 Shared gravitational acceleration;t 180 205 Station and occupants fall together, little floor support",
+    "r 65 55 230 105;c 180 105 15;a 180 105 205 85;a 180 105 150 125;t 180 35 Residual disturbances;t 180 185 Drag, equipment movement and rotation;t 180 205 Microgravity is not absence of gravity",
+    "r 35 55 130 110;r 195 55 130 110;c 80 90 10;c 120 125 8;a 55 145 145 145;p M220 135H300M235 95V150M285 95V150;t 100 185 Forced fluid circulation;t 260 185 Exercise hardware;t 180 205 Life support and loading need engineered systems",
+    "r 35 55 130 110;r 195 55 130 110;d 65 145 5;d 95 145 5;d 125 145 5;d 225 85 5;d 265 115 5;d 290 70 5;t 100 185 Earth: settling;t 260 185 Microgravity;t 180 205 Reduced buoyancy changes transport and sedimentation"
+  ],
+  "depth-aerospace-how-aircraft-wings-generate-lift": [
+    "p M35 110Q140 35 325 110Q145 150 35 110Z;a 95 50 95 83;a 180 50 180 83;a 95 160 95 126;a 180 180 180 132;a 260 160 260 124;a 180 105 180 20;t 230 30 Net lift;t 180 205 Pressure distribution produces aerodynamic force",
+    "p M65 95Q145 45 275 100Q145 125 65 95Z;p M25 45H140Q245 45 335 95M25 75H140Q245 75 335 125M25 145H140Q245 145 335 195;a 285 130 330 155;a 180 90 180 25;t 180 195 Downward air momentum corresponds to upward lift",
+    "p M35 100H325;p M90 115Q170 65 265 82Q175 110 90 115Z;l 90 115 265 82;t 180 35 Angle between chord and relative flow;p M220 55Q275 40 325 75;t 180 195 Increasing angle raises lift until substantial separation",
+    "b 25 45 145 45 Speed V;b 190 45 145 45 Speed 2V;r 65 145 90 30;r 205 55 90 120;t 110 190 Lift L;t 250 190 Lift 4L;t 180 210 L=½ρV²SCₗ, other factors held constant"
+  ],
+  "depth-aerospace-why-aircraft-have-control-surfaces": [
+    "p M180 25L193 80L315 120L315 135L193 115L193 170L230 185H130L167 170V115L45 135V120L167 80Z;a 180 180 180 20;a 60 105 300 105;c 180 105 15;t 230 35 Roll axis;t 80 95 Pitch axis;t 220 145 Yaw axis normal to page;t 180 205 Roll, pitch and yaw describe rotations",
+    "p M180 25V175M180 85L35 120L180 105L325 120L180 85;l 35 120 110 114;l 250 114 325 120;a 70 145 70 90;a 290 90 290 145;t 95 165 Lift change;t 265 165 Opposite change;t 180 195 Opposite aileron deflections create rolling moment",
+    "p M35 100L210 80L245 100L210 120Z;p M210 80L225 40L245 100;l 210 120 280 130;a 245 145 245 110;t 225 30 Rudder: yaw;t 280 155 Elevator: pitch;t 180 195 Aerodynamic moments depend on aircraft geometry",
+    "l 35 175 325 175;l 35 175 35 35;p M35 165Q150 145 325 45;t 180 30 Control moment (schematic);t 180 195 Airspeed, geometry and separation affect control authority"
+  ]
+};
+window.LumenSlideArtBatch26Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch26;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch26Render(c,cls,step)||prior(c,cls,step);};})();
