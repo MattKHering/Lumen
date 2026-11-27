@@ -1508,3 +1508,137 @@ window.LumenSlideArtBatch07Render=function renderer(c,cls="cover",step=-1){
  const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch07Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* Biology: dedicated slide artwork, batch 08. */
+window.LumenSlideArtBatch08={
+  "dna": [
+    "p M80 30Q300 65 80 100T80 170M280 30Q60 65 280 100T280 170;l 119 43 241 43;l 150 65 210 65;l 119 87 241 87;l 119 113 241 113;l 150 135 210 135;l 119 157 241 157;t 180 39 A–T;t 180 82 C–G;t 180 152 A–T;t 180 205 Complementary base pairing",
+    "b 25 65 95 55 DNA;a 120 92 132 92;b 132 65 95 55 RNA;a 227 92 239 92;b 239 65 95 55 Protein;t 125 55 Transcribe;t 238 55 Translate;a 180 120 180 155;t 180 175 Some RNA functions directly",
+    "b 25 55 145 55 Original sequence;b 190 55 145 55 Variant sequence;t 97 145 A T G C C;t 262 145 A T G T C;t 180 195 May affect product or regulation",
+    "b 35 45 290 45 DNA template 3′ TAC 5′;a 180 90 180 125;b 35 125 290 45 RNA 5′ AUG 3′;t 180 200 RNA codon read by ribosome"
+  ],
+  "microbes": [
+    "c 65 95 25;p M140 65Q195 40 220 90Q195 135 140 110Z;c 180 85 13;c 285 95 22;l 285 67 285 45;l 265 78 250 60;l 305 78 320 60;t 65 145 Bacterium;t 180 145 Fungal cell;t 285 145 Virus;t 180 195 Viruses require host cells",
+    "r 25 105 100 60;p M25 125Q75 85 125 125;r 130 105 100 60;p M130 125Q155 95 180 125T230 125;r 235 105 100 60;c 285 75 18;t 75 185 Soil;t 180 185 Water;t 285 185 Host body",
+    "c 65 95 35;c 180 95 35;c 180 95 15;c 295 95 25;d 65 95 5;d 295 95 5;t 65 155 No nucleus;t 180 155 Nucleus;t 295 155 No cell;t 180 200 Bacteria / fungi / viruses",
+    "c 80 100 22;c 95 85 11;c 140 120 7;c 165 95 10;c 190 70 12;p M220 145Q230 60 285 60Q330 60 340 145Z;t 90 150 Yeast;t 165 145 CO₂ bubbles;t 280 175 Rising dough;t 180 205 Sugar fermentation"
+  ],
+  "photosynthesis": [
+    "c 65 50 22;a 85 70 150 120;p M125 155Q110 55 280 75Q275 175 125 155Z;l 125 155 265 90;a 285 130 335 130;t 280 55 Leaf;t 300 120 O₂;t 180 195 Light drives chemical reactions",
+    "r 35 50 290 100;r 80 65 200 18;r 80 90 200 18;r 80 115 200 18;a 125 25 125 65;a 235 25 235 65;t 180 42 Light;t 180 160 ATP + NADPH;t 180 198 Water split releases O₂",
+    "c 180 100 55;a 180 20 180 45;t 235 25 CO₂;a 40 100 125 100;t 65 85 ATP/NADPH;a 235 100 320 100;t 285 85 Organic products;t 180 103 Calvin cycle;t 180 195 Carbon fixation",
+    "p M180 175V70M180 100Q120 45 85 90Q135 125 180 100M180 125Q240 65 275 105Q225 145 180 125;a 35 70 100 85;a 180 205 180 175;t 55 55 CO₂ from air;t 260 180 Minerals + water;t 180 35 Most dry carbon comes from CO₂"
+  ],
+  "depth-biology-how-cells-divide": [
+    "c 180 100 65;a 180 35 235 72;a 245 100 207 156;a 150 158 115 100;a 115 75 170 35;t 180 28 G1;t 265 104 S;t 180 180 G2;t 83 104 M;t 180 105 Cell cycle;t 180 205 Replicate DNA in S phase",
+    "c 55 90 35;c 180 90 35;c 305 90 35;p M40 75L70 105M70 75L40 105M165 75L195 105M195 75L165 105M293 75L283 105M317 75L327 105;a 90 90 145 90;a 215 90 270 90;t 55 145 Condense;t 180 145 Align;t 305 145 Separate;t 180 195 Cytokinesis follows nuclear division",
+    "p M65 65L65 135M145 65L205 135M205 65L145 135;a 95 100 135 100;t 65 155 One chromatid;t 175 155 Sister chromatids;d 175 100 5;t 180 190 46 chromosomes before and after S",
+    "b 25 55 95 55 DNA copied;a 120 82 132 82;b 132 55 95 55 Checkpoint;a 227 82 239 82;b 239 55 95 55 Divide;t 180 150 Pause or repair if needed;t 180 195 Regulation coordinates division"
+  ],
+  "depth-biology-what-makes-a-cell-membrane-selective": [
+    "c 50 65 10;c 90 65 10;c 130 65 10;c 170 65 10;c 210 65 10;c 250 65 10;c 290 65 10;c 50 145 10;c 90 145 10;c 130 145 10;c 170 145 10;c 210 145 10;c 250 145 10;c 290 145 10;p M45 75V105M55 75V105M85 75V105M95 75V105M125 75V105M135 75V105M165 75V105M175 75V105M205 75V105M215 75V105M245 75V105M255 75V105M285 75V105M295 75V105M45 135V110M55 135V110M85 135V110M95 135V110M125 135V110M135 135V110M165 135V110M175 135V110M205 135V110M215 135V110M245 135V110M255 135V110M285 135V110M295 135V110;t 180 35 Water-facing heads;t 180 185 Hydrophobic tails inside",
+    "r 25 90 310 35;r 155 75 45 65;d 75 55 5;d 95 55 5;d 178 55 5;a 85 60 85 155;a 178 60 178 155;t 85 180 Simple diffusion;t 210 180 Channel-assisted;t 180 205 Down gradients",
+    "l 180 35 180 185;d 240 65 5;d 270 90 5;d 230 130 5;d 295 155 5;d 285 65 5;a 95 100 220 100;t 90 80 Water;t 260 40 Higher effective solute;t 180 205 Water moves across membrane",
+    "c 95 100 40;c 95 100 55;r 220 45 100 110;c 270 100 42;a 30 100 55 100;a 200 100 228 100;t 95 175 Animal swells;t 270 175 Plant wall resists;t 180 205 Dilute external solution"
+  ],
+  "depth-biology-how-enzymes-speed-reactions": [
+    "l 35 175 325 175;p M35 140Q100 15 175 140T325 145;p M35 140Q100 90 175 140T325 145;t 180 30 Higher barrier;t 180 85 Lower barrier;t 180 200 Same overall energy change",
+    "p M25 70H115V90H95V115H115V145H25Z;r 145 85 25 30;a 135 100 115 100;t 70 165 Active site;t 160 75 Substrate;t 180 205 Binding aligns reactants",
+    "l 35 175 325 175;p M35 175Q180 -65 325 175;t 180 45 Peak activity;t 180 195 Temperature / pH (schematic);t 180 212 Extreme conditions can disrupt activity",
+    "b 25 65 100 55 Lactose;a 125 92 155 92;b 155 65 75 55 Lactase;a 230 92 255 65;a 230 92 255 145;b 255 45 85 42 Glucose;b 255 125 85 42 Galactose;t 180 200 Enzyme reused"
+  ],
+  "depth-biology-where-cells-obtain-usable-energy": [
+    "b 25 65 105 55 ATP;a 130 92 160 92;b 160 65 175 55 ADP + phosphate;t 180 150 Energy coupled to cell work;a 250 165 75 165;t 180 190 ATP replenished",
+    "b 25 65 105 55 Glucose;a 130 92 155 92;b 155 65 180 55 2 pyruvate;t 180 150 Small ATP gain + NADH;t 180 195 Glycolysis",
+    "r 25 90 310 35;r 90 75 60 65;r 240 75 60 65;a 120 145 120 50;a 270 50 270 145;t 120 40 H⁺ pump;t 270 165 ATP synthase;t 180 200 O₂ final electron acceptor",
+    "b 25 65 105 55 Glycolysis;a 130 92 160 92;b 160 65 175 55 Fermentation;a 250 145 75 145;t 180 170 NAD⁺ regenerated;t 180 200 Allows glycolysis to continue"
+  ],
+  "plus-biology-why-organelles-have-membranes": [
+    "c 180 100 80;c 140 85 35;c 220 120 25;c 180 45 15;t 140 88 Nucleus;t 220 123 Lysosome;t 180 205 Compartments separate reactions",
+    "c 180 100 65;c 160 80 8;c 210 110 8;c 155 130 8;t 180 100 Acidic lumen;t 180 30 Membrane;t 180 195 Digestive enzymes kept inside",
+    "p M30 65Q30 40 90 40H270Q330 40 330 100Q330 160 270 160H90Q30 160 30 100Z;p M55 75H90V135H120V75H150V135H180V75H210V135H240V75H270V135H300;t 180 195 Folded inner membrane increases area",
+    "c 90 100 45;c 270 100 45;c 180 100 15;a 135 100 165 100;a 195 100 225 100;t 90 160 Compartment A;t 270 160 Compartment B;t 180 195 Vesicles and transport proteins"
+  ],
+  "plus-biology-how-fungi-obtain-food": [
+    "p M40 75Q60 45 80 75T120 75M40 115Q60 85 80 115T120 115;a 130 95 195 95;c 210 70 6;c 235 95 6;c 260 120 6;a 245 95 300 95;t 80 145 Hypha;t 220 150 Digested products;t 180 200 External enzymes then absorption",
+    "r 35 120 290 45;p M85 120V75L55 45M85 75L115 45M180 120V60M180 80L145 50M180 80L215 50M270 120V75L300 45;t 180 195 Decompose dead organic matter",
+    "p M30 170L90 125L90 65M90 125L155 100L185 35M155 100L220 130L260 60M220 130L330 165M155 100L135 45;t 180 195 Branching hyphae form mycelium",
+    "r 25 110 150 60;p M45 110L85 60L125 110M85 60L145 35;c 260 95 35;c 287 65 15;t 100 185 Wood decomposer;t 260 185 Budding yeast"
+  ],
+  "plus-biology-what-biological-clocks-regulate": [
+    "l 35 105 325 105;p M35 105Q107.5 20 180 105T325 105;t 35 175 0 h;t 180 175 12 h;t 325 175 24 h;t 180 195 Internal timing cycle",
+    "c 70 75 25;a 95 75 150 75;c 200 100 50;l 200 100 200 65;l 200 100 225 100;t 70 120 Light;t 200 165 Clock entrainment;t 180 200 Daily cues synchronize rhythms",
+    "l 35 75 325 75;l 35 145 325 145;f 35 55 145 20;f 110 125 145 20;t 180 45 Internal day;t 180 115 Local day;t 180 195 Time-zone mismatch",
+    "l 35 170 325 170;p M35 155L225 45L325 155;p M35 100Q105 25 180 100T325 100;t 140 40 Sleep pressure;t 245 125 Clock signal;t 180 200 Distinct interacting mechanisms"
+  ],
+  "depth-biology-how-meiosis-creates-variation": [
+    "c 180 40 22;a 180 62 95 100;a 180 62 265 100;c 95 110 20;c 265 110 20;a 95 130 55 165;a 95 130 135 165;a 265 130 225 165;a 265 130 305 165;c 55 175 14;c 135 175 14;c 225 175 14;c 305 175 14;t 180 25 2n replicated;t 180 205 Two divisions → four haploid cells",
+    "p M85 40L160 170M160 40L85 170M200 40L275 170M275 40L200 170;l 122 105 237 105;a 145 95 215 95;a 215 115 145 115;t 180 30 Homologous chromosomes;t 180 195 Corresponding segments exchanged",
+    "p M45 50L95 110M95 50L45 110M135 50L185 110M185 50L135 110M230 50L280 110M280 50L230 110;l 110 35 110 145;l 205 35 205 145;t 180 165 Independent orientations of pairs;t 180 195 Different maternal/paternal mixtures",
+    "b 25 55 145 45 AB (25%);b 190 55 145 45 Ab (25%);b 25 115 145 45 aB (25%);b 190 115 145 45 ab (25%);t 180 200 AaBb, independent assortment"
+  ],
+  "depth-biology-the-anatomy-of-a-protein": [
+    "c 45 100 15;c 100 100 15;c 155 100 15;c 210 100 15;c 265 100 15;c 320 100 15;l 60 100 85 100;l 115 100 140 100;l 170 100 195 100;l 225 100 250 100;l 280 100 305 100;t 180 60 Amino acid sequence;t 180 170 Peptide bonds",
+    "p M25 70Q45 30 65 70T105 70T145 70M205 45L230 75L205 105L230 135M250 45L275 75L250 105L275 135;p M45 150Q90 110 135 150T225 150;t 85 100 Helix;t 245 155 Sheet;t 180 200 Folding and subunit assembly",
+    "p M35 75Q100 10 165 75L140 100L165 125Q100 190 35 125Z;p M200 80L225 100L200 120Z;a 245 100 165 100;t 100 195 Binding pocket;t 230 155 Shape + charge",
+    "c 55 85 12;c 100 85 12;c 145 85 12;c 190 85 12;c 235 85 12;c 280 85 12;l 67 85 88 85;l 112 85 133 85;l 157 85 178 85;l 202 85 223 85;l 247 85 268 85;d 145 85 9;a 145 110 145 155;t 180 175 Substitution may change folding;t 180 200 Effect depends on position"
+  ],
+  "depth-biology-how-ecosystems-recycle-nitrogen": [
+    "b 75 35 210 50 Atmospheric N₂;a 180 85 180 120;b 75 120 210 50 Fixed nitrogen;t 180 195 Most organisms cannot use N₂ directly",
+    "b 25 65 95 55 N₂;a 120 92 132 92;b 132 65 95 55 NH₃/NH₄⁺;a 227 92 239 92;b 239 65 95 55 Amino acids;t 125 150 Fixation;t 240 150 Assimilation;t 180 195 Microbes make nitrogen available",
+    "b 25 55 95 50 Organic N;a 120 80 132 80;b 132 55 95 50 Ammonium;a 227 80 239 80;b 239 55 95 50 Nitrate;a 286 105 286 145;b 230 145 105 40 N₂ gas;t 105 160 Decompose → nitrify;t 180 205 Denitrification returns N₂",
+    "r 25 85 310 90;p M25 85Q45 65 65 85T105 85T145 85T185 85T225 85T265 85T305 85;c 95 110 8;c 125 120 8;c 155 105 8;c 185 120 8;a 55 35 90 85;t 115 35 Nutrient input;t 240 150 O₂ depletion;t 180 205 Excess nutrients can fuel algal growth"
+  ],
+  "plus-biology-how-mutations-arise": [
+    "b 35 50 290 45 A C T G A C;b 35 120 290 45 A C T A A C;t 180 110 G → A substitution;t 180 195 Copying error or damage",
+    "b 25 55 95 55 Copy error;a 120 82 132 82;b 132 55 95 55 Repair;a 227 82 239 82;b 239 55 95 55 Corrected;a 180 110 180 150;t 180 175 If missed, mutation can persist",
+    "b 25 45 95 50 Same amino;b 132 45 95 50 New amino;b 239 45 95 50 Stop codon;t 180 145 Substitution outcomes;t 180 195 Insertion/deletion may shift frame",
+    "b 105 35 150 40 Parent cell;a 180 75 95 125;a 180 75 265 125;b 25 125 140 45 Somatic lineage;b 195 125 140 45 Germline;t 180 205 Germline changes can be inherited"
+  ],
+  "plus-biology-how-cells-dispose-of-damaged-parts": [
+    "p M25 70L60 100L95 70L130 100;c 215 100 45;a 130 100 170 100;t 80 145 Damaged protein;t 215 103 Organelle;t 180 195 Different degradation pathways",
+    "p M35 80L60 110L85 80L110 110;d 85 60 6;d 85 45 6;a 115 95 165 95;r 165 60 80 70;a 245 95 300 95;l 285 130 300 145;l 305 130 320 145;t 85 150 Ubiquitin tag;t 205 155 Proteasome;t 300 185 Peptides",
+    "c 75 100 35;c 75 100 50;a 125 100 195 100;c 245 100 50;c 245 100 18;t 75 165 Enclosed organelle;t 245 165 Lysosome;t 180 205 Autophagy delivers cargo for recycling",
+    "b 25 65 95 55 Degrade;a 120 92 132 92;b 132 65 95 55 Recycle;a 227 92 239 92;b 239 65 95 55 Rebuild;t 180 165 Regulated maintenance cycle"
+  ],
+  "plus-biology-how-genes-are-switched-on": [
+    "b 25 65 95 55 DNA;a 120 92 132 92;b 132 65 95 55 RNA;a 227 92 239 92;b 239 65 95 55 Protein;t 180 145 Control at transcription, processing;t 180 165 translation and turnover",
+    "l 25 115 335 115;r 45 100 55 30;r 245 100 75 30;p M70 100Q145 20 275 100;t 72 145 Enhancer;t 282 145 Promoter;t 180 195 DNA looping enables regulatory contact",
+    "p M25 65Q60 25 95 65T165 65T235 65T305 65;p M25 145Q50 105 75 145T125 145T175 145T225 145T275 145T325 145;t 180 35 Open chromatin;t 180 195 Compact chromatin, same sequence",
+    "r 35 65 95 40;r 130 65 160 40;t 82 90 Regulatory DNA;t 210 90 Reporter;a 290 85 325 85;t 180 150 Compare signal under two conditions;t 180 195 Include controls"
+  ],
+  "plus-biology-why-proteins-need-folding": [
+    "p M25 55L55 95L85 75L115 125L145 85L175 150L205 110L235 160L265 125L295 175L335 145;t 180 35 Conformations and energy;t 180 200 Sequence + environment shape folding",
+    "p M35 75L65 110L95 75L125 110;a 125 95 165 95;c 205 95 40;p M190 75L220 95L190 115;a 245 95 300 95;t 80 150 Unfolded;t 205 150 Chaperone;t 300 150 Folded;t 180 195 Helps prevent aggregation",
+    "p M30 75L60 110L90 75L120 110M70 55L100 90L130 55L160 90;c 250 95 45;t 95 155 Aggregated;t 250 155 Functional fold;t 180 195 Misfolding may impair function",
+    "b 25 55 145 55 Before heating;b 190 55 145 55 After heating;t 97 145 Activity + structure;t 262 145 Activity + structure;t 180 195 Compare multiple measurements"
+  ],
+  "plus-biology-how-membranes-maintain-gradients": [
+    "r 25 90 310 30;d 55 55 5;d 85 55 5;d 115 55 5;d 145 55 5;d 175 55 5;d 205 55 5;d 235 55 5;d 265 55 5;d 295 55 5;d 95 155 5;d 265 155 5;t 180 35 Higher ion concentration;t 180 185 Membrane potential also matters",
+    "r 25 95 310 25;r 150 70 60 75;a 170 155 170 35;a 190 35 190 155;t 90 50 3 Na⁺ out;t 270 50 2 K⁺ in;t 180 175 ATP drives pump",
+    "r 25 90 310 30;r 140 70 80 70;a 160 35 160 155;a 200 155 200 35;t 95 45 Down gradient;t 275 45 Uphill cargo;t 180 195 Coupled transport",
+    "r 25 90 310 30;r 75 70 55 70;r 230 70 55 70;p M78 72L128 138M128 72L78 138;a 247 40 247 155;t 100 165 Pump blocked;t 260 165 Uptake weakens;t 180 205 Gradient dissipates over time"
+  ],
+  "plus-biology-how-populations-exchange-genes": [
+    "c 90 100 50;c 270 100 50;d 70 80 5;d 100 120 5;d 250 80 5;d 280 120 5;a 140 100 220 100;t 90 165 Population A;t 270 165 Population B;t 180 205 Migration + reproduction transfers alleles",
+    "r 35 65 261 35;f 296 65 29 35;t 165 55 90% resident, 10% migrant;t 180 145 .9 × .2 + .1 × .8;t 180 190 Mixed allele A frequency = .26",
+    "c 90 100 45;c 270 100 45;a 135 85 225 85;a 225 115 135 115;t 180 45 Gene flow;t 180 165 Selection, drift and barriers matter;t 180 195 May reduce differentiation",
+    "c 90 95 40;c 270 95 40;a 130 85 230 85;a 230 115 190 115;t 180 45 Asymmetric contribution;t 180 165 Simple mixing assumes no selection or drift;t 180 195 Actual populations may differ"
+  ]
+};
+window.LumenSlideArtBatch08Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch08;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch08Render(c,cls,step)||prior(c,cls,step);};})();
