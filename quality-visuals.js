@@ -7915,3 +7915,130 @@ window.LumenSlideArtBatch60={
 };
 window.LumenSlideArtBatch60Render=function(c,cls='cover',step=-1){return window.LumenSlideArtSharedRender(window.LumenSlideArtBatch60,c,cls,step);};
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch60Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* leadership: dedicated slide artwork, batch 61. */
+window.LumenSlideArtBatch61={
+  "leadership": [
+    "c 180 105 38;t 180 110 Purpose;a 65 65 145 85;a 295 65 215 85;t 65 45 Outcome;t 295 45 Constraints;t 180 195 Make direction understandable",
+    "r 35 55 290 110;l 180 55 180 165;l 35 110 325 110;t 105 85 Standard;t 255 85 Deadline;t 105 140 Authority;t 255 140 Support",
+    "b 35 55 135 65 Better service;b 190 55 135 65 Response and escalation;a 170 87 190 87;t 180 165 Agree observable expectations and review date",
+    "c 95 105 30;c 265 105 30;a 125 85 235 85;a 235 125 125 125;t 95 110 Leader;t 265 110 Team;t 180 195 Ask team to explain next steps"
+  ],
+  "teams": [
+    "d 65 65 8;d 295 65 8;d 65 155 8;d 295 155 8;c 180 105 28;a 75 65 155 90;a 285 65 205 90;a 75 155 155 120;a 285 155 205 120;t 180 110 Result;t 180 195 Interdependent contributions",
+    "b 35 65 85 65 Role A;b 137 65 85 65 Handoff;b 239 65 85 65 Role B;a 120 97 137 97;a 222 97 239 97;t 180 175 Information travels with responsibility",
+    "b 25 65 95 65 Engineering;a 120 97 132 97;b 132 65 95 65 Testing;a 227 97 239 97;b 239 65 95 65 Support;t 180 195 Release readiness depends on handoffs",
+    "p M35 105H145M215 105H325;p M160 90L200 120M200 90L160 120;t 180 65 Missing handoff;t 180 165 Diagnose gaps before blaming people"
+  ],
+  "depth-leadership-how-delegation-builds-capacity": [
+    "c 95 105 35;c 265 105 35;a 130 85 230 85;a 230 125 130 125;t 95 110 Leader;t 265 110 Delegate;t 180 65 Authority;t 180 155 Accountability remains",
+    "r 35 55 290 110;r 95 75 170 70;t 180 110 Authorized scope;t 180 195 Define resource and escalation limits",
+    "b 35 55 135 65 Routine edits;b 190 55 135 65 Policy changes;t 100 155 Authorized;t 260 155 Review required;t 180 195 Documentation update has defined boundaries",
+    "l 35 175 325 175;p M35 145L325 55;t 180 25 Autonomy increases with capability;t 180 195 Checkpoints support rather than replace decisions"
+  ],
+  "depth-leadership-what-psychological-safety-means": [
+    "c 95 105 35;c 265 105 35;a 130 105 230 105;t 95 110 Question;t 265 110 Respectful reply;t 180 195 Interpersonal risk without humiliation",
+    "b 35 55 135 65 Safe to disagree;b 190 55 135 65 High standards;t 180 165 Psychological safety can coexist with accountability",
+    "b 35 65 135 65 Near miss;a 170 97 190 97;b 190 65 135 65 Early report;t 180 165 Investigate rather than ridicule",
+    "b 35 55 135 65 Honest error;b 190 55 135 65 Deliberate breach;t 180 165 Constructive response differs by conduct"
+  ],
+  "depth-leadership-how-leaders-handle-uncertainty": [
+    "r 35 55 90 110;r 135 55 90 110;r 235 55 90 110;t 80 105 Known;t 180 105 Assumed;t 280 105 Unknown;t 180 195 Separate evidence levels",
+    "p M180 45V90H75V145M180 90H285V145;t 180 25 Choice;t 75 165 Reversible;t 285 165 Irreversible;t 180 195 Prefer bounded experiments where feasible",
+    "r 35 55 290 110;r 55 75 65 70;t 87 110 Pilot;t 225 110 Wider team;t 180 195 Review pilot criteria before expansion",
+    "l 35 105 325 105;d 65 105 6;d 295 105 6;t 65 85 Decide;t 295 85 Revisit;t 180 175 State evidence that could change course"
+  ],
+  "depth-leadership-how-to-coach-without-taking-over": [
+    "c 95 105 35;c 265 105 35;a 130 85 230 85;a 230 125 130 125;t 95 110 Coach;t 265 110 Learner;t 180 195 Questions and practice build capability",
+    "b 35 55 135 65 Explain approach;b 190 55 135 65 Identify obstacle;t 180 165 Understand before giving solution",
+    "p M180 45V90H85V145M180 90H275V145;t 180 25 Fault;t 85 165 Cause A;t 275 165 Cause B;t 180 195 Learner chooses a test to distinguish causes",
+    "l 35 175 325 175;p M35 55L325 145;t 180 25 Direct intervention;t 180 195 Return responsibility as competence permits"
+  ],
+  "depth-leadership-why-role-clarity-matters": [
+    "r 35 55 290 110;l 180 55 180 165;l 35 110 325 110;t 105 85 Duties;t 255 85 Authority;t 105 140 Outputs;t 255 140 Interfaces",
+    "c 125 105 65;c 235 105 65;t 100 105 Role A;t 260 105 Role B;t 180 105 Handoff;t 180 195 Explicitly assign overlap",
+    "b 25 65 95 65 Investigate;a 120 97 132 97;b 132 65 95 65 Approve;a 227 97 239 97;b 239 65 95 65 Inform;t 180 195 Incident roles with distinct authority",
+    "b 35 55 135 65 Unowned task;b 190 55 135 65 Updated owner;t 180 165 Recurring gaps signal need to review roles"
+  ],
+  "depth-leadership-how-leaders-manage-change": [
+    "b 35 55 135 65 Current problem;a 170 87 190 87;b 190 55 135 65 Expected benefit;t 180 165 Explain tradeoffs to affected staff",
+    "c 180 105 35;c 65 65 20;c 295 65 20;l 65 65 150 85;l 295 65 210 85;t 180 110 Change;t 65 35 Staff input;t 295 35 Constraints;t 180 195 Discover effects before rollout",
+    "b 25 65 95 65 Test schedule;a 120 97 132 97;b 132 65 95 65 Train;a 227 97 239 97;b 239 65 95 65 Fallback;t 180 195 Prepare real workflows before switching",
+    "l 35 175 325 175;p M35 155L325 65;t 180 25 Actual adoption;t 180 195 Measure use and outcomes after launch"
+  ],
+  "depth-leadership-how-trust-develops-at-work": [
+    "c 95 105 35;c 265 105 35;l 130 105 230 105;t 95 110 Reliance;t 265 110 Uncertainty;t 180 195 Trust involves future risk",
+    "b 35 45 135 55 Competence;b 190 45 135 55 Integrity;b 35 120 135 55 Reliability;b 190 120 135 55 Concern;t 180 205 Trust grows through observed behavior",
+    "l 35 105 325 105;d 65 105 6;d 180 105 6;d 295 105 6;t 65 85 Promise noon;t 180 85 Warn early;t 295 85 Revised delivery;t 180 175 Reliable communication despite delay",
+    "l 35 175 325 175;p M35 65L125 155L325 75;t 180 25 Trust after broken commitment;t 180 195 Repair through changed behavior over time"
+  ],
+  "depth-leadership-how-to-run-useful-retrospectives": [
+    "r 35 55 290 110;l 180 55 180 165;t 105 105 Past work;t 255 105 Improvements;t 180 195 Retrospective examines completed period",
+    "b 35 55 135 65 Observable event;b 190 55 135 65 Personality judgment;t 180 165 Keep discussion grounded in evidence",
+    "b 35 65 135 65 Unclear criteria;a 170 97 190 97;b 190 65 135 65 Repeat testing;t 180 165 Draft acceptance criteria before development",
+    "r 55 45 250 130;l 55 85 305 85;l 55 125 305 125;t 180 70 Improvement;t 180 110 Owner;t 180 150 Review date;t 180 195 Check effectiveness next time"
+  ],
+  "plus-leadership-how-leaders-set-decision-rights": [
+    "c 180 105 35;c 65 65 20;c 295 65 20;l 65 65 150 85;l 295 65 210 85;t 180 110 Decider;t 65 35 Input;t 295 35 Informed;t 180 195 Name decision authority explicitly",
+    "l 35 175 325 175;p M35 155L325 45;t 180 25 Approval scrutiny;t 180 195 Higher consequences may require higher authority",
+    "b 35 55 135 65 Schedule change;b 190 55 135 65 Budget increase;t 100 155 Service lead;t 260 155 Finance approval;t 180 195 Match rights to decision risk",
+    "p M35 105H140L180 65L220 105H325;t 180 45 Escalation;t 180 165 Final decision owner resolves overlap"
+  ],
+  "plus-leadership-why-leaders-communicate-priorities-repeatedly": [
+    "d 65 65 7;d 65 105 7;d 65 145 7;d 295 65 7;d 295 105 7;d 295 145 7;c 180 105 35;l 72 65 150 85;l 72 105 145 105;l 288 105 215 105;t 180 110 Priority;t 180 195 Competing messages dilute attention",
+    "l 35 105 325 105;d 65 105 6;d 180 105 6;d 295 105 6;t 65 85 Kickoff;t 180 85 Decisions;t 295 85 Review;t 180 175 Reinforce the same priority in context",
+    "b 35 55 135 65 New feature;b 190 55 135 65 Reliability fix;t 180 165 Reliability priority favors recurring defect fix",
+    "b 35 55 135 65 Stated priority;b 190 55 135 65 Actual choice;t 180 165 Compare incentives and decisions to message"
+  ],
+  "plus-leadership-how-leaders-manage-competing-goals": [
+    "r 35 75 290 50;l 180 75 180 125;t 107 105 Goal A;t 252 105 Goal B;t 180 195 Shared finite resources create tradeoffs",
+    "b 35 45 135 55 Urgency;b 190 45 135 55 Consequences;b 35 120 135 55 Dependencies;b 190 120 135 55 Obligations;t 180 205 Establish nonnegotiable safeguards",
+    "r 35 65 290 40;f 35 65 170 40;r 35 125 290 40;f 35 125 235 40;t 180 55 Defer feature work;t 180 115 Preserve critical testing;t 180 195 Protect reliability while adjusting scope",
+    "b 35 55 135 65 Chosen goal;b 190 55 135 65 Deferred cost;t 180 165 Explain priority and conditions for review"
+  ],
+  "plus-leadership-understanding-succession-planning": [
+    "c 95 105 35;c 265 105 35;a 130 105 230 105;t 95 110 Incumbent;t 265 110 Successor;t 180 195 Prepare for role transitions",
+    "b 35 45 135 55 Duties;b 190 45 135 55 Authority;b 35 120 290 55 Critical knowledge;t 180 205 Identify continuity risks",
+    "b 25 65 95 65 Document;a 120 97 132 97;b 132 65 95 65 Cross-train;a 227 97 239 97;b 239 65 95 65 Test cover;t 180 195 Trial backup coverage during leave",
+    "c 180 55 25;p M180 80V105H65V145M180 105V145M180 105H295V145;t 180 25 Critical role;t 65 165 A;t 180 165 B;t 295 165 C;t 180 195 Transparent development, no promised appointment"
+  ],
+  "plus-leadership-how-leaders-respond-to-mistakes": [
+    "b 25 65 95 65 Contain;a 120 97 132 97;b 132 65 95 65 Gather facts;a 227 97 239 97;b 239 65 95 65 Report;t 180 195 Prevent harm before judging intent",
+    "r 35 55 90 110;r 135 55 90 110;r 235 55 90 110;t 80 105 System gap;t 180 105 Ordinary error;t 280 105 Deliberate act;t 180 195 Different accountability questions",
+    "b 35 55 135 65 Unclear approval;b 190 55 135 65 Knowing bypass;t 180 165 Similar result can have different causes",
+    "l 35 175 325 175;p M35 55L325 145;t 180 25 Recurrence rate;t 180 195 Verify corrective action reduces risk"
+  ],
+  "plus-leadership-building-cross-functional-collaboration": [
+    "c 95 105 35;c 265 105 35;t 95 110 Sales;t 265 110 Operations;t 180 195 Different constraints and terminology",
+    "c 180 105 35;a 65 65 150 85;a 295 65 210 85;t 180 110 Shared result;t 65 45 Promise;t 295 45 Capacity;t 180 195 Define each function's deliverable",
+    "b 35 65 135 65 Customer order;a 170 97 190 97;b 190 65 135 65 Capacity check;t 180 165 Agree acceptance rules before promising",
+    "b 35 45 135 55 Shared definition;b 190 45 135 55 Named owner;b 35 120 290 55 Escalation path;t 180 205 Resolve conflicting incentives explicitly"
+  ],
+  "plus-leadership-how-leaders-evaluate-team-capacity": [
+    "r 35 75 290 50;f 35 75 200 50;t 135 105 Sustainable work;t 280 105 Limits;t 180 195 Capacity is not all theoretical hours",
+    "r 35 65 290 40;l 160 65 160 105;l 225 65 225 105;t 97 90 Projects;t 192 90 Support;t 275 90 Overhead;t 180 195 Account for recurring work and interruptions",
+    "r 35 75 290 50;f 35 75 116 50;r 151 75 29 50;t 93 105 80 support;t 165 105 20;t 252 105 100 left;t 180 195 200 nominal hours minus support and overhead",
+    "r 35 65 290 40;r 35 125 230 40;t 180 55 Demand;t 150 115 Sustainable capacity;t 180 195 Adjust scope or staffing and protect slack"
+  ],
+  "plus-leadership-understanding-inclusive-decision-making": [
+    "c 180 105 35;c 65 65 20;c 295 65 20;c 180 175 20;a 65 65 150 85;a 295 65 210 85;a 180 175 180 140;t 180 110 Decision;t 65 35 Staff A;t 295 35 Staff B;t 180 205 Others",
+    "b 35 45 135 55 Advance info;b 190 45 135 55 Accessible input;b 35 120 290 55 Private contribution option;t 180 205 Reduce participation barriers",
+    "r 35 55 130 110;r 195 55 130 110;t 100 105 Day staff;t 260 105 Night staff;t 180 195 Seek shift input beyond daytime meeting",
+    "b 35 55 135 65 Input considered;b 190 55 135 65 Named decider;t 180 165 Explain outcome without requiring unanimity"
+  ],
+  "plus-leadership-how-leaders-give-recognition": [
+    "b 35 55 135 65 Contribution;a 170 87 190 87;b 190 55 135 65 Why it mattered;t 180 165 Specific recognition goes beyond praise",
+    "r 65 45 90 125;r 205 95 90 75;t 110 35 Visible output;t 250 85 Prevention;t 180 195 Recognize less visible valuable work",
+    "r 55 45 110 120;l 70 75 150 75;l 70 105 150 105;l 70 135 150 135;a 165 105 230 105;c 265 105 35;t 110 185 Guide;t 265 110 Team;t 180 205 Documentation helps others resolve cases",
+    "b 35 55 135 65 Private thanks;b 190 55 135 65 Public recognition;t 180 165 Respect preferences and transparent reward criteria"
+  ],
+  "plus-leadership-how-leaders-use-after-action-reviews": [
+    "r 35 55 130 110;r 195 55 130 110;t 100 105 Intended;t 260 105 Actual;t 180 195 After-action review examines difference",
+    "l 35 105 325 105;d 65 105 6;d 180 105 6;d 295 105 6;t 65 85 Event;t 180 85 Response;t 295 85 Review;t 180 175 Separate knowledge at the time from hindsight",
+    "b 35 55 135 65 Expected contact;b 190 55 135 65 Missed contact;t 180 165 Compare escalation records and actual communications",
+    "r 55 45 250 130;l 55 85 305 85;l 55 125 305 125;t 180 70 Corrective action;t 180 110 Due date;t 180 150 Verification;t 180 195 Preserve practices that worked"
+  ]
+};
+window.LumenSlideArtBatch61Render=function(c,cls='cover',step=-1){return window.LumenSlideArtSharedRender(window.LumenSlideArtBatch61,c,cls,step);};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch61Render(c,cls,step)||prior(c,cls,step);};})();
