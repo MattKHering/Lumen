@@ -832,3 +832,149 @@ window.LumenSlideArtBatch02Render=function renderSlide(c,cls="cover",step=-1){
  return `<svg class="${esc(cls)}" viewBox="0 0 360 220" role="img" aria-label="${esc(title)}" preserveAspectRatio="xMidYMid meet"><title>${esc(title)}</title><desc>${esc(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch02Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* Individually authored slide diagrams: Health, batch 03. */
+window.LumenSlideArtBatch03={
+  "vaccines": [
+    "c 65 100 38;t 65 104 Antigen;a 105 100 150 100;c 190 100 38;t 190 104 Immune cell;a 230 100 280 100;c 305 100 20;t 180 180 Recognition of selected antigen",
+    "c 65 70 27;t 65 74 B cell;c 65 145 27;t 65 149 T cell;a 92 70 155 70;a 92 145 155 145;c 185 70 25;c 185 145 25;t 185 74 Memory;t 185 149 Memory;a 210 70 285 110;a 210 145 285 110;t 300 108 Later;t 300 124 response",
+    "l 35 170 325 170;r 65 55 85 115;f 215 100 85 70;t 107 45 Without;t 257 90 With;t 180 195 Illustrative risk reduction, not elimination",
+    "b 20 70 100 55 Evaluation;a 120 97 130 97;b 130 70 100 55 Authorization;a 230 97 240 97;b 240 70 100 55 Monitoring;t 180 178 Timing and suitability vary"
+  ],
+  "mindfulness": [
+    "c 180 100 65;c 180 100 37;c 180 100 12;t 180 35 Present experience;t 180 190 Attend without judging",
+    "p M25 100Q65 40 105 100T185 100T265 100T345 100;c 180 100 8;a 260 155 180 155;t 265 175 Attention wanders;t 135 190 Gently return to breath",
+    "b 25 50 145 55 Practice;b 190 50 145 55 Comparator;a 97 105 97 140;a 262 105 262 140;t 97 160 Outcome A;t 262 160 Outcome B;t 180 203 Effects vary across studies",
+    "b 25 55 145 50 Mindfulness;b 190 55 145 50 Other support;a 97 105 180 145;a 262 105 180 145;b 100 145 160 40 Individual needs;t 180 205 Not a replacement for care"
+  ],
+  "nutrition": [
+    "b 25 35 95 50 Carb;b 132 35 95 50 Fat;b 239 35 95 50 Protein;a 72 85 180 115;a 180 85 180 115;a 286 85 180 115;b 110 115 140 40 Energy;t 180 190 Vitamins, minerals, fiber, water;t 180 207 Other essential roles",
+    "r 30 55 65 105;r 108 55 65 105;r 186 55 65 105;r 264 55 65 105;f 30 55 65 30;f 108 55 65 45;f 186 55 65 25;f 264 55 65 40;t 62 180 Day 1;t 140 180 Day 2;t 218 180 Day 3;t 296 180 Day 4;t 180 207 Overall food pattern matters",
+    "b 25 45 145 48 Food A: 200 kcal;b 190 45 145 48 Food B: 200 kcal;t 97 125 More fiber;t 262 125 Less fiber;t 97 152 Less sodium;t 262 152 More sodium;t 180 199 Equal energy ≠ equal nutrition",
+    "b 25 45 145 50 Activity;b 190 45 145 50 Health needs;b 25 120 145 50 Allergies;b 190 120 145 50 Preferences;t 180 205 Appropriate choices differ"
+  ],
+  "depth-health-how-physical-activity-supports-health": [
+    "c 90 55 12;l 90 67 90 115;l 90 85 60 105;l 90 85 120 70;l 90 115 55 150;l 90 115 135 140;c 270 55 12;l 270 67 270 125;l 270 85 235 60;l 270 85 305 60;l 270 125 250 165;l 270 125 290 165;l 215 60 325 60;r 215 48 10 24;r 315 48 10 24;t 90 185 Aerobic;t 270 185 Resistance",
+    "l 35 175 325 175;l 35 175 35 35;p M35 150Q115 110 175 100T325 48;t 180 35 Adaptation over time;t 180 200 Repeated suitable activity",
+    "r 45 140 65 30;r 145 110 65 60;r 245 80 65 90;t 77 130 Start;t 177 100 Build;t 277 70 Progress;t 180 200 Gradual increases",
+    "c 100 80 45;p M70 80H85L94 65L105 100L115 80H130;b 170 50 165 55 Unusual chest pain;b 170 115 165 55 Fainting / severe breathlessness;t 180 200 Seek prompt medical evaluation"
+  ],
+  "depth-health-why-hydration-matters": [
+    "b 25 65 95 55 Intake;a 120 92 140 92;b 140 65 80 55 Body;a 220 92 240 92;b 240 65 95 55 Losses;t 180 162 Water supports circulation;t 180 185 and temperature control",
+    "b 20 45 95 45 Drinks;b 20 125 95 45 Food;a 115 67 150 105;a 115 147 150 105;c 180 105 30;a 210 105 245 48;a 210 105 245 88;a 210 105 245 128;a 210 105 245 168;t 290 50 Urine;t 290 90 Sweat;t 290 130 Breath;t 290 170 Stool",
+    "c 80 80 30;t 80 84 Heat;c 180 80 30;t 180 84 Activity;c 280 80 30;t 280 84 Illness;a 80 110 180 150;a 180 110 180 150;a 280 110 180 150;b 105 150 150 40 Fluid needs",
+    "l 35 105 325 105;f 125 90 110 30;r 35 90 90 30;r 235 90 90 30;t 80 75 Too little;t 180 75 Balance;t 280 75 Too much;t 180 175 Confusion or inability to drink;t 180 195 may require urgent care"
+  ],
+  "depth-health-how-stress-affects-the-body": [
+    "b 25 55 105 50 Threat cue;a 130 80 160 80;b 160 55 175 50 Sympathetic response;p M45 155H80L90 125L102 180L115 155H300;t 180 205 Heart rate and alertness may rise",
+    "l 35 170 325 170;l 35 170 35 35;p M35 145L90 45Q175 80 325 145;l 35 145 325 145;t 90 35 Challenge;t 250 110 Recovery;t 180 199 Return toward baseline",
+    "l 35 165 325 165;p M35 145L70 65L105 125L140 55L175 115L210 50L245 105L280 55L325 95;t 180 35 Repeated demands;t 180 195 Sleep and mood may be affected",
+    "b 25 45 145 48 Sleep routines;b 190 45 145 48 Activity;b 25 120 145 48 Social support;b 190 120 145 48 Address stressors;t 180 205 Persistent symptoms: seek evaluation"
+  ],
+  "depth-health-reading-nutrition-labels": [
+    "b 35 35 290 42 Nutrition facts;b 35 77 290 37 Serving size: 1 cup;b 35 114 290 37 Servings per pack: 2.5;b 35 151 290 37 Calories per serving: 160",
+    "r 35 60 90 50;r 135 60 90 50;r 235 60 45 50;t 80 87 160;t 180 87 160;t 257 87 80;t 180 153 160 × 2.5 = 400 kcal;t 180 190 Whole package",
+    "r 35 80 290 40;f 35 80 58 40;t 64 105 20%;t 180 65 Illustrative % Daily Value;t 180 165 Reference per serving;t 180 190 Not personalized",
+    "b 25 45 145 40 A: 100 g;b 190 45 145 40 B: 100 g;t 97 118 Sodium 200 mg;t 262 118 Sodium 350 mg;t 97 145 Fiber 4 g;t 262 145 Fiber 2 g;t 180 200 Compare equivalent amounts"
+  ],
+  "depth-health-what-preventive-care-means": [
+    "l 30 105 330 105;c 95 105 7;c 220 105 7;t 95 80 Before disease;t 220 80 Earlier detection;t 95 150 Primary;t 220 150 Secondary;t 180 202 Measure meaningful outcomes",
+    "r 45 65 240 30;f 45 130 180 30;t 165 55 20 per 1,000;t 135 120 15 per 1,000;t 180 195 Absolute reduction: 5 per 1,000",
+    "r 45 65 240 32;f 45 65 60 32;t 180 55 5 fewer out of 20;t 180 132 Relative reduction = 25%;t 180 165 1 ÷ 0.005 = 200;t 180 197 Over five years",
+    "b 25 55 145 55 Potential benefit;b 190 55 145 55 Potential harm;t 97 140 Fewer outcomes;t 262 140 False positives;t 262 160 Side effects;t 180 205 Risk group and time matter"
+  ],
+  "depth-health-understanding-dental-health": [
+    "p M120 45Q80 35 85 85L105 170Q115 190 130 160L150 115L170 160Q185 190 195 170L215 85Q220 35 180 45Z;c 100 74 5;c 110 70 5;c 120 75 5;c 130 70 5;a 245 65 135 73;t 280 55 Plaque;t 180 205 Microbial film produces acids",
+    "p M70 45H290V170H70Z;p M70 95H290M70 125H290;c 105 60 6;c 130 60 6;a 105 65 105 95;a 130 65 130 95;t 235 80 Acid;t 180 115 Enamel;t 180 150 Dentin;t 180 200 Saliva and fluoride support repair",
+    "p M150 35Q110 30 115 90L140 175L160 125L180 175L205 90Q210 30 170 35Z;p M30 100Q80 80 115 110M205 110Q270 80 330 100;a 285 65 205 110;t 280 52 Inflamed gum;t 180 205 Supporting tissue may be damaged",
+    "p M45 60H220V82H45Z;l 160 82 160 110;l 175 82 175 110;l 190 82 190 110;l 205 82 205 110;b 235 125 100 45 Dental visit;t 110 145 Fluoride brush;t 110 172 Clean between teeth;t 180 205 Manage risk"
+  ],
+  "depth-health-why-tobacco-smoke-harms-health": [
+    "r 25 90 100 18;p M125 90Q155 55 185 90T245 90;p M125 105Q155 75 185 105T245 105;t 180 45 Combustion;t 270 145 CO;t 270 166 Carcinogens;t 180 204 Harmful smoke constituents",
+    "p M180 40V85L120 105L90 160M180 85L240 105L270 160;p M120 85Q50 65 55 155Q85 190 140 160Z;p M240 85Q310 65 305 155Q275 190 220 160Z;t 180 205 Airways and blood vessels affected",
+    "b 25 60 95 55 Nicotine;a 120 87 132 87;b 132 60 95 55 Reward signal;a 227 87 239 87;b 239 60 95 55 Repeat use;a 285 115 285 160;a 285 160 72 160;a 72 160 72 115;t 180 188 Dependence can sustain use",
+    "l 35 175 325 175;p M35 45Q100 105 180 120T325 155;t 180 30 Risk can decline after stopping;t 180 195 Time after cessation →;t 180 210 Counseling and treatment may help"
+  ],
+  "plus-health-how-sleep-pressure-builds": [
+    "l 35 165 325 165;p M35 150L245 45L325 150;p M35 95Q105 30 175 95T325 95;t 145 35 Sleep pressure;t 250 120 Circadian timing;t 180 195 Wake → sleep",
+    "l 35 175 325 175;p M35 155L210 40Q265 120 325 155;t 115 95 Wake: builds;t 275 75 Sleep: falls;t 180 200 Adenosine participates",
+    "l 35 170 325 170;p M35 110Q105 25 180 110T325 110;c 80 40 16;l 80 15 80 8;l 55 40 45 40;l 105 40 115 40;t 180 195 Light influences biological clock",
+    "l 35 175 325 175;p M35 155L180 55L210 120L325 55;l 180 175 180 45;l 210 175 210 45;t 195 37 Nap;t 290 160 Bedtime;t 180 207 Late nap can lower pressure"
+  ],
+  "plus-health-why-fiber-supports-digestion": [
+    "p M55 45Q20 90 55 150Q90 195 125 150Q160 90 125 45Z;p M75 55Q120 75 75 95T75 135T100 160;t 180 65 Small intestine;a 125 145 235 145;b 235 125 100 50 Fiber passes;t 180 205 Not digested by human enzymes",
+    "c 85 95 22;c 85 95 35;c 85 95 48;t 85 160 Retains water;c 230 70 9;c 265 95 9;c 230 120 9;c 295 120 9;t 262 160 Fermented;t 180 200 Different fibers, different effects",
+    "b 25 65 95 50 Fiber;a 120 90 135 90;c 180 90 45;t 180 94 Microbes;a 225 90 240 90;b 240 65 95 50 SCFAs;t 180 190 Fermentation produces metabolites",
+    "l 35 170 325 170;p M35 150L115 145L195 105L275 55;t 180 35 Illustrative rapid increase;t 180 197 Tolerance varies by amount and type"
+  ],
+  "plus-health-understanding-exercise-recovery": [
+    "l 35 170 325 170;p M35 80L90 140Q160 150 225 65L325 75;t 90 158 Fatigue;t 235 48 Adaptation;t 180 202 Illustrative training response",
+    "b 25 45 145 50 Sleep;b 190 45 145 50 Energy;b 25 120 145 50 Nutrition;b 190 120 145 50 Spaced training;t 180 205 Recovery has multiple inputs",
+    "l 35 175 325 175;p M35 125L90 90L145 130L200 80L255 95L325 60;t 145 149 Temporary dip;t 180 35 Track performance across sessions;t 180 202 One dip does not establish overtraining",
+    "l 35 175 325 175;p M35 55L90 75L145 95L200 130L255 140L325 160;t 180 32 Persistent decline;t 180 197 Pain or unexplained decline warrants assessment"
+  ],
+  "plus-health-how-caffeine-affects-alertness": [
+    "p M30 145H330M130 145V110Q180 60 230 110V145;c 180 105 22;t 180 109 Caffeine;c 65 65 18;t 65 40 Adenosine;a 85 65 135 95;t 180 190 Receptor blocked, sleep need remains",
+    "l 35 175 325 175;p M35 45Q110 95 180 125T325 157;t 180 30 Illustrative elimination over hours;t 180 200 Individual metabolism varies",
+    "r 45 45 70 125;r 145 107.5 70 62.5;r 245 138.75 70 31.25;t 80 35 100 mg;t 180 97 50 mg;t 280 128 25 mg;t 80 190 0 h;t 180 190 5 h;t 280 190 10 h",
+    "b 25 60 145 60 More alert;b 190 60 145 60 Sleep disrupted;t 180 155 Benefit and trade-off;t 180 194 Sensitivity varies"
+  ],
+  "plus-health-understanding-sun-exposure-and-skin": [
+    "r 25 85 310 35;r 25 120 310 65;a 95 30 95 165;a 240 30 240 112;t 95 22 UVA;t 240 22 UVB;t 180 104 Epidermis;t 180 175 Dermis;t 180 205 Both can damage skin",
+    "l 35 170 325 170;f 55 110 80 60;f 225 50 80 120;t 95 100 Short exposure;t 265 40 Longer exposure;t 180 200 Same intensity, more time → more dose",
+    "p M50 85Q180 0 310 85Z;l 180 85 180 175;c 180 115 15;l 180 130 180 170;b 25 140 100 42 Clothing;b 235 140 100 42 Sunscreen;t 180 205 Combine protective measures",
+    "l 35 170 325 170;p M35 155L105 135L175 110L245 70L325 40;t 180 27 Repeated exposure can add damage;t 180 195 Changing lesions need assessment"
+  ],
+  "plus-health-how-hearing-protection-reduces-exposure": [
+    "r 45 110 80 60;r 235 50 80 120;t 85 100 Lower dose;t 275 40 Higher dose;t 180 195 Intensity × exposure time matters",
+    "r 55 105 90 60;f 215 45 90 120;t 100 95 1× intensity;t 260 35 2× intensity;t 180 195 +3 dB ≈ twice sound intensity",
+    "b 55 35 250 45 Reduce sound at source;a 180 80 180 95;b 80 95 200 45 Limit time;a 180 140 180 155;b 105 155 150 45 Hearing protection",
+    "p M55 55Q145 30 145 105Q145 160 105 175;p M205 55Q295 30 295 105Q295 160 255 175;r 95 98 36 18;r 245 90 35 35;t 100 195 Poor seal;t 260 195 Better fit"
+  ],
+  "plus-health-what-blood-cholesterol-measures": [
+    "c 90 105 50;c 270 105 35;c 75 90 7;c 105 115 7;c 260 95 6;c 280 110 6;t 90 40 LDL particle;t 270 55 HDL particle;t 180 192 LDL-C / HDL-C measure carried cholesterol",
+    "b 25 45 145 50 LDL-related measures;b 190 45 145 50 Blood pressure;b 25 120 145 50 Smoking;b 190 120 145 50 Age and other factors;t 180 205 Combined risk assessment",
+    "r 35 75 290 50;f 35 75 69.05 50;t 70 105 HDL 50;t 216 105 Non-HDL 160;t 180 60 Total 210 mg/dL;t 180 177 210 − 50 = 160 mg/dL",
+    "b 25 65 145 55 Lab result;a 170 92 190 92;b 190 65 145 55 Risk context;t 180 160 Units and methods matter;t 180 195 Not a diagnosis alone"
+  ],
+  "plus-health-why-handwashing-reduces-infection-risk": [
+    "b 25 55 95 55 Surface;a 120 82 132 82;b 132 55 95 55 Hand;a 227 82 239 82;b 239 55 95 55 Face;c 75 145 5;c 95 145 5;c 180 145 5;c 285 145 5;t 180 196 Microbes transfer across contacts",
+    "c 65 95 38;c 180 95 38;c 295 95 38;t 65 100 Lather;t 180 100 Rub;t 295 100 Rinse;a 103 95 142 95;a 218 95 257 95;t 180 180 Coverage + removal",
+    "b 25 65 145 55 After restroom;b 190 65 145 55 Before food;a 97 120 180 155;a 262 120 180 155;t 180 180 Clean hands;t 180 203 Interrupt transmission",
+    "b 25 55 145 48 Hand hygiene;b 190 55 145 48 Ventilation;b 25 125 145 48 Food safety;b 190 125 145 48 Other measures;t 180 205 Multiple layers reduce risk"
+  ],
+  "plus-health-how-energy-balance-relates-to-weight": [
+    "b 25 75 95 55 Intake;a 120 102 140 102;b 140 75 80 55 Stores;a 220 102 240 102;b 240 75 95 55 Expenditure;t 180 190 Both intake and expenditure adapt",
+    "r 40 65 40 65;r 80 65 40 65;r 120 65 40 65;r 160 65 40 65;r 200 65 40 65;r 240 65 40 65;r 280 65 40 65;t 180 52 +200 kcal each day;t 180 165 7 × 200 = 1,400 kcal;t 180 195 Accounting model only",
+    "b 25 50 145 45 Body mass;b 190 50 145 45 Metabolism;a 170 72 190 72;b 25 130 145 45 Appetite;b 190 130 145 45 Activity;a 190 152 170 152;t 180 205 Dynamic feedback affects balance",
+    "l 35 165 325 165;p M35 90L80 65L125 100L170 50L215 105L260 75L325 85;t 180 35 Daily scale fluctuation;t 180 195 Water, glycogen and food also vary"
+  ],
+  "plus-health-why-health-screening-can-produce-false-alarms": [
+    "b 25 45 145 50 Condition present;b 190 45 145 50 Condition absent;t 97 125 Positive fraction;t 262 125 Negative fraction;t 97 150 Sensitivity;t 262 150 Specificity",
+    "b 110 30 140 40 10,000 people;a 180 70 90 110;a 180 70 270 110;b 25 110 130 42 100 affected;b 205 110 130 42 9,900 unaffected;t 90 180 90 positive;t 270 180 495 positive",
+    "r 35 80 290 50;f 35 80 44.62 50;t 57 110 90;t 202 110 495 false positives;t 180 65 585 positive tests;t 180 182 90 / 585 ≈ 15.4%",
+    "b 25 70 145 55 Positive screen;a 170 97 190 97;b 190 70 145 55 Confirmatory test;t 180 160 Not automatically a diagnosis;t 180 195 Benefits and harms depend on context"
+  ],
+  "sleep": [
+    "l 35 170 325 170;p M35 65H70V105H110V150H150V105H190V65H230V105H270V65H325;t 40 50 REM;t 70 98 NREM;t 150 165 Deep;t 180 200 Illustrative stages",
+    "l 35 165 325 165;p M35 55L55 145L85 80L115 55L140 135L170 70L200 55L225 115L255 55L280 90L325 55;t 180 35 Repeated cycles;t 180 195 Stage timing varies",
+    "l 35 175 325 175;p M35 155L225 40L325 155;p M35 110Q105 35 180 110T325 110;t 180 30 Sleep pressure and body clock;t 180 200 Timing affects sleep onset",
+    "b 25 55 145 55 Sufficient sleep;b 190 55 145 55 Daily function;a 170 82 190 82;t 180 155 Persistent sleepiness or insomnia;t 180 195 may merit evaluation"
+  ]
+};
+window.LumenSlideArtBatch03Render=function renderSlide(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch03;if(step<0||!Number.isInteger(step)||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch03Render(c,cls,step)||prior(c,cls,step);};})();
