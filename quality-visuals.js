@@ -2782,3 +2782,143 @@ window.LumenSlideArtBatch17Render=function renderer(c,cls="cover",step=-1){
  const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch17Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* Human Biology: dedicated slide artwork, batch 18. */
+window.LumenSlideArtBatch18={
+  "heart": [
+    "b 25 65 125 55 Right heart;b 210 65 125 55 Left heart;b 125 25 110 30 Lungs;b 125 155 110 30 Body;a 90 65 125 40;a 235 40 270 65;a 270 120 235 170;a 125 170 90 120;t 180 205 Pulmonary and systemic circuits",
+    "p M80 45V175M150 45V175M80 100L115 125L150 100;a 115 45 115 85;p M210 45V175M280 45V175M210 100L245 75L280 100;a 245 150 245 115;t 115 195 Forward flow;t 245 195 Backflow closes valve;t 180 20 Pressure differences control valve motion",
+    "p M60 65Q60 30 115 50Q180 20 245 50Q300 30 300 65V120Q270 170 180 185Q90 170 60 120Z;d 85 60 6;d 180 100 6;a 85 60 180 100;a 180 100 180 160;a 180 160 110 135;a 180 160 250 135;t 100 40 SA node;t 210 90 AV delay;t 180 205 Ventricular activation follows atrial activation",
+    "b 25 65 145 55 70 beats/min;b 190 65 145 55 70 mL/beat;t 180 155 70 × 70 = 4,900 mL/min;t 180 195 Cardiac output 4.9 L/min"
+  ],
+  "kidneys": [
+    "c 120 95 48;p M65 70Q120 30 175 70Q65 100 175 125Q120 165 65 125;c 120 95 60;a 130 150 200 150;d 100 70 6;d 140 105 6;t 250 80 Blood cells stay;t 250 110 Water + solutes filter;t 180 195 Glomerulus inside Bowman capsule",
+    "p M35 80H130Q160 80 160 110T190 140H325;l 35 45 325 45;a 95 80 95 45;a 160 110 160 45;a 245 140 245 45;t 180 30 Blood;t 180 175 Filtered glucose, ions and water return",
+    "p M65 35V135Q65 175 105 175Q145 175 145 135V35;l 270 35 270 175;a 270 85 220 85;a 270 135 220 135;t 105 20 Loop of Henle;t 270 195 Collecting duct;t 210 65 ADH increases;t 210 155 Water uptake",
+    "b 25 45 145 50 Fluid volume;b 190 45 145 50 Electrolytes;b 25 115 145 50 Acid-base;b 190 115 145 50 Waste removal;t 180 195 Renin, EPO and vitamin D activation"
+  ],
+  "hormones": [
+    "c 55 80 25;a 80 80 140 80;r 140 60 60 105;d 170 90 5;d 170 120 5;a 200 90 245 90;c 275 90 30;c 275 145 18;t 55 120 Gland;t 170 45 Blood;t 275 40 Receptor;t 180 195 Only responsive cells act on signal",
+    "c 95 105 52;c 265 105 52;d 95 55 7;a 95 25 95 48;a 265 25 265 100;d 265 105 7;t 95 175 Surface receptor;t 265 175 Intracellular receptor;t 180 205 Peptide vs steroid pathways",
+    "b 25 65 95 50 Hypothalamus;a 120 90 132 90;b 132 65 95 50 Pituitary;a 227 90 239 90;b 239 65 95 50 Thyroid;a 285 115 285 150;a 285 150 75 150;a 75 150 75 115;t 180 140 Negative feedback;t 180 195 Thyroid hormone limits stimulation",
+    "l 35 175 325 175;p M35 140Q100 35 160 90T325 145;p M35 160Q100 75 160 110T325 160;t 95 35 Meal raises glucose;t 180 65 Insulin rises;t 180 195 Between meals glucagon supports glucose"
+  ],
+  "depth-human-biology-how-the-lungs-exchange-gases": [
+    "p M35 45Q95 25 155 45V145Q95 175 35 145ZM205 45Q265 25 325 45V145Q265 125 205 145Z;p M35 145Q95 175 155 145M205 145Q265 95 325 145;a 95 95 95 165;a 265 145 265 105;t 95 195 Inhale: diaphragm down;t 265 195 Exhale: recoil",
+    "c 180 95 55;p M100 155Q180 185 260 155;l 180 150 180 170;a 160 130 160 165;t 180 40 Alveolus;t 180 195 Thin air-blood barrier enables diffusion",
+    "l 180 35 180 175;d 75 65 5;d 105 85 5;d 135 115 5;a 95 80 260 80;a 260 135 95 135;t 100 40 Alveolar air;t 270 40 Blood;t 180 70 O₂;t 180 155 CO₂;t 180 195 Partial pressures drive opposite flows",
+    "c 90 95 35;c 270 95 35;a 90 25 90 60;a 270 25 270 60;l 35 150 145 150;l 215 150 325 150;a 35 150 145 150;t 90 175 Ventilation + blood;t 270 175 Air but little blood;t 180 205 Both ventilation and perfusion matter"
+  ],
+  "depth-human-biology-how-muscles-contract": [
+    "l 35 65 35 155;l 325 65 325 155;l 35 85 145 85;l 215 85 325 85;l 35 135 145 135;l 215 135 325 135;r 100 100 160 20;t 180 40 Sarcomere;t 85 75 Actin;t 180 95 Myosin;t 180 195 Overlapping thin and thick filaments",
+    "p M25 65H100L120 90L100 115H25Z;d 135 80 4;d 135 95 4;d 135 110 4;l 155 45 155 155;a 145 95 155 95;a 160 95 220 95;c 260 95 35;d 245 85 4;d 275 105 4;t 70 145 Motor neuron;t 180 35 Muscle action potential;t 260 150 Ca²⁺ release",
+    "l 35 65 325 65;l 35 155 325 155;r 95 105 170 15;p M125 105L140 70L155 80M185 105L200 70L215 80;a 95 45 140 45;a 265 45 220 45;t 180 25 Actin slides inward;t 180 180 Ca²⁺ exposes sites, ATP cycles myosin",
+    "l 35 75 325 75;l 35 145 325 145;d 110 100 5;d 140 110 5;d 170 95 5;r 220 85 75 45;a 170 100 220 100;t 260 110 Ca²⁺ store;t 180 180 Calcium pumped back;t 180 205 Force need not involve shortening"
+  ],
+  "depth-human-biology-how-the-digestive-system-absorbs-food": [
+    "b 25 65 95 55 Food;a 120 92 132 92;b 132 65 95 55 Enzymes;a 227 92 239 92;b 239 65 95 55 Nutrients;t 180 155 Mixing and hydrolysis;t 180 195 Most absorption occurs in small intestine",
+    "p M35 175V85Q65 15 95 85V175M95 175V85Q125 15 155 85V175M155 175V85Q185 15 215 85V175M215 175V85Q245 15 275 85V175M275 175V85Q305 15 335 85V175;t 180 25 Villi and microvilli increase area;t 180 205 Epithelial transporters absorb nutrients",
+    "p M100 175V60Q180 5 260 60V175;l 150 80 150 175;l 210 80 210 175;a 60 90 150 90;a 300 120 210 120;t 90 65 Sugars / amino acids;t 270 100 Long-chain fat;t 150 195 Capillaries;t 230 195 Lacteal",
+    "p M55 65H305V160H55V65M90 95H270V130H90Z;a 110 80 110 35;a 180 80 180 35;a 250 80 250 35;d 120 110 5;d 150 115 5;d 210 110 5;t 180 25 Water and electrolytes;t 180 195 Colonic microbes ferment some leftovers"
+  ],
+  "depth-human-biology-what-the-liver-does": [
+    "p M140 45Q270 15 325 75Q300 150 140 155Z;a 25 85 140 85;a 65 135 140 135;t 80 70 Portal blood;t 70 155 Artery;t 235 95 Liver;t 180 195 Nutrient-rich and oxygenated blood inputs",
+    "b 25 65 145 55 Blood glucose;b 190 65 145 55 Liver glycogen;a 170 80 190 80;a 190 105 170 105;t 180 155 Storage and release;t 180 195 Also processes amino acids and lipids",
+    "b 25 45 145 50 Bile → intestine;b 190 45 145 50 Bilirubin → bile;b 25 120 145 50 Ammonia → urea;b 190 120 145 50 Urea → kidneys;t 180 195 Digestion and waste processing",
+    "b 25 65 95 55 Drug;a 120 92 132 92;b 132 65 95 55 Enzymes;a 227 92 239 92;b 239 65 95 55 Metabolite;t 180 155 Can activate or inactivate;t 180 195 Metabolism does not guarantee harmlessness"
+  ],
+  "depth-human-biology-how-skin-protects-the-body": [
+    "r 35 45 290 35;r 35 80 290 45;r 35 125 290 50;l 35 62 325 62;l 85 45 85 62;l 145 45 145 62;l 205 45 205 62;l 265 45 265 62;t 180 35 Flattened cells + lipids;t 180 105 Epidermis;t 180 155 Dermis;t 180 195 Outer barrier limits water loss",
+    "r 35 65 290 110;d 75 50 5;d 105 50 5;d 145 50 5;c 95 115 15;c 245 145 15;a 180 25 180 65;t 180 15 Incoming microbe;t 180 195 Resident microbes and immune cells defend skin",
+    "r 35 65 290 110;p M70 155Q100 95 130 155M220 155Q260 115 290 155;p M180 155Q155 145 180 130T180 105V65;a 180 60 180 25;t 180 15 Sweat evaporates;t 95 195 Blood vessel;t 260 195 Sensory ending",
+    "r 35 65 290 110;p M130 65L180 125L230 65;d 160 80 5;d 180 95 5;d 200 80 5;a 85 145 160 125;a 275 145 200 125;t 180 40 Clot and inflammation;t 180 195 Cells and matrix restore barrier"
+  ],
+  "plus-human-biology-how-taste-and-smell-combine": [
+    "p M35 100Q180 25 325 100Q180 175 35 100Z;d 100 95 5;d 140 105 5;d 180 95 5;d 220 105 5;d 260 95 5;t 180 40 Taste receptor cells;t 180 195 Sweet, sour, salty, bitter, umami",
+    "p M75 150Q120 150 120 95L200 95L200 45H270L250 115L190 115L190 150Z;a 145 135 180 105;a 180 105 215 65;t 180 30 Olfactory receptors;t 180 195 Volatiles reach nose from mouth",
+    "b 25 45 145 50 Taste;b 190 45 145 50 Smell;b 25 115 145 50 Texture;b 190 115 145 50 Temperature / heat;t 180 195 Brain integrates flavor cues",
+    "p M35 65H150V155H35ZM210 65H325V155H210Z;a 60 135 125 80;p M230 80L300 140M300 80L230 140;t 92 175 Normal airflow;t 267 175 Congestion;t 180 205 Smell reduced while taste can remain"
+  ],
+  "plus-human-biology-why-muscles-need-tendons": [
+    "p M25 65Q100 35 175 65V115Q100 145 25 115Z;r 175 80 70 20;r 245 65 90 50;a 65 45 145 45;t 100 155 Muscle;t 210 140 Tendon;t 290 140 Bone;t 180 195 Collagen transfers tensile force",
+    "d 85 105 8;l 85 105 305 105;a 130 45 130 100;l 85 125 130 125;t 85 150 Joint;t 135 35 Force;t 107 145 Arm;t 180 195 Torque = force × perpendicular moment arm",
+    "p M35 95H85L95 70L105 120L115 70L125 120L135 95H165M195 95H225L235 70L245 120L255 70L265 120L275 95H325;a 35 140 15 140;a 165 140 185 140;t 100 175 Loaded stretch;t 260 175 Recoil;t 180 205 Tendon stores and returns elastic energy",
+    "p M35 60H125V90H35ZM35 130H125V160H35Z;r 125 70 50 10;r 125 140 50 10;p M175 75L245 145M175 145L245 75;t 80 40 Muscle–bone;t 255 175 Bone–bone;t 180 205 Tendon vs ligament, both have loading limits"
+  ],
+  "depth-human-biology-how-bones-remodel": [
+    "r 35 95 290 80;c 100 80 22;c 245 80 15;p M80 95L100 125L120 95;t 100 40 Osteoclast;t 245 40 Osteoblast;t 180 195 Resorb old bone, form new matrix",
+    "l 35 155 325 155;p M35 75H100L125 130H170L195 75H325;a 75 45 125 45;a 195 45 245 45;t 95 35 Resorption;t 250 35 Formation;t 180 180 Local cycle fills resorption pit",
+    "l 35 175 325 175;r 65 65 90 110;r 205 100 90 75;t 110 55 Loaded;t 250 90 Reduced load;t 180 195 Bone loss can follow reduced loading",
+    "r 35 55 130 110;r 195 55 130 110;l 55 65 145 155;l 55 155 145 65;l 215 65 305 155;l 215 155 305 65;l 260 65 260 155;t 100 185 Architecture;t 260 185 Mineral density;t 180 205 DXA does not capture every fracture-risk factor"
+  ],
+  "depth-human-biology-how-blood-carries-oxygen": [
+    "c 180 105 65;c 180 105 35;d 145 85 7;d 215 85 7;d 145 125 7;d 215 125 7;t 180 35 Red blood cell;t 180 190 Hemoglobin binds most transported O₂",
+    "b 25 65 145 55 Lung: high PO₂;b 190 65 145 55 Tissue: low PO₂;a 170 92 190 92;t 97 150 Hb loads O₂;t 262 150 Hb unloads O₂;t 180 195 Active tissues can favor release",
+    "r 35 75 290 50;f 35 75 282 50;t 175 105 Hemoglobin-bound oxygen;t 180 55 O₂ content (mL/dL);t 180 155 1.34 × Hb × saturation;t 180 195 + 0.003 × PaO₂ (dissolved)",
+    "r 65 45 90 125;r 205 103.38 90 66.62;t 110 35 19.7 mL/dL;t 250 93 10.5 mL/dL;t 110 190 Hb 15 g/dL;t 250 190 Hb 8 g/dL;t 180 210 Both at 98% saturation"
+  ],
+  "plus-human-biology-how-the-lymphatic-system-returns-fluid": [
+    "r 35 45 290 35;r 35 145 290 30;a 100 80 100 115;a 230 115 230 145;d 130 115 5;d 180 120 5;t 180 35 Blood capillary;t 180 105 Interstitial fluid;t 180 165 Lymph capillary;t 180 195 Excess fluid and protein enter lymph",
+    "r 130 35 100 145;p M130 80L180 105L230 80M130 130L180 155L230 130;a 180 165 180 45;t 180 195 Valves and contractions support one-way flow",
+    "b 25 55 145 55 Lymph node;b 190 55 145 55 Intestinal lacteal;t 97 150 Immune surveillance;t 262 150 Chylomicron uptake;t 180 195 Lymph connects tissues and circulation",
+    "r 35 45 290 30;r 35 150 290 25;a 100 75 100 135;a 260 135 260 150;c 135 120 8;c 165 110 8;c 195 125 8;c 225 115 8;t 180 95 Fluid accumulates;t 180 195 Edema when filtration exceeds drainage"
+  ],
+  "plus-human-biology-why-the-pancreas-has-two-jobs": [
+    "p M35 90Q100 25 175 65T300 95Q250 165 100 145Z;l 75 100 300 100;a 300 100 335 140;t 180 45 Exocrine tissue;t 180 195 Ducts deliver secretions to duodenum",
+    "b 25 45 145 45 Amylase;b 190 45 145 45 Lipase;b 25 115 145 45 Protease precursors;b 190 115 145 45 Bicarbonate;t 180 195 Starch, fat, protein and acid neutralization",
+    "c 180 100 65;c 150 85 15;c 210 115 15;a 150 70 150 35;a 210 130 210 170;t 150 20 Insulin;t 210 190 Glucagon;t 180 105 Islet;t 180 210 Endocrine cells release hormones into blood",
+    "b 25 55 145 55 Exocrine function;b 190 55 145 55 Endocrine function;t 97 145 Digestion;t 262 145 Glucose regulation;t 180 195 Either can be impaired independently"
+  ],
+  "plus-human-biology-how-balance-works-in-the-inner-ear": [
+    "c 155 85 45;c 205 85 45;p M180 40Q100 15 100 100Q100 145 180 130Q260 145 260 100Q260 15 180 40;a 115 80 115 120;t 180 160 Three canal planes;t 180 195 Endolymph motion signals angular acceleration",
+    "r 35 70 290 30;d 75 60 6;d 125 60 6;d 175 60 6;d 225 60 6;d 275 60 6;l 75 100 90 145;l 125 100 140 145;l 175 100 190 145;l 225 100 240 145;l 275 100 290 145;a 95 35 265 35;t 180 25 Weighted membrane shifts;t 180 195 Hair-cell deflection signals gravity and acceleration",
+    "c 180 105 65;c 155 95 12;c 205 95 12;a 125 40 235 40;a 235 135 125 135;t 180 25 Head turns;t 180 155 Eyes move opposite;t 180 195 Vestibulo-ocular reflex stabilizes gaze",
+    "b 25 55 145 55 Visual cue: still;b 190 55 145 55 Vestibular cue: moving;a 97 110 180 150;a 262 110 180 150;t 180 175 Conflicting motion information;t 180 200 Can contribute to motion sickness"
+  ],
+  "plus-human-biology-how-red-blood-cells-are-replaced": [
+    "c 65 95 30;d 65 95 12;a 95 95 145 95;c 180 95 24;c 180 95 7;a 204 95 260 95;c 290 95 25;c 290 95 12;t 65 145 Precursor;t 180 145 Maturing;t 290 145 Mature RBC;t 180 195 Nucleus lost, lifespan ~120 days",
+    "b 25 65 95 55 Low O₂;a 120 92 132 92;b 132 65 95 55 Kidney EPO;a 227 92 239 92;b 239 65 95 55 Bone marrow;t 180 155 EPO supports erythroid maturation",
+    "c 70 95 25;c 180 95 40;c 180 95 15;a 95 95 140 95;a 220 80 285 45;a 220 110 285 145;t 70 145 Old RBC;t 180 155 Macrophage;t 285 30 Iron reused;t 285 165 Bilirubin;t 180 200 Spleen and liver clear aging cells",
+    "b 25 65 145 55 25 trillion RBCs;b 190 65 145 55 120-day lifespan;t 180 155 ≈208 billion/day;t 180 195 ≈2.4 million/second replaced"
+  ],
+  "plus-human-biology-how-the-autonomic-nervous-system-regulates-organs": [
+    "b 25 65 95 55 CNS;a 120 92 132 92;c 180 92 35;a 215 92 250 92;b 250 65 85 55 Organ;t 180 95 Ganglion;t 180 155 Preganglionic → postganglionic;t 180 195 Autonomic pathways regulate visceral organs",
+    "b 25 45 95 45 CNS;b 132 45 95 45 Ganglion;b 239 45 95 45 Organ;a 120 67 132 67;a 227 67 239 67;t 126 35 ACh;t 233 35 NE often;b 25 115 95 45 CNS;b 132 115 95 45 Ganglion;b 239 115 95 45 Organ;a 120 137 132 137;a 227 137 239 137;t 126 105 ACh;t 233 105 ACh;t 180 195 Sympathetic vs parasympathetic transmitters",
+    "b 25 55 145 55 Adrenergic receptor;b 190 55 145 55 Muscarinic receptor;t 97 150 Variable effects;t 262 150 Heart rate slows;t 180 195 Receptor and organ determine response",
+    "b 25 45 145 50 Pressure falls;b 190 45 145 50 Baroreceptor firing falls;a 170 70 190 70;a 262 95 262 130;b 190 130 145 45 Brainstem response;a 190 152 170 152;b 25 130 145 45 HR / resistance rise;t 180 205 Negative feedback supports arterial pressure"
+  ],
+  "plus-human-biology-how-the-eye-focuses-light": [
+    "p M90 45Q20 105 90 165Q250 190 325 105Q250 20 90 45Z;p M150 60Q115 105 150 150Q185 105 150 60Z;p M25 65L90 80L150 90L325 105M25 145L90 130L150 120L325 105;t 90 35 Cornea;t 150 175 Lens;t 300 195 Retina",
+    "p M90 45Q50 105 90 165Q130 105 90 45ZM270 45Q250 105 270 165Q290 105 270 45Z;l 35 45 65 70;l 145 45 115 70;l 210 45 255 75;l 330 45 285 75;t 90 190 Near: rounder;t 270 190 Far: flatter;t 180 210 Ciliary muscle changes zonular tension",
+    "p M25 65L125 105L165 145M25 145L125 105L165 65M195 65L335 105M195 145L335 105;l 165 45 165 165;l 305 45 305 165;t 95 185 Myopia: focus before retina;t 265 185 Hyperopia: behind retina;t 180 205 Diverging vs converging correction",
+    "p M180 45Q145 105 180 165Q215 105 180 45Z;p M35 65H165L300 105M35 145H165L300 105;d 300 105 5;l 180 185 300 185;t 240 175 f=.5 m;t 180 25 +2 diopters;t 180 205 Optical power = 1/f (meters)"
+  ],
+  "plus-human-biology-how-the-body-regulates-temperature": [
+    "c 180 100 45;a 180 20 180 55;a 225 100 325 100;a 135 100 35 100;a 180 145 180 185;t 180 15 Metabolic heat;t 270 85 Radiation;t 85 85 Convection;t 180 205 Evaporation / conduction affect heat storage",
+    "b 105 30 150 45 Hypothalamus;a 180 75 95 125;a 180 75 265 125;b 25 125 140 45 Heat response;b 195 125 140 45 Cold response;t 95 195 Sweat / dilate;t 265 195 Shiver / constrict",
+    "b 25 65 145 55 2.4 kJ per g;b 190 65 145 55 100 g evaporated;t 180 155 240 kJ heat removed;t 180 195 Dripping sweat provides less cooling",
+    "l 35 175 325 175;l 35 105 325 105;p M35 105L125 65H325;p M35 105Q180 95 325 40;t 145 55 Fever: defended level rises;t 260 30 Heat overload;t 180 195 Hyperthermia lacks same regulated set-point shift"
+  ],
+  "plus-human-biology-how-the-small-intestine-moves-food": [
+    "r 35 55 290 110;r 45 75 270 70;l 75 55 75 165;l 125 55 125 165;l 175 55 175 165;l 225 55 225 165;l 275 55 275 165;t 180 35 Circular muscle bands;t 180 195 Longitudinal fibers run along gut",
+    "p M25 55H335M25 145H335M65 55Q80 105 95 55M65 145Q80 95 95 145M205 55Q220 105 235 55M205 145Q220 95 235 145;a 120 100 165 100;a 165 120 120 120;t 180 195 Alternating segmentation mixes chyme",
+    "p M25 55H120Q150 95 180 55H335M25 145H120Q150 105 180 145H335;c 235 100 23;a 258 100 315 100;t 145 35 Contract behind;t 265 35 Relax ahead;t 180 195 Peristaltic reflex propels contents",
+    "l 35 175 325 175;p M35 160H60L75 60L90 160H160L175 60L190 160H260L275 60L290 160H325;t 180 35 Periodic fasting motor activity;t 180 195 Feeding changes the motility pattern"
+  ]
+};
+window.LumenSlideArtBatch18Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch18;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch18Render(c,cls,step)||prior(c,cls,step);};})();
