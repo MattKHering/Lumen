@@ -978,3 +978,137 @@ window.LumenSlideArtBatch03Render=function renderSlide(c,cls="cover",step=-1){
  const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch03Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* Individually authored slide diagrams: Mathematics, batch 04. */
+window.LumenSlideArtBatch04={
+  "depth-mathematics-understanding-fractions": [
+    "f 35 70 58 55;f 93 70 58 55;f 151 70 58 55;r 209 70 58 55;r 267 70 58 55;t 180 50 3 of 5 equal parts;t 180 180 3/5",
+    "f 35 55 174 30;r 209 55 116 30;l 93 55 93 85;l 151 55 151 85;l 267 55 267 85;f 35 125 174 30;r 209 125 116 30;l 64 125 64 155;l 93 125 93 155;l 122 125 122 155;l 151 125 151 155;l 180 125 180 155;l 238 125 238 155;l 267 125 267 155;l 296 125 296 155;t 180 45 3/5;t 180 115 6/10;t 180 195 Same fraction",
+    "r 36 45 288 30;f 36 45 96 30;r 36 100 288 30;f 36 100 72 30;r 36 155 288 30;f 36 155 168 30;t 180 37 4/12;t 180 92 3/12;t 180 147 7/12;t 180 210 Common denominator",
+    "f 35 70 210 50;r 245 70 70 50;l 175 60 175 130;t 105 150 One half;t 210 150 Half of a half;t 180 196 3/4 ÷ 1/2 = 1.5"
+  ],
+  "depth-mathematics-how-ratios-and-proportions-work": [
+    "d 60 90 16;d 110 90 16;d 160 90 16;c 230 90 16;c 280 90 16;t 110 130 3 filled;t 255 130 2 unfilled;t 180 180 Ratio 3:2, filled fraction 3/5",
+    "l 35 105 325 105;c 35 105 5;c 132 105 5;c 229 105 5;c 325 105 5;t 35 85 0;t 132 85 50;t 229 85 100;t 325 85 150 mi;t 35 135 0;t 132 135 1;t 229 135 2;t 325 135 3 h;t 180 195 50 miles/hour average",
+    "b 25 65 145 50 4 servings / 6 cups;a 170 90 190 90;b 190 65 145 50 10 servings;t 180 150 6 ÷ 4 = 1.5 cups per serving;t 180 190 1.5 × 10 = 15 cups",
+    "l 35 175 325 175;l 35 175 35 35;p M35 175L295 65;p M35 125L295 15;t 235 120 Proportional;t 110 78 Fixed fee;t 180 200 Only origin line has constant ratio"
+  ],
+  "depth-mathematics-what-functions-describe": [
+    "c 55 65 18;c 55 110 18;c 55 155 18;c 300 85 22;c 300 145 22;a 73 65 278 85;a 73 110 278 85;a 73 155 278 145;t 55 35 Inputs;t 300 35 Outputs;t 180 203 Exactly one output per input",
+    "b 25 50 95 48 x = 4;a 120 74 135 74;b 135 50 90 48 2x + 3;a 225 74 240 74;b 240 50 95 48 11;l 55 175 305 175;l 55 175 55 115;p M55 165L305 115;t 180 200 Formula, table or graph",
+    "l 35 110 325 110;l 180 35 180 185;p M35 120Q140 135 167 185;p M193 35Q220 85 325 100;t 180 25 x = 0 excluded;t 180 205 f(x) = 1/x",
+    "l 30 175 165 175;l 30 175 30 40;p M30 155Q95 40 165 155;l 95 40 95 175;d 95 97.5 5;l 195 175 330 175;l 195 175 195 40;c 260 105 45;l 260 40 260 175;d 260 60 5;d 260 150 5;t 95 200 Pass;t 260 200 Fail"
+  ],
+  "depth-mathematics-reading-linear-equations": [
+    "l 40 175 325 175;l 40 175 40 30;p M40 145L300 45;l 105 120 170 120;l 170 120 170 95;t 137 140 Δx;t 190 110 Δy;t 65 140 b;t 180 200 Constant slope m",
+    "l 35 175 325 175;l 35 175 35 30;d 115 125 6;d 275 45 6;l 115 125 275 125;l 275 125 275 45;l 35 165 295 35;t 100 115 (2,5);t 275 30 (6,13);t 195 145 Run 4;t 300 85 Rise 8;t 180 205 m = 8/4 = 2",
+    "b 25 45 310 42 5 = 2(2) + b;a 180 87 180 110;b 105 110 150 42 b = 1;t 180 190 y = 2x + 1",
+    "l 40 175 325 175;l 40 175 40 35;p M40 145L300 45;d 40 145 5;t 75 135 $3 start;t 240 55 +$2/mile;t 180 195 C = 3 + 2d"
+  ],
+  "depth-mathematics-how-exponential-growth-works": [
+    "l 35 170 325 170;p M35 155L325 75;p M35 155Q220 150 325 35;t 250 100 Add constant;t 265 30 Multiply constant;t 180 200 Equal time steps",
+    "r 45 140 45 25;r 115 115 45 50;r 185 65 45 100;t 67 130 100;t 137 105 200;t 207 55 400;t 67 185 0 h;t 137 185 1 h;t 207 185 2 h;t 180 205 N = 100 × 2ᵗ",
+    "r 65 40 85 140;f 215 110 85 70;t 107 30 800;t 257 100 400;t 107 200 Doubling;t 257 200 Adding 100",
+    "l 35 175 325 175;p M35 160Q200 145 325 35;p M35 160Q130 150 190 90T325 75;t 180 30 Ideal exponential vs limited growth;t 180 200 Resources constrain real populations"
+  ],
+  "depth-mathematics-understanding-geometric-area": [
+    "r 80 45 200 150;l 130 45 130 195;l 180 45 180 195;l 230 45 230 195;l 80 95 280 95;l 80 145 280 145;t 180 35 4 m;t 45 125 3 m;t 180 215 Area = 12 m²",
+    "r 75 55 210 120;p M75 175L285 55;l 75 175 285 175;t 180 195 Base b;t 45 115 h;t 180 35 Half the rectangle = bh/2",
+    "p M60 40H280V100H160V180H60Z;l 60 100 160 100;t 170 75 Rectangle A;t 110 142 B;t 180 205 Add disjoint areas",
+    "r 45 95 65 65;r 190 30 130 130;t 77 185 Area A;t 255 185 Area 4A;t 180 210 Length ×2, perimeter ×2"
+  ],
+  "logarithms": [
+    "b 25 55 145 55 bʸ = x;a 170 82 190 82;b 190 55 145 55 logᵦ(x) = y;t 180 160 Exponent is the answer;t 180 195 x > 0, b > 0, b ≠ 1",
+    "b 25 55 145 55 10³ = 1000;b 190 55 145 55 2⁻¹ = 1/2;t 97 150 log₁₀(1000) = 3;t 262 150 log₂(1/2) = −1",
+    "b 25 60 145 55 Multiply x × y;a 170 87 190 87;b 190 60 145 55 Add logs;t 180 170 logᵦ(xy) = logᵦ(x) + logᵦ(y)",
+    "l 35 110 325 110;c 35 110 5;c 180 110 5;c 325 110 5;t 35 90 10;t 180 90 100;t 325 90 1000;t 107 145 ×10;t 252 145 ×10;t 180 195 Two log steps, difference 990"
+  ],
+  "trigonometry": [
+    "p M65 165H295V45Z;p M275 165V145H295;t 180 185 Adjacent;t 320 105 Opposite;t 160 90 Hypotenuse;t 85 157 θ",
+    "p M65 155H265V55Z;t 165 175 Adj;t 290 105 Opp;t 140 85 Hyp;t 180 35 sin = opp/hyp;t 180 200 cos = adj/hyp · tan = opp/adj",
+    "p M85 165H235V15Z;l 235 15 235 165;t 160 185 Shadow 6 m;t 270 90 6 m;t 112 155 45°;t 180 210 tan 45° = 1",
+    "c 90 105 50;l 90 105 140 105;l 90 105 90 55;t 115 92 90°;c 270 105 50;l 270 105 320 105;l 270 105 270 55;t 295 92 π/2;t 180 190 Same angle, different units"
+  ],
+  "plus-mathematics-understanding-inequalities": [
+    "l 35 105 325 105;c 145 105 7;a 153 105 325 105;t 145 85 3;t 180 170 x > 3;t 180 195 Open endpoint excludes 3",
+    "b 35 40 290 42 2x + 1 ≤ 9;a 180 82 180 105;b 35 105 290 42 2x ≤ 8;a 180 147 180 165;t 180 192 x ≤ 4",
+    "l 35 105 325 105;c 180 105 7;a 172 105 35 105;t 180 85 −3;t 180 160 −2x > 6 → x < −3;t 180 195 Negative division reverses sign",
+    "l 35 65 325 65;d 180 65 7;a 180 65 325 65;t 180 45 x ≥ 0;l 35 145 325 145;c 180 145 7;a 188 145 325 145;t 180 125 x > 0;t 180 200 Filled includes, open excludes"
+  ],
+  "plus-mathematics-understanding-geometric-similarity": [
+    "p M35 155H135V80Z;p M175 180H325V67.5Z;t 85 175 Same angle;t 250 200 Same angle;t 180 35 Matching shape, constant ratio",
+    "p M30 155H110V95Z;p M160 175H320V55Z;t 70 175 4;t 122 125 3;t 55 113 5;t 240 195 8;t 337 115 6;t 230 90 10;t 180 28 Scale factor 2",
+    "p M25 170H60V146.667Z;p M115 170H325V30Z;t 42 190 3 m;t 74 145 2 m;t 220 190 18 m;t 325 23 12 m;t 180 210 Same angle, height/shadow = 2/3",
+    "r 35 90 55 55;r 120 55 110 110;p M265 95H310V140H265ZM265 95L280 80H325V125L310 140M310 95L325 80;t 180 35 Scale k = 2;t 62 165 A;t 175 185 4A;t 295 165 8V;t 180 210 Area k² · volume k³"
+  ],
+  "plus-mathematics-how-systems-of-equations-intersect": [
+    "l 35 175 325 175;l 35 175 35 35;p M35 150L300 40;p M35 45L300 155;d 161.48 97.5 5;t 210 90 Common point;t 180 205 Satisfies both equations",
+    "b 25 45 145 48 y = 2x + 1;b 190 45 145 48 y = −x + 7;a 97 93 180 125;a 262 93 180 125;b 105 125 150 40 3x = 6;t 180 195 x = 2, y = 5",
+    "b 35 40 290 42 x + y = 8;b 35 82 290 42 x − y = 2;l 35 130 325 130;t 180 155 2x = 10;t 180 190 x = 5, y = 3",
+    "l 25 170 165 170;l 25 170 25 40;p M25 150L165 60M25 115L165 25;l 195 170 335 170;l 195 170 195 40;p M195 150L335 60;t 95 195 None;t 265 195 Infinite"
+  ],
+  "plus-mathematics-what-logarithmic-graphs-reveal": [
+    "l 35 175 325 175;l 35 175 35 35;p M47 170L50 145L55 130L65 115L95 100L155 85L275 70;p M50 160L80 157.5L110 155L140 150L170 140L200 120L230 80L245 50;t 275 60 log;t 260 42 exp;t 180 200 Increasing inverse functions (schematic)",
+    "l 35 105 325 105;c 35 105 5;c 132 105 5;c 229 105 5;c 325 105 5;t 35 85 1;t 132 85 10;t 229 85 100;t 325 85 1000;t 180 155 Equal spacing = equal ratios",
+    "l 25 170 165 170;l 25 170 25 35;p M25 155Q115 150 155 45;l 195 170 335 170;l 195 170 195 35;l 195 155 325 45;t 95 192 Ordinary scale;t 265 192 Log scale;t 180 212 log y = log A + t log b",
+    "l 35 105 325 105;c 55 105 5;c 180 105 5;c 305 105 5;t 55 85 0.1;t 180 85 1;t 305 85 10;t 180 155 No zero or negative values;t 180 190 Equal ratios, unequal differences"
+  ],
+  "plus-mathematics-understanding-vectors": [
+    "l 65 175 300 175;l 65 175 65 30;a 65 175 173 175;a 173 175 173 31;a 65 175 173 31;t 119 195 3;t 190 95 4;t 115 85 |v|=5",
+    "a 80 175 152 79;a 152 79 128 31;a 80 175 128 31;t 155 137 (3,4);t 201 54 (−1,2);t 78 86 (2,6);t 180 205 Add components",
+    "b 25 45 145 50 u=(2,1);b 190 45 145 50 v=(3,4);t 180 140 2×3 + 1×4 = 10;a 180 175 240 175;a 180 175 180 135;t 180 207 Perpendicular → dot product 0",
+    "l 35 105 325 105;l 180 30 180 185;a 180 105 90 45;t 95 35 Negative x;t 265 95 +x;t 180 200 Magnitude is nonnegative"
+  ],
+  "plus-mathematics-how-permutations-and-combinations-differ": [
+    "b 25 55 145 55 A then B;b 190 55 145 55 B then A;t 180 145 Ordered: different;t 180 190 Unordered: same pair",
+    "b 25 55 145 55 President: 5;a 170 82 190 82;b 190 55 145 55 Secretary: 4;t 180 160 5 × 4 = 20;t 180 195 Roles distinguish outcomes",
+    "b 25 60 145 55 AB;b 190 60 145 55 BA;a 97 115 180 145;a 262 115 180 145;b 105 145 150 40 Same pair;t 180 207 20/2 = 10 pairs",
+    "b 25 45 310 55 P(n,r) = n! / (n−r)!;b 25 120 310 55 C(n,r) = P(n,r) / r!;t 180 205 No replacement, 0 ≤ r ≤ n"
+  ],
+  "derivative": [
+    "l 40 175 320 175;l 40 175 40 25;p M40 175Q180 175 320 31;l 110 184 320 49;d 180 139 5;d 250 94 5;t 180 22 Secant through two points;t 180 205 h → 0 gives tangent slope",
+    "b 25 45 310 45 ((x+h)² − x²) / h;b 25 105 310 45 = 2x + h;t 180 188 Limit as h → 0: 2x",
+    "l 40 175 320 175;l 40 175 40 30;p M40 175Q180 175 320 31;d 264 82.84 5;l 200 148.67 310 35.53;t 180 22 s(t) = 3t²;t 264 200 4 s;t 180 215 v(4) = 24 m/s",
+    "l 35 105 325 105;l 180 30 180 175;p M65 35L180 105L295 35;t 95 65 −1;t 265 65 +1;t 180 195 No unique slope at x=0"
+  ],
+  "integral": [
+    "l 35 170 325 170;l 35 170 35 35;p M35 150Q180 110 325 45;r 55 142 40 28;r 95 132 40 38;r 135 120 40 50;r 175 107 40 63;r 215 92 40 78;r 255 75 40 95;t 180 35 Sum f(x)Δx;t 180 205 Narrower intervals → integral",
+    "l 35 110 325 110;p M35 110Q105 20 180 110Q250 200 325 110;t 105 75 Positive;t 250 155 Negative;t 180 195 Distance uses speed, not signed velocity",
+    "l 35 175 325 175;l 35 175 35 30;p M35 175L315 35;p M105 175V140L245 70V175Z;t 105 195 1;t 245 195 3;t 180 35 f(x)=2x;t 180 215 3² − 1² = 8",
+    "l 35 170 325 170;l 35 170 35 35;f 35 75 260 95;t 165 120 12 L;t 20 77 3;t 295 190 4 min;t 180 35 Flow rate (L/min)"
+  ],
+  "plus-mathematics-how-matrices-transform-coordinates": [
+    "b 25 50 145 60 [a b / c d];b 190 50 145 60 [x / y];t 180 145 [ax+by / cx+dy];t 180 195 Multiply rows by vector",
+    "l 35 165 325 165;l 35 165 35 15;r 35 115 50 50;r 35 15 100 150;t 190 45 Scale x by 2;t 190 65 Scale y by 3;t 180 195 (x,y) → (2x,3y)",
+    "l 35 105 325 105;l 180 25 180 185;a 180 105 240 65;a 180 105 140 45;t 265 55 (x,y);t 100 35 (−y,x);t 180 205 90° counterclockwise",
+    "r 35 60 90 90;p M195 150L235 60H325L285 150Z;t 80 175 Original;t 260 175 Transformed;t 180 205 Signed scale ad−bc"
+  ],
+  "plus-mathematics-reading-sequences-and-series": [
+    "b 25 55 95 55 a;a 120 82 132 82;b 132 55 95 55 ar;a 227 82 239 82;b 239 55 95 55 ar²;t 180 150 Sequence: list;t 180 185 Series: add terms",
+    "r 45 145 50 20;r 115 125 50 40;r 185 85 50 80;r 255 5 50 160;t 70 138 3;t 140 118 6;t 210 78 12;t 280 178 24;t 180 205 Sum = 45",
+    "f 35 80 145 50;f 180 80 72.5 50;f 252.5 80 36.25 50;f 288.75 80 18.125 50;t 180 60 r = 1/2 example;t 180 165 Finite limit if |r| < 1;t 180 195 Sum = a/(1−r)",
+    "l 35 170 325 170;p M35 155Q150 80 325 75;p M35 155Q160 105 325 35;t 245 65 Geometric;t 280 25 Harmonic;t 180 200 Terms → 0 is not enough"
+  ],
+  "probability": [
+    "r 35 65 40 55;r 85 65 40 55;r 135 65 40 55;r 185 65 40 55;r 235 65 40 55;r 285 65 40 55;t 55 96 1;t 105 96 2;t 155 96 3;t 205 96 4;t 255 96 5;t 305 96 6;t 180 180 Each fair face: 1/6",
+    "r 35 65 40 55;f 85 65 40 55;r 135 65 40 55;f 185 65 40 55;r 235 65 40 55;f 285 65 40 55;t 55 96 1;t 105 96 2;t 155 96 3;t 205 96 4;t 255 96 5;t 305 96 6;t 180 180 P(even) = 3/6 = 1/2",
+    "c 180 35 10;a 180 45 95 90;a 180 45 265 90;t 95 82 H;t 265 82 T;a 95 100 50 150;a 95 100 140 150;a 265 100 220 150;a 265 100 310 150;t 50 175 HH;t 140 175 HT;t 220 175 TH;t 310 175 TT;t 180 205 P(HH) = 1/4",
+    "l 35 175 325 175;l 35 175 35 35;l 35 105 325 105;p M35 45L65 150L95 80L125 125L155 90L185 112L215 100L245 108L275 103L325 105;t 180 95 1/2;t 180 200 Illustrative long-run frequency"
+  ]
+};
+window.LumenSlideArtBatch04Render=function renderSlide(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch04;if(step<0||!Number.isInteger(step)||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch04Render(c,cls,step)||prior(c,cls,step);};})();
