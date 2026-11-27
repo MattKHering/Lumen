@@ -2202,3 +2202,143 @@ window.LumenSlideArtBatch12Render=function renderer(c,cls="cover",step=-1){
  const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch12Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* Oceanography: dedicated slide artwork, batch 13. */
+window.LumenSlideArtBatch13={
+  "ocean-currents": [
+    "p M35 45L95 45L110 95L80 175H35ZM325 45L265 45L250 95L280 175H325Z;a 120 70 240 70;a 240 70 240 145;a 240 145 120 145;a 120 145 120 70;t 180 30 Wind and continents guide currents",
+    "r 25 45 310 130;a 75 55 75 150;a 75 150 275 150;a 275 150 275 55;a 275 55 75 55;t 180 80 Surface return;t 180 140 Deep flow;t 180 200 Dense water sinks, mixing returns water",
+    "c 180 105 80;l 100 105 260 105;a 150 105 150 45;a 210 45 210 105;t 180 30 Poleward heat transport;t 180 200 Warm poleward / cool equatorward",
+    "b 25 65 145 55 0.5 m/s;b 190 65 145 55 86,400 s/day;t 180 160 43,200 m ≈43 km;t 180 195 Constant speed and direction"
+  ],
+  "ocean-tides": [
+    "c 150 105 55;c 295 105 15;a 100 105 90 105;a 200 105 220 105;a 150 55 150 70;a 150 155 150 140;t 150 30 Differential acceleration;t 295 145 Moon;t 180 195 Ocean responds dynamically",
+    "l 35 105 325 105;p M35 105Q71.25 20 107.5 105T180 105T252.5 105T325 105;t 35 180 0 h;t 315 180 24 h 50 min;t 180 195 Many coasts: two highs and lows",
+    "c 180 105 25;c 65 105 18;c 295 105 12;c 180 45 12;l 65 105 295 105;l 180 45 180 105;t 65 145 Sun;t 295 145 Spring alignment;t 180 25 Neap at quarter;t 180 195 Lunar and solar tidal effects",
+    "l 35 175 325 175;p M35 120Q107.5 50 180 120T325 120;p M35 100Q107.5 30 180 100T325 100;t 180 25 Storm surge can raise water;t 180 195 Observed level differs from tide prediction"
+  ],
+  "depth-oceanography-why-seawater-is-salty": [
+    "r 35 75 290 50;f 35 75 10.15 50;t 180 55 1 kg seawater;t 180 155 ~35 g dissolved salts;t 180 195 Mainly chloride and sodium ions",
+    "p M25 125L75 45L145 125L200 95L335 145;a 95 90 180 125;a 180 125 285 145;t 75 30 Weathering;t 260 175 Ocean;t 180 205 Rivers carry dissolved ions",
+    "r 35 80 290 95;a 100 80 100 35;a 260 80 260 35;d 75 125 5;d 120 140 5;d 220 125 5;d 270 145 5;t 180 30 Water evaporates;t 180 195 Most dissolved salt remains",
+    "r 25 80 155 85;r 180 80 155 85;a 75 35 75 80;a 270 80 270 35;t 102 125 Fresh inflow;t 257 125 Evaporation;t 180 195 Dilution vs concentration"
+  ],
+  "depth-oceanography-how-ocean-depth-changes-light": [
+    "r 35 45 290 130;a 95 25 95 120;a 180 25 180 100;a 265 25 265 80;l 35 45 325 45;t 180 195 Absorption and scattering reduce light",
+    "r 35 45 290 130;a 100 45 100 80;a 260 45 260 155;t 100 35 Red;t 260 35 Blue;t 180 195 Clear ocean: blue penetrates deeper",
+    "r 35 45 290 45;r 35 90 290 85;t 180 67 Euphotic zone;t 180 115 ~1% surface-light boundary;t 180 195 Depth depends on water clarity",
+    "r 35 45 290 130;d 75 65 4;d 95 90 4;d 115 115 4;d 135 140 4;a 115 70 115 145;c 265 145 12;t 100 40 Sinking organic matter;t 265 120 Local light;t 180 195 Deep life uses food or chemical energy"
+  ],
+  "depth-oceanography-understanding-the-continental-shelf": [
+    "p M25 45L85 75H210L250 145L335 175;l 25 75 335 75;t 135 105 Shelf;t 255 130 Slope;t 180 205 Shallow submerged continent",
+    "p M25 65H150L210 155H335;p M145 65L175 90L190 155;a 170 85 210 150;t 95 50 Shelf;t 175 55 Break;t 280 175 Deep basin;t 180 205 Canyons carry sediment downslope",
+    "p M25 40L85 95H220L260 165H335;l 25 60 335 60;l 25 110 335 110;t 265 50 Higher sea level;t 265 102 Lower level;t 180 200 Ice-age shelves could be exposed",
+    "r 25 55 310 120;p M25 100H180L250 175H335;a 85 55 85 100;a 145 55 145 100;d 120 85 5;d 160 85 5;t 125 125 Shallow shelf;t 180 195 Light and nutrients support productivity"
+  ],
+  "depth-oceanography-how-ocean-waves-move-energy": [
+    "p M25 115Q65 60 105 115T185 115T265 115T345 115;a 35 40 300 40;a 105 115 105 155;t 180 30 Wind transfers energy;t 180 195 Gravity restores disturbed surface",
+    "p M25 65Q65 25 105 65T185 65T265 65T345 65;c 95 95 24;c 180 130 14;c 265 160 7;a 125 35 255 35;t 180 195 Orbital motion decreases with depth",
+    "p M25 70Q100 20 175 70T325 70;p M25 145Q50 120 75 145T125 145T175 145T225 145T275 145T325 145;t 180 95 Long period, faster;t 180 185 Short period, slower (deep water)",
+    "p M25 170H130L335 100;p M25 75Q75 35 125 75T225 75Q245 25 265 75T305 75;t 180 195 Shoaling: slower, shorter, steeper waves"
+  ],
+  "depth-oceanography-what-upwelling-brings-to-the-surface": [
+    "r 25 55 310 120;p M285 55L335 25V175H285Z;a 260 75 75 75;a 245 155 245 65;t 135 40 Surface offshore transport;t 180 195 Deep water replaces displaced surface water",
+    "r 25 45 310 130;d 75 145 5;d 105 145 5;d 135 145 5;a 105 140 105 65;a 225 140 225 65;t 180 35 Nutrients reach light;t 180 195 Remineralization supplies deep nitrate/phosphate",
+    "d 70 100 5;d 85 100 5;d 100 100 5;a 110 100 145 100;c 180 100 20;a 200 100 235 100;p M245 100L275 80L305 100L275 120L245 100Z;t 85 150 Plankton;t 180 150 Zooplankton;t 275 150 Fish;t 180 195 Nutrients support productive food webs",
+    "r 25 55 310 120;a 180 150 180 55;t 90 95 Cold;t 270 95 Lower O₂ possible;t 180 35 Upwelled water;t 180 195 Winds and climate alter strength"
+  ],
+  "depth-oceanography-why-coral-reefs-are-vulnerable": [
+    "p M65 170V95L40 65M65 120L95 75M180 170V65M180 100L145 75M180 125L215 85M280 170V110L310 75;d 75 105 5;d 175 95 5;d 280 130 5;t 180 35 Symbiotic algae provide energy;t 180 195 CaCO₃ skeleton builds reef",
+    "p M95 170V65M95 100L55 65M95 130L135 90M265 170V65M265 100L225 65M265 130L305 90;d 80 95 6;d 105 115 6;a 145 100 215 100;t 95 190 Healthy;t 265 190 Bleached;t 180 30 Prolonged heat disrupts symbiosis",
+    "b 25 45 145 50 Acidification;b 190 45 145 50 Sediment;b 25 120 145 50 Disease;b 190 120 145 50 Physical damage;t 180 205 Multiple stressors impair growth",
+    "l 35 175 325 175;p M35 55L105 145Q180 70 255 95L300 155;t 100 160 Heat event;t 205 65 Recovery possible;t 180 195 Repeated heat reduces recovery time"
+  ],
+  "plus-oceanography-how-thermoclines-separate-water-layers": [
+    "r 35 45 290 40;r 35 85 290 40;r 35 125 290 50;t 180 67 Warm surface;t 180 107 Rapid temperature change;t 180 150 Cold deep water;t 180 195 Thermocline is a depth interval",
+    "r 35 45 290 60;r 35 105 290 70;a 180 85 180 130;t 180 70 Less dense;t 180 150 More dense;t 180 195 Stable density gradient resists mixing",
+    "r 25 45 145 40;r 25 85 145 90;r 190 45 145 90;r 190 135 145 40;t 97 67 Summer shallow;t 262 90 Winter deeper;t 180 195 Seasonal mixing depth differs",
+    "l 35 45 325 45;l 35 45 35 175;p M285 65L285 85L135 145L135 175;t 285 55 20°C;t 135 155 10°C;t 70 85 50 m;t 70 145 150 m;t 180 205 (10−20)/(150−50) = −0.1°C/m"
+  ],
+  "plus-oceanography-what-ocean-mixed-layers-are": [
+    "r 35 55 290 65;r 35 120 290 55;p M60 85Q95 55 130 85T200 85T270 85;t 180 45 Wind + waves stir water;t 180 105 Nearly uniform layer;t 180 195 Stratified below",
+    "r 25 55 145 35;r 25 90 145 85;r 190 55 145 85;r 190 140 145 35;t 97 75 Heated surface;t 262 100 Storm mixing;t 180 195 Cooling and wind can deepen layer",
+    "r 25 55 145 45;r 190 55 145 110;a 97 30 97 55;a 262 30 262 55;t 97 80 Shallow;t 262 115 Deep;t 180 195 Same heat spread through more water",
+    "l 35 45 325 45;l 35 45 35 175;p M280 45V90L140 160;t 280 35 Surface T;l 255 45 255 175;d 255 102.5 5;t 180 195 Chosen threshold estimates depth"
+  ],
+  "depth-oceanography-how-ocean-acidification-works": [
+    "r 35 105 290 70;a 180 35 180 105;t 180 25 Atmospheric CO₂;t 180 130 Dissolved inorganic carbon;t 180 155 H⁺ tends to increase",
+    "b 25 65 145 55 pH 8.2;b 190 65 145 55 pH 8.1;t 180 155 10^0.1 ≈ 1.26;t 180 195 H⁺ activity +26%, still alkaline",
+    "b 25 65 145 55 CO₃²⁻ + H⁺;a 170 92 190 92;b 190 65 145 55 HCO₃⁻;t 180 155 Less carbonate available;t 180 195 CaCO₃ saturation may decline",
+    "b 25 55 145 55 Species sensitivity;b 190 55 145 55 Water chemistry;t 180 150 Food, temperature and O₂ matter;t 180 195 Lower pH ≠ universal shell dissolution"
+  ],
+  "depth-oceanography-how-hydrothermal-vents-support-life": [
+    "r 25 75 310 100;p M90 75L115 150L180 160L245 75;a 90 35 90 75;a 115 100 115 145;a 245 150 245 35;t 180 150 Hot rock;t 180 195 Seawater heats and reacts in crust",
+    "p M130 175L150 75H210L230 175Z;a 180 75 180 30;a 60 60 150 60;a 300 60 210 60;t 180 20 Reduced chemicals;t 80 45 O₂ seawater;t 180 200 Mixing releases chemical energy",
+    "b 25 65 95 55 Chemicals;a 120 92 132 92;b 132 65 95 55 Microbes;a 227 92 239 92;b 239 65 95 55 Biomass;t 180 155 Chemosynthesis fixes carbon;t 180 195 Supports vent food webs",
+    "p M140 175L160 65H200L220 175Z;c 120 125 8;c 100 145 8;c 240 125 8;c 260 145 8;a 180 65 180 25;t 180 15 Hot fluid;t 180 195 Animals cluster in suitable mixing zones"
+  ],
+  "plus-oceanography-how-ocean-oxygen-varies-with-depth": [
+    "r 35 80 290 95;a 95 35 95 80;a 265 35 265 80;d 150 105 5;d 180 110 5;d 210 105 5;t 95 25 Air–sea exchange;t 265 25 Photosynthesis;t 180 195 Surface oxygen sources",
+    "r 35 45 290 130;d 100 60 5;d 100 95 5;d 100 130 5;a 100 65 100 155;c 240 135 20;t 100 185 Sinking carbon;t 240 165 Microbes;t 180 205 Respiration consumes O₂",
+    "r 25 45 310 130;a 80 55 80 150;a 80 150 280 150;t 80 35 Cold dense water;t 180 135 Deep ventilation;t 180 195 Age, respiration and mixing matter",
+    "l 35 45 325 45;l 35 45 35 175;p M280 45Q100 85 120 110T240 175;t 120 102 O₂ minimum;t 180 195 Consumption exceeds resupply"
+  ],
+  "plus-oceanography-how-ocean-sediments-accumulate": [
+    "p M25 75L80 40L140 90H335;l 25 170 335 170;a 100 90 160 160;d 200 70 5;d 235 85 5;d 270 100 5;a 235 90 235 160;t 75 190 Land grains;t 250 190 Biogenic sediment",
+    "r 35 45 290 130;c 85 65 13;c 245 65 5;a 85 80 85 160;a 245 70 245 115;t 85 190 Larger grains;t 245 190 Fine grains;t 180 210 Currents also redistribute sediment",
+    "r 35 45 290 45;r 35 90 290 85;c 90 60 10;c 150 70 10;c 240 65 10;a 150 80 150 130;t 180 150 Carbonate may dissolve;t 180 195 Supply and selective preservation",
+    "r 75 45 70 120;l 75 105 145 105;t 110 35 Core;t 205 95 20 cm / 2 cm per kyr;t 205 135 = 10 kyr;t 180 195 Ideal steady accumulation"
+  ],
+  "plus-oceanography-how-sea-ice-affects-ocean-conditions": [
+    "r 25 85 310 90;f 25 60 310 25;d 75 115 5;d 105 135 5;d 135 115 5;d 225 130 5;d 275 115 5;t 180 45 Sea ice;t 180 195 Most salt rejected during freezing",
+    "f 35 45 290 30;r 35 75 290 100;a 95 75 95 155;a 265 75 265 155;t 180 65 Freezing ice;t 180 135 Denser brine sinks;t 180 195 Melting adds fresher surface water",
+    "r 25 125 145 45;f 190 125 145 45;a 95 25 95 120;a 265 25 265 120;a 270 120 330 35;t 97 150 Dark water;t 262 150 Bright ice;t 180 195 Ice reflects more sunlight",
+    "f 25 45 310 30;r 25 75 310 100;d 75 85 5;d 105 85 5;d 135 85 5;c 260 120 15;t 180 35 Ice habitat;t 180 195 Light and exchange change seasonally"
+  ],
+  "plus-oceanography-why-coastal-estuaries-mix-fresh-and-salt-water": [
+    "p M25 65L115 100L200 65L335 45M25 145L115 110L200 145L335 175;a 35 105 155 105;a 325 120 190 120;t 70 55 River;t 275 30 Sea;t 180 195 Fresh and salt water meet",
+    "r 35 55 290 110;l 35 110 325 110;a 65 80 285 80;a 285 140 65 140;t 180 70 Fresher outflow;t 180 155 Saltier inflow;t 180 195 Turbulence can weaken layers",
+    "b 25 65 145 55 10,000,000 m³;b 190 65 145 55 100 m³/s;t 180 155 V/Q = 100,000 s;t 180 195 ≈1.2 days nominal flushing",
+    "r 35 75 290 50;f 35 75 145 50;t 107 105 Fresh;t 252 105 Saltier;t 180 155 Salinity and oxygen vary;t 180 195 Excess nutrients can deplete oxygen"
+  ],
+  "plus-oceanography-why-ocean-gyres-rotate": [
+    "a 120 60 260 60;a 190 80 190 160;t 190 45 Wind east;t 260 120 Transport south;t 180 195 Ideal NH Ekman: 90° right of wind",
+    "p M25 155Q180 50 335 155;a 35 95 135 95;a 325 95 225 95;t 180 45 Raised sea surface;t 180 195 Convergence produces pressure gradient",
+    "r 35 45 290 130;a 55 150 55 55;a 120 65 290 65;a 290 65 290 150;a 290 150 120 150;t 85 35 Narrow strong west flow;t 180 195 Latitude-dependent Coriolis shapes gyre",
+    "c 90 100 55;c 270 100 55;a 90 45 130 65;a 270 45 230 65;a 90 155 50 135;a 270 155 310 135;t 90 180 NH clockwise;t 270 180 SH counterclockwise;t 180 205 Typical subtropical gyres"
+  ],
+  "plus-oceanography-understanding-tsunamis-in-the-ocean": [
+    "r 25 60 310 115;p M25 155H140L180 140H335;a 180 140 180 60;p M25 60Q100 35 175 60T325 60;t 180 195 Seafloor displacement creates long wave",
+    "b 25 65 145 55 h = 4,000 m;b 190 65 145 55 c = √(gh);t 180 155 ≈198 m/s;t 180 195 ≈713 km/h",
+    "p M25 175H100L335 85;p M25 60Q85 35 145 60T265 60Q285 15 305 60;t 180 195 Shallower water slows and shortens waves",
+    "r 25 55 310 120;d 95 160 7;d 285 60 7;a 95 160 95 85;t 95 180 Pressure sensor;t 285 45 Tide gauge;t 180 205 Confirm waves and model bathymetry"
+  ],
+  "plus-oceanography-how-ocean-eddies-transport-water": [
+    "c 180 100 65;p M180 50Q230 50 230 100Q230 150 180 150Q130 150 130 100;a 130 100 145 65;d 180 100 8;t 180 25 Rotating water feature;t 180 195 Can trap or exchange water",
+    "c 90 105 55;c 270 105 55;a 90 50 130 70;a 270 50 230 70;t 90 110 High;t 270 110 Low;t 90 180 NH clockwise;t 270 180 NH counterclockwise",
+    "p M25 135Q95 45 165 135M195 85Q265 175 335 85;l 25 105 165 105;l 195 105 335 105;t 95 45 Dome;t 265 175 Depression;t 180 200 Cyclonic vs anticyclonic displacement",
+    "b 25 65 145 55 .05 m/s;b 190 65 145 55 30 days;t 180 155 .05 × 2,592,000 s;t 180 195 ≈130 km"
+  ],
+  "plus-oceanography-how-ocean-floats-measure-conditions": [
+    "r 25 45 310 130;p M55 45V115H180V165L285 45;a 55 50 55 110;a 180 115 180 160;a 200 145 280 55;t 95 105 Drift;t 280 35 Transmit;t 180 195 Typical ~10 days, profiles to 2,000 m",
+    "b 25 45 95 45 Conductivity;b 132 45 95 45 Temperature;b 239 45 95 45 Pressure;a 72 90 180 135;a 180 90 180 135;a 286 90 180 135;b 95 135 170 45 Derived profile;t 180 205 Surface satellite transmission",
+    "l 35 45 325 45;l 35 45 35 175;p M260 45L235 80L180 115L125 175;p M270 45L245 80L190 115L135 175;t 180 35 Sensor drift shifts profile;t 180 195 Compare references and neighbors",
+    "b 25 45 145 45 ρ=1025;b 190 45 145 45 cp=4000;b 25 110 145 45 ΔT=.1°C;b 190 110 145 45 Depth=100 m;t 180 195 ρcpΔTz ≈41 MJ/m²"
+  ]
+};
+window.LumenSlideArtBatch13Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch13;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch13Render(c,cls,step)||prior(c,cls,step);};})();
