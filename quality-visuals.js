@@ -6132,3 +6132,137 @@ window.LumenSlideArtBatch42Render=function renderer(c,cls="cover",step=-1){
  const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch42Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* Mythology: dedicated slide artwork, batch 43. */
+window.LumenSlideArtBatch43={
+  "greek-myth": [
+    "c 180 45 22;c 80 135 22;c 180 135 22;c 280 135 22;l 180 67 80 113;l 180 67 180 113;l 180 67 280 113;t 180 49 Zeus;t 80 139 Hera;t 180 139 Athena;t 280 139 Apollo;t 180 195 Related figures, distinct cults and roles",
+    "b 35 45 290 30 Ouranos;b 35 92 290 30 Kronos;b 35 139 290 30 Zeus;a 180 75 180 92;a 180 122 180 139;t 180 195 Hesiod's succession of divine rulers",
+    "p M55 95L180 40L305 95ZM70 165H290M85 95V165M130 95V165M230 95V165M275 95V165;t 180 115 Athena;t 180 195 Athens: local sanctuary and civic protection",
+    "r 45 45 75 110;r 142 45 75 110;r 239 45 75 110;t 82 90 Homer;t 180 90 Hesiod;t 276 90 Drama;t 180 195 Different ancient witnesses, not one fixed canon"
+  ],
+  "norse-myth": [
+    "p M180 185V65M180 90L95 35M180 90L265 35M180 115L55 85M180 115L305 85M180 170L100 195M180 170L260 195;c 95 35 14;c 265 35 14;c 55 85 14;c 305 85 14;t 180 25 Yggdrasil;t 180 210 Schematic cosmic tree, not a precise map",
+    "c 65 95 32;c 180 95 32;c 295 95 32;t 65 100 Odin;t 180 100 Thor;t 295 100 Loki;p M55 45L65 25L75 45M165 45H195V55H165Z;t 65 155 Wisdom;t 180 155 Protection;t 295 155 Shifting roles;t 180 195 Relationships drive the narratives",
+    "p M35 125L85 60L130 135L180 40L225 135L270 80L325 125M35 145Q180 180 325 145;p M250 170V135L235 120M250 145L270 125;t 180 195 Upheaval and renewed world in some accounts",
+    "r 65 55 100 105;r 195 55 100 105;t 115 85 Poetic;t 115 105 Edda;t 245 85 Prose;t 245 105 Edda;t 180 195 Medieval Icelandic records of older traditions"
+  ],
+  "egypt-myth": [
+    "l 65 100 295 100;l 180 100 180 165;p M145 165H215M65 100L35 145H95ZM295 100L265 145H325Z;t 65 95 Truth;t 295 95 Order;t 180 195 Maat: balance, ritual and duty",
+    "c 180 105 55;c 180 50 15;a 235 105 225 145;a 125 105 135 65;l 35 105 325 105;t 180 30 Day journey;t 180 180 Night passage;t 180 205 Solar renewal cycles",
+    "c 95 95 30;c 265 95 30;t 95 100 Osiris;t 265 100 Horus;p M95 130V165M265 130V165;t 95 185 Dead;t 265 185 Living kingship;t 180 25 Distinct divine roles",
+    "b 35 55 90 95 Heliopolis;b 135 55 90 95 Memphis;b 235 55 90 95 Hermopolis;t 180 195 Multiple creation traditions coexist"
+  ],
+  "depth-mythology-what-myths-do-in-societies": [
+    "c 180 95 38;c 65 45 22;c 295 45 22;c 65 155 22;c 295 155 22;l 65 45 145 75;l 295 45 215 75;l 65 155 145 115;l 295 155 215 115;t 180 100 Story;t 65 20 Origins;t 295 20 Gods;t 65 190 Society;t 295 190 Values",
+    "p M55 155L110 95L165 155ZM195 85L260 40L325 85ZM205 150H315M220 85V150M300 85V150;a 165 120 195 120;t 110 180 Origin story;t 260 180 Ritual place",
+    "p M80 155V80L55 50M80 95L105 50M260 155V80L235 50M260 95L285 50;c 180 105 25;t 180 109 Demeter;t 180 195 Agricultural loss and reunion, Eleusis",
+    "b 35 55 130 60 Ancient audience;b 195 55 130 60 Later audience;l 100 115 180 145;l 260 115 180 145;c 180 160 24;t 180 164 Text;t 180 205 Meanings vary with reception"
+  ],
+  "depth-mythology-mesopotamian-creation-stories": [
+    "r 35 55 90 110;r 135 55 90 110;r 235 55 90 110;p M45 75H115M145 95H215M245 115H315;t 80 185 City A;t 180 185 City B;t 280 185 City C;t 180 25 Several creation narratives",
+    "p M35 105Q85 20 135 105T235 105;c 285 105 28;t 120 45 Tiamat;t 285 105 Marduk;a 250 105 220 105;t 180 195 Enuma Elish: conflict and cosmic organization",
+    "c 85 90 28;c 275 90 28;a 113 90 247 90;t 85 95 Qingu;t 275 95 Humans;t 180 65 Blood in this version;t 180 195 Human work on behalf of gods",
+    "p M65 160H295L265 120H95ZM110 120H250L225 80H135ZM150 80H210L195 45H165Z;t 180 185 Babylon;t 180 205 Marduk's elevation reflects civic theology"
+  ],
+  "depth-mythology-the-epic-of-gilgamesh": [
+    "p M45 165V85H80V65H110V85H145V165ZM215 165V85H250V65H280V85H315V165;c 95 105 12;c 265 105 12;l 145 105 215 105;t 95 185 Gilgamesh;t 265 185 Enkidu;t 180 35 Friendship in Uruk",
+    "c 95 95 27;c 265 95 27;l 122 95 190 95;p M190 80L205 110M205 80L190 110;t 95 100 Gilgamesh;t 265 100 Loss;t 180 195 Enkidu's death prompts mortality quest",
+    "p M35 155Q105 95 175 155T325 155;p M245 145V95L225 75M245 110L265 75;t 75 65 Utnapishtim;t 245 65 Plant;t 180 195 Quest cannot overcome human mortality",
+    "p M35 165V80H65V55H95V80H125V55H155V80H185V55H215V80H245V55H275V80H325V165Z;t 180 110 Walls of Uruk;t 180 195 Return to human achievement"
+  ],
+  "depth-mythology-the-story-of-demeter-and-persephone": [
+    "l 35 95 325 95;c 95 55 22;c 265 145 22;a 115 55 245 145;t 95 60 Demeter;t 265 150 Persephone;t 180 85 Earth;t 180 175 Underworld;t 180 205 Separation in the Homeric Hymn",
+    "l 35 165 325 165;p M75 165L75 110L55 95M75 125L95 95M180 165L170 125L155 120M275 165L285 125L300 120;t 180 45 Demeter withdraws blessing;t 180 195 Crops fail, offerings threatened",
+    "c 180 95 45;d 160 75 5;d 200 75 5;d 160 115 5;d 200 115 5;t 180 100 Seed;t 95 45 Earth;t 265 45 Underworld;p M95 55Q180 5 265 55M265 145Q180 195 95 145;t 180 205 Recurring division of time",
+    "p M55 95L180 40L305 95ZM75 165H285M90 95V165M270 95V165;c 180 125 18;t 180 195 Eleusis: agricultural and mystery-ritual themes"
+  ],
+  "depth-mythology-the-figure-of-the-trickster": [
+    "p M35 135L95 75L155 135L215 75L275 135L325 85;d 155 135 8;t 180 45 Boundary crossing and reversal;t 180 195 Trickster is a comparative category",
+    "c 180 95 35;a 145 95 65 95;a 215 95 295 95;t 180 100 Loki;t 65 75 Aid;t 295 75 Harm;t 180 195 Actions can have mixed consequences",
+    "p M55 65H125V90H90V150H75V90H55Z;c 260 95 35;p M230 125L260 165L290 125;t 90 175 Stolen hammer;t 260 185 Disguise;t 180 25 Loki helps plan recovery",
+    "b 35 45 130 60 Actions;b 195 45 130 60 Consequences;b 35 120 290 55 Cultural source;t 180 205 Compare without assuming equivalence"
+  ],
+  "depth-mythology-japanese-myths-and-the-kami": [
+    "p M45 155L105 65L165 155M195 155V75H305V155M210 75V55H290V75;c 250 105 18;t 105 180 Natural place;t 250 180 Sacred presence;t 180 205 Kami is broader than a simple word for god",
+    "r 55 45 110 125;r 195 45 110 125;t 110 90 Kojiki;t 250 90 Nihon Shoki;t 110 125 712;t 250 125 720;t 180 195 Early eighth-century compilations",
+    "p M35 155L95 65L155 155ZM205 155L265 65L325 155Z;c 95 125 20;c 265 45 20;a 115 105 245 55;t 95 180 Cave;t 265 180 Sun returns;t 180 205 Kami draw Amaterasu out",
+    "r 35 55 130 105;r 195 55 130 105;t 100 100 Text variant A;t 260 100 Text variant B;t 180 195 Ancient accounts do not exhaust living Shinto"
+  ],
+  "plus-mythology-the-labyrinth-in-greek-mythology": [
+    "r 35 45 290 130;p M55 65H305V155H75V85H285V135H95V105H265V115H115;d 180 115 8;t 180 195 Labyrinth built by Daedalus in myth",
+    "p M35 175V45H325V175H65V75H295V145H95V105H265;d 265 105 8;a 35 185 65 185;t 180 25 Ariadne's thread guides the return;t 180 205 Theseus confronts Minotaur",
+    "d 45 105 6;d 180 105 8;d 315 105 6;a 55 105 170 105;a 190 105 305 105;t 45 85 Entry;t 180 85 Encounter;t 315 85 Return;t 180 175 Knowledge and aid, not strength alone",
+    "r 35 55 130 110;r 195 55 130 110;p M45 75H155V145H65V95H135M205 75H315V145H225;t 100 185 Legendary maze;t 260 185 Excavated plan;t 180 205 Archaeology does not verify mythical events"
+  ],
+  "plus-mythology-the-myth-of-icarus": [
+    "p M180 85Q100 20 35 80Q105 95 180 155Q255 95 325 80Q260 20 180 85Z;l 180 85 180 155;t 180 195 Daedalus constructs feather-and-wax wings",
+    "c 180 35 18;p M35 175Q90 160 145 175T255 175T325 175;l 35 105 325 105;t 180 95 Middle path;t 180 65 Too high;t 180 155 Too low;t 180 205 Ovid's warning",
+    "c 275 35 22;p M55 145Q150 30 245 65Q280 115 290 170;a 245 65 290 170;t 180 25 Icarus climbs;t 180 195 Wax softens, flight fails",
+    "p M35 170L180 35L325 170;l 180 35 180 170;t 95 145 Invention;t 265 145 Risk;t 180 195 Limits and grief are readings, not a universal moral"
+  ],
+  "plus-mythology-orpheus-and-eurydice": [
+    "p M45 155Q95 75 145 155M80 75L110 75L140 120L50 120Z;l 65 85 65 115;l 80 85 80 115;l 95 85 95 115;l 110 85 110 115;c 265 105 30;t 95 185 Orpheus's lyre;t 265 185 Eurydice;t 180 205 Music motivates appeal to underworld",
+    "p M35 165H85V135H135V105H185V75H235V45H325;d 180 95 6;d 125 125 6;a 190 85 235 55;t 180 195 Follow upward without looking back",
+    "p M35 165H85V135H135V105H185V75H235V45H325;d 220 65 7;d 160 100 7;a 220 65 170 95;a 160 110 110 150;t 180 195 Early turn, second separation",
+    "r 55 55 110 105;r 195 55 110 105;t 110 105 Virgil;t 250 105 Ovid;t 180 195 Compare love, art, doubt and mortal limits"
+  ],
+  "plus-mythology-the-story-of-pandora": [
+    "p M130 55Q180 30 230 55L215 90L245 160Q180 185 115 160L145 90Z;t 180 105 Pandora;t 180 195 Divine creation in Hesiod's punishment narrative",
+    "p M110 90Q90 160 180 175Q270 160 250 90L230 65H130Z;p M125 60H235;a 150 65 105 25;a 180 65 180 15;a 210 65 255 25;t 180 145 Hope;t 180 195 Troubles released, Hope remains",
+    "p M35 75Q20 155 100 170Q180 155 165 75L140 55H60Z;r 220 75 95 85;t 100 190 Greek pithos jar;t 267 190 Later box;t 180 25 Translation and transmission",
+    "c 180 105 35;t 180 110 Hope;a 145 105 65 105;a 215 105 295 105;t 65 85 Preserved?;t 295 85 Confined?;t 180 195 Interpretations differ"
+  ],
+  "plus-mythology-the-journeys-of-odysseus": [
+    "d 45 95 8;d 315 95 8;p M45 95Q100 5 145 95T245 95T315 95;t 45 75 Troy;t 315 75 Ithaca;t 180 195 Long homecoming and household trials",
+    "c 70 100 30;c 180 100 30;c 290 100 30;t 70 105 Cyclops;t 180 105 Circe;t 290 105 Sirens;t 180 195 Different tests of identity, hospitality and restraint",
+    "c 95 95 30;c 265 95 30;t 95 100 Nobody;t 265 100 Name;a 125 95 235 95;t 180 160 Escape then self-disclosure;t 180 195 Poseidon's consequences follow",
+    "l 35 105 325 105;d 65 105 6;d 180 105 6;d 295 105 6;p M180 95Q120 25 65 95;t 65 125 Adventures;t 180 125 Narration;t 295 125 Home;t 180 195 Embedded retrospective narrative"
+  ],
+  "plus-mythology-thor-s-hammer-and-its-stories": [
+    "p M105 55H255V95H195V175H165V95H105Z;t 180 35 Mjollnir;t 180 195 Protection, power and consecration",
+    "p M55 55H125V85H95V150H80V85H55Z;c 265 105 35;t 265 105 Thrym;a 145 105 230 105;t 180 195 Stolen hammer exchanged for demanded bride",
+    "c 80 90 20;p M60 115L100 115L120 165H40Z;c 260 90 20;p M240 115L280 115L300 165H220Z;t 80 185 Thor disguised;t 260 185 Loki explains;t 180 205 Comic reversal and recovery",
+    "c 180 35 10;l 180 45 180 70;p M115 70H245V100H195V170H165V100H115Z;t 180 195 Pendant evidence requires archaeological context"
+  ],
+  "depth-mythology-how-flood-stories-differ": [
+    "p M35 145Q75 110 115 145T195 145T275 145T325 145;p M110 125H250L225 155H135Z;t 180 55 Flood, survival, renewal;t 180 195 Shared motif does not establish one event",
+    "r 35 55 130 110;r 195 55 130 110;t 100 95 Atrahasis;t 260 95 Gilgamesh;t 100 135 Divine decisions;t 260 135 Mortality quest;t 180 195 Compare distinct narrative functions",
+    "b 35 45 290 130 Gilgamesh's quest;r 95 95 170 45;t 180 120 Flood testimony;t 180 195 Embedded survivor account addresses mortality",
+    "b 35 45 135 55 Sequence;b 190 45 135 55 Causation;b 35 120 135 55 Survivors;b 190 120 135 55 Context;t 180 205 Transmission and geology need independent evidence"
+  ],
+  "plus-mythology-odin-and-the-pursuit-of-wisdom": [
+    "c 180 95 35;t 180 100 Odin;a 145 95 65 95;a 215 95 295 95;t 65 75 Cost;t 295 75 Wisdom;t 180 195 Knowledge acquired through sacrifice",
+    "p M180 185V35M180 55L100 20M180 55L260 20;l 140 55 140 95;c 140 105 10;p M140 115L140 150L120 165M140 150L160 165;t 240 110 Nine nights;t 180 205 Havamal's ordeal and runes",
+    "c 180 110 55;c 180 110 30;c 85 55 18;a 105 60 150 85;t 85 30 Eye pledge;t 180 115 Well;t 180 195 Mimir's well: sacrifice for wisdom",
+    "r 35 55 130 110;r 195 55 130 110;t 100 105 Poetic speech;t 260 105 Later prose;t 180 195 Distinct witnesses, not one continuous biography"
+  ],
+  "plus-mythology-osiris-and-the-renewal-of-life": [
+    "c 65 95 23;c 180 95 23;c 295 95 23;a 88 95 157 95;a 203 95 272 95;t 65 100 Osiris;t 180 100 Loss;t 295 100 Restore;t 180 165 Seth and Isis in varying accounts",
+    "l 35 95 325 95;c 95 55 25;c 265 145 25;a 120 55 240 145;t 95 60 King;t 265 150 Osiris;t 180 195 Transformed sovereignty over the dead",
+    "p M115 155L140 55H220L245 155Z;l 145 85 215 85;l 135 115 225 115;t 180 175 Funerary restoration;t 180 205 Ritual hope, not literal historical record",
+    "l 35 105 325 105;d 65 105 6;d 295 105 6;t 65 85 Earlier texts;t 295 85 Plutarch;t 180 155 Long time gap;t 180 195 Related but not identical versions"
+  ],
+  "plus-mythology-the-myth-of-the-phoenix": [
+    "p M180 80Q105 20 35 85Q125 105 180 155Q235 105 325 85Q255 20 180 80Z;c 180 55 12;t 180 195 Long-lived bird, varying renewal accounts",
+    "p M50 110Q105 50 155 110L105 130Z;c 105 145 15;p M205 95L265 45L325 95ZM220 165H310M230 95V165M300 95V165;a 155 120 205 120;t 180 195 Herodotus: parent carried to Heliopolis",
+    "p M180 155Q95 100 150 55Q130 120 180 115Q230 120 210 55Q265 100 180 155Z;p M180 100Q120 40 65 75M180 100Q240 40 295 75;t 180 195 Later fire and ashes imagery",
+    "p M100 155V80Q85 55 105 45Q125 50 120 75L145 90M260 155V80Q245 55 265 45Q285 50 280 75L305 90;t 100 185 Benu;t 260 185 Phoenix;t 180 205 Related solar themes, historically distinct"
+  ]
+};
+window.LumenSlideArtBatch43Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch43;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch43Render(c,cls,step)||prior(c,cls,step);};})();
