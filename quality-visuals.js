@@ -5858,3 +5858,137 @@ window.LumenSlideArtBatch40Render=function renderer(c,cls="cover",step=-1){
  const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch40Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* Forensic Science: dedicated slide artwork, batch 41. */
+window.LumenSlideArtBatch41={
+  "forensic-dna": [
+    "l 40 145 320 145;p M55 145L65 80L75 145L115 145L125 55L135 145L195 145L205 95L215 145L275 145L285 65L295 145;t 180 35 Selected genetic markers;t 180 195 Profile ≠ complete genome",
+    "l 40 90 320 90;l 40 150 320 150;p M70 90L80 50L90 90L160 90L170 40L180 90L260 90L270 55L280 90M70 150L80 110L90 150L160 150L170 100L180 150L260 150L270 115L280 150;t 180 200 Compare marker positions",
+    "b 35 55 130 70 Stain profile;b 195 55 130 70 Reference;t 180 155 Consistent at tested markers;t 180 195 Statistical strength ≠ guilt",
+    "c 75 90 26;c 180 90 26;c 285 90 26;a 101 90 154 90;a 206 90 259 90;t 75 95 Source;t 180 95 Transfer;t 285 95 Surface;t 180 175 DNA source does not establish activity"
+  ],
+  "fingerprints": [
+    "p M55 165Q15 85 90 45Q165 5 205 85Q230 150 300 165M75 160Q40 90 100 62Q155 30 185 90Q205 145 280 150M100 155Q65 95 115 80Q150 60 165 100Q180 145 255 140;t 180 195 Ridge flow and distortion",
+    "p M35 65Q95 30 155 65M35 85Q95 50 155 85M35 105Q95 70 155 105M195 65Q255 30 315 65M195 85Q255 50 315 85M195 105Q255 70 315 105;d 95 50 4;d 255 50 4;t 180 175 Compare corresponding ridge features",
+    "r 40 45 120 110;r 200 45 120 110;p M55 75Q100 50 145 75M55 100Q100 75 145 100M215 75Q260 50 305 75;t 100 175 Reference;t 260 175 Partial;t 180 205 May be inconclusive",
+    "l 40 110 320 110;d 80 110 6;d 280 110 6;t 80 75 Deposition?;t 280 75 Recovery;t 180 185 Comparison cannot date impression"
+  ],
+  "chain-custody": [
+    "b 25 65 95 65 Collect;a 120 97 135 97;b 135 65 90 65 Examine;a 225 97 240 97;b 240 65 95 65 Store;t 180 180 Document every transfer",
+    "r 65 40 230 140;l 65 85 295 85;l 65 130 295 130;t 180 65 Evidence ID;t 180 110 Date and handler;t 180 155 Transfer details;t 180 205 Link record to item",
+    "r 40 55 120 100;r 200 55 120 100;l 40 80 160 80;l 200 80 320 80;t 100 105 ID 042;t 260 105 ID 042;t 180 185 Sealed receipt and condition recorded",
+    "l 35 110 145 110;l 215 110 325 110;d 145 110 6;d 215 110 6;t 180 80 Missing record;t 180 165 Investigate gap;t 180 195 Not automatic proof of alteration"
+  ],
+  "depth-forensic-science-why-evidence-contamination-matters": [
+    "c 95 100 45;d 90 95 6;d 260 60 7;a 250 70 135 90;t 95 170 Original sample;t 260 40 Foreign material;t 180 205 Contamination adds material",
+    "r 45 65 120 100;r 195 65 120 100;d 85 110 8;d 235 110 8;d 275 90 6;t 105 185 Original;t 255 185 Additional signal;t 180 210 Tiny amounts may matter",
+    "l 45 150 315 150;p M55 150L130 150L145 60L160 150L300 150;t 180 40 Negative control;t 180 195 Unexpected signal: investigate",
+    "b 35 55 135 65 Handling log;b 190 55 135 65 Controls;t 180 155 Repeat if appropriate;t 180 195 Clean control cannot exclude earlier contamination"
+  ],
+  "depth-forensic-science-how-forensic-toxicology-interprets-results": [
+    "b 35 55 130 70 Biological specimen;a 165 90 195 90;b 195 55 130 70 Chemical analysis;t 180 185 Detect compound or metabolite",
+    "l 40 170 320 170;l 40 170 40 35;d 80 150 5;d 150 110 5;d 220 70 5;l 65 160 255 50;t 180 195 Concentration calibration and uncertainty",
+    "b 35 55 135 65 Urine detection;b 190 55 135 65 Earlier impairment;t 180 160 One does not prove the other;t 180 195 Timing and specimen matter",
+    "b 35 45 135 55 Timing;b 190 45 135 55 Metabolism;b 35 120 135 55 Tolerance;b 190 120 135 55 Other findings;t 180 205 Interpret in context"
+  ],
+  "depth-forensic-science-why-toolmarks-require-caution": [
+    "r 55 45 250 120;p M85 60L120 150M115 60L150 150M145 60L180 150M175 60L210 150M205 60L240 150;t 180 195 Contact produces striations",
+    "r 45 65 110 85;r 205 65 110 85;p M55 90L145 90M55 115L145 115M215 90L305 90M215 115L305 115;t 180 195 Broad shape may indicate a class",
+    "p M35 60L150 60M35 85L150 85M35 110L150 110M210 60L325 60M210 85L325 85M210 113L325 113;t 180 155 Similar broad patterns;t 180 195 Evaluate finer features and reproducibility",
+    "b 35 55 290 70 Validated conclusion range;t 180 160 Communicate uncertainty;t 180 195 No unsupported uniqueness or zero error"
+  ],
+  "depth-forensic-science-how-questioned-documents-are-examined": [
+    "r 70 35 220 145;l 90 70 270 70;l 90 100 270 100;l 90 130 220 130;t 180 200 Examine writing, print, alterations",
+    "r 45 50 120 110;r 195 50 120 110;t 105 95 Questioned;t 255 95 Known;t 180 195 Compare suitable samples and variation",
+    "r 40 50 130 105;r 190 50 130 105;t 105 95 ABC;t 255 95 ABC;t 180 175 Same typeface;t 180 205 Not necessarily same printer",
+    "b 35 45 135 55 Feature quality;b 190 45 135 55 Reference quality;a 102 100 160 140;a 257 100 200 140;b 95 140 170 50 Qualified conclusion"
+  ],
+  "depth-forensic-science-what-trace-fibers-can-show": [
+    "p M35 75Q95 25 155 75T275 75M35 130Q95 80 155 130T275 130;d 185 110 6;t 180 190 Fibers may transfer and persist",
+    "p M40 65Q100 25 150 65T310 65M40 120L310 120;t 180 160 Compare shape and composition;t 180 190 Microscopy and chemistry",
+    "r 35 60 135 75;r 190 60 135 75;p M45 95L160 95M200 95L315 95;t 180 165 Consistent blue polyester;t 180 195 Many garments share fibers",
+    "b 35 45 135 55 Transfer;b 190 45 135 55 Persistence;b 35 120 135 55 Prevalence;b 190 120 135 55 Recovery context;t 180 205 Factors in significance"
+  ],
+  "depth-forensic-science-how-forensic-imaging-preserves-context": [
+    "r 35 45 290 130;r 85 70 190 85;r 160 95 30 25;t 180 200 Preserve relative positions",
+    "r 35 55 90 80;r 135 55 90 80;r 235 55 90 80;t 80 150 Overview;t 180 150 Midrange;t 280 150 Detail;l 245 115 315 115;t 180 195 Scale in detail plane",
+    "r 35 45 130 120;r 195 45 130 120;d 75 85 8;c 260 105 40;t 100 185 Location known;t 260 185 Detail only;t 180 205 Clear feature can lack context",
+    "b 35 55 130 65 Original file;a 165 87 195 87;b 195 55 130 65 Processed copy;t 180 165 Preserve original and log changes;t 180 195 Perspective limits images"
+  ],
+  "plus-forensic-science-how-forensic-laboratories-validate-methods": [
+    "b 35 55 130 70 Intended use;a 165 90 195 90;b 195 55 130 70 Validation study;t 180 195 Test fitness for defined purpose",
+    "b 35 45 135 55 Accuracy;b 190 45 135 55 Precision;b 35 120 135 55 Detection limit;b 190 120 135 55 Interference;t 180 205 Performance dimensions",
+    "l 40 170 320 170;l 40 170 40 35;d 75 150 5;d 130 125 5;d 185 100 5;d 240 75 5;l 60 155 255 68;t 180 195 Known concentrations test range",
+    "l 35 120 325 120;f 100 105 150 30;t 175 90 Validated range;t 50 150 Outside;t 300 150 Outside;t 180 195 Do not extrapolate without evidence"
+  ],
+  "plus-forensic-science-understanding-forensic-reference-samples": [
+    "b 35 55 130 70 Questioned;a 165 90 195 90;b 195 55 130 70 Known source;t 180 195 Establish reference provenance",
+    "c 65 95 18;c 120 115 18;c 180 85 18;c 240 125 18;c 295 100 18;t 180 190 Sample relevant natural variation",
+    "t 90 95 a;t 180 95 a;t 270 95 a;l 55 110 305 110;t 180 45 Multiple known specimens;t 180 185 Same letter, varying forms",
+    "b 35 45 135 60 Origin known?;b 190 45 135 60 Condition known?;t 180 155 Record uncertainty;t 180 195 Reference may be imperfect"
+  ],
+  "plus-forensic-science-how-forensic-serology-differs-from-dna-analysis": [
+    "c 90 100 45;t 90 100 Stain;a 135 100 205 100;b 205 65 120 70 Fluid test;t 180 190 Assess biological material type",
+    "p M40 140L65 65L90 140L145 140L170 45L195 140L250 140L275 85L300 140;t 180 180 Selected genetic markers;t 180 205 Source comparison",
+    "b 35 55 135 65 DNA consistent;b 190 55 135 65 Fluid unknown;t 180 175 Profile does not identify carrier fluid",
+    "b 35 55 135 75 Fluid question;b 190 55 135 75 Source question;t 180 165 Separate propositions;t 180 195 Screening has limits"
+  ],
+  "plus-forensic-science-how-forensic-anthropology-estimates-biological-profiles": [
+    "p M155 40L205 40L200 160L160 160Z;l 135 40 135 160;l 125 40 145 40;l 125 160 145 160;t 180 195 Skeletal measurements inform estimates",
+    "l 40 170 320 170;l 40 170 40 35;d 80 145 5;d 140 110 5;d 210 90 5;d 270 55 5;l 65 150 285 50;t 180 195 Reference relationship and uncertainty",
+    "l 40 120 320 120;l 110 95 110 145;l 250 95 250 145;l 110 120 250 120;d 180 120 7;t 180 80 Estimated stature;t 180 185 Report range, not exact height",
+    "b 35 45 135 55 Preservation;b 190 45 135 55 Reference group;b 35 120 290 55 Biological variability;t 180 205 Profile not unique identity"
+  ],
+  "plus-forensic-science-why-forensic-entomology-uses-development-data": [
+    "c 60 100 12;c 145 100 22;c 230 100 30;c 305 100 17;a 72 100 123 100;a 167 100 200 100;a 260 100 288 100;t 60 145 Egg;t 145 145 Larva;t 230 145 Pupa;t 305 145 Adult;t 180 195 Rate depends on conditions",
+    "b 35 45 135 55 Species;b 190 45 135 55 Temperature;b 35 120 290 55 Observed development stage;t 180 205 Estimate activity duration",
+    "l 40 170 320 170;l 40 170 40 35;p M45 160Q140 140 310 50M45 160Q200 165 310 110;t 230 40 Warmer;t 250 105 Cooler;t 180 195 Same species, different rates",
+    "l 35 110 325 110;d 60 110 6;d 160 110 6;d 300 110 6;t 60 75 Death?;t 160 75 Colonization;t 300 75 Observe;t 180 180 Activity duration ≠ time since death"
+  ],
+  "plus-forensic-science-how-forensic-handwriting-comparisons-are-limited": [
+    "p M40 100Q65 60 85 95Q95 120 110 75M145 100Q165 65 185 95Q200 125 210 70M245 100Q270 50 295 90Q310 130 325 75;t 180 45 Natural writing variation;t 180 185 Same writer varies",
+    "p M55 140Q100 45 145 140M215 140Q260 45 305 140;l 70 110 130 110;l 230 110 290 110;t 180 195 Compare combinations of features",
+    "r 35 60 135 70;r 190 60 135 70;t 102 100 in;t 257 100 in;t 180 170 Few common letters;t 180 195 Limited distinctive information",
+    "b 35 55 290 65 Qualified comparison;t 180 165 No unsupported certainty;t 180 192 Not personality or intent analysis"
+  ],
+  "depth-forensic-science-reading-forensic-likelihood-ratios": [
+    "b 35 50 135 70 Evidence under H1;b 190 50 135 70 Evidence under H2;t 180 175 Compare conditional probabilities",
+    "r 35 65 280 30;r 35 125 7 30;t 180 50 H1: 0.80;t 180 110 H2: 0.02;t 180 195 LR = 0.8 / 0.02 = 40",
+    "b 35 55 290 65 Evidence 40× more probable under H1;t 180 165 Not odds of guilt;t 180 195 Not posterior probability",
+    "b 35 45 135 55 Propositions;b 190 45 135 55 Data;b 35 120 290 55 Statistical model;t 180 205 Changing assumptions can change LR"
+  ],
+  "plus-forensic-science-how-forensic-microscopy-compares-materials": [
+    "c 180 100 70;p M125 85Q180 55 235 85M125 115Q180 85 235 115;t 180 195 Magnification reveals structure",
+    "c 95 100 48;c 265 100 48;l 65 100 125 100;l 235 100 295 100;t 180 175 Same scale and illumination;t 180 200 Calibrate before comparison",
+    "c 95 90 45;c 265 90 45;p M60 90L130 90M230 90L300 90M240 65L290 115M240 115L290 65;t 95 155 Ordinary light;t 265 155 Polarized light;t 180 200 Additional observation can distinguish",
+    "b 35 55 135 65 Reproducible difference;b 190 55 135 65 Agreement;t 102 165 May exclude;t 257 165 Not unique proof;t 180 200 Consider prevalence"
+  ],
+  "plus-forensic-science-what-quality-assurance-means-in-forensic-work": [
+    "b 35 45 290 45 Quality system;b 35 110 90 65 Training;b 135 110 90 65 Methods;b 235 110 90 65 Review;t 180 205 Ongoing controls",
+    "b 35 45 135 55 Calibration;b 190 45 135 55 Proficiency;b 35 120 135 55 Audits;b 190 120 135 55 Technical review;t 180 205 Multiple failure sources",
+    "b 35 55 130 65 Missing record;a 165 87 195 87;b 195 55 130 65 Assess impact;t 180 165 Correct issue and review affected results",
+    "b 35 55 290 65 Accreditation within scope;t 180 165 Evidence of conformity;t 180 195 Not a guarantee of every result"
+  ],
+  "plus-forensic-science-how-cognitive-bias-can-affect-evidence-interpretation": [
+    "c 90 100 36;c 270 100 36;a 126 100 234 100;t 90 105 Context;t 270 105 Judgment;t 180 180 Irrelevant expectations influence interpretation",
+    "b 35 55 135 65 Early impression;b 190 55 135 65 Selective evidence;t 180 165 Anchoring and confirmation bias;t 180 195 Distinct mechanisms",
+    "b 35 50 130 65 Reviewer A;b 195 50 130 65 Reviewer B;a 100 115 160 150;a 260 115 200 150;b 100 150 160 45 Compare later",
+    "b 35 45 135 55 Relevant context;b 190 45 135 55 Record observations;b 35 120 290 55 Appropriately independent review;t 180 205 Evaluate safeguards"
+  ]
+};
+window.LumenSlideArtBatch41Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch41;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch41Render(c,cls,step)||prior(c,cls,step);};})();
