@@ -1112,3 +1112,131 @@ window.LumenSlideArtBatch04Render=function renderSlide(c,cls="cover",step=-1){
  const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch04Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* Individually authored Statistics slide diagrams, batch 05. */
+window.LumenSlideArtBatch05={
+  "correlation": [
+    "l 35 175 325 175;l 35 175 35 35;d 60 145 4;d 100 138 4;d 140 100 4;d 190 112 4;d 235 65 4;d 290 48 4;t 180 200 Paired observations (x,y)",
+    "l 25 170 165 170;l 195 170 335 170;p M30 155L160 45M200 45L330 155;d 55 135 5;d 100 100 5;d 140 62 5;d 220 62 5;d 265 100 5;d 305 135 5;t 95 195 r > 0;t 265 195 r < 0",
+    "b 115 35 130 40 Temperature;a 180 75 90 125;a 180 75 270 125;b 25 125 130 45 Ice cream sales;b 205 125 130 45 Swimming;t 180 200 Common cause",
+    "l 25 170 165 170;l 195 170 335 170;d 35 50 4;d 65 115 4;d 95 150 4;d 125 115 4;d 155 50 4;d 205 145 4;d 220 150 4;d 235 140 4;d 250 145 4;d 320 40 5;t 95 195 Curved pattern;t 265 195 Extreme point"
+  ],
+  "base-rates": [
+    "r 35 75 290 45;f 35 75 2.9 45;t 180 55 Population: 1,000;t 180 155 10 defective = 1%;t 180 190 Before detector evidence",
+    "b 105 30 150 40 1,000 items;a 180 70 90 115;a 180 70 270 115;b 25 115 130 40 10 defective;b 205 115 130 40 990 sound;t 90 185 9 flagged;t 270 185 99 flagged",
+    "r 35 75 290 50;f 35 75 24.17 50;t 180 55 108 flagged;t 180 155 9 defective / 108 flagged;t 180 190 ≈8.3%, not 90%",
+    "b 25 55 100 50 Flag;a 125 80 145 80;b 145 55 190 50 Follow-up inspection;t 180 150 Weigh false alarms and missed defects"
+  ],
+  "sampling": [
+    "c 180 105 80;c 150 90 35;d 135 80 5;d 155 95 5;d 165 72 5;d 195 140 5;d 225 75 5;t 180 20 Population;t 135 140 Sample;t 180 205 Subset informs population",
+    "r 35 50 290 110;f 35 50 85 110;t 77 103 Gym members;t 220 103 Other residents;t 180 195 Large biased subset is still biased",
+    "c 55 70 10;c 105 70 10;c 155 70 10;c 205 70 10;c 255 70 10;c 305 70 10;a 105 80 105 145;a 255 80 255 145;d 105 155 10;d 255 155 10;t 180 200 Select using known random mechanism",
+    "b 25 55 145 45 Selected sample;a 170 77 190 77;b 190 55 145 45 Responses;t 97 150 Missing responses;t 262 150 May differ;t 180 195 Nonresponse can distort estimates"
+  ],
+  "depth-statistics-understanding-mean-and-median": [
+    "l 35 135 325 135;d 95 135 5;d 155 135 5;d 215 135 5;d 275 135 5;t 95 120 2;t 155 120 4;t 215 120 6;t 275 120 8;l 185 75 185 150;t 185 65 Mean 5;t 180 195 (2+4+6+8)/4",
+    "b 40 80 70 45 2;f 110 80 70 45;f 180 80 70 45;b 250 80 70 45 8;t 145 108 4;t 215 108 6;t 180 165 (4+6)/2 = 5",
+    "l 35 135 325 135;d 42 135 4;d 49 135 4;d 56 135 4;d 325 135 5;l 118 70 118 150;l 53 90 53 150;t 118 60 Mean 23;t 65 80 Median 5;t 320 120 80;t 180 195 Extreme value shifts mean",
+    "p M35 175L55 95L75 45L95 60L120 100L155 140L210 160L325 170;l 105 85 105 175;l 155 115 155 175;t 105 75 Median;t 155 105 Mean;t 180 200 Right-skewed example"
+  ],
+  "depth-statistics-how-standard-deviation-measures-spread": [
+    "l 35 120 325 120;d 95 120 6;d 145 120 6;d 180 120 6;d 215 120 6;d 265 120 6;l 180 65 180 145;a 180 95 95 95;a 180 95 265 95;t 180 55 Mean;t 180 190 Distance around mean",
+    "b 45 45 90 40 2−4=−2;b 135 45 90 40 4−4=0;b 225 45 90 40 6−4=2;r 65 115 50 45;r 245 115 50 45;t 90 105 4;t 180 155 0;t 270 105 4;t 180 195 √(8/3) ≈ 1.63",
+    "b 25 65 145 50 Population: ÷ n;b 190 65 145 50 Sample: ÷ (n−1);t 180 165 Same squared deviations;t 180 195 Different variance denominators",
+    "l 35 70 325 70;d 75 70 5;d 105 70 5;d 135 70 5;l 35 125 325 125;d 155 125 5;d 185 125 5;d 215 125 5;l 35 180 325 180;d 65 180 5;d 155 180 5;d 245 180 5;t 260 60 Original;t 265 115 Shifted;t 300 170 ×3"
+  ],
+  "depth-statistics-why-random-variation-matters": [
+    "l 35 110 325 110;p M35 100L70 125L105 90L140 115L175 95L210 130L245 85L280 120L325 100;t 180 50 Stable underlying level;t 180 190 Measurements vary around it",
+    "b 25 55 95 45 4 heads;b 132 55 95 45 6 heads;b 239 55 95 45 5 heads;t 180 145 Three sets of 10 fair tosses;t 180 195 Not always exactly half",
+    "l 35 105 325 105;p M35 45L65 165L95 65L125 145L155 80L185 150L215 75L245 135L275 60L325 125;p M35 98L65 114L95 102L125 110L155 99L185 105L215 102L245 109L275 103L325 106;t 180 30 10 tosses vs 1,000;t 180 200 Illustrative proportions",
+    "b 25 55 145 50 Sampling noise;b 190 55 145 50 Actual shift;b 25 125 145 50 Measurement error;b 190 125 145 50 Bias;t 180 205 Explain apparent changes"
+  ],
+  "plus-statistics-understanding-skewed-distributions": [
+    "p M25 170L45 75L65 40L85 75L110 115L145 145L165 160M195 160L215 145L245 115L270 75L290 40L310 75L335 170;t 95 195 Right tail;t 265 195 Left tail",
+    "r 35 65 40 100;r 80 90 40 75;r 125 125 40 40;r 170 145 40 20;r 260 155 40 10;l 102 45 102 170;l 146 45 146 170;t 90 35 Median;t 165 35 Mean;t 180 200 Rare large values pull mean",
+    "r 35 100 45 70;r 80 50 45 120;r 125 100 45 70;r 215 115 45 55;r 260 80 45 90;t 180 30 Histogram: clusters and gaps;t 180 195 Appearance depends on bin width",
+    "l 35 110 325 110;r 85 85 140 50;l 155 85 155 135;d 315 110 5;t 85 75 Q1;t 155 75 Median;t 225 75 Q3;t 180 185 IQR = Q3 − Q1"
+  ],
+  "plus-statistics-how-random-assignment-differs-from-random-sampling": [
+    "c 180 90 65;d 150 65 5;d 180 65 5;d 210 65 5;d 150 110 5;d 180 110 5;d 210 110 5;a 180 155 180 178;t 180 25 Target population;t 180 205 Randomly select units",
+    "b 105 35 150 40 Participants;a 180 75 95 125;a 180 75 265 125;b 25 125 140 45 Condition A;b 195 125 140 45 Condition B;t 180 203 Random allocation",
+    "b 25 35 310 45 Volunteers (not random sample);a 180 80 90 125;a 180 80 270 125;b 25 125 130 45 Method A;b 205 125 130 45 Method B;t 180 200 Causal inference for study participants",
+    "b 25 45 145 50 Sampling → scope;b 190 45 145 50 Assignment → cause;b 50 130 260 45 Still check response and measurement"
+  ],
+  "plus-statistics-understanding-statistical-confounding": [
+    "b 115 35 130 40 Confounder;a 180 75 90 125;a 180 75 270 125;b 25 125 130 45 Exposure;b 205 125 130 45 Outcome;a 155 147 205 147;t 180 205 Common cause distorts association",
+    "b 125 35 110 40 Age;a 180 75 90 125;a 180 75 270 125;b 25 125 130 45 Exercise;b 205 125 130 45 Health outcome;t 180 205 Age may influence both",
+    "b 105 35 150 40 Randomize;a 180 75 95 125;a 180 75 265 125;b 25 125 140 45 Group A;b 195 125 140 45 Group B;t 180 205 Balance factors in expectation",
+    "b 25 55 145 55 Measured factors;b 190 55 145 55 Unmeasured factors;t 97 150 Can adjust;t 262 150 May remain;t 180 195 Not all variables should be adjusted"
+  ],
+  "plus-statistics-how-a-sampling-distribution-works": [
+    "b 105 30 150 40 Fixed population;a 180 70 65 120;a 180 70 180 120;a 180 70 295 120;b 15 120 100 45 Sample A;b 130 120 100 45 Sample B;b 245 120 100 45 Sample C;t 180 200 Compute each mean",
+    "p M25 170Q95 35 165 170;p M195 170Q265 5 335 170;t 95 190 Individual values;t 265 190 Sample means;t 180 35 Different distributions",
+    "l 35 170 325 170;p M35 170Q180 30 325 170;p M125 170Q180 0 235 170;l 180 60 180 175;t 180 195 Center 50;t 80 60 SD 10;t 280 60 SE 2",
+    "p M35 170Q180 -100 325 170;l 180 70 180 170;l 125 125 125 170;l 235 125 235 170;t 180 195 Uncertainty of estimate;t 180 35 Approximate normality under conditions"
+  ],
+  "plus-statistics-understanding-standard-error": [
+    "p M25 170Q95 40 165 170;p M205 170Q265 0 325 170;t 95 195 Individual SD;t 265 195 Mean SE;t 180 35 Different quantities",
+    "b 45 55 270 60 SE = σ / √n;t 180 150 Independent identical draws;t 180 190 Often estimate σ using s",
+    "r 65 65 90 100;f 205 115 90 50;t 110 55 SE 2;t 250 105 SE 1;t 110 185 n = 36;t 250 185 n = 144;t 180 210 σ = 12",
+    "c 85 95 50;c 275 95 50;d 65 80 6;d 95 100 6;d 80 125 6;d 255 80 6;d 285 100 6;d 270 125 6;t 180 35 Clustered observations;t 180 195 Not all draws independent"
+  ],
+  "plus-statistics-how-outliers-affect-regression": [
+    "l 35 175 325 175;p M35 155L325 65;d 100 135 5;d 150 119 5;d 200 85 5;d 310 35 5;l 310 35 310 70;t 280 30 High leverage;t 180 200 Residual = observed − predicted",
+    "l 35 175 325 175;p M35 145L325 95;p M35 160L325 40;d 60 145 4;d 90 140 4;d 130 130 4;d 165 123 4;d 305 30 6;t 180 195 Extreme x and y can pull line",
+    "b 25 55 145 50 Fit all data;b 190 55 145 50 Fit without point;t 180 150 Compare slopes and predictions;t 180 190 Verify the questionable record",
+    "b 25 55 145 55 Original result;b 190 55 145 55 Sensitivity result;t 180 155 Explain any exclusion;t 180 195 Avoid cherry-picking"
+  ],
+  "plus-statistics-why-residual-plots-are-useful": [
+    "l 35 175 325 175;p M35 150L325 60;d 180 105 4;d 180 55 6;a 180 105 180 55;t 235 80 14 − 11 = +3;t 180 200 Vertical residual",
+    "l 35 110 325 110;d 50 50 4;d 95 95 4;d 140 145 4;d 180 155 4;d 225 140 4;d 270 90 4;d 315 50 4;t 180 195 Curved pattern suggests missed structure",
+    "l 35 110 325 110;d 50 105 4;d 90 115 4;d 130 95 4;d 170 135 4;d 210 75 4;d 250 160 4;d 300 40 4;d 315 175 4;t 180 200 Funnel: changing residual spread",
+    "l 35 110 325 110;d 50 95 4;d 90 130 4;d 130 100 4;d 170 85 4;d 210 120 4;d 250 95 4;d 300 140 4;t 180 195 No visible pattern ≠ proof"
+  ],
+  "depth-statistics-how-hypothesis-tests-work": [
+    "b 25 65 145 55 H₀: reference;b 190 65 145 55 H₁: departure;t 180 165 Test statistic compares data to model",
+    "p M35 170Q180 -95 325 170;l 263 100 263 170;t 263 90 Observed;t 285 150 Tail;t 180 200 P(at least as extreme  given H₀)",
+    "l 35 105 325 105;d 100 105 6;l 145 65 145 145;t 100 85 p=.03;t 145 55 α=.05;t 180 190 p < α → reject H₀",
+    "b 25 55 145 50 Effect size;b 190 55 145 50 Uncertainty;b 25 125 145 50 Assumptions;b 190 125 145 50 Multiple tests;t 180 205 Significance alone is insufficient"
+  ],
+  "depth-statistics-understanding-statistical-power": [
+    "r 35 75 290 50;f 35 75 232 50;t 151 105 Reject H₀;t 296 105 Miss;t 180 55 Under specified alternative;t 180 190 Power = 1 − β",
+    "b 25 55 95 55 Larger n;b 132 55 95 55 Larger effect;b 239 55 95 55 Less noise;a 72 110 180 150;a 180 110 180 150;a 286 110 180 150;t 180 180 Usually higher power",
+    "r 35 75 290 50;f 35 75 232 50;t 151 105 80 reject;t 296 105 20 miss;t 180 55 100 hypothetical studies;t 180 190 80% power for stated effect",
+    "b 25 45 145 50 Meaningful effect;b 190 45 145 50 Plausible variance;b 25 120 145 50 Test and α;b 190 120 145 50 Desired power;t 180 205 Plan before collecting data"
+  ],
+  "depth-statistics-what-regression-models-describe": [
+    "l 35 175 325 175;p M35 150L325 50;d 65 135 4;d 95 145 4;d 145 95 4;d 195 110 4;d 245 65 4;d 290 80 4;t 180 200 Conditional mean + variation",
+    "b 25 55 310 45 Sales = 20 + 3 ads − 2 price;b 25 120 145 45 Ads +1;b 190 120 145 45 Price fixed;t 180 200 Predicted sales +3",
+    "l 35 175 325 175;p M35 150L325 50;d 95 100 5;d 195 140 5;l 95 100 95 129;l 195 140 195 95;r 95 100 29 29;r 195 95 45 45;t 180 200 Minimize sum of squared residuals",
+    "b 25 55 145 50 Included predictors;b 190 55 145 50 Omitted factors;t 180 150 Coefficient is conditional;t 180 195 Not automatically causal"
+  ],
+  "plus-statistics-understanding-interaction-effects": [
+    "l 25 175 165 175;l 25 175 25 35;p M25 150L165 80M25 115L165 45;l 195 175 335 175;l 195 175 195 35;p M195 150L335 120M195 115L335 35;t 95 195 Additive;t 265 195 Interaction",
+    "b 25 55 310 45 y = 10+2x+3z+4xz;t 180 145 Δy per unit x = 2 + 4z;t 180 195 Conditional slope",
+    "l 35 175 325 175;l 35 175 35 35;p M35 150L285 100M35 130L185 40;t 245 95 z=0: slope 2;t 210 35 z=1: slope 6;t 180 200 Slopes differ",
+    "l 35 175 325 175;p M35 150L325 100M35 130L245 35;p M35 135L325 85M35 165L325 115;t 180 200 Plot conditional estimates with uncertainty"
+  ],
+  "plus-statistics-how-multiple-comparisons-create-false-positives": [
+    "r 35 60 29 29;r 70 60 29 29;r 105 60 29 29;r 140 60 29 29;r 175 60 29 29;r 210 60 29 29;r 245 60 29 29;r 280 60 29 29;f 315 60 29 29;t 180 120 Many true nulls;t 180 190 More chances for false positives",
+    "r 35 75 290 50;f 35 75 186.18 50;t 128 105 64.2% ≥1;t 273 105 35.8% none;t 180 55 20 independent tests, α=.05;t 180 190 1 − .95²⁰ ≈ .642",
+    "b 25 65 145 55 Family α=.05;a 170 92 190 92;b 190 65 145 55 Divide by 20;t 180 170 Per-test α=.0025;t 180 195 FWER ≤ .05",
+    "b 25 55 145 55 Fewer false positives;b 190 55 145 55 Lower power;t 180 155 Prespecify test family;t 180 195 Separate exploration from confirmation"
+  ]
+};
+window.LumenSlideArtBatch05Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch05;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch05Render(c,cls,step)||prior(c,cls,step);};})();
