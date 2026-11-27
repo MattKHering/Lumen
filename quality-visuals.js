@@ -3616,3 +3616,143 @@ window.LumenSlideArtBatch23Render=function renderer(c,cls="cover",step=-1){
  const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch23Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* Electronics: dedicated slide artwork, batch 24. */
+window.LumenSlideArtBatch24={
+  "diodes": [
+    "r 35 65 145 80;r 180 65 145 80;r 163 65 34 80;t 100 100 P region;t 260 100 N region;t 180 50 Depletion zone;a 225 160 135 160;t 180 195 Internal electric field",
+    "l 35 175 325 175;l 35 175 35 35;p M35 175L185 172Q245 165 280 35;t 230 155 ~0.6–0.7 V;t 180 195 Forward current rises rapidly, drop depends on current",
+    "l 35 105 325 105;l 180 35 180 175;p M35 170L65 110H180Q270 110 290 35;t 65 185 Breakdown;t 120 95 Reverse leakage;t 180 205 Reverse voltage increases junction barrier",
+    "p M45 55H110L140 40L170 70L200 40L230 55H315V160H45V55;p M140 145L180 160L140 175ZM180 145V175;t 165 30 Resistor limits current;t 180 195 DC polarity determines diode conduction"
+  ],
+  "transistors": [
+    "c 180 105 55;l 35 105 125 105;l 200 55 260 25;l 200 155 260 185;t 75 90 Control;t 285 25 Terminal 2;t 285 185 Terminal 3;t 180 210 Signal controls current through another path",
+    "p M155 65V145M60 105H155M155 85L240 35M155 125L240 175;a 160 130 205 155;t 60 85 Base;t 260 35 Collector;t 260 175 Emitter;t 180 200 Base-emitter bias affects collector current",
+    "r 75 125 210 30;r 75 95 210 15;r 145 65 70 15;a 180 85 180 95;t 180 50 Insulated gate;t 180 147 Channel;t 75 175 Source;t 285 175 Drain;t 180 205 Gate field controls channel, gate capacitance charges",
+    "p M45 35H315M45 175H315M180 35V75M180 135V175M180 105H295;c 180 105 30;t 70 25 VDD;t 70 195 Ground;t 295 90 Output;t 180 210 Real switching has resistance and energy loss"
+  ],
+  "capacitors": [
+    "l 135 45 135 165;l 225 45 225 165;l 35 105 135 105;l 225 105 325 105;t 110 65 +;t 110 105 +;t 110 145 +;t 250 65 −;t 250 105 −;t 250 145 −;a 145 85 215 85;a 145 125 215 125;t 180 35 Dielectric;t 180 195 Separated charge creates electric field",
+    "r 35 55 110 95;r 215 55 110 95;l 65 55 65 150;l 110 55 110 150;l 255 55 255 150;l 280 55 280 150;t 90 175 Larger gap;t 270 175 Smaller gap;t 180 195 C=Q/V, C increases with area and permittivity",
+    "r 65 130 85 40;r 210 10 85 160;t 107 120 0.005 J;t 252 25 0.020 J;t 107 190 10 V;t 252 190 20 V;t 180 210 100 µF, E=½CV²",
+    "l 35 175 325 175;p M35 155Q95 45 180 45H325;t 180 30 Capacitor charging through R;t 180 195 Finite current cannot change voltage instantaneously"
+  ],
+  "sensors": [
+    "b 25 55 145 55 Temperature;b 190 55 145 55 Light;a 97 110 97 145;a 262 110 262 145;t 97 165 Resistance;t 262 165 Photocurrent;t 180 195 Physical quantity becomes electrical signal",
+    "b 25 65 95 55 Sensor;a 120 92 132 92;b 132 65 95 55 Amplify / filter;a 227 92 239 92;b 239 65 95 55 ADC;t 180 165 Conditioning can add noise and offset",
+    "l 35 175 325 175;l 35 175 35 35;l 35 145 325 45;d 35 145 5;d 325 45 5;t 65 135 .5 V;t 290 35 2.5 V;t 35 195 0;t 325 195 100;t 180 210 Gain .02 V/unit",
+    "l 35 105 325 105;d 175 105 5;d 185 105 5;d 195 105 5;l 225 65 225 145;t 225 55 Reference;t 180 170 Fine resolution can coexist with bias;t 180 195 Range, response time and drift also matter"
+  ],
+  "depth-electronics-reading-a-resistor": [
+    "p M35 105H85L105 80L125 130L145 80L165 130L185 80L205 130L225 80L245 105H325;t 180 45 V = I R;t 180 175 Ohmic resistance in Ω",
+    "r 55 75 250 60;f 75 75 25 60;r 130 75 25 60;f 185 75 25 60;r 260 75 25 60;t 87 65 Brown 1;t 142 150 Black 0;t 197 65 Red ×100;t 272 150 Gold ±5%;t 180 195 1,000 Ω ±5%",
+    "b 25 65 145 55 5 V / 1 kΩ;b 190 65 145 55 I = 5 mA;t 180 155 P=VI=.025 W;t 180 195 Rated power must suit conditions",
+    "l 35 105 325 105;l 65 85 65 125;l 180 85 180 125;l 295 85 295 125;t 65 70 950 Ω;t 180 70 1000 Ω;t 295 70 1050 Ω;t 180 175 ±5% tolerance, temperature may shift resistance"
+  ],
+  "depth-electronics-how-series-circuits-work": [
+    "p M45 55H100L115 40L130 70L145 40L160 55H200L215 40L230 70L245 40L260 55H315V160H45V55;a 75 55 95 55;a 275 160 200 160;t 180 105 Same current everywhere;t 180 195 Single unbranched path",
+    "b 25 65 145 55 100 Ω;a 170 92 190 92;b 190 65 145 55 200 Ω;t 180 155 Rtotal=100+200;t 180 195 300 Ω",
+    "p M35 65H85L100 50L115 80L130 50L145 65H200L215 50L230 80L245 50L260 65H325V160H35V65;t 110 45 3 V;t 230 45 6 V;t 180 110 9 V / 300 Ω = 30 mA;t 180 195 Drops sum to supply voltage",
+    "p M45 55H150M210 55H315V160H45V55;l 150 55 195 25;c 150 55 4;c 210 55 4;t 180 95 Open switch;t 180 145 Entire series path interrupted;t 180 195 P=I²R varies by resistor"
+  ],
+  "depth-electronics-how-parallel-circuits-work": [
+    "l 65 45 65 175;l 295 45 295 175;p M65 75H120L135 60L150 90L165 60L180 75H295M65 145H120L135 130L150 160L165 130L180 145H295;a 205 75 260 75;a 205 145 260 145;t 180 25 Same voltage across each branch;t 180 200 Currents may differ",
+    "b 25 55 145 55 100 Ω branch;b 190 55 145 55 100 Ω branch;t 180 150 1/Req = 1/100 + 1/100;t 180 195 Req = 50 Ω",
+    "l 65 45 65 175;l 295 45 295 175;l 65 75 295 75;l 65 145 295 145;a 100 75 260 75;a 100 145 260 145;t 180 65 50 mA;t 180 135 50 mA;t 180 25 5 V across each 100 Ω;t 180 200 Source supplies 100 mA",
+    "l 65 45 65 175;l 295 45 295 175;l 65 75 295 75;l 65 145 145 145;l 205 145 295 145;l 145 145 185 115;a 100 75 260 75;t 180 25 Other branch remains powered;t 180 195 Opening one branch need not break all paths"
+  ],
+  "depth-electronics-converting-ac-to-dc": [
+    "l 35 105 325 105;p M35 105Q70 35 105 105T175 105T245 105T315 105;t 180 25 Alternating voltage;t 180 195 Rectification makes one-polarity output",
+    "l 35 175 325 175;p M35 175Q70 35 105 175Q140 35 175 175Q210 35 245 175Q280 35 315 175;t 180 25 Full-wave rectification;t 180 195 Both half cycles deliver same load direction",
+    "l 35 175 325 175;p M35 175Q70 35 105 175Q140 35 175 175Q210 35 245 175Q280 35 315 175;p M35 175Q50 105 70 105L130 125L140 105L200 125L210 105L270 125L280 105L325 120;t 180 35 Capacitor charges at peaks;t 180 195 Discharges into load between peaks",
+    "l 35 175 325 175;p M35 55L75 75L115 55L155 75L195 55L235 75L275 55L325 75;p M35 120H325;t 180 40 Rippled input;t 180 110 Regulated output;t 180 195 Regulation is distinct from rectification"
+  ],
+  "plus-electronics-how-voltage-dividers-work": [
+    "p M180 25V45L165 55L195 65L165 75L180 85V115L165 125L195 135L165 145L180 155V175;l 180 105 300 105;d 180 105 5;t 180 15 Vin;t 300 95 Vout;t 180 195 Vout=Vin×Rbottom/(Rtop+Rbottom)",
+    "b 25 65 145 55 Vin=12 V;b 190 65 145 55 Rtop=Rbottom=10k;t 180 150 Equal drops: 6 V each;t 180 195 Series current .6 mA",
+    "p M125 25V85L110 95L140 105L125 115V175M125 85H265V105L250 115L280 125L265 135V175H125;d 125 85 5;t 85 145 10k;t 290 145 10k;t 180 25 Load parallels bottom resistor;t 180 195 Effective 5k → output 4 V with 10k top",
+    "l 35 175 325 175;p M35 55Q150 60 325 155;t 180 30 Vout versus heavier load;t 180 195 Divider suits high-impedance signal scaling"
+  ],
+  "plus-electronics-how-logic-signals-tolerate-noise": [
+    "r 35 45 290 45;r 35 90 290 40;r 35 130 290 45;t 180 72 Guaranteed high;t 180 114 Undefined region;t 180 158 Guaranteed low;t 180 195 Input thresholds vary by logic family",
+    "l 35 55 325 55;l 35 90 325 90;l 35 130 325 130;l 35 165 325 165;a 180 55 180 90;a 180 165 180 130;t 100 48 VOH(min);t 260 85 VIH(min);t 100 122 VIL(max);t 260 180 VOL(max);t 180 205 High and low static noise margins",
+    "l 35 65 325 65;l 35 145 325 145;a 180 65 180 145;t 180 55 VOH min 3.0 V;t 180 165 VIH min 2.0 V;t 180 195 Margin = 1.0 V",
+    "l 35 175 325 175;p M35 155H95V65L110 35L125 85L140 55L155 70H235V155H325;t 180 25 Ringing after fast edge;t 180 195 Dynamic noise can exceed static assumptions"
+  ],
+  "depth-electronics-how-inductors-store-energy": [
+    "p M35 105H80Q95 65 110 105Q125 65 140 105Q155 65 170 105Q185 65 200 105Q215 65 230 105Q245 65 260 105H325;p M80 65Q170 15 260 65M80 145Q170 195 260 145;t 180 35 Magnetic field links coil;t 180 195 Current creates magnetic flux",
+    "l 35 175 325 175;p M35 155H95L265 45H325;t 180 35 Inductor current under finite voltage;t 180 195 v=L di/dt, current cannot jump",
+    "b 25 65 145 55 L=.010 H;b 190 65 145 55 I=2 A;t 180 155 ½ × .010 × 2²;t 180 195 Stored energy .02 J",
+    "p M35 105H80Q95 65 110 105Q125 65 140 105Q155 65 170 105H225M280 105H325;l 225 105 265 70;c 225 105 4;c 280 105 4;t 180 35 Interrupting current can create high voltage;t 180 195 Provide suitable energy path"
+  ],
+  "depth-electronics-how-digital-clocks-synchronize": [
+    "l 35 150 325 150;p M35 150H70V65H120V150H170V65H220V150H270V65H325;a 70 30 70 65;a 170 30 170 65;a 270 30 270 65;t 180 25 Rising edges capture data;t 180 195 Clock coordinates register updates",
+    "l 35 105 325 105;l 180 35 180 175;r 115 70 65 70;r 180 70 55 70;t 145 95 Setup;t 205 95 Hold;t 180 25 Sampling edge;t 180 195 Data must be stable around edge",
+    "r 35 75 290 50;f 35 75 246.5 50;t 158 105 17 ns path;t 303 105 3 ns;t 180 55 50 MHz clock → 20 ns period;t 180 195 Margin before skew and jitter",
+    "b 25 55 145 55 Clock domain A;a 170 82 190 82;b 190 55 145 55 Synchronizer B;t 180 150 Asynchronous edge can violate setup/hold;t 180 195 Handshakes and FIFOs also manage crossings"
+  ],
+  "plus-electronics-how-a-transistor-amplifies-a-small-signal": [
+    "l 35 175 325 175;l 35 175 35 35;p M35 175Q150 165 280 35;d 195 122 6;l 175 122 215 122;t 195 105 Bias point;t 180 195 Small signals vary around quiescent operating point",
+    "p M35 75Q70 45 105 75T175 75;p M195 115Q230 65 265 115T335 115;t 95 35 Small voltage variation;t 260 45 Larger current variation;t 180 195 gm≈Ic/VT, collector load converts current to voltage",
+    "b 25 65 145 55 Ic=1 mA;b 190 65 145 55 Rc=1 kΩ;t 180 155 gm≈.038 S;t 180 195 Idealized voltage gain ≈−38",
+    "l 35 105 325 105;p M35 105Q70 15 105 105T175 105T245 105T315 105;p M35 105L60 65H80L105 105L130 145H150L175 105L200 65H220L245 105L270 145H290L315 105;t 180 195 Cutoff and saturation clip large signals"
+  ],
+  "plus-electronics-what-operational-amplifiers-do": [
+    "p M115 45L260 105L115 165Z;l 35 75 115 75;l 35 135 115 135;l 260 105 325 105;t 100 65 +;t 100 125 −;t 180 105 Aol;t 180 195 Output responds to differential input",
+    "p M115 45L260 105L115 165Z;l 35 75 115 75;p M260 105H305V180H80V135H115;t 100 65 +;t 100 125 −;t 180 205 Stable negative feedback drives input difference small",
+    "p M140 45L260 105L140 165Z;l 25 135 80 135;l 80 135 140 135;p M260 105H310V185H80V135;l 25 75 140 75;t 85 125 Rin 10k;t 180 175 Rf 100k;t 180 25 + input at reference;t 180 210 −10 gain: .1 V → −1 V",
+    "l 35 175 325 175;p M35 150L110 150L180 60H325;p M35 150L110 150L110 60H325;t 180 45 Ideal step;t 180 195 Real slew rate and output limits matter"
+  ],
+  "plus-electronics-how-pulse-width-modulation-controls-average-power": [
+    "l 35 175 325 175;p M35 175V55H70V175H175V55H210V175H315V55H325;l 35 35 175 35;t 105 25 Period;t 52 195 On time;t 180 210 Duty cycle = on time / period",
+    "l 35 175 325 175;p M35 175V55H70V175H175V55H210V175H315;l 35 145 325 145;t 270 45 12 V;t 180 135 Average 3 V;t 180 195 25% duty, ideal 0–12 V pulses",
+    "r 35 75 290 50;f 35 75 72.5 50;t 71 105 24 W;t 215 105 Off: 0 W;t 180 55 12²/6 Ω = 24 W on;t 180 195 25% × 24 W = 6 W average",
+    "l 35 175 325 175;p M35 155L70 95L105 135L140 75L175 115L210 55L245 95L280 45L315 85;t 180 25 Inductive current rises and falls;t 180 195 Frequency and energy paths influence motor response"
+  ],
+  "plus-electronics-what-filtering-a-signal-means": [
+    "l 35 175 325 175;l 35 175 35 35;p M35 55H120Q210 65 325 165;p M35 165Q145 55 230 55H325;t 80 45 Low pass;t 280 45 High pass;t 180 195 Amplitude response vs frequency",
+    "p M35 65H90L105 50L120 80L135 50L150 65H225V105M205 105H245M205 120H245M225 120V175H35V65;t 120 40 R;t 255 115 C;t 180 195 fc=1/(2πRC), −3 dB at cutoff",
+    "b 25 55 145 55 R=1 kΩ;b 190 55 145 55 C=100 nF;t 180 150 RC=.0001 s;t 180 195 fc≈1.59 kHz",
+    "l 35 105 325 105;p M35 105L65 45L95 125L125 65L155 145L185 85L215 155L245 75L275 125L325 95;p M35 105Q100 75 165 105T325 105;t 180 25 Noisy vs filtered signal;t 180 195 Filtering may remove useful content or delay transitions"
+  ],
+  "plus-electronics-understanding-analog-to-digital-conversion": [
+    "l 35 105 325 105;p M35 105Q70 25 105 105T175 105T245 105T315 105;d 35 105 5;d 70 65 5;d 105 105 5;d 140 145 5;d 175 105 5;d 210 65 5;d 245 105 5;d 280 145 5;t 180 195 Sample analog input at discrete times",
+    "r 35 75 290 50;l 107.5 75 107.5 125;l 180 75 180 125;l 252.5 75 252.5 125;t 180 55 12 bits → 4,096 codes;t 180 160 4.096 V / 4,096;t 180 195 Nominal code width 1 mV",
+    "l 35 175 325 175;p M35 155L325 45;p M35 155H85V135H135V115H185V95H235V75H285V55H325;t 180 25 Quantized staircase;t 180 195 Ideal rounding error within half a code width",
+    "b 25 65 145 55 Ideal N bits;b 190 65 145 55 Measured SINAD;t 180 155 Ideal SQNR≈6.02N+1.76 dB;t 180 195 Real effective bits reflect dynamic errors"
+  ],
+  "plus-electronics-why-signal-sampling-can-create-aliasing": [
+    "l 35 105 325 105;p M35 105Q70 35 105 105T175 105T245 105T315 105;p M35 105Q52.5 35 70 105T105 105T140 105T175 105T210 105T245 105T280 105T315 105;d 35 105 5;d 105 105 5;d 175 105 5;d 245 105 5;d 315 105 5;t 180 195 Different waveforms can share sampled values",
+    "l 35 175 325 175;l 180 45 180 175;r 35 75 145 50;t 107 105 Desired band;t 180 35 fs/2;t 180 195 Band limit below half sample rate",
+    "l 35 105 325 105;p M35 105Q107.5 25 180 105T325 105;d 35 105 5;d 93 67 5;d 151 79 5;d 209 131 5;d 267 143 5;d 325 105 5;t 180 25 900 Hz sampled at 1 kHz;t 180 195 Apparent alias 100 Hz with appropriate phase",
+    "b 25 65 95 55 Analog signal;a 120 92 132 92;b 132 65 95 55 Low-pass filter;a 227 92 239 92;b 239 65 95 55 ADC;t 180 155 Filter unwanted high frequencies before sampling;t 180 195 Overlapping aliases cannot be uniquely undone"
+  ],
+  "plus-electronics-how-oscillators-create-repeated-signals": [
+    "b 25 65 145 55 Amplifier;a 170 92 190 92;b 190 65 145 55 Frequency network;a 262 120 262 155;a 262 155 97 155;a 97 155 97 120;t 180 195 Supply energy offsets oscillation losses",
+    "c 180 105 55;a 180 50 225 75;a 235 105 205 145;a 150 145 125 105;a 125 85 165 52;t 180 105 Loop;t 180 25 Regenerative phase condition;t 180 195 Startup loop gain must overcome losses",
+    "b 25 65 145 55 L=10 µH;b 190 65 145 55 C=100 nF;t 180 155 f=1/(2π√LC);t 180 195 ≈159 kHz ideal resonance",
+    "l 35 105 325 105;p M35 105Q70 55 105 105T175 105T245 105T315 105;p M35 105Q73 55 111 105T187 105T263 105T339 105;t 180 35 Frequency drift changes phase over time;t 180 195 Temperature, tolerance and supply affect stability"
+  ],
+  "plus-electronics-why-grounding-and-reference-matter": [
+    "d 80 105 6;d 280 105 6;l 80 105 280 105;t 80 80 Reference 0 V;t 280 80 Node +5 V;t 180 155 Voltage is difference between two nodes;t 180 195 Circuit ground need not be Earth",
+    "b 25 45 145 45 Load A;b 190 45 145 45 Load B;p M97 90V135H262V90M180 135V175;a 180 135 180 175;t 180 195 Shared return impedance creates voltage differences",
+    "b 25 65 145 55 Shared R=.1 Ω;b 190 65 145 55 Current change 1 A;t 180 155 V=IR=.1 V;t 180 195 Inductance adds L di/dt transient",
+    "p M35 65H325M35 105H325M35 145H325;a 60 65 285 65;a 285 105 60 105;t 180 45 Signal and controlled return;t 180 195 Protective earth is separate safety function"
+  ]
+};
+window.LumenSlideArtBatch24Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch24;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch24Render(c,cls,step)||prior(c,cls,step);};})();
