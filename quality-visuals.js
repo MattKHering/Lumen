@@ -6523,3 +6523,257 @@ window.LumenSlideArtBatch49={
 };
 window.LumenSlideArtBatch49Render=function(c,cls="cover",step=-1){return window.LumenSlideArtSharedRender(window.LumenSlideArtBatch49,c,cls,step);};
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch49Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* government: dedicated slide artwork, batch 50. */
+window.LumenSlideArtBatch50={
+  "gerrymander": [
+    "r 35 55 290 110;l 132 55 132 165;l 228 55 228 165;d 65 85 6;d 95 125 6;d 165 85 6;d 195 125 6;d 260 85 6;d 290 125 6;t 180 195 District lines determine which votes elect each seat",
+    "r 35 55 130 110;r 195 55 130 110;l 100 55 100 165;l 260 55 260 165;d 55 75 6;d 55 105 6;d 55 135 6;d 210 75 6;d 210 135 6;d 280 105 6;t 100 185 Packing;t 260 185 Cracking;t 180 205 Concentrate or divide support",
+    "r 35 65 290 30;f 35 65 261 30;r 35 105 290 30;f 35 105 101.5 30;r 35 145 290 30;f 35 145 101.5 30;t 180 55 90%, 35%, 35%: one majority;t 180 195 55%, 55%, 50% could produce more seats",
+    "b 35 45 135 55 Geography;b 190 45 135 55 District rules;b 35 120 135 55 Voting data;b 190 120 135 55 Alternatives;t 180 205 Shape alone does not establish intent"
+  ],
+  "depth-government-how-legislatures-make-laws": [
+    "b 35 65 135 65 Proposal;a 170 97 190 97;b 190 65 135 65 Legislative bill;t 180 165 Not yet enacted law",
+    "b 25 65 95 55 Committee;a 120 92 132 92;b 132 65 95 55 Debate;a 227 92 239 92;b 239 65 95 55 Vote;t 180 195 Procedural rules determine advancement",
+    "r 35 55 130 110;r 195 55 130 110;l 50 85 150 85;l 50 115 150 115;f 210 105 100 25;a 165 105 195 105;t 100 185 Road bill;t 260 185 Revised funding;t 180 205 Vote on amended text",
+    "b 35 45 135 55 Chamber approval;b 190 45 135 55 Other chamber;b 35 120 290 55 Assent / other constitutional steps;t 180 205 Requirements vary by system"
+  ],
+  "depth-government-federal-and-unitary-government": [
+    "r 35 45 290 130;r 55 65 115 90;r 190 65 115 90;t 112 110 National;t 247 110 Regional;t 180 195 Constitution allocates powers to both levels",
+    "b 105 35 150 45 Central authority;a 180 80 85 125;a 180 80 275 125;b 25 125 120 45 Local A;b 215 125 120 45 Local B;t 180 205 Devolution can grant substantial local powers",
+    "b 35 55 135 65 Protected regional power;b 190 55 135 65 Devolved authority;t 180 165 Different constitutional sources of power",
+    "l 35 105 325 105;d 95 105 6;d 265 105 6;t 95 85 More centralized;t 265 85 Less centralized;t 180 175 Federal and unitary systems vary independently of democracy"
+  ],
+  "depth-government-how-elections-translate-votes-into-seats": [
+    "r 35 55 130 110;r 195 55 130 110;d 100 105 10;d 225 85 7;d 260 105 7;d 295 125 7;t 100 185 Single seat;t 260 185 Multi-member;t 180 205 Electoral rules translate votes into seats",
+    "r 45 65 100 30;r 45 105 80 30;r 45 145 65 30;t 210 85 A most votes;t 210 125 B;t 210 165 C;t 180 195 Plurality winner need not have majority",
+    "r 35 65 116 30;r 35 105 101.5 30;r 35 145 72.5 30;t 220 85 A 40%;t 220 125 B 35%;t 220 165 C 25%;t 180 195 A wins plurality, other rules differ",
+    "r 35 65 290 45;l 151 65 151 110;l 252.5 65 252.5 110;t 93 92 40%;t 201 92 35%;t 288 92 25%;t 180 155 Seat allocation depends on formula and thresholds"
+  ],
+  "depth-government-what-courts-do": [
+    "b 35 65 135 65 Dispute;a 170 97 190 97;b 190 65 135 65 Legal decision;t 180 165 Apply rules and resolve relevant facts",
+    "b 35 55 135 65 Trial court;a 170 87 190 87;b 190 55 135 65 Appellate court;t 102 155 Record facts;t 257 155 Review issues;t 180 195 Different judicial functions",
+    "b 35 55 135 65 Contract dispute;b 190 55 135 65 Appeal;t 102 155 Fact record;t 257 155 Legal standard;t 180 195 Appeal may address legal error",
+    "r 35 55 290 110;r 95 75 170 70;t 180 110 Authorized cases;t 180 195 Jurisdiction limits judicial authority"
+  ],
+  "depth-government-how-public-budgets-work": [
+    "r 35 65 130 100;r 195 65 130 100;t 100 105 Revenue;t 260 105 Spending;t 180 35 Budget period;t 180 195 Plan resources and expenditures",
+    "b 35 55 135 65 Budget proposal;a 170 87 190 87;b 190 55 135 65 Appropriation;t 180 165 Plan differs from legal spending authority",
+    "r 35 65 261 30;r 35 125 290 30;t 180 55 Revenue 90m;t 180 115 Spending 100m;t 180 195 Planned deficit 10m",
+    "r 65 70 90 100;r 205 85 90 85;t 110 60 Authorized;t 250 75 Actual;t 180 195 Report variance and reasons"
+  ],
+  "depth-government-understanding-executive-agencies": [
+    "b 35 65 135 65 Legislature;a 170 97 190 97;b 190 65 135 65 Executive agency;t 180 165 Implement assigned legal authority",
+    "b 35 45 290 45 Statutory objective;a 180 90 180 120;b 35 120 290 55 Detailed rules and services;t 180 205 Delegation limits implementation",
+    "p M45 135L65 95H135L155 135Z;c 75 145 12;c 125 145 12;b 195 65 130 80 Safety agency;t 180 195 Vehicle standards within statutory authority",
+    "c 180 105 35;c 65 55 20;c 295 55 20;c 180 175 20;l 65 55 150 85;l 295 55 210 85;l 180 140 180 155;t 180 110 Agency;t 65 25 Oversight;t 295 25 Courts;t 180 205 Reporting"
+  ],
+  "depth-government-why-political-institutions-matter": [
+    "b 35 45 135 55 Decision-maker;b 190 45 135 55 Procedure;b 35 120 290 55 Checks on power;t 180 205 Institutional rules structure decisions",
+    "c 180 105 35;c 65 55 20;c 295 55 20;c 180 175 20;l 65 55 150 85;l 295 55 210 85;l 180 140 180 155;t 180 110 Incentives;t 65 25 Terms;t 295 25 Vetoes;t 180 205 Voting",
+    "b 35 55 130 65 Chamber A;a 165 87 195 87;b 195 55 130 65 Chamber B;t 180 165 Two approvals vs one legislative stage",
+    "l 35 105 325 105;d 95 105 6;d 265 105 6;t 95 85 Deliberation;t 265 85 Speed;t 180 175 Institutional benefits may carry costs"
+  ],
+  "depth-government-what-local-government-does": [
+    "r 35 55 290 110;l 130 55 130 165;l 230 55 230 165;t 82 105 Roads;t 180 105 Waste;t 277 105 Parks;t 180 195 Local functions depend on assigned powers",
+    "b 35 65 95 55 Tax;b 132 65 95 55 Fees;b 229 65 96 55 Transfers;a 82 120 180 155;a 277 120 180 155;t 180 175 Local service funding",
+    "p M35 145H325M65 145V75M295 145V75;p M120 145L145 130L165 155L190 135;t 180 55 Road repair decision;t 180 195 Condition, cost, safety and competing projects",
+    "c 180 105 35;c 65 55 20;c 295 55 20;c 180 175 20;l 65 55 150 85;l 295 55 210 85;l 180 140 180 155;t 180 110 Residents;t 65 25 Meetings;t 295 25 Elections;t 180 205 Consultation"
+  ],
+  "depth-government-how-constitutions-limit-power": [
+    "b 35 35 290 45 Constitution;a 180 80 85 120;a 180 80 275 120;b 25 120 120 50 Institutions;b 215 120 120 50 Rights;t 180 205 Foundational allocation and limits",
+    "r 35 55 290 110;r 95 75 170 70;t 180 110 Ordinary powers;t 180 195 Constitutional rules bound ordinary decisions",
+    "b 35 55 135 65 Proposed measure;a 170 87 190 87;b 190 55 135 65 Rights review;t 180 165 Enforceable protections may bar enactment",
+    "b 35 45 135 55 Text;b 190 45 135 55 Interpretation;b 35 120 290 55 Institutional compliance;t 180 205 Written rules alone do not guarantee practice"
+  ],
+  "plus-government-how-parliamentary-confidence-works": [
+    "b 35 65 135 65 Legislature;a 170 97 190 97;b 190 65 135 65 Government;t 180 165 Confidence supports remaining in office",
+    "r 35 75 290 50;l 180 75 180 125;d 210 105 7;t 180 55 Relevant voting threshold;t 180 195 No-confidence consequences depend on rules",
+    "r 35 65 290 40;f 35 65 174 40;r 35 125 290 40;f 35 125 116 40;t 180 55 Coalition before;t 180 115 Partner withdraws;t 180 195 Loss of majority may trigger confidence test",
+    "b 35 55 135 65 Constructive vote;b 190 55 135 65 Other procedures;t 102 155 Choose successor;t 257 155 Resign / election;t 180 195 Constitutional variants"
+  ],
+  "plus-government-how-political-parties-coordinate-elections": [
+    "c 180 105 35;c 65 55 20;c 295 55 20;c 180 175 20;l 65 55 150 85;l 295 55 210 85;l 180 140 180 155;t 180 110 Party;t 65 25 Candidates;t 295 25 Platform;t 180 205 Campaign",
+    "b 35 45 135 55 Primary;b 190 45 135 55 Convention;b 35 120 135 55 Members;b 190 120 135 55 Leadership;t 180 205 Nomination procedures differ",
+    "d 65 105 7;d 100 105 7;d 135 105 7;a 145 105 230 105;c 265 105 35;t 265 110 Nominee;t 180 195 Select one candidate to coordinate support",
+    "c 95 105 35;c 265 105 35;a 130 105 230 105;t 95 110 Party A;t 265 110 Party B;t 180 165 Coalition bargaining;t 180 195 Members may disagree"
+  ],
+  "plus-government-understanding-bicameral-legislatures": [
+    "r 35 55 130 110;r 195 55 130 110;t 100 105 Chamber 1;t 260 105 Chamber 2;t 180 195 Two legislative chambers",
+    "r 35 55 130 110;l 35 110 165 110;l 100 55 100 165;r 195 55 130 110;l 195 90 325 90;l 195 135 325 135;t 100 185 Population districts;t 260 185 Regions;t 180 205 Representation bases can differ",
+    "b 35 55 130 65 Lower chamber;a 165 87 195 87;b 195 55 130 65 Upper chamber;t 180 165 Some bills need both approvals",
+    "b 35 45 135 55 Text A;b 190 45 135 55 Text B;a 102 100 160 145;a 257 100 200 145;b 95 145 170 45 Reconcile or prioritize;t 180 205 Procedure varies"
+  ],
+  "plus-government-how-public-consultations-work": [
+    "c 180 105 35;c 65 55 20;c 295 55 20;c 180 175 20;a 65 55 150 85;a 295 55 210 85;a 180 175 180 140;t 180 110 Decision;t 65 25 Residents;t 295 25 Groups;t 180 205 Evidence",
+    "b 35 45 135 55 Question;b 190 45 135 55 Options;b 35 120 135 55 Channels;b 190 120 135 55 Feedback use;t 180 205 Publish how participation informs decision",
+    "d 45 105 7;d 315 105 7;p M45 105L180 55L315 105M45 105H315M45 105L180 155L315 105;t 180 25 Three route options;t 180 195 Consult riders, drivers and affected residents",
+    "c 180 105 70;d 145 75 6;d 215 75 6;d 145 135 6;t 180 25 Residents;t 180 195 Participants may not represent all, consultation is not necessarily binding"
+  ],
+  "plus-government-why-independent-oversight-exists": [
+    "b 35 55 135 65 Public body;a 170 87 190 87;b 190 55 135 65 Oversight body;t 180 165 Examine lawful use of authority and resources",
+    "r 35 55 130 110;r 195 55 130 110;l 180 40 180 175;t 100 105 Reviewed body;t 260 105 Independent review;t 180 195 Structural protections reduce pressure",
+    "r 35 55 130 110;l 50 85 150 85;l 50 115 150 115;a 165 105 195 105;b 195 65 130 80 Auditor;t 180 195 Check procurement records independently",
+    "b 35 45 135 55 Legal scope;b 190 45 135 55 Evidence;b 35 120 135 55 Follow-up;b 190 120 135 55 Accountability;t 180 205 Independence does not mean unlimited authority"
+  ],
+  "plus-government-how-electoral-turnout-is-measured": [
+    "r 35 75 290 50;f 35 75 174 50;t 122 105 Participated;t 267 105 Other;t 180 195 Count voters or ballots per reporting definition",
+    "r 35 65 290 95;r 35 85 232 55;r 35 100 174 30;t 180 55 Eligible population;t 151 80 Registered;t 122 120 Voted;t 180 195 Turnout denominator changes interpretation",
+    "b 35 65 135 65 60k /80k;b 190 65 135 65 60k /100k;t 102 155 75% registered;t 257 155 60% eligible;t 180 195 Same voters, different rates",
+    "b 35 45 135 55 Eligibility;b 190 45 135 55 Registration;b 35 120 290 55 Election type and definitions;t 180 205 Compare consistent denominators"
+  ],
+  "plus-government-understanding-administrative-discretion": [
+    "r 35 55 290 110;r 95 75 170 70;t 180 110 Lawful choices;t 180 195 Discretion exists within rules",
+    "b 35 45 135 55 Statutory purpose;b 190 45 135 55 Procedure;b 35 120 135 55 Relevant factors;b 190 120 135 55 Review;t 180 205 Discretion is not arbitrary power",
+    "r 35 65 290 50;l 130 65 130 115;l 230 65 230 115;t 82 95 High risk;t 180 95 Medium;t 277 95 Low;t 180 155 Prioritize inspections by documented criteria;t 180 195 Apply mandatory requirements consistently",
+    "b 35 45 135 55 Authority;b 190 45 135 55 Evidence;b 35 120 290 55 Required procedure;t 180 205 Review standards differ by jurisdiction"
+  ],
+  "plus-government-how-public-services-are-evaluated": [
+    "b 35 55 135 65 Inspections done;b 190 55 135 65 Safety improvement;t 180 165 Output vs outcome",
+    "r 65 55 90 115;r 205 95 90 75;t 110 45 Resources;t 250 85 Results;t 180 195 Efficiency must consider quality and access distribution",
+    "r 35 65 290 35;r 35 125 193.33 35;t 180 55 Average wait 30m;t 132 115 Now 20m;t 180 195 Remote-area waits may rise despite lower overall mean",
+    "l 35 175 325 175;p M35 135L325 45;p M35 135L325 85;t 180 25 Observed vs counterfactual;t 180 195 Demand or staffing may explain changes"
+  ],
+  "plus-government-what-constitutional-conventions-do": [
+    "b 35 55 135 65 Formal power;b 190 55 135 65 Political norm;t 180 165 Convention guides exercise of power",
+    "b 35 55 135 65 Legally enforceable;b 190 55 135 65 Politically obligatory;t 180 165 Status depends on constitutional system",
+    "b 35 65 135 65 Appointment power;a 170 97 190 97;b 190 65 135 65 Ministerial advice;t 180 165 Convention may direct formal choice",
+    "l 35 105 325 105;d 65 105 6;d 180 105 6;d 295 105 6;t 65 85 Precedent;t 180 85 Expectation;t 295 85 Convention;t 180 175 Breach can have political consequences"
+  ],
+  "plus-government-how-electoral-boundaries-are-reviewed": [
+    "r 35 55 130 110;r 195 55 130 110;l 100 55 100 165;l 280 55 280 165;t 100 185 Original map;t 260 185 Revised map;t 180 205 Adjust boundaries for population and criteria",
+    "b 35 45 135 55 Equal population;b 190 45 135 55 Geography;b 35 120 290 55 Communities of interest;t 180 205 Criteria may conflict",
+    "r 65 70 90 100;r 205 20 90 150;t 110 60 100,000;t 250 35 150,000;t 180 195 Population growth creates imbalance",
+    "r 35 55 130 110;r 195 55 130 110;l 35 110 165 110;l 260 55 260 165;t 100 185 Map A;t 260 185 Map B;t 180 205 Compare criteria and voting assumptions"
+  ]
+};
+window.LumenSlideArtBatch50Render=function(c,cls='cover',step=-1){return window.LumenSlideArtSharedRender(window.LumenSlideArtBatch50,c,cls,step);};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch50Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* law-civics: dedicated slide artwork, batch 51. */
+window.LumenSlideArtBatch51={
+  "legal-systems": [
+    "b 35 55 135 65 Civil claim;b 190 55 135 65 Rights / remedy;t 180 165 Disputes over obligations and compensation",
+    "b 35 65 135 65 Criminal charge;a 170 97 190 97;b 190 65 135 65 Verdict / penalty;t 180 165 Alleged offense against public law",
+    "c 180 55 25;t 180 60 Collision;a 160 75 85 125;a 200 75 275 125;b 25 125 120 45 Compensation;b 215 125 120 45 Prosecution;t 180 205 Separate legal questions",
+    "b 35 55 135 65 Civil proceeding;b 190 55 135 65 Civil-law tradition;t 180 165 Similar terminology, different meanings"
+  ],
+  "contracts": [
+    "c 95 105 35;c 265 105 35;a 130 85 230 85;a 230 125 130 125;t 95 110 Party A;t 265 110 Party B;t 180 195 Agreement enforceable only if legal requirements met",
+    "r 55 45 250 130;l 55 85 305 85;l 55 125 305 125;t 180 70 Parties and duties;t 180 110 Price and timing;t 180 150 Termination and disputes;t 180 195 Read definitions and incorporated documents",
+    "l 35 105 325 105;d 95 105 6;d 265 105 6;t 95 85 Notice cutoff;t 265 85 Renewal;t 180 175 Monthly fee alone does not explain cancellation",
+    "r 35 55 290 110;r 95 75 170 70;t 180 110 Contract terms;t 180 195 Mandatory law can constrain enforceability"
+  ],
+  "depth-law-civics-how-legal-precedent-works": [
+    "b 105 35 150 45 Higher court;a 180 80 85 125;a 180 80 275 125;b 25 125 120 45 Lower court A;b 215 125 120 45 Lower court B;t 180 205 Binding effect depends on hierarchy",
+    "r 55 45 250 130;f 55 85 250 40;t 180 70 Facts;t 180 110 Necessary holding;t 180 150 Other commentary;t 180 195 Holding differs from dicta",
+    "b 35 55 135 65 Similar facts;b 190 55 135 65 Different facts;t 102 155 Apply rule;t 257 155 Distinguish;t 180 195 Legally relevant differences matter",
+    "b 35 45 135 55 Jurisdiction;b 190 45 135 55 Hierarchy;b 35 120 135 55 New legislation;b 190 120 135 55 Later decisions;t 180 205 Authority can change"
+  ],
+  "depth-law-civics-understanding-due-process": [
+    "b 35 65 135 65 Government action;a 170 97 190 97;b 190 65 135 65 Legal safeguards;t 180 165 Protection against certain arbitrary deprivations",
+    "b 35 65 95 55 Notice;a 130 92 142 92;b 142 65 95 55 Response;a 237 92 249 92;b 249 65 85 55 Decision;t 180 195 Procedure depends on context",
+    "l 35 105 325 105;d 65 105 6;d 180 105 6;d 295 105 6;t 65 85 Proposed fine;t 180 85 Reply;t 295 85 Decision;t 180 175 Opportunity to challenge before certain penalties",
+    "b 35 55 135 65 Fair procedure;b 190 55 135 65 Favorable result;t 180 165 Due process does not guarantee the latter"
+  ],
+  "depth-law-civics-what-evidence-standards-mean": [
+    "b 35 55 135 65 Who proves?;b 190 55 135 65 How persuasive?;t 102 155 Burden;t 257 155 Standard;t 180 195 Distinct questions",
+    "l 35 105 325 105;d 120 105 6;d 285 105 6;t 120 85 Civil threshold;t 285 85 Criminal;t 180 195 Higher criminal standard in many systems (schematic)",
+    "l 35 105 325 105;l 180 85 180 125;d 205 105 6;t 180 65 More likely than not;t 180 155 Preponderance exceeds balance point;t 180 195 Reasonable doubt is a different standard",
+    "b 35 55 135 65 Admissible?;b 190 55 135 65 Persuasive?;t 180 165 Permitted evidence can carry little weight"
+  ],
+  "depth-law-civics-how-negligence-is-evaluated": [
+    "b 25 65 75 55 Duty;b 105 65 75 55 Breach;b 185 65 75 55 Causation;b 265 65 75 55 Harm;t 180 195 Typical common-law elements must be established",
+    "b 35 55 135 65 Reasonable care;b 190 55 135 65 Bad outcome;t 180 165 Occurrence alone does not establish breach",
+    "p M35 145H325;c 95 135 25;a 135 105 225 105;c 265 105 22;t 95 95 Known spill;t 265 75 Injury;t 180 195 Establish breach and legally required causal connection",
+    "b 35 45 135 55 Defenses;b 190 45 135 55 Statutes;b 35 120 290 55 Causation tests;t 180 205 Negligence rules vary, accident is not automatic proof"
+  ],
+  "depth-law-civics-understanding-property-rights": [
+    "c 180 105 35;c 65 55 20;c 295 55 20;c 65 155 20;c 295 155 20;l 65 55 150 85;l 295 55 210 85;l 65 155 150 125;l 295 155 210 125;t 180 110 Property;t 65 25 Possess;t 295 25 Exclude;t 65 185 Use;t 295 185 Transfer",
+    "r 35 55 290 110;r 65 75 95 70;r 200 75 95 70;t 180 45 Owner;t 112 110 Tenant;t 247 110 Easement;t 180 195 Rights to same land may be divided",
+    "r 35 55 290 110;f 35 95 290 25;a 45 107 315 107;t 180 85 Parcel;t 180 145 Access corridor;t 180 195 Easement allows use without transferring ownership",
+    "b 35 45 135 55 Zoning;b 190 45 135 55 Environment;b 35 120 135 55 Contract;b 190 120 135 55 Others' rights;t 180 205 Applicable law defines limits"
+  ],
+  "depth-law-civics-how-intellectual-property-differs": [
+    "b 35 45 135 55 Copyright;b 190 45 135 55 Patents;b 35 120 135 55 Trademarks;b 190 120 135 55 Trade secrets;t 180 205 Distinct protection regimes",
+    "r 35 55 90 110;r 135 55 90 110;r 235 55 90 110;t 80 95 Expression;t 180 95 Invention;t 280 95 Source mark;t 180 195 Different subject matter",
+    "c 80 95 25;r 135 65 90 65;p M250 125L280 55L310 125Z;t 80 155 Logo;t 180 155 Brochure;t 280 155 Invention;t 180 195 Trademark, copyright, patent respectively (if qualifying)",
+    "b 35 55 135 65 Abstract idea;b 190 55 135 65 Original expression;t 180 165 Copyright does not protect ideas as such"
+  ],
+  "depth-law-civics-what-mediation-does": [
+    "c 65 105 30;c 180 105 30;c 295 105 30;l 95 105 150 105;l 210 105 265 105;t 65 110 Party A;t 180 110 Neutral;t 295 110 Party B;t 180 195 Mediator facilitates communication",
+    "b 35 55 135 65 Mediator proposal;b 190 55 135 65 Party agreement;t 180 165 Recommendation ordinarily does not impose result",
+    "p M35 145L95 75L155 145M205 145L265 75L325 145;l 180 65 180 165;t 180 45 Shared fence;t 180 195 Negotiate repair and cost-sharing",
+    "b 35 45 135 55 Agreement terms;b 190 45 135 55 Enforcement;b 35 120 290 55 Confidentiality and exceptions;t 180 205 Rules vary by process"
+  ],
+  "depth-law-civics-understanding-legal-jurisdiction": [
+    "r 35 55 290 110;r 95 75 170 70;t 180 110 Authorized dispute;t 180 195 Tribunal can decide only within jurisdiction",
+    "b 35 55 135 65 Subject matter;b 190 55 135 65 Personal authority;t 180 165 Case type vs power over parties",
+    "b 35 65 135 65 Small monetary claim;b 190 65 135 65 Different case type;t 180 165 Limited court may lack authority over latter",
+    "r 35 55 290 110;c 95 105 25;c 265 105 25;t 95 110 Court A;t 265 110 Court B;t 180 195 Venue selects location among authorized courts"
+  ],
+  "plus-law-civics-how-statutes-and-regulations-differ": [
+    "b 35 55 135 65 Legislature;a 170 87 190 87;b 190 55 135 65 Statute;t 180 165 Enacted law defines rights and powers",
+    "b 35 65 135 65 Delegated power;a 170 97 190 97;b 190 65 135 65 Regulation;t 180 165 Agency rule must remain within authority",
+    "b 35 55 135 65 Safety statute;a 170 87 190 87;b 190 55 135 65 Testing rule;t 180 165 Detailed requirements implement delegation",
+    "b 35 35 290 40 Statute;a 180 75 180 95;b 35 95 290 40 Regulation;a 180 135 180 155;b 35 155 290 35 Guidance;t 180 210 Binding status and review differ"
+  ],
+  "plus-law-civics-understanding-legal-standing": [
+    "c 95 105 35;c 265 105 35;a 130 105 230 105;t 95 110 Claimant;t 265 110 Tribunal;t 180 195 Standing asks who may invoke adjudication",
+    "b 35 65 95 65 Injury;b 132 65 95 65 Connection;b 229 65 96 65 Remedy;t 180 195 Common considerations, not universal requirements",
+    "b 35 55 135 65 General concern;b 190 55 135 65 Specific enforcement;t 180 165 Standing requirements may treat these differently",
+    "b 35 55 135 65 Standing threshold;a 170 87 190 87;b 190 55 135 65 Merits decision;t 180 165 Passing threshold does not establish success"
+  ],
+  "plus-law-civics-how-civil-remedies-differ": [
+    "r 35 75 290 50;f 35 75 174 50;t 122 105 Proven loss;t 267 105 Other claim;t 180 195 Compensatory damages address recognized loss",
+    "b 35 55 135 65 Injunction;b 190 55 135 65 Specific performance;t 102 155 Require / restrain;t 257 155 Contract action;t 180 195 Distinct equitable remedies",
+    "b 35 55 135 65 Defective service;b 190 55 135 65 Ongoing interference;t 102 155 Damages;t 257 155 Injunction;t 180 195 Remedy depends on proven legal right",
+    "b 35 45 135 55 Legal right;b 190 45 135 55 Proven facts;b 35 120 290 55 Available remedies;t 180 205 Avoid duplicative recovery"
+  ],
+  "plus-law-civics-why-written-contracts-need-interpretation": [
+    "r 55 45 250 130;l 55 85 305 85;l 55 125 305 125;t 180 70 Definitions;t 180 110 Terms;t 180 150 Related clauses;t 180 195 Read text with admissible context",
+    "c 180 65 25;t 180 70 Term;a 160 85 85 135;a 200 85 275 135;t 85 155 Reading A;t 275 155 Reading B;t 180 195 Ambiguity permits multiple plausible readings",
+    "l 35 75 325 75;l 35 145 325 145;d 65 75 6;d 245 75 6;d 125 145 6;d 305 145 6;t 155 55 Signing +30 days;t 215 165 Payment +30 days;t 180 195 Unspecified starting event changes due date",
+    "r 35 55 290 110;r 65 75 230 70;t 180 110 Whole agreement;t 180 195 Incorporated terms and mandatory law matter"
+  ],
+  "plus-law-civics-what-a-statute-of-limitations-does": [
+    "l 35 105 325 105;d 65 105 6;l 265 65 265 145;t 65 85 Accrual;t 265 55 Deadline;t 180 175 Filing window depends on applicable law",
+    "l 35 105 325 105;d 65 105 6;d 165 105 6;d 295 105 6;t 65 85 Event;t 165 85 Discovery;t 295 85 Other trigger;t 180 175 Statute defines which event starts clock",
+    "l 35 75 325 75;l 35 145 325 145;d 65 75 6;d 65 145 6;l 185 55 185 95;l 295 125 295 165;t 185 45 Claim A;t 295 185 Claim B;t 180 205 Same event, different legal filing periods",
+    "b 35 45 135 55 Tolling;b 190 45 135 55 Extensions;b 35 120 290 55 Statute of repose;t 180 205 No universal filing deadline"
+  ],
+  "plus-law-civics-how-discovery-works-in-civil-litigation": [
+    "c 95 105 35;c 265 105 35;a 130 85 230 85;a 230 125 130 125;t 95 110 Party A;t 265 110 Party B;t 180 195 Pretrial exchange of relevant information",
+    "b 35 45 135 55 Documents;b 190 45 135 55 Written questions;b 35 120 290 55 Sworn testimony;t 180 205 Available methods vary by procedure",
+    "r 55 45 250 130;l 55 85 305 85;l 55 125 305 125;t 180 70 Invoice;t 180 110 Correspondence;t 180 150 Payment record;t 180 195 Billing dispute: request relevant transaction evidence",
+    "b 35 45 135 55 Relevance;b 190 45 135 55 Proportionality;b 35 120 135 55 Privilege;b 190 120 135 55 Protective orders;t 180 205 Discovery does not guarantee admissibility"
+  ],
+  "plus-law-civics-understanding-agency-relationships": [
+    "c 95 105 35;c 265 105 35;a 130 85 230 85;t 95 110 Principal;t 265 110 Agent;t 180 195 Agent acts on behalf of principal under legal rules",
+    "c 180 55 25;c 85 145 25;c 275 145 25;a 160 75 100 125;a 200 75 260 125;t 180 60 Principal;t 85 150 Agent;t 275 150 Third party;t 180 205 Actual vs apparent authority communications",
+    "b 35 45 290 45 Company tells supplier manager can order;a 180 90 180 120;b 35 120 290 55 Internal restriction not disclosed;t 180 205 Apparent authority may be relevant",
+    "b 35 45 135 55 Authority;b 190 45 135 55 Ratification;b 35 120 290 55 Other legal doctrines;t 180 205 Title alone does not establish binding effect"
+  ],
+  "plus-law-civics-how-consumer-warranties-work": [
+    "b 35 55 135 65 Product promise;a 170 87 190 87;b 190 55 135 65 Express warranty;t 180 165 Qualifying assurance may be legally significant",
+    "b 35 55 135 65 Written guarantee;b 190 55 135 65 Implied protection;t 180 165 Some obligations exist without express promise",
+    "b 35 65 135 65 Advertised use;b 190 65 135 65 Failure in that use;t 180 165 Terms, evidence and applicable law determine claim",
+    "b 35 45 135 55 Repair;b 190 45 135 55 Replacement;b 35 120 135 55 Refund;b 190 120 135 55 Damages;t 180 205 Available remedies and statutory rights vary"
+  ],
+  "plus-law-civics-why-public-records-laws-exist": [
+    "r 55 45 250 130;l 55 85 305 85;l 55 125 305 125;t 180 70 Government record;t 180 110 Public access;t 180 150 Accountability;t 180 195 Access supports public scrutiny",
+    "r 35 55 290 110;r 95 75 170 70;t 180 110 Covered records;t 180 195 Procedures and exemptions define scope",
+    "r 55 45 250 130;l 75 75 285 75;f 75 90 210 20;l 75 130 285 130;t 180 65 Procurement contract;t 180 195 Redact protected parts where law permits",
+    "b 35 55 135 65 Transparency;b 190 55 135 65 Privacy / security;t 180 165 Balance under applicable exemptions and review rights"
+  ],
+  "plus-law-civics-how-jury-selection-works": [
+    "c 180 105 70;d 145 75 6;d 215 75 6;d 145 135 6;d 215 135 6;t 180 25 Eligible pool;t 180 195 Selection and eligibility depend on jurisdiction",
+    "b 35 55 135 65 Question jurors;a 170 87 190 87;b 190 55 135 65 Identify conflicts;t 180 165 Screening assesses ability to serve impartially",
+    "c 95 105 35;c 265 105 35;l 130 105 230 105;t 95 110 Juror;t 265 110 Party;t 180 195 Close relationship may support challenge for cause",
+    "b 35 45 135 55 Challenge rules;b 190 45 135 55 Equal protection;b 35 120 290 55 Impartiality safeguards;t 180 205 Selection cannot eliminate all bias"
+  ]
+};
+window.LumenSlideArtBatch51Render=function(c,cls='cover',step=-1){return window.LumenSlideArtSharedRender(window.LumenSlideArtBatch51,c,cls,step);};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch51Render(c,cls,step)||prior(c,cls,step);};})();
