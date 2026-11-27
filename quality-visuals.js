@@ -6540,3 +6540,283 @@ window.LumenSlideArtBatch45Render=function renderer(c,cls="cover",step=-1){
  const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch45Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* linguistics: dedicated slide artwork, batch 46. */
+window.LumenSlideArtBatch46={
+  "language": [
+    "c 95 95 40;c 265 95 40;p M65 95Q80 65 95 95T125 95M235 115L265 65L295 115;t 95 155 Spoken;t 265 155 Signed;t 180 195 Both organize conventional forms grammatically",
+    "b 25 45 100 55 Phonology;b 130 45 100 55 Morphology;b 235 45 100 55 Syntax;b 35 125 135 55 Semantics;b 190 125 135 55 Pragmatics;t 180 205 Form, combination, meaning and use",
+    "t 180 55 The dog chased the cat;t 180 155 The cat chased the dog;a 75 70 285 130;a 285 70 75 130;t 180 195 Same words, different roles",
+    "p M35 90Q55 45 75 90T115 90T155 90;r 215 55 110 80;l 225 75 315 75;l 225 95 315 95;l 225 115 315 115;t 95 155 Language;t 270 155 Writing;t 180 195 Writing represents language but is not required"
+  ],
+  "etymology": [
+    "l 35 105 325 105;d 65 105 6;d 180 105 6;d 295 105 6;t 65 85 Earlier form;t 180 85 Attestation;t 295 85 Later form;t 180 175 Trace documents, not mere resemblance",
+    "c 180 45 25;c 85 145 25;c 275 145 25;l 180 70 85 120;l 180 70 275 120;a 110 145 250 145;t 180 20 Ancestor;t 85 185 Descendant A;t 275 185 Descendant B;t 180 125 Contact",
+    "b 35 55 130 65 French boef;a 165 87 195 87;b 195 55 130 65 English beef;b 35 135 130 45 Germanic ancestor;a 165 157 195 157;b 195 135 130 45 English cow;t 180 205 Borrowing versus inheritance",
+    "r 35 55 130 105;r 195 55 130 105;t 100 95 Old sense;t 260 95 Current sense;a 165 105 195 105;t 180 195 Historical evidence does not prescribe current meaning"
+  ],
+  "depth-linguistics-what-phonemes-are": [
+    "c 180 90 40;d 75 145 7;d 145 145 7;d 215 145 7;d 285 145 7;l 75 145 155 110;l 145 145 165 120;l 215 145 195 120;l 285 145 205 110;t 180 95 /p/;t 180 195 Abstract sound category has multiple realizations",
+    "b 35 65 135 55 pat;b 190 65 135 55 bat;t 102 145 /p/;t 257 145 /b/;t 180 195 One sound contrast, different meaning",
+    "t 180 55 pat     bat;p M105 75H145M215 75H255;a 125 85 125 135;a 235 85 235 135;t 125 155 /p/;t 235 155 /b/;t 180 195 Initial consonant distinguishes English words",
+    "c 180 55 25;c 85 145 25;c 275 145 25;l 180 80 85 120;l 180 80 275 120;t 180 60 /p/;t 85 150 [p];t 275 150 [pʰ];t 180 195 Contextual variants of one phoneme in English"
+  ],
+  "depth-linguistics-how-words-are-built": [
+    "r 35 75 290 60;l 130 75 130 135;l 230 75 230 135;t 82 110 un-;t 180 110 help;t 277 110 -ful;t 180 195 Meaningful or grammatical word units",
+    "b 25 65 95 55 Prefix;b 132 65 95 55 Root;b 239 65 95 55 Suffix;t 180 155 Root carries lexical core;t 180 195 Affixes modify meaning or grammatical features",
+    "r 35 55 290 45;l 130 55 130 100;l 230 55 230 100;t 82 82 un;t 180 82 help;t 277 82 ful;r 35 125 290 45;l 230 125 230 170;t 132 152 dog;t 277 152 s;t 180 205 Derivation vs plural inflection",
+    "t 95 85 sing;t 265 85 sang;a 125 95 235 95;t 180 155 Internal vowel change;t 180 195 Grammar need not attach a separate suffix"
+  ],
+  "depth-linguistics-how-syntax-organizes-sentences": [
+    "b 120 30 120 40 Clause;l 180 70 95 110;l 180 70 265 110;b 35 110 120 50 Noun phrase;b 205 110 120 50 Verb phrase;t 180 195 Hierarchical groups, not only word order",
+    "r 35 65 290 55;r 35 65 145 55;t 107 95 The small dog;t 252 95 chased a ball;a 107 120 107 155;t 107 175 It;t 180 205 Substitution provides constituency evidence",
+    "t 180 50 The small dog chased a ball;r 35 65 130 30;a 100 95 100 135;b 35 135 130 40 It;t 180 195 Noun phrase can be replaced as a unit",
+    "b 35 45 135 55 S V O;b 190 45 135 55 S O V;b 35 120 290 55 Case / agreement marking;t 180 205 Languages use different grammatical resources"
+  ],
+  "depth-linguistics-why-meaning-depends-on-context": [
+    "b 35 55 135 65 Conventional meaning;b 190 55 135 65 Contextual meaning;t 180 165 Semantics vs pragmatics",
+    "c 180 105 35;c 65 55 18;c 295 55 18;c 180 175 18;l 65 55 150 85;l 295 55 210 85;l 180 140 180 157;t 180 110 Referent;t 65 25 I;t 295 25 Here;t 180 205 Tomorrow",
+    "b 35 55 135 65 Can you open it?;b 190 55 135 65 Please open it;a 170 87 190 87;t 180 165 Ability question often functions as request",
+    "b 35 55 135 65 Explicit statement;b 190 55 135 65 Inferred meaning;t 180 165 Implication can be canceled or mistaken"
+  ],
+  "depth-linguistics-how-languages-change": [
+    "l 35 105 325 105;d 65 105 6;d 180 105 6;d 295 105 6;t 65 85 Generation A;t 180 85 Generation B;t 295 85 Generation C;t 180 175 Sound, grammar and meanings change over time",
+    "b 35 65 135 55 Sound class;a 170 92 190 92;b 190 65 135 55 New realization;t 180 155 Specific environment;t 180 195 Regular change can be obscured by analogy",
+    "t 95 85 mouse;t 265 85 mice;a 125 95 235 95;t 180 155 Historical vowel alternation;t 180 195 Modern speakers learn irregular plural",
+    "b 35 55 135 65 New usage;b 190 55 135 65 Social prestige;t 180 165 Describe patterns separately from judgments"
+  ],
+  "depth-linguistics-what-dialects-reveal": [
+    "c 95 95 42;c 265 95 42;t 95 100 Variety A;t 265 100 Variety B;t 180 160 Both systematic;t 180 195 Standard varieties are dialects too",
+    "l 35 105 325 105;d 65 105 6;d 125 105 6;d 185 105 6;d 245 105 6;d 305 105 6;t 180 55 Gradual feature change;t 180 195 Boundaries need not be sharp",
+    "b 35 65 95 65 Soda;b 132 65 95 65 Pop;b 229 65 96 65 Coke;t 180 195 Regional word choices do not imply deficiency",
+    "b 35 55 135 65 Linguistic pattern;b 190 55 135 65 Prestige judgment;t 180 165 Social status is not grammatical superiority"
+  ],
+  "depth-linguistics-how-children-acquire-language": [
+    "c 65 105 25;c 180 105 25;c 295 105 25;a 90 105 155 105;a 205 105 270 105;t 65 110 Input;t 180 110 Learn;t 295 110 Use;t 180 195 Interaction supports pattern acquisition",
+    "l 35 175 325 175;p M35 155Q100 145 180 90T325 45;p M35 160Q140 160 220 100T325 65;t 180 25 Vocabulary and grammar trajectories;t 180 195 Development rates vary",
+    "t 95 85 walk → walked;t 265 85 go → goed;a 145 105 215 105;t 180 155 Productive rule applied to irregular verb;t 180 195 Later learns went",
+    "c 180 100 35;c 65 100 25;c 295 100 25;l 90 100 145 100;l 270 100 215 100;t 180 105 Child;t 65 105 L1;t 295 105 L2;t 180 195 Distributed exposure is not an inherent deficit"
+  ],
+  "depth-linguistics-how-writing-systems-represent-language": [
+    "p M35 95Q55 45 75 95T115 95T155 95;r 215 55 110 80;t 270 100 Symbols;a 155 95 215 95;t 180 195 Visible symbols encode aspects of language",
+    "b 25 65 95 65 Alphabet;b 132 65 95 65 Syllabary;b 239 65 95 65 Morpho-syllabic;t 180 195 Different units of representation",
+    "b 35 55 135 65 English spelling;b 190 55 135 65 Japanese kana;t 102 155 Segments;t 257 155 Mora units;t 180 195 Historical spelling also shapes representation",
+    "r 35 55 130 110;r 195 55 130 110;t 100 105 Speech;t 260 105 Orthography;a 165 105 195 105;t 180 195 Writing does not capture every detail"
+  ],
+  "plus-linguistics-how-vowels-differ-acoustically": [
+    "p M45 105Q95 45 145 85Q195 125 245 65L315 85M45 140Q100 125 145 130Q195 145 245 120L315 125;t 180 25 Vocal tract resonance;t 180 195 Open tract shape determines formants",
+    "l 35 175 325 175;l 35 175 35 35;d 100 65 7;d 260 65 7;d 180 145 7;t 100 55 i;t 260 55 u;t 180 135 a;t 180 195 F1 increases downward, F2 decreases rightward",
+    "l 35 175 325 175;r 65 135 45 40;r 115 55 45 120;r 205 80 45 95;r 255 100 45 75;t 110 45 /i/ low F1 high F2;t 255 65 /a/ higher F1;t 180 195 Illustrative relative formant frequencies",
+    "p M35 105Q50 65 65 105T95 105T125 105T155 105;l 205 175 325 175;r 215 90 25 85;r 260 55 25 120;t 95 155 F0 vibration;t 265 195 F1 / F2 resonance;t 180 25 Distinct frequency measures"
+  ],
+  "plus-linguistics-how-consonants-are-classified": [
+    "b 35 45 135 55 Place;b 190 45 135 55 Manner;b 35 120 290 55 Voicing;t 180 205 Three articulation dimensions",
+    "p M35 65Q95 40 155 85L165 105L155 125Q95 155 35 145M195 65Q255 40 315 85L325 105L315 125Q255 155 195 145;d 160 105 6;d 290 85 6;t 100 185 Bilabial;t 260 185 Alveolar;t 180 205 Lips vs ridge behind upper teeth",
+    "r 35 65 290 95;l 130 65 130 160;l 230 65 230 160;t 82 95 /p/;t 180 95 /b/;t 277 95 /f/;t 82 135 Stop;t 180 135 Stop;t 277 135 Fricative;t 180 195 /p/ and /b/ differ in voicing and timing",
+    "p M35 105H95M95 105Q110 65 125 105T155 105M195 105H225M225 105Q240 90 255 105T285 105;t 95 155 Aspirated;t 255 155 Less aspirated;t 180 195 Actual timing depends on language and context"
+  ],
+  "plus-linguistics-understanding-linguistic-stress": [
+    "p M35 130L95 90L155 130L215 45L275 130L325 130;t 215 35 Prominence;t 180 195 Duration, intensity, pitch and vowel quality contribute",
+    "b 35 65 135 65 REcord;b 190 65 135 65 reCORD;t 102 155 Noun;t 257 155 Verb;t 180 195 Stress can distinguish lexical forms",
+    "r 35 65 110 50;r 145 90 60 25;r 225 65 100 50;t 90 95 RE;t 175 105 cord;t 275 95 CORD;t 180 195 REcord vs reCORD changes prominence",
+    "p M35 145Q90 45 145 145M205 145L325 65;t 95 180 Stress peak;t 265 180 Pitch contour;t 180 205 Tone and stress are distinct and can coexist"
+  ],
+  "plus-linguistics-what-grammatical-agreement-does": [
+    "b 35 65 135 65 Subject number;a 170 97 190 97;b 190 65 135 65 Verb form;t 180 195 Features reflected across grammatical elements",
+    "t 95 70 She walks;t 265 70 They walk;l 95 85 95 135;l 265 85 265 135;t 95 155 Singular;t 265 155 Plural;t 180 195 Verb ending reflects subject features",
+    "b 35 45 135 55 Noun;b 190 45 135 55 Adjective;b 35 120 135 55 Determiner;b 190 120 135 55 Verb;t 180 205 Agreement may target different elements",
+    "p M35 75H325M65 75L180 145L295 75;t 65 65 Subject;t 180 160 Verb;t 295 65 Object;t 180 195 Agreement helps identify relations with order and context"
+  ],
+  "plus-linguistics-how-word-order-conveys-roles": [
+    "t 180 55 Subject     Verb     Object;b 35 80 95 55 Dog;b 132 80 95 55 bit;b 239 80 95 55 man;t 180 195 Position signals grammatical role",
+    "t 180 55 Dog bit man;t 180 155 Man bit dog;a 75 70 285 135;a 285 70 75 135;t 180 195 Swapping phrases changes who bites whom",
+    "b 35 55 135 65 Noun + case A;b 190 55 135 65 Noun + case B;a 170 87 190 87;a 190 105 170 105;t 180 195 Case can preserve roles when order varies",
+    "b 35 65 135 65 Topic first;b 190 65 135 65 Contrast first;t 180 165 Order can foreground information;t 180 195 Flexible order still has grammar"
+  ],
+  "plus-linguistics-understanding-linguistic-register": [
+    "c 180 105 35;c 65 55 20;c 295 55 20;c 180 175 20;l 65 55 150 85;l 295 55 210 85;l 180 140 180 155;t 180 110 Register;t 65 25 Audience;t 295 25 Purpose;t 180 205 Setting",
+    "b 35 45 135 55 Vocabulary;b 190 45 135 55 Sentence form;b 35 120 135 55 Address form;b 190 120 135 55 Explicitness;t 180 205 Situation shapes linguistic choices",
+    "b 35 65 135 65 Hypertension;b 190 65 135 65 High blood pressure;t 180 165 Chart vs patient explanation;t 180 195 Same clinical meaning, different register",
+    "b 35 55 135 65 Formal report;b 190 55 135 65 Everyday talk;t 180 165 Choose for purpose and audience;t 180 195 Formal is not inherently better"
+  ],
+  "plus-linguistics-how-languages-borrow-words": [
+    "c 95 105 40;c 265 105 40;a 135 105 225 105;t 95 110 Source;t 265 110 Recipient;t 180 195 Contact transfers a linguistic form",
+    "b 35 65 135 55 Loanword;a 170 92 190 92;b 190 65 135 55 Local pronunciation;t 180 155 May gain affixes or new meaning;t 180 195 Integration is not unchanged copying",
+    "b 35 65 135 65 Japanese sushi;a 170 97 190 97;b 190 65 135 65 English sushi;t 180 165 English syntax and phonology adapt loan",
+    "p M180 45L75 125M180 45L285 125M75 125L285 125;t 180 25 Common ancestor;t 75 150 Language A;t 285 150 Language B;t 180 195 Inheritance vs contact requires historical evidence"
+  ],
+  "plus-linguistics-why-translation-involves-interpretation": [
+    "b 35 55 135 65 Source expression;a 170 87 190 87;b 190 55 135 65 Target expression;t 180 165 Meaning across different grammar and conventions",
+    "c 180 65 28;t 180 70 Source;a 160 85 85 135;a 200 85 275 135;t 85 155 Reading A;t 275 155 Reading B;t 180 195 Preserve or resolve ambiguity appropriately",
+    "c 180 55 25;t 180 60 you;l 180 80 65 125;l 180 80 180 125;l 180 80 295 125;t 65 145 Singular;t 180 145 Plural;t 295 145 Formal;t 180 195 Target language may demand a distinction",
+    "b 35 45 135 55 Genre;b 190 45 135 55 Audience;b 35 120 135 55 Purpose;b 190 120 135 55 Uncertainty;t 180 205 Tone and precision guide translation decisions"
+  ],
+  "plus-linguistics-how-languages-mark-tense-and-aspect": [
+    "l 35 105 325 105;d 180 105 7;d 65 105 6;d 295 105 6;t 65 85 Past;t 180 85 Speech time;t 295 85 Future;t 180 195 Tense locates events relative to reference time",
+    "l 35 75 325 75;r 95 65 170 20;l 35 145 325 145;d 180 145 7;t 180 55 Ongoing interval;t 180 165 Completed event;t 180 195 Aspect describes temporal structure",
+    "l 35 75 325 75;r 65 65 170 20;d 160 75 6;l 35 145 325 145;d 160 145 6;t 180 55 Was reading;t 180 165 Read;t 180 195 Both past, different viewpoint on event",
+    "b 35 45 135 55 Grammatical aspect;b 190 45 135 55 Lexical event type;b 35 120 290 55 Context;t 180 205 Perfect and perfective are not interchangeable"
+  ],
+  "plus-linguistics-how-language-corpora-are-used": [
+    "r 35 45 290 130;l 35 85 325 85;l 35 125 325 125;t 180 65 Text A;t 180 105 Text B;t 180 145 Text C;t 180 195 Searchable, annotated language collection",
+    "b 35 65 135 65 Raw occurrences;b 190 65 135 65 Total words;t 180 165 Normalize to comparable denominator",
+    "b 35 65 135 65 200 / 1,000,000;b 190 65 135 65 90 / 300,000;t 102 155 200 per million;t 257 155 300 per million;t 180 195 Smaller count can have higher frequency",
+    "r 35 55 130 110;r 195 55 130 110;t 100 100 Corpus sample;t 260 100 Possible grammar;t 180 195 Absence from sample is not impossibility"
+  ]
+};
+window.LumenSlideArtBatch46Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch46;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch46Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* communication: dedicated slide artwork, batch 47. */
+window.LumenSlideArtBatch47={
+  "empathy": [
+    "c 95 105 40;c 265 105 40;l 135 105 225 105;t 95 110 Listener;t 265 110 Speaker;t 180 85 Perspective;t 180 195 Understanding does not require agreement",
+    "b 35 65 135 65 Reflect concern;a 170 97 190 97;b 190 65 135 65 Invite correction;t 180 165 Interpretation is a hypothesis, not certainty",
+    "b 105 35 150 45 Deadline stress;a 180 80 85 125;a 180 80 275 125;b 25 125 120 45 Workload;b 215 125 120 45 Priorities;t 180 205 Ask rather than assume motive",
+    "c 95 105 40;c 265 105 40;t 95 110 Acknowledge;t 265 110 Boundary;t 180 195 Understand experience without accepting harm"
+  ],
+  "storytelling": [
+    "d 65 105 8;d 180 105 8;d 295 105 8;a 75 105 170 105;a 190 105 285 105;t 65 85 Situation;t 180 85 Change;t 295 85 Outcome;t 180 175 Narrative connects events to purpose",
+    "b 35 65 95 55 Condition;a 130 92 142 92;b 142 65 95 55 Mechanism;a 237 92 249 92;b 249 65 85 55 Result;t 180 195 Evidence must support causal links",
+    "r 35 55 90 100;r 135 55 90 100;r 235 55 90 100;p M55 75L105 135M105 75L55 135;t 180 105 Restore;t 280 105 File;t 80 180 Lost file;t 180 195 Verified backup makes recovery possible",
+    "c 95 105 35;c 265 105 60;t 95 110 Anecdote;t 265 110 Population;t 180 195 One story illustrates, not estimates prevalence"
+  ],
+  "depth-communication-asking-questions-that-open-dialogue": [
+    "c 180 65 25;t 180 70 Why?;a 160 85 65 145;a 180 90 180 145;a 200 85 295 145;t 65 165 Detail A;t 180 165 Detail B;t 295 165 Detail C;t 180 195 Open questions invite unforeseen information",
+    "b 35 65 135 65 Did it occur?;b 190 65 135 65 Yes / no;a 170 97 190 97;t 180 195 Closed questions efficiently establish specific facts",
+    "b 35 55 135 65 Was it confusing?;b 190 55 135 65 Which part was hard?;t 180 165 Open question can uncover unexpected issue",
+    "b 35 65 95 55 Ask;a 130 92 142 92;b 142 65 95 55 Listen;a 237 92 249 92;b 249 65 85 55 Probe;t 180 195 Follow answer rather than predetermined assumption"
+  ],
+  "depth-communication-how-nonverbal-signals-work": [
+    "c 180 105 35;c 65 55 20;c 295 55 20;c 65 155 20;c 295 155 20;l 65 55 150 85;l 295 55 210 85;l 65 155 150 125;l 295 155 210 125;t 180 110 Signal;t 65 25 Face;t 295 25 Voice;t 65 185 Gesture;t 295 185 Distance",
+    "c 180 65 28;t 180 70 Gesture;a 160 85 65 145;a 180 93 180 145;a 200 85 295 145;t 65 165 Culture;t 180 165 Setting;t 295 165 Habit;t 180 195 Same behavior, multiple explanations",
+    "c 180 75 28;p M165 75L175 75M185 75L195 75;l 180 103 180 145;r 135 145 90 25;t 180 195 Looking at notes need not signal hostility",
+    "b 35 65 135 65 Observe posture;a 170 97 190 97;b 190 65 135 65 Ask respectfully;t 180 165 Do not treat observation as mind-reading"
+  ],
+  "depth-communication-communicating-difficult-information": [
+    "b 35 45 290 45 Central fact;b 35 120 135 55 Confirmed;b 190 120 135 55 Unresolved;t 180 205 Separate facts and estimates",
+    "c 95 105 40;c 265 105 40;a 135 105 225 105;t 95 110 Inform;t 265 110 Respond;t 180 195 Give recipient room without assuming feelings",
+    "l 35 105 325 105;d 65 105 6;d 180 105 6;d 295 105 6;t 65 85 Missed date;t 180 85 Known cause;t 295 85 Next update;t 180 175 Mark unresolved details separately",
+    "b 35 45 135 55 Available option;b 190 45 135 55 Responsible owner;b 35 120 290 55 Next verified milestone;t 180 205 Do not promise uncertain outcomes"
+  ],
+  "depth-communication-how-to-explain-technical-ideas": [
+    "c 95 105 40;c 265 105 40;t 95 110 Knows;t 265 110 Needs;a 135 105 225 105;t 180 195 Introduce only necessary terms",
+    "b 35 65 95 55 Component;a 130 92 142 92;b 142 65 95 55 Mechanism;a 237 92 249 92;b 249 65 85 55 Result;t 180 195 Explain relationships, mark analogy limits",
+    "b 35 65 135 65 example.org;a 170 97 190 97;b 190 65 135 65 DNS record;t 180 165 Domain names map to records;t 180 195 Phone book analogy omits caching and other types",
+    "b 35 55 135 65 Explain idea;b 190 55 135 65 Apply new case;a 170 87 190 87;t 180 165 Test application rather than yes/no understanding"
+  ],
+  "depth-communication-giving-a-clear-presentation": [
+    "c 180 105 35;c 65 55 20;c 295 55 20;c 180 175 20;l 65 55 150 85;l 295 55 210 85;l 180 140 180 155;t 180 110 Main claim;t 65 25 Evidence;t 295 25 Evidence;t 180 205 Decision",
+    "b 35 65 95 55 Question;a 130 92 142 92;b 142 65 95 55 Evidence;a 237 92 249 92;b 249 65 85 55 Action;t 180 195 Logical sequence supports objective",
+    "l 35 105 325 105;d 65 105 6;d 145 105 6;d 225 105 6;d 305 105 6;t 65 85 Uptime;t 145 85 Issue;t 225 85 Proof;t 305 85 Plan;t 180 175 Five-minute service report structure",
+    "r 35 55 130 110;r 195 55 130 110;l 50 75 150 75;l 50 90 150 90;l 50 105 150 105;l 50 120 150 120;l 50 135 150 135;r 215 95 25 50;r 250 75 25 70;r 285 60 25 85;t 100 185 Dense text;t 260 185 Useful graphic;t 180 205 Legibility and relevance"
+  ],
+  "depth-communication-writing-concise-professional-messages": [
+    "r 65 35 230 145;f 65 35 230 45;l 80 105 280 105;l 80 130 280 130;t 180 60 Request first;t 180 160 Supporting context;t 180 205 Lead with purpose",
+    "r 35 55 130 110;r 195 55 130 110;l 50 75 150 75;l 50 95 150 95;l 50 115 150 115;l 50 135 150 135;l 210 90 310 90;l 210 115 310 115;t 100 185 Repeated detail;t 260 185 Needed context;t 180 205 Remove noise, retain action-critical facts",
+    "b 35 45 290 45 Approve replacement laptop;b 35 120 135 55 By Thursday;b 190 120 135 55 Friday order;t 180 205 Action, deadline and reason",
+    "r 35 65 290 85;l 130 65 130 150;l 230 65 230 150;t 82 105 Owner;t 180 105 Action;t 277 105 Due date;t 180 195 Requests differ from FYI messages"
+  ],
+  "depth-communication-how-misunderstandings-grow": [
+    "b 35 55 135 65 Intended meaning;b 190 55 135 65 Received meaning;l 170 87 190 87;t 180 165 Different assumptions create gap",
+    "c 95 105 35;c 265 105 35;a 130 85 230 85;a 230 125 130 125;t 95 110 Infer;t 265 110 Defend;t 180 195 Responding to assumed motive amplifies ambiguity",
+    "b 105 35 150 45 We need to talk;a 180 80 85 125;a 180 80 275 125;b 25 125 120 45 Criticism?;b 215 125 120 45 Scheduling?;t 180 205 Message alone does not settle intent",
+    "b 35 65 95 55 Name gap;a 130 92 142 92;b 142 65 95 55 Paraphrase;a 237 92 249 92;b 249 65 85 55 Confirm;t 180 195 Repair meaning before debating consequences"
+  ],
+  "depth-communication-communicating-across-cultures": [
+    "c 125 105 65;c 235 105 65;d 85 75 6;d 140 135 6;d 180 105 6;d 270 75 6;t 180 195 Cultural patterns overlap, individuals differ",
+    "b 35 45 135 55 Directness;b 190 45 135 55 Turn-taking;b 35 120 135 55 Address forms;b 190 120 135 55 Disagreement;t 180 205 Conventions are not universal",
+    "c 180 65 25;t 180 70 Indirect reply;a 160 85 85 135;a 200 85 275 135;t 85 155 Politeness?;t 275 155 Uncertainty?;t 180 195 Ask what changes or concerns they have",
+    "b 35 65 135 65 Clear language;a 170 97 190 97;b 190 65 135 65 Shared expectations;t 180 165 Feedback and negotiation beat stereotypes"
+  ],
+  "plus-communication-how-to-ask-for-clarification": [
+    "c 180 105 35;c 65 55 20;c 295 55 20;c 180 175 20;l 65 55 150 85;l 295 55 210 85;l 180 140 180 155;t 180 110 Ambiguity;t 65 25 Scope;t 295 25 Timing;t 180 205 Owner",
+    "b 35 55 135 65 Repeat everything?;b 190 55 135 65 Which deadline?;t 180 165 Target missing detail rather than entire message",
+    "b 105 35 150 45 Update soon;a 180 80 85 125;a 180 80 275 125;b 25 125 120 45 Tomorrow?;b 215 125 120 45 End of week?;t 180 205 Confirm which version too",
+    "b 35 65 135 65 Confirmed task;b 190 65 135 65 Assumption;t 180 165 Restate resolved instruction;t 180 195 Keep unknowns explicit"
+  ],
+  "plus-communication-using-examples-to-explain-abstract-ideas": [
+    "d 65 105 7;d 95 105 7;d 125 105 7;b 145 75 85 60 Server;a 230 105 325 105;t 180 195 Map arrival, waiting and service to abstract system",
+    "d 65 75 7;d 95 75 7;d 125 75 7;b 150 55 95 40 Checkout;d 65 145 7;d 95 145 7;d 125 145 7;b 150 125 95 40 Processor;t 180 195 Physical queue and computer backlog share structure",
+    "d 45 105 7;d 75 105 7;d 105 105 7;a 115 105 205 65;a 115 105 205 145;b 205 45 120 40 Worker A;b 205 125 120 40 Worker B;t 180 195 Software may prioritize or process in parallel",
+    "b 35 65 135 65 First example;a 170 97 190 97;b 190 65 135 65 New example;t 180 165 Transfer mechanism beyond surface details"
+  ],
+  "plus-communication-how-to-communicate-uncertainty": [
+    "b 35 45 135 55 Missing fact;b 190 45 135 55 Measurement;b 35 120 135 55 Assumption;b 190 120 135 55 Future event;t 180 205 Identify uncertainty type",
+    "l 35 105 325 105;l 95 95 95 115;l 265 95 265 115;d 180 105 7;t 95 85 Lower;t 180 85 Estimate;t 265 85 Upper;t 180 195 Calibrate range to evidence",
+    "l 35 105 325 105;d 95 105 6;d 265 105 6;l 95 105 265 105;t 95 85 Day 2;t 265 85 Day 4;t 180 165 Supplier-history estimate, not guarantee",
+    "b 35 55 135 65 Current decision;b 190 55 135 65 New evidence;a 170 87 190 87;t 180 165 Update when evidence could change action"
+  ],
+  "plus-communication-making-requests-easier-to-act-on": [
+    "r 35 55 290 110;l 35 95 325 95;l 35 130 325 130;t 180 80 Output / decision;t 180 115 Owner / deadline;t 180 150 Constraints;t 180 195 Actionable request defines completion",
+    "b 35 65 135 65 Required access;b 190 65 135 65 Optional preference;t 180 165 Provide dependencies and distinguish requirements",
+    "b 35 45 290 45 Signed PDF to procurement;b 35 120 135 55 By 2 PM;b 190 120 135 55 Manager approval;t 180 205 Attach final draft and specify approval",
+    "b 35 55 135 65 Acknowledge;b 190 55 135 65 Alternative plan;t 180 165 Confirm ownership and feasibility;t 180 195 Silence is not automatic acceptance"
+  ],
+  "plus-communication-how-to-summarize-a-complex-discussion": [
+    "b 35 45 135 55 Decisions;b 190 45 135 55 Evidence;b 35 120 135 55 Open questions;b 190 120 135 55 Next steps;t 180 205 Preserve decision-relevant content",
+    "r 35 55 130 110;l 50 75 150 75;l 50 95 150 95;l 50 115 150 115;l 50 135 150 135;a 165 105 195 105;r 195 75 130 70;l 210 95 310 95;l 210 125 310 125;t 180 195 Group related points without changing meaning",
+    "b 35 45 290 45 Approved budget;b 35 120 135 55 Two proposals open;b 190 120 135 55 Owner gets quotes;t 180 205 Decision ≠ suggestion",
+    "b 35 55 135 65 Original record;a 170 87 190 87;b 190 55 135 65 Summary;t 180 165 Verify figures, names and dates"
+  ],
+  "plus-communication-how-feedback-differs-from-criticism": [
+    "b 35 55 135 65 Observed behavior;a 170 87 190 87;b 190 55 135 65 Relevant impact;t 180 165 Avoid personal labels",
+    "r 35 55 130 110;r 195 55 130 110;t 100 95 Missing steps;t 100 125 Cannot retest;t 260 95 Careless;t 180 195 Specific issue is more actionable than label",
+    "b 35 65 135 65 Add reproduction steps;a 170 97 190 97;b 190 65 135 65 Repeatable test;t 180 165 Name feasible change and result",
+    "b 35 45 135 55 Relevant;b 190 45 135 55 Proportionate;b 35 120 135 55 Timely;b 190 120 135 55 Repeat strengths;t 180 205 Feedback can reinforce effective behavior"
+  ],
+  "plus-communication-how-silence-affects-conversation": [
+    "l 35 105 325 105;d 65 105 6;d 295 105 6;t 65 85 Speech;t 295 85 Response;t 180 85 Pause;t 180 175 Reflection, uncertainty or turn-taking",
+    "c 180 105 35;c 65 105 22;c 295 105 22;l 87 105 145 105;l 215 105 273 105;t 180 110 Silence;t 65 75 Thinking;t 295 75 Refusal?;t 180 195 Meaning depends on context and expectations",
+    "c 180 65 28;t 180 70 Delay;a 160 85 65 145;a 180 93 180 145;a 200 85 295 145;t 65 165 Work;t 180 165 Network;t 295 165 Hesitation;t 180 195 No reply does not establish hostility",
+    "l 35 105 325 105;d 65 105 6;d 295 105 6;t 65 85 Ask;t 295 85 Follow up;t 180 175 Allow suitable response time, clarify unanswered issues"
+  ],
+  "plus-communication-designing-a-clear-explanation": [
+    "b 35 55 290 65 Learner can calculate a new case;t 180 165 Choose content that supports outcome",
+    "b 35 65 95 55 Terms;a 130 92 142 92;b 142 65 95 55 Mechanism;a 237 92 249 92;b 249 65 85 55 Example;t 180 195 Sequence prerequisites before worked application",
+    "r 45 75 70 100;r 145 65 70 110;r 245 54 70 121;t 80 65 $100;t 180 55 $110;t 280 44 $121;t 180 195 10% each period, interest earns interest",
+    "b 35 65 135 65 New calculation;a 170 97 190 97;b 190 65 135 65 Check misconception;t 180 165 Revise explanation where prerequisites are missing"
+  ],
+  "plus-communication-how-to-disagree-with-an-argument": [
+    "b 105 35 150 45 Conclusion;l 180 80 85 125;l 180 80 275 125;b 25 125 120 45 Premise A;b 215 125 120 45 Premise B;t 180 205 Reconstruct argument before objection",
+    "b 35 45 135 55 Unsupported premise;b 190 45 135 55 Invalid inference;b 35 120 290 55 Counterexample;t 180 205 Different objections target different parts",
+    "l 35 175 325 175;p M35 65L155 65L215 105L325 145;l 180 35 180 175;t 180 25 New process;t 180 195 Demand or staffing may explain improvement",
+    "b 35 55 135 65 Weak causal claim;b 190 55 135 65 No effect claim;t 180 165 Reject only what evidence supports"
+  ],
+  "plus-communication-communicating-during-a-service-outage": [
+    "b 35 45 135 55 Affected service;b 190 45 135 55 Known impact;b 35 120 135 55 Verified start;b 190 120 135 55 Response;t 180 205 Unconfirmed root cause stays unconfirmed",
+    "b 35 65 95 65 Users;b 132 65 95 65 Responders;b 229 65 96 65 Leadership;t 180 155 Impact / fix / business risk;t 180 195 Tailor detail to audience needs",
+    "r 35 55 290 110;l 35 95 325 95;l 35 130 325 130;t 180 80 Some logins failing;t 180 115 Investigating, cause unknown;t 180 150 Next update 3 PM;t 180 195 Status update states facts and next checkpoint",
+    "l 35 105 325 105;d 65 105 6;d 180 105 6;d 295 105 6;t 65 85 Restore;t 180 85 Monitor;t 295 85 Analyze;t 180 175 Recovery differs from root-cause analysis"
+  ]
+};
+window.LumenSlideArtBatch47Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch47;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch47Render(c,cls,step)||prior(c,cls,step);};})();
