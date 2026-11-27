@@ -4616,3 +4616,143 @@ window.LumenSlideArtBatch31Render=function renderer(c,cls="cover",step=-1){
  const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch31Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* Home Infrastructure: dedicated slide artwork, batch 32. */
+window.LumenSlideArtBatch32={
+  "hvac": [
+    "r 35 65 115 85;r 210 65 115 85;a 150 105 210 105;t 92 100 Cold space;t 267 100 Warm space;t 180 55 Work input enables heat transfer;t 180 195 Heat pump moves heat rather than creating all of it",
+    "b 25 45 145 45 Compressor;b 190 45 145 45 Condenser;b 190 125 145 45 Expansion;b 25 125 145 45 Evaporator;a 170 67 190 67;a 262 90 262 125;a 190 147 170 147;a 97 125 97 90;t 180 195 Pressure changes enable heat rejection and absorption",
+    "r 35 75 290 50;f 35 75 96.67 50;t 83 105 1 kWh work;t 228 105 2 kWh outdoor heat;t 180 55 Heating energy balance;t 180 195 Delivered heat 3 kWh, COP≈3",
+    "l 35 175 325 175;l 35 175 35 35;p M35 150Q180 115 325 45;t 180 25 Heating COP (schematic);t 180 195 Warmer outdoor conditions often improve COP"
+  ],
+  "drinking-water": [
+    "p M25 145L100 55L165 145M195 145H335M195 105H335;l 25 145 335 145;d 265 125 8;t 95 175 Surface source;t 265 175 Groundwater;t 180 205 Local geology and source quality guide treatment",
+    "b 25 65 95 55 Coagulate;a 120 92 132 92;b 132 65 95 55 Filter;a 227 92 239 92;b 239 65 95 55 Disinfect;t 180 155 Example treatment train;t 180 195 Specific contaminants may need other processes",
+    "r 35 45 85 60;r 145 120 180 35;p M77 105V137H145M205 137V175M270 137V175;a 80 137 140 137;t 77 35 Storage;t 235 110 Distribution main;t 180 195 Tanks buffer changing demand and pressure",
+    "p M35 65H180V105H270V130H240V105H180;t 100 50 Building pipe;d 240 150 5;d 240 165 5;t 180 195 Clear water can contain dissolved contaminants"
+  ],
+  "wastewater": [
+    "p M35 65L130 100L225 135H325;a 65 75 120 95;a 150 105 215 130;c 260 135 15;t 95 55 Gravity sewer;t 260 165 Pump station;t 180 195 Lift required where gravity cannot carry flow",
+    "r 35 55 290 110;l 95 55 95 165;l 170 55 170 165;d 55 85 7;d 75 105 7;d 125 145 5;d 150 145 5;r 180 145 135 15;t 65 185 Screen;t 135 185 Grit;t 250 185 Settling;t 180 205 Dissolved contaminants remain",
+    "r 35 55 130 110;r 195 55 130 110;c 65 100 6;c 105 115 6;c 140 85 6;a 165 105 195 105;r 195 145 130 20;t 100 185 Biological reactor;t 260 185 Clarifier;t 180 205 Microbes consume organics, solids separate",
+    "b 25 65 145 55 Treated liquid;b 190 65 145 55 Separated sludge;a 97 120 97 155;a 262 120 262 155;t 97 175 Discharge/reuse;t 262 175 Solids processing;t 180 205 Separate management requirements"
+  ],
+  "depth-home-infrastructure-how-household-plumbing-moves-water": [
+    "r 35 85 85 55;l 120 112 325 112;a 135 112 300 112;t 77 105 Supply;t 250 95 Open fixture;t 180 195 Pressure difference drives flow",
+    "p M35 105H325M120 105V45M230 105V165;d 120 105 5;d 230 105 5;t 120 35 Fixture A;t 230 185 Fixture B;t 180 195 Branches, valves and fittings affect pressure drop",
+    "p M35 55H100V125Q100 175 150 175Q200 175 200 125V105H325M250 105V35;f 110 145 80 25;t 150 195 Water seal;t 250 25 Vent;t 180 215 Trap blocks sewer gas, vent manages pressure",
+    "l 35 65 325 65;l 35 155 325 155;a 55 65 305 65;a 305 155 55 155;t 180 45 Potable supply;t 180 145 Waste drainage;t 180 195 Separate systems prevent contamination"
+  ],
+  "depth-home-infrastructure-how-stormwater-drainage-works": [
+    "p M35 100L120 45L205 100H325;a 85 70 120 90;a 205 100 280 100;a 280 100 280 165;t 120 35 Roof;t 280 185 Inlet;t 180 205 Runoff follows slope toward collection points",
+    "p M35 65L325 145M35 95L325 175;a 75 90 260 142;t 180 45 Sloping conveyance;t 180 195 Capacity depends on geometry and downstream conditions",
+    "p M35 85H95Q180 190 265 85H325;l 95 120 265 120;a 265 120 325 120;t 180 65 Detention storage;t 180 195 Release over time reduces peak discharge",
+    "p M35 95H120Q180 155 240 95H325;l 35 75 325 75;a 235 75 325 75;t 180 55 Extreme water level;t 180 195 Overflow route limits damage when capacity is exceeded"
+  ],
+  "depth-home-infrastructure-why-building-ventilation-matters": [
+    "r 75 55 210 110;d 140 100 5;d 180 120 5;d 220 100 5;a 35 85 105 85;a 255 135 325 135;t 180 35 Outdoor air exchange;t 180 195 Dilutes indoor-generated contaminants when suitable",
+    "r 35 55 130 110;r 195 55 130 110;c 100 105 25;p M100 80V130M75 105H125;a 35 105 75 105;a 205 105 315 105;t 100 185 Fan-driven;t 260 185 Opening-driven;t 180 205 Uncontrolled leakage varies with weather",
+    "r 35 65 290 40;r 35 115 290 40;a 55 85 305 85;a 305 135 55 135;a 105 105 105 115;a 180 105 180 115;a 255 105 255 115;t 180 45 Warm exhaust;t 180 175 Outdoor supply;t 180 205 Heat recovery without mixing airstreams",
+    "b 25 45 145 45 Source control;b 190 45 145 45 Filtration;b 25 115 145 45 Ventilation;b 190 115 145 45 Moisture control;t 180 195 Complementary controls address different pollutants"
+  ],
+  "depth-home-infrastructure-what-electrical-circuit-breakers-do": [
+    "p M35 105H130M195 105H325;l 130 105 180 75;c 130 105 4;c 195 105 4;t 180 45 Open contact interrupts current;t 180 195 Overcurrent protection primarily protects wiring",
+    "l 35 175 325 175;l 35 175 35 35;p M35 45Q70 145 325 165;t 180 25 Trip time (schematic);t 180 195 Higher fault current generally trips faster",
+    "r 35 55 130 100;r 195 55 130 100;a 55 85 145 85;a 145 125 55 125;a 215 85 305 85;a 305 125 245 125;a 245 125 245 175;t 100 175 Balanced current;t 260 195 Ground-fault imbalance;t 180 215 Breakers and GFCI serve different protective functions",
+    "b 25 65 145 55 Repeated trip;a 170 92 190 92;b 190 65 145 55 Investigate fault;t 180 155 Do not bypass or upsize breaker;t 180 195 Circuit ratings and compatibility require verification"
+  ],
+  "depth-home-infrastructure-how-roofs-manage-rain": [
+    "p M35 155L180 45L325 155;a 155 65 65 135;a 205 65 295 135;t 180 30 Slope directs runoff;t 180 195 Covering and slope work together",
+    "p M35 155L180 70H325M180 35V70;p M155 85L180 65L205 65;a 145 85 95 120;t 180 25 Wall transition;t 180 195 Flashing directs water away from joint",
+    "p M35 75L180 125H300V175;r 170 125 30 15;a 200 132 280 132;a 300 145 300 175;t 180 55 Gutter;t 280 195 Downspout;t 180 215 Route discharge away from foundation",
+    "p M35 145L180 45L325 145;p M35 135L180 35L325 135;d 90 85 4;d 120 65 4;d 150 45 4;t 180 25 Snow and ice;t 180 195 Wind-driven rain and blocked drainage challenge roof"
+  ],
+  "depth-home-infrastructure-how-septic-systems-treat-wastewater": [
+    "r 55 65 250 105;r 55 65 250 25;r 55 145 250 25;l 35 100 55 100;l 305 110 325 110;t 180 82 Scum;t 180 120 Liquid effluent;t 180 160 Sludge;t 180 195 Separation retains solids and floatables",
+    "r 35 65 290 105;d 75 120 5;d 110 100 5;d 155 130 5;d 200 110 5;d 245 125 5;t 180 45 Microbial activity;t 180 195 Effluent is not potable or fully treated",
+    "r 35 45 290 35;l 65 62 295 62;a 95 80 95 145;a 180 80 180 145;a 265 80 265 145;l 35 165 325 165;t 180 35 Drainfield distribution;t 180 195 Soil treatment above groundwater",
+    "r 35 65 290 105;r 35 135 290 35;a 180 150 180 25;t 180 15 Solids removal;t 180 195 System maintenance and hydraulic loading matter"
+  ],
+  "depth-home-infrastructure-why-water-heaters-lose-energy": [
+    "r 115 45 130 130;r 135 65 90 90;a 115 105 35 105;a 245 105 325 105;t 180 115 Hot water;t 180 195 Heat leaks through tank insulation and piping",
+    "p M35 105H325;l 35 95 325 95;l 35 115 325 115;a 65 85 65 45;a 165 85 165 45;a 265 85 265 45;t 180 25 Pipe heat loss;t 180 195 Cooled water remains between draws",
+    "b 25 65 145 55 Average loss 40 W;b 190 65 145 55 Time 24 h;t 180 155 .040 kW ×24 h;t 180 195 .96 kWh standby loss/day",
+    "r 35 65 130 105;r 195 85 130 65;t 100 120 Storage tank;t 260 120 On demand;t 180 195 Tankless reduces standby loss, distribution still matters"
+  ],
+  "plus-home-infrastructure-how-water-pressure-is-regulated-in-buildings": [
+    "r 35 35 100 45;l 85 80 85 175;l 85 175 325 175;t 85 25 Elevated supply;t 220 95 Height h;t 180 195 Pressure increases downward by ρgh",
+    "p M35 105H145M215 105H325;p M145 75L215 135M145 135L215 75;t 85 85 Higher inlet;t 275 85 Lower outlet;t 180 195 Pressure-reducing valve cannot boost pressure",
+    "l 35 65 325 65;p M35 65L325 145;t 180 55 Static pressure;t 260 130 Flowing pressure;t 180 195 Friction creates dynamic pressure loss",
+    "l 95 45 95 175;l 75 45 115 45;l 75 175 115 175;t 185 45 Upper fixture;t 185 175 Supply;t 180 105 10 m;t 180 205 Elevation loss≈98 kPa"
+  ],
+  "plus-home-infrastructure-why-drain-vents-matter": [
+    "p M35 105H325;a 35 105 180 105;d 210 105 5;d 240 105 5;d 270 105 5;t 180 75 Moving water displaces air;t 180 195 Pressure disturbances can affect trap seals",
+    "p M35 55H100V125Q100 175 150 175Q200 175 200 125V105H325;f 110 145 80 25;a 150 145 210 105;t 180 195 Siphoning can lower protective water seal",
+    "p M35 55H100V125Q100 175 150 175Q200 175 200 125V105H325M250 105V35;a 250 35 250 85;t 250 25 Air exchange;t 180 195 Vent supports pressure equalization",
+    "b 25 45 145 45 Obstruction;b 190 45 145 45 Lost trap seal;b 25 115 145 45 Vent issue;b 190 115 145 45 Other causes;t 180 195 Gurgling alone does not identify fault"
+  ],
+  "plus-home-infrastructure-how-sump-pumps-manage-groundwater": [
+    "p M35 80H120V175H240V80H325;f 120 115 120 60;c 180 145 15;l 195 145 280 145;l 280 145 280 35;d 220 110 7;t 220 95 Float;t 180 195 Rising water triggers pump",
+    "l 35 175 325 175;l 35 175 35 35;p M35 45Q180 75 325 165;t 180 25 Delivered flow;t 180 195 Higher pumping head changes flow (schematic)",
+    "a 35 105 120 105;r 120 65 120 90;a 240 105 325 105;t 75 90 30 L/min;t 285 90 45 L/min;t 180 195 Storage falls 15 L/min while pump runs",
+    "b 25 45 145 45 Power loss;b 190 45 145 45 Float failure;b 25 115 145 45 Blocked outlet;b 190 115 145 45 Freezing;t 180 195 Backup and permitted discharge matter"
+  ],
+  "plus-home-infrastructure-what-a-backflow-preventer-does": [
+    "r 35 65 130 85;r 195 65 130 85;l 165 105 195 105;a 190 105 170 105;t 100 110 Supply;t 260 110 Downstream;t 180 195 Reverse pressure gradient can cause contamination",
+    "a 145 75 35 75;a 325 145 215 145;t 95 55 Supply pressure falls;t 270 125 Downstream pressure rises;t 180 195 Backsiphonage and backpressure differ",
+    "p M95 35V75H180V95;r 115 125 130 50;l 115 135 245 135;t 180 110 Air gap;t 180 195 Physical separation prevents liquid cross-connection",
+    "r 35 65 290 85;p M95 85L125 105L95 125M235 85L265 105L235 125;t 180 45 Testable assembly schematic;t 180 195 Device selection depends on hazard and rules"
+  ],
+  "plus-home-infrastructure-why-water-pipes-can-make-noise": [
+    "p M35 105H325;l 285 85 285 125;a 35 85 270 85;p M265 120Q240 155 215 120T165 120T115 120;t 285 75 Valve;t 180 195 Rapid closure launches pressure wave",
+    "b 25 45 145 45 Density ρ;b 190 45 145 45 Wave speed c;b 105 115 150 45 Velocity change Δv;t 180 195 Ideal rapid surge Δp≈ρcΔv",
+    "p M35 75H150L170 105L150 135H35M205 65H325M205 145H325;l 260 65 260 145;t 95 170 Restriction;t 265 170 Pipe support;t 180 195 Flow vibration and thermal rubbing differ",
+    "b 25 45 145 45 Support;b 190 45 145 45 Pressure control;b 25 115 145 45 Surge control;b 190 115 145 45 Diagnosis;t 180 195 Different remedies target different noise sources"
+  ],
+  "plus-home-infrastructure-how-attic-ventilation-interacts-with-insulation": [
+    "p M35 155L180 35L325 155H35;f 35 145 290 10;a 45 135 100 95;a 315 135 260 95;a 180 80 180 35;t 180 120 Vented attic;t 180 195 Insulation and air barrier at ceiling",
+    "p M35 155L180 35L325 155H35;a 180 185 180 105;d 140 75 5;d 180 65 5;d 220 75 5;t 180 25 Cold roof deck;t 180 205 Air leakage transports indoor moisture upward",
+    "p M35 145L180 35L325 145;p M35 135L180 25L325 135;a 180 175 180 90;d 300 145 8;t 180 20 Snow cover;t 300 165 Ice at eave;t 180 195 Heat leakage can contribute to melt and refreeze",
+    "p M35 155L180 35L325 155H35;p M45 150L180 45L315 150;t 180 105 Conditioned attic;t 180 195 Unvented assembly locates thermal boundary at roof"
+  ],
+  "plus-home-infrastructure-how-foundations-manage-ground-moisture": [
+    "r 140 55 120 120;l 35 100 325 100;a 65 45 65 100;a 95 105 140 140;a 280 145 260 145;t 180 35 Rain, runoff and groundwater;t 180 195 Pore water can move by capillarity",
+    "r 140 55 120 120;p M35 110L140 95M260 95L325 110;a 130 97 55 110;a 270 97 325 110;t 180 35 Grade away from walls;t 180 195 Surface drainage reduces water concentration",
+    "r 140 45 120 130;c 115 155 15;l 115 155 35 155;a 110 155 45 155;d 85 120 5;d 100 135 5;t 105 180 Perimeter drain;t 180 205 Collect water and convey toward suitable outlet",
+    "r 35 105 290 35;f 35 140 290 10;r 35 150 290 25;a 95 175 95 150;a 265 175 265 150;t 180 95 Concrete slab;t 180 160 Capillary break;t 180 195 Vapor-control layer reduces moisture migration"
+  ],
+  "plus-home-infrastructure-how-home-electrical-loads-add-up": [
+    "r 35 75 145 75;r 180 75 145 75;t 107 115 Hour 1;t 252 115 Hour 2;t 180 55 1 kW constant load;t 180 195 Energy=1 kW×2 h=2 kWh",
+    "b 25 65 145 55 600 W;b 190 65 145 55 900 W;t 180 155 Total 1,500 W /120 V;t 180 195 12.5 A, simple resistive loads",
+    "r 35 75 290 50;l 265 65 265 135;t 150 105 Operating load;t 265 55 Rating limit;t 180 195 Continuous loads and other rules affect capacity",
+    "l 35 175 325 175;p M35 165H120V45H150V165H325;t 135 35 High short peak;t 180 195 Peak power affects capacity, area under curve gives energy"
+  ],
+  "plus-home-infrastructure-what-a-building-s-air-barrier-does": [
+    "p M75 175V75L180 25L285 75V175H75;a 35 95 75 95;a 285 95 325 95;a 180 175 180 100;t 180 55 Stack effect;t 180 195 Wind and equipment also drive leakage",
+    "p M65 175V75L180 25L295 75V175H65;p M75 165V80L180 35L285 80V165H75;c 180 165 7;t 180 105 Connected air-control layer;t 180 195 Seal transitions and penetrations",
+    "r 75 55 210 120;c 75 115 25;a 35 115 75 115;t 180 100 Enclosure;t 180 25 Maintain 50 Pa test difference;t 180 195 Measure fan airflow at target pressure",
+    "b 25 65 145 55 900 m³/h;b 190 65 145 55 Volume 300 m³;t 180 155 900/300=3 ACH50;t 180 195 Test air-change rate, not natural infiltration"
+  ],
+  "plus-home-infrastructure-how-streetlights-are-managed": [
+    "l 75 175 75 55;l 180 175 180 55;l 285 175 285 55;p M75 55H115M180 55H220M285 55H325;l 35 175 325 175;d 115 55 5;d 220 55 5;d 325 55 5;t 180 35 Fixture IDs link location and service record;t 180 205 Shared circuit supplies multiple luminaires",
+    "l 35 175 325 175;p M35 70H95V165H235V70H325;t 180 145 Daytime off;t 180 45 Night output;t 180 195 Photocell, timer or networked dimming",
+    "b 25 45 145 45 40 W saved;b 190 45 145 45 1,000 fixtures;b 105 115 150 45 12 h/day;t 180 195 .04×1,000×12=480 kWh/day",
+    "l 180 175 180 45;l 180 45 235 45;p M235 45L100 175M235 45L325 175;t 180 25 Light distribution;t 180 195 Evaluate visibility, glare and maintenance alongside watts"
+  ]
+};
+window.LumenSlideArtBatch32Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch32;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch32Render(c,cls,step)||prior(c,cls,step);};})();
