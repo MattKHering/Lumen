@@ -6266,3 +6266,277 @@ window.LumenSlideArtBatch43Render=function renderer(c,cls="cover",step=-1){
  const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch43Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* anthropology: dedicated slide artwork, batch 44. */
+window.LumenSlideArtBatch44={
+  "culture": [
+    "c 180 100 40;c 70 55 20;c 290 55 20;c 70 155 20;c 290 155 20;l 90 55 150 75;l 270 55 210 75;l 90 155 150 125;l 270 155 210 125;t 180 105 Learned;t 70 30 Practices;t 290 30 Meanings;t 70 185 Skills;t 290 185 Norms",
+    "c 120 100 65;c 240 100 65;d 95 75 6;d 145 135 6;d 180 100 6;d 265 125 6;t 180 185 Shared patterns and individual variation",
+    "c 180 35 18;l 180 53 180 75;l 180 75 65 120;l 180 75 295 120;b 20 120 95 45 Office;b 132 120 95 45 Family;b 245 120 95 45 Online;t 180 195 One person learns several greeting conventions",
+    "r 40 45 280 125;c 180 105 35;t 180 110 Practice;t 180 70 Historical context;t 180 150 Social setting;t 180 195 Understanding does not imply approval"
+  ],
+  "archaeology": [
+    "p M35 65H325V175H35ZM35 100H325M35 140H325;d 95 85 6;d 180 125 6;d 265 160 6;t 180 25 Layers of material evidence;t 180 195 Structures, artifacts, food and environment",
+    "r 35 55 290 110;l 35 110 325 110;d 115 80 7;d 145 85 7;d 265 140 7;t 180 35 Record location and relationships;t 180 195 Removing an object loses its context",
+    "p M55 75Q35 145 100 155Q165 145 145 75Z;d 220 125 5;d 240 135 5;d 260 115 5;t 100 180 Pottery;t 245 180 Seeds;t 180 205 Documented cooking context supports inference",
+    "l 35 65 325 65;l 35 110 325 110;l 35 155 325 155;t 90 55 Newer;t 90 145 Older;t 255 95 Date range;t 180 195 Sequence versus estimated calendar age"
+  ],
+  "depth-anthropology-how-ethnographers-study-everyday-life": [
+    "c 180 100 30;c 65 65 18;c 295 65 18;c 180 175 18;l 83 65 155 85;l 277 65 205 85;l 180 130 180 157;t 180 105 Fieldwork;t 65 35 Observe;t 295 35 Interview;t 180 205 Records",
+    "c 100 95 25;c 260 95 25;l 125 95 235 95;t 100 100 Researcher;t 260 100 Participant;t 180 155 Consent and relationship shape observation",
+    "r 35 55 290 110;r 55 75 70 40;r 145 75 70 40;r 235 75 70 40;d 90 140 6;d 180 140 6;d 270 140 6;t 180 35 Market stalls;t 180 195 Observe transactions at different times",
+    "r 35 55 130 110;r 195 55 130 110;t 100 100 Stated rule;t 260 100 Observed practice;t 180 195 Compare evidence, acknowledge field-setting limits"
+  ],
+  "depth-anthropology-kinship-across-societies": [
+    "c 180 45 20;c 95 115 20;c 265 115 20;c 180 175 20;l 180 65 95 95;l 180 65 265 95;l 95 135 180 155;l 265 135 180 155;t 180 25 Relatedness;t 180 205 Care, inheritance and belonging",
+    "c 95 55 18;c 265 55 18;c 180 155 18;l 95 73 180 137;l 265 73 180 137;t 95 30 Descent;t 265 30 Adoption;t 180 185 Recognized relationships",
+    "c 85 55 18;c 180 55 18;c 275 55 18;c 180 145 18;l 85 73 180 127;l 180 73 180 127;l 275 73 180 127;t 180 25 Parent and parental siblings;t 180 195 Some systems classify several as one kin category",
+    "c 180 105 30;c 65 105 20;c 295 105 20;a 85 105 150 105;a 275 105 210 105;t 180 110 Child;t 65 75 Care;t 295 75 Resources;t 180 195 Kin obligations may differ from formal rules"
+  ],
+  "depth-anthropology-what-material-culture-reveals": [
+    "p M45 145V75H145V145ZM195 145V75L260 35L325 75V145;t 95 170 Object;t 260 170 Built setting;t 180 195 Material culture expresses social organization",
+    "p M35 95H105L145 150H35ZM195 95H325V150H195Z;a 145 120 195 120;t 90 75 Manufacture;t 260 75 Use and exchange;t 180 195 Context links technique and access",
+    "p M100 55Q65 145 180 170Q295 145 260 55Z;p M145 80L160 100L145 120L165 145;t 180 35 Repaired pot;t 180 195 Maintenance may reveal continuing value",
+    "c 180 100 30;c 65 50 18;c 295 50 18;c 180 175 18;l 65 50 155 80;l 295 50 205 80;l 180 130 180 157;t 180 105 Object;t 65 25 Maker;t 295 25 User;t 180 205 Collector"
+  ],
+  "depth-anthropology-how-languages-shape-identity": [
+    "c 180 90 30;b 35 35 100 45 Accent;b 225 35 100 45 Register;b 35 145 100 45 Vocabulary;b 225 145 100 45 Context;t 180 95 Speaker;t 180 205 Speech choices signal social relations",
+    "c 180 55 25;a 160 75 80 115;a 200 75 280 115;b 35 115 100 45 Friends;b 225 115 100 45 Work;t 180 195 Style shifts across contexts",
+    "r 35 55 130 110;r 195 55 130 110;t 100 100 Home language;t 260 100 Work language;t 180 195 Multilingual choices can shift within conversation",
+    "c 180 105 35;a 35 105 145 105;a 325 105 215 105;t 180 110 Choice;t 85 85 Prestige;t 275 85 Institution;t 180 195 Language features do not determine identity"
+  ],
+  "depth-anthropology-why-people-create-rituals": [
+    "l 35 105 325 105;d 65 105 8;d 180 105 8;d 295 105 8;t 65 85 Start;t 180 85 Repeated act;t 295 85 Close;t 180 175 Formal pattern conveys shared meaning",
+    "b 25 65 95 55 Separation;a 120 92 132 92;b 132 65 95 55 Transition;a 227 92 239 92;b 239 65 95 55 Incorporation;t 180 195 One model of rites of passage, not universal",
+    "p M65 85L180 45L295 85L180 125Z;l 180 125 180 165;r 240 135 60 30;t 180 195 Graduation: status recognized by credentials",
+    "c 95 105 45;c 265 105 45;t 95 110 Secular;t 265 110 Religious;t 180 195 Participants may interpret the same ritual differently"
+  ],
+  "depth-anthropology-how-exchange-builds-social-ties": [
+    "c 65 105 30;c 295 105 30;a 95 85 265 85;a 265 125 95 125;t 65 110 A;t 295 110 B;t 180 175 Exchange creates relationships as well as value",
+    "l 35 105 325 105;d 65 105 6;d 295 105 6;t 65 85 Gift;t 295 85 Return;t 180 175 Timing and value of return may be open",
+    "p M40 145L90 95L140 145M220 145L270 95L320 145;a 140 125 220 125;a 220 145 140 145;t 180 65 Shared meals and repairs;t 180 195 Ongoing ties without exact immediate balance",
+    "c 180 105 32;c 65 55 20;c 295 55 20;c 180 175 20;l 65 55 155 85;l 295 55 205 85;l 180 137 180 155;t 180 110 Exchange;t 65 25 Market;t 295 25 Reciprocity;t 180 205 Redistribution"
+  ],
+  "plus-anthropology-how-anthropologists-study-food": [
+    "p M35 135H115L100 165H50ZM145 135H225L210 165H160ZM255 135H325L315 165H265;t 75 115 Obtain;t 185 115 Prepare;t 290 115 Share;t 180 195 Foodways include meaning and everyday routines",
+    "b 35 45 135 55 Cooking observation;b 190 45 135 55 Interviews;b 35 120 135 55 Supply chain;b 190 120 135 55 Household records;t 180 205 Multiple sources, appropriate consent",
+    "c 180 105 55;c 180 105 35;d 75 55 6;d 285 55 6;d 75 155 6;d 285 155 6;t 180 110 Dish;t 180 195 Family memory and changing ingredients",
+    "r 35 75 290 50;l 130 75 130 125;l 230 75 230 125;t 82 105 Price;t 180 105 Time;t 277 105 Access;t 180 195 Food choice is constrained by infrastructure"
+  ],
+  "depth-anthropology-human-adaptation-to-environments": [
+    "l 35 105 325 105;d 65 105 6;d 145 105 6;d 225 105 6;d 305 105 6;t 65 85 Hours;t 145 85 Years;t 225 85 Generations;t 305 85 Practice;t 180 175 Acclimation, development, genes and learned strategies",
+    "p M35 165L180 35L325 165;t 180 25 High altitude;c 100 135 15;c 260 135 15;t 100 185 Newcomer;t 260 185 Resident;t 180 205 Breathing adjustments vs inherited adaptations",
+    "c 95 95 35;c 265 95 35;t 95 100 Benefit;t 265 100 Cost;t 180 155 Environment determines tradeoff;t 180 195 Genetic shifts occur over generations",
+    "b 35 45 135 55 Exposure;b 190 45 135 55 Ancestry;b 35 120 135 55 Development;b 190 120 135 55 Social conditions;t 180 205 Separate evidence for each mechanism"
+  ],
+  "depth-anthropology-ethics-in-human-research": [
+    "r 75 35 210 145;l 95 65 265 65;l 95 95 265 95;l 95 125 265 125;t 180 55 Purpose;t 180 85 Risks;t 180 115 Choices;t 180 165 Ongoing consent;t 180 205 Not merely a signature",
+    "b 35 55 130 65 Identifiers;a 165 87 195 87;b 195 55 130 65 Restricted data;t 180 165 Minimize collection;t 180 195 Explain access and confidentiality limits",
+    "b 35 55 135 65 Research recording;b 190 55 135 65 Public posting;t 100 155 Permitted;t 260 155 Not permitted;t 180 195 Consent scope matters",
+    "c 180 105 35;c 65 55 18;c 295 55 18;c 180 175 18;l 65 55 150 85;l 295 55 210 85;l 180 140 180 157;t 180 110 Ethics;t 65 25 Power;t 295 25 Harm;t 180 205 Accountability"
+  ],
+  "plus-anthropology-what-makes-a-field-note-useful": [
+    "r 70 35 220 145;l 90 65 270 65;l 90 95 270 95;l 90 125 270 125;t 180 55 Date;t 180 85 Setting;t 180 115 Observation;t 180 155 Context;t 180 205 Specific notes support later review",
+    "r 35 55 95 110;r 132 55 95 110;r 229 55 96 110;t 82 95 Observed;t 179 95 Reported;t 277 95 Inferred;t 180 195 Keep these categories distinct",
+    "r 230 65 70 85;d 65 105 7;d 105 105 7;d 145 105 7;t 265 55 Counter;t 180 155 3 people, 10 minutes;t 180 195 Explanation of waiting is a separate inference",
+    "c 95 95 30;c 265 95 30;a 125 95 235 95;t 95 100 Observer;t 265 100 Setting;t 180 155 Presence may influence conduct;t 180 195 Store sensitive notes securely"
+  ],
+  "plus-anthropology-understanding-oral-history": [
+    "c 75 100 25;c 285 100 25;p M100 85Q180 30 260 85;t 75 105 Narrator;t 285 105 Archive;t 180 180 Recorded perspectives preserve experience",
+    "l 35 105 325 105;d 65 105 6;d 295 105 6;p M65 95Q180 25 295 95;t 65 125 Past event;t 295 125 Interview;t 180 195 Memory is reconstructed in the present",
+    "c 95 90 35;c 265 90 35;t 95 95 Worker A;t 265 95 Worker B;b 95 140 170 40 Closure records;t 180 205 Compare roles and contemporary evidence",
+    "b 35 45 135 55 Recording rights;b 190 45 135 55 Attribution;b 35 120 135 55 Access;b 190 120 135 55 Preservation;t 180 205 Agree on future use"
+  ],
+  "plus-anthropology-how-exchange-can-create-obligations": [
+    "l 35 105 325 105;d 65 105 6;d 295 105 6;a 65 75 295 75;t 65 125 Transfer;t 295 125 Future return;t 180 195 Giving can create continuing obligations",
+    "r 35 65 130 90;r 195 65 130 90;t 100 105 Open return;t 260 105 Agreed return;t 180 195 Generalized vs balanced reciprocity",
+    "p M35 145L100 80L165 145M195 145L260 80L325 145;a 100 65 260 65;a 260 160 100 160;t 180 45 Moving help;t 180 185 Later childcare",
+    "c 95 100 38;c 265 100 38;a 133 85 227 85;a 227 115 133 115;t 95 105 Giver;t 265 105 Receiver;t 180 195 Who can refuse or define repayment?"
+  ],
+  "plus-anthropology-what-linguistic-fieldwork-documents": [
+    "b 35 65 130 65 Recorded speech;a 165 97 195 97;b 195 65 130 65 Documented meaning;t 180 195 Elicitation and observation with speakers",
+    "r 35 55 130 110;r 195 55 130 110;l 50 85 150 85;l 50 115 150 115;p M205 85L225 105L245 85L265 105L285 85L305 105;t 100 185 Word list;t 260 185 Conversation;t 180 205 Different linguistic evidence",
+    "b 35 55 135 65 Formal request;b 190 55 135 65 Friends' talk;t 180 165 Same expression, different politeness;t 180 195 Record context and permission",
+    "b 35 45 135 55 Ownership;b 190 45 135 55 Access;b 35 120 135 55 Representation;b 190 120 135 55 Restrictions;t 180 205 Community-authorized stewardship"
+  ],
+  "plus-anthropology-how-burial-practices-are-interpreted": [
+    "r 35 55 290 110;r 95 75 170 70;d 120 90 6;d 240 125 6;t 180 110 Burial context;t 180 195 Preservation and recovery shape evidence",
+    "r 35 55 130 110;r 195 55 130 110;d 70 85 6;d 100 115 6;d 130 145 6;t 100 185 Grave offerings;t 260 185 Lifetime goods?;t 180 205 Offerings do not inventory possessions",
+    "c 180 105 30;c 65 55 20;c 295 55 20;c 180 175 20;l 65 55 155 85;l 295 55 205 85;l 180 135 180 155;t 180 110 Object;t 65 25 Role;t 295 25 Ritual;t 180 205 Event",
+    "b 35 45 135 55 Descendants;b 190 45 135 55 Permissions;b 35 120 135 55 Legal duties;b 190 120 135 55 Cultural care;t 180 205 Respectful treatment of remains"
+  ],
+  "plus-anthropology-how-cities-reshape-everyday-culture": [
+    "r 35 45 290 130;l 130 45 130 175;l 230 45 230 175;l 35 110 325 110;t 82 75 Housing;t 180 75 Work;t 277 75 Transit;t 180 145 Shared institutions;t 180 195 Urban infrastructure shapes encounters",
+    "c 180 105 28;c 65 55 20;c 295 55 20;c 65 155 20;c 295 155 20;l 65 55 155 85;l 295 55 205 85;l 65 155 155 125;l 295 155 205 125;t 180 110 Resident;t 65 25 Kin;t 295 25 Work;t 65 185 Local;t 295 185 Distant",
+    "d 45 105 8;d 180 105 8;d 315 105 8;l 45 105 315 105;t 45 85 Home;t 180 85 Market;t 315 85 New site;a 180 135 315 135;t 180 195 Transit and rising rents reshape ties",
+    "r 35 55 130 110;r 195 55 130 110;t 100 100 Site A;t 260 100 Site B;t 180 195 Compare neighborhoods, times and policy evidence"
+  ],
+  "plus-anthropology-understanding-human-variation": [
+    "l 35 175 325 175;p M35 175Q105 25 205 175M115 175Q225 25 325 175;t 180 35 Overlapping trait distributions;t 180 195 Variation is often continuous",
+    "b 35 45 135 55 Gene flow;b 190 45 135 55 Drift;b 35 120 135 55 Selection;b 190 120 135 55 Development;t 180 205 Different mechanisms and trait histories",
+    "l 35 75 325 75;l 35 145 325 145;p M35 75L95 65L155 80L215 55L325 65M35 145L95 155L155 125L215 150L325 130;t 180 35 Different geographic trait patterns;t 180 195 Pigmentation does not predict unrelated traits",
+    "c 125 105 65;c 235 105 65;d 85 85 5;d 150 105 5;d 180 125 5;d 275 85 5;t 180 25 Overlapping biological variation;t 180 195 Social race categories are not discrete biological types"
+  ],
+  "plus-anthropology-how-museum-collections-acquire-meaning": [
+    "r 35 65 90 80;r 135 65 90 80;r 235 65 90 80;a 125 105 135 105;a 225 105 235 105;t 80 155 Origin;t 180 155 Collection;t 280 155 Display;t 180 195 Object meanings change through acquisition",
+    "l 35 105 325 105;d 65 105 6;d 180 105 6;d 295 105 6;t 65 85 Owner A;t 180 85 Gap?;t 295 85 Museum;t 180 195 Provenance needs documented transfers",
+    "r 35 55 130 110;r 195 55 130 110;t 100 100 Aesthetic form;t 260 100 Ceremony / use;t 180 195 Collaborative labels can preserve multiple meanings",
+    "b 35 45 135 55 Consent;b 190 45 135 55 Access;b 35 120 135 55 Repatriation;b 190 120 135 55 Community role;t 180 205 Stewardship includes source-community interests"
+  ]
+};
+window.LumenSlideArtBatch44Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch44;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch44Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* sociology: dedicated slide artwork, batch 45. */
+window.LumenSlideArtBatch45={
+  "sociology": [
+    "c 180 105 35;c 65 55 20;c 295 55 20;c 180 175 20;l 65 55 150 85;l 295 55 210 85;l 180 140 180 155;t 180 110 Behavior;t 65 25 Relations;t 295 25 Institutions;t 180 205 Structure",
+    "c 80 105 28;r 190 55 135 110;a 108 105 190 105;t 80 110 Seeker;t 257 100 Labor market;t 180 195 Personal choices occur within constraints",
+    "l 35 175 325 175;p M35 155L95 145L155 100L215 65L325 45;t 180 25 Unemployment rises across households;t 180 195 Examine recession, not individual motivation alone",
+    "b 35 45 135 55 Survey;b 190 45 135 55 Interview;b 35 120 135 55 Observation;b 190 120 135 55 Records;t 180 205 Test patterns and competing explanations"
+  ],
+  "depth-sociology-how-social-norms-develop": [
+    "c 180 105 35;c 65 55 20;c 295 55 20;l 65 55 150 85;l 295 55 210 85;t 180 110 Norm;t 65 25 Expectation;t 295 25 Conduct;t 180 195 Shared prescription differs from observed frequency",
+    "b 35 65 95 55 Observe;a 130 92 142 92;b 142 65 95 55 Practice;a 237 92 249 92;b 249 65 85 55 Feedback;t 180 195 Repetition can make expectations routine",
+    "r 35 55 290 110;d 80 105 7;d 145 105 7;d 210 105 7;d 275 105 7;t 180 35 Meeting starts with status update;t 180 195 New worker learns by observation and reminders",
+    "r 35 65 130 90;r 195 65 130 90;t 100 105 Public action;t 260 105 Private belief;t 180 195 Norm can persist despite private disagreement"
+  ],
+  "depth-sociology-what-social-stratification-means": [
+    "p M65 165H295L255 125H105ZM105 125H255L220 85H140ZM140 85H220L180 35Z;t 180 195 Durable differences in resources and power",
+    "r 45 95 55 75;r 115 55 55 115;r 185 115 55 55;r 255 75 55 95;t 72 185 Income;t 142 185 Wealth;t 212 185 School;t 282 185 Status;t 180 25 Different dimensions need not align",
+    "r 35 65 130 40;r 195 65 130 40;r 35 125 130 40;r 195 145 130 20;t 100 55 Salary A;t 260 55 Salary B;t 100 115 Assets;t 260 135 Net debt;t 180 195 Same income, different wealth",
+    "c 95 55 20;c 265 55 20;c 95 155 20;c 265 155 20;l 95 75 95 135;l 265 75 265 135;t 180 105 School, inheritance, policy;t 180 195 Institutions shape intergenerational access"
+  ],
+  "depth-sociology-understanding-socialization": [
+    "c 180 105 35;c 65 55 20;c 295 55 20;c 65 155 20;c 295 155 20;l 65 55 150 85;l 295 55 210 85;l 65 155 150 125;l 295 155 210 125;t 180 110 Learner;t 65 25 Norms;t 295 25 Skills;t 65 185 Language;t 295 185 Roles",
+    "l 35 105 325 105;d 65 105 6;d 145 105 6;d 225 105 6;d 305 105 6;t 65 85 Family;t 145 85 School;t 225 85 Peers;t 305 85 Work;t 180 175 Social learning continues through life",
+    "b 35 65 130 65 Written rules;b 195 65 130 65 Unwritten norms;t 180 165 New worker learns both;t 180 195 Escalation and professional conduct",
+    "b 35 55 135 65 Expectation A;b 190 55 135 65 Expectation B;a 102 120 160 155;a 257 120 200 155;b 100 155 160 40 Negotiate"
+  ],
+  "depth-sociology-how-groups-shape-identity": [
+    "c 180 105 60;d 145 75 7;d 215 75 7;d 145 135 7;d 215 135 7;t 180 105 Membership;t 180 195 Shared practices shape self-understanding",
+    "c 100 105 55;c 260 105 55;t 100 110 In-group;t 260 110 Outside;t 180 195 Boundaries may be fluid or contested",
+    "c 180 100 35;c 65 100 25;c 295 100 25;l 90 100 145 100;l 215 100 270 100;t 180 105 Student;t 65 105 Club;t 295 105 Family;t 180 195 Robotics membership adds belonging and vocabulary",
+    "c 135 100 65;c 225 100 65;c 180 145 55;t 100 90 Work;t 260 90 Family;t 180 160 Club;t 180 205 Identities overlap, context changes salience"
+  ],
+  "depth-sociology-how-institutions-shape-behavior": [
+    "r 55 55 250 110;l 55 95 305 95;l 55 130 305 130;t 180 80 Rules;t 180 115 Roles;t 180 150 Practices;t 180 195 Institutions organize recurring social needs",
+    "b 35 55 135 65 Formal regulation;b 190 55 135 65 Informal norm;t 180 165 Both shape access and behavior",
+    "p M55 95L180 40L305 95ZM75 165H285M90 95V165M270 95V165;t 180 115 School;t 180 145 Credentials;t 180 195 Attendance and assessment structure opportunity",
+    "l 35 105 325 105;d 65 105 6;d 180 105 6;d 295 105 6;t 65 85 Routine;t 180 85 Conflict;t 295 85 New policy;t 180 175 Institutions can change through action"
+  ],
+  "depth-sociology-understanding-social-networks": [
+    "d 65 75 8;d 180 55 8;d 295 75 8;d 95 155 8;d 265 155 8;l 65 75 180 55;l 180 55 295 75;l 65 75 95 155;l 295 75 265 155;l 95 155 265 155;t 180 195 Nodes represent actors, ties defined relationships",
+    "d 65 65 7;d 65 145 7;d 125 105 7;d 235 105 7;d 295 65 7;d 295 145 7;p M65 65L65 145L125 105L65 65M235 105L295 65L295 145L235 105;l 125 105 235 105;t 180 85 Bridge;t 180 195 Connects otherwise separate clusters",
+    "d 45 105 8;d 180 105 8;d 315 105 8;l 45 105 315 105;t 45 85 Seeker;t 180 85 Acquaintance;t 315 85 Vacancy;t 180 195 Weak link transmits new job information",
+    "b 35 55 135 65 Friendship;b 190 55 135 65 Online follow;t 180 165 Define tie and observation period;t 180 195 Different links imply different networks"
+  ],
+  "depth-sociology-what-sociologists-mean-by-roles": [
+    "c 180 75 32;t 180 80 Status;a 160 100 85 140;a 200 100 275 140;b 35 140 100 45 Duties;b 225 140 100 45 Expectations;t 180 205 Role follows recognized position",
+    "b 105 35 150 45 Teacher;a 180 80 70 125;a 180 80 180 125;a 180 80 290 125;b 20 125 100 45 Plan;b 130 125 100 45 Assess;b 240 125 100 45 Support;t 180 205 Status vs expected conduct",
+    "c 180 105 30;c 65 55 22;c 295 55 22;c 180 175 22;l 65 55 155 85;l 295 55 205 85;l 180 135 180 153;t 180 110 Person;t 65 25 Employee;t 295 25 Parent;t 180 205 Volunteer",
+    "r 35 55 130 110;r 195 55 130 110;t 100 105 Same title;t 260 105 Different norms;t 180 195 Roles vary with organizations and culture"
+  ],
+  "depth-sociology-how-collective-behavior-emerges": [
+    "d 65 75 7;d 120 105 7;d 180 65 7;d 240 105 7;d 295 75 7;a 72 75 113 100;a 127 100 173 70;a 187 70 233 100;a 247 100 288 75;t 180 195 Emergent responses to shared events",
+    "c 65 105 20;c 180 105 20;c 295 105 20;a 85 105 160 105;a 200 105 275 105;t 180 175 Observation spreads expectations without central command",
+    "r 230 65 85 85;d 65 105 7;d 110 105 7;d 155 105 7;d 200 105 7;t 272 55 New queue;t 180 195 Transit disruption produces informal coordination",
+    "b 35 45 135 55 Communication;b 190 45 135 55 Context;b 35 120 135 55 Existing ties;b 190 120 135 55 Resources;t 180 205 Crowds are not uniformly irrational"
+  ],
+  "plus-sociology-how-sociologists-study-institutions": [
+    "c 180 105 35;c 65 55 20;c 295 55 20;c 180 175 20;l 65 55 150 85;l 295 55 210 85;l 180 140 180 155;t 180 110 Institution;t 65 25 Authority;t 295 25 Resources;t 180 205 Expectations",
+    "r 35 55 130 110;r 195 55 130 110;t 100 100 Written rules;t 260 100 Observed routine;t 180 195 Documents, interviews and outcomes reveal gaps",
+    "b 35 45 135 55 Promotion policy;b 190 45 135 55 Interviews;b 35 120 290 55 Promotion records;t 180 205 Triangulate how advancement occurs",
+    "r 35 65 130 90;r 195 65 130 90;t 100 105 Department A;t 260 105 Department B;t 180 195 Differences alone do not establish causes"
+  ],
+  "plus-sociology-understanding-reference-groups": [
+    "c 180 105 35;c 65 105 25;c 295 105 25;a 95 105 145 105;a 265 105 215 105;t 180 110 Person;t 65 75 Member;t 295 75 Nonmember;t 180 195 Reference standards need not be membership groups",
+    "b 35 55 135 65 Conduct standard;b 190 55 135 65 Comparison benchmark;t 180 165 Normative and comparative functions may overlap",
+    "c 180 105 25;c 65 65 25;c 295 65 25;l 65 65 160 90;l 295 65 200 90;t 180 110 Student;t 65 30 Peers;t 295 30 Engineers;t 180 195 Current norms and aspirational comparison",
+    "r 35 65 130 85;r 195 65 130 85;t 100 105 Same salary;t 260 105 Same salary;t 180 195 Different reference groups yield different judgments"
+  ],
+  "plus-sociology-how-informal-social-control-works": [
+    "c 180 105 35;c 65 105 22;c 295 105 22;a 87 95 145 95;a 273 115 215 115;t 180 110 Behavior;t 65 75 Praise;t 295 75 Disapproval;t 180 195 Everyday responses reinforce norms",
+    "b 35 45 135 55 Approval;b 190 45 135 55 Teasing;b 35 120 135 55 Praise;b 190 120 135 55 Exclusion;t 180 205 Sanctions depend on relationships",
+    "r 145 65 70 90;d 65 105 7;d 295 105 7;a 75 105 145 105;a 285 105 215 105;t 180 55 Shared equipment;t 180 195 Praise sharing, disapprove monopolization",
+    "c 95 105 40;c 265 105 40;t 95 110 Cooperate;t 265 110 Exclude;t 180 195 Conformity does not establish ethical value"
+  ],
+  "plus-sociology-what-social-mobility-describes": [
+    "l 35 175 325 175;p M65 145L135 115L205 85L275 55;d 65 145 6;d 275 55 6;t 180 25 Social position;t 180 195 Mobility tracks movement in defined status",
+    "c 95 65 25;c 95 155 25;l 95 90 95 130;c 265 65 25;c 265 155 25;l 265 90 265 130;t 95 35 Parent;t 95 190 Child;t 265 35 Earlier self;t 265 190 Later self;t 180 105 Between vs within generations",
+    "b 35 65 135 55 Entry role;a 170 92 190 92;b 190 65 135 55 Manager;t 180 155 Within-person occupational change;t 180 195 Compare parent's role separately",
+    "r 65 105 90 65;r 205 65 90 105;t 110 95 Earlier income;t 250 55 Later income;t 180 195 Absolute gains need not change relative rank"
+  ],
+  "plus-sociology-understanding-cultural-capital": [
+    "c 180 105 35;c 65 55 20;c 295 55 20;c 180 175 20;l 65 55 150 85;l 295 55 210 85;l 180 140 180 155;t 180 110 Advantage;t 65 25 Skills;t 295 25 Goods;t 180 205 Credentials",
+    "b 35 65 95 65 Embodied;b 132 65 95 65 Objectified;b 229 65 96 65 Credential;t 180 195 Bourdieu's three forms, valued by social field",
+    "r 35 55 130 110;r 195 55 130 110;t 100 100 Knows process;t 260 100 Unfamiliar;t 180 195 Equal ability, different application-navigation resources",
+    "c 95 105 35;c 265 105 35;a 130 105 230 105;t 95 110 Practice;t 265 110 Institution;t 180 195 Institutional recognition determines rewarded value"
+  ],
+  "plus-sociology-how-collective-action-develops": [
+    "c 180 105 35;c 65 55 20;c 295 55 20;c 65 155 20;c 295 155 20;a 65 55 150 85;a 295 55 210 85;a 65 155 150 125;a 295 155 210 125;t 180 110 Shared goal;t 180 195 Coordinated effort toward change",
+    "c 180 105 40;c 65 105 20;c 295 105 20;a 85 105 140 105;a 220 105 275 105;t 180 110 Benefit;t 65 75 Pays;t 295 75 Receives;t 180 195 Free riding may weaken participation",
+    "p M35 165H325M90 165V95L65 75M90 115L115 75M270 165V95L245 75M270 115L295 75;c 180 120 25;t 180 125 Park;t 180 195 Meetings and commitments organize improvement",
+    "b 35 45 135 55 Networks;b 190 45 135 55 Leadership;b 35 120 135 55 Resources;b 190 120 135 55 Opportunity;t 180 205 Grievances alone do not ensure action"
+  ],
+  "plus-sociology-understanding-role-conflict": [
+    "c 180 105 35;b 35 55 100 45 Job;b 225 55 100 45 Care;a 135 80 150 95;a 225 80 210 95;t 180 110 Person;t 180 195 Different roles have conflicting demands",
+    "c 180 75 35;b 35 135 135 45 Demand A;b 190 135 135 45 Demand B;l 160 105 102 135;l 200 105 257 135;t 180 80 One role;t 180 205 Strain occurs within a role",
+    "l 35 105 325 105;d 180 105 8;t 180 85 6 pm;b 35 140 135 45 Work meeting;b 190 140 135 45 Childcare;t 180 205 Competing obligations at same time",
+    "b 35 45 135 55 Reschedule;b 190 45 135 55 Negotiate;b 35 120 135 55 Support;b 190 120 135 55 Accommodation;t 180 205 Structural constraints may require institutional change"
+  ],
+  "depth-sociology-studying-inequality-sociologically": [
+    "b 35 45 135 55 Resource;b 190 45 135 55 Population;b 35 120 135 55 Unit;b 190 120 135 55 Period;t 180 205 Define inequality measure before comparison",
+    "r 65 50 90 120;r 205 74 90 96;t 110 40 $60,000;t 250 64 $48,000;t 180 195 B median =80% of A, cause unknown",
+    "c 180 105 35;c 65 55 20;c 295 55 20;c 180 175 20;l 65 55 150 85;l 295 55 210 85;l 180 140 180 155;t 180 110 Gap;t 65 25 School;t 295 25 Bias;t 180 205 Geography",
+    "l 35 175 325 175;p M35 175Q105 25 205 175M115 175Q225 25 325 175;t 180 35 Group distributions overlap;t 180 195 Averages do not define individual traits"
+  ],
+  "plus-sociology-why-social-networks-affect-opportunities": [
+    "d 65 55 7;d 65 155 7;d 180 105 8;d 295 55 7;d 295 155 7;l 65 55 180 105;l 65 155 180 105;l 295 55 180 105;l 295 155 180 105;t 180 195 Networks carry referrals, information and support",
+    "p M45 65L105 65L75 145ZM255 65L315 65L285 145Z;l 105 65 255 65;t 180 50 Bridging tie;t 180 195 Nonredundant information crosses groups",
+    "c 75 105 25;c 285 105 25;d 180 65 8;a 95 90 172 70;a 188 70 265 90;t 75 145 Applicant A;t 285 145 Employer;t 180 45 Referral;t 180 195 Equally qualified B may not hear of vacancy",
+    "b 35 55 135 65 Shared setting;b 190 55 135 65 Network outcome;a 170 87 190 87;t 180 165 Selection and causal effects can coexist"
+  ],
+  "plus-sociology-how-sociologists-use-interviews": [
+    "c 180 105 70;d 135 65 6;d 225 75 6;d 145 140 6;d 225 135 6;t 180 195 Purposeful sample explores variation, not prevalence",
+    "b 35 55 135 65 Open question;b 190 55 135 65 Leading question;t 180 165 Ask for experience, not desired answer;t 180 195 Use clarifying probes",
+    "r 35 55 290 110;l 50 85 310 85;l 50 115 310 115;l 50 145 310 145;f 50 75 85 20;f 175 105 85 20;t 180 195 Code transcripts, document exceptions and interpretation",
+    "r 35 75 290 50;f 35 75 29 50;t 180 55 Ten interview participants;t 180 155 Experiences and mechanisms;t 180 195 Cannot infer exactly 10% prevalence"
+  ],
+  "plus-sociology-how-norms-change-over-time": [
+    "l 35 175 325 175;p M35 145L95 135L155 95L215 65L325 45;p M35 155L95 150L155 125L215 100L325 75;t 180 25 Behavior vs private attitudes;t 180 195 Norms may shift at different speeds",
+    "c 180 105 35;c 65 105 20;c 295 105 20;a 85 105 145 105;a 275 105 215 105;t 180 110 Conform;t 65 75 Belief;t 295 75 Expected reaction;t 180 195 Perceived disapproval may sustain behavior",
+    "l 35 105 325 105;d 65 105 6;d 180 105 6;d 295 105 6;t 65 85 Policy;t 180 85 Adopters;t 295 85 Approval;t 180 175 Flexible hours become visible, some resist",
+    "l 35 175 325 175;p M35 155L325 45;p M35 145L325 85;p M35 155L325 135;t 180 25 Track behavior, attitudes and expectations;t 180 195 Policy adoption is not proof of norm change"
+  ]
+};
+window.LumenSlideArtBatch45Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch45;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch45Render(c,cls,step)||prior(c,cls,step);};})();
