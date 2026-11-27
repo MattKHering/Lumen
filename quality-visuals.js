@@ -3476,3 +3476,143 @@ window.LumenSlideArtBatch22Render=function renderer(c,cls="cover",step=-1){
  const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch22Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* Engineering: dedicated slide artwork, batch 23. */
+window.LumenSlideArtBatch23={
+  "engineering": [
+    "b 25 45 145 45 Required load;b 190 45 145 45 Safety limit;b 25 115 145 45 Cost ceiling;b 190 115 145 45 Manufacturing;t 180 195 Specify measurable success and constraints",
+    "p M35 155L95 50L155 155Z;p M205 155H325V75H205Z;t 95 175 Truss concept;t 265 175 Frame concept;t 180 205 Compare mass, strength, cost against requirements",
+    "r 80 65 200 30;a 180 25 180 65;p M80 95L60 145H100ZM280 95L260 145H300Z;t 180 15 Applied load;t 180 195 Prototype test includes foreseeable failure conditions",
+    "b 25 65 95 55 Test;a 120 92 132 92;b 132 65 95 55 Revise;a 227 92 239 92;b 239 65 95 55 Retest;a 285 120 285 155;a 285 155 75 155;a 75 155 75 120;t 180 195 Document changes and assumptions"
+  ],
+  "energy-grid": [
+    "b 25 65 95 55 Generation;a 120 92 132 92;b 132 65 95 55 Grid;a 227 92 239 92;b 239 65 95 55 Loads;t 180 155 Supply and demand must balance;t 180 195 Energy sources convert to electrical power",
+    "p M35 65Q55 45 75 65T115 65M35 95Q55 75 75 95T115 95M245 65Q265 45 285 65T325 65M245 95Q265 75 285 95T325 95;r 140 45 80 90;a 115 80 140 80;a 220 80 245 80;t 75 155 Lower V;t 285 155 Higher V;t 180 195 Transformer: higher voltage reduces current for same power",
+    "b 25 65 95 55 High-voltage;a 120 92 132 92;b 132 65 95 55 Substation;a 227 92 239 92;b 239 65 95 55 Local loads;t 180 155 Step-down transformers and protection;t 180 195 Separate circuits isolate faults",
+    "r 65 65 90 100;r 205 155 90 10;t 110 55 100 A;t 250 145 10 A;t 110 185 1,000 V;t 250 185 10,000 V;t 180 205 100 kW, equal R: I²R loss drops 100×"
+  ],
+  "depth-engineering-why-safety-factors-exist": [
+    "r 35 65 290 50;f 35 65 120 50;t 95 95 Demand;t 240 95 Margin;t 180 45 Defined capacity;t 180 195 Uncertain loads and strength require margin",
+    "r 35 65 290 35;r 35 135 96.67 35;t 180 55 Capacity 12 kN;t 180 125 Demand 4 kN;t 180 195 Capacity / demand = 3",
+    "p M35 65H145V95H35Z;p M205 45Q260 105 205 165M245 45Q300 105 245 165;p M85 65L95 80L85 95;t 90 130 Fracture / yield;t 260 185 Buckling;t 180 205 Each failure mode requires its own check",
+    "b 25 45 145 45 Consequences;b 190 45 145 45 Uncertainty;b 25 115 145 45 Standards;b 190 115 145 45 Weight and cost;t 180 195 Margin depends on failure criterion and context"
+  ],
+  "depth-engineering-how-prototypes-reveal-problems": [
+    "p M35 65H145V145H35Z;p M205 55L325 75V145L205 125Z;a 145 105 205 105;t 90 170 Mockup;t 265 170 Functional model;t 180 195 Learn about a specific design uncertainty",
+    "p M40 65Q95 35 145 65V100H40Z;r 205 65 120 25;a 265 25 265 65;t 95 140 Handle comfort;t 265 140 Load stiffness;t 180 195 Select tests tied to uncertain requirements",
+    "r 35 65 290 75;c 180 102 24;p M180 78L190 55L180 35;a 25 102 5 102;a 335 102 355 102;t 180 165 Crack at stress concentrator;t 180 195 Record conditions and compare predicted failure",
+    "b 25 55 95 55 Observe;a 120 82 132 82;b 132 55 95 55 Change cause;a 227 82 239 82;b 239 55 95 55 Repeat test;t 180 155 Verify side effects and other requirements"
+  ],
+  "depth-engineering-how-pumps-move-liquids": [
+    "r 35 115 100 50;r 225 45 100 50;c 180 130 22;p M135 140H158M202 130H275V95;a 138 140 158 140;a 202 130 275 130;t 180 105 Pump adds head;t 275 30 Higher tank;t 180 195 Energy overcomes elevation, pressure and friction",
+    "c 180 105 60;c 180 105 15;p M180 90Q220 75 235 105M195 105Q210 145 180 160M180 120Q140 135 125 105M165 105Q150 65 180 50;a 180 15 180 45;a 240 105 325 105;t 180 195 Rotating impeller accelerates liquid, casing builds pressure",
+    "r 45 65 270 90;r 150 65 25 90;a 175 105 265 105;a 45 105 15 105;t 180 45 Moving piston;t 180 175 Trapped liquid volume displaced per cycle;t 180 205 Flow relates to speed and leakage",
+    "l 35 175 325 175;l 35 175 35 35;p M35 55Q180 75 325 155;p M35 155Q180 140 325 35;d 210 105 6;t 120 45 Pump head curve;t 265 30 System head;t 180 195 Intersection gives operating point"
+  ],
+  "depth-engineering-what-engineers-mean-by-efficiency": [
+    "b 25 65 110 55 Input energy;a 135 92 165 92;b 165 65 170 55 Useful output;a 180 120 180 165;t 245 155 Unwanted heat;t 180 195 Efficiency = useful / total input",
+    "r 35 75 290 50;f 35 75 232 50;t 151 105 400 W useful;t 296 105 100 W;t 180 55 Input 500 W;t 180 195 400/500 = 80% efficiency",
+    "b 25 65 145 55 Stage 1: .90;a 170 92 190 92;b 190 65 145 55 Stage 2: .90;t 180 155 .9 × .9 = .81;t 180 195 81% overall for consistent energy boundaries",
+    "l 35 175 325 175;l 35 175 35 35;p M35 155Q140 25 220 65Q290 95 325 150;t 180 25 Efficiency vs load;t 180 195 Peak efficiency may not be typical"
+  ],
+  "depth-engineering-how-tolerances-make-parts-fit": [
+    "l 35 105 325 105;l 65 85 65 125;l 180 85 180 125;l 295 85 295 125;t 65 70 9.95;t 180 70 10.00;t 295 70 10.05;t 180 155 Nominal 10 mm ±.05 mm",
+    "c 95 105 60;c 95 105 45;c 265 105 45;c 265 105 55;t 95 180 Positive clearance;t 265 180 Interference;t 180 205 Hole diameter minus shaft diameter",
+    "b 25 55 145 55 Smallest hole 10.10;b 190 55 145 55 Largest shaft 10.05;t 180 155 Minimum clearance = .05 mm;t 180 195 Worst-case dimensional fit",
+    "l 35 175 325 175;p M35 45Q130 135 325 155;t 180 30 Manufacturing cost (illustrative);t 180 195 Allowed tolerance increases → cost may fall"
+  ],
+  "plus-engineering-how-engineers-choose-materials": [
+    "b 25 45 145 45 Strength / density;b 190 45 145 45 Stiffness;b 25 115 145 45 Temperature;b 190 115 145 45 Corrosion;t 180 195 Match properties to actual operating requirements",
+    "p M35 55H145V145H35Z;p M205 55L325 85V145H205Z;a 145 100 205 100;t 90 175 Material stock;t 265 175 Manufactured part;t 180 205 Forming, joining and finishing constrain selection",
+    "r 35 65 290 85;p M90 65L105 85L90 105L105 125L90 150;d 235 80 5;d 250 105 5;d 265 130 5;t 180 45 Fatigue / corrosion;t 180 195 Service conditions change performance over time",
+    "r 65 45 90 125;r 205 105 90 65;t 110 35 Steel: denser;t 250 95 Aluminum: lighter;t 180 195 Geometry and stiffness affect actual structure"
+  ],
+  "plus-engineering-how-bearings-reduce-unwanted-motion-losses": [
+    "c 180 100 65;c 180 100 35;c 180 100 16;a 180 20 180 35;p M210 80Q235 100 210 120;t 180 195 Support load while permitting shaft rotation",
+    "c 90 105 55;c 90 105 35;c 270 105 55;c 270 105 27;c 270 65 8;c 310 105 8;c 270 145 8;c 230 105 8;t 90 180 Plain sliding;t 270 180 Rolling elements;t 180 205 Lubrication and deformation still matter",
+    "r 55 85 250 40;a 180 25 180 85;a 335 105 305 105;t 180 15 Radial load;t 300 75 Axial load;t 180 195 Bearing arrangement determines supported direction",
+    "c 180 105 55;c 180 105 25;d 180 65 7;d 220 105 7;d 180 145 7;d 140 105 7;p M210 35L195 65L220 75;t 270 35 Debris;t 180 195 Contamination and misalignment reduce life"
+  ],
+  "plus-engineering-what-a-free-body-diagram-shows": [
+    "r 115 80 130 70;a 180 80 180 25;a 180 150 180 190;a 245 115 315 115;t 180 15 Support;t 180 205 Weight;t 285 100 Applied force",
+    "r 115 80 130 70;l 35 150 325 150;a 180 80 180 25;a 180 115 180 190;a 115 115 55 115;t 180 15 Normal;t 180 205 Weight;t 65 100 Friction",
+    "r 55 80 250 20;a 180 25 180 80;a 55 165 55 100;a 305 165 305 100;t 180 15 100 N;t 55 180 50 N;t 305 180 50 N;t 180 205 Symmetric equilibrium: forces and moments sum to zero",
+    "r 80 85 200 35;d 100 102 4;d 260 102 4;a 100 102 100 45;a 260 102 260 165;l 100 180 260 180;t 180 195 Moment arm / distance;t 180 205 Show only forces acting on isolated body"
+  ],
+  "depth-engineering-understanding-stress-and-strain": [
+    "r 95 75 170 70;a 95 110 35 110;a 265 110 325 110;l 180 75 180 145;t 180 60 Cross-sectional area A;t 180 195 Average normal stress σ=F/A",
+    "r 35 65 220 30;r 35 130 275 30;l 255 55 255 105;l 310 120 310 170;t 145 55 Original L;t 172 120 Stretched L+ΔL;t 180 195 Strain ε=ΔL/L, dimensionless",
+    "l 35 175 325 175;l 35 175 35 35;p M35 175L160 55Q240 25 325 70;d 160 55 6;t 115 45 Yield onset;t 180 195 Linear elastic slope E, then nonlinear behavior",
+    "b 25 55 145 55 2,000 N / 100 mm²;b 190 55 145 55 1 mm / 500 mm;t 97 150 20 MPa;t 262 150 .002 = .2%;t 180 195 Stress and strain measure different quantities"
+  ],
+  "depth-engineering-why-structures-fail-from-fatigue": [
+    "l 35 175 325 175;l 35 45 325 45;p M35 110Q55 65 75 110T115 110T155 110T195 110T235 110T275 110T315 110;t 180 35 Static yield limit;t 180 195 Cyclic stress can cause fatigue below yield",
+    "r 35 65 290 95;p M160 65L180 100L200 65;p M180 100L190 125;t 180 45 Notch;t 180 195 Stress concentration can initiate a crack",
+    "r 35 65 130 90;r 195 65 130 90;p M95 65L105 95M255 65L265 95L250 135L270 155;t 100 175 Short crack;t 260 175 Growing crack;t 180 205 Repeated loading reduces intact section",
+    "l 35 175 325 175;l 35 175 35 35;p M35 45Q135 105 325 145;t 180 25 Cyclic stress;t 180 195 Cycles to failure (log scale, schematic)"
+  ],
+  "plus-engineering-why-gears-change-torque-and-speed": [
+    "c 105 105 30;c 225 105 90;d 105 105 5;d 225 105 5;a 105 75 135 105;a 225 15 185 35;t 105 155 Driver;t 225 205 Driven gear;t 180 15 External gears rotate oppositely",
+    "c 95 105 25;c 195 105 75;t 95 145 20 teeth;t 195 195 60 teeth;t 180 20 900 rpm input → 300 rpm output",
+    "b 25 65 145 55 Speed ÷ 3;b 190 65 145 55 Torque × 3;t 180 150 Ideal P=τω is conserved;t 180 195 Actual losses reduce output torque",
+    "c 90 100 35;c 260 100 55;l 125 100 205 100;d 180 100 6;t 180 70 Tooth contact;t 180 170 Lubrication, backlash and tooth stress;t 180 195 Ratio does not create energy"
+  ],
+  "plus-engineering-how-heat-exchangers-transfer-energy": [
+    "r 35 55 290 50;r 35 105 290 50;a 55 80 305 80;a 305 130 55 130;a 100 85 100 125;a 180 85 180 125;a 260 85 260 125;t 180 35 Hot stream;t 180 175 Cold stream;t 180 205 Heat crosses wall without mixing fluids",
+    "r 25 45 145 110;r 190 45 145 110;a 35 70 160 70;a 35 125 160 125;a 200 70 325 70;a 325 125 200 125;t 97 175 Parallel flow;t 262 175 Counterflow;t 180 205 Counterflow can maintain useful temperature difference",
+    "b 25 45 145 45 .5 kg/s;b 190 45 145 45 4.18 kJ/kg/K;b 105 115 150 45 ΔT = 10 K;t 180 195 Q̇ = .5×4.18×10 = 20.9 kW",
+    "r 35 65 290 80;p M65 65V145M105 65V145M145 65V145M185 65V145M225 65V145M265 65V145;t 180 45 More transfer surface;t 180 175 Fouling and pressure drop affect performance;t 180 195 Size and pumping costs are tradeoffs"
+  ],
+  "plus-engineering-how-redundancy-improves-reliability": [
+    "p M35 105H75V55H285V105H325M75 105V155H285V105;b 115 35 130 40 Path A;b 115 135 130 40 Path B;t 180 195 Alternative path can maintain function after failure",
+    "b 25 55 145 55 A fails: .1;b 190 55 145 55 B fails: .1;t 180 150 Both fail: .1×.1=.01;t 180 195 System success = .99 (independent)",
+    "b 105 35 150 40 Shared power;a 180 75 95 125;a 180 75 265 125;b 25 125 140 45 Unit A;b 195 125 140 45 Unit B;t 180 205 Common dependency defeats independence",
+    "b 25 55 145 55 Primary system;a 170 82 190 82;b 190 55 145 55 Backup system;t 180 150 Test failure detection and switching;t 180 195 Added maintenance and complexity"
+  ],
+  "plus-engineering-why-design-for-maintenance-matters": [
+    "r 35 55 290 120;r 65 75 90 80;r 205 75 90 80;a 250 155 250 190;t 110 115 Fixed parts;t 250 115 Service module;t 180 25 Access panels and fasteners;t 180 205 Safe replacement should be practical",
+    "r 35 65 130 90;r 205 65 120 90;r 165 95 40 30;a 165 110 205 110;t 100 175 Module;t 265 175 Host;t 180 205 Interfaces and spare availability matter",
+    "r 35 75 290 50;f 35 75 276.19 50;t 173 105 Available 100 h;t 180 55 MTBF 100 h, MTTR 5 h;t 180 195 Availability = 100/105 ≈95.2%",
+    "b 25 45 145 45 Initial cost;b 190 45 145 45 Downtime;b 25 115 145 45 Spare parts;b 190 115 145 45 Safe access;t 180 195 Evaluate lifecycle cost, not just purchase price"
+  ],
+  "depth-engineering-why-feedback-control-works": [
+    "b 25 65 95 55 Controller;a 120 92 132 92;b 132 65 95 55 Plant;a 227 92 239 92;b 239 65 95 55 Output;a 285 120 285 155;a 285 155 75 155;a 75 155 75 120;t 180 145 Measured feedback;t 180 195 Compare output to reference, reduce error",
+    "l 35 175 325 175;l 35 175 35 35;p M35 175L325 65;p M35 175L180 35;t 265 55 Lower Kp;t 180 25 Higher Kp;t 180 195 u=Kp e, gain affects response",
+    "l 35 175 325 175;p M35 150L95 100L155 100L215 145L325 145;p M35 175L95 160L155 130L215 110L325 75;t 245 65 Integral accumulates;t 180 195 Derivative responds to change and may amplify noise",
+    "l 35 105 325 105;p M35 105Q70 45 105 105T175 105Q210 85 245 105T325 105;p M35 105Q70 70 105 105T175 105Q210 10 245 105T325 105;t 180 25 Delay can destabilize feedback;t 180 195 Fast response alone does not establish stability"
+  ],
+  "plus-engineering-understanding-resonance-in-machines": [
+    "r 35 45 290 25;p M180 70V80L165 90L195 100L165 110L195 120L180 130V140;r 145 140 70 40;t 180 165 Mass m;t 180 35 Spring k;t 180 205 ωn=√(k/m) for undamped system",
+    "l 35 175 325 175;l 35 175 35 35;p M35 165Q145 160 180 30Q215 160 325 165;p M35 165Q145 145 180 85Q215 145 325 165;t 180 20 Resonance peak;t 180 195 Damping limits forced vibration",
+    "b 25 65 145 55 k=800 N/m;b 190 65 145 55 m=2 kg;t 180 155 √(800/2)=20 rad/s;t 180 195 20/(2π)≈3.18 Hz",
+    "b 25 45 145 45 Change mass / stiffness;b 190 45 145 45 Add damping;b 25 115 145 45 Reduce forcing;b 190 115 145 45 Avoid resonant speed;t 180 195 Measurements identify vibration modes"
+  ],
+  "plus-engineering-how-numerical-models-approximate-structures": [
+    "r 35 65 290 90;l 35 110 325 110;l 95 65 95 155;l 155 65 155 155;l 215 65 215 155;l 275 65 275 155;p M35 65L95 110L155 65L215 110L275 65L325 110;t 180 45 Finite element mesh;t 180 195 Elements approximate displacement fields",
+    "b 25 65 95 55 Stiffness K;b 132 65 95 55 Unknown u;b 239 65 95 55 Load F;t 180 155 K u = F;t 180 195 Solve nodal displacements, derive stress and strain",
+    "l 35 175 325 175;p M35 55L95 100L155 130L215 140L275 143L325 144;t 180 35 Computed quantity;t 180 195 Mesh refinement → possible convergence",
+    "b 25 55 145 55 Numerical checks;b 190 55 145 55 Experiment / benchmark;t 97 150 Verification;t 262 150 Validation;t 180 195 Correct implementation does not prove correct model"
+  ],
+  "plus-engineering-how-engineers-evaluate-trade-offs": [
+    "b 25 45 145 45 Cost;b 190 45 145 45 Mass;b 25 115 145 45 Reliability;b 190 115 145 45 Energy use;t 180 195 Meet feasibility constraints before ranking designs",
+    "l 35 175 325 175;l 35 175 35 35;d 85 65 6;d 140 90 6;d 205 125 6;d 285 145 6;d 225 65 6;p M85 65L140 90L205 125L285 145;t 180 25 Cost vs performance tradeoff;t 180 195 Nondominated frontier depends on objective directions",
+    "b 25 65 145 55 .4×.8=.32;b 190 65 145 55 .6×.5=.30;t 180 155 Weighted benefit .62;t 180 195 Depends on weights and normalized metrics",
+    "b 25 55 145 55 Assumptions A;b 190 55 145 55 Assumptions B;t 180 150 Recompute choice and check stability;t 180 195 Never silently trade away safety constraints"
+  ]
+};
+window.LumenSlideArtBatch23Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch23;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch23Render(c,cls,step)||prior(c,cls,step);};})();
