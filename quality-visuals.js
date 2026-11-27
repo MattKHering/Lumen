@@ -2062,3 +2062,143 @@ window.LumenSlideArtBatch11Render=function renderer(c,cls="cover",step=-1){
  const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch11Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* Meteorology: dedicated slide artwork, batch 12. */
+window.LumenSlideArtBatch12={
+  "thunderstorms": [
+    "p M25 165H335M95 150Q105 90 145 80Q145 30 180 45Q215 30 230 85Q270 90 275 150Z;a 180 165 180 60;t 70 190 Moisture;t 180 195 Lift;t 285 190 Instability",
+    "p M75 160Q75 95 120 85Q120 25 180 25Q240 25 240 85Q285 95 285 160Z;a 180 175 180 45;d 145 60 5;d 210 60 5;t 180 200 Rising air builds ice and droplets",
+    "p M75 155Q90 45 180 35Q270 45 285 155Z;a 125 175 125 65;a 225 80 225 175;a 225 175 310 175;l 240 110 240 145;l 260 110 260 145;t 180 205 Updraft + rain-cooled downdraft",
+    "p M75 145Q90 45 180 35Q270 45 285 145Z;a 170 75 170 170;a 200 75 200 170;a 170 170 55 170;t 180 195 Cold outflow cuts off warm inflow"
+  ],
+  "depth-meteorology-why-winds-blow": [
+    "l 60 45 60 160;l 95 45 95 160;l 130 45 130 160;l 205 45 205 160;l 300 45 300 160;a 60 105 190 105;t 60 30 H;t 300 30 L;t 180 195 Close isobars = strong gradient",
+    "a 95 160 95 50;a 95 50 150 50;a 265 160 265 50;a 265 50 210 50;t 95 180 NH: right;t 265 180 SH: left;t 180 205 Deflection perpendicular to motion",
+    "l 45 75 325 75;l 45 115 325 115;l 45 155 325 155;a 100 140 250 140;a 100 140 220 95;t 180 60 Lower pressure;t 180 195 Friction lets surface wind cross isobars",
+    "r 25 130 155 45;r 180 130 155 45;a 65 115 255 115;a 255 115 255 45;a 255 45 65 45;a 65 45 65 115;t 100 155 Cooler water;t 260 155 Warm land;t 180 200 Daytime sea breeze circulation"
+  ],
+  "depth-meteorology-how-clouds-form": [
+    "c 180 150 20;c 180 65 40;a 180 125 180 95;t 75 150 Higher pressure;t 280 65 Lower pressure;t 180 205 Expansion cools ~9.8°C/km when dry",
+    "d 180 95 5;c 180 95 20;c 180 95 38;t 180 40 Water condenses on particle;t 180 160 Saturation at dew point;t 180 195 Tiny droplets scatter light",
+    "p M70 90H130M100 60V120M79 69L121 111M79 111L121 69;c 250 90 25;c 235 85 5;c 260 100 5;t 100 150 Ice crystal;t 250 150 Supercooled drops;t 180 195 Deposition and freezing grow ice",
+    "b 25 65 145 55 T − Td = 4°C;b 190 65 145 55 125 m/°C;t 180 155 4 × 125 = 500 m;t 180 195 Approximate cloud base"
+  ],
+  "depth-meteorology-reading-a-weather-map": [
+    "c 180 105 25;c 180 105 45;c 180 105 65;c 180 105 85;t 180 109 L;t 180 15 Isobars;t 180 205 Closer lines indicate stronger gradient",
+    "l 35 65 325 65;p M80 65L95 85L110 65M155 65L170 85L185 65M230 65L245 85L260 65;l 35 145 325 145;p M80 145Q95 110 110 145M155 145Q170 110 185 145M230 145Q245 110 260 145;t 180 35 Cold-front symbols;t 180 195 Warm-front symbols",
+    "c 180 100 15;l 180 85 225 45;l 216 53 238 63;l 207 61 229 71;t 120 75 20°C;t 120 125 15°C;t 260 125 Pressure;t 180 185 Barb points toward wind source",
+    "l 180 35 180 175;p M180 65L200 80L180 95M180 120L200 135L180 150;t 90 80 Cooler, drier;t 270 80 Warm, humid;a 100 145 150 115;a 260 145 230 115;t 180 200 Check multiple observations and radar"
+  ],
+  "depth-meteorology-how-snowflakes-develop": [
+    "d 180 105 7;c 160 95 4;c 200 95 4;c 160 120 4;c 200 120 4;a 100 105 170 105;a 260 105 190 105;t 180 50 Vapor deposits on ice;t 180 180 Cold supersaturated air",
+    "p M60 90L80 55L120 55L140 90L120 125L80 125Z;p M180 55L210 55L230 90L210 125L180 125L160 90Z;p M270 50V130M235 70L305 110M235 110L305 70;t 100 165 Plate;t 195 165 Column;t 270 165 Dendrite;t 180 205 Hexagonal symmetry",
+    "p M75 60V135M40 80L110 115M40 115L110 80M220 55V140M185 80L255 115M185 115L255 80;c 200 75 7;c 240 100 8;c 220 125 7;t 75 165 Crystal;t 220 165 Rimed crystal;t 180 205 Droplets freeze on ice",
+    "r 35 35 290 50;f 35 85 290 55;r 35 140 290 35;t 180 60 Cold cloud;t 180 110 Warm layer;t 180 160 Surface;a 80 65 80 165;t 180 205 Full temperature profile determines phase"
+  ],
+  "depth-meteorology-what-lake-effect-snow-is": [
+    "r 25 130 230 45;p M255 130L300 75L335 130H255Z;a 35 85 240 85;a 90 125 90 60;a 150 125 150 60;t 180 35 Cold air crosses warmer water;t 180 195 Heat + moisture drive convection",
+    "r 35 95 290 65;a 35 70 325 70;t 180 55 Fetch = over-water distance;t 180 185 Longer fetch often increases uptake",
+    "r 25 130 195 45;p M220 130L280 75L335 100V175H220Z;p M150 75Q180 30 215 60Q250 30 280 65Q300 40 325 75Z;a 145 125 210 65;d 270 100 5;d 290 120 5;d 310 110 5;t 180 200 Moist air rises, cools, produces snow",
+    "r 35 55 290 110;p M35 85H325M35 125H325;a 45 75 315 75;a 45 135 315 135;t 180 45 Shift in wind direction;t 180 190 Narrow band moves between towns"
+  ],
+  "plus-meteorology-how-temperature-inversions-form": [
+    "l 35 175 325 175;l 35 175 35 35;p M260 175L180 120L240 65L160 35;t 180 195 Temperature →;t 100 30 Altitude;t 265 85 Inversion layer",
+    "r 35 145 290 30;a 95 140 95 45;a 180 140 180 45;a 265 140 265 45;t 180 30 Clear night: infrared loss;t 180 125 Cooler air near ground;t 180 200 Ground cools fastest",
+    "r 35 100 290 75;r 35 65 290 35;a 100 30 100 65;a 260 30 260 65;t 180 85 Warm stable cap;t 180 145 Cooler air below;t 180 200 Sinking air warms by compression",
+    "r 35 45 290 35;r 35 80 290 90;d 75 140 4;d 100 120 4;d 140 150 4;d 175 125 4;d 230 140 4;d 280 115 4;a 180 145 180 80;t 180 65 Inversion cap;t 180 200 Traps fog and pollutants"
+  ],
+  "plus-meteorology-how-hailstones-grow": [
+    "p M50 155Q70 80 130 65Q180 15 230 65Q290 80 310 155Z;a 180 165 180 45;d 140 75 5;d 220 80 5;c 180 95 13;t 180 195 Updraft lifts ice embryo into supercooled drops",
+    "c 180 105 55;c 180 105 45;c 180 105 30;c 180 105 18;t 180 30 Layers of accreted ice;t 180 185 Wet vs dry growth changes clarity",
+    "p M50 155Q80 45 180 35Q280 45 310 155Z;a 145 155 145 50;d 145 95 12;a 180 95 250 125;t 180 195 Hail may remain aloft without looping",
+    "c 180 55 25;a 180 80 180 145;c 180 160 14;t 180 25 Leaves strong updraft;t 180 195 May melt in warm air on descent"
+  ],
+  "plus-meteorology-why-fog-forms": [
+    "l 35 160 325 160;c 65 135 5;c 105 125 5;c 145 145 5;c 185 125 5;c 225 140 5;c 265 120 5;c 305 140 5;a 50 90 300 90;t 180 65 Reduced visibility;t 180 195 Suspended droplets near ground",
+    "r 35 145 290 30;a 90 145 90 45;a 180 145 180 45;a 270 145 270 45;c 130 130 5;c 160 125 5;c 210 130 5;t 180 30 Clear night cooling;t 180 195 Near-surface air reaches dew point",
+    "r 35 140 290 35;a 35 95 325 95;c 160 120 5;c 200 120 5;c 240 120 5;c 280 120 5;t 180 65 Moist air across colder surface;t 180 195 Advection fog",
+    "p M25 170L190 80L335 80V175H25Z;a 80 145 170 95;c 220 65 5;c 250 65 5;c 280 65 5;t 180 35 Upslope cooling;t 180 200 Steam fog instead involves warm water"
+  ],
+  "plus-meteorology-why-freezing-rain-differs-from-sleet": [
+    "p M45 70H105M75 40V100M53 48L97 92M53 92L97 48;t 180 60 Ice crystals in cloud;a 75 105 75 170;t 180 160 Temperature profile below;t 180 195 Determines final phase",
+    "r 35 35 290 45;f 35 80 290 95;t 180 60 Cold cloud;t 180 125 Deep warm layer;a 75 45 75 155;c 75 155 7;t 180 195 Snow melts, stays liquid if warm below",
+    "r 35 35 290 45;f 35 80 290 45;r 35 125 290 50;t 180 60 Cold;t 180 105 Warm;t 180 150 Deep cold;a 75 45 75 165;d 75 165 7;t 180 195 Drops refreeze before reaching ground",
+    "r 35 35 290 45;f 35 80 290 70;r 35 150 290 25;a 75 45 75 165;l 35 175 325 175;t 180 60 Cold cloud;t 180 110 Melt layer;t 180 165 Shallow cold;t 180 200 Supercooled drops freeze on contact"
+  ],
+  "hurricanes": [
+    "r 25 150 310 25;a 95 150 95 55;a 180 150 180 55;a 265 150 265 55;p M50 60Q100 20 150 60Q200 20 250 60Q280 35 310 60;t 180 120 Evaporation + heat transfer;t 180 195 Condensation releases latent heat",
+    "c 180 100 18;p M180 35Q300 35 300 100Q300 165 180 165Q60 165 60 100Q60 55 140 55;a 65 140 125 115;a 300 60 235 85;t 180 105 Low;t 180 195 Moist air, rotation, weak shear",
+    "c 180 105 18;c 180 105 45;c 180 105 75;a 135 105 135 35;a 225 105 225 35;a 180 45 180 90;t 180 109 Eye;t 180 195 Eyewall rises, eye subsides",
+    "r 25 145 150 30;p M175 145L205 120L335 120V175H175Z;a 75 135 220 135;t 100 160 Warm ocean;t 260 145 Land;t 180 195 Land/cool water weakens heat engine"
+  ],
+  "tornadoes": [
+    "a 60 155 160 155;a 60 55 260 55;p M100 115Q180 50 260 115;a 180 140 180 35;t 180 20 Updraft tilts and stretches rotation;t 180 195 Vertical wind shear",
+    "p M25 60H335M130 60L155 150H205L230 60;a 55 150 155 150;a 305 150 205 150;t 180 35 Rotating updraft;t 180 195 Near-ground rotation is not guaranteed",
+    "p M95 45H265L210 110L185 140L175 180L150 110Z;l 25 180 335 180;p M155 140Q180 110 205 140;t 180 30 Condensation funnel;t 180 205 Tornado requires ground contact",
+    "b 25 55 145 55 Doppler radar;b 190 55 145 55 Damage survey;t 97 150 Rotation / debris;t 262 150 EF wind estimate;t 180 195 Different evidence sources"
+  ],
+  "depth-meteorology-how-weather-forecasts-are-made": [
+    "b 25 45 145 45 Observations;b 190 45 145 45 Prior model;a 97 90 180 135;a 262 90 180 135;b 95 135 170 45 Assimilation;t 180 205 Account for uncertainty",
+    "r 35 45 290 130;l 35 88 325 88;l 35 131 325 131;l 107 45 107 175;l 180 45 180 175;l 252 45 252 175;a 72 66 140 105;a 215 65 280 150;t 180 200 Grid solves approximate atmospheric equations",
+    "r 35 75 290 50;f 35 75 217.5 50;t 143 105 15 rain runs;t 288 105 5 dry;t 180 55 20 equally weighted runs;t 180 190 Raw frequency 75%",
+    "l 35 175 325 175;p M35 105L105 100L175 80L245 45L325 30;p M35 105L105 110L175 130L245 155L325 170;t 180 195 Forecast spread grows with lead time"
+  ],
+  "plus-meteorology-how-cold-fronts-trigger-storms": [
+    "p M25 175H335M55 60L180 175;a 35 145 150 145;a 185 155 120 75;t 80 190 Cold wedge;t 260 120 Warm moist air;t 180 205 Lift may reach free convection",
+    "b 25 55 145 55 Humid unstable;b 190 55 145 55 Dry stable;t 97 145 Storm possible;t 262 145 Little rain possible;t 180 195 Front alone is insufficient",
+    "a 40 145 140 145;a 40 45 280 45;p M120 155Q145 55 220 55Q270 80 260 155Z;a 165 155 165 65;a 240 85 240 155;t 180 200 Shear may separate updraft and rain",
+    "b 25 55 145 55 Moist + unstable;b 190 55 145 55 Dry + stable;t 97 145 Strong shear;t 262 145 Weak storm potential;t 180 195 Compare ingredients, not certainty"
+  ],
+  "plus-meteorology-what-a-jet-stream-is": [
+    "a 25 65 335 65;a 25 100 335 100;t 180 40 Upper tropospheric winds;t 180 145 Cold side / warm side;t 180 195 Jet linked to temperature contrast",
+    "l 35 175 325 175;a 70 145 130 145;a 70 90 200 90;a 70 35 300 35;t 180 195 Wind changes with height;t 180 15 Strong thermal gradient",
+    "p M25 105Q100 20 180 105T335 105;t 95 50 Ridge;t 260 155 Trough;t 180 195 Rossby waves steer storm tracks",
+    "a 25 95 120 95;a 120 95 280 95;a 280 95 335 95;a 245 85 310 45;a 245 105 310 145;t 180 65 Jet streak;t 180 195 Divergence can favor ascent"
+  ],
+  "plus-meteorology-understanding-heat-index": [
+    "r 110 110 140 55;c 150 95 6;c 180 95 6;c 210 95 6;a 150 90 150 40;a 210 90 210 40;t 180 30 Evaporation removes heat;t 180 195 Humidity reduces evaporation",
+    "b 25 65 145 55 Air temperature;b 190 65 145 55 Relative humidity;a 97 120 180 155;a 262 120 180 155;t 180 185 Apparent temperature in shade",
+    "b 25 65 145 55 90°F air;b 190 65 145 55 RH 70%;t 180 155 Standard heat index;t 180 195 ≈106°F",
+    "b 25 45 145 50 Direct sun;b 190 45 145 50 Activity;b 25 120 145 50 Clothing;b 190 120 145 50 Physiology;t 180 205 Heat index ≠ core temperature"
+  ],
+  "depth-meteorology-how-humidity-works": [
+    "r 35 75 290 50;f 35 75 145 50;t 107 105 Actual e;t 252 105 Capacity;t 180 55 Saturation vapor pressure eₛ;t 180 190 RH = 100e/eₛ(T)",
+    "l 35 175 325 175;p M35 165Q180 145 325 35;l 35 145 325 145;t 180 25 Saturation pressure rises with T;t 180 195 Fixed e: warmer air has lower RH",
+    "r 35 60 290 35;f 35 60 145 35;r 35 125 145 35;f 35 125 145 35;t 180 45 eₛ=2.4 kPa, e=1.2;t 200 148 Cool until eₛ=1.2;t 180 195 RH 50% → saturation at dew point",
+    "l 35 175 325 175;l 35 175 35 35;p M35 165Q180 145 325 35;l 65 158 295 47;d 180 102.5 5;t 180 35 Nonlinear saturation curve;t 180 195 Mixing can cause condensation"
+  ],
+  "plus-meteorology-understanding-atmospheric-stability": [
+    "c 95 100 35;c 265 100 35;a 95 65 95 25;a 265 135 265 175;t 95 105 Warmer;t 265 105 Colder;t 95 195 Buoyant rises;t 265 195 Returns downward",
+    "l 35 175 325 175;l 35 175 35 35;p M280 175L95 35M280 175L130 35M280 175L170 35;t 95 25 Dry;t 130 45 Env.;t 195 35 Moist;t 180 200 Cooling slopes determine stability",
+    "l 180 175 180 35;l 35 175 325 175;p M180 175Q100 145 180 115Q300 75 180 35;t 105 145 CIN;t 265 75 CAPE;t 180 195 Integrals of buoyancy (J/kg)",
+    "b 25 55 145 55 Dry: −9.8°C;b 190 55 145 55 Moist: −6°C;t 180 145 Environment: −8°C at 1 km;t 97 180 1.8°C colder;t 262 180 2°C warmer"
+  ],
+  "plus-meteorology-how-radar-estimates-precipitation": [
+    "c 45 145 12;p M45 145L300 60M45 145L300 95;a 100 125 245 75;a 245 90 100 135;d 300 78 8;t 180 35 Transmit + receive echo;t 180 195 Range = c × round-trip time / 2",
+    "c 100 95 15;c 260 95 30;t 100 135 D;t 260 145 2D;t 180 35 For small spherical drops: Z ∝ D⁶;t 180 195 Double diameter contributes 64×",
+    "c 75 100 12;a 90 100 220 100;a 220 115 90 115;p M250 65V135M220 100H280;t 150 55 Doppler velocity;t 265 160 Dual-pol;t 180 195 Phase shift and scattering shape",
+    "p M35 175Q180 145 325 70;p M35 175Q180 125 325 45;l 35 175 325 175;d 285 155 6;t 180 35 Beam rises with range;t 180 200 May miss shallow precipitation"
+  ],
+  "plus-meteorology-how-wind-chill-relates-to-heat-loss": [
+    "r 130 75 100 70;a 20 60 120 60;a 20 95 120 95;a 20 130 120 130;a 230 110 325 110;t 180 110 Skin;t 180 175 Wind thins boundary layer;t 180 195 Q=hA(Tskin−Tair)",
+    "b 25 65 145 55 Air temperature;b 190 65 145 55 Wind speed;t 180 155 Standard exposed-face index;t 180 195 Equivalent cold exposure",
+    "b 25 65 145 55 20°F;b 190 65 145 55 15 mph;t 180 155 US wind-chill formula;t 180 195 ≈6°F",
+    "l 35 175 325 175;l 35 175 35 35;l 35 145 325 145;p M35 45Q95 135 325 145;p M35 45Q185 105 325 145;t 180 155 Ambient temperature;t 180 195 Wind speeds approach, not below ambient"
+  ]
+};
+window.LumenSlideArtBatch12Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch12;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch12Render(c,cls,step)||prior(c,cls,step);};})();
