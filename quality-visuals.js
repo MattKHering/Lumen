@@ -5584,3 +5584,143 @@ window.LumenSlideArtBatch38Render=function renderer(c,cls="cover",step=-1){
  const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch38Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* Data Literacy: dedicated slide artwork, batch 39. */
+window.LumenSlideArtBatch39={
+  "charts": [
+    "l 45 170 320 170;l 45 170 45 35;r 70 110 45 60;r 145 70 45 100;r 220 45 45 125;t 180 202 Length encodes quantity;t 180 20 Compare from a shared baseline",
+    "l 40 170 160 170;r 60 75 30 95;r 110 70 30 100;l 200 170 320 170;r 220 120 30 50;r 270 70 30 100;t 100 193 Axis starts at 0;t 260 193 Axis starts at 90",
+    "r 60 70 85 95;r 205 65 85 100;t 102 59 95;t 247 54 100;t 180 193 Actual increase: 5.3%;t 180 210 Not twice as large",
+    "l 35 175 325 175;l 35 175 35 40;p M35 100L75 60L115 120L155 90L195 150L235 120L275 100L320 80;r 230 45 95 125;t 275 35 Selected window;t 180 200 Check the full series"
+  ],
+  "depth-data-literacy-how-to-read-a-table": [
+    "r 35 40 290 145;l 125 40 125 185;l 225 40 225 185;l 35 85 325 85;l 35 135 325 135;t 80 66 Region;t 175 66 Sales;t 275 66 Units;t 80 110 North;t 80 160 South;t 175 110 50;t 275 110 10;t 175 160 80;t 275 160 20",
+    "r 40 40 280 140;l 125 40 125 180;l 225 40 225 180;l 40 85 320 85;l 40 132 320 132;f 125 85 100 47;t 175 65 Q1;t 275 65 Q2;t 82 111 North;t 175 111 42;t 82 156 South;a 175 24 175 58;t 180 205 North × Q1 = 42",
+    "b 40 45 120 48 10 / 20;b 200 45 120 48 30 / 100;a 100 95 160 140;a 260 95 200 140;b 100 142 160 48 40 / 120 = 33.3%",
+    "b 30 65 95 70 0 observed;b 132 65 95 70 Blank;b 234 65 95 70 ~ estimate;t 180 175 Different meanings;t 180 195 Check notes and units"
+  ],
+  "depth-data-literacy-why-denominators-matter": [
+    "c 105 100 55;c 105 100 14;a 165 100 205 100;b 210 65 120 70 Events / exposure;t 105 180 Eligible population;t 270 160 Rate",
+    "r 40 60 120 20;r 40 110 280 20;f 40 60 2.4 20;f 40 110 2.8 20;t 110 45 A: 20/1000 = 2%;t 180 95 B: 30/3000 = 1%;t 180 180 More events ≠ higher rate",
+    "l 45 70 310 70;l 45 115 180 115;l 45 160 245 160;d 105 70 5;d 150 115 5;d 225 160 5;t 180 40 Individual observation times;t 180 197 Sum exposure hours, not just people",
+    "b 40 55 130 60 1 / 5 = 20%;b 190 55 130 60 20 / 100 = 20%;t 105 145 One event = 20 pp;t 255 145 One event = 1 pp;t 180 190 Small denominators fluctuate more"
+  ],
+  "depth-data-literacy-understanding-averages": [
+    "r 50 125 45 40;r 105 105 45 60;r 160 85 45 80;r 215 65 45 100;l 35 115 285 115;t 180 45 Sum ÷ count;t 180 195 Mean balances the values",
+    "d 50 105 6;d 110 105 6;d 180 105 9;d 250 105 6;d 310 105 6;l 40 105 320 105;t 50 80 1;t 110 80 3;t 180 80 5;t 250 80 7;t 310 80 9;t 180 150 Middle ordered value",
+    "l 30 125 330 125;d 37 125 4;d 41 125 4;d 44 125 4;d 47 125 4;d 317 125 6;l 44 65 44 120;l 97 125 97 170;t 60 55 Median 4;t 108 187 Mean 20;t 310 105 86;t 180 205 Values: 2, 3, 4, 5, 86",
+    "b 35 45 135 65 Median: typical;b 190 45 135 65 Mean: total / n;r 55 140 250 25;d 90 152 5;d 110 152 5;d 285 152 5;t 180 195 Also report spread and n"
+  ],
+  "depth-data-literacy-how-missing-data-distort-conclusions": [
+    "r 35 45 290 120;l 35 85 325 85;l 35 125 325 125;l 150 45 150 165;t 90 68 Record;t 235 68 Response;t 90 108 A;t 235 108 7;t 90 148 B;t 235 148 Missing;t 180 195 Unobserved is not zero",
+    "c 80 85 40;c 265 85 40;a 120 85 225 85;t 80 85 Invited;t 265 85 Replies;t 80 150 All opinions;t 265 150 Selected opinions;t 180 195 Response can depend on satisfaction",
+    "r 35 70 290 45;f 35 70 139 45;r 174 70 35 45;r 209 70 116 45;t 104 97 48 yes;t 192 97 12;t 267 97 40 missing;t 180 145 Respondents: 48/60 = 80%;t 180 185 Population range: 48%–88%",
+    "l 45 135 315 135;l 175 120 175 150;l 283 120 283 150;r 175 126 108 18;t 175 105 48%;t 283 105 88%;t 180 175 Vary assumptions about missing replies"
+  ],
+  "depth-data-literacy-reading-data-distributions": [
+    "l 40 175 325 175;r 45 145 35 30;r 83 105 35 70;r 121 65 35 110;r 159 45 35 130;r 197 95 35 80;r 235 135 35 40;t 180 200 Counts in intervals",
+    "l 35 80 325 80;l 35 145 325 145;d 155 80 5;d 180 80 5;d 205 80 5;d 55 145 5;d 180 145 5;d 305 145 5;t 180 40 Same center;t 180 190 Different spread",
+    "p M40 170Q70 30 105 70Q145 145 320 170;l 115 170 115 105;l 175 170 175 140;t 100 190 Median;t 180 190 Mean;t 180 35 Right-skewed tail",
+    "l 40 75 320 75;l 40 145 320 145;d 152 75 6;d 180 75 6;d 208 75 6;d 40 145 6;d 180 145 6;d 320 145 6;t 180 40 4, 5, 6;t 180 112 0, 5, 10;t 180 195 Both means = 5"
+  ],
+  "depth-data-literacy-why-data-definitions-matter": [
+    "b 35 45 135 55 Entity;b 190 45 135 55 Eligibility;b 35 120 135 55 Counting rule;b 190 120 135 55 Time window;t 180 205 All four define the metric",
+    "b 35 50 135 75 App opened in 30d;b 190 50 135 75 Task done in 7d;t 180 165 Both called active user;t 180 195 Different counts by design",
+    "l 40 165 320 165;p M40 135L90 120L140 115M180 80L230 70L280 60L320 50;l 160 30 160 180;t 160 20 Definition change;t 180 200 Do not treat the jump as growth",
+    "b 35 45 290 45 Metric contract;b 35 105 90 65 Unit;b 135 105 90 65 Rules;b 235 105 90 65 Owner;t 180 200 Version and publish definitions"
+  ],
+  "depth-data-literacy-understanding-uncertainty-in-dashboards": [
+    "b 35 45 130 60 Sampling;b 195 45 130 60 Measurement;b 35 120 130 60 Delay;b 195 120 130 60 Model error;t 180 205 Sources of uncertainty",
+    "l 35 120 325 120;l 140 90 140 150;l 240 90 240 150;l 140 120 240 120;d 190 120 8;t 140 75 47%;t 190 75 52%;t 240 75 57%;t 180 185 Interval around estimate",
+    "r 45 65 60 100;r 120 65 60 100;r 195 65 60 100;r 270 125 60 40;t 75 185 Mon;t 150 185 Tue;t 225 185 Wed;t 300 185 Today;t 180 40 Today still receiving records",
+    "l 40 135 320 135;l 230 55 230 165;l 145 100 255 100;d 200 100 7;t 230 45 Action threshold;t 180 185 Range crosses threshold: investigate"
+  ],
+  "depth-data-literacy-when-percentages-mislead": [
+    "r 60 120 95 50;r 205 70 95 100;t 107 110 2;t 252 60 4;t 180 195 +2 absolute = +100% relative",
+    "r 55 90 100 80;r 205 70 100 100;t 105 75 20%;t 255 55 25%;t 180 195 +5 percentage points / +25% relative",
+    "r 55 65 100 100;r 205 115 100 50;t 105 52 2%;t 255 102 1%;t 180 195 −1 percentage point / −50% relative",
+    "b 40 45 280 50 Starting value = 0;b 40 120 280 50 Relative change has no defined value;t 180 200 Report absolute change"
+  ],
+  "depth-data-literacy-how-to-build-a-useful-metric": [
+    "b 100 35 160 45 Decision;a 180 80 180 110;b 60 110 240 50 Evidence needed;t 180 195 Choose measure last",
+    "r 35 65 290 60;f 35 65 203 60;t 135 100 Resolved eligible;t 265 100 Other eligible;t 180 165 Resolution rate = resolved / eligible",
+    "b 35 50 130 70 Reward closures;a 165 85 195 85;b 195 50 130 70 Premature closes;t 180 165 Pair speed with reopen rate;t 180 190 And customer outcome",
+    "b 35 50 90 75 Define;b 135 50 90 75 Test;b 235 50 90 75 Monitor;a 125 87 135 87;a 225 87 235 87;t 180 175 Compare with real outcomes"
+  ],
+  "plus-data-literacy-why-missing-values-are-not-zeros": [
+    "b 35 60 130 75 0 = measured;b 195 60 130 75 NA = unknown;t 180 175 Never substitute automatically",
+    "b 35 50 130 65 4 + 6 + 8;b 195 50 130 65 4 + 6 + 8 + 0;t 100 145 /3 = 6;t 260 145 /4 = 4.5;t 180 195 Artificial zero lowers mean",
+    "b 35 50 130 70 No transactions;b 195 50 130 70 Sensor offline;t 100 150 Structural zero;t 260 150 Missing value;t 180 195 Confirm the cause",
+    "b 35 45 130 55 Raw value;b 195 45 130 55 Missing flag;a 100 100 160 140;a 260 100 200 140;b 100 140 160 50 Preserve both"
+  ],
+  "plus-data-literacy-how-to-read-stacked-bar-charts": [
+    "r 40 80 280 55;f 40 80 100 55;r 140 80 70 55;r 210 80 110 55;t 90 112 A;t 175 112 B;t 265 112 C;t 180 180 Total = segment sum",
+    "r 65 60 80 120;f 65 130 80 50;r 65 90 80 40;r 215 60 80 120;f 215 100 80 80;r 215 60 80 40;t 180 35 Middle segments lack common baseline;t 180 205 Compare lengths carefully",
+    "r 40 60 280 40;f 40 60 168 40;r 40 125 280 40;f 40 125 168 40;t 180 45 Each row = 100%;t 180 195 Compare composition not volume",
+    "r 45 65 130 40;f 45 65 78 40;r 45 125 260 40;f 45 125 156 40;t 110 50 30 of 50;t 175 112 60 of 100;t 180 195 Both 60%, different counts"
+  ],
+  "plus-data-literacy-choosing-count-or-rate": [
+    "b 35 55 130 75 Count: workload;b 195 55 130 75 Rate: success;t 180 170 Match question to measure",
+    "r 40 65 70 40;f 40 65 63 40;r 40 125 280 40;f 40 125 224 40;t 110 50 45/50 = 90%;t 180 112 160/200 = 80%;t 180 195 Count and rate tell different stories",
+    "r 35 55 290 90;f 35 55 180 90;t 125 100 Eligible cases;t 270 100 Excluded;t 180 185 Define who can enter denominator",
+    "b 40 55 130 75 160 resolved;b 190 55 130 75 80% resolved;t 180 175 Report count, eligible total and rate"
+  ],
+  "plus-data-literacy-understanding-a-weighted-average": [
+    "c 80 95 20;c 180 95 35;c 280 95 50;t 80 100 1;t 180 100 3;t 280 100 6;t 180 185 Weight determines contribution",
+    "r 40 75 70 45;r 110 75 210 45;t 75 100 10×90;t 215 100 30×70;t 180 155 (900+2100)/40 = 75;t 180 190 Not 80",
+    "b 35 55 135 75 Group size;b 190 55 135 75 Survey weight;t 180 180 Weight must match target population",
+    "c 80 100 15;c 130 100 15;c 180 100 15;c 270 100 55;t 270 100 90%;t 180 185 Dominant weight limits effective information"
+  ],
+  "plus-data-literacy-what-normalization-changes": [
+    "l 40 75 320 75;l 40 145 320 145;t 40 55 20;t 320 55 60;t 40 175 0;t 320 175 1;a 110 80 110 140;t 180 200 Transform to common scale",
+    "l 40 100 320 100;d 110 100 8;t 40 75 20;t 110 75 30;t 320 75 60;t 180 150 (30−20)/(60−20) = 0.25",
+    "l 40 120 320 120;l 180 95 180 145;d 280 120 8;t 180 75 Mean 50;t 280 75 Value 70;t 180 180 z = (70−50)/10 = 2",
+    "b 35 45 130 60 Fit on training;a 165 75 195 75;b 195 45 130 60 Freeze scale;a 260 105 260 145;b 195 145 130 40 Apply to test"
+  ],
+  "plus-data-literacy-reading-a-scatter-plot": [
+    "l 40 170 320 170;l 40 170 40 35;d 90 145 6;d 150 100 6;d 230 65 6;t 180 200 X measurement;t 80 25 Y measurement",
+    "l 40 170 320 170;l 40 170 40 35;d 65 55 5;d 105 105 5;d 145 145 5;d 185 150 5;d 225 125 5;d 275 70 5;t 180 195 Nonlinear relationship",
+    "l 40 170 320 170;l 40 170 40 35;d 70 140 5;d 110 120 5;d 150 100 5;d 190 80 5;d 305 155 8;l 55 150 220 65;l 55 115 310 145;t 250 185 Influential point",
+    "l 40 170 320 170;l 40 170 40 35;d 60 145 5;d 90 155 5;d 120 165 5;c 220 65 5;c 250 75 5;c 280 85 5;t 180 195 Grouping can reverse a pattern"
+  ],
+  "plus-data-literacy-understanding-data-joins": [
+    "b 30 45 125 60 Customer ID 42;b 205 45 125 60 Order ID + 42;a 155 75 205 75;t 180 155 Match on documented keys",
+    "c 140 100 65;c 220 100 65;t 110 100 A only;t 180 100 Match;t 250 100 B only;t 180 190 Inner: match / left: A + match",
+    "b 35 65 100 85 Customer 42;a 135 105 200 55;a 135 105 200 105;a 135 105 200 155;b 200 35 125 40 Order 1;b 200 85 125 40 Order 2;b 200 135 125 40 Order 3;t 180 205 One-to-many produces three rows",
+    "b 35 45 140 55 Unique keys?;b 185 45 140 55 Expected rows?;b 35 120 140 55 Unmatched keys?;b 185 120 140 55 Cardinality?;t 180 205 Validate before use"
+  ],
+  "plus-data-literacy-how-data-cleaning-decisions-matter": [
+    "b 30 40 140 55 Formats;b 190 40 140 55 Units;b 30 115 140 55 Duplicates;b 190 115 140 55 Missing values;t 180 195 Define rule per issue",
+    "b 40 50 280 50 Customer 42 / order A;b 40 115 280 50 Customer 42 / order B;t 180 195 Same customer ≠ duplicate transaction",
+    "b 35 65 130 65 10 lb;a 165 97 195 97;b 195 65 130 65 4.54 kg;t 180 180 Convert units, retain original",
+    "b 30 60 95 70 Raw;a 125 95 135 95;b 135 60 95 70 Rules log;a 230 95 240 95;b 240 60 90 70 Clean;t 180 180 Reproducible transformation"
+  ],
+  "plus-data-literacy-why-correlation-matrices-need-context": [
+    "r 60 40 240 140;l 140 40 140 180;l 220 40 220 180;l 60 87 300 87;l 60 134 300 134;t 100 64 1;t 180 64 .7;t 260 64 −.2;t 100 111 .7;t 180 111 1;t 260 111 .1;t 100 158 −.2;t 180 158 .1;t 260 158 1;t 180 205 Pairwise correlations",
+    "b 35 45 130 55 A–B: n=90;b 195 45 130 55 A–C: n=40;t 180 165 Different missing records;t 180 190 Compare samples before r values",
+    "l 40 170 320 170;l 40 170 40 35;d 65 145 5;d 95 155 5;d 125 165 5;c 210 55 5;c 240 65 5;c 270 75 5;t 180 195 Pooled trend hides within-group trends",
+    "r 65 45 230 130;l 111 45 111 175;l 157 45 157 175;l 203 45 203 175;l 249 45 249 175;l 65 88 295 88;l 65 131 295 131;f 203 88 46 43;t 180 200 Many pairs: chance findings possible"
+  ],
+  "plus-data-literacy-how-to-design-a-dashboard-for-decisions": [
+    "b 35 40 290 50 Primary decision;b 35 105 140 65 Supporting metric;b 185 105 140 65 Supporting metric;t 180 200 Prioritize decision hierarchy",
+    "b 40 40 280 50 Metric + unit + period;l 45 165 315 165;l 45 120 315 120;p M45 145L110 130L175 135L240 100L315 110;t 180 195 Show baseline and trend",
+    "l 35 135 325 135;l 35 80 325 80;p M35 130L100 115L165 125L230 70L320 60;d 230 70 7;t 180 55 Action threshold;t 180 185 Alert needs owner and response",
+    "b 35 55 90 65 Observe;b 135 55 90 65 Decide;b 235 55 90 65 Act;a 125 88 135 88;a 225 88 235 88;p M280 125L280 170L80 170L80 125;t 180 198 Evaluate and revise"
+  ]
+};
+window.LumenSlideArtBatch39Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch39;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch39Render(c,cls,step)||prior(c,cls,step);};})();
