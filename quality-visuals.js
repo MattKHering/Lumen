@@ -1642,3 +1642,143 @@ window.LumenSlideArtBatch08Render=function renderer(c,cls="cover",step=-1){
  const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch08Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* Chemistry: dedicated slide artwork, batch 09. */
+window.LumenSlideArtBatch09={
+  "atoms": [
+    "c 180 105 65;c 180 105 23;d 170 100 7;d 190 110 7;d 116 105 5;d 244 105 5;t 180 30 Neutral helium example;t 180 185 2 protons = 2 electrons;t 180 205 Atomic number 2",
+    "c 90 95 48;c 270 95 48;t 90 78 6 p;t 90 105 6 n;t 270 78 6 p;t 270 105 8 n;t 90 165 Carbon-12;t 270 165 Carbon-14;t 180 200 Same element, different neutrons",
+    "c 90 95 48;c 270 95 48;t 90 80 11 p;t 90 105 11 e;t 270 80 11 p;t 270 105 10 e;a 138 95 222 95;t 180 75 Lose e⁻;t 90 165 Na;t 270 165 Na⁺;t 180 200 Proton count unchanged",
+    "b 25 65 145 55 Protons + neutrons;b 190 65 145 55 Isotope abundances;t 97 150 Mass number;t 262 150 Weighted average;t 180 195 Different mass quantities"
+  ],
+  "chem-bonds": [
+    "c 90 100 40;c 270 100 40;a 130 100 170 100;a 230 100 190 100;t 180 35 Nuclei + electrons interact;t 180 175 Bonded state may be lower energy",
+    "c 135 100 55;c 225 100 55;d 170 95 5;d 190 105 5;t 180 38 Shared electron density;t 180 177 Unequal sharing can be polar",
+    "c 65 60 22;c 125 60 22;c 185 60 22;c 245 60 22;c 305 60 22;c 65 120 22;c 125 120 22;c 185 120 22;c 245 120 22;c 305 120 22;t 65 64 +;t 125 64 −;t 185 64 +;t 245 64 −;t 305 64 +;t 65 124 −;t 125 124 +;t 185 124 −;t 245 124 +;t 305 124 −;t 180 185 Extended electrostatic lattice",
+    "c 60 85 18;c 115 85 32;l 78 85 83 85;t 60 89 H;t 115 89 Cl;c 230 65 22;c 290 65 22;c 230 125 22;c 290 125 22;t 230 69 Na⁺;t 290 69 Cl⁻;t 230 129 Cl⁻;t 290 129 Na⁺;t 90 160 Polar covalent;t 260 160 Ionic solid"
+  ],
+  "ph-scale": [
+    "l 35 105 325 105;d 35 105 5;d 118 105 5;d 180 105 5;d 242 105 5;d 325 105 5;t 35 85 0;t 118 85 4;t 180 85 7;t 242 85 10;t 325 85 14;t 180 155 pH = −log₁₀(aH⁺);t 180 190 Lower pH means higher activity",
+    "r 45 65 260 30;f 45 130 2.6 30;t 175 55 pH 3: 10⁻³;t 140 120 pH 5: 10⁻⁵;t 180 195 Activity ratio = 100",
+    "c 95 95 40;c 265 95 40;t 95 99 H⁺;t 265 99 OH⁻;t 180 100 =;t 180 160 Neutral water: pH ≈ 7 at 25°C;t 180 195 Neutral pH varies with temperature",
+    "b 35 60 290 55 [H⁺] ≈ 10⁻⁴ mol/L;t 180 155 −log₁₀(10⁻⁴) = 4;t 180 195 Dilute ideal approximation"
+  ],
+  "depth-chemistry-what-the-periodic-table-tells-us": [
+    "r 45 45 38 35;r 83 45 38 35;r 121 45 38 35;r 159 45 38 35;r 197 45 38 35;r 235 45 38 35;r 273 45 38 35;r 45 80 38 35;r 83 80 38 35;r 121 80 38 35;r 159 80 38 35;r 197 80 38 35;r 235 80 38 35;r 273 80 38 35;a 45 135 311 135;a 25 45 25 115;t 180 155 Atomic number increases across row;t 180 195 Columns = groups, rows = periods",
+    "b 70 45 220 50 Li: 2,1;b 70 120 220 50 Na: 2,8,1;t 180 200 Both have one valence electron",
+    "c 65 100 42;c 145 100 32;c 225 100 23;c 305 100 15;a 45 45 315 45;t 180 35 Across typical period;t 180 160 Atomic radius tends to decrease;t 180 190 Ionization energy tends to increase",
+    "c 95 100 43;c 265 100 55;d 135 100 5;d 315 100 5;t 95 104 Li;t 265 104 Na;a 135 65 175 40;a 305 65 340 40;t 180 190 Both commonly form +1 ions"
+  ],
+  "depth-chemistry-how-chemical-equations-conserve-matter": [
+    "c 55 80 12;c 85 80 12;c 115 80 12;c 145 80 12;d 75 125 12;d 125 125 12;a 160 100 205 100;c 235 80 12;c 265 80 12;d 250 100 12;c 285 125 12;c 315 125 12;d 300 145 12;t 180 195 4 H and 2 O on each side",
+    "b 25 60 145 55 2 H₂O;b 190 60 145 55 H₂O₂;t 97 150 Two molecules;t 262 150 Different species;t 180 195 Change coefficient, not subscript",
+    "b 20 65 145 55 2H₂ + O₂;a 165 92 195 92;b 195 65 145 55 2H₂O;t 97 145 H:4 O:2;t 267 145 H:4 O:2;t 180 195 Atoms conserved",
+    "b 25 65 95 55 2 mol H₂;b 132 65 95 55 1 mol O₂;b 239 65 95 55 2 mol H₂O;a 227 92 239 92;t 180 175 Stoichiometric ratio 2:1:2"
+  ],
+  "depth-chemistry-how-concentration-changes-solutions": [
+    "r 110 50 140 120;f 110 90 140 80;d 135 120 5;d 175 140 5;d 215 105 5;t 180 40 Solution volume;t 180 195 M = mol solute / L solution",
+    "b 25 65 145 55 0.2 mol;b 190 65 145 55 0.4 L;t 180 160 0.2 / 0.4 = 0.5 mol/L",
+    "r 35 75 100 95;r 225 35 100 135;d 60 120 5;d 85 135 5;d 110 120 5;d 250 80 5;d 275 110 5;d 300 140 5;a 135 110 225 110;t 180 195 Same solute, larger volume",
+    "b 25 65 145 55 100 mL × 2 M;b 190 65 145 55 Final 500 mL;t 180 155 M₂ = 2 × 100 / 500;t 180 195 0.4 M"
+  ],
+  "plus-chemistry-why-water-dissolves-many-salts": [
+    "c 180 90 38;c 130 145 20;c 230 145 20;l 153 116 145 130;l 207 116 215 130;t 180 94 O δ−;t 130 149 H δ+;t 230 149 H δ+;t 180 195 Bent polar molecule",
+    "c 90 105 26;c 270 105 26;t 90 109 +;t 270 109 −;d 90 60 8;d 45 105 8;d 135 105 8;d 90 150 8;c 270 60 8;c 225 105 8;c 315 105 8;c 270 150 8;t 90 185 O ends face +;t 270 185 H ends face −",
+    "b 25 55 145 55 Lattice attraction;b 190 55 145 55 Hydration + entropy;t 180 150 Competing free-energy effects;t 180 195 Solubility varies",
+    "c 65 65 19;c 105 65 19;c 65 105 19;c 105 105 19;t 65 69 +;t 105 69 −;t 65 109 −;t 105 109 +;a 130 85 205 85;c 235 60 18;c 295 130 18;t 235 64 Na⁺;t 295 134 Cl⁻;t 180 195 Dissociated hydrated ions"
+  ],
+  "plus-chemistry-what-a-mole-measures": [
+    "b 55 60 250 70 1 mol;t 180 155 6.02214076 × 10²³;t 180 195 Specified entities, exactly",
+    "b 25 65 145 55 H₂O 1 mol;b 190 65 145 55 ≈18 g;a 170 92 190 92;t 180 175 Mass = amount × molar mass",
+    "b 25 65 145 55 36 g H₂O;b 190 65 145 55 ÷ 18 g/mol;t 180 150 ≈2 mol;t 180 195 ≈1.20 × 10²⁴ molecules",
+    "c 90 95 23;c 136 95 23;l 113 95 113 95;t 90 99 O;t 136 99 O;c 240 95 23;c 295 95 23;t 240 99 O;t 295 99 O;t 113 155 1 mol O₂;t 267 155 2 mol O atoms;t 180 195 Specify counted entity"
+  ],
+  "plus-chemistry-how-gas-pressure-arises": [
+    "r 35 40 290 130;d 65 90 5;d 155 65 5;d 245 115 5;d 300 70 5;a 65 90 35 60;a 155 65 175 40;a 245 115 325 150;a 300 70 325 55;t 180 195 Wall collisions transfer momentum",
+    "l 35 175 325 175;l 35 175 35 30;p M60 35Q95 115 325 155;t 180 40 P ∝ 1/V;t 180 195 Fixed temperature and amount",
+    "r 35 65 140 100;r 225 65 70 100;d 60 95 5;d 100 125 5;d 145 90 5;d 240 95 5;d 260 125 5;d 280 90 5;t 105 45 4 L / 100 kPa;t 260 45 2 L / 200 kPa;t 180 195 Constant temperature",
+    "l 35 175 325 175;l 35 175 35 30;p M35 175L300 45;t 180 35 P ∝ T (kelvin);t 180 195 Fixed V and amount"
+  ],
+  "plus-chemistry-what-polymers-are-made-of": [
+    "c 45 100 15;c 95 100 15;c 145 100 15;c 195 100 15;c 245 100 15;c 295 100 15;l 60 100 80 100;l 110 100 130 100;l 160 100 180 100;l 210 100 230 100;l 260 100 280 100;t 180 60 Repeating structural units;t 180 170 Polymer chain",
+    "b 25 55 145 55 –CH₂–CH₂–;b 190 55 145 55 Amino acid residue;t 97 150 Polyethylene;t 262 150 Protein;t 180 195 Both are polymers",
+    "p M30 60H160M30 100H160M30 140H160M60 60V100M120 100V140M210 60H330M250 60V100H300M280 60V140;t 95 175 Cross-linked;t 270 175 Branched;t 180 205 Architecture affects behavior",
+    "p M25 75H155M25 100H155M25 125H155M205 60Q240 25 275 60T335 60M205 115Q240 80 275 115T335 115;t 90 175 Ordered chains;t 270 175 Disordered chains;t 180 205 Processing changes properties"
+  ],
+  "depth-chemistry-why-reactions-release-or-absorb-heat": [
+    "r 90 55 180 115;a 180 55 180 20;t 180 105 Reaction system;t 180 195 At constant P, qₚ = ΔH",
+    "l 35 175 325 175;p M35 65H125L175 140H325;p M35 140H125L175 65H325;t 80 52 Higher energy;t 270 155 Exothermic;t 265 52 Endothermic;t 180 200 ΔH sign depends on endpoint change",
+    "b 25 65 145 55 −100 kJ/mol;b 190 65 145 55 2 mol reaction;t 180 160 −200 kJ total;t 180 195 Releases 200 kJ",
+    "c 65 85 18;c 110 85 18;l 83 85 92 85;a 130 85 180 85;c 205 65 18;c 205 125 18;t 90 150 Bonded;t 205 150 Separated;t 180 195 Breaking costs energy, forming releases"
+  ],
+  "depth-chemistry-what-oxidation-and-reduction-mean": [
+    "c 90 95 35;c 270 95 35;d 165 95 6;a 125 95 159 95;a 171 95 235 95;t 90 99 Donor;t 270 99 Acceptor;t 90 155 Oxidation;t 270 155 Reduction;t 180 195 Electron transfer",
+    "b 25 65 145 55 Reducing agent;a 170 92 190 92;b 190 65 145 55 Oxidizing agent;t 97 145 Oxidized;t 262 145 Reduced;t 180 195 Coupled processes",
+    "b 25 60 145 55 Zn → Zn²⁺;b 190 60 145 55 Cu²⁺ → Cu;a 170 87 190 87;t 180 50 2 e⁻;t 180 175 Zn 0→+2, Cu +2→0",
+    "b 25 55 95 55 Battery;b 132 55 95 55 Corrosion;b 239 55 95 55 Metabolism;t 180 150 Redox across contexts;t 180 195 Oxidation numbers are formal accounting"
+  ],
+  "depth-chemistry-why-catalysts-change-reaction-rates": [
+    "l 35 175 325 175;p M35 145Q180 -65 325 145;p M35 145Q180 25 325 145;t 180 35 Higher barrier;t 180 85 Lower barrier;t 180 200 Catalyst changes pathway",
+    "l 35 175 325 175;p M35 130Q150 0 325 155;l 35 130 120 130;l 200 155 325 155;a 90 130 90 55;t 90 45 Activation;t 275 145 ΔH endpoints;t 180 200 Barrier ≠ endpoint difference",
+    "l 35 175 325 175;p M35 165Q85 75 160 70H325;p M35 165Q175 90 325 70;t 110 50 Faster approach;t 275 55 Same equilibrium;t 180 200 K unchanged at fixed temperature",
+    "b 25 65 95 55 Exhaust;a 120 92 132 92;r 132 65 95 55;p M140 75H220M140 90H220M140 105H220;a 227 92 239 92;b 239 65 95 55 Products;t 180 175 Catalytic surface promotes reactions"
+  ],
+  "plus-chemistry-how-gases-dissolve-in-liquids": [
+    "r 35 100 290 75;d 75 65 5;d 130 55 5;d 205 65 5;d 275 55 5;d 95 135 5;d 230 140 5;a 130 65 130 135;a 205 135 205 65;t 180 195 Equal transfer rates at equilibrium",
+    "l 35 175 325 175;l 35 175 35 35;p M35 175L300 45;t 180 35 Dissolved concentration;t 180 195 Gas partial pressure →",
+    "r 65 115 90 55;f 205 60 90 110;t 110 105 .02 M;t 250 50 .04 M;t 110 190 1 atm;t 250 190 2 atm;t 180 210 Fixed temperature",
+    "l 35 170 325 170;p M35 50Q160 110 325 145;t 180 30 Many gases in water;t 180 195 Temperature ↑, solubility often ↓"
+  ],
+  "plus-chemistry-why-molecules-have-different-shapes": [
+    "c 180 100 25;c 85 100 18;c 275 100 18;l 103 100 155 100;l 205 100 257 100;a 155 60 105 60;a 205 60 255 60;t 180 35 Electron domains repel;t 180 190 Geometry reduces repulsions",
+    "p M30 90H110M180 90L140 145M180 90L220 145M180 90V45M275 90L250 135M275 90L300 135M275 90V45M275 90L325 75;c 70 90 9;c 180 90 9;c 275 90 9;t 70 175 Linear;t 180 175 Trigonal planar;t 275 175 Tetrahedral (schematic)",
+    "c 180 85 30;c 130 140 18;c 230 140 18;l 160 107 142 126;l 200 107 218 126;d 145 55 5;d 155 48 5;d 205 48 5;d 215 55 5;t 180 35 Two lone pairs;t 180 195 Water is bent",
+    "c 65 95 22;c 180 95 28;c 295 95 22;l 87 95 152 95;l 208 95 273 95;a 150 65 87 65;a 210 65 273 65;t 65 99 O;t 180 99 C;t 295 99 O;t 180 175 Equal opposite bond dipoles cancel"
+  ],
+  "plus-chemistry-understanding-intermolecular-forces": [
+    "c 70 100 22;c 115 100 22;c 245 100 22;c 290 100 22;l 92 100 93 100;l 267 100 268 100;p M137 100H223;t 180 65 Between molecules;t 180 175 Not covalent bonds",
+    "c 85 100 45;c 275 100 45;d 110 90 6;d 115 110 6;d 245 90 6;d 240 110 6;t 85 160 Instant dipole;t 275 160 Induced dipole;t 180 195 Fluctuating electron clouds",
+    "c 90 100 30;c 270 100 30;t 90 104 δ+;t 270 104 δ−;p M120 100H240;t 180 70 Attraction;t 180 165 Hydrogen bonds involve suitable;t 180 185 donor and acceptor groups",
+    "c 90 70 22;c 180 120 22;c 270 70 22;c 90 160 22;c 270 160 22;l 110 80 160 110;l 200 110 250 80;l 110 150 160 130;l 200 130 250 150;t 180 35 Water hydrogen-bond network;t 180 205 Helps explain high boiling point"
+  ],
+  "depth-chemistry-understanding-chemical-equilibrium": [
+    "b 25 65 145 55 Reactants;b 190 65 145 55 Products;a 170 80 190 80;a 190 105 170 105;t 180 150 Equal forward and reverse rates;t 180 195 Concentrations remain constant",
+    "b 35 60 290 55 Q = product activities / reactant activities;t 180 155 Include stoichiometric powers;t 180 195 At equilibrium Q = K",
+    "b 25 55 145 55 Q < K;b 190 55 145 55 Q > K;a 65 145 130 145;a 295 145 230 145;t 97 175 Forward;t 262 175 Reverse",
+    "b 25 65 145 55 A ⇌ B;b 190 65 145 55 K = 4;t 180 150 Q = [B]/[A] = 1;t 180 195 Q < K → net B formation"
+  ],
+  "plus-chemistry-how-buffers-resist-ph-changes": [
+    "b 25 65 145 55 Weak acid HA;b 190 65 145 55 Conjugate A⁻;a 65 45 95 65;a 295 45 265 65;t 65 35 Added base;t 295 35 Added acid;t 180 175 Pair consumes added acid/base",
+    "b 25 60 310 55 pH = pKa + log₁₀([A⁻]/[HA]);t 180 155 Ratio sets approximate pH;t 180 195 Suitable buffer conditions",
+    "r 35 70 145 30;r 180 70 145 30;f 35 135 26.36 30;r 61.36 135 263.64 30;t 180 55 Equal amounts: pH 4.76;t 180 125 A⁻:HA = 10:1;t 180 195 pH ≈5.76",
+    "l 35 175 325 175;l 35 175 35 35;p M35 150Q145 145 210 130T325 35;t 180 105 Buffer region;t 270 40 Capacity exceeded;t 180 195 Added base → (schematic)"
+  ],
+  "plus-chemistry-why-reaction-rates-depend-on-temperature": [
+    "l 35 175 325 175;p M35 175Q85 5 135 175;p M35 175Q150 45 325 175;l 210 45 210 175;t 210 35 Eₐ threshold;t 100 50 Cooler;t 270 95 Warmer;t 180 200 More particles above barrier",
+    "b 25 55 310 55 k = A exp(−Eₐ/RT);t 180 150 T in kelvin;t 180 195 Positive Eₐ: rate constant rises with T",
+    "l 35 175 325 175;p M35 165Q160 155 325 50;p M35 165Q160 160 325 100;t 180 35 Rate constant k (schematic);t 180 195 Higher barrier can mean greater sensitivity",
+    "b 25 55 145 55 Rate constant k;b 190 55 145 55 Concentrations;t 180 150 Overall rate depends on rate law;t 180 195 Mechanisms and denaturation may differ"
+  ],
+  "plus-chemistry-how-chromatography-separates-mixtures": [
+    "r 75 35 210 145;l 75 155 285 155;d 130 155 6;d 180 110 6;d 230 65 6;a 300 155 300 45;t 180 200 Stationary sheet, moving solvent",
+    "r 75 35 210 145;l 75 155 285 155;d 125 130 7;d 235 65 7;t 125 115 Slow;t 235 52 Fast;t 180 200 Stronger retention → shorter travel",
+    "r 95 35 170 150;l 95 165 265 165;l 95 45 265 45;d 180 105 7;l 280 165 280 45;l 80 165 80 105;t 305 105 6 cm;t 52 135 3 cm;t 180 205 Rf = 3/6 = 0.50",
+    "r 65 35 230 145;l 65 155 295 155;d 120 85 6;d 180 85 6;d 240 115 6;t 120 175 Standard;t 180 175 Sample;t 240 175 Other;t 180 205 Matching retention alone is not identity"
+  ]
+};
+window.LumenSlideArtBatch09Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch09;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch09Render(c,cls,step)||prior(c,cls,step);};})();
