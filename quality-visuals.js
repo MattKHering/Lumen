@@ -6904,3 +6904,130 @@ window.LumenSlideArtBatch52={
 };
 window.LumenSlideArtBatch52Render=function(c,cls='cover',step=-1){return window.LumenSlideArtSharedRender(window.LumenSlideArtBatch52,c,cls,step);};
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch52Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* world-history: dedicated slide artwork, batch 53. */
+window.LumenSlideArtBatch53={
+  "ancient-egypt": [
+    "p M150 25Q200 55 165 85T180 165L155 195M180 25L215 15M180 25L145 15;d 145 65 6;d 185 125 6;t 245 100 Nile floodplain;t 180 210 Settlements concentrated around river and delta",
+    "p M35 135Q95 105 155 135T275 135T325 135;p M65 125V65L50 50M65 85L80 50M255 125V65L240 50M255 85L270 50;t 180 35 Seasonal water supports crops;t 180 195 Surpluses support administration and specialists",
+    "p M35 165L180 35L325 165Z;l 95 110 265 110;l 65 140 295 140;t 180 190 Monumental building requires organized labor and resources",
+    "b 35 45 135 55 Tombs;b 190 45 135 55 Settlements;b 35 120 135 55 Inscriptions;b 190 120 135 55 Accounts;t 180 205 Elite monuments alone cannot represent everyone"
+  ],
+  "silk-roads": [
+    "d 45 105 7;d 125 55 7;d 125 155 7;d 235 65 7;d 315 105 7;p M45 105L125 55L235 65L315 105M45 105L125 155L315 105M125 55L125 155;t 180 25 Interconnected routes, not one road",
+    "b 35 45 135 55 Textiles;b 190 45 135 55 Metals / horses;b 35 120 135 55 Technology;b 190 120 135 55 Beliefs;t 180 205 Goods and knowledge moved through intermediaries",
+    "d 45 105 8;d 135 105 8;d 225 105 8;d 315 105 8;a 55 105 125 105;a 145 105 215 105;a 235 105 305 105;t 180 65 Textile changes hands at trading centers;t 180 195 Few merchants traverse entire network",
+    "p M45 105L135 55L225 105L315 55;d 135 55 10;d 225 105 10;t 180 145 Trade, disease and political change;t 180 195 Route use varies over time"
+  ],
+  "printing": [
+    "r 35 55 100 110;r 225 55 100 110;p M45 75H125M45 95H125M45 115H125M235 75H315M235 95H315M235 115H315;a 135 105 225 105;t 180 195 Prepared block or type enables repeated copies",
+    "p M80 45H280V65H200V105H250V125H110V105H160V65H80Z;r 110 145 140 20;t 180 195 Gutenberg combines type, ink and mechanical press",
+    "r 35 55 90 110;r 160 55 75 80;r 180 75 75 80;r 200 95 75 80;a 125 105 160 105;t 80 185 Set type once;t 235 195 Many impressions;t 180 25 Composition cost spread across edition",
+    "r 35 55 290 110;r 95 75 170 70;t 180 110 Readership;t 180 195 Literacy, censorship and distribution constrain access"
+  ],
+  "renaissance": [
+    "r 35 55 130 110;r 195 55 130 110;t 100 105 Classical texts;t 260 105 New readings;a 165 105 195 105;t 180 195 Humanist scholarship develops historical interpretation",
+    "c 180 105 35;c 65 55 20;c 295 55 20;c 180 175 20;l 65 55 150 85;l 295 55 210 85;l 180 140 180 155;t 180 110 Patronage;t 65 25 Courts;t 295 25 Churches;t 180 205 Merchants",
+    "r 35 55 130 110;r 195 55 130 110;l 50 85 150 85;l 50 115 150 115;l 210 85 310 85;l 210 125 310 125;t 100 185 Copy A;t 260 185 Copy B;t 180 205 Compare manuscripts to identify transmission errors",
+    "d 65 65 7;d 180 105 7;d 295 65 7;p M65 65L180 105L295 65M65 65L295 65;t 180 145 Texts, migration and exchange;t 180 195 Regional variation and medieval continuities"
+  ],
+  "decolonization": [
+    "b 35 55 135 65 Colonial rule;a 170 87 190 87;b 190 55 135 65 Independence;t 180 165 Political authority changes",
+    "b 35 45 135 55 Nationalism;b 190 45 135 55 Negotiation;b 35 120 135 55 Armed struggle;b 190 120 135 55 International pressure;t 180 205 Different transition pathways",
+    "l 35 105 325 105;d 95 105 6;d 265 105 6;t 95 85 India 1947;t 265 85 Ghana 1957;t 180 175 Distinct trajectories, partition and displacement in India",
+    "b 35 55 135 65 Political autonomy;b 190 55 135 65 Inherited inequalities;t 180 165 Independence does not automatically end dependency"
+  ],
+  "depth-world-history-the-rise-of-mesopotamian-cities": [
+    "p M95 25Q145 90 95 190M265 25Q215 90 265 190;l 125 80 235 80;l 125 120 235 120;t 55 65 Euphrates;t 305 65 Tigris;t 180 195 Irrigation supports intensive cultivation",
+    "r 35 55 290 110;l 130 55 130 165;l 230 55 230 165;t 82 105 Crafts;t 180 105 Temple;t 277 105 Trade;t 180 195 Uruk's fourth-millennium specialization",
+    "r 95 45 170 130;p M110 70L130 90L110 110M160 70L180 90L160 110M210 70L230 90L210 110;t 180 195 Early tablets track goods and labor",
+    "b 35 45 135 55 Agriculture;b 190 45 135 55 Trade;b 35 120 290 55 Political organization;t 180 205 No universal urbanization sequence"
+  ],
+  "depth-world-history-how-the-indian-ocean-connected-societies": [
+    "p M35 145Q95 115 155 145T275 145T325 145;a 65 65 295 65;a 295 105 65 105;t 180 45 Seasonal monsoon reversal;t 180 195 Sailors plan outward and return voyages",
+    "d 45 105 7;d 135 65 7;d 235 145 7;d 315 105 7;p M45 105L135 65L235 145L315 105;t 45 85 Africa;t 135 45 Arabia;t 235 165 India;t 315 85 SE Asia;t 180 195 Ports link sea routes and inland production",
+    "l 35 105 325 105;d 65 105 6;d 180 105 6;d 295 105 6;t 65 85 Sail;t 180 85 Wait season;t 295 85 Return;t 180 175 Seasonal winds sustain port communities",
+    "c 95 105 45;c 265 105 45;l 140 105 220 105;t 95 110 Diaspora;t 265 110 Local society;t 180 195 Languages and religions circulate without uniformity"
+  ],
+  "depth-world-history-the-mongol-empire-and-eurasian-exchange": [
+    "l 35 105 325 105;d 65 105 6;d 295 105 6;t 65 85 1200s;t 295 85 Khanates;t 180 175 Expansion followed by distinct successor states",
+    "d 45 105 7;d 115 65 7;d 185 105 7;d 255 65 7;d 325 105 7;p M45 105L115 65L185 105L255 65L325 105;t 180 195 Some imperial networks support long-distance movement",
+    "d 45 105 7;d 115 105 7;d 185 105 7;d 255 105 7;d 325 105 7;l 45 105 325 105;t 180 65 Relay posts;t 180 155 Travel credentials;t 180 195 Communication over extensive territory",
+    "b 35 45 135 55 Destruction;b 190 45 135 55 Displacement;b 35 120 135 55 Fragmentation;b 190 120 135 55 Disease;t 180 205 Exchange had uneven costs and security"
+  ],
+  "depth-world-history-the-columbian-exchange": [
+    "r 35 55 100 110;r 225 55 100 110;a 135 85 225 85;a 225 125 135 125;t 85 105 Americas;t 275 105 Afro-Eurasia;t 180 65 Since 1492;t 180 195 Plants, animals, pathogens and people",
+    "a 45 75 315 75;a 315 145 45 145;t 180 55 Maize / potatoes;t 180 165 Wheat / horses / cattle;t 180 195 Two-way biological exchange",
+    "c 95 105 35;c 265 105 35;a 130 105 230 105;t 95 110 Pathogens;t 265 110 Exposure;t 180 195 Disease interacted with coercion and displacement",
+    "b 35 45 135 55 Colonial rule;b 190 45 135 55 Forced labor;b 35 120 290 55 Transatlantic slavery;t 180 205 Exchange was not voluntary or equally beneficial"
+  ],
+  "depth-world-history-how-the-meiji-transformation-reshaped-japan": [
+    "b 35 55 135 65 Tokugawa rule;a 170 87 190 87;b 190 55 135 65 Meiji government;t 180 165 Political transition 1868",
+    "b 35 45 135 55 Domains abolished;b 190 45 135 55 Tax reform;b 35 120 135 55 Education;b 190 120 135 55 Administration;t 180 205 New institutions reorganized state power",
+    "l 35 95 325 95;l 35 115 325 115;p M55 85V125M95 85V125M135 85V125M175 85V125M215 85V125M255 85V125M295 85V125;t 180 65 Railways connect markets;t 180 195 Industrial enterprises support state-building",
+    "b 35 45 135 55 Industry;b 190 45 135 55 Constitution;b 35 120 135 55 Social disruption;b 190 120 135 55 Imperial expansion;t 180 205 Uneven effects across classes and regions"
+  ],
+  "plus-world-history-how-the-han-dynasty-organized-empire": [
+    "l 35 105 325 105;d 65 105 6;d 295 105 6;t 65 85 206 BCE;t 295 85 220 CE;t 180 175 Han rule with an interruption",
+    "b 105 35 150 45 Center;a 180 80 85 125;a 180 80 275 125;b 25 125 120 45 Commanderies;b 215 125 120 45 Counties;t 180 205 Regional kingdoms also existed",
+    "b 35 55 135 65 Salt and iron;b 190 55 135 65 Fiscal records;t 180 165 State economic administration supports power",
+    "b 35 45 135 55 Confucian ideals;b 190 45 135 55 Administrative practice;b 35 120 135 55 Local elites;b 190 120 135 55 Frontier pressure;t 180 205 Central rule had practical limits"
+  ],
+  "plus-world-history-how-the-mauryan-empire-governed-south-asia": [
+    "l 35 105 325 105;d 65 105 6;d 295 105 6;t 65 85 Chandragupta;t 295 85 Ashoka;t 180 175 Expansion from late fourth century BCE",
+    "c 180 105 35;c 65 55 20;c 295 55 20;c 180 175 20;l 65 55 150 85;l 295 55 210 85;l 180 140 180 155;t 180 110 Center;t 65 25 Officials;t 295 25 Revenue;t 180 205 Regional sites",
+    "p M130 175V50H230V175Z;l 145 75 215 75;l 145 100 215 100;l 145 125 215 125;t 180 30 Ashokan inscription;t 180 195 Multiple scripts and languages communicate policy",
+    "b 35 45 135 55 Inscriptions;b 190 45 135 55 Archaeology;b 35 120 290 55 Literary evidence;t 180 205 Proclamations do not establish universal compliance"
+  ],
+  "plus-world-history-how-the-abbasid-era-connected-knowledge-traditions": [
+    "c 180 105 35;c 65 55 20;c 295 55 20;c 65 155 20;c 295 155 20;l 65 55 150 85;l 295 55 210 85;l 65 155 150 125;l 295 155 210 125;t 180 110 Baghdad;t 65 25 Scholars;t 295 25 Texts;t 65 185 Languages;t 295 185 Patrons",
+    "b 35 45 135 55 Greek / Syriac;b 190 45 135 55 Persian / Sanskrit;a 102 100 160 145;a 257 100 200 145;b 95 145 170 45 Arabic translations;t 180 205 Adaptation across traditions",
+    "r 35 55 130 110;r 195 55 130 110;t 100 105 Earlier work;t 260 105 New method;a 165 105 195 105;t 180 195 Criticism and original scholarship beyond copying",
+    "d 65 65 7;d 180 105 7;d 295 65 7;p M65 65L180 105L295 65M65 65L295 65;t 180 145 Libraries and manuscripts;t 180 195 Networks extend beyond one institution"
+  ],
+  "plus-world-history-understanding-medieval-west-african-trade-states": [
+    "d 65 55 7;d 180 105 7;d 295 155 7;p M65 55L180 105L295 155;t 65 35 North Africa;t 295 180 West Africa;t 180 195 Trans-Saharan commerce connects regions",
+    "b 35 45 135 55 Trade taxation;b 190 45 135 55 Territory;b 35 120 290 55 Agricultural resources;t 180 205 Ghana, Mali and Songhai drew on multiple sources",
+    "a 45 75 315 75;a 315 145 45 145;t 180 55 Gold;t 180 165 Salt and goods;t 180 195 Mali linked to wider trade and pilgrimage networks",
+    "r 35 55 130 110;r 195 55 130 110;t 100 105 Commerce;t 260 105 Scholarship;t 180 195 Timbuktu supported both, across changing states"
+  ],
+  "plus-world-history-how-the-inca-road-network-connected-the-andes": [
+    "p M35 165L85 75L135 165L185 45L235 165L285 85L325 165;p M35 145L85 100L135 145L185 75L235 145L285 110L325 145;t 180 195 Andean roads crossed varied terrain",
+    "d 45 105 7;d 135 65 7;d 225 145 7;d 315 105 7;p M45 105L135 65L225 145L315 105;t 180 25 Centers, storehouses, communities;t 180 195 Administrative and resource networks",
+    "d 45 105 7;d 135 105 7;d 225 105 7;d 315 105 7;a 55 105 125 105;a 145 105 215 105;a 235 105 305 105;t 180 65 Relay runners;t 180 195 State stores support distant logistics",
+    "p M35 165L105 75L155 165M205 165L255 75L325 165;l 140 125 220 125;p M140 125Q180 155 220 125;t 180 195 Bridges and stairs adapt routes to terrain"
+  ],
+  "plus-world-history-how-ottoman-rule-linked-regions": [
+    "d 180 105 10;d 65 55 7;d 295 55 7;d 65 155 7;d 295 155 7;l 65 55 180 105;l 295 55 180 105;l 65 155 180 105;l 295 155 180 105;t 180 25 Ottoman imperial regions;t 180 195 Europe, Anatolia, Middle East and North Africa",
+    "b 105 35 150 45 Central authority;a 180 80 85 125;a 180 80 275 125;b 25 125 120 45 Province;b 215 125 120 45 Local elite;t 180 205 Fiscal and legal arrangements changed",
+    "d 180 105 10;d 65 55 6;d 295 55 6;d 65 155 6;d 295 155 6;l 65 55 180 105;l 295 55 180 105;l 65 155 180 105;l 295 155 180 105;t 180 85 Istanbul 1453;t 180 195 Imperial commercial and cultural center",
+    "c 125 105 65;c 235 105 65;t 100 105 Language;t 260 105 Religion;t 180 195 Varied communities and policies across time"
+  ],
+  "plus-world-history-how-maritime-empires-changed-global-exchange": [
+    "d 45 105 7;d 145 55 7;d 215 155 7;d 315 105 7;p M45 105L145 55L315 105M45 105L215 155L315 105;t 180 25 New ocean links;t 180 195 European expansion connects existing networks",
+    "b 35 45 135 55 Ports;b 190 45 135 55 Chartered firms;b 35 120 135 55 Monopolies;b 190 120 135 55 Colonial production;t 180 205 Institutions organize commodity flows",
+    "d 45 105 7;d 180 105 7;d 315 105 7;a 55 105 170 105;a 190 105 305 105;t 45 85 America;t 180 85 Manila;t 315 85 Asian markets;t 180 175 Silver connected Pacific and Atlantic finance",
+    "b 35 45 135 55 Trade revenue;b 190 45 135 55 Coercion;b 35 120 135 55 Dispossession;b 190 120 135 55 Slavery;t 180 205 Identify beneficiaries and those bearing costs"
+  ],
+  "plus-world-history-how-the-haitian-revolution-transformed-slavery-and-empire": [
+    "p M35 165H325M65 165V75M105 165V75M145 165V75M185 165V75M225 165V75M265 165V75;t 180 45 Plantation colony;t 180 195 Saint-Domingue wealth rested on enslaved labor",
+    "l 35 105 325 105;d 65 105 6;d 295 105 6;t 65 85 1791 revolt;t 295 85 1804 independence;t 180 175 Shifting struggle over freedom and colonial rule",
+    "b 35 55 135 65 French control;a 170 87 190 87;b 190 55 135 65 Haiti 1804;t 180 165 First independent Black republic",
+    "c 95 105 35;c 265 105 35;t 95 110 Haiti;t 265 110 World;t 180 165 Challenge to slavery and empire;t 180 195 Diplomatic isolation and economic pressure followed"
+  ],
+  "plus-world-history-how-the-opening-of-the-suez-canal-changed-shipping": [
+    "p M35 50H165V175H35ZM195 50H325V175H195Z;l 180 50 180 175;a 180 65 180 155;t 180 35 Mediterranean;t 180 195 Red Sea;t 180 210 Canal opened 1869, schematic connection",
+    "r 35 65 290 35;r 35 125 174 35;t 180 55 Longer voyage;t 122 115 Canal route;t 180 195 Distance affects fuel, time and inventory",
+    "b 35 45 135 55 Distance;b 190 45 135 55 Transit fees;b 35 120 135 55 Reliability;b 190 120 135 55 Vessel limits;t 180 205 Compare actual route economics",
+    "p M35 55L155 95H205L325 55M35 155L155 115H205L325 155;a 45 105 315 105;t 180 195 Narrow chokepoint concentrates trade and strategic importance"
+  ],
+  "plus-world-history-how-postwar-reconstruction-reshaped-europe": [
+    "p M35 165V85H85V165M105 165V55H155V165M205 165V105H255V165M275 165V75H325V165;p M105 55L155 85M205 105L255 135;t 180 195 Post-1945 damage and shortages",
+    "b 35 45 135 55 Domestic policy;b 190 45 135 55 Marshall Plan 1948;b 35 120 290 55 Economic coordination;t 180 205 Multiple sources of reconstruction",
+    "r 35 55 130 110;r 195 55 130 110;l 180 35 180 185;t 100 105 West;t 260 105 East;t 180 195 Cold War divisions shaped arrangements",
+    "c 95 105 40;c 265 105 40;l 135 105 225 105;t 95 110 Coal;t 265 110 Steel;t 180 195 European cooperation, not uniform recovery"
+  ]
+};
+window.LumenSlideArtBatch53Render=function(c,cls='cover',step=-1){return window.LumenSlideArtSharedRender(window.LumenSlideArtBatch53,c,cls,step);};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch53Render(c,cls,step)||prior(c,cls,step);};})();
