@@ -4476,3 +4476,143 @@ window.LumenSlideArtBatch30Render=function renderer(c,cls="cover",step=-1){
  const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch30Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* Urban Planning: dedicated slide artwork, batch 31. */
+window.LumenSlideArtBatch31={
+  "zoning": [
+    "r 35 45 290 130;l 135 45 135 175;l 235 45 235 175;t 85 105 Housing;t 185 105 Shops;t 280 105 Industry;t 180 195 District rules regulate uses and dimensions",
+    "b 25 55 145 55 Meets standards;b 190 55 145 55 Exception needed;a 97 110 97 145;a 262 110 262 145;t 97 165 Routine approval;t 262 165 Additional review;t 180 195 Local approval processes vary",
+    "r 35 55 130 110;r 195 55 130 110;r 65 85 70 55;r 205 65 50 40;r 265 65 50 40;r 205 115 50 40;r 265 115 50 40;t 100 185 Single dwelling;t 260 185 Four dwellings;t 180 205 Rules can limit legal housing capacity",
+    "r 65 145 90 30;r 205 55 90 120;t 110 135 1 home;t 250 45 4 homes;t 180 195 Legal capacity is not a construction forecast"
+  ],
+  "transit": [
+    "d 45 105 8;d 135 65 8;d 225 105 8;d 315 65 8;l 45 105 135 65;l 135 65 225 105;l 225 105 315 65;l 135 65 135 165;l 225 105 225 165;t 180 195 Connect major destinations with usable frequency",
+    "l 35 105 325 105;d 35 105 6;d 180 105 6;d 325 105 6;t 35 85 0;t 180 85 10 min;t 315 85 20 min;t 180 155 Uniform random arrival;t 180 195 Expected wait = 5 min",
+    "l 35 105 325 105;l 180 35 180 175;d 180 105 9;d 35 105 5;d 325 105 5;d 180 35 5;d 180 175 5;t 180 195 Frequent intersecting routes enable transfers",
+    "r 35 65 130 95;r 195 65 130 95;d 65 100 5;d 95 100 5;d 125 100 5;d 65 130 5;d 95 130 5;d 125 130 5;d 260 110 5;t 100 180 Busy route;t 260 180 Low ridership;t 180 205 Evaluate reliability, access and cost too"
+  ],
+  "walkability": [
+    "d 55 85 7;d 305 85 7;r 145 45 70 105;l 55 85 305 85;p M55 85V175H305V85;t 180 35 Barrier;t 180 195 Straight-line proximity can hide long walking route",
+    "r 35 55 130 110;r 195 55 130 110;l 35 90 165 90;l 35 125 165 125;l 78 55 78 165;l 122 55 122 165;l 195 110 325 110;t 100 185 Connected grid;t 260 185 Large blocks;t 180 205 More connections offer shorter alternative paths",
+    "r 35 75 290 65;l 35 95 325 95;l 35 120 325 120;f 160 75 40 65;t 180 55 Marked crossing;t 180 195 Sidewalks, shade, visibility and accessible curb ramps",
+    "b 25 65 145 55 Direct: 400 m;b 190 65 145 55 Path: 800 m;t 180 155 800/400 = 2;t 180 195 Network detour ratio"
+  ],
+  "depth-urban-planning-how-density-shapes-neighborhoods": [
+    "r 35 45 290 130;l 35 110 325 110;l 145 45 145 175;f 155 55 160 45;t 235 83 Residential;t 85 145 Roads / other;t 180 195 Gross denominator includes nonresidential land",
+    "r 35 55 130 110;r 195 55 130 110;r 45 65 25 90;r 85 65 25 90;r 125 65 25 90;r 225 75 70 70;l 225 98 295 98;l 225 121 295 121;t 100 185 Rowhouses;t 260 185 Apartments;t 180 205 Comparable density can have different forms",
+    "c 180 105 75;d 180 105 8;d 125 75 5;d 235 75 5;d 125 135 5;d 235 135 5;t 180 30 Catchment;t 180 105 Shop;t 180 195 More nearby households can support services",
+    "b 25 45 145 45 300 homes;b 190 45 145 45 Gross 10 ha;b 25 115 145 45 Gross 30/ha;b 190 115 145 45 Net 50/ha;t 180 195 Net denominator: 6 residential hectares"
+  ],
+  "depth-urban-planning-why-mixed-use-development-matters": [
+    "r 75 45 210 130;l 75 85 285 85;l 75 130 285 130;t 180 70 Housing;t 180 110 Offices;t 180 155 Shops;t 180 195 Compatible activities share a building",
+    "d 65 105 8;d 165 105 8;d 295 105 8;l 65 105 165 105;l 165 105 295 105;t 65 85 Home;t 165 85 Shop;t 295 85 Work;t 180 195 Nearby opportunities can shorten trips",
+    "l 35 175 325 175;p M35 165Q105 45 180 155T325 115;p M35 160Q180 35 325 165;t 85 45 Residential peaks;t 205 55 Commercial daytime;t 180 195 Different activity periods can support street life",
+    "r 35 55 290 105;l 35 110 325 110;r 75 120 70 40;r 215 120 70 40;a 110 180 110 160;a 250 180 250 160;t 180 85 Upper housing;t 110 145 Shop entry;t 250 145 Service entry;t 180 205 Design frontage and manage incompatible flows"
+  ],
+  "depth-urban-planning-how-parking-requirements-affect-development": [
+    "r 35 55 130 110;r 195 55 130 110;r 45 65 50 40;r 45 115 50 40;r 205 65 50 40;r 265 65 50 40;r 205 115 50 40;r 265 115 50 40;t 100 185 Two spaces;t 260 185 Four spaces;t 180 205 Illustrative mandate scales with dwelling count",
+    "r 35 45 290 130;r 45 55 130 110;r 185 55 130 110;l 185 90 315 90;l 185 125 315 125;t 110 110 Building;t 250 110 Parking;t 180 195 Surface spaces compete for site area",
+    "l 35 175 325 175;r 65 95 90 80;r 205 45 90 130;t 110 85 Near transit;t 250 35 Car-dependent;t 180 195 Demand varies with context and pricing",
+    "r 35 75 290 50;l 130 75 130 125;l 230 75 230 125;t 82 105 Minimum;t 180 105 Flexible;t 277 105 Maximum;t 180 55 Different policy constraints;t 180 195 Removing a minimum does not prohibit parking"
+  ],
+  "depth-urban-planning-understanding-complete-streets": [
+    "r 35 55 290 110;l 35 80 325 80;l 35 105 325 105;l 35 140 325 140;t 180 72 Sidewalk;t 180 97 Cycle space;t 180 125 Travel / transit;t 180 156 Sidewalk;t 180 195 Accommodate multiple users",
+    "p M35 65H165M35 145H165M195 85H325M195 125H325;l 35 105 165 105;t 100 45 Arterial;t 260 65 Local street;t 180 195 Street treatments depend on context",
+    "r 35 55 290 110;r 155 90 50 40;f 155 90 50 40;a 180 35 180 90;a 180 130 180 185;t 180 80 Refuge;t 180 205 Split crossing reduces continuous exposure",
+    "b 25 45 145 45 Injury outcomes;b 190 45 145 45 Access;b 25 115 145 45 Travel operation;b 190 115 145 45 Comfort;t 180 195 Evaluate all modes rather than vehicle flow alone"
+  ],
+  "depth-urban-planning-why-public-spaces-matter": [
+    "r 35 55 290 110;c 100 95 25;c 180 125 20;c 260 95 25;t 100 100 Rest;t 180 130 Play;t 260 100 Meet;t 180 195 Shared destinations support diverse activities",
+    "r 35 55 290 110;r 65 115 90 15;c 110 75 30;r 225 115 70 15;t 110 40 Shade;t 260 145 Seating;t 180 195 Weather protection and maintenance affect comfort",
+    "r 105 45 150 130;a 35 105 105 105;a 255 105 325 105;a 180 175 180 195;t 180 105 Plaza;t 180 25 Connected entrances;t 180 215 Accessible paths link surrounding streets",
+    "l 35 175 325 175;r 65 125 55 50;r 155 75 55 100;r 245 100 55 75;t 92 195 AM;t 182 195 Noon;t 272 195 PM;t 180 35 Observe users by time and activity"
+  ],
+  "depth-urban-planning-how-cities-manage-stormwater": [
+    "r 35 100 130 60;r 195 100 130 60;a 65 35 65 100;a 95 35 95 100;a 225 35 225 100;a 255 35 255 100;a 165 115 180 115;a 255 115 255 155;t 100 185 Pavement: runoff;t 260 185 Soil: infiltration;t 180 205 Impervious surface reduces infiltration",
+    "p M35 85H95Q180 195 265 85H325;l 95 115 265 115;a 265 115 325 115;t 180 65 Temporary ponding;t 180 195 Controlled outlet releases runoff gradually",
+    "p M35 105H110Q180 180 250 105H325;p M140 130V80L125 70M140 100L155 70M210 130V80L195 70M210 100L225 70;a 180 135 180 175;t 180 45 Rain garden;t 180 195 Store, infiltrate and provide overflow",
+    "b 25 65 145 55 Area 1,000 m²;b 190 65 145 55 Rain .020 m;t 180 155 1,000×.020=20 m³;t 180 195 Before infiltration and storage losses"
+  ],
+  "depth-urban-planning-what-transit-oriented-development-means": [
+    "c 180 105 75;d 180 105 10;r 105 65 40 30;r 215 65 40 30;r 105 125 40 30;r 215 125 40 30;t 180 105 Station;t 180 195 Mix homes, jobs and services near useful transit",
+    "d 55 105 8;d 305 105 8;r 145 45 70 110;p M55 105V175H305V105;t 55 85 Home;t 305 85 Station;t 180 195 Barriers shrink practical walking catchment",
+    "r 35 55 130 110;r 195 55 130 110;r 45 65 110 90;r 205 65 45 90;r 260 65 55 90;t 100 185 Parking-dominant;t 260 185 Building-focused;t 180 205 Land use affects ridership opportunity, not affordability alone",
+    "b 25 45 145 45 Job access;b 190 45 145 45 Housing cost;b 25 115 145 45 Service frequency;b 190 115 145 45 Travel behavior;t 180 195 Compare outcomes rather than proximity alone"
+  ],
+  "plus-urban-planning-how-street-networks-influence-route-choice": [
+    "d 55 55 7;d 180 55 7;d 305 55 7;d 55 155 7;d 180 155 7;d 305 155 7;p M55 55H305V155H55V55M180 55V155;t 180 195 Nodes connect links with travel costs",
+    "d 35 105 6;d 325 105 6;p M35 105L180 65L325 105M35 105L180 165L325 105;t 180 45 Short, slow route;t 180 185 Longer, faster route;t 180 205 Optimize distance or time",
+    "r 35 55 130 110;r 195 55 130 110;l 35 110 165 110;l 100 55 100 165;p M195 110H255V55M255 110V165;t 100 185 Multiple paths;t 260 185 Dead ends;t 180 205 Connectivity affects alternatives and through traffic",
+    "b 25 65 145 55 600 m / 9 min;b 190 65 145 55 900 m / 6 min;t 97 150 Shorter distance;t 262 150 Shorter time;t 180 195 Best path depends on chosen metric"
+  ],
+  "plus-urban-planning-how-urban-heat-islands-form": [
+    "r 35 125 130 40;r 195 125 130 40;a 100 35 100 125;a 260 35 260 125;a 100 125 100 65;t 100 185 Dark pavement;t 260 185 Light surface;t 180 205 Absorbed sunlight stores heat in urban materials",
+    "p M100 175V80L65 55M100 95L135 55;c 100 60 30;r 195 145 130 30;a 100 35 100 15;t 100 195 Tree shade / ET;t 260 195 Pavement;t 180 215 Evaporation removes heat",
+    "r 35 45 70 130;r 255 45 70 130;l 105 175 255 175;a 125 75 235 75;a 180 175 180 95;t 180 35 Street canyon;t 180 195 Geometry affects wind, shade and radiation",
+    "r 35 125 290 40;d 95 125 7;d 265 75 7;l 265 75 265 125;t 95 105 Surface reading;t 265 55 Air reading;t 180 195 Compare same measurement type and conditions"
+  ],
+  "plus-urban-planning-why-street-trees-need-careful-design": [
+    "p M180 175V90M180 110L145 65M180 115L215 65;c 180 70 60;l 35 175 325 175;t 180 25 Canopy intercepts light and rain;t 180 205 Healthy growth determines shade benefit",
+    "r 35 95 130 80;r 195 95 130 80;p M100 35V95L65 135M100 95L135 135M260 35V95L220 155M260 95L300 155;t 100 185 Small pit;t 260 185 Larger root zone;t 180 205 Soil volume and aeration affect roots",
+    "p M100 175V100M100 110L75 80M100 110L125 80;c 100 85 35;l 35 35 325 35;r 220 125 100 50;t 180 25 Overhead wires;t 270 115 Traffic sightline;t 180 195 Match species to available clearance and climate",
+    "c 70 100 18;c 180 100 35;c 290 100 55;t 70 165 Planted;t 180 165 Established;t 290 165 Mature;t 180 195 Measure survival and canopy, not planting count alone"
+  ],
+  "plus-urban-planning-understanding-inclusionary-housing-policies": [
+    "r 35 65 290 85;l 93 65 93 150;l 151 65 151 150;l 209 65 209 150;l 267 65 267 150;f 35 65 58 85;t 64 108 Affordable;t 210 108 Other units;t 180 195 Illustrative requirement, terms vary locally",
+    "r 35 55 130 110;r 195 55 130 110;f 35 55 65 110;f 260 55 65 110;t 100 185 On-site;t 260 185 Off-site;t 180 205 Location and delivery mechanism affect outcomes",
+    "r 65 65 90 105;r 205 85 90 85;t 110 55 Revenues;t 250 75 Costs;t 180 195 Bonuses and subsidies may change feasibility",
+    "l 35 175 325 175;r 65 95 90 80;r 205 65 90 110;t 110 85 Affordable units;t 250 55 Total units;t 180 195 Compare delivery and duration against counterfactual"
+  ],
+  "plus-urban-planning-how-land-value-capture-works": [
+    "d 180 105 9;c 180 105 65;c 180 105 85;t 180 105 Station;t 180 25 Access may raise nearby land value;t 180 205 Uplift varies by project and location",
+    "b 25 65 145 55 Land value uplift;a 170 92 190 92;b 190 65 145 55 Public revenue;t 180 155 Tax, assessment or contribution;t 180 195 Legal instruments differ by jurisdiction",
+    "l 35 175 325 175;p M35 155L145 110L325 45;p M35 155L145 110L325 85;t 270 35 Observed;t 275 100 Counterfactual;t 180 195 Difference estimates project-associated uplift",
+    "b 25 45 145 45 Owners;b 190 45 145 45 Developers;b 25 115 145 45 Occupants;b 190 115 145 45 Public services;t 180 195 Timing and feasibility affect who bears costs"
+  ],
+  "plus-urban-planning-how-planners-evaluate-development-impact": [
+    "r 35 55 130 110;r 195 55 130 110;r 55 75 90 70;r 205 65 110 90;t 100 185 Baseline;t 260 185 Proposal;t 180 205 Compare against plausible future without project",
+    "r 35 65 290 40;r 35 125 290 40;f 35 125 145 40;t 180 55 Proposed total demand;t 107 150 Existing demand;t 252 150 Added;t 180 195 Incremental demand = proposed − displaced demand",
+    "r 35 55 130 110;r 195 55 130 110;p M35 105H165M195 105H325M260 55V165;a 165 105 195 105;t 100 185 Original;t 260 185 Mitigation;t 180 205 Check residual impacts and feasibility",
+    "l 35 175 325 175;p M35 135L325 45;p M35 135L325 105;p M35 135L325 165;t 180 25 Forecast scenarios;t 180 195 Monitor actual outcomes and document assumptions"
+  ],
+  "plus-urban-planning-what-floor-area-ratio-describes": [
+    "r 55 65 250 105;r 100 85 160 65;t 180 118 Building footprint;t 180 55 Site area;t 180 195 FAR counts floor area across all levels",
+    "r 35 50 130 120;l 35 80 165 80;l 35 110 165 110;l 35 140 165 140;r 195 90 130 80;l 195 130 325 130;t 100 185 4×1,000 m²;t 260 185 2×2,000 m²;t 180 205 Both 4,000/2,000=FAR 2",
+    "r 35 45 130 130;r 195 45 130 130;r 75 65 50 85;r 205 95 110 55;t 100 195 Taller narrow form;t 260 195 Lower wide form;t 180 25 Same FAR can produce different massing",
+    "r 35 55 290 110;r 95 75 170 70;l 35 85 325 85;t 180 45 Height limit;t 180 135 Setback envelope;t 180 195 Other limits can prevent maximum FAR"
+  ],
+  "plus-urban-planning-how-setbacks-shape-street-space": [
+    "r 35 45 290 130;r 95 75 170 70;l 35 65 95 65;l 265 65 325 65;l 180 145 180 175;t 65 55 Side;t 295 55 Side;t 180 160 Front;t 180 195 Distance from property line to building",
+    "r 35 55 130 110;r 195 55 130 110;r 45 65 110 85;r 215 65 90 55;l 35 175 325 175;t 100 195 Shallow setback;t 260 195 Deep setback;t 180 25 Street edge changes with building placement",
+    "r 35 65 40 110;r 285 65 40 110;l 75 155 285 155;l 75 145 75 165;l 285 145 285 165;t 180 145 Width W;t 55 55 H;t 180 195 Wider street space increases W/H",
+    "r 35 45 290 130;r 95 75 170 70;a 35 105 95 105;a 265 105 325 105;t 180 35 Clearance around building;t 180 195 Balance daylight, access, privacy and street form"
+  ],
+  "plus-urban-planning-understanding-neighborhood-service-accessibility": [
+    "c 180 105 75;d 180 105 7;d 125 75 5;d 235 75 5;d 180 165 5;t 180 30 Travel-time catchment;t 180 195 Count reachable opportunities, not district boundaries",
+    "d 55 85 7;d 305 85 7;r 145 45 70 105;p M55 85V175H305V85;t 180 25 River or restricted crossing;t 180 195 Network route replaces misleading straight-line buffer",
+    "c 180 105 80;c 180 105 45;d 155 90 5;d 200 120 5;d 120 65 5;d 245 85 5;d 180 170 5;t 180 15 30 min outer area;t 180 195 2 clinics within 15 min, 5 within 30 min",
+    "r 65 65 90 105;r 205 115 90 55;t 110 55 Access by car;t 250 105 Access by foot;t 180 195 Average can obscure mode and mobility disparities"
+  ],
+  "plus-urban-planning-how-community-engagement-informs-planning": [
+    "d 65 65 7;d 65 145 7;d 295 65 7;d 295 145 7;c 180 105 40;a 72 65 143 90;a 72 145 143 120;a 288 65 217 90;a 288 145 217 120;t 180 105 Plan;t 180 195 Local knowledge reveals unrecorded barriers",
+    "b 25 45 145 45 Meetings;b 190 45 145 45 Surveys;b 25 115 145 45 Interviews;b 190 115 145 45 Accessible formats;t 180 195 Different approaches reach different participants",
+    "r 35 55 130 110;r 195 55 130 110;d 55 75 5;d 85 75 5;d 115 75 5;d 55 105 5;d 85 105 5;d 115 105 5;d 55 135 5;d 85 135 5;d 115 135 5;d 225 75 5;d 255 75 5;t 100 185 Population;t 260 185 Attendees;t 180 205 Self-selection can distort representation",
+    "b 25 65 95 55 Input;a 120 92 132 92;b 132 65 95 55 Alternatives;a 227 92 239 92;b 239 65 95 55 Decision;a 285 120 285 155;a 285 155 72 155;a 72 155 72 120;t 180 195 Explain how input changed decisions"
+  ]
+};
+window.LumenSlideArtBatch31Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch31;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch31Render(c,cls,step)||prior(c,cls,step);};})();
