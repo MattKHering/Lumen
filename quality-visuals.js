@@ -2342,3 +2342,143 @@ window.LumenSlideArtBatch13Render=function renderer(c,cls="cover",step=-1){
  const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch13Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* Geography: dedicated slide artwork, batch 14. */
+window.LumenSlideArtBatch14={
+  "maps": [
+    "c 90 100 55;p M35 100H145M90 45Q55 100 90 155M90 45Q125 100 90 155;r 205 55 125 90;l 205 85 330 85;l 205 115 330 115;l 247 55 247 145;l 289 55 289 145;a 145 100 205 100;t 180 195 Curved Earth to flat coordinates",
+    "r 35 45 290 130;l 35 60 325 60;l 35 90 325 90;l 35 105 325 105;l 35 120 325 120;l 35 150 325 150;l 107 45 107 175;l 180 45 180 175;l 253 45 253 175;t 180 35 Polar areas stretch;t 180 195 Mercator preserves local angles",
+    "r 55 65 70 70;p M210 80L308 80L280 130L182 130Z;t 90 155 Square: area 4,900;t 245 155 Same area: 98 × 50;t 180 195 Equal-area projections may change shape",
+    "b 25 55 95 55 Navigation;b 132 55 95 55 Area compare;b 239 55 95 55 Local design;t 180 155 Choose projection for purpose;t 180 195 Centering a region can limit distortion"
+  ],
+  "depth-geography-latitude-and-longitude": [
+    "c 180 105 75;p M105 105H255M120 65Q180 85 240 65M120 145Q180 125 240 145;t 180 30 90°N;t 180 190 90°S;t 280 109 0°;t 180 205 Parallels measure N/S angle",
+    "c 180 105 75;p M180 30Q105 105 180 180M180 30Q255 105 180 180M180 30V180;t 180 20 Pole;t 180 195 Meridians converge at poles",
+    "c 180 100 75;l 105 100 255 100;p M180 25Q105 100 180 175;d 128 55 6;t 110 40 45°N;t 110 150 90°W;t 180 195 ~111 km per degree latitude",
+    "r 25 55 310 100;l 25 85 335 85;l 25 125 335 125;l 90 55 90 155;l 270 55 270 155;t 180 75 At equator: 111 km;t 180 115 At 60°: 55.5 km;t 180 195 111 × cos60° = 55.5 km"
+  ],
+  "depth-geography-reading-contour-maps": [
+    "c 180 105 75;c 180 105 50;c 180 105 25;t 245 115 100 m;t 215 105 120 m;t 180 105 140 m;t 180 195 Contour interval: 20 m",
+    "p M35 175L45 45M50 175L60 45M65 175L75 45M80 175L90 45M155 175L165 45M215 175L225 45M275 175L285 45M335 175L345 45;t 65 195 Steep;t 245 195 Gentle;t 180 25 Same interval and map scale",
+    "p M25 70L180 35L335 70M25 110L180 75L335 110M25 150L180 115L335 150;a 180 45 180 175;t 180 195 Valley contours point upstream",
+    "p M50 175H310L310 75Z;l 50 150 115 150;l 115 125 180 125;l 180 100 245 100;t 180 195 Run 400 m;t 325 125 Rise 80 m;t 180 215 Grade = 80/400 = 20%"
+  ],
+  "depth-geography-why-time-zones-exist": [
+    "c 180 105 65;l 180 40 180 170;l 115 105 245 105;a 180 40 225 55;c 315 105 18;t 180 20 360° / 24 h;t 180 195 Earth rotates ~15° per hour",
+    "r 35 45 290 130;l 107 45 107 175;l 180 45 180 175;l 253 45 253 175;p M175 45L195 75L170 110L190 145L180 175;t 180 35 Ideal vs legal zone boundary;t 180 195 Political borders bend time zones",
+    "b 25 65 145 55 30° longitude;b 190 65 145 55 15° per hour;t 180 155 30 / 15 ≈ 2 hours;t 180 195 Local solar time, not official clocks",
+    "l 180 35 180 175;a 100 85 260 85;a 260 130 100 130;t 90 70 Westward + day;t 265 150 Eastward − day;t 180 205 Date Line conventions, seasonal clock rules vary"
+  ],
+  "depth-geography-reading-river-basins": [
+    "p M35 45L110 35L180 55L250 35L325 45L280 100L180 175L80 100Z;p M80 75L180 145L180 175M280 75L180 145M135 55L135 115M225 55L225 115;d 180 175 5;t 180 195 Common outlet;t 180 25 Divide follows high ground",
+    "p M35 45L180 135L180 175M325 45L180 135M90 35L90 78M270 35L270 78;a 180 145 180 175;t 180 195 Tributaries increase upstream contributing area",
+    "p M25 70L180 35L335 70M25 110L180 75L335 110M25 150L180 115L335 150;a 180 45 180 175;t 180 195 Contour V points toward upstream, flow down",
+    "p M25 35L180 25L335 35L275 125L180 180L85 125Z;p M45 50L180 45L180 125L85 100Z;p M80 65L180 125L180 180M280 65L180 125;t 180 205 Tributary basin nested inside main basin"
+  ],
+  "depth-geography-how-deserts-form": [
+    "r 65 135 90 35;f 205 50 90 120;t 110 125 Rainfall;t 250 40 Water demand;t 180 195 Desert: low precipitation relative to demand",
+    "c 180 105 75;p M180 35Q250 55 240 105Q230 140 180 175M180 35Q110 55 120 105Q130 140 180 175;a 245 65 245 115;a 115 65 115 115;t 180 28 Subtropical descent near 30°;t 180 195 Compression warms and dries air",
+    "p M25 170L180 45L335 170;a 65 125 155 60;a 205 60 300 145;d 100 95 4;d 120 80 4;d 140 65 4;t 90 185 Wet windward;t 270 185 Dry lee;t 180 205 Rain shadow",
+    "r 25 115 130 60;p M155 115H335V175H155Z;a 95 60 180 60;t 90 145 Cold current;t 245 145 Inland;t 180 195 Stable coastal air and inland distance"
+  ],
+  "plus-geography-how-latitude-affects-daylight": [
+    "c 180 105 65;l 155 45 205 165;l 115 105 245 105;a 25 65 115 65;a 25 105 115 105;a 25 145 115 145;t 180 30 Tilt ≈23.4°;t 180 195 Northern hemisphere tilted toward Sun",
+    "l 35 175 325 175;p M35 105H325;p M35 140Q107 35 180 140T325 140;t 180 95 Equator ~12 h;t 180 30 High latitude varies strongly;t 180 195 Seasonal daylight",
+    "c 180 105 65;l 155 45 205 165;a 25 65 115 65;a 25 105 115 105;a 25 145 115 145;t 270 75 North longer;t 270 150 South shorter;t 180 195 June solstice",
+    "c 180 105 65;l 180 40 180 170;a 25 65 115 65;a 25 105 115 105;a 25 145 115 145;t 180 25 Equinox schematic;t 180 195 Nearly equal day and night"
+  ],
+  "plus-geography-why-rivers-create-deltas": [
+    "p M35 80H140L325 45M35 120H140L325 165;a 45 100 130 100;a 140 100 220 100;d 240 85 4;d 260 110 4;d 285 125 4;t 180 195 River spreads, velocity drops, sediment settles",
+    "p M170 30V100L75 175M170 100L180 175M170 100L285 175M170 100L125 175M170 100L235 175;l 25 175 335 175;t 180 20 River;t 180 195 Distributaries build delta plain",
+    "p M180 35V105L80 165M180 105L280 165;a 45 150 115 150;a 315 150 245 150;t 180 20 River supply;t 180 195 Waves and tides redistribute sediment",
+    "p M25 100H140L180 165H335;l 110 65 110 135;a 60 95 95 95;a 260 100 260 65;t 110 50 Dam traps sediment;t 260 85 Relative sea-level rise;t 180 195 Deposition may not keep pace"
+  ],
+  "plus-geography-how-islands-develop": [
+    "p M25 95L110 75L175 135L240 75L335 95L335 175H25Z;l 25 105 335 105;t 70 65 Mainland;t 275 65 Island;t 180 195 Rising sea separates continental land",
+    "p M25 175H335M75 175L180 35L285 175;l 25 105 335 105;t 180 25 Volcanic summit;t 180 195 Submarine eruptions build above sea level",
+    "c 180 100 75;c 180 100 48;t 180 105 Lagoon;t 180 18 Reef ring;t 180 195 Atoll develops around subsiding foundation",
+    "p M35 165L95 45L155 165M205 165L265 105L325 165;l 25 125 335 125;t 95 35 Higher island;t 265 95 Lower island;t 180 195 Erosion, subsidence and sea level reshape land"
+  ],
+  "plus-geography-how-mountain-passes-shape-movement": [
+    "p M25 155L90 40L180 115L270 35L335 155;a 180 165 180 115;t 180 100 Pass;t 180 195 Low crossing between peaks",
+    "p M25 175L95 45L140 90L190 70L335 175;p M35 175L75 130L110 130L125 90L150 90L175 80;t 180 30 Travel costs include grade and curvature;t 180 200 Low pass may have difficult access",
+    "p M35 35L180 100L325 35M35 165L180 100L325 165;d 180 100 8;t 180 75 Pass;t 180 195 Roads converge at limited crossings",
+    "p M35 35L180 100L325 35M35 165L180 100L325 165;p M160 80L200 120M200 80L160 120;t 180 75 Winter closure;t 180 195 Seasonal disruption changes travel cost"
+  ],
+  "depth-geography-what-shapes-climate-regions": [
+    "c 180 105 75;a 25 105 105 105;a 25 65 120 65;a 25 145 120 145;t 180 20 Sun angle varies by latitude;t 180 195 Latitude affects solar input, not climate alone",
+    "r 25 70 150 100;p M175 70H335V170H175Z;a 45 100 150 100;a 150 135 45 135;t 100 55 Ocean currents;t 255 120 Land;t 180 195 Oceans moderate coastal temperatures",
+    "p M25 175L180 45L335 175;a 65 135 155 60;d 100 95 4;d 120 80 4;t 90 190 Windward;t 275 190 Lee;t 180 205 Elevation and relief alter temperature and rain",
+    "l 25 170 165 170;l 195 170 335 170;r 35 85 25 85;r 75 100 25 70;r 115 90 25 80;r 205 45 25 125;r 245 145 25 25;r 285 120 25 50;t 95 190 Wet regime;t 265 190 Seasonal dry;t 180 30 Climate classes use long-term patterns"
+  ],
+  "depth-geography-how-borders-are-drawn": [
+    "r 35 45 290 130;p M160 45Q205 75 160 105T160 175;l 260 45 260 175;t 100 100 Region A;t 210 100 B;t 292 100 C;t 180 195 River boundary vs surveyed line",
+    "r 35 45 290 130;l 180 45 180 175;t 180 30 Surveyed boundary;t 180 195 Straight lines may reflect negotiated decisions",
+    "l 180 35 180 175;a 65 75 295 75;a 295 130 65 130;t 180 195 Jurisdiction line may allow or restrict crossings",
+    "r 35 45 290 130;p M160 45L195 175M195 45L160 175;t 180 30 Different claimed boundaries;t 180 195 Distinguish claims, control, and recognition"
+  ],
+  "depth-geography-how-scale-changes-maps": [
+    "l 65 105 295 105;l 65 95 65 115;l 295 95 295 115;t 180 85 Map: 1 cm;t 180 150 Ground: 50,000 cm = 500 m;t 180 195 Scale 1:50,000",
+    "r 25 45 145 130;r 190 45 145 130;p M35 145L90 70L155 100M35 95H150M75 55V165;p M200 145L255 70L320 100;t 97 195 1:10,000;t 262 195 1:1,000,000;t 180 25 Larger scale shows more detail",
+    "p M25 55L45 75L65 60L85 100L105 80L125 120L145 95L165 145M195 55L250 90L290 110L335 145;t 95 175 Detailed coast;t 265 175 Generalized;t 180 205 Smaller-scale map simplifies detail",
+    "l 45 105 325 105;l 45 95 45 115;l 325 95 325 115;t 180 85 4 cm on map;t 180 150 4 × 25,000 = 100,000 cm;t 180 195 1 km on ground"
+  ],
+  "plus-geography-understanding-coastal-erosion": [
+    "p M25 130H190L220 50H335M25 145H190L210 165H335;p M25 100Q45 75 65 100T105 100T145 100;a 145 100 205 100;t 275 40 Cliff;t 180 195 Wave action and weathering weaken rock",
+    "p M35 45H165L200 90L165 135H35;p M320 45Q260 75 225 90Q260 105 320 135;a 280 90 205 90;t 100 30 Resistant headland;t 180 195 Refraction can focus wave energy",
+    "a 35 85 145 85;a 215 85 325 85;r 145 65 70 80;t 90 70 Input;t 270 70 Output;t 180 165 Beach sediment budget;t 180 195 Long-term deficit can shrink beach",
+    "l 65 55 65 160;l 185 55 185 160;a 65 105 185 105;t 125 90 12 m inland;t 65 40 Survey 1;t 185 40 Survey 2;t 180 195 12 m / 6 years = 2 m/year"
+  ],
+  "plus-geography-reading-land-use-maps": [
+    "r 25 55 145 95;r 190 55 145 95;l 35 75 160 75;l 35 100 160 100;l 200 75 325 75;l 200 100 325 100;t 97 175 Park;t 262 175 Pasture;t 180 195 Similar grass cover, different human uses",
+    "r 35 45 290 130;l 35 90 325 90;l 35 135 325 135;l 130 45 130 175;l 230 45 230 175;t 82 70 Forest;t 180 70 Housing;t 277 70 Crops;t 180 115 Mixed-use;t 180 195 Classification depends on source and definitions",
+    "r 65 70 80 100;f 215 45 80 125;t 105 60 40 km²;t 255 35 50 km²;t 180 195 +10 km² = 25% increase",
+    "r 25 55 145 95;r 190 55 145 95;l 25 100 170 100;l 190 100 335 100;l 95 55 95 150;l 260 55 260 150;d 80 85 5;d 275 125 5;t 97 175 Zoning;t 262 175 Actual use;t 180 195 Ground checks reveal discrepancies"
+  ],
+  "plus-geography-why-cities-develop-at-river-crossings": [
+    "p M150 25Q130 100 150 195M210 25Q230 100 210 195;l 25 105 335 105;r 145 95 70 20;t 180 85 Bridge;t 180 210 Routes converge at crossing",
+    "p M150 25Q130 100 150 195M210 25Q230 100 210 195;l 25 105 335 105;r 95 65 35 25;r 230 125 35 25;t 100 55 Market;t 270 160 Warehouse;t 180 205 Transfer between land and river routes",
+    "p M25 150H335M120 150L150 80H210L240 150;l 25 115 335 115;t 180 70 Bridge approach;t 180 105 Flood level;t 180 195 Flood risk and bank stability affect suitability",
+    "p M150 25Q130 100 150 195M210 25Q230 100 210 195;l 25 75 335 75;l 25 155 335 155;d 125 75 8;d 235 155 8;t 95 55 Old town;t 265 140 New bypass;t 180 210 Network changes can shift growth"
+  ],
+  "depth-geography-how-geographic-information-systems-work": [
+    "r 25 45 145 125;d 55 70 5;p M55 70L120 95L145 145Z;r 190 45 145 125;l 190 85 335 85;l 190 125 335 125;l 238 45 238 170;l 286 45 286 170;f 238 85 48 40;t 97 195 Vector;t 262 195 Raster",
+    "r 25 55 145 100;r 190 55 145 100;p M35 140L85 80L155 115M200 140L250 80L320 115;d 85 80 5;d 250 80 5;t 97 175 Layer A;t 262 175 Layer B;t 180 195 Align coordinate reference systems",
+    "p M25 155L120 45L210 135L335 55;p M25 175L120 65L210 155L335 75M25 135L120 25L210 115L335 35;d 95 95 5;d 250 65 5;t 180 195 Buffer around line, then spatially join points",
+    "p M35 100Q100 45 180 100T325 100;p M35 125Q100 70 180 125T325 125;p M35 75Q100 20 180 75T325 75;d 100 70 5;d 220 100 5;d 285 155 5;t 180 180 500 m river buffer in metric CRS;t 180 205 Count intersecting homes"
+  ],
+  "plus-geography-understanding-map-overlays": [
+    "r 25 45 145 115;r 190 45 145 115;p M35 145L95 55L155 110M200 145L260 55L320 110;t 97 180 Layer 1;t 262 180 Layer 2;t 180 205 Match grid or geometry before overlay",
+    "c 135 100 60;c 225 100 60;t 100 100 Low slope;t 260 100 No flood;t 180 100 AND;t 180 195 Intersection meets both constraints",
+    "b 25 55 145 55 .6 × .8 = .48;b 190 55 145 55 .4 × .5 = .20;t 180 155 Weighted score = .68;t 180 195 Weights are assumptions",
+    "b 25 55 145 55 Weight set A;b 190 55 145 55 Weight set B;t 97 145 Map result A;t 262 145 Map result B;t 180 195 Test alternatives and exclusion constraints"
+  ],
+  "plus-geography-what-a-choropleth-map-shows": [
+    "r 35 55 100 110;f 135 55 75 50;r 135 105 75 60;f 210 55 115 110;t 85 110 Low;t 172 82 High;t 267 110 High;t 180 195 Geographic units shaded by rate",
+    "b 25 55 145 55 1,000 / 100,000;b 190 55 145 55 200 / 10,000;t 97 150 1%;t 262 150 2%;t 180 195 More cases can mean lower rate",
+    "l 35 75 325 75;l 107 65 107 85;l 180 65 180 85;l 253 65 253 85;l 35 145 325 145;l 85 135 85 155;l 125 135 125 155;l 260 135 260 155;t 180 55 Equal intervals;t 180 125 Quantile boundaries;t 180 195 Same data, different classification",
+    "r 25 55 145 100;l 95 55 95 155;r 190 55 145 100;l 190 105 335 105;d 55 80 5;d 135 130 5;d 220 80 5;d 300 130 5;t 180 195 Aggregation changes area averages"
+  ],
+  "plus-geography-how-geographers-study-accessibility": [
+    "p M155 25Q130 100 155 195M205 25Q230 100 205 195;d 100 80 7;d 260 80 7;l 100 80 260 80;p M100 80V155H260V80;t 180 65 Straight distance;t 180 180 Actual road via bridge;t 180 205 Proximity ≠ access",
+    "d 55 105 7;d 180 55 7;d 180 155 7;d 305 105 7;l 55 105 180 55;l 180 55 305 105;l 55 105 180 155;l 180 155 305 105;t 115 65 8 min;t 245 65 8 min;t 115 150 5 min;t 245 150 15 min;t 180 195 Shortest time = 16 min",
+    "c 180 105 80;c 180 105 50;d 160 85 5;d 205 110 5;d 175 135 5;d 245 85 5;d 115 125 5;t 180 20 30 min range;t 180 195 3 clinics ≤20 min, 5 ≤30 min",
+    "l 35 175 325 175;l 35 175 35 35;p M35 45Q120 115 325 160;t 180 35 Opportunity weight;t 180 195 Travel time ↑, e^(−βt) ↓"
+  ]
+};
+window.LumenSlideArtBatch14Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch14;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch14Render(c,cls,step)||prior(c,cls,step);};})();
