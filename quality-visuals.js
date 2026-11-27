@@ -7406,3 +7406,130 @@ window.LumenSlideArtBatch56={
 };
 window.LumenSlideArtBatch56Render=function(c,cls='cover',step=-1){return window.LumenSlideArtSharedRender(window.LumenSlideArtBatch56,c,cls,step);};
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch56Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* literature: dedicated slide artwork, batch 57. */
+window.LumenSlideArtBatch57={
+  "poetry": [
+    "t 180 45 frost silvered the fence;p M35 90H325M65 65V160M115 65V160M165 65V160M215 65V160M265 65V160M315 65V160;t 180 195 Sound, image and compression without rhyme",
+    "p M35 95H325M65 55V165M125 55V165M185 55V165M245 55V165M305 55V165;d 65 55 4;d 125 55 4;d 185 55 4;d 245 55 4;d 305 55 4;t 180 195 Frost suggests cold, stillness and reflected light",
+    "t 120 65 I heard the sound;t 125 110 of rain;t 210 155 against the glass;l 55 80 185 80;l 75 125 175 125;t 180 195 Line breaks shape emphasis and delay",
+    "r 35 55 130 110;r 195 55 130 110;t 100 105 Text evidence;t 260 105 Interpretation;l 165 105 195 105;t 180 195 Several readings can fit the same poem"
+  ],
+  "narrative": [
+    "c 75 105 30;c 285 105 30;b 135 75 90 60 Narrator;a 105 105 135 105;a 225 105 255 105;t 75 110 Author;t 285 110 Reader;t 180 195 Story voice is distinct from real author",
+    "c 95 105 45;c 265 105 45;d 95 105 7;d 245 85 7;d 285 125 7;t 95 165 First-person;t 265 165 Third-person;t 180 195 Perspective controls access to knowledge",
+    "p M35 55H155V170H35ZM70 55V170M155 115H165;c 255 95 25;t 255 100 I;t 180 195 Heard the door, did not see who closed it",
+    "b 35 45 135 55 Observation;b 190 45 135 55 Interpretation;b 35 120 290 55 Omitted information;t 180 205 Separate what the narrator knows from what they infer"
+  ],
+  "rhetoric": [
+    "c 180 100 40;c 65 55 20;c 295 55 20;c 180 175 20;l 65 55 145 80;l 295 55 215 80;l 180 140 180 155;t 180 105 Audience;t 65 25 Argument;t 295 25 Credibility;t 180 205 Emotion",
+    "b 35 65 90 65 Ethos;b 135 65 90 65 Pathos;b 235 65 90 65 Logos;t 180 175 Credibility, emotion and reasoning",
+    "r 40 95 35 65;r 85 75 35 85;r 130 55 35 105;c 220 100 25;c 295 100 25;t 100 185 Attendance;t 220 145 Librarian;t 295 145 Student;t 180 205 Library renovation speech combines appeals",
+    "b 35 55 135 65 Persuasive claim;b 190 55 135 65 Supported claim;t 180 165 Emotional effect does not establish the conclusion"
+  ],
+  "depth-literature-how-setting-shapes-a-story": [
+    "p M35 145L100 75L165 145ZM195 145L260 75L325 145Z;c 180 45 20;t 100 175 Place;t 260 175 Society;t 180 205 Time, location and social conditions",
+    "r 35 55 290 110;r 95 75 170 70;t 180 110 Feasible actions;t 180 195 Setting limits options, knowledge and conflicts",
+    "l 35 75 325 75;l 35 145 325 145;d 65 75 6;d 295 75 6;d 65 145 6;d 85 145 6;t 180 45 Letter: weeks;t 180 185 Phone: seconds;t 180 105 Different periods change the same plot",
+    "p M35 155L85 80L135 155M205 155L265 55L325 155;t 100 180 Atmosphere;t 265 180 Conflict;t 180 205 Support symbolism with consequential details"
+  ],
+  "depth-literature-understanding-character-development": [
+    "c 180 105 35;c 65 55 20;c 295 55 20;c 65 155 20;c 295 155 20;l 65 55 150 85;l 295 55 210 85;l 65 155 150 125;l 295 155 210 125;t 180 110 Character;t 65 25 Speech;t 295 25 Action;t 65 185 Thought;t 295 185 Relations",
+    "l 35 175 325 175;p M35 145L325 65M35 105H325;t 180 25 Meaningful trait change;t 180 195 Dynamic versus comparatively static",
+    "b 35 55 135 65 Avoid blame;a 170 87 190 87;b 190 55 135 65 Admit mistake;t 180 165 Compare decisions at different points in story",
+    "l 35 175 325 175;p M35 125H325M35 150L180 145L325 50;t 180 25 Reader knowledge may change;t 180 195 Revelation is not necessarily character development"
+  ],
+  "depth-literature-how-literary-themes-emerge": [
+    "b 35 55 135 65 Subject: migration;b 190 55 135 65 Theme: belonging;t 180 165 Theme develops an idea or question about a subject",
+    "d 65 105 7;d 145 105 7;d 225 105 7;d 305 105 7;p M65 105Q105 35 145 105T225 105T305 105;t 180 45 Recurring images and choices;t 180 195 Patterns develop a theme across scenes",
+    "c 180 105 35;c 65 65 20;c 295 65 20;c 180 175 20;l 65 65 150 85;l 295 65 210 85;l 180 140 180 155;t 180 110 Belonging;t 65 35 Place;t 295 35 Relations;t 180 205 Memory",
+    "b 35 55 135 65 Supporting detail;b 190 55 135 65 Contradictory detail;t 180 165 Test a theme against tension, not only confirmation"
+  ],
+  "depth-literature-how-metaphor-works": [
+    "c 95 105 40;c 265 105 40;l 135 105 225 105;t 95 110 Target;t 265 110 Source;t 180 85 Shared association;t 180 195 Metaphor transfers selected properties",
+    "p M35 145Q180 35 325 145M35 145H325;l 95 105 95 145;l 180 90 180 145;l 265 105 265 145;t 65 165 Position A;t 295 165 Position B;t 180 195 Argument as bridge: connection, not steel",
+    "p M35 135Q100 65 165 135M195 135Q260 65 325 135;l 260 90 260 140;t 100 165 Connection;t 260 165 Vulnerability;t 180 195 Context selects relevant associations",
+    "b 35 55 135 65 Maps: connection;b 190 55 135 65 Not: steel beams;t 180 165 Identify where metaphorical mapping ends"
+  ],
+  "depth-literature-understanding-irony": [
+    "b 35 55 135 65 Literal praise;b 190 55 135 65 Intended criticism;t 180 165 Verbal irony relies on contextual contrast",
+    "c 95 105 35;c 265 105 35;d 95 65 7;t 95 110 Audience;t 265 110 Character;t 180 195 Audience possesses information character lacks",
+    "r 55 55 105 100;r 200 55 105 100;l 70 85 145 85;l 215 85 290 85;t 107 115 Forged;t 252 115 Trusted;t 180 195 Reader knows letter is fake, character does not",
+    "l 35 105 325 105;d 95 105 7;d 265 105 7;t 95 85 Expected;t 265 85 Actual;t 180 165 Meaningful contrast creates situational irony"
+  ],
+  "depth-literature-what-makes-a-narrative-unreliable": [
+    "b 35 55 135 65 Narrator claim;b 190 55 135 65 Story evidence;t 180 165 Discrepancies can prompt doubt",
+    "r 35 55 290 110;l 130 55 130 165;l 230 55 230 165;t 82 105 Conflict;t 180 105 Omission;t 277 105 Bias;t 180 195 Compare multiple signals of unreliability",
+    "p M35 55H155V165H35ZM70 55V165;c 105 100 8;r 205 55 120 110;t 265 105 Never entered;t 180 195 Knowing hidden object conflicts with claim",
+    "c 95 105 40;c 265 105 40;t 95 110 Limited;t 265 110 Unreliable;t 180 195 Limited knowledge alone does not imply deception"
+  ],
+  "depth-literature-how-literary-genres-guide-readers": [
+    "r 35 55 90 110;r 135 55 90 110;r 235 55 90 110;t 80 105 Mystery;t 180 105 Tragedy;t 280 105 Satire;t 180 195 Groups of works share conventions",
+    "c 180 105 35;c 65 65 20;c 295 65 20;c 180 175 20;l 65 65 150 85;l 295 65 210 85;l 180 140 180 155;t 180 110 Genre;t 65 35 Conflict;t 295 35 Voice;t 180 205 Resolution",
+    "c 95 105 25;c 265 105 25;t 95 110 Detail;t 265 110 Detail;t 95 155 Clue;t 265 155 Atmosphere;t 180 195 Same element can serve different genre purposes",
+    "c 125 105 65;c 235 105 65;t 100 105 Mystery;t 260 105 Comedy;t 180 105 Hybrid;t 180 195 Genres overlap and can be challenged"
+  ],
+  "plus-literature-how-point-of-view-shapes-suspense": [
+    "l 35 105 325 105;d 65 105 7;d 295 105 7;t 65 85 Threat;t 295 85 Outcome?;t 180 165 Anticipation plus unresolved information",
+    "c 95 105 45;c 265 105 45;d 95 105 6;d 265 105 6;l 140 105 220 105;t 95 165 Viewpoint;t 265 165 Hidden action;t 180 195 Restricted perspective conceals intentions",
+    "p M40 85H140V155H40ZM70 85V155;c 265 100 30;t 265 105 Thief?;t 95 175 Missing key;t 180 195 Reveal thief to shift suspense toward consequences",
+    "l 35 175 325 175;p M35 155Q125 145 180 80T325 45;t 180 25 Tension;t 180 195 Pacing, stakes and timed revelations"
+  ],
+  "plus-literature-how-foreshadowing-works": [
+    "l 35 105 325 105;d 65 105 6;d 295 105 8;p M65 95Q180 25 295 95;t 65 125 Detail;t 295 125 Event;t 180 195 Early detail prepares later development",
+    "p M35 115H135M55 115V170M95 115L105 170M225 80H325M245 80V170M285 80V120;t 85 55 Damaged rail;t 275 55 Later accident;t 180 195 Early warning makes outcome feel prepared",
+    "l 35 105 325 105;d 65 105 6;d 295 105 8;a 285 80 75 80;t 180 55 Later event reinterprets earlier clue;t 180 175 Recognition can be retrospective",
+    "p M35 105H155L295 55M155 105L295 155;t 295 35 Mislead;t 295 185 Payoff;t 65 85 Clue;t 180 205 Red herring redirects expectation"
+  ],
+  "plus-literature-understanding-literary-symbolism": [
+    "c 180 105 35;c 65 65 20;c 295 65 20;l 65 65 150 85;l 295 65 210 85;t 180 110 Object;t 65 35 Literal;t 295 35 Association;t 180 195 Symbol carries context-dependent meaning",
+    "l 35 105 325 105;d 65 105 7;d 180 105 7;d 295 105 7;t 65 85 Scene 1;t 180 85 Scene 2;t 295 85 Scene 3;t 180 175 Repetition and reactions build symbolic significance",
+    "p M65 55V170M295 55V170M65 70H295M65 135H295M105 70V135M155 70V135M205 70V135M255 70V135;c 180 145 10;t 180 195 Locked gate repeatedly accompanies exclusion",
+    "b 35 55 135 65 Gate: exclusion;b 190 55 135 65 Gate: privacy;t 180 165 Same object, different textual associations"
+  ],
+  "plus-literature-how-dialogue-reveals-character": [
+    "c 85 105 35;c 275 105 35;p M125 65H235V110H185L170 130V110H125Z;t 180 90 Speech;t 180 195 Word choice, rhythm and avoidance reveal relationships",
+    "b 35 55 135 65 Literal words;b 190 55 135 65 Implied concern;t 180 165 Subtext differs from explicit content",
+    "c 85 105 25;c 275 105 25;a 110 85 250 85;a 250 125 110 125;t 180 65 Direct question;t 180 155 Joke instead;t 180 195 Repeated evasion can suggest discomfort",
+    "l 35 75 325 75;l 35 145 325 145;r 55 60 200 30;r 105 130 50 30;t 180 45 Speaker A;t 180 185 Speaker B;t 180 205 Turn length and interruptions may reveal power"
+  ],
+  "plus-literature-how-plot-and-story-differ": [
+    "l 35 105 325 105;d 65 105 6;d 180 105 6;d 295 105 6;t 65 85 Event A;t 180 85 Event B;t 295 85 Event C;t 180 175 Story: chronological sequence",
+    "l 35 105 325 105;d 65 105 6;d 180 105 6;d 295 105 6;t 65 85 Event C;t 180 85 Event A;t 295 85 Event B;t 180 175 Plot: selected presentation order",
+    "l 35 75 325 75;l 35 145 325 145;d 65 75 6;d 180 75 6;d 295 75 6;d 65 145 6;d 180 145 6;d 295 145 6;t 180 45 Events: cause, arrest, trial;t 180 185 Novel: trial, cause, arrest;t 180 105 Flashback",
+    "p M35 75H325M35 145H325;a 95 75 265 145;a 265 75 95 145;t 180 45 Chronology;t 180 185 Revelation order;t 180 105 Arrangement changes interpretation"
+  ],
+  "plus-literature-how-literary-tone-is-established": [
+    "c 95 105 35;c 265 105 35;l 130 105 230 105;t 95 110 Voice;t 265 110 Subject;t 180 195 Tone is attitude inferred from language",
+    "b 35 45 135 55 Diction;b 190 45 135 55 Syntax;b 35 120 135 55 Imagery;b 190 120 135 55 Irony;t 180 205 Features help establish tone",
+    "b 35 55 135 65 Magnificent triumph;b 190 55 135 65 Failed plan;t 180 165 Mismatch can signal mockery",
+    "c 95 105 35;c 265 105 35;t 95 110 Attitude;t 265 110 Feeling;t 180 195 Tone of voice versus mood evoked in readers"
+  ],
+  "plus-literature-reading-a-poem-s-line-breaks": [
+    "t 180 55 The river winds;t 180 95 through the valley.;l 85 70 275 70;l 85 110 275 110;t 180 155 One sentence, two lines;t 180 195 Line and syntax are different units",
+    "t 180 65 I left the key;t 180 115 beneath the stone.;a 180 78 180 100;t 180 165 Enjambment carries syntax forward",
+    "t 100 60 I left the key;t 100 100 beneath the stone;t 260 60 I left;t 260 100 the key beneath;t 260 140 the stone;t 180 195 Different breaks shift temporary emphasis",
+    "r 35 55 130 110;r 195 55 130 110;t 100 105 Read aloud;t 260 105 Read syntax;t 180 195 Compare punctuation, rhythm and line ending"
+  ],
+  "plus-literature-how-sound-patterns-shape-poetry": [
+    "t 180 55 slow streams slip;l 70 68 290 68;t 180 105 repeated s / sl / st sounds;t 180 165 Initial consonants: alliteration;t 180 195 Repeated vowels: assonance",
+    "l 35 105 325 105;r 50 65 20 40;r 95 85 20 20;r 140 65 20 40;r 185 85 20 20;r 230 65 20 40;r 275 85 20 20;t 180 165 Alternating stronger and weaker stresses",
+    "p M35 105Q55 70 75 105T115 105T155 105T195 105L210 65L225 145L240 65L255 145L270 105H325;t 180 45 Flow then interruption;t 180 195 Sound texture can support or complicate meaning",
+    "b 35 55 135 65 Pronunciation;b 190 55 135 65 Local context;t 180 165 No universal emotional meaning for a phoneme"
+  ],
+  "plus-literature-understanding-literary-intertextuality": [
+    "r 35 55 130 110;r 195 55 130 110;t 100 105 Earlier text;t 260 105 Later text;a 165 105 195 105;t 180 195 Echo, quotation or transformation",
+    "c 95 105 35;c 265 105 35;t 95 110 Recognized;t 265 110 Unrecognized;t 180 195 Reference can enrich meaning without being necessary",
+    "p M35 145L95 75L155 145M205 145L265 75L325 145;p M95 75Q180 15 265 75;t 95 175 Odyssey;t 265 175 New homecoming;t 180 205 Adapted journey asks contemporary questions",
+    "b 35 45 135 55 Wording;b 190 45 135 55 Structure;b 35 120 135 55 Availability;b 190 120 135 55 Transformation;t 180 205 Allusion requires more than resemblance"
+  ],
+  "plus-literature-how-endings-change-interpretation": [
+    "l 35 105 325 105;d 65 105 6;d 295 105 8;t 65 85 Opening;t 295 85 Ending;t 180 175 Questions can resolve, complicate or remain open",
+    "l 35 105 325 105;d 65 105 6;d 295 105 8;a 285 80 75 80;t 180 55 New revelation;t 180 175 Earlier scenes gain another interpretation",
+    "r 55 65 110 85;r 195 65 110 85;t 110 105 Rejection;t 250 105 Final letter;t 180 185 Protection revealed as possible motive",
+    "b 35 55 135 65 Opening tensions;b 190 55 135 65 Remaining tensions;t 180 165 Ambiguity can be a deliberate formal choice"
+  ]
+};
+window.LumenSlideArtBatch57Render=function(c,cls='cover',step=-1){return window.LumenSlideArtSharedRender(window.LumenSlideArtBatch57,c,cls,step);};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch57Render(c,cls,step)||prior(c,cls,step);};})();
