@@ -5724,3 +5724,137 @@ window.LumenSlideArtBatch39Render=function renderer(c,cls="cover",step=-1){
  const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch39Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* Cryptography: dedicated slide artwork, batch 40. */
+window.LumenSlideArtBatch40={
+  "encryption": [
+    "b 25 65 100 65 Plaintext;a 125 97 145 97;b 145 65 70 65 Cipher;a 215 97 235 97;b 235 65 100 65 Ciphertext;c 180 35 18;t 180 40 K;a 180 53 180 65;t 180 178 Decrypt with corresponding key",
+    "b 35 55 290 65 Public algorithm;c 180 152 24;t 180 157 Key;t 180 195 Keep key secret, not algorithm",
+    "r 40 55 125 110;r 195 55 125 110;t 102 80 Plain backup;t 257 80 Encrypted backup;t 102 125 Readable;t 257 125 7f 9c 2a;t 180 195 Theft alone does not reveal encrypted files",
+    "b 35 55 135 75 Encryption;b 190 55 135 75 Authentication;t 102 165 Hides content;t 257 165 Detects alteration;t 180 200 Both needed"
+  ],
+  "hash-functions": [
+    "b 30 60 130 80 Arbitrary data;a 160 100 205 100;b 205 60 125 80 Fixed digest;t 180 180 One-way mapping, not decryption",
+    "b 35 45 120 55 File A;b 35 120 120 55 File A′;a 155 72 200 72;a 155 147 200 147;b 200 45 125 55 a91f…;b 200 120 125 55 73cd…;t 180 200 Small change, unrelated digest",
+    "d 55 55 7;d 55 95 7;d 55 135 7;d 55 175 7;c 260 80 18;c 260 145 18;l 62 55 242 80;l 62 95 242 80;l 62 135 242 145;l 62 175 242 145;t 180 210 Finite outputs imply collisions",
+    "b 30 45 140 65 Trusted digest;b 190 45 140 65 Download hash;a 100 110 160 155;a 260 110 200 155;b 100 155 160 45 Compare"
+  ],
+  "digital-signatures": [
+    "b 35 40 125 55 Message;b 35 115 125 55 Private key;a 160 68 195 100;a 160 142 195 100;b 195 70 130 60 Signature;t 180 195 Public key verifies",
+    "b 35 55 135 65 Original + sig;b 190 55 135 65 Edited + sig;t 102 155 Valid;t 257 155 Reject;t 180 195 Signature binds message",
+    "b 35 45 130 60 Public key;a 165 75 195 75;b 195 45 130 60 Verified identity;t 180 155 Independent binding required;t 180 190 Key ownership alone is not identity",
+    "b 30 65 100 65 Publisher;a 130 97 150 97;b 150 65 80 65 Release;a 230 97 250 97;b 250 65 80 65 Verify;t 180 185 Authentic publisher key, not bug-free guarantee"
+  ],
+  "depth-cryptography-how-symmetric-encryption-works": [
+    "b 35 60 120 70 Encrypt;b 205 60 120 70 Decrypt;a 155 95 205 95;c 180 35 18;t 180 40 K;l 162 35 95 60;l 198 35 265 60;t 180 180 Same shared secret",
+    "r 35 60 290 42;l 107 60 107 102;l 180 60 180 102;l 252 60 252 102;t 180 45 Message blocks;a 180 102 180 140;b 60 140 240 45 Mode handles whole message",
+    "b 35 55 130 70 AES-GCM;a 165 90 195 90;b 195 55 130 70 Cipher + tag;t 180 175 Efficient backup protection;t 180 195 Verify integrity too",
+    "b 35 65 125 60 Device A;b 200 65 125 60 Device B;l 160 95 200 95;c 180 35 20;t 180 40 K;t 180 175 Securely provision secret;t 180 195 Follow nonce rules"
+  ],
+  "depth-cryptography-why-public-key-encryption-uses-pairs": [
+    "c 100 95 45;c 260 95 45;t 100 95 Public;t 260 95 Private;l 145 95 215 95;t 180 175 Mathematically related pair",
+    "b 35 70 120 60 Sender;a 155 100 205 100;b 205 70 120 60 Recipient;t 95 45 Encrypt to public;t 265 45 Private decrypts;t 180 185 Authenticate recipient key",
+    "b 35 45 290 55 Public-key wrap: small session key;a 180 100 180 125;b 35 125 290 55 Symmetric cipher: bulk file;t 180 205 Hybrid encryption",
+    "r 35 65 290 100;r 35 65 90 100;t 80 100 Wrapped;t 80 123 key;t 225 115 Encrypted file;t 180 195 Recipient unwraps key first"
+  ],
+  "depth-cryptography-the-purpose-of-key-exchange": [
+    "b 35 60 110 60 Peer A;b 215 60 110 60 Peer B;a 145 80 215 80;a 215 100 145 100;c 90 155 20;c 270 155 20;t 90 160 K;t 270 160 K;t 180 205 Final secret never sent",
+    "b 35 35 125 50 Private a;b 200 35 125 50 Private b;a 97 85 97 110;a 262 85 262 110;b 35 110 125 45 Public A;b 200 110 125 45 Public B;a 160 127 200 127;a 200 142 160 142;t 180 195 Both derive shared secret",
+    "b 20 65 85 60 Alice;b 137 65 85 60 Interceptor;b 255 65 85 60 Bob;l 105 95 137 95;l 222 95 255 95;t 120 145 K1;t 240 145 K2;t 180 195 Authenticate exchange to prevent substitution",
+    "b 35 45 290 50 TLS authenticated handshake;a 180 95 180 120;b 65 120 230 50 Derived traffic keys;t 180 198 Bind keys to handshake context"
+  ],
+  "depth-cryptography-how-certificates-establish-trust": [
+    "r 60 45 240 130;t 180 75 Certificate;t 180 105 Name + public key;t 180 145 Issuer signature;t 180 205 Signed binding",
+    "b 95 30 170 40 Trusted root;a 180 70 180 90;b 95 90 170 40 Intermediate;a 180 130 180 150;b 95 150 170 40 Site certificate;t 180 210 Verify each signature",
+    "b 35 45 130 55 Hostname;b 195 45 130 55 Valid dates;b 35 120 130 55 Key usage;b 195 120 130 55 Status policy;t 180 205 All relevant checks must pass",
+    "b 35 60 130 70 shop.example;b 195 60 130 70 bank.example;t 180 165 Same issuer ≠ same identity;t 180 192 Hostname must match"
+  ],
+  "depth-cryptography-why-random-numbers-matter": [
+    "d 65 65 6;d 115 145 6;d 165 45 6;d 220 130 6;d 295 80 6;t 180 190 Attacker cannot predict key",
+    "b 35 65 110 60 Entropy seed;a 145 95 165 95;b 165 65 160 60 Secure generator;t 180 175 Unpredictable outputs",
+    "b 35 50 290 55 Uniform 128-bit key: 2^128;b 35 120 290 55 Predictable list: 1000 choices;t 180 200 Length alone is not entropy",
+    "b 35 65 135 65 Key;b 190 65 135 65 Nonce;t 102 155 Unpredictable;t 257 155 Often unique;t 180 195 Follow protocol requirements"
+  ],
+  "depth-cryptography-protecting-stored-passwords": [
+    "b 35 55 120 65 Password;a 155 87 190 87;b 190 55 135 65 Slow verifier;t 180 175 Store verifier, not password",
+    "b 30 45 140 55 Same password;b 30 120 140 55 Same password;a 170 72 195 72;a 170 147 195 147;b 195 45 135 55 Salt A + hash;b 195 120 135 55 Salt B + hash;t 180 200 Different stored values",
+    "r 45 65 45 25;r 45 125 260 25;t 180 45 Fast hash;t 180 110 Password hash;t 180 185 Deliberate cost per guess",
+    "b 35 45 290 45 Leaked database;b 35 110 135 55 Salt A + verifier;b 190 110 135 55 Salt B + verifier;t 180 195 Test guesses separately, weak passwords still risky"
+  ],
+  "depth-cryptography-understanding-end-to-end-encryption": [
+    "b 25 65 95 65 Phone A;b 135 65 90 65 Relay;b 240 65 95 65 Phone B;a 120 97 135 97;a 225 97 240 97;t 180 45 Ciphertext at relay;t 180 180 Only endpoints have decryption keys",
+    "b 30 55 120 60 Browser;a 150 85 210 85;b 210 55 120 60 Server;t 180 45 TLS tunnel;t 270 150 Server sees plaintext;t 180 195 Transport protection ends at server",
+    "b 35 45 135 55 Verified phone;b 190 45 135 55 Verified laptop;a 102 100 180 145;a 257 100 180 145;c 180 160 25;t 180 165 K;t 180 205 Adding devices changes endpoints",
+    "b 35 50 130 60 Encrypted link;b 195 50 130 60 Compromised phone;t 180 145 Endpoint can leak plaintext;t 180 190 Timing metadata may remain visible"
+  ],
+  "plus-cryptography-why-encryption-needs-authentication": [
+    "b 35 55 135 75 Cipher;b 190 55 135 75 Auth tag;t 102 155 Confidentiality;t 257 155 Integrity;t 180 200 Distinct properties",
+    "b 35 50 135 60 Ciphertext;a 170 80 190 80;b 190 50 135 60 Altered bits;a 257 110 257 145;t 257 165 Changed output;t 180 195 Readable is not authenticated",
+    "r 35 65 290 70;r 35 65 90 70;r 270 65 55 70;t 80 100 Header;t 180 100 Ciphertext;t 297 100 Tag;t 180 170 Header authenticated but not encrypted",
+    "b 35 55 290 55 Verify authentication tag;a 180 110 105 150;a 180 110 255 150;t 105 170 Accept valid;t 255 170 Reject invalid;t 180 200 Never use unverified plaintext"
+  ],
+  "plus-cryptography-the-difference-between-a-nonce-and-a-key": [
+    "c 95 100 35;c 265 100 35;t 95 105 Secret K;t 265 105 Nonce N;t 180 185 Key controls cipher, nonce varies use",
+    "r 35 65 290 65;r 35 65 100 65;t 85 100 Public N;t 230 100 Ciphertext;t 180 175 Key not transmitted with nonce",
+    "b 35 45 135 55 K + N1;b 190 45 135 55 K + N2;b 35 120 135 55 K + N1;b 190 120 135 55 Reuse unsafe;t 180 205 GCM: never repeat nonce under same key",
+    "l 35 105 325 105;d 65 105 6;d 125 105 6;d 185 105 6;d 245 105 6;t 65 75 1;t 125 75 2;t 185 75 3;t 245 75 4;t 180 160 Persist counter across restart;t 180 190 Coordinate concurrent writers"
+  ],
+  "plus-cryptography-what-a-message-authentication-code-proves": [
+    "b 35 45 120 60 Message;c 90 145 22;t 90 150 K;a 155 75 200 100;a 112 145 200 100;b 200 70 125 60 MAC tag;t 180 195 Shared-secret integrity",
+    "b 30 55 95 70 Key;b 135 55 90 70 HMAC;b 235 55 95 70 Tag;a 125 90 135 90;a 225 90 235 90;t 180 180 Standard keyed hash structure",
+    "b 35 55 135 60 Received tag;b 190 55 135 60 Recompute tag;a 102 115 160 155;a 257 115 200 155;b 100 155 160 45 Match or reject",
+    "c 65 95 25;c 180 95 25;c 295 95 25;t 65 100 K;t 180 100 K;t 295 100 K;t 180 170 Every holder can make valid tags;t 180 195 MAC cannot distinguish holders"
+  ],
+  "plus-cryptography-why-key-rotation-exists": [
+    "l 35 110 325 110;r 45 95 130 30;r 175 95 135 30;t 110 80 Key A;t 245 80 Key B;t 180 170 Authorized use interval;t 180 195 Rotate at lifecycle boundary",
+    "l 35 110 325 110;l 180 60 180 160;t 100 75 Earlier data;t 265 75 New data;t 180 45 Rotate;t 180 190 Rotation does not erase earlier compromise",
+    "b 35 45 290 55 Record: key ID A + cipher;b 35 120 290 55 Record: key ID B + cipher;t 180 200 Old key may be decrypt-only",
+    "b 35 55 130 65 Old data / A;a 165 87 195 87;b 195 55 130 65 Re-encrypt / B;t 180 165 Verify recoverability before retiring A"
+  ],
+  "plus-cryptography-how-forward-secrecy-protects-sessions": [
+    "l 35 110 325 110;d 65 110 8;d 280 110 8;t 65 80 Past session;t 280 80 Later key theft;t 180 170 Past ephemeral keys erased;t 180 195 Long-term key alone cannot recover them",
+    "b 35 45 130 55 Temporary A;b 195 45 130 55 Temporary B;a 165 65 195 65;a 195 80 165 80;t 180 150 Fresh exchange each session;t 180 180 Long-term key authenticates",
+    "r 35 55 135 95;t 102 105 Recorded traffic;c 260 100 35;t 260 105 Stolen key;t 180 185 Proper forward secrecy blocks past decryption",
+    "b 35 55 130 65 Saved plaintext;b 195 55 130 65 Stolen session key;t 180 165 Outside forward-secrecy protection;t 180 192 Resumption may differ"
+  ],
+  "plus-cryptography-what-cryptographic-key-derivation-does": [
+    "b 35 55 290 50 Input key material;a 180 105 110 145;a 180 105 250 145;b 35 145 150 45 Key 1;b 195 145 130 45 Key 2;t 180 210 Context separates roles",
+    "b 35 45 130 60 Extract;a 165 75 195 75;b 195 45 130 60 Expand;t 180 155 HKDF: suitable input + labels;t 180 185 Distinct derived keys",
+    "b 35 35 290 45 Shared secret;a 180 80 95 125;a 180 80 265 125;b 35 125 130 55 Client → server;b 195 125 130 55 Server → client;t 180 205 Direction-specific keys",
+    "b 35 55 135 65 Password KDF;b 190 55 135 65 HKDF;t 102 155 Cost amplification;t 257 155 Key separation;t 180 195 HKDF adds no password entropy"
+  ],
+  "plus-cryptography-how-public-key-fingerprints-are-used": [
+    "r 35 55 145 80;t 107 95 Public key;a 180 95 205 95;b 205 55 120 80 Fingerprint;t 180 185 Digest of defined representation",
+    "b 35 55 135 60 Console digest;b 190 55 135 60 Network digest;a 102 115 160 155;a 257 115 200 155;t 180 175 Compare independently;t 180 200 Authenticate reference",
+    "b 35 45 290 55 Expected SSH fingerprint;b 35 120 290 55 Different observed fingerprint;t 180 205 Stop and investigate change",
+    "b 35 60 135 75 Certificate digest;b 190 60 135 75 Public-key digest;t 180 175 Same representation and algorithm needed"
+  ],
+  "plus-cryptography-what-certificate-revocation-does": [
+    "l 35 110 325 110;d 65 110 6;d 170 110 8;d 295 110 6;t 65 80 Issued;t 170 80 Revoked;t 295 80 Expires;t 180 170 Invalidate before scheduled expiry",
+    "b 35 50 135 70 CRL: list;b 190 50 135 70 OCSP: status;t 180 165 Signed status information;t 180 195 Stapling can convey response",
+    "b 35 45 135 65 Fresh status;b 190 45 135 65 No response;t 180 150 Unavailable ≠ good;t 180 185 Check validity and failure policy",
+    "b 35 50 130 60 Old certificate;a 165 80 195 80;b 195 50 130 60 Replacement;t 100 145 Revoke old;t 260 145 Deploy new;t 180 195 Past traffic is not erased"
+  ],
+  "plus-cryptography-why-cryptographic-algorithms-age": [
+    "l 35 165 325 165;p M35 45L100 60L165 80L230 115L325 155;t 180 35 Security margin can shrink;t 180 195 Improved attacks and computation",
+    "b 35 45 135 55 Hash collision;b 190 45 135 55 Short key search;b 35 120 290 55 Implementation leakage;t 180 205 Different failures need distinct fixes",
+    "b 35 60 135 70 SHA-1;a 170 95 190 95;b 190 60 135 70 SHA-256;t 180 165 Update signer and verifier;t 180 195 Collision-dependent uses",
+    "b 30 60 95 75 Inventory;a 125 97 135 97;b 135 60 95 75 Migrate;a 230 97 240 97;b 240 60 90 75 Retire;t 180 180 Prevent downgrade"
+  ]
+};
+window.LumenSlideArtBatch40Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch40;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch40Render(c,cls,step)||prior(c,cls,step);};})();
