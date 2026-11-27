@@ -5316,3 +5316,137 @@ window.LumenSlideArtBatch36Render=function renderer(c,cls="cover",step=-1){
  const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch36Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* Accounting: dedicated slide artwork, batch 37. */
+window.LumenSlideArtBatch37={
+  "balance-sheet": [
+    "r 35 65 145 100;r 180 65 145 60;r 180 125 145 40;t 107 115 Assets;t 252 95 Liabilities;t 252 145 Equity;t 180 45 Snapshot at a reporting date;t 180 195 Resources = obligations + residual interest",
+    "r 35 75 290 50;f 35 75 174 50;t 122 105 Liabilities;t 267 105 Equity;t 180 55 Total assets;t 180 195 Assets − liabilities = equity, not market value",
+    "r 35 55 261 35;f 35 55 159.5 35;r 35 125 290 35;f 35 125 188.5 35;t 180 45 $90k assets;t 180 115 $100k after borrowing;t 180 195 Liabilities $55k→$65k, equity remains $35k",
+    "b 25 45 145 45 Carrying values;b 190 45 145 45 Recognition rules;b 25 115 145 45 Notes;b 190 115 145 45 Other statements;t 180 195 Not every future commitment is a recognized asset or liability"
+  ],
+  "income-statement": [
+    "l 35 105 325 105;d 35 105 6;d 325 105 6;t 65 85 Period start;t 295 85 Period end;r 95 120 170 45;t 180 145 Revenue − expenses;t 180 195 Measures performance over time, not cash at a date",
+    "l 35 105 325 105;d 95 105 6;d 265 105 6;t 95 85 Earn revenue;t 265 85 Collect cash;t 180 155 Recognition and payment may occur in different periods",
+    "r 35 45 290 35;r 35 95 116 35;r 35 145 43.5 35;t 180 35 Revenue $100k;t 180 115 Gross profit $40k;t 175 165 Operating profit $15k;t 180 205 Less COGS $60k, then operating expenses $25k",
+    "r 65 55 90 115;r 205 110 90 60;t 110 45 Positive income;t 250 100 Cash outflow;t 180 195 Profit may coexist with negative cash flow"
+  ],
+  "cash-flow-statement": [
+    "b 25 55 95 55 Operating;b 132 55 95 55 Investing;b 239 55 95 55 Financing;a 72 110 180 155;a 180 110 180 155;a 286 110 180 155;t 180 175 Net cash change;t 180 205 Three activity categories reconcile cash",
+    "b 25 65 145 55 Net income;a 170 92 190 92;b 190 65 145 55 Operating cash;t 180 155 Adjust noncash and working capital items;t 180 195 Indirect method reconciliation",
+    "b 25 55 145 55 Buy equipment;b 190 55 145 55 Borrow money;a 97 110 97 145;a 262 145 262 110;t 97 165 Cash out;t 262 165 Cash in;t 180 195 Investing outflow versus financing inflow",
+    "l 35 175 325 175;r 45 105 45 70;r 105 49 45 56;r 165 49 45 35;r 225 70 45 14;r 285 70 40 105;t 67 95 10k;t 127 39 +8k;t 187 39 −5k;t 247 60 +2k;t 305 60 15k;t 180 195 Opening + operations − investing + financing"
+  ],
+  "depth-accounting-the-double-entry-system": [
+    "l 180 45 180 175;l 35 75 325 75;t 105 65 Debit;t 255 65 Credit;t 105 120 $500;t 255 120 $500;t 180 195 Every journal entry balances",
+    "r 35 55 130 110;r 195 55 130 110;t 100 85 Assets;t 100 120 Expenses;t 260 85 Liabilities;t 260 115 Equity;t 260 145 Revenue;t 180 195 Normal increases: debit left, credit right",
+    "b 25 65 145 55 Supplies debit $500;b 190 65 145 55 Cash credit $500;t 180 155 One asset replaces another;t 180 195 No change in total assets",
+    "l 180 45 180 175;l 35 75 325 75;t 100 65 Debit;t 260 65 Credit;t 100 120 Wrong account;t 260 120 Correct amount;t 180 195 Balanced entry can still be misclassified"
+  ],
+  "depth-accounting-accrual-versus-cash-accounting": [
+    "l 35 105 325 105;d 95 105 6;d 265 105 6;t 95 85 Work done;t 265 85 Payment;t 180 155 Cash basis generally recognizes payment date",
+    "b 25 55 145 55 Service performed;a 170 82 190 82;b 190 55 145 55 Receivable;t 180 150 Accrual recognition when criteria met;t 180 195 Collection occurs separately",
+    "l 35 105 325 105;d 95 105 7;d 265 105 7;t 95 85 June;t 265 85 July;t 95 145 Revenue $900;t 265 145 Cash $900;t 180 195 Credit sale and collection occur in separate months",
+    "b 25 65 145 55 Accrual profit;b 190 65 145 55 Cash flow;t 180 155 Performance versus liquidity;t 180 195 Both are necessary to understand financial condition"
+  ],
+  "depth-accounting-how-depreciation-works": [
+    "r 35 75 290 50;f 35 75 241.67 50;t 155 105 Allocable cost;t 300 105 Residual;t 180 55 Asset cost;t 180 195 Cost allocation differs from market valuation",
+    "b 25 45 145 45 Cost $12,000;b 190 45 145 45 Residual $2,000;b 105 115 150 45 Life 5 years;t 180 195 (12,000−2,000)/5=$2,000/year",
+    "l 35 175 325 175;p M35 45L93 71L151 97L209 123L267 149L325 175;t 180 25 Carrying value declines;t 180 195 Expense is noncash in the current period",
+    "l 35 175 325 175;p M35 45L325 155;p M35 45Q100 140 325 155;t 180 25 Different allocation methods;t 180 195 Useful life, residual and impairment are separate judgments"
+  ],
+  "depth-accounting-inventory-and-cost-of-goods-sold": [
+    "r 35 55 290 110;l 130 55 130 165;l 230 55 230 165;t 82 105 Goods;t 180 105 Inputs;t 277 105 Conversion;t 180 195 Include eligible purchase and production costs",
+    "b 25 65 145 55 Inventory asset;a 170 92 190 92;b 190 65 145 55 Cost of sales;t 180 155 Assigned carrying cost transfers at sale;t 180 195 Unsold goods generally remain assets",
+    "b 25 45 145 45 Beginning $5k;b 190 45 145 45 Purchases $15k;b 105 115 150 45 Ending $6k;t 180 195 COGS=5,000+15,000−6,000=$14,000",
+    "r 35 65 130 95;r 195 65 130 95;t 100 90 First costs;t 100 130 Assigned first;t 260 90 Pooled costs;t 260 130 Average cost;t 180 195 FIFO and weighted average differ when prices change"
+  ],
+  "depth-accounting-accounts-receivable-and-bad-debts": [
+    "b 25 65 95 55 Credit sale;a 120 92 132 92;b 132 65 95 55 Receivable;a 227 92 239 92;b 239 65 95 55 Collection;t 180 155 Customer owes payment until collection",
+    "r 35 75 290 50;l 150 75 150 125;l 240 75 240 125;t 92 105 Current;t 195 105 Overdue;t 282 105 Older;t 180 195 Aging helps assess expected credit losses",
+    "r 35 75 290 50;f 35 75 278.4 50;t 174 105 Net $48,000;t 180 55 Gross receivables $50,000;t 180 195 Less $2,000 allowance, invoices unchanged",
+    "b 25 65 145 55 Gross receivable ↓;b 190 65 145 55 Allowance ↓;t 180 155 Write off against existing allowance;t 180 195 Net carrying value unchanged by that entry"
+  ],
+  "depth-accounting-understanding-gross-profit": [
+    "r 35 75 290 50;f 35 75 174 50;t 122 105 Product cost;t 267 105 Gross profit;t 180 55 Net sales;t 180 195 Sales less assigned cost of goods sold",
+    "r 35 75 290 50;f 35 75 181.25 50;t 125 105 COGS $50;t 271 105 GP $30;t 180 55 Net sales $80;t 180 195 Margin=30/80=37.5%",
+    "b 25 65 145 55 $30/$80;b 190 65 145 55 $30/$50;t 97 150 Margin 37.5%;t 262 150 Markup 60%;t 180 195 Same profit, different denominator",
+    "r 35 65 290 40;r 35 125 130 40;t 180 55 Gross profit;t 200 150 Operating profit after expenses;t 180 195 Selling and administrative costs still need coverage"
+  ],
+  "depth-accounting-bank-reconciliation": [
+    "r 35 55 130 110;r 195 55 130 110;l 45 85 155 85;l 45 115 155 115;l 205 85 315 85;l 205 135 315 135;t 100 185 Bank record;t 260 185 Book ledger;t 180 205 Differences require reconciliation",
+    "l 35 105 325 105;d 95 105 6;d 265 105 6;t 95 85 Book entry;t 265 85 Bank clears;t 180 155 Outstanding check / deposit timing;t 180 195 Do not record a timing difference twice",
+    "b 25 45 145 45 Bank $10,000;b 190 45 145 45 Transit +$1,500;b 105 115 150 45 Checks −$800;t 180 195 Adjusted bank cash $10,700",
+    "b 25 55 145 55 Timing item;b 190 55 145 55 Omitted bank fee;t 97 150 Reconcile;t 262 150 Post entry;t 180 195 Investigate errors and unresolved differences"
+  ],
+  "plus-accounting-adjusting-entries-at-the-end-of-a-period": [
+    "l 35 105 325 105;d 95 105 6;l 180 45 180 175;d 265 105 6;t 95 85 Economic event;t 180 35 Period end;t 265 85 Cash later;t 180 195 Adjust to appropriate reporting period",
+    "b 25 65 145 55 Wage expense Dr;b 190 65 145 55 Wages payable Cr;t 180 155 $1,200 earned, unpaid;t 180 195 Recognize both expense and obligation",
+    "b 25 65 145 55 Prepaid asset;a 170 92 190 92;b 190 65 145 55 Expense;t 180 155 Advance receipt → revenue when earned;t 180 195 Allocate deferrals as benefit or service occurs",
+    "r 85 35 190 140;l 105 65 255 65;l 105 95 255 95;l 105 125 255 125;t 180 55 Schedule;t 180 85 Estimate;t 180 115 Review;t 180 195 Reversal must not duplicate recognition"
+  ],
+  "plus-accounting-prepaid-expenses-and-unearned-revenue": [
+    "l 35 105 325 105;d 65 105 6;d 180 105 6;d 295 105 6;t 65 85 Pay;t 180 85 Use;t 295 85 Expire;t 180 175 Asset becomes expense as benefit is consumed",
+    "r 35 75 290 50;f 35 75 72.5 50;t 71 105 $300;t 216 105 $900 prepaid;t 180 55 $1,200 annual policy, three months used;t 180 195 Expense $300, asset remaining $900",
+    "b 25 65 145 55 Cash advance;b 190 65 145 55 Contract liability;a 170 92 190 92;t 180 155 Perform service → recognize revenue;t 180 195 Receipt alone need not establish revenue",
+    "b 25 55 145 55 Prepaid balance;b 190 55 145 55 Unearned balance;t 97 150 Future benefit;t 262 150 Future obligation;t 180 195 Balance reflects what remains at reporting date"
+  ],
+  "plus-accounting-reading-a-statement-of-changes-in-equity": [
+    "b 25 45 145 45 Opening equity;b 190 45 145 45 Profit / loss;b 25 115 145 45 Contributions;b 190 115 145 45 Distributions;t 180 195 Reconcile components to closing equity",
+    "r 35 75 290 50;t 180 105 Retained earnings balance;t 180 55 Accumulated earnings less distributions;t 180 195 This equity account is not a cash reserve",
+    "b 25 45 145 45 Opening $40k;b 190 45 145 45 Profit +$12k;b 105 115 150 45 Dividends −$5k;t 180 195 Closing retained earnings $47,000",
+    "r 35 75 290 50;l 130 75 130 125;l 230 75 230 125;t 82 105 Capital;t 180 105 Earnings;t 277 105 OCI;t 180 195 Components and treasury shares depend on framework"
+  ],
+  "plus-accounting-understanding-a-trial-balance": [
+    "l 180 45 180 175;l 35 75 325 75;t 100 65 Debit balances;t 260 65 Credit balances;t 100 125 Total D;t 260 125 Total C;t 180 195 Ledger totals must match",
+    "r 65 55 90 115;r 205 75 90 95;t 110 45 Debit total;t 250 65 Credit total;t 180 195 Unequal totals flag errors, equality cannot prove completeness",
+    "b 25 65 95 55 Unadjusted;a 120 92 132 92;b 132 65 95 55 Adjusted;a 227 92 239 92;b 239 65 95 55 Statements;t 180 195 Closing entries reset temporary accounts where used",
+    "r 65 65 90 105;r 205 65 90 105;t 110 55 $35,000 Dr;t 250 55 $35,000 Cr;t 180 195 Balanced $500 error can remain undetected"
+  ],
+  "plus-accounting-how-contribution-margin-works": [
+    "r 35 75 290 50;f 35 75 145 50;t 107 105 Variable cost;t 252 105 Contribution;t 180 55 Sales;t 180 195 Include relevant variable selling and production costs",
+    "r 35 75 290 50;f 35 75 174 50;t 122 105 Cost $15;t 267 105 CM $10;t 180 55 $25 selling price;t 180 195 Ratio=10/25=40%",
+    "r 35 75 290 50;f 35 75 203 50;t 136 105 Fixed $7k;t 281 105 Profit $3k;t 180 55 1,000 × $10 contribution=$10k;t 180 195 Remaining contribution covers fixed costs",
+    "l 35 175 325 175;p M35 145H180V95H325;p M35 155L325 45;t 180 25 Capacity threshold changes cost;t 180 195 Scarce resources and opportunity cost matter"
+  ],
+  "plus-accounting-calculating-the-break-even-point": [
+    "l 35 175 325 175;l 35 175 35 35;p M35 175L325 45M35 125L325 80;d 206 98 6;t 180 25 Revenue and total cost;t 180 195 Break-even at intersection, profit zero",
+    "b 25 45 145 45 Fixed $12,000;b 190 45 145 45 Price $50;b 105 115 150 45 Variable $30;t 180 195 12,000/(50−30)=600 units",
+    "b 25 65 145 55 CM ratio .40;b 190 65 145 55 Fixed $12,000;t 180 155 12,000/.40=$30,000;t 180 195 600 units ×$50 gives same revenue",
+    "l 35 175 325 175;l 35 175 35 35;p M35 45Q120 145 325 155;t 180 25 Break-even units;t 180 195 Higher contribution per unit reduces required volume"
+  ],
+  "plus-accounting-what-a-working-capital-snapshot-reveals": [
+    "r 35 65 290 40;r 35 125 200 40;t 180 55 Current assets;t 135 115 Current liabilities;t 180 195 Net working capital is the difference",
+    "b 25 65 145 55 CA $150k;b 190 65 145 55 CL $110k;t 180 155 NWC=$40k;t 180 195 Current ratio=150/110≈1.36",
+    "r 35 75 290 50;l 130 75 130 125;l 230 75 230 125;t 82 105 Cash;t 180 105 Receivables;t 277 105 Inventory;t 180 195 Current assets differ in immediate liquidity",
+    "l 35 105 325 105;d 65 105 6;d 180 105 6;d 295 105 6;t 65 85 Purchase;t 180 85 Collect;t 295 85 Pay;t 180 175 Payment and collection timing reveal financing pressure"
+  ],
+  "plus-accounting-why-internal-controls-matter": [
+    "b 25 45 145 45 Reliable reporting;b 190 45 145 45 Compliance;b 25 115 145 45 Protect assets;b 190 115 145 45 Risk reduction;t 180 195 Controls reduce, not eliminate, risk",
+    "b 25 65 95 55 Authorize;a 120 92 132 92;b 132 65 95 55 Hold assets;a 227 92 239 92;b 239 65 95 55 Record;t 180 195 Separate incompatible responsibilities where feasible",
+    "b 25 55 145 55 Access control;b 190 55 145 55 Reconciliation;t 97 150 Prevent;t 262 150 Detect;t 180 195 Different control types complement each other",
+    "r 85 35 190 140;l 105 65 255 65;l 105 95 255 95;l 105 125 255 125;t 180 55 Evidence;t 180 85 Review;t 180 115 Follow-up;t 180 195 Test consistent operation, consider override and collusion"
+  ],
+  "plus-accounting-budget-versus-actual-analysis": [
+    "r 65 65 90 105;r 205 65 90 105;t 110 55 Budget;t 250 55 Actual;t 180 195 Compare identical time, scope and definitions",
+    "r 65 70 90 100;r 205 60 90 110;t 110 60 $10,000;t 250 50 $11,000;t 180 195 Expense variance +$1,000 unfavorable",
+    "b 25 65 145 55 Standard $5/unit;b 190 65 145 55 Actual 1,200 units;t 180 155 Flexible budget $6,000;t 180 195 Original 1,000-unit plan not the same volume basis",
+    "b 25 45 145 45 Volume;b 190 45 145 45 Price;b 25 115 145 45 Efficiency;b 190 115 145 45 Timing;t 180 195 Separate causes and update forecast"
+  ]
+};
+window.LumenSlideArtBatch37Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch37;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch37Render(c,cls,step)||prior(c,cls,step);};})();
