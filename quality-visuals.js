@@ -5992,3 +5992,143 @@ window.LumenSlideArtBatch41Render=function renderer(c,cls="cover",step=-1){
  const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch41Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* Photography: dedicated slide artwork, batch 42. */
+window.LumenSlideArtBatch42={
+  "camera-exposure": [
+    "c 65 95 35;c 65 95 15;r 145 60 70 70;l 155 65 155 125;l 205 65 205 125;p M250 125L270 95L290 110L310 55;t 65 155 Aperture;t 180 155 Shutter;t 280 155 ISO gain;t 180 195 Light collection vs signal mapping",
+    "r 35 65 125 35;r 35 125 250 35;t 220 85 1/250 s;t 220 145 1/125 s;t 180 195 Twice the duration doubles captured light",
+    "c 95 90 40;c 265 90 28;t 95 150 f/4;t 265 150 f/5.6;t 180 195 Half aperture area offsets doubled shutter time",
+    "p M35 100L95 100M35 90L95 90M35 110L95 110;c 180 100 35;p M260 135L280 85L300 120L320 65;t 65 150 Motion;t 180 150 Depth;t 290 150 Noise;t 180 195 Choose controls for the intended image"
+  ],
+  "lenses": [
+    "l 180 35 180 175;l 290 35 290 175;p M45 45L180 80L290 145M45 45L180 110L290 145M45 145L180 80L290 45;t 180 25 Lens;t 290 195 Image plane;t 65 165 Subject",
+    "p M45 105L300 30M45 105L300 180M45 105L300 70M45 105L300 140;t 250 25 Wide angle;t 260 65 Narrow angle;t 180 205 Fixed sensor size",
+    "r 35 45 290 130;r 107 78 146 65;c 180 110 20;t 75 65 50 mm;t 180 70 100 mm;t 180 195 Same viewpoint, tighter field",
+    "d 40 105 7;l 40 105 180 55;l 40 105 180 155;l 40 105 300 55;l 40 105 300 155;l 180 55 180 155;l 300 55 300 155;t 180 195 Near object subtends larger angle"
+  ],
+  "photographic-light": [
+    "c 180 105 45;a 35 105 130 105;p M180 60Q240 105 180 150;t 70 85 Side light;t 180 195 Shadows reveal curvature",
+    "c 85 70 12;c 275 70 42;r 68 115 34 15;r 258 115 34 15;p M73 130L58 175H112L97 130M260 130L225 175M290 130L325 175;t 85 195 Small source;t 275 195 Large source",
+    "r 35 45 30 125;d 100 105 8;d 285 105 8;l 100 105 65 45;l 100 105 65 170;l 285 105 65 45;l 285 105 65 170;t 120 85 Near;t 285 85 Far;t 180 195 Window angular size shrinks with distance",
+    "c 180 105 40;a 45 55 145 85;r 275 55 15 100;a 275 105 220 105;t 70 40 Key light;t 285 175 Reflector;t 180 195 Fill raises shadow brightness"
+  ],
+  "depth-photography-how-composition-uses-framing": [
+    "r 35 45 290 130;c 90 105 25;c 270 95 25;r 65 65 150 85;t 180 195 Frame selects relationships and exclusions",
+    "r 35 45 290 130;c 115 105 30;d 270 65 10;l 132 45 132 175;l 228 45 228 175;t 180 195 Contrast and size guide attention",
+    "r 35 55 130 110;r 195 55 130 110;c 75 110 18;f 120 65 35 90;c 260 110 18;t 100 185 Competing doorway;t 260 185 Reframe;t 180 205 Position change removes distraction",
+    "r 35 45 290 130;p M35 175L215 75M325 175L215 75;c 215 75 15;t 180 195 Leading lines can direct attention, not mandate placement"
+  ],
+  "depth-photography-what-depth-of-field-means": [
+    "l 180 35 180 175;l 145 35 145 175;l 225 35 225 175;d 180 105 6;t 180 25 Focus plane;t 145 190 Near limit;t 225 205 Far limit;t 180 165 Acceptable range",
+    "c 70 100 5;c 140 100 12;c 215 100 23;c 295 100 36;t 180 45 Blur circles grow gradually;t 180 195 Acceptable size depends on viewing conditions",
+    "r 35 55 130 110;r 195 55 130 110;c 100 105 25;c 260 105 25;c 65 75 15;c 225 75 5;t 100 185 Wide aperture;t 260 185 Small aperture;t 180 205 Background blur changes",
+    "l 35 105 325 105;l 90 75 90 135;l 115 75 115 135;l 205 75 205 135;l 305 75 305 135;t 100 55 Near focus;t 255 55 Far focus;t 180 195 Near focus generally gives shallower depth"
+  ],
+  "depth-photography-how-motion-appears-in-photographs": [
+    "l 35 100 325 100;p M65 90H145V110H65Z;d 65 100 6;d 145 100 6;t 105 80 Travel during exposure;t 180 195 Light integrates over shutter interval",
+    "r 35 55 130 110;r 195 55 130 110;p M55 105H145M215 85L305 125M215 105L305 145;t 100 185 Moving subject;t 260 185 Camera shake;t 180 205 Stabilization addresses camera motion",
+    "c 80 95 18;c 80 140 18;p M80 95H140M80 140H87;t 180 95 1/60 s;t 180 145 1/1000 s;t 180 195 Shorter exposure reduces travel",
+    "r 35 45 290 130;p M45 65H315M45 85H315M45 135H315M45 155H315;c 180 110 22;t 180 195 Panning can keep subject sharp while streaking background"
+  ],
+  "depth-photography-understanding-white-balance": [
+    "r 35 65 130 85;r 195 65 130 85;f 55 85 90 45;r 215 85 90 45;t 100 185 Tungsten cast;t 260 185 Blue shade;t 180 205 Same neutral surface under different illuminants",
+    "r 45 65 70 105;r 145 95 70 75;r 245 125 70 45;t 80 55 R gain;t 180 85 G gain;t 280 115 B gain;t 180 195 Adjust relative channel gains",
+    "r 45 55 110 105;r 205 55 110 105;t 100 105 Gray card;t 260 105 Neutral target;a 155 108 205 108;t 180 195 Custom white balance reduces cast",
+    "r 35 55 145 110;r 180 55 145 110;t 107 110 Warm lamp;t 252 110 Blue window;t 180 195 One global correction cannot neutralize both"
+  ],
+  "depth-photography-how-image-sensors-capture-light": [
+    "r 35 75 290 90;l 107 75 107 165;l 180 75 180 165;l 252 75 252 165;a 72 25 72 75;a 145 25 145 75;a 215 25 215 75;a 290 25 290 75;t 180 195 Photons generate charge at photosites",
+    "r 105 45 150 120;l 180 45 180 165;l 105 105 255 105;f 180 45 75 60;f 105 105 75 60;t 142 80 R;t 217 80 G;t 142 140 G;t 217 140 B;t 180 195 Bayer sampling, then demosaicing",
+    "r 55 75 70 90;r 145 75 70 90;r 235 75 70 90;f 55 145 70 20;f 145 105 70 60;f 235 75 70 90;t 90 65 Dim;t 180 65 Bright;t 270 65 Saturated;t 180 195 Full wells lose highlight differences",
+    "r 35 105 120 50;r 195 55 130 100;d 60 125 5;d 95 135 5;d 125 120 5;d 215 85 5;d 245 105 5;d 275 75 5;d 305 125 5;t 95 180 Fewer photons;t 260 180 More photons;t 180 205 Relative shot noise decreases"
+  ],
+  "depth-photography-why-histograms-help-photographers": [
+    "l 35 175 325 175;r 45 145 35 30;r 80 115 35 60;r 115 65 35 110;r 150 45 35 130;r 185 95 35 80;r 220 135 35 40;r 255 155 35 20;t 65 195 Dark;t 290 195 Bright;t 180 25 Pixel count per brightness bin",
+    "r 35 55 130 100;f 35 55 65 100;r 195 55 130 100;f 195 105 130 50;t 100 175 Vertical split;t 260 175 Horizontal split;t 180 205 Same counts, different locations",
+    "l 35 175 325 175;r 45 65 35 110;r 80 115 35 60;r 240 125 35 50;r 275 55 35 120;t 85 45 Night;t 270 35 Snow;t 180 195 Subject determines expected distribution",
+    "l 35 175 325 175;r 35 45 25 130;r 60 140 45 35;r 105 120 45 55;r 150 145 45 30;r 300 35 25 140;t 80 25 Shadow clip;t 275 25 Highlight clip;t 180 195 Preview histogram is not RAW saturation"
+  ],
+  "plus-photography-how-aperture-affects-depth-of-field": [
+    "c 95 100 45;c 265 100 22.5;t 95 160 f/2;t 265 160 f/4;t 180 195 N = focal length / entrance pupil diameter",
+    "l 180 35 180 175;l 300 35 300 175;p M40 105L180 55L280 105L300 115M40 105L180 155L280 105L300 95;t 180 25 Wide pupil;t 300 195 Blur at sensor",
+    "r 35 55 130 110;r 195 55 130 110;c 100 105 25;c 260 105 25;c 65 75 16;c 225 75 6;t 100 185 f/2;t 260 185 f/8;t 180 205 Smaller aperture can show more context",
+    "l 35 175 325 175;l 35 175 35 35;p M35 55Q180 240 325 55;t 180 25 Combined blur (schematic);t 180 195 Defocus at wide end, diffraction at narrow end"
+  ],
+  "plus-photography-why-shutter-speed-changes-motion-blur": [
+    "l 35 105 325 105;d 65 105 5;d 265 105 5;a 65 85 265 85;t 165 70 Speed v;t 180 155 Travel = v × exposure time",
+    "r 35 65 240 30;r 35 125 24 30;t 180 55 1/100 s: 6 pixels;t 190 145 1/1000 s: 0.6 px;t 180 195 Projected speed 600 pixels/s",
+    "d 45 105 6;l 45 105 160 75;l 45 105 160 135;l 45 105 320 35;l 45 105 320 175;t 160 65 Short focal length;t 270 25 Longer focal length;t 180 195 Same angular shake, more image displacement",
+    "r 35 65 290 45;f 35 65 36.25 45;t 180 55 3 stops shorter = 1/8 duration;t 180 145 Need 8× light for same photons;t 180 195 ISO brightness adjustment cannot add photons"
+  ],
+  "plus-photography-understanding-iso-in-digital-photography": [
+    "b 35 65 130 60 Sensor signal;a 165 95 195 95;b 195 65 130 60 Gain / render;t 180 175 ISO affects output mapping",
+    "r 35 55 130 110;r 195 55 130 110;d 65 85 5;d 95 115 5;d 135 145 5;d 225 85 5;d 255 115 5;d 295 145 5;t 100 185 ISO 100;t 260 185 ISO 800;t 180 205 Same photons at same exposure",
+    "l 35 175 325 175;p M35 155L95 125L155 95L215 65L275 35;p M35 150L95 95L155 45L215 35H325;t 180 25 Gain and clipping;t 180 195 RAW gain can change downstream noise and headroom",
+    "b 35 45 135 55 Motion limit;b 190 45 135 55 Depth limit;a 102 100 160 145;a 257 100 200 145;b 100 145 160 45 Choose ISO last"
+  ],
+  "plus-photography-how-dynamic-range-limits-photographs": [
+    "l 35 105 325 105;d 65 105 6;d 295 105 6;t 65 85 Noise floor;t 295 85 Saturation;t 180 155 Usable signal ratio;t 180 195 Defined noise criterion matters",
+    "l 35 105 325 105;l 35 95 35 115;l 93 95 93 115;l 151 95 151 115;l 209 95 209 115;l 267 95 267 115;l 325 95 325 115;t 35 85 1;t 93 85 4;t 151 85 16;t 209 85 64;t 267 85 256;t 325 85 1024;t 180 195 2¹⁰=1024, ten stops",
+    "r 35 55 290 110;f 220 65 85 90;t 100 110 Dark room;t 262 110 Window;t 180 195 One exposure may clip or bury scene detail",
+    "r 35 65 85 80;r 137 65 85 80;r 239 65 85 80;t 77 105 −EV;t 179 105 0 EV;t 281 105 +EV;t 180 195 Bracketed exposures may recover captured detail"
+  ],
+  "plus-photography-how-raw-and-jpeg-files-differ": [
+    "r 35 55 130 110;p M45 85H155M45 115H155M45 145H155;t 100 75 Sensor values;a 165 105 195 105;b 195 55 130 110 RAW + metadata;t 180 195 Develop into viewable image",
+    "b 35 65 95 60 Demosaic;a 130 95 142 95;b 142 65 95 60 Tone/color;a 237 95 249 95;b 249 65 85 60 JPEG;t 180 195 Render then lossy compression",
+    "r 35 55 130 110;r 195 55 130 110;t 100 95 RAW;t 100 125 Flexible WB;t 260 95 JPEG;t 260 125 Baked WB;t 180 195 Neither recovers clipped sensor data",
+    "r 65 45 90 125;r 205 110 90 60;t 110 35 RAW storage;t 250 100 JPEG storage;t 180 195 More processing vs immediate sharing"
+  ],
+  "plus-photography-how-focal-length-changes-framing": [
+    "d 45 105 6;l 45 105 285 45;l 45 105 285 165;l 285 45 285 165;t 180 25 Horizontal angle of view;t 180 195 θ=2 arctan(w/2f)",
+    "d 45 105 6;l 45 105 285 18;l 45 105 285 192;l 45 105 285 63;l 45 105 285 147;t 240 35 50 mm: 40°;t 250 78 100 mm: 20°;t 180 210 36 mm sensor width",
+    "r 35 45 290 130;r 100 74 160 72;c 180 110 20;t 75 65 Larger sensor;t 180 95 Smaller sensor;t 180 195 Same lens, narrower crop on smaller sensor",
+    "d 35 105 6;d 130 105 6;l 35 105 240 55;l 35 105 240 155;l 130 105 240 55;l 130 105 240 155;l 240 55 240 155;t 180 195 Moving camera changes depth ratios, not lens alone"
+  ],
+  "plus-photography-understanding-exposure-compensation": [
+    "l 35 105 325 105;l 180 85 180 125;d 180 105 7;t 180 65 Meter target;t 65 135 −EV;t 295 135 +EV;t 180 195 Compensation shifts automatic brightness target",
+    "r 35 65 130 35;r 35 125 260 35;t 220 85 0 EV;t 165 145 +1 EV;t 180 195 One stop requests twice exposure or equivalent brightness",
+    "r 35 55 130 110;r 195 55 130 110;t 100 110 Gray snow;t 260 110 Bright snow;t 180 195 Positive compensation can correct meter underexposure",
+    "b 35 45 135 55 Aperture priority;b 190 45 135 55 Manual fixed ISO;t 102 150 Shutter / auto ISO;t 257 150 No automatic change;t 180 195 Behavior depends on mode"
+  ],
+  "depth-photography-how-focal-distance-changes-perspective": [
+    "d 35 105 6;l 35 105 135 55;l 35 105 135 155;l 35 105 300 55;l 35 105 300 155;l 135 55 135 155;l 300 55 300 155;t 180 195 Image size ∝ focal length × physical size / distance",
+    "l 35 105 325 105;l 120 65 120 145;l 290 65 290 145;t 120 55 Near Z₁;t 290 55 Far Z₂;t 180 195 Equal-size object image ratio = Z₂/Z₁",
+    "b 35 65 135 55 1 m and 2 m;b 190 65 135 55 4 m and 5 m;t 102 150 Ratio 2;t 257 150 Ratio 1.25;t 180 195 Move back 3 m, relative size changes",
+    "d 45 105 6;l 45 105 315 105;l 145 55 145 155;l 265 55 265 155;t 145 45 Focus A;t 265 45 Focus B;t 180 195 Refocus at same viewpoint does not change perspective"
+  ],
+  "plus-photography-how-bounced-light-softens-portraits": [
+    "r 35 35 290 20;d 65 135 8;d 285 135 8;a 65 127 180 55;a 180 55 285 127;t 180 25 Reflecting patch;t 180 195 Wall or ceiling becomes effective source",
+    "r 35 35 25 140;d 100 105 6;d 285 105 6;l 100 105 60 35;l 100 105 60 175;l 285 105 60 35;l 285 105 60 175;t 180 195 Apparent angular extent depends on distance",
+    "r 35 45 20 130;r 195 35 130 20;c 105 105 25;c 260 125 25;a 55 105 80 105;a 260 55 260 100;t 100 185 Side bounce;t 260 185 High ceiling;t 180 205 Direction and intensity differ",
+    "r 35 55 290 15;d 65 145 6;d 295 145 6;a 65 139 180 70;a 180 70 295 139;t 180 45 Colored surface;t 180 195 Path loss and reflected spectrum affect exposure"
+  ],
+  "plus-photography-why-lenses-produce-perspective-distortion-at-close-distances": [
+    "d 45 105 6;l 45 105 120 75;l 45 105 120 135;l 45 105 150 75;l 45 105 150 135;l 120 75 120 135;l 150 75 150 135;t 180 195 At close distance, small depth offsets matter",
+    "b 35 65 135 55 .3 m vs .4 m;b 190 65 135 55 1.3 vs 1.4 m;t 102 150 Ratio 1.33;t 257 150 Ratio 1.08;t 180 195 Greater distance reduces exaggerated proportions",
+    "r 35 45 130 130;r 195 45 130 130;r 65 75 70 70;r 225 75 70 70;c 100 110 20;c 260 110 20;t 100 195 Wide crop;t 260 195 Tele frame;t 180 25 Same viewpoint gives same perspective",
+    "r 35 55 130 110;p M195 55Q260 35 325 55Q345 110 325 165Q260 185 195 165Q175 110 195 55Z;t 100 185 Rectilinear;t 260 185 Barrel distortion;t 180 205 Optical mapping differs from viewpoint geometry"
+  ],
+  "plus-photography-how-photographers-use-histograms-for-clipping": [
+    "l 35 175 325 175;r 45 125 45 50;r 90 95 45 80;r 135 75 45 100;r 180 115 45 60;r 300 35 25 140;t 270 25 R channel clip;t 180 195 Luminance alone can hide channel clipping",
+    "b 35 55 135 65 RAW measurements;a 170 87 190 87;b 190 55 135 65 Rendered preview;t 180 165 White balance and tone alter histogram;t 180 195 Preview differs from sensor data",
+    "p M35 175L65 150L105 100L145 65L185 110L225 155L265 175M35 175L105 165L175 150L245 130L325 45;t 275 35 Red endpoint;t 180 195 Red flower may saturate one channel",
+    "l 35 105 325 105;d 295 105 7;a 285 75 215 75;t 250 55 Reduce exposure;t 180 155 Protect important highlights;t 180 195 Intentional specular clipping may be acceptable"
+  ]
+};
+window.LumenSlideArtBatch42Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch42;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch42Render(c,cls,step)||prior(c,cls,step);};})();
