@@ -565,3 +565,270 @@ window.LumenSlideArtBatch01Render=function renderSlide(c,cls="cover",step=-1){
  return `<svg class="${esc(cls)}" viewBox="0 0 360 220" role="img" aria-label="${esc(title)}" preserveAspectRatio="xMidYMid meet"><title>${esc(title)}</title><desc>${esc(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch01Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* Individually authored slide diagrams: Psychology and Finance, batch 02. */
+window.LumenSlideArtBatch02={
+  "bias": [
+    "b 20 45 92 45 Many cues;b 134 45 92 45 Shortcut;b 248 45 92 45 Decision;a 112 67 134 67;a 226 67 248 67;t 180 124 Fast judgment;r 35 146 290 18;t 180 188 Less evidence evaluated",
+    "r 45 55 240 25;t 165 48 Anchor $90;r 45 101 160 25;t 125 94 Offer $60;r 45 147 107 25;t 100 140 Comparable $40;t 180 204 Compare independent prices",
+    "b 25 50 135 60 Stereotype match;b 200 50 135 60 Actual frequency;a 160 80 200 80;t 180 140 Similarity ≠ probability;b 60 163 240 36 Check the base rate",
+    "b 20 70 94 45 First guess;b 133 40 105 42 Base rate;b 133 110 105 42 Other evidence;a 114 92 133 61;a 114 92 133 131;a 238 61 255 92;a 238 131 255 92;b 255 70 85 45 Revise;t 180 192 Independent checks"
+  ],
+  "memory": [
+    "b 25 65 100 55 Name: Rose;a 125 92 165 92;b 165 65 170 55 Associate with flower;p M250 148V195M250 165Q210 135 226 125Q250 125 250 153M250 165Q290 135 274 125Q250 125 250 153;t 105 182 Meaningful cue",
+    "b 25 70 95 50 Encode;a 120 95 132 95;b 132 70 95 50 Retain;a 227 95 239 95;b 239 70 95 50 Retrieve;a 285 120 285 153;t 285 173 Recall attempt;t 180 205 Failed access ≠ no storage",
+    "b 30 42 120 45 Original detail;b 210 42 120 45 Later suggestion;a 90 87 180 135;a 270 87 180 135;b 90 135 180 42 Reconstructed recall;t 180 202 Confidence is not accuracy",
+    "b 25 70 95 48 Close notes;a 120 94 132 94;b 132 70 95 48 Recall 3 ideas;a 227 94 239 94;b 239 70 95 48 Check errors;a 286 118 286 160;a 286 160 74 160;a 74 160 74 118;t 180 183 Repeat later"
+  ],
+  "motivation": [
+    "c 130 95 65;c 230 95 65;t 105 89 Interest;t 105 108 Intrinsic;t 255 89 Grade;t 255 108 Extrinsic;t 180 100 Both;t 180 188 Reasons can coexist",
+    "b 35 40 290 45 Learn a language;a 180 85 180 120;b 70 120 220 45 Practice ten words;t 180 196 Broad goal → specific action",
+    "b 25 45 145 45 Effort is useful;b 190 45 145 45 Task achievable;a 97 90 180 130;a 262 90 180 130;b 100 130 160 44 Willingness to start;t 180 202 Resources also matter",
+    "l 40 170 320 170;l 40 170 40 40;p M40 145L110 105L180 125L250 75L320 55;l 40 55 320 55;t 90 45 Target;t 180 145 Setback;t 180 200 Adjust practice after feedback"
+  ],
+  "attention": [
+    "b 25 45 100 45 Speaker A;b 25 125 100 45 Speaker B;a 125 67 200 100;a 125 147 200 110;b 200 80 135 50 Listener;t 180 195 Competing voices share attention",
+    "b 25 55 140 45 Task A;b 195 55 140 45 Task B;a 95 100 180 145;a 265 100 180 145;r 75 145 210 30;t 180 164 Limited shared capacity;t 180 202 Speed or accuracy may fall",
+    "b 20 60 105 55 Spreadsheet;b 235 60 105 55 Messages;a 125 80 235 80;a 235 99 125 99;t 180 58 Switch;t 180 150 Reload goal + context;t 180 190 Switching adds mental work",
+    "r 35 50 290 25;t 180 44 10 min uninterrupted;r 35 113 70 25;r 125 113 75 25;r 220 113 105 25;t 180 104 10 min with interruptions;l 113 110 113 142;l 208 110 208 142;t 180 181 Compare output and errors"
+  ],
+  "happiness": [
+    "l 35 175 325 175;p M35 125L90 65L145 140L200 85L255 145L325 80;l 35 105 325 105;t 180 36 Momentary mood varies;t 180 99 Overall satisfaction;t 180 202 Different measures",
+    "b 25 45 135 42 Relationships;b 200 45 135 42 Living conditions;b 25 120 135 42 Health;b 200 120 135 42 Meaningful activity;c 180 104 18;a 160 66 175 88;a 200 66 185 88;a 160 141 175 120;a 200 141 185 120;t 180 204 Multiple influences",
+    "l 35 175 325 175;l 35 175 35 35;p M35 115H95L105 45Q180 90 325 106;l 35 115 325 115;t 106 34 Change;t 235 76 Partial adaptation;t 180 200 Time → (illustrative)",
+    "b 25 55 140 110 Daily diary;t 95 95 Mon Tue Wed;t 95 120 + − +;b 195 55 140 110 Weekly rating;t 265 105 Life satisfaction;t 180 200 Mood ≠ life evaluation"
+  ],
+  "emotion": [
+    "c 180 105 46;b 20 40 105 45 Experience;b 235 40 105 45 Body;b 125 163 110 42 Interpretation;a 125 62 145 83;a 235 62 215 83;a 180 151 180 163;t 180 109 Emotion",
+    "p M25 105H75L90 80L105 140L120 55L135 105H170;b 205 35 130 36 Excitement;b 205 80 130 36 Fear;b 205 125 130 36 Caffeine;a 170 105 205 53;a 170 105 205 98;a 170 105 205 143;t 180 199 One sign, several causes",
+    "b 25 70 135 55 Feeling threatened;a 160 97 200 97;b 200 70 135 55 Check evidence;t 180 160 Feeling signals concern;t 180 190 It does not prove danger",
+    "b 20 55 100 50 Name feeling;a 120 80 130 80;b 130 55 100 50 Check facts;a 230 80 240 80;b 240 55 100 50 Choose action;t 180 145 Evidence + personal goals;t 180 192 Emotion can inform action"
+  ],
+  "social-proof": [
+    "b 235 70 95 70 Gate;c 45 90 12;c 85 90 12;c 125 90 12;c 165 90 12;a 177 90 235 90;c 75 165 12;a 87 155 125 117;t 180 201 Visitor observes others",
+    "b 230 45 100 48 Gate 1;b 230 135 100 48 Gate 2;c 50 68 10;c 82 68 10;c 114 68 10;c 146 68 10;a 156 68 230 68;t 120 155 No queue;t 180 209 Infer information from others",
+    "b 20 65 145 55 Public: agree;b 195 65 145 55 Private: disagree;a 165 92 195 92;t 180 155 Avoid disapproval;t 180 187 Agreement may not reflect belief",
+    "b 120 35 120 42 Shared source;a 180 77 55 120;a 180 77 180 120;a 180 77 305 120;b 15 120 80 42 Person A;b 140 120 80 42 Person B;b 265 120 80 42 Person C;t 180 201 Three reports, one source"
+  ],
+  "personality": [
+    "l 40 100 320 100;c 105 100 9;c 180 100 9;c 255 100 9;t 40 82 Lower;t 320 82 Higher;t 180 145 Trait on a continuum;t 180 185 Tendency, not a rigid type",
+    "t 90 35 Openness;l 170 31 330 31;c 245 31 6;t 90 69 Conscientiousness;l 170 65 330 65;c 210 65 6;t 90 103 Extraversion;l 170 99 330 99;c 290 99 6;t 90 137 Agreeableness;l 170 133 330 133;c 260 133 6;t 90 171 Neuroticism;l 170 167 330 167;c 230 167 6;t 180 207 Illustrative individual profile",
+    "c 90 70 15;c 270 70 15;b 25 110 130 45 Quiet at work;b 205 110 130 45 Talks with friends;t 180 40 Same person;t 180 196 Behavior depends on setting",
+    "b 25 45 145 48 Self-report;b 190 45 145 48 Observations;a 97 93 180 135;a 262 93 180 135;b 85 135 190 45 Combined evidence;t 180 203 Check across time and settings"
+  ],
+  "anxiety": [
+    "b 25 65 95 55 Uncertainty;a 120 92 132 92;b 132 65 95 55 Anticipation;a 227 92 239 92;b 239 65 95 55 Arousal;p M75 165H110L125 140L140 190L155 165H285;t 180 207 Possible harm, not certainty",
+    "b 35 45 125 50 Feared situation;a 160 70 205 70;b 205 45 120 50 Avoid;a 265 95 265 135;b 205 135 120 45 Relief;a 205 157 95 157;a 95 157 95 95;t 125 199 Relief may reinforce avoidance",
+    "t 95 45 Frequency;l 170 41 330 41;c 205 41 6;t 95 80 Intensity;l 170 76 330 76;c 285 76 6;t 95 115 Duration;l 170 111 330 111;c 235 111 6;t 95 150 Daily impact;l 170 146 330 146;c 260 146 6;t 180 201 Dimensions, not a diagnosis",
+    "b 25 65 145 55 Persistent distress;a 170 92 190 92;b 190 65 145 55 Professional care;t 180 154 Assessment → support;t 180 192 Education is not diagnosis"
+  ],
+  "depth-psychology-why-first-impressions-can-mislead": [
+    "r 30 65 300 70;r 30 65 45 70;t 52 103 One;t 202 103 Unobserved behavior;t 180 165 One encounter is a small sample;t 180 195 A deadline may explain haste",
+    "b 25 65 135 55 Well dressed;a 160 92 200 92;b 200 65 135 55 Accurate?;t 180 153 Halo effect;t 180 191 Appearance is not evidence of accuracy",
+    "b 25 40 140 42 Deadline;b 195 40 140 42 Stable tendency;a 95 82 180 125;a 265 82 180 125;b 95 125 170 45 Rushed response;t 180 200 Competing explanations",
+    "b 25 65 100 50 Initial view;a 125 90 145 90;b 145 65 105 50 New evidence;a 250 90 270 90;b 270 65 70 50 Revise;t 180 157 Contradictions matter;t 180 192 Update rather than defend"
+  ],
+  "plus-psychology-understanding-the-availability-heuristic": [
+    "b 25 50 145 60 Vivid example;b 190 50 145 60 Actual rate;t 97 145 Easy to recall;t 262 145 Need data;t 180 195 Memorability ≠ frequency",
+    "b 25 45 95 40 Report 1;b 132 45 95 40 Report 2;b 239 45 95 40 Report 3;a 72 85 180 125;a 180 85 180 125;a 286 85 180 125;b 120 125 120 45 Same event;t 180 200 Repetition is not incidence",
+    "r 45 65 270 25;r 45 65 27 25;t 180 55 10 / 100 = 10%;r 45 132 270 25;l 45 132 45.27 157;t 180 122 10 / 10,000 = 0.1%;t 180 195 Equal counts, different rates",
+    "b 25 55 95 45 Vivid story;b 135 55 95 45 Frequency;b 245 55 90 45 Population;a 182 100 182 145;b 75 145 210 42 Rate for relevant period;t 180 205 Use reliable denominators"
+  ],
+  "plus-psychology-why-framing-can-change-decisions": [
+    "r 30 60 270 28;r 30 60 243 28;t 180 50 90% survival;r 30 130 270 28;r 273 130 27 28;t 180 120 10% mortality;t 180 194 Same 100 people and time period",
+    "l 35 110 325 110;l 180 70 180 150;a 180 110 285 110;a 180 110 75 110;t 180 58 Reference;t 75 85 Loss;t 285 85 Gain;t 180 188 Same final amount can feel different",
+    "b 25 45 145 55 Gain frame;b 190 45 145 55 Loss frame;a 97 100 97 140;a 262 100 262 140;b 25 140 145 42 Choice A or B;b 190 140 145 42 Choice A or B;t 180 205 Effect varies by person and task",
+    "b 25 45 310 45 Frame A: 90 of 100 survive;b 25 105 310 45 Frame B: 10 of 100 die;t 180 180 Same outcome + denominator;t 180 203 Compare uncertainty and harms"
+  ],
+  "plus-psychology-how-reinforcement-shapes-behavior": [
+    "l 35 170 325 170;p M35 135L110 110L185 75L260 45;p M35 65L110 95L185 130L260 155;t 270 38 Increases;t 275 150 Decreases;t 180 204 Reinforcement ↑ / punishment ↓",
+    "b 25 65 95 50 Behavior;a 120 90 132 90;b 132 65 95 50 Add reward;a 227 90 239 90;b 239 65 95 50 More behavior;t 180 167 Reward is reinforcing only if;t 180 188 later behavior increases",
+    "b 25 70 95 50 Buckle;a 120 95 132 95;b 132 70 95 50 Alarm stops;a 227 95 239 95;b 239 70 95 50 Buckle more;t 180 190 Removing stimulus can reinforce",
+    "l 35 170 325 170;r 65 125 70 45;r 225 65 70 105;t 100 115 3/day;t 260 55 7/day;t 100 190 Baseline;t 260 190 After;t 180 210 Illustrative frequency"
+  ],
+  "plus-psychology-why-people-infer-causes-differently": [
+    "b 25 45 140 45 Personal factors;b 195 45 140 45 Situation;a 95 90 180 135;a 265 90 180 135;b 100 135 160 42 Observed behavior;t 180 205 Causes may combine",
+    "c 55 95 15;c 105 95 15;c 155 95 15;c 205 95 15;c 255 95 15;t 55 100 ×;t 105 100 ×;t 155 100 ×;t 205 100 ×;t 255 100 ✓;t 180 45 Many struggle on same task;t 180 160 Investigate task conditions",
+    "b 25 75 95 48 Monday;b 132 75 95 48 Tuesday;b 239 75 95 48 Friday;t 72 150 Late;t 179 150 Late;t 286 150 Late;t 180 192 Repetition in similar conditions",
+    "b 25 55 145 48 Meeting A;b 190 55 145 48 Meeting B;t 97 135 Late;t 262 135 On time;t 180 190 What differs about meeting A?"
+  ],
+  "plus-psychology-understanding-the-spacing-effect": [
+    "l 35 150 325 150;r 45 70 80 30;r 45 115 20 25;r 125 115 20 25;r 205 115 20 25;r 285 115 20 25;t 180 55 Massed practice;t 180 106 Distributed practice;t 180 183 Same total time over more days",
+    "b 25 65 95 55 Study;a 120 92 132 92;b 132 65 95 55 Delay;a 227 92 239 92;b 239 65 95 55 Recall;t 180 162 Effortful retrieval + feedback;t 180 191 Strengthen later access",
+    "r 40 55 240 30;t 160 45 One session: 60 min;r 40 120 55 30;r 110 120 55 30;r 180 120 55 30;r 250 120 55 30;t 180 110 Four sessions: 15 min each;t 180 190 Total = 60 minutes",
+    "l 30 65 330 65;l 30 140 330 140;c 65 65 7;c 125 65 7;c 185 65 7;c 245 65 7;c 245 140 7;c 320 65 7;c 320 140 7;t 180 38 Spaced group;t 180 117 Massed group;t 180 187 Equal delay after final study;t 320 205 Test"
+  ],
+  "plus-psychology-what-emotional-regulation-involves": [
+    "l 30 155 330 155;p M30 150Q100 35 180 65T330 145;p M30 150Q100 85 180 100T330 145;t 180 35 Intensity and timing vary;t 180 195 Regulation ≠ elimination",
+    "b 25 45 310 40 Ambiguous event: no reply;b 25 120 145 48 They are angry;b 190 120 145 48 They may be busy;a 180 85 97 120;a 180 85 262 120;t 180 205 Reappraise with credible alternatives",
+    "b 25 60 145 55 Outer expression;b 190 60 145 55 Inner experience;t 97 150 Hidden;t 262 150 Distress may persist;t 180 195 Expression and feeling differ",
+    "b 105 35 150 40 Situation;a 180 75 60 125;a 180 75 180 125;a 180 75 300 125;b 15 125 90 50 Change it;b 135 125 90 50 Seek help;b 255 125 90 50 Tolerate;t 180 203 Choose by circumstance"
+  ],
+  "plus-psychology-how-confirmation-bias-affects-belief-updating": [
+    "b 25 45 145 50 Supporting cases;b 190 45 145 50 Contrary cases;a 97 95 97 140;b 25 140 145 42 Belief reinforced;t 262 145 Ignored?;t 180 205 Sample both sides",
+    "r 40 65 224 30;t 150 55 P(E|A) = 80%;r 40 135 112 30;t 100 125 P(E|B) = 40%;t 180 201 Likelihood ratio = 2",
+    "r 35 55 45 35;r 80 55 180 35;t 148 44 Prior odds 1:4;r 35 130 90 35;r 125 130 180 35;t 170 120 Updated odds 2:4;t 180 205 A still less likely than B",
+    "b 25 45 145 50 Prediction;b 190 45 145 50 Disconfirming test;a 97 95 180 140;a 262 95 180 140;b 95 140 170 42 Compare results;t 180 205 Specify failure in advance"
+  ],
+  "plus-psychology-understanding-cognitive-dissonance": [
+    "b 25 65 145 60 Value conservation;b 190 65 145 60 Waste resources;a 170 95 190 95;t 180 155 Incompatible cognitions;t 180 190 Possible discomfort",
+    "b 120 35 120 40 Conflict;a 180 75 55 125;a 180 75 180 125;a 180 75 305 125;b 15 125 80 50 Change act;b 130 125 100 50 Change belief;b 265 125 80 50 Justify;t 180 204 Several reduction routes",
+    "b 25 45 100 48 Self-perception;b 130 45 100 48 Demand effects;b 235 45 100 48 Dissonance;a 75 93 180 140;a 180 93 180 140;a 285 93 180 140;b 80 140 200 40 Reports liking task",
+    "b 115 30 130 42 Participants;a 180 72 95 115;a 180 72 265 115;b 25 115 140 45 Condition A;b 195 115 140 45 Condition B;t 180 195 Random assignment + same measures"
+  ],
+  "plus-psychology-how-expectations-affect-perception": [
+    "t 180 45 Read in context;b 30 75 90 45 A;b 135 75 90 45 B / 13;b 240 75 90 45 C;b 30 135 90 45 12;b 135 135 90 45 B / 13;b 240 135 90 45 14;t 180 205 Same ambiguous symbol, different context",
+    "l 30 175 330 175;p M30 175Q100 20 170 175;p M105 175Q190 20 275 175;l 150 45 150 175;l 190 45 190 175;t 100 35 Noise;t 235 35 Signal;t 180 200 Criterion can shift",
+    "l 35 170 325 170;r 55 60 50 110;r 115 120 50 50;r 205 90 50 80;r 265 150 50 20;t 110 48 Liberal;t 260 78 Conservative;t 110 190 Hits / false alarms;t 260 190 Hits / false alarms",
+    "b 25 45 145 45 Signal present;b 190 45 145 45 Signal absent;b 25 105 145 45 Hit or miss;b 190 105 145 45 Alarm or correct reject;t 180 194 Compare both rates"
+  ],
+  "plus-psychology-why-social-comparison-affects-self-evaluation": [
+    "l 35 80 325 80;l 35 155 325 155;c 180 80 9;c 180 155 9;c 65 80 5;c 100 80 5;c 135 80 5;c 225 155 5;c 270 155 5;c 310 155 5;t 180 50 Novice group;t 180 125 Elite group;t 180 205 Same runner speed, different rank",
+    "b 25 55 145 55 Existing mood;a 170 82 195 82;b 195 55 140 55 Chosen content;a 265 110 265 150;a 265 150 97 150;a 97 150 97 110;t 180 194 Association may run both ways",
+    "b 110 30 140 40 Random assignment;a 180 70 65 120;a 180 70 180 120;a 180 70 295 120;b 15 120 100 45 Upward;b 130 120 100 45 Lateral;b 245 120 100 45 Neutral;t 180 203 Compare exposure effects",
+    "l 35 110 325 110;r 65 65 30 45;r 115 110 30 35;r 165 90 30 20;r 215 110 30 55;r 265 50 30 60;t 180 32 Individual changes differ;t 180 195 Mean can hide variation"
+  ],
+  "compound": [
+    "r 35 60 180 35;r 215 60 9 35;t 125 48 Principal;r 35 125 189 35;r 224 125 9.45 35;t 180 115 Next growth includes previous gain;t 180 195 Growth on current balance",
+    "r 35 130 80 40;r 140 120 80 50;r 245 109 80 61;t 75 120 $1,000;t 180 110 $1,050;t 285 99 $1,102.50;t 75 190 Start;t 180 190 Year 1;t 285 190 Year 2",
+    "b 25 65 95 55 P initial;b 132 65 95 55 × (1+r);b 239 65 95 55 Repeat n;a 120 92 132 92;a 227 92 239 92;t 180 165 A = P(1+r)ⁿ;t 180 195 Match period and rate",
+    "l 35 175 325 175;p M35 150Q150 115 325 40;p M35 150L80 120L125 155L170 90L215 115L260 65L325 90;t 180 30 Hypothetical steady growth;t 180 202 Actual returns fluctuate"
+  ],
+  "investing": [
+    "b 25 55 145 60 Shares;b 190 55 145 60 Bonds;t 97 145 Ownership;t 262 145 Lending;t 180 195 Both can lose value",
+    "b 25 65 95 55 $100 start;a 120 92 132 92;b 132 65 95 55 $105 end;a 227 92 239 92;b 239 65 95 55 +$2 cash;t 180 166 $5 + $2 = $7;t 180 195 Before costs",
+    "l 35 160 325 160;p M35 100L90 65L145 120L200 50L255 150L325 100;t 180 35 Uncertain market outcomes;t 180 198 Expected return ≠ guarantee",
+    "l 35 80 325 80;l 35 150 325 150;p M35 80L90 130L145 75L205 65L325 45;c 95 80 6;c 305 150 6;t 95 60 Need soon;t 285 135 Longer horizon;t 180 203 Recovery is not assured"
+  ],
+  "diversification": [
+    "r 40 65 280 55;t 180 98 One issuer;t 180 145 100% exposure;t 180 195 One company drives portfolio",
+    "r 35 65 85 60;r 135 65 85 60;r 235 65 90 60;t 77 95 Stock A;t 177 95 Stock B;t 280 95 Bonds;t 180 185 Different sources of risk",
+    "r 50 65 100 35;r 210 65 100 35;t 100 55 $100;t 260 55 $100;r 50 135 80 35;r 210 135 110 35;t 90 125 $80;t 265 125 $110;t 180 203 $190 total → −5%",
+    "l 35 55 325 55;p M35 65L110 80L180 130L250 145L325 160;p M35 80L110 100L180 145L250 155L325 175;t 180 38 Shared market shock;t 180 202 Multiple assets can fall together"
+  ],
+  "budget": [
+    "b 25 45 145 48 Take-home pay;b 190 45 145 48 Other receipts;a 97 93 180 140;a 262 93 180 140;b 95 140 170 45 Monthly inflows;t 180 207 Use a defined period",
+    "b 25 55 95 65 Fixed;b 132 55 95 65 Variable needs;b 239 55 95 65 Discretionary;t 180 145 Include irregular bills;b 85 165 190 38 Total outflows",
+    "r 35 65 290 35;t 180 55 Income $2,500;r 35 135 243.6 35;r 278.6 135 46.4 35;t 150 125 Spending $2,100;t 302 125 $400;t 180 205 Surplus before overlooked bills",
+    "b 110 35 140 45 Surplus $400;a 180 80 65 130;a 180 80 180 130;a 180 80 295 130;b 15 130 100 45 Irregular;b 130 130 100 45 Emergency;b 245 130 100 45 Other goals;t 180 205 Compare plan with actual"
+  ],
+  "stockmarket": [
+    "b 25 70 95 55 Buyer;a 120 97 132 97;b 132 70 95 55 Exchange;a 227 97 239 97;b 239 70 95 55 Seller;t 180 185 Trading venue matches orders",
+    "b 25 60 145 60 Bid $20.00;b 190 60 145 60 Ask $20.10;l 97 145 262 145;t 180 170 Spread $0.10",
+    "b 25 55 145 55 Market order;b 190 55 145 55 Limit order;t 97 145 Execution first;t 262 145 Price bound;t 180 193 Limit may not execute",
+    "b 25 45 95 45 Stock A;b 132 45 95 45 Stock B;b 239 45 95 45 Stock C;a 72 90 180 140;a 180 90 180 140;a 286 90 180 140;b 100 140 160 45 Index measure;t 180 207 Not a share itself"
+  ],
+  "depth-finance-understanding-bond-prices": [
+    "l 35 130 325 130;c 65 130 6;c 145 130 6;c 225 130 6;c 305 130 6;t 65 165 Issue;t 145 110 Coupon;t 225 110 Coupon;t 300 95 Principal + coupon;t 180 200 Payment depends on solvency",
+    "b 25 55 145 60 $1,000 face;b 190 55 145 60 $900 price;t 97 145 Coupon $50;t 262 145 Coupon $50;t 97 178 5% rate;t 262 178 5.56% current yield",
+    "l 35 170 325 170;l 35 170 35 35;p M35 50Q150 100 325 150;t 180 36 Bond price;t 180 195 Comparable market yield →;t 200 90 Inverse relationship",
+    "b 25 45 145 48 Credit quality;b 190 45 145 48 Maturity;b 105 130 150 48 Bond price;a 97 93 180 130;a 262 93 180 130;t 180 205 Contract terms also matter"
+  ],
+  "depth-finance-why-investment-fees-matter": [
+    "b 25 55 95 55 Fund fee;b 132 55 95 55 Advice;b 239 55 95 55 Trading;a 72 110 180 150;a 180 110 180 150;a 286 110 180 150;b 100 150 160 40 Total costs",
+    "b 25 55 95 50 $10,000;a 120 80 132 80;b 132 55 95 50 +6% gross;a 227 80 239 80;b 239 55 95 50 −1% fee;t 180 165 Approx. $10,500;t 180 193 Simplified 5% net",
+    "l 35 175 325 175;l 35 175 35 35;p M35 150Q160 120 325 40;p M35 150Q160 135 325 90;t 255 35 Gross;t 275 114 After fees;t 180 200 Growing gap over time",
+    "b 25 55 95 60 Cost;b 132 55 95 60 Exposure;b 239 55 95 60 Services;t 180 150 Compare risk and value;t 180 192 Price alone is not enough"
+  ],
+  "depth-finance-inflation-and-real-returns": [
+    "r 55 75 100 70;r 205 71.5 100 73.5;t 105 65 $100;t 255 61 $105;t 105 170 Start;t 255 170 End;t 180 205 Nominal gain 5%",
+    "b 35 65 120 70 Same basket;b 205 65 120 70 Same basket;t 95 55 $100;t 265 55 $103;t 180 180 Price increase 3%",
+    "b 25 70 130 55 Nominal ×1.05;a 155 97 205 97;b 205 70 130 55 Prices ÷1.03;t 180 165 1.05 / 1.03 − 1;t 180 195 Real gain ≈1.94%",
+    "b 25 55 145 60 Exact: 1.94%;b 190 55 145 60 Approx: 2%;t 180 145 5% − 3% = 2%;t 180 190 Personal inflation can differ"
+  ],
+  "depth-finance-understanding-asset-allocation": [
+    "r 35 75 125 60;r 160 75 100 60;r 260 75 65 60;t 97 105 Stocks;t 210 105 Bonds;t 292 105 Cash;t 180 182 Portfolio split by value",
+    "r 35 75 174 60;r 209 75 116 60;t 122 105 $6,000;t 267 105 $4,000;t 122 158 Stocks 60%;t 267 158 Bonds 40%;t 180 200 $10,000 total",
+    "l 35 175 325 175;p M35 145L90 65L145 155L200 45L255 130L325 60;p M35 145L90 125L145 130L200 105L255 110L325 90;t 180 32 Different volatility profiles;t 180 201 Illustrative, not forecast",
+    "b 25 40 145 45 Time horizon;b 190 40 145 45 Loss tolerance;b 25 115 145 45 Liquidity needs;b 190 115 145 45 Goals;t 180 200 Mix depends on constraints"
+  ],
+  "depth-finance-how-investment-liquidity-works": [
+    "b 25 65 145 55 Asset;a 170 92 195 92;b 195 65 140 55 Cash;t 180 150 How fast? At what discount?;t 180 190 Liquidity combines time and cost",
+    "l 35 75 325 75;l 35 145 325 145;c 65 75 7;c 310 145 7;t 110 55 Traded stock;t 240 125 Property sale;t 180 195 Illustrative sale times",
+    "b 25 55 145 48 Bid–ask spread;b 190 55 145 48 Market depth;b 25 125 145 48 Settlement;b 190 125 145 48 Withdrawal limits;t 180 205 All affect cash access",
+    "l 35 170 325 170;p M35 55L110 65L185 115L260 150L325 155;t 180 40 Liquid stock price falls;t 180 199 Easy to sell ≠ stable value"
+  ],
+  "plus-finance-how-index-funds-track-markets": [
+    "b 25 55 145 55 Index basket;a 170 82 190 82;b 190 55 145 55 Fund holdings;t 180 145 Replicate or sample;t 180 192 Goal: follow benchmark",
+    "r 45 65 180 35;r 45 130 90 35;t 135 55 Company A: 2× value;t 90 120 Company B: 1×;t 180 195 A has twice the weight",
+    "r 60 55 90 110;r 210 60.5 90 104.5;t 105 45 8.0%;t 255 50 7.6%;t 105 190 Index;t 255 190 Fund;t 180 210 Difference −0.4 pp",
+    "r 35 65 250 48;r 285 65 40 48;t 160 92 One sector;t 180 150 Concentration can persist;t 180 195 Fees and sampling affect tracking"
+  ],
+  "plus-finance-why-rebalancing-changes-portfolio-risk": [
+    "r 35 75 174 60;r 209 75 116 60;t 122 105 60% stocks;t 267 105 40% bonds;t 180 180 Target exposure, not prediction",
+    "r 35 75 189 60;r 224 75 101 60;t 129 105 $7,500;t 274 105 $4,000;t 180 160 $11,500 total;t 180 195 Stocks now 65.2%",
+    "b 25 55 145 55 Stocks $7,500;b 190 55 145 55 Bonds $4,000;a 170 82 190 82;t 180 45 $600;b 25 140 145 45 Stocks $6,900;b 190 140 145 45 Bonds $4,600;t 180 207 Restored 60/40",
+    "b 25 55 145 55 Sell overweight;b 190 55 145 55 New contribution;t 97 145 Tax / fees;t 262 145 Buy underweight;t 180 192 Manage exposure, not gains"
+  ],
+  "plus-finance-understanding-dividend-yield": [
+    "b 25 65 135 60 Company;a 160 95 200 95;b 200 65 135 60 Shareholder;t 180 75 Dividend;t 180 179 May be reduced or suspended",
+    "b 25 65 145 55 $2 annual dividend;b 190 65 145 55 $50 share;t 180 165 $2 / $50 = 4%;t 180 195 If distribution continues",
+    "b 25 55 145 50 $50 price;b 190 55 145 50 $25 price;t 97 140 4% yield;t 262 140 8% yield;t 180 194 Same $2, lower denominator",
+    "b 25 65 95 55 Start $50;a 120 92 132 92;b 132 65 95 55 End $40;a 227 92 239 92;b 239 65 95 55 +$2 cash;t 180 165 (40+2−50) / 50;t 180 195 Total return −16%"
+  ],
+  "plus-finance-how-dollar-cost-averaging-works": [
+    "b 25 55 145 55 $100 at low price;b 190 55 145 55 $100 at high price;c 55 145 8;c 80 145 8;c 105 145 8;c 130 145 8;c 245 145 8;c 270 145 8;t 180 195 More units when price is lower",
+    "b 25 55 145 55 $100 / $10;b 190 55 145 55 $100 / $20;t 97 150 10 units;t 262 150 5 units;t 180 195 $200 buys 15 units",
+    "b 25 65 145 55 Total paid $200;b 190 65 145 55 Total units 15;t 180 165 $200 / 15 ≈ $13.33;t 180 195 Not simple mean of prices",
+    "l 35 175 325 175;p M35 145L105 125L175 90L245 65L325 35;c 35 145 6;c 175 90 6;c 325 35 6;t 180 195 Rising prices buy fewer units;t 180 210 Delaying cash may cost returns"
+  ],
+  "plus-finance-what-credit-risk-means-in-bonds": [
+    "b 25 65 145 55 Promised payment;a 170 92 190 92;b 190 65 145 55 Default;t 180 150 Recovery may be partial;t 180 192 Principal and interest at risk",
+    "b 25 65 145 55 2% default;b 190 65 145 55 40% loss;t 180 165 0.02 × 0.40 = 0.008;t 180 195 Expected principal loss 0.8%",
+    "r 45 65 150 35;r 45 130 150 35;r 195 130 80 35;t 120 55 Benchmark;t 235 120 Spread;t 180 195 Credit, liquidity and other risk",
+    "b 25 55 145 50 Expected loss;b 190 55 145 50 Actual outcome;t 97 145 Average model;t 262 145 May be much worse;t 180 193 Ratings and spreads can change"
+  ],
+  "plus-finance-understanding-investment-drawdowns": [
+    "l 35 175 325 175;p M35 100L110 45L220 135L325 90;l 110 45 220 45;a 220 45 220 135;t 110 35 $120 peak;t 220 150 $90 trough;t 180 204 30/120 = 25% decline",
+    "b 25 65 145 60 $90 trough;a 170 95 190 95;b 190 65 145 60 $120 recovery;t 180 160 $30 / $90;t 180 195 +33.3% needed",
+    "l 35 170 325 170;p M35 100L85 55L130 95L180 40L230 140L275 115L325 90;l 180 40 230 40;a 230 40 230 140;t 180 200 Largest peak-to-later-trough drop",
+    "l 35 170 325 170;p M35 90L90 60L145 120L200 80L260 150;l 210 35 210 170;t 115 35 Historical sample;t 270 25 Future?;t 180 200 Past losses are not a ceiling"
+  ],
+  "plus-finance-understanding-risk-adjusted-returns": [
+    "l 35 175 325 175;p M35 120L90 65L145 150L200 45L255 125L325 85;p M35 120L90 110L145 115L200 100L255 90L325 85;t 180 32 Same end, different dispersion;t 180 199 Volatility is not all risk",
+    "b 25 55 145 45 Return 9%;b 190 55 145 45 Risk-free 3%;t 180 130 Excess = 6%;t 180 160 Volatility = 12%;t 180 195 Sharpe = 6/12 = 0.5",
+    "b 25 55 145 55 A: 9% / 12%;b 190 55 145 55 B: 7% / 5%;t 97 145 Sharpe 0.5;t 262 145 Sharpe 0.8;t 180 195 Same risk-free rate: 3%",
+    "p M35 75L90 65L145 60L200 55L255 50L325 160;t 180 32 Rare large loss;t 180 186 Sample estimates can miss tail risk"
+  ],
+  "plus-finance-how-duration-relates-to-bond-sensitivity": [
+    "b 25 65 95 55 Coupon;b 132 65 95 55 Coupon;b 239 65 95 55 Principal;a 72 120 180 155;a 180 120 180 155;a 286 120 180 155;t 180 178 Present value today;t 180 204 Yield changes discounting",
+    "l 35 110 325 110;a 180 110 285 110;a 180 110 75 110;t 285 85 Yield ↑;t 75 85 Price ↓;t 180 165 ΔP/P ≈ −D × Δy;t 180 195 Small parallel shift",
+    "b 25 65 145 55 Duration 6;b 190 65 145 55 Yield +0.005;t 180 165 −6 × 0.005 = −0.03;t 180 195 Approx. −3% price",
+    "l 35 170 325 170;l 35 170 35 35;p M35 45Q150 85 325 140;l 35 50 325 165;t 180 32 Curvature vs linear estimate;t 180 195 Larger shifts need convexity"
+  ],
+  "plus-finance-how-inflation-linked-bonds-differ": [
+    "b 25 55 145 55 CPI index;a 170 82 190 82;b 190 55 145 55 Indexed principal;t 180 150 Fixed coupon rate;t 180 195 Payment amount varies",
+    "l 35 170 325 170;l 35 170 35 35;p M35 50Q150 95 325 150;t 180 32 TIPS market price;t 180 195 Real yield →;t 180 100 Price can still fall",
+    "b 25 55 145 55 $1,000 principal;a 170 82 190 82;b 190 55 145 55 $1,040;t 180 45 +4%;t 180 155 2% × $1,040;t 180 195 Annualized coupon $20.80",
+    "r 45 65 200 35;r 45 130 75 35;t 145 55 Nominal 4%;t 82 120 Real 1.5%;t 180 195 Difference ≈2.5% breakeven"
+  ],
+  "plus-finance-why-sequence-of-returns-matters": [
+    "b 25 50 95 42 $100;a 120 71 132 71;b 132 50 95 42 $120;a 227 71 239 71;b 239 50 95 42 $96;b 25 130 95 42 $100;a 120 151 132 151;b 132 130 95 42 $80;a 227 151 239 151;b 239 130 95 42 $96;t 180 205 No flows, same ending balance",
+    "b 25 45 95 40 $100;b 132 45 95 40 $110;b 239 45 95 40 $78;a 120 65 132 65;a 227 65 239 65;b 25 125 95 40 $100;b 132 125 95 40 $70;b 239 125 95 40 $74;a 120 145 132 145;a 227 145 239 145;t 180 205 Withdraw $10 after each year",
+    "r 35 55 200 35;r 35 130 160 35;r 195 130 20 35;t 135 45 Starting capital;t 115 120 After loss;t 205 175 Withdrawal;t 180 205 Less capital remains for recovery",
+    "b 25 45 145 45 Timing;b 190 45 145 45 Fees;b 25 125 145 45 Inflation;b 190 125 145 45 Spending;t 180 205 Simulated sequence ≠ guarantee"
+  ]
+};
+window.LumenSlideArtBatch02Render=function renderSlide(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch02;
+ if(step<0||!Number.isInteger(step)||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const esc=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
+ const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49";
+ const txt=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${esc(s)}</text>`;
+ const ln=(x,y,x2,y2,col=ink)=>`<line x1="${x}" y1="${y}" x2="${x2}" y2="${y2}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;
+ let body="";
+ for(const cmd of data[c.id][step].split(";")){
+  const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+  if(op==="t"){const label=v.slice(2).join(" ");body+=txt(x,y,label,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(label.length,1)*.55)))));}
+  else if(op==="b"||op==="r"){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="4" fill="${gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.5"/>`;if(op==="b"){const label=v.slice(4).join(" ");body+=txt(x+u/2,y+w/2+4,label,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(label.length,1)*.55)))));}}
+  else if(op==="c")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${gold}" fill-opacity=".18" stroke="${ink}" stroke-width="2"/>`;
+  else if(op==="l")body+=ln(x,y,u,w);
+  else if(op==="a"){const angle=Math.atan2(w-y,u-x),h=8;body+=ln(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(angle-.55)} ${w-h*Math.sin(angle-.55)}L${u} ${w}L${u-h*Math.cos(angle+.55)} ${w-h*Math.sin(angle+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+  else if(op==="p")body+=`<path d="${esc(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;
+  else throw Error("Unknown art primitive: "+op);
+ }
+ const title=c.slides[step].title,desc=c.slides[step].text;
+ return `<svg class="${esc(cls)}" viewBox="0 0 360 220" role="img" aria-label="${esc(title)}" preserveAspectRatio="xMidYMid meet"><title>${esc(title)}</title><desc>${esc(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch02Render(c,cls,step)||prior(c,cls,step);};})();
