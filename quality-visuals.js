@@ -1124,6 +1124,7 @@ window.LumenSlideArtSharedRender=function renderShared(data,c,cls="cover",step=-
  if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
  else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
  else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="s"||op==="o"){const color=v[op==="s"?4:3];if(!/^#[0-9a-fA-F]{6}$/.test(color))throw Error("Invalid artwork color");body+=op==="s"?`<rect x="${x}" y="${y}" width="${u}" height="${w}" fill="${color}"/>`:`<circle cx="${x}" cy="${y}" r="${u}" fill="${color}"/>`;}
  else if(op==="l")body+=line(x,y,u,w);
  else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
  else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
@@ -7533,3 +7534,130 @@ window.LumenSlideArtBatch57={
 };
 window.LumenSlideArtBatch57Render=function(c,cls='cover',step=-1){return window.LumenSlideArtSharedRender(window.LumenSlideArtBatch57,c,cls,step);};
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch57Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* art-design: dedicated slide artwork, batch 58. */
+window.LumenSlideArtBatch58={
+  "visual-composition": [
+    "r 35 45 290 130;c 180 105 43;d 65 65 6;d 295 145 6;t 180 195 Scale and contrast create a focal point",
+    "r 35 55 130 110;r 195 55 130 110;d 70 105 15;d 130 105 15;d 225 105 22;d 295 75 10;d 295 135 10;t 100 185 Symmetric;t 260 185 Asymmetric",
+    "d 90 105 38;d 245 70 18;d 280 105 18;d 245 140 18;t 180 195 Different masses can create perceived balance",
+    "r 35 65 130 85;r 195 65 130 85;d 100 105 25;d 260 105 25;t 100 175 Full view;t 260 175 Reduced view;t 180 195 Check focal point at distance"
+  ],
+  "color-theory": [
+    "o 85 80 32 #e83535;o 120 80 32 #20b54a;o 102 110 32 #284cdd;o 102 90 11 #ffffff;o 245 80 32 #00a4b4;o 280 80 32 #d94291;o 262 110 32 #efcc25;o 262 90 11 #333333;t 100 160 Light: additive;t 265 160 Pigment: subtractive;t 180 195 Schematic mixtures",
+    "s 35 60 70 50 #d97026;s 110 60 70 50 #f2bb8c;s 185 60 70 50 #8b4015;s 260 60 65 50 #b08e73;t 70 135 Hue;t 145 135 Light;t 220 135 Dark;t 292 135 Muted;t 180 195 Lightness and chroma vary within a hue",
+    "s 35 55 130 110 #255d92;s 195 55 130 110 #b97f4e;o 100 110 25 #ff8b22;o 260 110 25 #ff8b22;t 180 195 Same orange, different surrounding contrast",
+    "s 35 65 90 70 #263c52;s 135 65 90 70 #f8eaca;s 235 65 90 70 #e07c2b;t 80 155 Text;t 180 155 Ground;t 280 155 Accent;t 180 195 Test contrast in intended medium"
+  ],
+  "accessibility": [
+    "r 35 55 290 110;r 55 75 100 65;r 175 75 130 65;t 105 105 Keyboard;t 240 105 Screen reader;t 180 195 Accessibility includes interaction, not only appearance",
+    "s 35 65 130 70 #263c52;s 195 65 130 70 #c3c3c3;t 100 155 Strong contrast;t 260 155 Weak contrast;t 180 195 Add labels and text alternatives",
+    "r 65 55 230 45;t 180 82 Email field;p M70 115L80 135L90 115Z;t 195 132 Enter a valid address;t 180 180 Error explained, not just colored",
+    "r 35 55 90 110;r 135 55 90 110;r 235 55 90 110;t 80 105 Tab focus;t 180 105 Zoom;t 280 105 Semantics;t 180 195 Test with real assistive technology"
+  ],
+  "perspective-art": [
+    "d 180 45 6;p M35 175L180 45L325 175M95 175L180 45L265 175;t 180 25 Viewpoint projection;t 180 195 Receding lines converge in the image",
+    "l 35 80 325 80;d 65 80 6;d 295 80 6;p M65 80L180 175L295 80M65 80L180 125L295 80;l 180 125 180 175;t 180 55 Horizon;t 180 195 Two horizontal vanishing directions",
+    "p M75 175L180 40L285 175M110 130H250M135 100H225M155 75H205;t 180 195 Tracks stay parallel in space",
+    "p M35 150L95 65L155 150M145 150L205 90L265 150M240 150L285 115L330 150;t 180 195 Overlap and smaller distant shapes imply depth"
+  ],
+  "art-symbolism": [
+    "c 180 75 25;p M160 100L140 160H220L200 100;c 235 115 12;l 247 115 280 115;l 265 115 265 130;t 180 195 Attributes can help identify a depicted figure",
+    "c 95 105 32;c 265 105 32;l 127 105 233 105;t 95 110 Object;t 265 110 Context;t 180 195 Symbolic, practical or decorative use",
+    "c 100 85 20;l 100 105 100 155;l 85 135 100 135;c 260 85 20;l 260 105 260 155;l 245 135 260 135;t 100 180 Saint Peter;t 260 180 Access / ownership;t 180 205 Key meaning depends on context",
+    "r 35 55 130 110;r 195 55 130 110;t 100 105 Inscriptions;t 260 105 Related works;t 180 195 Verify convention with historical sources"
+  ],
+  "depth-art-design-designing-with-typography": [
+    "t 180 45 Aa Bb Cc;t 180 95 A a B b C c;t 180 145 Typography organizes language;t 180 195 Test character clarity and sustained reading",
+    "r 35 45 290 130;f 55 60 170 20;l 55 95 305 95;l 55 115 275 115;l 55 135 290 135;l 55 155 145 155;t 180 195 Heading, body and caption hierarchy",
+    "f 45 60 210 20;l 45 100 315 100;l 45 120 290 120;l 45 140 305 140;t 180 180 One dominant heading, consistent body",
+    "l 35 65 325 65;l 35 85 325 85;l 35 125 325 125;l 35 145 325 145;t 180 195 Compare line length and vertical spacing"
+  ],
+  "depth-art-design-how-contrast-creates-hierarchy": [
+    "d 85 105 35;c 180 105 35;d 275 105 12;t 180 195 Differences of value and size create contrast",
+    "r 35 55 130 110;r 195 55 130 110;d 100 85 15;d 80 130 5;d 120 130 5;d 230 85 15;d 290 85 15;d 260 135 15;t 180 195 One focal point versus competing emphasis",
+    "f 35 45 130 22;l 35 85 165 85;l 35 105 165 105;l 35 125 165 125;f 195 45 130 22;f 195 80 130 22;f 195 115 130 22;t 100 175 Hierarchy;t 260 175 All bold;t 180 205 Uniform emphasis weakens entry point",
+    "s 35 65 130 65 #f5eedc;s 195 65 130 65 #345746;t 100 100 Secondary text;t 260 155 Dark field;t 180 195 Readability requires sufficient contrast"
+  ],
+  "depth-art-design-the-power-of-visual-rhythm": [
+    "d 55 105 12;d 105 105 12;d 155 105 12;d 205 105 12;d 255 105 12;d 305 105 12;t 180 195 Recurring equal intervals suggest movement",
+    "d 55 105 8;d 105 105 18;d 155 105 8;d 205 105 18;d 255 105 8;d 305 105 18;t 180 195 Alternation creates variation",
+    "r 35 55 45 110;r 90 55 45 110;r 145 55 45 110;r 230 55 45 110;r 285 55 40 110;t 180 195 Wider gap signals a new section",
+    "d 55 105 12;d 90 105 12;d 160 105 12;d 175 105 12;d 285 105 12;t 180 195 Irregular spacing can obscure grouping"
+  ],
+  "depth-art-design-how-designers-use-grids": [
+    "r 35 55 290 110;l 95 55 95 165;l 155 55 155 165;l 215 55 215 165;l 275 55 275 165;l 35 105 325 105;t 180 195 Modules establish common alignment",
+    "r 35 45 290 130;r 55 65 115 90;r 190 65 115 90;t 180 35 Margin;t 180 195 Gutter between two columns",
+    "r 35 45 290 25;r 35 80 140 35;r 185 80 140 35;r 35 125 90 40;r 135 125 90 40;r 235 125 90 40;t 180 195 Full-width, two-column and three-column layouts",
+    "r 35 55 130 110;r 45 65 50 90;r 105 65 50 90;r 195 35 130 150;r 205 45 110 60;r 205 115 110 60;t 180 205 Responsive grid stacks content at narrow width"
+  ],
+  "depth-art-design-understanding-shape-and-form": [
+    "r 45 65 80 80;c 180 105 40;p M235 65Q315 40 320 125Q275 170 235 65Z;t 180 195 Geometric and organic 2D shapes",
+    "p M55 75L105 45L155 75V135L105 165L55 135ZM55 75L105 105L155 75M105 105V165;c 265 105 45;t 180 195 Volume represented with perspective or shading",
+    "o 180 105 55 #6c806b;o 166 89 41 #9bb39a;o 152 75 20 #d5dfbf;s 225 155 65 12 #6e776a;t 180 195 Light and cast shadow imply sphere volume",
+    "p M35 55H165V165H35ZM70 80H130V140H70ZM195 55H325V165H195ZM230 80H290V140H230Z;t 180 195 Positive form and surrounding negative space"
+  ],
+  "plus-art-design-how-negative-space-creates-a-second-image": [
+    "c 180 105 55;r 35 55 90 100;r 235 55 90 100;t 180 195 Figure and surrounding ground can exchange roles",
+    "p M35 55H145L125 80L140 100L125 115L150 155H35ZM325 55H215L235 80L220 100L235 115L210 155H325Z;t 180 195 Shared contours: profiles or central vessel",
+    "p M35 45H145L130 70L150 85L135 100L155 165H35ZM325 45H215L230 70L210 85L225 100L205 165H325Z;t 180 195 Two inward profiles define a vase-like gap",
+    "p M35 65H95L80 90L95 115L80 145H35ZM165 65H105L120 90L105 115L120 145H165Z;p M235 90H260L250 105L260 120H235ZM295 90H270L280 105L270 120H295Z;t 100 175 Large;t 265 175 Small;t 180 205 Test contour clarity at intended size"
+  ],
+  "plus-art-design-what-visual-weight-means": [
+    "d 85 105 30;c 265 105 45;t 180 195 Perceived attention is not physical mass",
+    "d 65 105 25;c 150 105 25;d 240 105 10;d 295 105 10;t 180 195 Darkness, isolation and size influence salience",
+    "s 35 65 220 85 #adb7a7;o 295 105 12 #d83f37;t 180 195 Small isolated red mark competes with muted area",
+    "d 85 105 30;d 260 105 18;d 295 105 12;t 180 195 Adjust scale and spacing in the whole composition"
+  ],
+  "plus-art-design-designing-a-readable-information-graphic": [
+    "b 35 55 135 65 Compare values;b 190 55 135 65 Choose encoding;t 180 165 Start with the reader's question",
+    "l 35 175 325 175;r 55 125 50 50;r 145 85 50 90;r 235 45 50 130;t 80 195 A;t 170 195 B;t 260 195 C;t 180 25 Common baseline supports precise comparison",
+    "r 35 50 280 20;r 35 80 230 20;r 35 110 170 20;r 35 140 110 20;r 35 170 60 20;t 180 210 Sorted bars reveal relative magnitude",
+    "l 35 175 325 175;r 55 75 80 100;r 205 65 80 110;t 95 65 10;t 245 55 11;t 180 195 Begin scale at zero for bar length comparison"
+  ],
+  "plus-art-design-why-complementary-colors-interact": [
+    "s 35 65 90 85 #e62b30;s 135 65 90 85 #21c4c5;s 235 65 90 85 #ffffff;t 80 175 Red light;t 180 175 Cyan light;t 280 175 Neutral;t 180 195 Complement defined by additive model",
+    "s 35 65 130 85 #2359a0;s 195 65 130 85 #ef8b22;t 180 195 Opposed hues differ in perceived intensity",
+    "s 35 55 290 110 #3973b5;s 120 80 120 50 #e68c35;t 180 150 Similar luminance can weaken small-text contrast",
+    "s 35 65 90 85 #285ea6;s 135 65 90 85 #e58d28;s 235 65 90 85 #77634c;t 180 195 Pigment mixture differs from light mixture"
+  ],
+  "plus-art-design-how-artists-model-volume-with-shadows": [
+    "c 180 105 50;a 55 30 125 75;p M210 145L280 175H330L225 135;t 65 20 Light;t 280 195 Cast shadow;t 180 105 Form",
+    "o 180 105 55 #596959;o 165 91 42 #8fa28d;o 149 76 21 #dce6cf;t 180 195 Highlight, illuminated region and form shadow",
+    "o 170 100 55 #566858;o 155 84 40 #9bae96;o 143 72 18 #e6ebcf;s 210 150 95 12 #68736b;a 45 25 105 60;t 180 195 Upper-left light, shadow extends away",
+    "c 95 105 40;c 265 105 40;a 35 35 65 70;a 325 35 295 70;t 180 195 Different lights require different shading models"
+  ],
+  "plus-art-design-how-visual-storytelling-uses-panels": [
+    "r 35 55 90 110;r 135 55 90 110;r 235 55 90 110;d 80 105 8;d 180 125 8;d 280 145 8;t 180 195 Selected moments imply motion between panels",
+    "r 35 55 130 110;r 195 55 130 110;d 65 105 7;d 135 105 7;d 225 65 7;d 295 145 7;t 100 185 Moment shift;t 260 185 Scene shift;t 180 205 Larger omissions require more inference",
+    "r 35 55 130 110;r 195 55 130 110;p M45 100L95 105M110 90H140V130H110ZM220 135L240 110L260 145L280 125L305 150;t 180 195 Reach for cup → broken cup, event inferred",
+    "r 35 55 170 110;r 215 55 110 50;r 215 115 110 50;t 120 110 1;t 270 85 2;t 270 145 3;t 180 195 Panel proportions and reading order shape timing"
+  ],
+  "plus-art-design-choosing-a-consistent-icon-system": [
+    "r 35 55 90 90;r 135 55 90 90;r 235 55 90 90;c 80 100 25;p M155 125V75H205V125ZM255 100H305M280 75V125;t 180 195 Consistent stroke and bounding boxes",
+    "c 85 105 35;p M145 80H215V130H145ZM245 105H315M280 70V140;t 180 195 Distinct search, document and add silhouettes",
+    "r 35 55 130 110;r 195 55 130 110;c 100 110 40;p M220 70H300V150H220Z;t 180 195 Same grid, optical size may require adjustment",
+    "c 90 105 20;c 270 105 35;t 90 145 Small;t 270 155 Large;t 180 195 Test recognition and accessible labels"
+  ],
+  "plus-art-design-how-texture-changes-an-image": [
+    "r 35 65 130 90;r 195 65 130 90;d 50 80 3;d 70 95 4;d 90 75 3;d 110 120 5;d 140 95 3;d 65 135 4;d 130 140 4;t 100 175 Grain;t 260 175 Smooth;t 180 205 Visual texture suggests touch",
+    "p M35 145L75 125L115 145L155 125L195 145L235 125L275 145L325 125;a 40 45 140 115;t 180 195 Grazing light reveals relief",
+    "r 35 55 130 110;r 195 85 80 70;d 55 75 4;d 75 95 5;d 100 70 3;d 125 120 4;d 145 140 5;d 65 145 3;t 180 195 Dense grain merges into tone at reduced scale",
+    "r 35 55 130 110;r 195 55 130 110;d 55 75 5;d 85 100 5;d 125 130 5;t 100 105 TEXT;t 260 105 TEXT;t 180 195 Texture behind text can compete with edges"
+  ],
+  "plus-art-design-why-a-limited-palette-helps": [
+    "s 35 65 90 85 #263c52;s 135 65 90 85 #f8eaca;s 235 65 90 85 #e07c2b;t 180 195 Restrict palette to related functional colors",
+    "s 35 65 290 100 #f8eaca;s 55 80 180 15 #263c52;s 55 110 105 25 #e07c2b;t 180 195 Assign background, text and emphasis roles",
+    "s 35 55 290 110 #f8eaca;s 55 70 220 20 #263c52;s 55 110 75 35 #e07c2b;s 150 110 75 35 #f0b382;t 180 195 Poster palette with orange tint variation",
+    "s 35 65 130 80 #d96d42;s 195 65 130 80 #75a68b;p M75 100L95 120L130 85M235 85L285 125M285 85L235 125;t 180 195 Use distinct symbols in addition to status color"
+  ],
+  "plus-art-design-how-posters-guide-reading-order": [
+    "r 80 35 200 145;f 95 50 170 30;l 95 105 265 105;l 95 125 245 125;l 95 155 170 155;t 180 205 Primary message visible first at distance",
+    "r 55 35 250 150;f 75 55 210 25;f 75 105 95 18;f 190 105 95 18;l 75 155 285 155;t 180 205 Scale and whitespace guide reading sequence",
+    "r 55 35 250 150;t 180 65 EVENT NAME;t 180 105 Saturday, 7 pm;t 180 130 Town Hall;t 180 160 Booking details;t 180 205 Event, date and venue grouped logically",
+    "r 35 55 130 110;r 235 85 60 70;f 45 65 110 20;f 245 95 40 10;t 100 185 Near view;t 265 185 Far view;t 180 205 Verify message and action at both distances"
+  ]
+};
+window.LumenSlideArtBatch58Render=function(c,cls='cover',step=-1){return window.LumenSlideArtSharedRender(window.LumenSlideArtBatch58,c,cls,step);};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch58Render(c,cls,step)||prior(c,cls,step);};})();
