@@ -3756,3 +3756,143 @@ window.LumenSlideArtBatch24Render=function renderer(c,cls="cover",step=-1){
  const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch24Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* Materials Science: dedicated slide artwork, batch 25. */
+window.LumenSlideArtBatch25={
+  "steel": [
+    "c 75 80 20;c 135 80 20;c 195 80 20;c 255 80 20;c 105 130 20;c 165 130 20;c 225 130 20;d 165 105 6;d 225 105 6;t 180 40 Iron lattice with interstitial carbon;t 180 195 Composition changes phases and properties",
+    "r 35 75 130 70;r 195 75 130 70;p M80 35L110 75L140 35;a 110 25 110 65;p M240 75L260 105L250 145;a 260 35 260 75;t 100 165 Hardness: indentation;t 260 165 Toughness: fracture energy;t 180 205 Hardness alone does not establish toughness",
+    "l 35 175 325 175;p M35 155L95 35H140L155 155L220 100H265L325 155;t 95 25 Heat;t 155 170 Quench;t 245 90 Temper;t 180 200 Suitable steels: hard martensite, adjusted by tempering",
+    "p M35 65L155 125L35 145Z;r 205 65 120 80;p M205 85H325M205 125H325;t 95 175 Cutting edge;t 265 175 Structural member;t 180 205 Select hardness, toughness and strength for service"
+  ],
+  "glass": [
+    "d 55 65 6;d 110 45 6;d 165 80 6;d 220 55 6;d 295 80 6;d 75 135 6;d 135 155 6;d 195 120 6;d 265 150 6;p M55 65L110 45L165 80L220 55L295 80L265 150L195 120L135 155L75 135L55 65M165 80L195 120M220 55L195 120;t 180 195 Connected disordered network, no long-range periodicity",
+    "l 35 175 325 175;l 35 175 35 35;p M35 45Q100 55 180 125T325 165;p M35 45L150 85L150 145L325 165;t 110 30 Cooling melt;t 240 105 Glass avoids crystallization;t 180 195 Viscosity increases as temperature falls (time →)",
+    "l 35 175 325 175;l 35 175 35 35;p M35 150L145 135Q180 130 205 100L325 45;l 180 45 180 175;t 180 35 Glass transition range;t 180 195 Gradual change in rearrangement rate, not sharp melting",
+    "r 35 65 290 90;p M170 65L180 90L165 120;a 95 45 155 45;a 265 45 205 45;t 180 30 Surface compression;t 180 175 Crack opening is resisted;t 180 195 Tempering reduces tensile surface stress"
+  ],
+  "polymers": [
+    "c 45 100 12;c 90 100 12;c 135 100 12;c 180 100 12;c 225 100 12;c 270 100 12;c 315 100 12;l 57 100 78 100;l 102 100 123 100;l 147 100 168 100;l 192 100 213 100;l 237 100 258 100;l 282 100 303 100;t 180 55 Repeating molecular units;t 180 175 Chain length and architecture affect properties",
+    "p M35 65Q65 35 95 65T155 65M35 125Q65 95 95 125T155 125M205 65L235 90L265 65L295 90L325 65M205 125L235 150L265 125L295 150L325 125;a 155 95 205 95;t 95 175 Cool chains;t 265 175 Heated, mobile chains;t 180 205 Thermoplastics can be reshaped when heated",
+    "p M35 65H325M35 105H325M35 145H325M95 65V145M180 65V145M265 65V145;d 95 105 6;d 180 105 6;d 265 105 6;t 180 35 Crosslinked network;t 180 195 Thermosets cannot simply remelt into mobile chains",
+    "p M35 75Q55 45 75 75T115 75T155 75M35 135Q55 105 75 135T115 135T155 135M205 85L325 85M205 125L325 125;l 95 75 95 135;l 265 85 265 125;a 155 105 205 105;t 95 175 Relaxed;t 265 175 Stretched;t 180 205 Flexible linked chains recover shape"
+  ],
+  "composites": [
+    "r 35 55 290 110;p M55 75H305M55 105H305M55 135H305;t 180 35 Reinforcing fibers inside matrix;t 180 195 Matrix holds fibers and transfers load",
+    "r 35 55 130 110;r 195 55 130 110;p M45 75H155M45 105H155M45 135H155;c 220 85 12;c 285 95 15;c 250 135 18;t 100 185 Fiber composite;t 260 185 Particle composite;t 180 205 Carbon fiber and concrete use different reinforcements",
+    "r 35 55 290 110;p M55 85H160M200 85H305M55 135H305;p M160 75L180 95L200 75;a 95 65 140 65;a 220 65 265 65;t 180 35 Debonded interface;t 180 195 Load transfer depends on interfacial strength",
+    "r 95 45 170 125;p M105 65H255M105 85H255M105 105H255M105 125H255M105 145H255;a 35 105 95 105;a 265 105 325 105;a 180 15 180 45;t 180 195 Fiber direction affects stiffness and strength"
+  ],
+  "depth-materials-science-why-ceramics-resist-heat": [
+    "c 75 75 22;c 145 75 22;c 215 75 22;c 285 75 22;c 75 135 22;c 145 135 22;c 215 135 22;c 285 135 22;t 75 80 +;t 145 80 −;t 215 80 +;t 285 80 −;t 75 140 −;t 145 140 +;t 215 140 −;t 285 140 +;t 180 35 Strong ionic or covalent bonds;t 180 195 Many ceramics are stiff and heat resistant",
+    "l 35 175 325 175;p M35 55H160Q220 60 325 100;p M35 65Q140 75 325 165;t 265 85 Ceramic example;t 265 150 Polymer example;t 180 195 Strength retention depends on material and temperature",
+    "r 35 65 290 100;f 35 65 85 100;a 75 35 75 65;p M115 65L135 105L120 130L140 165;t 180 25 Rapid heating at one side;t 180 195 Uneven expansion creates thermal stress",
+    "r 35 65 290 90;p M170 65L180 95L165 125L180 155;a 35 110 10 110;a 325 110 350 110;t 180 40 Tensile loading;t 180 195 Small flaws can trigger brittle fracture"
+  ],
+  "depth-materials-science-why-corrosion-happens": [
+    "r 35 120 290 45;r 35 45 290 75;d 95 120 6;d 265 120 6;a 95 145 265 145;a 95 115 95 65;a 265 65 265 115;t 180 35 Electrolyte;t 95 180 Anode;t 265 180 Cathode;t 180 205 Electrons in metal, ions in electrolyte",
+    "r 35 120 290 45;p M65 120Q80 85 95 120Q110 85 125 120Q140 85 155 120;a 95 115 95 55;a 265 55 265 115;t 95 45 Fe²⁺ release;t 265 45 O₂ reduction;t 180 195 Oxides and hydroxides form porous rust",
+    "r 35 90 130 65;r 195 90 130 65;d 65 70 5;d 95 70 5;d 125 70 5;d 225 55 5;d 245 65 5;d 265 55 5;d 285 65 5;d 305 55 5;t 100 175 Fresh water;t 260 175 Salty water;t 180 195 Salt increases electrolyte conductivity",
+    "r 35 95 290 65;f 35 70 290 25;a 95 35 95 65;a 265 35 265 65;t 180 60 Protective layer;t 180 135 Metal;t 180 195 Coatings or passive films reduce contact with environment"
+  ],
+  "depth-materials-science-how-crystals-grow": [
+    "d 65 65 8;d 115 65 8;d 165 65 8;d 215 65 8;d 265 65 8;d 65 115 8;d 115 115 8;d 165 115 8;d 215 115 8;d 265 115 8;p M65 65H265M65 115H265M65 65V115M115 65V115M165 65V115M215 65V115M265 65V115;t 180 195 Repeating atomic arrangement",
+    "d 95 95 7;d 110 95 7;d 95 110 7;d 110 110 7;a 125 105 200 105;d 230 80 7;d 245 80 7;d 260 80 7;d 230 95 7;d 245 95 7;d 260 95 7;d 230 110 7;d 245 110 7;d 260 110 7;t 102 150 Small nucleus;t 245 150 Stable growing cluster;t 180 195 Seed surfaces can lower nucleation barrier",
+    "r 35 55 130 110;r 195 55 130 110;p M35 105H165M95 55V165M195 85H325M195 115H325M195 140H325M235 55V165M280 55V165;t 100 185 Fewer larger grains;t 260 185 Many smaller grains;t 180 205 Balance nucleation rate and growth rate",
+    "r 35 55 290 110;p M160 55L200 105L160 165M35 75H176M35 105H200M35 135H176M205 55L325 115M185 95L325 165M165 145L205 165;t 180 35 Grains meet with different orientations;t 180 195 Boundary affects diffusion and mechanical properties"
+  ],
+  "plus-materials-science-why-aluminum-resists-some-corrosion": [
+    "r 35 85 290 80;f 35 65 290 20;a 95 35 95 65;a 265 35 265 65;t 180 55 Adherent oxide film;t 180 130 Aluminum;t 180 195 Thin film slows further reaction",
+    "r 35 85 130 80;f 35 65 50 20;f 115 65 50 20;r 195 85 130 80;f 195 65 130 20;a 165 105 195 105;t 100 185 Scratched;t 260 185 Film reforms;t 180 205 Requires suitable oxygen-containing conditions",
+    "r 35 85 290 80;f 35 65 115 20;f 210 65 115 20;p M150 85Q180 155 210 85;d 180 45 6;a 180 45 180 100;t 210 35 Cl⁻;t 180 195 Local film breakdown can produce pitting",
+    "r 35 85 130 80;f 35 65 130 20;r 195 85 130 80;p M195 85L215 65L235 85L255 65L275 85L295 65L325 85;t 100 185 Aluminum oxide;t 260 185 Porous iron rust;t 180 205 Anodizing can thicken protective oxide"
+  ],
+  "plus-materials-science-understanding-thermal-expansion": [
+    "d 55 70 7;d 105 70 7;d 155 70 7;d 205 70 7;d 255 70 7;d 305 70 7;d 35 135 7;d 93 135 7;d 151 135 7;d 209 135 7;d 267 135 7;d 325 135 7;t 180 45 Cooler lattice;t 180 165 Warmer lattice (exaggerated spacing);t 180 195 Average interatomic distance often increases",
+    "r 35 65 250 30;r 35 130 290 30;l 285 105 285 170;l 325 105 325 170;t 160 55 Original length L₀;t 305 120 ΔL;t 180 195 ΔL≈αL₀ΔT for small temperature change",
+    "b 25 45 145 45 L₀=2 m;b 190 45 145 45 α=12×10⁻⁶/K;b 105 115 150 45 ΔT=50 K;t 180 195 Free expansion = .0012 m = 1.2 mm",
+    "r 35 65 20 100;r 305 65 20 100;r 55 95 250 40;a 85 115 55 115;a 275 115 305 115;t 180 45 Fixed ends restrict expansion;t 180 195 Thermal stress or expansion joints accommodate change"
+  ],
+  "plus-materials-science-how-hardness-tests-differ": [
+    "r 35 105 290 65;p M145 35L180 105L215 35Z;a 180 15 180 35;p M165 105L180 125L195 105;t 180 195 Defined force and indenter leave permanent impression",
+    "c 65 75 25;p M155 55L180 105L205 55Z;p M255 55L280 105L305 55Z;r 35 105 290 40;t 65 165 Brinell: ball;t 180 165 Vickers: diagonals;t 280 165 Rockwell: depth;t 180 200 Different measured quantities",
+    "r 35 55 130 110;r 195 55 130 110;c 100 110 8;c 260 110 40;t 100 185 Local indentation;t 260 185 Larger sampled area;t 180 205 Thickness and microstructure guide test choice",
+    "b 25 55 145 55 Rockwell scale;b 190 55 145 55 Vickers scale;t 180 150 Different methods and loads;t 180 195 Conversion requires material-specific empirical data"
+  ],
+  "depth-materials-science-how-metals-deform": [
+    "d 55 75 8;d 105 75 8;d 155 75 8;d 205 75 8;d 255 75 8;d 305 75 8;d 35 135 8;d 93 135 8;d 151 135 8;d 209 135 8;d 267 135 8;d 325 135 8;t 180 45 Unloaded lattice;t 180 165 Stretched lattice;t 180 195 Elastic bond stretch recovers after unloading",
+    "p M35 65H325M35 95H325M35 125H325M35 155H325M95 65V155M155 65V125M215 65V155M275 65V155;a 155 105 215 105;t 180 35 Edge dislocation moves through lattice;t 180 195 Slip produces permanent deformation",
+    "l 35 175 325 175;l 35 175 35 35;p M35 175L125 90Q200 60 325 45;t 180 25 Stress increases with plastic strain;t 180 195 Interacting dislocations impede further slip",
+    "r 35 55 130 110;r 195 55 130 110;p M45 75L80 95L65 125L120 145M75 55L100 85L140 75M115 55L145 100L125 165M195 105H325M260 55V165;a 165 105 195 105;t 100 185 Cold worked;t 260 185 Recrystallized;t 180 205 Heating may reduce stored defects"
+  ],
+  "depth-materials-science-how-materials-conduct-heat": [
+    "r 65 65 230 95;d 85 90 5;d 105 115 5;d 125 90 5;d 155 115 5;d 185 90 5;d 215 115 5;d 245 90 5;d 275 115 5;a 95 45 265 45;t 65 180 Hot;t 295 180 Cold;t 180 200 Electrons and lattice vibrations transfer energy",
+    "r 100 45 160 130;a 35 105 100 105;a 260 105 325 105;l 100 185 260 185;t 180 195 Thickness L;t 180 30 Area A;t 180 215 Heat flow = kAΔT/L",
+    "b 25 45 145 45 k=2 W/m/K;b 190 45 145 45 A=.5 m²;b 25 115 145 45 L=.1 m;b 190 115 145 45 ΔT=20 K;t 180 195 Q̇=2×.5×20/.1 = 200 W",
+    "r 35 55 85 110;r 195 55 130 110;a 35 35 120 35;a 195 35 325 35;t 77 185 Thin layer;t 260 185 Thicker layer;t 180 205 Lower k and greater thickness reduce conduction"
+  ],
+  "depth-materials-science-what-smart-materials-do": [
+    "b 25 65 145 55 External stimulus;a 170 92 190 92;b 190 65 145 55 Property change;t 180 155 Temperature, field or stress;t 180 195 Response comes from material structure",
+    "p M35 145Q95 35 155 145M205 145H325;a 155 105 205 105;t 95 175 Deformed alloy;t 265 175 Heated recovery;t 180 205 Shape memory uses reversible phase transformation",
+    "r 100 65 160 85;a 180 25 180 65;a 180 190 180 150;t 120 105 +;t 240 105 −;l 100 105 35 105;l 260 105 325 105;t 180 195 Stress generates polarization, field produces strain",
+    "l 35 175 325 175;p M35 155Q145 155 180 65T325 35;p M35 155Q75 125 150 105T325 35;t 180 25 Hysteresis;t 180 195 Response depends on history, fatigue and temperature"
+  ],
+  "plus-materials-science-how-galvanic-corrosion-develops": [
+    "r 65 90 80 65;r 215 90 80 65;p M105 90V45H255V90;a 125 45 235 45;r 35 75 290 100;t 105 175 Less noble metal;t 255 175 Noble metal;t 180 205 Electrical contact plus shared electrolyte",
+    "r 65 100 45 60;r 180 65 140 95;a 87 35 87 100;a 250 35 250 65;t 87 180 Small anode;t 250 180 Large cathode;t 180 205 Small anodic area can have high current density",
+    "b 25 65 145 55 Current 10 mA;b 190 65 145 55 Area 2 cm²;t 180 155 j = 10/2;t 180 195 Average 5 mA/cm²",
+    "r 35 75 130 80;r 195 75 130 80;r 165 75 30 80;t 100 175 Metal A;t 180 65 Isolator;t 260 175 Metal B;t 180 205 Insulation breaks electrical coupling"
+  ],
+  "plus-materials-science-how-composites-gain-directional-stiffness": [
+    "r 65 60 230 100;p M75 80H285M75 100H285M75 120H285M75 140H285;a 35 110 65 110;a 295 110 325 110;t 180 35 Along aligned fibers;t 180 195 Eₗ≈VfEf+VmEm under equal strain",
+    "r 35 75 290 50;f 35 75 174 50;t 122 105 Vf=.6;t 267 105 Vm=.4;t 180 55 Ef=200 GPa, Em=3 GPa;t 180 195 .6×200+.4×3 =121.2 GPa",
+    "r 65 60 230 100;p M75 80H285M75 100H285M75 120H285M75 140H285;a 180 25 180 60;a 180 195 180 160;t 180 15 Transverse load;t 180 210 Matrix and interfaces influence transverse response",
+    "r 35 55 290 35;r 35 90 290 35;r 35 125 290 35;p M45 65H315M45 80H315M45 120L75 95M95 120L125 95M145 120L175 95M195 120L225 95M245 120L275 95M95 125V160M155 125V160M215 125V160M275 125V160;t 180 35 0°, angled and 90° plies;t 180 195 Layup distributes directional properties"
+  ],
+  "plus-materials-science-how-foams-reduce-material-weight": [
+    "r 35 55 130 110;r 195 55 130 110;p M35 90H75M95 90H165M35 130H95M115 130H165M75 55V90M115 130V165;c 230 85 20;c 290 85 20;c 230 135 20;c 290 135 20;t 100 185 Open cells;t 260 185 Closed cells;t 180 205 Connected versus sealed gas spaces",
+    "r 35 75 290 50;f 35 75 87 50;t 78 105 Solid .3;t 215 105 Void .7;t 180 55 Illustrative relative density 0.30;t 180 195 Lower density reduces mass but changes stiffness",
+    "l 35 175 325 175;l 35 175 35 35;p M35 175L90 105H230Q280 100 325 35;t 60 95 Elastic;t 160 95 Collapse plateau;t 280 25 Densification;t 180 195 Compressive stress vs strain",
+    "r 35 55 290 20;r 35 75 290 70;r 35 145 290 20;p M35 75L85 145L135 75L185 145L235 75L285 145L325 90;t 180 35 Stiff skins;t 180 180 Lightweight foam core separates skins;t 180 205 Sandwich construction increases bending stiffness"
+  ],
+  "plus-materials-science-what-creep-does-to-materials": [
+    "r 100 45 160 30;r 100 125 160 45;a 180 75 180 125;t 180 35 Sustained load;t 180 185 Length increases gradually;t 180 205 Time-dependent deformation",
+    "l 35 175 325 175;l 35 175 35 35;p M35 165Q65 120 105 115L235 90Q290 80 325 30;t 65 105 Primary;t 175 100 Secondary;t 290 45 Tertiary;t 180 195 Creep strain vs time",
+    "b 25 55 310 50 ε̇=Aσⁿ exp(−Q/RT);t 180 145 Higher stress or temperature can raise rate;t 180 195 Mechanism determines parameters",
+    "r 35 55 290 20;p M55 75L55 155M305 75L305 155M55 90Q180 150 305 90;a 180 35 180 75;t 180 175 Long-term deflection;t 180 195 Evaluate creep at service load and temperature"
+  ],
+  "plus-materials-science-why-fracture-toughness-matters": [
+    "r 35 55 290 110;p M35 110H155L170 110;a 95 90 95 55;a 95 130 95 165;c 170 110 10;t 180 35 Crack-tip driving force;t 180 195 K=Yσ√(πa) under suitable assumptions",
+    "l 35 175 325 175;l 35 175 35 35;p M35 165L250 65;l 35 65 325 65;d 250 65 6;t 180 55 KIC threshold;t 180 195 Plane-strain fracture toughness requires validity conditions",
+    "r 35 65 130 90;r 195 65 130 90;l 35 110 55 110;l 195 110 275 110;t 100 175 Crack a;t 260 175 Crack 4a;t 180 205 Fixed stress and geometry: K doubles",
+    "r 35 65 290 90;p M35 110H150L165 100L180 110;a 180 35 180 95;t 180 25 Inspect crack size;t 180 175 Compare driving force with appropriate toughness;t 180 195 Fatigue and environment affect flaw tolerance"
+  ],
+  "plus-materials-science-how-phase-diagrams-guide-alloy-processing": [
+    "l 35 175 325 175;l 35 175 35 35;p M35 55Q180 155 325 55M35 55Q180 175 325 55;t 180 30 Temperature;t 180 195 Composition (binary alloy);t 180 75 Liquid;t 180 155 Solid;t 180 110 Two phases",
+    "l 35 175 325 175;l 35 175 35 35;p M35 55Q180 155 325 55M35 55Q180 175 325 55;l 95 105 265 105;d 95 105 5;d 265 105 5;t 180 95 Tie line;t 180 195 Endpoints give equilibrium phase compositions",
+    "l 35 105 325 105;d 95 105 6;d 180 105 6;d 265 105 6;t 95 85 20%;t 180 85 40%;t 265 85 60%;t 180 150 (40−20)/(60−20)=.5;t 180 195 Fraction of 60% phase = 50%",
+    "l 35 175 325 175;l 35 175 35 35;p M35 55Q180 155 325 55M35 55Q180 175 325 55;a 180 35 180 165;t 240 40 Cooling path;t 180 195 Real transformations depend on diffusion and kinetics"
+  ],
+  "plus-materials-science-what-additive-manufacturing-changes": [
+    "r 65 145 230 20;r 85 125 190 20;r 105 105 150 20;r 125 85 110 20;p M145 35H215L200 75H160Z;a 180 75 180 85;t 180 25 Deposition head;t 180 195 Successive layers build digital geometry",
+    "r 35 55 290 110;p M35 80H325M35 105H325M35 130H325M35 155H325;c 95 95 7;c 245 140 7;a 180 20 180 55;t 180 195 Build direction, pores and thermal history affect properties",
+    "r 35 55 290 110;p M65 70L95 95L65 120L95 145M115 70L145 95L115 120L145 145M165 70L195 95L165 120L195 145M215 70L245 95L215 120L245 145M265 70L295 95L265 120L295 145;t 180 35 Internal cellular geometry;t 180 195 Supports, removal and inspection still constrain design",
+    "b 25 45 145 45 Process controls;b 190 45 145 45 Representative tests;b 25 115 145 45 Inspect critical regions;b 190 115 145 45 Validate service loads;t 180 195 Identical digital models need not yield identical parts"
+  ]
+};
+window.LumenSlideArtBatch25Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch25;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch25Render(c,cls,step)||prior(c,cls,step);};})();
