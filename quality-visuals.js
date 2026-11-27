@@ -2482,3 +2482,53 @@ window.LumenSlideArtBatch14Render=function renderer(c,cls="cover",step=-1){
  const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch14Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* Botany: dedicated slide artwork, batch 15, first five courses. */
+window.LumenSlideArtBatch15={
+  "pollination": [
+    "p M85 150V55M85 75L45 45M85 75L125 45M85 100L45 85M85 100L125 85;p M250 150V55M250 75L210 45M250 75L290 45M250 100L210 85M250 100L290 85;d 125 45 5;d 145 48 4;d 170 50 4;a 145 48 247 54;t 85 175 Anther;t 250 175 Stigma;t 180 200 Pollen transfer precedes fertilization",
+    "p M70 150V70M70 80L40 60M70 80L100 60;d 110 65 4;d 130 60 4;d 150 68 4;a 95 45 160 45;c 260 85 15;c 237 85 12;p M260 70L275 50L290 70M260 100L275 120L290 100;t 75 180 Wind;t 260 180 Animal visitor;t 180 200 Flower structure influences transport",
+    "p M160 35H200L195 75V150Q180 190 165 150V75Z;d 180 42 6;p M180 48V145L190 155;c 190 155 8;a 210 50 185 70;t 260 50 Stigma;t 265 105 Pollen tube;t 265 155 Ovule;t 180 205 Sperm travel to ovule through tube",
+    "p M90 165V75M90 85L55 55M90 85L125 55M270 165V75M270 85L235 55M270 85L305 55;p M55 55Q40 20 90 75;p M125 55Q180 15 270 75;t 90 190 Self;t 270 190 Cross;t 180 210 Pollen may come from same or another plant"
+  ],
+  "tree-water": [
+    "p M150 35V105L75 175M150 105L215 175M150 130L120 175M180 130L250 175;d 65 145 5;d 100 155 5;d 260 150 5;a 65 145 120 145;a 260 150 215 150;t 180 25 Xylem;t 180 195 Water enters roots along water-potential gradient",
+    "r 100 35 60 145;r 200 35 60 145;l 100 80 160 80;l 100 125 160 125;l 200 80 260 80;l 200 125 260 125;a 130 165 130 45;a 230 165 230 45;t 180 20 Xylem pathways;t 180 205 Hollow connected conducting cells",
+    "p M170 170V55M190 170V55M180 80Q95 20 70 65Q110 115 180 80M180 80Q265 20 290 65Q250 115 180 80;a 180 160 180 50;a 100 65 100 25;a 260 65 260 25;t 180 195 Evaporation pulls cohesive water column upward",
+    "r 75 35 70 140;r 215 35 70 140;c 110 105 22;a 250 160 250 50;t 110 195 Gas blockage;t 250 195 Open conduit;t 180 20 Drought tension can interrupt flow"
+  ],
+  "seed-dispersal": [
+    "p M80 155V65M80 80L45 50M80 80L115 50;p M270 155V120M270 125L250 105M270 125L290 105;d 115 65 5;d 150 85 5;d 190 110 5;a 115 65 230 110;t 80 180 Parent;t 270 180 New site;t 180 205 Dispersal reduces local competition",
+    "p M65 60L90 110L115 60M90 110V145;a 120 70 170 70;r 200 115 130 40;c 240 105 14;a 255 125 315 125;t 90 175 Wind-carried seed;t 265 175 Floating seed;t 180 200 Transport depends on survival",
+    "c 70 95 25;d 70 95 6;p M155 65Q180 95 155 125L195 125Q170 95 195 65Z;p M270 75L255 110L270 145M270 75L285 110L270 145;a 270 110 325 75;t 70 165 Fruit eaten;t 175 165 Hook attaches;t 280 165 Fruit ejects;t 180 205 Different dispersal mechanisms",
+    "c 85 95 10;c 260 95 30;a 85 110 140 155;a 260 125 285 155;t 85 55 Small seed;t 260 55 Large reserves;t 180 195 Establishment still requires suitable conditions"
+  ],
+  "depth-botany-why-leaves-have-pores": [
+    "p M85 45Q35 105 85 165Q155 165 155 105Q155 45 85 45Z;p M275 45Q325 105 275 165Q205 165 205 105Q205 45 275 45Z;a 180 25 180 80;a 180 130 180 190;t 180 15 CO₂ in;t 180 205 O₂ and water vapor out",
+    "p M65 65Q25 105 65 145Q115 145 115 105Q115 65 65 65ZM145 65Q185 105 145 145Q95 145 95 105Q95 65 145 65Z;p M225 65Q185 105 225 145Q255 145 255 105Q255 65 225 65ZM275 65Q315 105 275 145Q245 145 245 105Q245 65 275 65Z;t 105 175 Turgid / open;t 250 175 Less turgid / closed;t 180 205 Water movement changes guard-cell shape",
+    "p M35 95Q180 25 325 95Q180 165 35 95Z;a 90 25 90 75;a 180 115 180 180;a 270 115 270 180;t 90 18 CO₂;t 230 190 Water vapor;t 180 205 Carbon uptake trades off with water loss",
+    "c 75 55 22;p M45 115Q75 80 105 115M45 145Q75 180 105 145;c 275 55 22;p M245 115Q275 80 305 115M245 120Q275 155 305 120;t 75 195 Light: often open;t 275 195 Drought: often closed;t 180 210 CAM plants may open mainly at night"
+  ],
+  "depth-botany-how-roots-explore-soil": [
+    "p M135 35H225V115Q225 180 180 180Q135 180 135 115Z;r 145 55 70 45;r 145 100 70 35;a 180 140 180 165;t 180 28 Growing root;t 180 80 Elongation;t 180 123 Division;t 180 200 Root cap protects tip",
+    "p M140 35H220V175H140Z;l 140 65 90 50;l 140 85 80 75;l 140 105 85 115;l 140 125 95 145;l 220 65 270 50;l 220 85 280 75;l 220 105 275 115;l 220 125 265 145;d 80 50 5;d 280 145 5;t 180 195 Root hairs increase soil contact area",
+    "p M180 25V175M180 65L110 110L75 150M180 95L260 135L305 155M110 110L95 165M260 135L250 175;t 180 20 Parent root;t 180 200 Lateral roots branch in response to local conditions",
+    "r 25 45 145 125;r 190 45 145 125;p M100 50V145M100 80L55 120M100 95L145 145M260 50V85M260 75L230 90;l 190 100 335 100;t 97 190 Porous soil;t 262 190 Compacted layer;t 180 210 Low oxygen and dense soil can restrict growth"
+  ]
+};
+window.LumenSlideArtBatch15Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch15;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch15Render(c,cls,step)||prior(c,cls,step);};})();
