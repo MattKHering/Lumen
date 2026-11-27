@@ -6820,3 +6820,277 @@ window.LumenSlideArtBatch47Render=function renderer(c,cls="cover",step=-1){
  const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch47Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* media-literacy: dedicated slide artwork, batch 48. */
+window.LumenSlideArtBatch48={
+  "source-check": [
+    "r 55 45 250 130;l 55 85 305 85;l 55 125 305 125;t 180 70 Claim;t 180 110 Date + location;t 180 150 Scope;t 180 195 Verify a precise proposition",
+    "b 35 65 130 65 Publisher;a 165 97 195 97;b 195 65 130 65 External evidence;t 180 165 Leave page to investigate credibility",
+    "b 35 45 135 55 Law claim;b 190 45 135 55 Official text;a 170 72 190 72;b 35 120 290 55 Independent reporting;t 180 205 Compare with actual legislative record",
+    "d 65 105 7;d 180 65 7;d 295 105 7;l 65 105 180 65;l 180 65 295 105;t 180 45 Original source;t 180 175 Two repetitions may share one origin"
+  ],
+  "image-context": [
+    "r 35 45 130 110;p M45 135L75 85L105 125L155 65;t 100 175 Real photo;r 195 45 130 110;t 260 100 Wrong date;t 260 175 Misleading caption;t 180 205 Authentic pixels do not verify context",
+    "l 35 105 325 105;d 65 105 6;d 180 105 6;d 295 105 6;t 65 85 Earliest;t 180 85 Archive;t 295 85 Repost;t 180 175 Trace publication and original caption",
+    "r 35 55 130 100;r 195 55 130 100;p M45 105Q70 95 95 105T155 105M205 105Q230 95 255 105T315 105;t 100 175 Earlier flood;t 260 175 Claimed current;t 180 205 Same photograph, different event claim",
+    "b 35 45 135 55 Metadata;b 190 45 135 55 Landmarks;b 35 120 135 55 Archives;b 190 120 135 55 Records;t 180 205 Corroborate clues rather than trust one match"
+  ],
+  "depth-media-literacy-how-headlines-frame-a-story": [
+    "r 35 45 290 130;f 35 45 290 45;l 50 115 310 115;l 50 145 310 145;t 180 72 Headline selects aspect;t 180 195 Body contains broader evidence",
+    "b 35 55 135 65 Risk framing;b 190 55 135 65 Success framing;t 180 165 Same facts, different emphasis",
+    "r 65 110 90 60;r 205 50 90 120;t 110 100 1%;t 250 40 2%;t 180 195 Doubled, but only +1 percentage point",
+    "r 65 35 230 145;l 85 75 275 75;l 85 105 275 105;l 85 135 275 135;t 180 60 Headline;t 180 95 Denominator;t 180 125 Details;t 180 205 Check framing against evidence"
+  ],
+  "depth-media-literacy-distinguishing-news-and-opinion": [
+    "r 35 55 130 110;r 195 55 130 110;t 100 95 Event;t 100 125 Attributed fact;t 260 95 Judgment;t 260 125 Recommendation;t 180 195 Reporting vs opinion",
+    "b 35 65 135 65 Evidence;a 170 97 190 97;b 190 65 135 65 Argument;t 180 165 Opinion should identify its viewpoint",
+    "b 35 55 135 65 Council voted 5–2;b 190 55 135 65 Reverse decision;t 180 165 Recorded event vs editorial position",
+    "b 35 55 135 65 Label;b 190 55 135 65 Factual claim;t 180 165 Independently verify facts in either format"
+  ],
+  "depth-media-literacy-how-advertisements-persuade": [
+    "c 180 105 35;c 65 55 20;c 295 55 20;c 180 175 20;l 65 55 150 85;l 295 55 210 85;l 180 140 180 155;t 180 110 Ad;t 65 25 Awareness;t 295 25 Preference;t 180 205 Action",
+    "b 35 45 135 55 Social proof;b 190 45 135 55 Scarcity;b 35 120 135 55 Endorsement;b 190 120 135 55 Imagery;t 180 205 Persuasion differs from effectiveness evidence",
+    "r 65 55 90 115;r 205 110 90 60;t 110 45 Popularity;t 250 100 Outcome data?;t 180 195 Customer enthusiasm does not prove a health claim",
+    "b 35 45 135 55 Measured claim;b 190 45 135 55 Independent data;b 35 120 135 55 Price;b 190 120 135 55 Terms;t 180 205 Separate evidence from persuasive design"
+  ],
+  "depth-media-literacy-recognizing-misleading-statistics-in-news": [
+    "r 35 75 290 50;f 35 75 58 50;t 64 105 Count;t 210 105 Population;t 180 55 Denominator defines scale;t 180 195 Counts need relevant exposure",
+    "r 35 65 145 35;r 35 125 290 35;t 205 85 2 per 1,000;t 180 145 4 per 1,000;t 180 195 Relative +100%, absolute +2 per 1,000",
+    "b 35 65 135 55 200 / 100k;b 190 65 135 55 100 / 25k;t 102 150 200 per 100k;t 257 150 400 per 100k;t 180 195 B has fewer incidents, higher rate",
+    "b 35 45 135 55 Time window;b 190 45 135 55 Definitions;b 35 120 135 55 Sampling;b 190 120 135 55 Uncertainty;t 180 205 Accurate numbers may support limited claims"
+  ],
+  "depth-media-literacy-why-algorithms-shape-media-feeds": [
+    "r 35 55 90 110;r 135 55 90 110;r 235 55 90 110;t 80 105 Candidates;a 125 105 135 105;t 180 105 Rank;a 225 105 235 105;t 280 105 Feed;t 180 195 Signals determine selection and order",
+    "r 65 45 90 125;r 205 85 90 85;t 110 35 Engagement;t 250 75 Accuracy;t 180 195 Ranking objective need not measure truth",
+    "r 35 45 130 130;r 195 45 130 130;f 45 55 110 30;f 205 55 110 30;f 205 95 110 30;f 205 135 110 30;t 100 195 Earlier feed;t 260 195 More gardening;t 180 25 Repeated viewing influences recommendations",
+    "c 95 100 35;c 265 100 35;a 130 85 230 85;a 230 115 130 115;t 95 105 Exposure;t 265 105 Response;t 180 195 Feedback loop produces a selected sample"
+  ],
+  "depth-media-literacy-checking-quotations-in-context": [
+    "r 65 35 230 145;t 180 65 Verified quote;l 80 80 280 80;l 80 115 280 115;l 80 150 280 150;t 180 100 Speaker;t 180 135 Source and date;t 180 205 Distinguish paraphrase from wording",
+    "r 35 55 290 110;l 35 90 325 90;l 35 130 325 130;f 35 90 290 40;t 180 75 Preceding question;t 180 115 Quoted passage;t 180 150 Following context;t 180 195 Read surrounding statements",
+    "b 35 55 290 45 Will not work without more staff;r 35 125 120 45;t 95 152 Will not work;t 180 195 Omission changes conditional meaning",
+    "b 35 55 135 65 Verified wording;b 190 55 135 65 Original unavailable;t 180 165 Quote exactly or disclose limitation"
+  ],
+  "depth-media-literacy-recognizing-sponsored-content": [
+    "c 95 105 35;c 265 105 35;a 130 105 230 105;t 95 110 Sponsor;t 265 110 Publisher;t 180 85 Payment;t 180 195 Material relationship affects placement",
+    "r 35 45 290 130;f 35 45 290 30;t 180 65 Sponsored;l 55 105 305 105;l 55 135 305 135;t 180 195 Check disclosure and affiliate links",
+    "b 35 65 95 55 Review;a 130 92 142 92;b 142 65 95 55 Purchase;a 237 92 249 92;b 249 65 85 55 Commission;t 180 195 Incentive matters regardless of product quality",
+    "b 35 55 135 65 Sponsored claim;b 190 55 135 65 Independent test;t 180 165 Sponsorship alone does not establish falsity"
+  ],
+  "depth-media-literacy-how-corrections-improve-reporting": [
+    "b 35 55 135 65 Error correction;b 190 55 135 65 New information;t 180 165 Correction differs from update",
+    "r 55 45 250 130;l 55 85 305 85;l 55 130 305 130;t 180 70 Original error;t 180 110 Correct fact;t 180 150 Public notice;t 180 195 Accessible correction explains change",
+    "b 35 65 135 65 Published 120;a 170 97 190 97;b 190 65 135 65 Verified 102;t 180 165 Corrected attendance count;t 180 195 Identify original error",
+    "l 35 175 325 175;d 65 145 6;d 125 95 6;d 185 145 6;d 245 115 6;d 305 145 6;t 180 35 Assess correction history and severity;t 180 195 Corrections are one quality signal"
+  ],
+  "plus-media-literacy-how-source-independence-affects-verification": [
+    "d 65 65 8;d 65 145 8;d 295 65 8;d 295 145 8;l 65 65 295 65;l 65 145 295 145;t 65 40 Evidence A;t 65 175 Evidence B;t 295 40 Report A;t 295 175 Report B;t 180 195 Independent evidence corroborates more strongly",
+    "d 65 105 8;d 180 65 8;d 180 145 8;d 295 105 8;l 65 105 180 65;l 65 105 180 145;l 180 65 295 105;l 180 145 295 105;t 65 85 Origin;t 295 85 Repost;t 180 195 Trace shared source chains",
+    "d 65 75 8;d 180 35 5;d 180 65 5;d 180 95 5;d 180 125 5;d 180 155 5;p M65 75L180 35M65 75L180 65M65 75L180 95M65 75L180 125M65 75L180 155;d 65 175 8;d 295 175 8;l 65 175 295 175;t 65 55 Release;t 65 205 Record;t 295 205 Separate report",
+    "b 35 55 135 65 Independent origin;b 190 55 135 65 Evidence quality;t 180 165 Both matter, independent errors remain possible"
+  ],
+  "plus-media-literacy-recognizing-manipulated-visual-context": [
+    "r 35 45 130 110;r 195 45 130 110;r 65 75 70 50;p M205 85L315 135;t 100 175 Crop;t 260 175 Alteration;t 180 205 Different forms change context or content",
+    "r 35 45 290 130;r 105 75 150 70;t 180 35 Full frame;t 180 195 Recover original, surrounding frames and caption",
+    "r 35 45 290 130;r 45 65 110 90;d 65 85 5;d 85 85 5;d 105 85 5;d 125 85 5;d 65 110 5;d 85 110 5;d 105 110 5;d 125 110 5;t 180 195 Crowded crop hides empty surrounding space",
+    "b 35 45 135 55 Anomaly;b 190 45 135 55 Metadata;b 35 120 290 55 Independent corroboration;t 180 205 Clues alone are not proof"
+  ],
+  "plus-media-literacy-how-statistics-are-selected-for-stories": [
+    "r 35 55 290 110;l 130 55 130 165;l 230 55 230 165;f 130 55 100 110;t 82 105 Group A;t 180 105 Selected;t 277 105 Group C;t 180 195 Choice of variables and groups shapes story",
+    "l 35 175 325 175;p M35 145L95 65L155 95L215 80L325 55;r 95 45 230 130;t 180 25 Starting point changes apparent trend",
+    "l 35 175 325 175;p M65 145L180 55L295 100;d 65 145 6;d 180 55 6;d 295 100 6;t 65 135 80;t 180 45 120;t 295 90 100;t 180 195 Monthly fall, two-month rise",
+    "b 35 45 135 55 Baseline;b 190 45 135 55 Consistent definition;b 35 120 290 55 Broader period;t 180 205 Ask why comparison is relevant"
+  ],
+  "plus-media-literacy-understanding-headlines-about-scientific-studies": [
+    "b 35 45 135 55 Observational;b 190 45 135 55 Randomized;b 35 120 135 55 Review;b 190 120 135 55 Laboratory;t 180 205 Designs support different inferences",
+    "l 35 105 325 105;l 100 95 100 115;l 250 95 250 115;d 175 105 7;t 180 65 Effect estimate and uncertainty;t 180 195 Identify measured outcome and population",
+    "c 95 105 35;c 265 105 35;l 130 105 230 105;c 180 45 20;l 180 65 110 75;l 180 65 250 75;t 95 110 Coffee;t 265 110 Outcome;t 180 25 Age / habits;t 180 195 Confounding may explain observed association",
+    "b 35 55 135 65 Associated with;b 190 55 135 65 Prevents;t 180 165 Causal headline may exceed observational evidence"
+  ],
+  "plus-media-literacy-why-polls-need-methodological-context": [
+    "c 180 105 70;d 145 75 6;d 215 75 6;d 145 135 6;d 215 135 6;t 180 25 Target population;t 180 195 Sample recruitment and weighting matter",
+    "r 35 55 130 110;r 195 55 130 110;t 100 95 Wording A;t 260 95 Wording B;t 180 195 Order and response choices can change answers",
+    "b 35 55 135 65 Lower taxes?;b 190 55 135 65 Taxes with cuts?;t 180 165 Different conditions yield different responses",
+    "b 35 45 135 55 Sampling error;b 190 45 135 55 Nonresponse;b 35 120 135 55 Coverage;b 190 120 135 55 Measurement;t 180 205 Margin of error does not capture every source"
+  ],
+  "plus-media-literacy-recognizing-edited-audio-and-video": [
+    "l 35 105 325 105;r 65 85 70 40;r 225 85 70 40;a 135 105 225 105;t 180 65 Missing segment;t 180 195 Editing can change meaning without altering clip pixels",
+    "l 35 105 325 105;d 65 105 6;d 180 105 6;d 295 105 6;t 65 85 Full record;t 180 85 Timestamp;t 295 85 Clip;t 180 175 Compare transcript and publication",
+    "b 35 55 135 65 Missing question;b 190 55 135 65 Yes;a 170 87 190 87;t 180 165 The answer depends on what was asked",
+    "b 35 45 135 55 Compression;b 190 45 135 55 Cuts;b 35 120 290 55 Source verification;t 180 205 Glitches alone cannot prove deception"
+  ],
+  "plus-media-literacy-how-ownership-can-affect-media": [
+    "c 180 65 30;c 85 155 25;c 275 155 25;l 180 95 85 130;l 180 95 275 130;t 180 70 Owner;t 85 160 Budget;t 275 160 Editorial;t 180 205 Governance affects influence",
+    "r 35 55 130 110;r 195 55 130 110;l 180 40 180 175;t 100 105 Business;t 260 105 Editorial;t 180 195 Separation and disclosure reduce direct interference",
+    "b 105 35 150 45 Parent firm;l 180 80 85 125;l 180 80 275 125;b 25 125 120 45 Publisher;b 215 125 120 45 Covered firm;t 180 205 Disclose ownership relationship",
+    "b 35 55 135 65 Plausible incentive;b 190 55 135 65 Documented action;t 180 165 Ownership alone does not establish interference"
+  ],
+  "plus-media-literacy-what-editorial-selection-means": [
+    "d 65 65 7;d 65 105 7;d 65 145 7;b 140 75 80 60 Select;a 72 65 140 95;a 72 105 140 105;a 72 145 140 115;a 220 105 325 105;t 180 195 Limited resources shape placement",
+    "r 65 55 90 115;r 205 115 90 55;t 110 45 Coverage;t 250 105 Frequency;t 180 195 Visibility does not measure prevalence",
+    "r 35 65 290 40;f 35 65 10 40;t 180 55 All trips;t 180 145 Rare dramatic incidents dominate news;t 180 195 Risk needs exposure denominator",
+    "b 35 45 135 55 Other outlets;b 190 45 135 55 Comparable events;b 35 120 290 55 Underlying data;t 180 205 Absence of coverage has multiple explanations"
+  ],
+  "plus-media-literacy-how-to-evaluate-expert-commentary": [
+    "c 95 105 45;c 265 105 45;t 95 110 Expertise;t 265 110 Claim;t 180 195 Match qualifications to precise topic",
+    "b 35 45 135 55 Evidence;b 190 45 135 55 Consensus;b 35 120 290 55 Relevant disagreement;t 180 205 Assess claim against research, not status alone",
+    "b 35 55 135 65 Clinical knowledge;b 190 55 135 65 Statistical model;t 180 165 Distinct specialized expertise may be needed",
+    "b 35 45 135 55 Disclosures;b 190 45 135 55 Method limits;b 35 120 290 55 Evidence vs judgment;t 180 205 Evaluate dissent on merits"
+  ],
+  "plus-media-literacy-understanding-rumor-transmission": [
+    "d 65 105 8;d 180 65 8;d 180 145 8;d 295 105 8;l 65 105 180 65;l 65 105 180 145;l 180 65 295 105;l 180 145 295 105;t 180 195 Unverified claims spread through networks",
+    "b 35 55 135 65 Qualified claim;b 190 55 135 65 Simplified retelling;a 170 87 190 87;t 180 165 Repetition can remove qualifications",
+    "b 35 45 290 45 May close for maintenance;b 35 120 290 55 Permanently closed;t 180 205 Reposting changes uncertainty and scope",
+    "l 35 105 325 105;d 65 105 6;d 180 105 6;d 295 105 6;t 65 85 Origin;t 180 85 Repost;t 295 85 Official check;t 180 175 Trace source, avoid amplifying unresolved rumor"
+  ]
+};
+window.LumenSlideArtBatch48Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch48;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch48Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* demography: dedicated slide artwork, batch 49. */
+window.LumenSlideArtBatch49={
+  "population-change": [
+    "r 115 65 130 90;a 35 85 115 85;a 245 125 325 125;a 35 125 115 125;a 245 85 325 85;t 180 110 Population;t 75 70 Births;t 75 150 Arrivals;t 285 70 Deaths;t 285 150 Departures;t 180 195 Change=B−D+arrivals−departures",
+    "b 35 65 135 55 Births − deaths;b 190 65 135 55 Net migration;t 180 165 Natural increase can coexist with population decline",
+    "b 35 45 135 55 120 − 90;b 190 45 135 55 200 − 250;b 105 120 150 55 +30 −50 = −20;t 180 205 10,000 → 9,980 residents",
+    "b 35 65 135 65 Change −20;b 190 65 135 65 Base 10,000;t 180 165 −20/10,000 = −0.2%"
+  ],
+  "depth-demography-the-demographic-transition": [
+    "l 35 175 325 175;l 35 175 35 35;p M35 55H125Q180 55 215 135H325;p M35 65H75Q130 65 155 145H325;t 180 25 Birth and death rates;t 180 195 Common transition, not universal timetable",
+    "l 35 175 325 175;p M35 55H175Q220 55 255 140H325;p M35 65H80Q125 65 155 145H325;t 180 95 Gap = natural growth;t 180 195 Death rates often decline before fertility",
+    "b 35 65 135 65 35−30=5;b 190 65 135 65 35−10=25;t 180 165 Natural growth per 1,000 rises as mortality falls",
+    "b 35 45 135 55 Migration;b 190 45 135 55 Health;b 35 120 135 55 Policy;b 190 120 135 55 Economy;t 180 205 Countries follow different paths"
+  ],
+  "depth-demography-how-population-pyramids-work": [
+    "l 180 35 180 175;r 130 45 50 20;r 180 45 45 20;r 105 75 75 20;r 180 75 70 20;r 75 105 105 20;r 180 105 100 20;r 45 135 135 20;r 180 135 130 20;t 180 25 Older ages;t 180 195 Age vertically, share or count horizontally",
+    "l 180 35 180 175;r 145 45 35 25;r 180 45 35 25;r 105 85 75 25;r 180 85 75 25;r 65 125 115 25;r 180 125 115 25;t 180 195 Broad base indicates many young people",
+    "r 90 65 90 30;r 180 65 90 30;r 130 125 50 30;r 180 125 50 30;t 180 55 Age 30–34: 9%;t 180 115 Age 0–4: 5%;t 180 195 Narrower youngest cohort",
+    "l 180 35 180 175;r 145 45 35 20;r 180 45 35 20;r 75 75 105 20;r 180 75 105 20;r 125 105 55 20;r 180 105 55 20;r 95 135 85 20;r 180 135 85 20;t 180 195 Bulge can reflect migration, fertility or survival"
+  ],
+  "depth-demography-understanding-fertility-rates": [
+    "b 35 55 135 65 Births / all people;b 190 55 135 65 Births / age group;t 180 165 Crude birth rate vs age-specific fertility",
+    "l 35 175 325 175;r 45 155 35 20;r 85 110 35 65;r 125 65 35 110;r 165 55 35 120;r 205 95 35 80;r 245 135 35 40;r 285 165 35 10;t 180 25 Age-specific fertility;t 180 195 Sum age-specific rates across reproductive years",
+    "b 35 65 135 65 Rate sum .40;b 190 65 135 65 Band width 5 y;t 180 165 5×.40=2 births per woman",
+    "l 35 105 325 105;d 95 105 6;d 265 105 6;a 105 85 255 85;t 95 125 Earlier births;t 265 125 Postponed births;t 180 195 Timing can change period TFR"
+  ],
+  "depth-demography-life-expectancy-explained": [
+    "l 35 175 325 175;l 35 175 35 35;p M35 45Q90 55 140 60Q245 65 325 175;t 180 25 Survivors by age;t 180 195 Period life table uses current age-specific mortality",
+    "l 35 175 325 175;p M35 45Q120 50 205 75Q280 100 325 175;t 180 25 Hypothetical cohort;t 180 195 Mean lifespan under period mortality rates",
+    "p M35 45L75 80Q215 80 325 175M35 45L75 50Q215 50 325 175;t 180 25 Early deaths reduced;t 180 195 Life expectancy rises even if late survival is similar",
+    "l 35 175 325 175;p M35 45Q180 50 325 175;l 230 35 230 175;t 230 25 Age 65;t 180 195 Remaining life expectancy conditions on survival to 65"
+  ],
+  "depth-demography-migration-and-population": [
+    "r 115 65 130 90;a 35 85 115 85;a 245 125 325 125;t 180 110 Region;t 75 70 Arrivals;t 285 150 Departures;t 180 195 Net=arrivals−departures",
+    "a 45 75 315 75;a 315 145 45 145;t 180 55 Inflow;t 180 165 Outflow;t 180 195 Net can hide gross movement",
+    "b 35 65 135 65 150−50=100;b 190 65 135 65 5100−5000=100;t 180 165 Same net, very different gross movement",
+    "l 35 175 325 175;r 45 135 45 40;r 105 55 45 120;r 165 75 45 100;r 225 125 45 50;r 285 155 30 20;t 180 25 Migrant age profile;t 180 195 Selective movement changes population composition"
+  ],
+  "depth-demography-dependency-ratios": [
+    "r 35 75 290 50;l 107.5 75 107.5 125;l 281.5 75 281.5 125;t 71 105 0–14;t 194 105 15–64;t 303 105 65+;t 180 195 Dependency ratio uses age bands, not jobs",
+    "b 35 45 135 55 250 young;b 190 45 135 55 150 older;b 105 120 150 55 600 working-age;t 180 205 400/600×100=66.7 per 100",
+    "b 35 65 135 65 250/600×100;b 190 65 135 65 150/600×100;t 102 155 Youth 41.7;t 257 155 Older 25;t 180 195 Components sum to total ratio",
+    "b 35 55 135 65 Age 65+ works;b 190 55 135 65 Age 15–64 not working;t 180 165 Age classification ≠ economic dependency"
+  ],
+  "depth-demography-urbanization-patterns": [
+    "r 35 75 290 50;f 35 75 116 50;t 93 105 Urban;t 238 105 Other;t 180 55 Urban population share;t 180 195 Urbanization means share rises, not just count",
+    "b 35 65 135 65 40 /100m;b 190 65 135 65 50 /150m;t 102 155 40%;t 257 155 33.3%;t 180 195 Urban count rises while share falls",
+    "c 180 105 35;c 65 55 20;c 295 55 20;c 180 175 20;l 65 55 150 85;l 295 55 210 85;l 180 140 180 155;t 180 110 Urban share;t 65 25 Migration;t 295 25 Births/deaths;t 180 205 Reclassification",
+    "r 35 55 130 110;r 195 55 130 110;r 55 75 90 70;r 205 65 110 90;t 100 185 Definition A;t 260 185 Definition B;t 180 205 Boundaries and urban criteria differ"
+  ],
+  "depth-demography-reading-census-data": [
+    "r 35 55 290 110;l 130 55 130 165;l 230 55 230 165;d 65 85 5;d 165 110 5;d 265 140 5;t 180 35 Defined population;t 180 195 Count at specified reference time",
+    "r 35 75 290 50;f 35 75 232 50;t 151 105 Counted;t 296 105 Missed;t 180 195 Coverage, duplicates and nonresponse affect count",
+    "p M35 145L95 75L155 145M205 145L265 75L325 145;d 265 120 6;a 260 55 100 55;t 95 175 Usual home;t 265 175 Temporary site;t 180 205 Usual residence rules determine count",
+    "b 35 45 135 55 Geography;b 190 45 135 55 Reference date;b 35 120 135 55 Definition;b 190 120 135 55 Census vs sample;t 180 205 Compare like populations"
+  ],
+  "plus-demography-how-cohort-analysis-follows-generations": [
+    "l 35 105 325 105;d 95 105 7;d 265 105 7;t 95 85 Born 1990;t 265 85 Same cohort;t 180 175 Shared event defines group",
+    "l 35 175 325 175;l 35 175 35 35;p M65 155L295 45;t 180 25 Period across x, age up y;t 180 195 Cohort follows diagonal across time",
+    "l 35 105 325 105;d 95 105 6;d 265 105 6;t 95 85 2020: age 30;t 265 85 2030: age 40;t 180 175 Follow 1990 births rather than unrelated 30-year-olds",
+    "b 35 65 135 65 Period − birth year;b 190 65 135 65 Age;t 180 165 Exact relation complicates separate effect identification"
+  ],
+  "plus-demography-understanding-household-size": [
+    "p M35 145L100 75L165 145ZM195 145L260 75L325 145Z;d 100 120 6;d 240 120 6;d 280 120 6;t 180 195 Household residence need not equal family",
+    "b 35 65 135 65 Household residents;b 190 65 135 65 Number households;t 180 165 Mean size = residents / households",
+    "b 35 45 135 55 100×1=100;b 190 45 135 55 50×4=200;b 105 120 150 55 300/150=2;t 180 205 Mean household size",
+    "r 35 65 290 40;f 35 65 145 40;r 35 125 290 40;f 35 125 58 40;t 180 55 Distribution A;t 180 115 Distribution B;t 180 195 Same mean can hide different household mixes"
+  ],
+  "plus-demography-how-internal-migration-differs-from-international-migration": [
+    "r 35 45 290 130;l 180 45 180 175;a 65 105 145 105;a 265 145 335 145;t 180 25 National boundary;t 100 85 Internal;t 270 125 International;t 180 195 Defined residence movement",
+    "r 35 55 290 110;l 180 55 180 165;a 95 105 265 105;t 95 85 Region A;t 265 85 Region B;t 180 195 Internal moves redistribute national population",
+    "b 35 65 135 65 Province A −1;b 190 65 135 65 Province B +1;t 180 165 National change =0",
+    "l 35 105 325 105;d 65 105 6;d 295 105 6;a 75 85 285 85;a 285 125 75 125;t 65 155 Home;t 295 155 Work;t 180 195 Commuting is not usually migration"
+  ],
+  "plus-demography-why-population-density-can-mislead": [
+    "r 35 55 290 110;d 95 95 7;d 180 125 7;d 265 85 7;t 180 35 Residents / land area;t 180 195 Mean density hides distribution",
+    "r 35 55 130 110;r 195 55 130 110;f 35 55 13 110;d 210 75 5;d 240 95 5;d 270 115 5;d 300 135 5;t 100 185 90% in 10% area;t 260 185 Evenly distributed;t 180 205 Both 1,000 residents/km²",
+    "r 35 55 290 110;r 95 85 170 50;t 180 35 Regional boundary;t 180 195 Built-up area denominator changes density",
+    "r 35 55 290 110;d 75 75 6;d 95 85 6;d 110 95 6;d 135 105 6;d 250 140 6;t 180 35 Mapped population clusters;t 180 195 Use relevant local measures for service access"
+  ],
+  "plus-demography-how-mortality-differs-by-age": [
+    "b 35 65 135 65 Age-band deaths;b 190 65 135 65 Age-band exposure;t 180 165 Rate per 1,000 person-years",
+    "l 35 175 325 175;l 35 175 35 35;p M35 75Q65 165 115 165Q230 160 325 45;t 180 25 Age-specific mortality pattern;t 180 195 Often high in infancy and later life",
+    "b 35 65 135 65 200 /10,000;b 190 65 135 65 20 /20,000;t 102 155 Older:20 per 1k;t 257 155 Younger:1 per 1k;t 180 195 Age-specific rates differ",
+    "r 35 65 290 35;f 35 65 58 35;r 35 125 290 35;f 35 125 145 35;t 180 55 Younger population;t 180 115 Older population;t 180 195 Crude rates depend on age mix"
+  ],
+  "plus-demography-what-infant-mortality-measures": [
+    "l 35 105 325 105;d 65 105 6;d 295 105 6;t 65 85 Live birth;t 295 85 First birthday;t 180 175 Death before age one / live births ×1,000",
+    "b 35 65 135 65 24 infant deaths;b 190 65 135 65 6,000 live births;t 180 165 24/6000×1000 =4 per thousand",
+    "l 35 105 325 105;d 65 105 6;d 135 105 6;d 295 105 6;t 65 85 Birth;t 135 85 28 days;t 295 85 Age 1;t 100 155 Neonatal;t 215 155 Postneonatal",
+    "b 35 45 135 55 Birth registration;b 190 45 135 55 Death registration;b 35 120 290 55 Live-birth definition;t 180 205 Comparability depends on reporting"
+  ],
+  "plus-demography-what-age-standardized-rates-reveal": [
+    "r 35 65 290 35;f 35 65 58 35;r 35 125 290 35;f 35 125 145 35;t 180 55 Age mix A;t 180 115 Age mix B;t 180 195 Same age-specific risk can yield different crude rates",
+    "b 35 65 135 65 Age-specific rates;b 190 65 135 65 Shared age weights;t 180 165 Multiply corresponding terms and sum",
+    "b 35 65 135 65 .8×1=.8;b 190 65 135 65 .2×10=2;t 180 165 0.8+2=2.8 per 1,000",
+    "b 35 55 135 65 Standardized rate;b 190 55 135 65 Actual deaths;t 180 165 Common reference distribution ≠ observed count"
+  ],
+  "depth-demography-population-momentum": [
+    "l 180 35 180 175;r 145 45 35 20;r 180 45 35 20;r 115 85 65 20;r 180 85 65 20;r 65 125 115 20;r 180 125 115 20;t 180 195 Large young cohorts carry growth momentum",
+    "r 35 75 290 50;f 35 75 203 50;t 136 105 Reproductive entrants;t 281 105 Older;t 180 195 Large birth cohort can produce more births than deaths",
+    "l 35 175 325 175;p M35 145Q130 55 325 45;p M35 145Q130 150 325 165;t 180 25 Youthful vs older populations;t 180 195 Similar fertility can yield different growth",
+    "b 35 45 135 55 Initial age mix;b 190 45 135 55 Survival;b 35 120 135 55 Fertility;b 190 120 135 55 Migration;t 180 205 Replacement does not imply immediate stability"
+  ],
+  "plus-demography-understanding-population-projections": [
+    "b 35 65 95 55 Age cohort;a 130 92 142 92;b 142 65 95 55 Survive;a 237 92 249 92;b 249 65 85 55 Next age;t 180 155 Add births and migration;t 180 195 Cohort-component projection",
+    "b 35 65 135 65 10,000×.98;b 190 65 135 65 +100 migrants;t 180 165 9,800+100=9,900",
+    "l 35 175 325 175;p M35 135L325 45;p M35 135L325 105;p M35 135L325 165;t 180 25 Alternative demographic assumptions;t 180 195 Projection is conditional",
+    "l 35 175 325 175;p M35 105L325 35M35 105L325 175;p M35 105L325 105;t 180 25 Uncertainty expands over horizon;t 180 195 Revise with observed data"
+  ],
+  "plus-demography-how-population-registers-work": [
+    "r 55 45 250 130;l 55 85 305 85;l 55 130 305 130;t 180 70 Resident ID;t 180 110 Residence;t 180 150 Event history;t 180 195 Register updated continuously",
+    "b 35 45 135 55 Birth;b 190 45 135 55 Death;b 35 120 135 55 Move;b 190 120 135 55 Link records;t 180 205 Reporting and linkage govern completeness",
+    "r 35 55 130 110;r 195 55 130 110;a 100 105 260 105;t 100 85 Old address;t 260 85 New address;t 180 195 Delayed update misallocates regional counts",
+    "b 35 45 135 55 Identifiers;b 190 45 135 55 Validation;b 35 120 135 55 Definitions;b 190 120 135 55 Privacy;t 180 205 Administrative purpose affects suitability"
+  ]
+};
+window.LumenSlideArtBatch49Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch49;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch49Render(c,cls,step)||prior(c,cls,step);};})();
