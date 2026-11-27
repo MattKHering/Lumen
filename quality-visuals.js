@@ -7158,3 +7158,130 @@ window.LumenSlideArtBatch54={
 };
 window.LumenSlideArtBatch54Render=function(c,cls='cover',step=-1){return window.LumenSlideArtSharedRender(window.LumenSlideArtBatch54,c,cls,step);};
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch54Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* philosophy: dedicated slide artwork, batch 55. */
+window.LumenSlideArtBatch55={
+  "stoic": [
+    "c 180 105 72;c 180 105 38;t 180 108 Choices;t 180 57 External events;t 180 195 Distinguish judgments from outcomes beyond control",
+    "b 35 45 135 55 Wisdom;b 190 45 135 55 Justice;b 35 120 135 55 Courage;b 190 120 135 55 Moderation;t 180 205 Virtue takes priority over reputation or wealth",
+    "b 35 55 135 65 Rejected application;b 190 55 135 65 Prepare and respond;t 102 155 External outcome;t 257 155 Own action;t 180 195 You cannot control the employer's decision",
+    "c 95 105 35;c 265 105 35;a 130 105 230 105;t 95 110 Judgment;t 265 110 Action;t 180 195 Examine feelings and act well, not emotional numbness"
+  ],
+  "buddhism": [
+    "p M35 155Q90 35 145 155T255 155T325 155;t 180 35 Conditioned things change;t 180 195 Impermanence, not independent permanence",
+    "c 95 105 35;c 265 105 35;a 130 105 230 105;t 95 110 Craving;t 265 110 Dukkha;t 180 195 Attachment to unstable experience can intensify dissatisfaction",
+    "l 35 105 325 105;d 65 105 6;d 180 105 6;d 295 105 6;t 65 85 Pleasure;t 180 85 Ends;t 295 85 Clinging;t 180 175 Distress can exceed the loss itself",
+    "b 35 65 95 65 Conduct;b 132 65 95 65 Meditation;b 229 65 96 65 Wisdom;t 180 195 Central practices in many Buddhist schools"
+  ],
+  "existentialism": [
+    "c 180 55 25;t 180 60 Person;a 160 75 85 135;a 200 75 275 135;t 85 155 Choice A;t 275 155 Choice B;t 180 195 Freedom and responsibility under given conditions",
+    "r 35 55 290 110;r 95 75 170 70;t 180 110 Feasible choices;t 180 195 Situated freedom is not unlimited options",
+    "b 35 55 135 65 Commitment A;b 190 55 135 65 Commitment B;t 180 165 No rule removes responsibility for choosing",
+    "b 25 65 95 65 Kierkegaard;b 132 65 95 65 Sartre;b 239 65 95 65 Beauvoir;t 180 195 Distinct accounts of freedom, religion and ethics"
+  ],
+  "ethics": [
+    "c 95 105 35;c 265 105 35;a 130 105 230 105;t 95 110 Act;t 265 110 Effects;t 180 195 Consequentialist assessment focuses on outcomes",
+    "r 35 55 290 110;r 95 75 170 70;t 180 110 Permissible acts;t 180 195 Duties and rights may constrain aggregate welfare",
+    "c 180 105 45;c 65 105 20;c 295 105 20;l 85 105 135 105;l 225 105 275 105;t 180 110 Character;t 65 75 Practice;t 295 75 Action;t 180 195 Virtue ethics develops dispositions and judgment",
+    "c 180 65 25;t 180 70 Wallet;l 180 90 65 145;l 180 90 180 145;l 180 90 295 145;t 65 165 Welfare;t 180 165 Duty;t 295 165 Honesty;t 180 195 Same return, different ethical justifications"
+  ],
+  "logic": [
+    "b 35 45 135 55 Premise 1;b 190 45 135 55 Premise 2;a 102 100 160 145;a 257 100 200 145;b 100 145 160 45 Conclusion;t 180 205 Premises give reasons for a claim",
+    "b 35 55 135 65 True premises;b 190 55 135 65 False conclusion;p M170 72L190 102M190 72L170 102;t 180 165 Valid structure rules out this combination",
+    "c 180 105 70;c 180 105 48;c 180 105 20;t 180 30 Animals;t 180 65 Mammals;t 180 109 Whales;t 180 195 Set inclusion makes conclusion necessary",
+    "b 35 65 135 65 Valid form;b 190 65 135 65 True premises;t 180 165 Both required for sound deduction"
+  ],
+  "depth-philosophy-what-epistemology-asks": [
+    "c 180 105 38;c 65 55 20;c 295 55 20;c 180 175 20;l 65 55 150 85;l 295 55 210 85;l 180 143 180 155;t 180 110 Knowledge;t 65 25 Truth;t 295 25 Evidence;t 180 205 Justification",
+    "c 130 105 60;c 230 105 60;t 100 105 True;t 260 105 Believed;t 180 105 Both;t 180 195 True belief can be lucky rather than justified",
+    "c 180 105 45;t 180 110 H;t 180 35 Correct coin guess;t 180 195 Truth without observation may not be knowledge",
+    "b 35 45 135 55 Perception;b 190 45 135 55 Testimony;b 35 120 135 55 Memory;b 190 120 135 55 Reasoning;t 180 205 Each source is fallible"
+  ],
+  "depth-philosophy-what-metaphysics-studies": [
+    "b 35 45 135 55 Objects;b 190 45 135 55 Properties;b 35 120 135 55 Time;b 190 120 135 55 Causation;t 180 205 Fundamental categories of reality",
+    "p M35 125H155L135 155H55ZM205 125H325L305 155H225Z;l 65 125 65 155;l 95 125 95 155;l 125 125 125 155;l 235 125 235 155;l 265 125 265 155;l 295 125 295 155;t 180 65 Ship planks replaced;t 180 195 Is it numerically the same ship?",
+    "b 35 55 135 65 Measure length;b 190 55 135 65 What is identity?;t 180 165 Empirical properties vs fundamental questions",
+    "b 35 45 135 55 Argument;b 190 45 135 55 Conceptual analysis;b 35 120 290 55 Relevant empirical findings;t 180 205 Metaphysics need not be supernatural"
+  ],
+  "depth-philosophy-how-utilitarian-reasoning-works": [
+    "c 180 105 35;c 65 55 20;c 295 55 20;c 65 155 20;c 295 155 20;l 65 55 150 85;l 295 55 210 85;l 65 155 150 125;l 295 155 210 125;t 180 110 Welfare;t 180 195 Consider comparable interests impartially",
+    "r 35 65 290 40;r 35 125 170 40;t 180 55 Benefits;t 120 115 Harms;t 180 195 Magnitude and likelihood matter, not supporter counts",
+    "r 35 65 290 40;r 35 125 70 40;t 180 55 Many small gains;t 200 145 Few severe harms;t 180 195 Compare effects, not merely number affected",
+    "b 35 55 135 65 Evaluate act;b 190 55 135 65 Evaluate rule;t 180 165 Uncertainty, rights and welfare comparisons remain debated"
+  ],
+  "depth-philosophy-what-virtue-ethics-emphasizes": [
+    "c 180 105 35;c 65 55 20;c 295 55 20;c 180 175 20;l 65 55 150 85;l 295 55 210 85;l 180 140 180 155;t 180 110 Virtue;t 65 25 Character;t 295 25 Wisdom;t 180 205 Action",
+    "l 35 105 325 105;d 65 105 6;d 180 105 6;d 295 105 6;t 65 85 Practice;t 180 85 Habit;t 295 85 Disposition;t 180 175 Virtues are cultivated tendencies",
+    "l 35 105 325 105;d 65 105 6;d 180 105 8;d 295 105 6;t 65 85 Avoidance;t 180 85 Courage;t 295 85 Recklessness;t 180 175 Appropriate response is not maximum risk",
+    "b 35 55 135 65 Particular situation;b 190 55 135 65 Practical wisdom;t 180 165 Context shapes what virtue requires"
+  ],
+  "plus-philosophy-what-personal-identity-asks": [
+    "l 35 105 325 105;c 65 105 25;c 295 105 25;t 65 110 Self A;t 295 110 Self B;t 180 75 Time passes;t 180 175 What grounds persistence through change?",
+    "b 35 55 135 65 Body continuity;b 190 55 135 65 Memory continuity;t 180 165 Competing accounts can diverge",
+    "c 95 105 35;c 265 105 35;l 130 105 230 105;t 95 110 Before;t 265 110 After;t 180 85 Memory loss;t 180 195 Does loss alone end numerical identity?",
+    "c 95 105 40;c 265 105 40;t 95 110 Twin A;t 265 110 Twin B;t 180 195 Qualitatively similar, numerically distinct"
+  ],
+  "depth-philosophy-understanding-free-will-debates": [
+    "b 25 65 95 65 Prior state;a 120 97 132 97;b 132 65 95 65 Laws;a 227 97 239 97;b 239 65 95 65 Next state;t 180 195 Determinism concerns causal necessity",
+    "c 95 105 40;c 265 105 40;l 135 105 225 105;t 95 110 Reasons;t 265 110 Action;t 180 195 Compatibilists distinguish reasons from coercion",
+    "b 35 55 135 65 Determinism;b 190 55 135 65 Relevant freedom;p M170 75L190 105M190 75L170 105;t 180 165 Incompatibilists deny coexistence",
+    "c 95 105 35;c 265 105 35;a 130 105 230 105;t 95 110 Values;t 265 110 Decision;t 180 195 Does causal dependence undermine or constitute freedom?"
+  ],
+  "plus-philosophy-understanding-the-problem-of-induction": [
+    "d 65 75 7;d 115 75 7;d 165 75 7;d 215 75 7;c 295 75 12;a 230 75 280 75;t 140 55 Observed cases;t 295 110 New case;t 180 195 Inductive support is not deductive necessity",
+    "l 35 105 325 105;d 65 105 6;d 125 105 6;d 185 105 6;c 295 105 10;t 125 85 Past pattern;t 295 85 Future?;t 180 175 Past regularity does not entail future regularity",
+    "r 35 75 90 25;r 145 75 90 25;r 255 75 70 25;a 80 105 80 145;a 190 105 190 145;c 290 145 14;t 180 45 Heated metal samples;t 180 195 Observed expansion supports expectation, not certainty",
+    "b 35 45 135 55 Probability;b 190 45 135 55 Pragmatic defense;b 35 120 290 55 Other justifications;t 180 205 Problem is justification, not ending practical reasoning"
+  ],
+  "plus-philosophy-what-moral-dilemmas-reveal": [
+    "c 180 105 35;b 35 55 100 45 Duty A;b 225 55 100 45 Duty B;a 135 80 150 95;a 225 80 210 95;t 180 110 Choice;t 180 195 Competing moral demands",
+    "b 35 55 135 65 Keep confidence;b 190 55 135 65 Prevent harm;t 180 165 Promise and prevention can conflict",
+    "b 35 45 135 55 Duties;b 190 45 135 55 Consequences;b 35 120 135 55 Affected people;b 190 120 135 55 Alternatives;t 180 205 Seek less harmful resolution",
+    "b 35 55 135 65 Justified decision;b 190 55 135 65 Remaining regret;t 180 165 Repair obligations can remain"
+  ],
+  "plus-philosophy-how-social-contract-theories-explain-authority": [
+    "c 65 105 25;c 180 105 25;c 295 105 25;l 90 105 155 105;l 205 105 270 105;t 65 110 A;t 180 110 Rules;t 295 110 B;t 180 195 Justify shared authority through agreement",
+    "r 35 55 290 110;r 95 75 170 70;t 180 110 Hypothetical choice;t 180 195 Agreement need not be a historical event",
+    "r 35 55 290 110;l 130 55 130 165;l 230 55 230 165;t 82 105 Position A;t 180 105 Position B;t 277 105 Position C;t 180 195 Choose rules without knowing future position",
+    "b 35 45 135 55 Hobbes;b 190 45 135 55 Locke;b 35 120 135 55 Rousseau;b 190 120 135 55 Rawls;t 180 205 Distinct theories of consent and legitimacy"
+  ],
+  "plus-philosophy-understanding-skepticism-about-the-external-world": [
+    "c 95 105 35;c 265 105 35;a 130 105 230 105;t 95 110 Experience;t 265 110 World?;t 180 195 Does experience justify external-world belief?",
+    "b 35 55 135 65 Waking experience;b 190 55 135 65 Convincing dream;t 180 165 Identical appearances can underdetermine reality",
+    "p M35 75H145V95H45V155M135 95V155;p M215 75H325V95H225V155M315 95V155;t 90 180 Desk;t 270 180 Deceptive appearance;t 180 205 What rules out indistinguishable alternatives?",
+    "b 35 45 135 55 Rule out alternatives;b 190 45 135 55 Common sense;b 35 120 290 55 Reliable belief process;t 180 205 Different standards for knowledge"
+  ],
+  "plus-philosophy-what-justice-means-in-political-philosophy": [
+    "r 35 75 290 50;l 100 75 100 125;l 210 75 210 125;t 67 105 A;t 155 105 B;t 267 105 C;t 180 195 Distribution of resources and burdens",
+    "b 35 55 135 65 Fair procedure;b 190 55 135 65 Correct wrong;t 180 165 Procedural vs corrective justice",
+    "b 35 45 135 55 Need;b 190 45 135 55 Merit;b 35 120 135 55 Lottery;b 190 120 135 55 Equal shares;t 180 205 Scholarship allocation rules embody different principles",
+    "b 35 45 135 55 Equality;b 190 45 135 55 Liberty;b 35 120 135 55 Desert;b 190 120 135 55 Sufficiency;t 180 205 Principles may conflict"
+  ],
+  "plus-philosophy-how-language-refers-to-objects": [
+    "b 35 55 135 65 Expression;a 170 87 190 87;c 260 90 35;t 260 95 Entity;t 180 165 Names, descriptions and demonstratives refer",
+    "b 35 45 135 55 Sense A;b 190 45 135 55 Sense B;a 102 100 160 145;a 257 100 200 145;c 180 165 25;t 180 170 Object;t 180 205 Different presentations, same referent",
+    "t 80 50 Morning Star;t 280 50 Evening Star;a 80 60 155 105;a 280 60 205 105;c 180 125 32;t 180 130 Venus;t 180 195 Discovering identity can be informative",
+    "b 35 55 135 65 Descriptive theory;b 190 55 135 65 Causal history;t 180 165 Names and empty reference pose challenges"
+  ],
+  "plus-philosophy-what-philosophy-of-mind-studies": [
+    "c 180 105 35;c 65 55 20;c 295 55 20;c 180 175 20;l 65 55 150 85;l 295 55 210 85;l 180 140 180 155;t 180 110 Mind;t 65 25 Thought;t 295 25 Experience;t 180 205 Intentionality",
+    "c 95 105 40;c 265 105 40;l 135 105 225 105;t 95 110 Mental;t 265 110 Physical;t 180 195 Physicalism and dualism disagree on dependence",
+    "p M45 105Q95 35 145 105Q95 175 45 105Z;p M205 105Q255 35 305 105Q255 175 205 105Z;t 95 110 Brain scan;t 255 110 Pain report;t 180 195 Correlate neural activity with subjective experience",
+    "b 35 45 135 55 Correlation;b 190 45 135 55 Causation;b 35 120 290 55 Identity claim;t 180 205 These are distinct relations"
+  ],
+  "plus-philosophy-understanding-moral-luck": [
+    "r 35 55 290 110;r 95 75 170 70;t 180 110 Agent's control;t 180 195 Moral luck challenges the control principle",
+    "p M35 105H325;l 180 65 180 145;d 95 105 8;d 265 105 8;t 95 85 Driver A;t 265 85 Driver B;t 180 175 Same carelessness, different consequences",
+    "c 180 105 35;c 65 55 20;c 295 55 20;l 65 55 150 85;l 295 55 210 85;t 180 110 Choice;t 65 25 Circumstance;t 295 25 Traits;t 180 195 Conditions outside choice can shape conduct",
+    "b 35 45 135 55 Moral blame;b 190 45 135 55 Consequences;b 35 120 290 55 Legal liability;t 180 205 Distinguish separate responsibility questions"
+  ],
+  "plus-philosophy-what-philosophical-thought-experiments-do": [
+    "b 35 55 135 65 Imagined case;a 170 87 190 87;b 190 55 135 65 Test principle;t 180 165 Expose assumptions with controlled comparison",
+    "r 35 55 130 110;r 195 55 130 110;d 100 105 8;d 240 85 8;d 280 125 8;t 100 185 Case A;t 260 185 Case B;t 180 205 Change one relevant feature, hold others comparable",
+    "p M35 125H155L135 155H55ZM205 125H325L305 155H225Z;l 65 125 65 155;l 95 125 95 155;l 125 125 125 155;l 235 125 235 155;l 265 125 265 155;l 295 125 295 155;t 180 65 Replaced planks;t 180 195 Theseus tests continuity vs material composition",
+    "b 35 55 135 65 Intuition test;b 190 55 135 65 Empirical evidence;t 180 165 Thought experiment does not replace factual research"
+  ]
+};
+window.LumenSlideArtBatch55Render=function(c,cls='cover',step=-1){return window.LumenSlideArtSharedRender(window.LumenSlideArtBatch55,c,cls,step);};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch55Render(c,cls,step)||prior(c,cls,step);};})();
