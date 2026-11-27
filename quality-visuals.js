@@ -1240,3 +1240,143 @@ window.LumenSlideArtBatch05Render=function renderer(c,cls="cover",step=-1){
  const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch05Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* Cybersecurity: dedicated slide artwork, batch 06. */
+window.LumenSlideArtBatch06={
+  "cyber-safety": [
+    "b 25 65 100 60 Fake sender;a 125 95 235 95;b 235 65 100 60 Recipient;t 180 65 False story;t 180 145 Click / disclose / pay;t 180 195 Social engineering",
+    "b 35 35 290 145 Suspicious email;t 180 65 Urgent: act now!;t 180 105 Unexpected attachment;t 180 140 Request for credentials;t 180 205 Polished appearance is not proof",
+    "b 25 55 145 55 Message link;b 190 55 145 55 Known bookmark;p M55 135L140 175M140 135L55 175;a 262 110 262 165;t 262 190 Verify service directly",
+    "b 25 55 100 50 Suspect message;a 125 80 145 80;b 145 55 190 50 Report to IT;t 180 145 If credentials disclosed:;t 180 180 Secure affected account promptly"
+  ],
+  "passwords": [
+    "b 25 55 145 50 Site A breach;b 190 55 145 50 Same password;a 170 80 190 80;a 262 105 262 145;b 190 145 145 40 Other accounts;t 97 158 Exposure spreads",
+    "b 25 45 110 45 Manager;a 135 67 190 67;a 135 67 190 120;a 135 67 190 175;b 190 45 145 44 Unique secret A;b 190 98 145 44 Unique secret B;b 190 151 145 44 Unique secret C",
+    "b 25 65 145 55 Master secret;a 170 92 190 92;b 190 65 145 55 Encrypted vault;t 97 150 Unique + strong;t 262 150 MFA + recovery;t 180 195 Protect the manager",
+    "b 25 55 145 50 Exposed secret;a 170 80 190 80;b 190 55 145 50 Replace it;t 180 150 Review affected accounts;t 180 190 MFA is an extra layer"
+  ],
+  "depth-cybersecurity-what-multifactor-authentication-protects": [
+    "b 25 55 95 70 Know;b 132 55 95 70 Have;b 239 55 95 70 Are;t 72 145 Password;t 179 145 Key;t 286 145 Biometric;t 180 195 MFA uses distinct factors",
+    "b 25 60 145 55 Stolen password;b 190 60 145 55 Security key;a 170 87 190 87;t 180 150 Missing second factor → blocked;t 180 195 Two passwords = one factor type",
+    "b 25 55 145 55 Genuine origin;b 190 55 145 55 Lookalike origin;t 97 150 Key signs here;t 262 150 Wrong origin;t 180 195 Origin-bound FIDO credential",
+    "b 25 55 145 55 Unexpected prompt;b 190 55 145 55 Recovery methods;t 97 150 Deny + report;t 262 150 Protect access;t 180 195 Never approve surprise logins"
+  ],
+  "depth-cybersecurity-how-software-patches-reduce-risk": [
+    "r 35 60 120 90;p M90 60L80 90L115 110L95 150;a 155 105 205 105;r 205 60 120 90;t 95 180 Defect;t 265 180 Patched;t 180 205 Fix or reduce impact",
+    "b 25 55 145 55 Patch published;b 190 55 145 55 Unpatched PC;a 170 82 190 82;t 180 150 Still exposed until installed;t 180 195 Unsupported products may lack fixes",
+    "b 25 50 95 50 Inventory;a 120 75 132 75;b 132 50 95 50 Test;a 227 75 239 75;b 239 50 95 50 Deploy;t 180 150 Prioritize urgent exposures;t 180 195 Trusted channel + rollback plan",
+    "b 25 60 145 55 Downloaded;b 190 60 145 55 Running version;t 180 150 Verify installation and monitor failures;t 180 195 Download ≠ installed"
+  ],
+  "depth-cybersecurity-the-principle-of-least-privilege": [
+    "r 35 60 290 100;f 35 60 95 100;t 82 105 Needed;t 227 105 Unneeded;t 180 195 Grant only task access and duration",
+    "b 25 45 145 50 Help desk;a 170 70 190 70;b 190 45 145 50 Password resets;b 190 115 145 50 Payroll edits;p M180 113L180 165;t 100 150 No access;t 180 205 Separate permission scopes",
+    "b 25 60 145 55 Daily account;b 190 60 145 55 Admin role;t 97 145 Routine work;t 262 145 Elevated work;t 180 195 Separate controlled elevation",
+    "b 25 55 145 50 Old duties;a 170 80 190 80;b 190 55 145 50 New duties;t 180 150 Remove obsolete grants;t 180 190 Smaller compromise impact"
+  ],
+  "depth-cybersecurity-why-backups-must-be-tested": [
+    "b 25 60 95 60 Backup;a 120 90 145 90;b 145 60 90 60 Restore;a 235 90 255 90;b 255 60 80 60 Usable data;t 180 185 Meet recovery time and condition",
+    "b 25 55 145 55 Production;b 190 55 145 55 Isolated copy;p M180 40V175;t 97 150 Incident;t 262 150 Protected copy;t 180 205 Separate failure domains",
+    "b 25 60 95 55 Backup;a 120 87 132 87;b 132 60 95 55 Safe sandbox;a 227 87 239 87;b 239 60 95 55 Verify;t 180 165 Integrity, app function, time",
+    "b 25 55 145 55 Job success;b 190 55 145 55 Restore test;t 97 150 Copy created;t 262 150 Data usable?;t 180 195 Record dependencies and gaps"
+  ],
+  "depth-cybersecurity-protecting-personal-devices": [
+    "r 110 30 140 155;r 125 45 110 120;c 180 175 5;t 180 80 Updates;t 180 105 Screen lock;t 180 130 Encryption;t 180 205 Complementary layers",
+    "b 25 55 145 50 Official source;a 170 80 190 80;b 190 55 145 50 Install app;t 180 145 Review requested permissions;t 180 195 Limit unnecessary access",
+    "r 25 45 90 140;r 35 55 70 110;c 70 175 4;b 180 45 155 42 Remote lock;b 180 102 155 42 Backup copy;a 115 100 180 66;a 115 100 180 123;t 180 205 Configure before loss",
+    "r 35 55 120 80;r 205 55 120 80;p M55 145H135M225 145H305;t 95 100 Unlocked;t 265 100 Locked;t 95 180 Active session;t 265 180 Protected;t 180 205 Lock unattended screens"
+  ],
+  "depth-cybersecurity-understanding-secure-network-connections": [
+    "b 25 65 100 55 Browser;a 125 92 235 92;b 235 65 100 55 Server;p M135 70H225V115H135Z;t 180 65 TLS;t 180 155 Encrypted and integrity protected",
+    "b 25 60 145 55 Site certificate;a 170 87 190 87;b 190 60 145 55 Hostname check;t 180 150 Verify trust and name match;t 180 195 Do not ignore warnings",
+    "b 25 65 145 55 HTTPS channel;b 190 65 145 55 Site content;t 97 150 Protected in transit;t 262 150 May be unsafe;t 180 195 Connection ≠ site honesty",
+    "b 25 55 95 55 Device;a 120 82 132 82;b 132 55 95 55 VPN provider;a 227 82 239 82;b 239 55 95 55 Destination;t 180 150 VPN changes trusted intermediary;t 180 195 HTTPS and warnings still matter"
+  ],
+  "plus-cybersecurity-why-asset-inventories-matter": [
+    "b 25 45 145 45 Devices;b 190 45 145 45 Software;b 25 115 145 45 Services;b 190 115 145 45 Data;t 180 195 Record owner and purpose",
+    "b 25 55 145 55 Listed laptop;b 190 55 145 55 Unknown laptop;t 97 150 Updates + logs;t 262 150 May miss both;t 180 195 Visibility enables coverage",
+    "b 25 45 95 45 Discovery;b 132 45 95 45 Procurement;b 239 45 95 45 Enrollment;a 72 90 180 140;a 180 90 180 140;a 286 90 180 140;b 100 140 160 45 Reconciled list",
+    "b 25 55 145 55 Critical asset;a 170 82 190 82;b 190 55 145 55 Dependencies;t 180 150 Check patch, backup, monitoring;t 180 195 Protect inventory records"
+  ],
+  "plus-cybersecurity-how-secure-defaults-help": [
+    "b 25 55 145 55 New account;a 170 82 190 82;b 190 55 145 55 Protections on;t 180 150 Safer initial state;t 180 195 No manual opt-in required",
+    "b 25 65 145 55 New private doc;a 170 92 190 92;b 190 65 145 55 Deliberate share;t 180 165 Private until authorized",
+    "b 25 55 145 55 Default protection;b 190 55 145 55 Approved exception;t 97 150 Broad coverage;t 262 150 Scope + expiry;t 180 195 Do not weaken everyone",
+    "b 25 55 145 55 Fresh install;b 190 55 145 55 Upgrade;t 180 150 Check control is actually on;t 180 195 Documentation is not enforcement"
+  ],
+  "depth-cybersecurity-understanding-ransomware-defense": [
+    "b 25 55 95 55 Encryption;b 132 55 95 55 Data theft;b 239 55 95 55 Disruption;t 180 155 Restore files ≠ resolve breach",
+    "r 35 45 290 30;r 55 75 250 30;r 75 105 210 30;r 95 135 170 30;t 180 64 Updates;t 180 94 MFA + access;t 180 124 Isolated backups;t 180 154 Monitoring;t 180 200 Defense layers",
+    "b 25 60 95 55 Detect;a 120 87 132 87;b 132 60 95 55 Notify;a 227 87 239 87;b 239 60 95 55 Contain;t 180 165 Authorized plan + preserve evidence",
+    "b 25 55 95 55 Restore;a 120 82 132 82;b 132 55 95 55 Validate;a 227 82 239 82;b 239 55 95 55 Resume;t 180 165 Investigate cause and exposure"
+  ],
+  "depth-cybersecurity-how-security-logs-help-investigations": [
+    "b 35 45 290 40 09:00 Authentication;b 35 85 290 40 09:02 Configuration change;b 35 125 290 40 09:04 Service error;t 180 195 Observations, not complete truth",
+    "l 35 110 325 110;d 75 110 6;d 180 110 6;d 285 110 6;t 75 85 Identity;t 180 145 Endpoint;t 285 85 Service;t 180 195 Correlate time + account + device",
+    "b 25 65 145 55 Unusual sign-in;a 170 92 190 92;b 190 65 145 55 Privilege change;t 180 165 Investigate relationship;t 180 195 Neither alone proves intent",
+    "b 25 45 145 50 Restrict access;b 190 45 145 50 Preserve records;b 25 120 145 50 Sync clocks;b 190 120 145 50 Limit retention;t 180 205 Protect evidence and privacy"
+  ],
+  "plus-cybersecurity-how-access-reviews-reduce-risk": [
+    "b 25 55 145 55 Actual grants;b 190 55 145 55 Business needs;t 180 150 Compare; t 180 195 Keep only justified access",
+    "b 25 55 145 55 Contractor left;a 170 82 190 82;b 190 55 145 55 Admin still active;t 180 155 Confirm ownership;t 180 195 Remove through approved process",
+    "b 25 55 95 55 User;a 120 82 132 82;b 132 55 95 55 Group;a 227 82 239 82;b 239 55 95 55 Role;t 180 155 Indirect grants count;t 180 195 Review effective access",
+    "b 25 55 95 55 Decide;a 120 82 132 82;b 132 55 95 55 Remove;a 227 82 239 82;b 239 55 95 55 Verify;t 180 165 Record owner and expiry"
+  ],
+  "plus-cybersecurity-what-security-segmentation-achieves": [
+    "r 25 45 125 130;r 210 45 125 130;l 180 35 180 185;t 87 65 Zone A;t 272 65 Zone B;c 65 105 10;c 105 145 10;c 250 105 10;c 290 145 10;a 115 105 245 105;t 180 200 Controlled communication",
+    "b 25 55 145 55 Guest Wi-Fi;b 190 55 145 55 Admin services;p M170 40V165;p M177 75L183 85M183 75L177 85;t 180 195 No unauthorized guest access",
+    "b 25 55 145 55 Required flows;b 190 55 145 55 Deny others;t 97 150 Allow and log;t 262 150 Enforce boundary;t 180 195 Policy follows business needs",
+    "b 25 55 145 55 Expected boundary;b 190 55 145 55 Actual reachability;t 180 150 Authorized tests reveal gaps;t 180 195 Exposed services remain at risk"
+  ],
+  "plus-cybersecurity-how-security-awareness-is-measured": [
+    "b 25 55 145 55 Attendance;b 190 55 145 55 Prompt reporting;t 97 150 Participation;t 262 150 Behavior;t 180 195 Measure outcomes, not attendance alone",
+    "b 25 55 145 55 Approved scenario;a 170 82 190 82;b 190 55 145 55 Report channel;t 180 155 Aggregate recognition and reporting;t 180 195 Avoid shaming or excess collection",
+    "l 35 175 325 175;r 65 120 80 55;f 215 65 80 110;t 105 110 Before;t 255 55 After;t 180 195 More reports may mean better awareness",
+    "b 25 55 145 55 Metrics;b 190 55 145 55 Feedback;a 97 110 180 150;a 262 110 180 150;t 180 178 Improve reporting process"
+  ],
+  "plus-cybersecurity-what-an-incident-response-plan-contains": [
+    "b 25 45 145 45 Incident lead;b 190 45 145 45 Communications;b 25 115 145 45 Technical team;b 190 115 145 45 Recovery owner;t 180 195 Defined roles and escalation",
+    "b 25 55 145 55 Affected services;b 190 55 145 55 Potential harm;a 97 110 180 150;a 262 110 180 150;t 180 180 Prioritize and preserve evidence",
+    "b 25 55 145 55 Scenario;a 170 82 190 82;b 190 55 145 55 Tabletop team;t 180 150 Simulate handoffs;t 180 195 No live service disruption",
+    "b 25 55 95 55 Lessons;a 120 82 132 82;b 132 55 95 55 Update;a 227 82 239 82;b 239 55 95 55 Retest;t 180 170 Contacts and dependencies"
+  ],
+  "plus-cybersecurity-understanding-threat-modeling": [
+    "b 25 55 95 55 Client;a 120 82 132 82;b 132 55 95 55 Service;a 227 82 239 82;b 239 55 95 55 Data;t 180 155 Identify assets and flows;t 180 195 State scope and assumptions",
+    "b 25 55 145 55 Untrusted client;b 190 55 145 55 Server check;l 180 35 180 175;a 170 82 190 82;t 180 195 Enforce policy at trust boundary",
+    "r 35 45 290 130;l 180 45 180 175;l 35 110 325 110;d 255 70 7;d 105 145 7;t 180 30 Impact ↑;t 180 195 Likelihood →;t 255 95 Prioritize;t 105 165 Lower",
+    "b 25 55 145 55 Proposed control;a 170 82 190 82;b 190 55 145 55 Authorized test;t 180 150 Revisit when design changes;t 180 195 Diagram alone is not proof"
+  ],
+  "plus-cybersecurity-understanding-session-security": [
+    "b 25 55 145 55 Authenticate;a 170 82 190 82;b 190 55 145 55 Issue token;t 180 150 Subsequent requests carry token;t 180 195 Protect like access secret",
+    "l 35 110 325 110;d 55 110 6;d 180 110 6;d 300 110 6;t 55 85 Issue;t 180 85 Rotate;t 300 85 Expire;t 180 175 Revoke when needed",
+    "b 25 55 145 55 Cookie protections;b 190 55 145 55 Origin checks;t 180 150 Prevent script injection too;t 180 195 Multiple browser controls",
+    "b 25 55 95 55 Session valid;a 120 82 132 82;b 132 55 95 55 Check grant;a 227 82 239 82;b 239 55 95 55 Allow / deny;t 180 175 Every protected operation"
+  ],
+  "plus-cybersecurity-how-vulnerability-prioritization-works": [
+    "b 25 45 145 50 Severity;b 190 45 145 50 Exposure;b 25 120 145 50 Exploitation;b 190 120 145 50 Asset impact;t 180 205 Priority uses multiple factors",
+    "b 25 55 145 55 Exposed critical;b 190 55 145 55 Isolated test;t 97 145 Active exploitation;t 262 145 Higher score;t 180 195 Critical exposure may come first",
+    "b 25 55 145 55 Patch now;b 190 55 145 55 Temporary control;t 180 155 Document deadline and owner;t 180 195 Remediate when safe",
+    "b 25 55 145 55 Ticket closed;b 190 55 145 55 Control verified;t 180 155 Test actual remediation;t 180 195 Reassess remaining risk"
+  ],
+  "plus-cybersecurity-what-a-security-baseline-does": [
+    "b 25 45 145 45 Logging required;b 190 45 145 45 Admin restricted;b 75 125 210 50 Approved server baseline;t 180 205 Role-specific configuration",
+    "b 25 55 145 55 Default baseline;b 190 55 145 55 Justified exception;t 180 150 Owner + mitigation + review date",
+    "b 25 55 145 55 Approved settings;b 190 55 145 55 Actual settings;t 180 155 Compare for drift;t 180 195 Investigate deviations",
+    "b 25 55 145 55 Config value;a 170 82 190 82;b 190 55 145 55 Functional test;t 180 155 Confirm effective protection;t 180 195 Update as threats evolve"
+  ]
+};
+window.LumenSlideArtBatch06Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch06;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch06Render(c,cls,step)||prior(c,cls,step);};})();
