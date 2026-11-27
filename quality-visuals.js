@@ -3062,3 +3062,143 @@ window.LumenSlideArtBatch19Render=function renderer(c,cls="cover",step=-1){
  const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch19Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* Medicine: dedicated slide artwork, batch 20. */
+window.LumenSlideArtBatch20={
+  "drug-action": [
+    "c 65 95 18;a 85 95 145 95;p M145 60H230V80H200V110H230V135H145Z;t 65 135 Drug;t 190 155 Receptor pocket;t 180 195 Target interaction determines part of response",
+    "p M45 65H145V85H115V115H145V145H45Z;p M215 65H315V85H285V115H315V145H215Z;r 115 85 25 30;r 285 85 25 30;a 95 35 125 75;t 95 175 Agonist activates;t 265 175 Antagonist blocks;t 180 205 Different receptor effects",
+    "l 35 175 325 175;l 35 175 35 35;p M35 165Q95 80 180 65H325;p M35 170Q200 165 325 50;t 200 55 Desired effect;t 250 125 Adverse effects;t 180 195 Exposure → (schematic)",
+    "b 25 45 145 45 Absorption;b 190 45 145 45 Metabolism;b 25 115 145 45 Genetics / age;b 190 115 145 45 Other medicines;t 180 195 Exposure and response vary"
+  ],
+  "immune-system": [
+    "r 35 80 290 70;l 35 80 325 80;p M60 80V55M85 80V55M110 80V55M135 80V55M160 80V55M185 80V55M210 80V55M235 80V55M260 80V55M285 80V55;d 95 40 5;d 180 40 5;d 265 40 5;t 180 120 Epithelial barrier;t 180 195 Skin, mucus, cilia limit entry",
+    "c 180 105 55;c 180 105 15;d 195 90 6;d 80 95 6;a 86 95 125 95;t 180 35 Phagocyte engulfs microbe;t 180 195 Innate recognition and inflammatory coordination",
+    "c 90 95 35;c 270 95 35;p M65 50L80 70L95 50M100 50L115 70L130 50;p M245 95L260 80L275 95L290 80;t 90 150 B cell: antibodies;t 270 150 T cell: recognition;t 180 195 Adaptive responses are antigen-specific",
+    "l 35 175 325 175;p M35 165Q95 65 150 155L195 155Q235 15 325 115;t 100 55 First exposure;t 250 35 Later exposure;t 180 195 Memory can accelerate response, regulation limits harm"
+  ],
+  "depth-medicine-what-inflammation-does": [
+    "d 180 90 10;c 95 105 24;c 265 105 24;a 170 90 119 105;a 190 90 241 105;t 180 65 Damage signal;t 95 150 Resident cell;t 265 150 Resident cell;t 180 195 Infection or sterile injury can trigger response",
+    "r 35 75 290 55;r 35 85 290 35;d 100 105 5;d 180 105 5;d 260 105 5;a 100 130 100 165;a 260 130 260 165;t 180 55 Increased blood flow;t 180 195 Permeability allows fluid and protein out",
+    "r 35 45 290 40;c 100 65 12;c 180 65 12;c 260 65 12;a 180 85 180 140;d 180 150 8;t 180 35 Circulating cells;t 180 175 Affected tissue;t 180 205 Adhesion and gradients guide recruitment",
+    "l 35 175 325 175;p M35 165Q100 30 165 100T325 165;p M165 100Q235 70 325 85;t 260 155 Resolution;t 265 70 Persistent inflammation;t 180 195 Repair or ongoing injury depends on regulation"
+  ],
+  "depth-medicine-how-antibiotics-work": [
+    "p M70 65Q35 105 70 145H290Q325 105 290 65Z;p M85 80Q60 105 85 130H275Q300 105 275 80Z;d 150 95 7;d 185 115 7;p M220 85L245 120L270 85;t 180 45 Cell-wall synthesis;t 150 160 Ribosomes;t 260 160 DNA;t 180 195 Different susceptible bacterial targets",
+    "l 35 175 325 175;p M35 65L325 155;p M35 95H325;t 255 145 Killing;t 255 85 Growth inhibition;t 180 195 Viable bacteria over time at specified exposure",
+    "c 90 105 40;c 270 105 40;d 90 105 8;d 270 105 8;a 270 105 320 60;p M50 55L130 155M130 55L50 155;t 90 170 Susceptible;t 270 170 Resistant survives;t 180 195 Selection favors resistance mechanisms",
+    "c 90 105 45;c 270 105 30;d 90 105 8;l 270 75 270 50;l 240 105 215 105;l 300 105 325 105;t 90 165 Bacterium;t 270 165 Virus;t 180 195 Antibiotics do not treat viral infections themselves"
+  ],
+  "depth-medicine-how-pain-signals-are-processed": [
+    "p M35 150L90 95L145 150;l 90 95 90 45;a 90 45 240 45;c 270 45 15;t 90 175 Noxious stimulus;t 270 75 Neural signal;t 180 195 Nociception is not identical to experienced pain",
+    "b 25 65 95 55 Peripheral nerve;a 120 92 132 92;b 132 65 95 55 Spinal cord;a 227 92 239 92;b 239 65 95 55 Brain networks;t 180 155 Ascending pathways convey different features",
+    "c 180 105 25;a 40 105 155 105;a 180 30 180 80;a 205 105 315 105;t 80 85 Incoming;t 180 20 Descending modulation;t 275 85 Outgoing;t 180 195 Amplification or inhibition changes transmission",
+    "l 35 175 325 175;p M35 45Q100 125 325 165;p M35 60Q100 100 325 100;t 260 150 Tissue healing;t 260 90 Persistent pain;t 180 195 Pain and tissue damage can follow different paths"
+  ],
+  "depth-medicine-what-medical-imaging-reveals": [
+    "a 25 105 90 105;c 125 105 25;c 155 105 25;l 190 65 190 145;c 270 105 45;l 225 105 315 105;l 270 60 270 150;t 105 175 Projection overlap;t 270 175 CT cross-section;t 180 205 CT reconstructs multiple X-ray views",
+    "p M65 45H295V165H65Z;c 180 105 55;p M155 105Q180 65 205 105Q180 145 155 105Z;a 80 105 125 105;t 180 30 Magnetic field + RF;t 180 195 MRI contrast depends on sequence, no ionizing radiation",
+    "c 50 105 12;p M62 105L270 65M62 105L270 145;l 270 55 270 155;a 85 95 245 75;a 245 125 85 115;t 180 45 Acoustic pulse;t 180 175 Returning echoes;t 180 205 Ultrasound Doppler can estimate motion",
+    "b 25 45 95 55 X-ray / CT;b 132 45 95 55 MRI;b 239 45 95 55 Ultrasound;t 180 145 Different tissue contrasts and risks;t 180 195 Clinical context determines usefulness"
+  ],
+  "depth-medicine-understanding-blood-pressure": [
+    "l 35 175 325 175;p M35 145L75 145Q105 35 145 145L185 145Q215 35 255 145H325;t 105 30 Systolic peak;t 250 160 Diastolic trough;t 180 195 Pressure changes across cardiac cycle",
+    "b 25 65 145 55 Cardiac output;b 190 65 145 55 Vascular resistance;t 180 155 Mean arterial pressure depends on both;t 180 195 Volume and elasticity also matter",
+    "r 95 65 170 70;r 140 55 80 90;p M140 100L105 160L180 160;c 180 160 18;t 180 35 Correct cuff and posture;t 180 195 Repeated standardized measurements improve context",
+    "l 35 65 325 65;l 35 145 325 145;a 180 65 180 145;t 180 55 120 mmHg;t 180 165 80 mmHg;t 180 195 Pulse pressure = 40 mmHg"
+  ],
+  "depth-medicine-why-rehabilitation-matters": [
+    "b 25 55 145 55 Baseline ability;a 170 82 190 82;b 190 55 145 55 Functional goal;t 180 150 Tasks chosen for individual needs;t 180 195 Participation and independence",
+    "l 35 175 325 175;p M35 150L85 135L135 145L185 105L235 80L285 65L325 55;t 180 35 Appropriately graded practice;t 180 195 Adaptation may include compensation",
+    "b 25 45 145 45 Physical therapy;b 190 45 145 45 Occupational therapy;b 25 115 145 45 Speech therapy;b 190 115 145 45 Assistive technology;t 180 195 Different barriers need coordinated support",
+    "r 65 115 90 55;r 205 60 90 110;t 110 105 100 m;t 250 50 200 m;t 110 190 Baseline;t 250 190 Follow-up;t 180 210 Illustrative functional walking measure"
+  ],
+  "plus-medicine-what-medical-triage-means": [
+    "b 25 45 145 45 Arrival order;b 190 45 145 45 Clinical urgency;a 97 90 180 140;a 262 90 180 140;t 180 165 Urgency and resources guide priority;t 180 195 Not simply first come, first served",
+    "b 25 45 145 45 Immediate threats;b 190 45 145 45 Vital signs;b 25 115 145 45 Symptoms;b 190 115 145 45 Clinical context;t 180 195 Defined system categories differ by setting",
+    "l 35 105 325 105;d 65 105 7;d 180 105 7;d 295 105 7;t 65 85 Initial;t 180 85 Reassess;t 295 85 Reclassify;t 180 175 Priority can change as condition changes",
+    "b 25 65 145 55 Triage category;a 170 92 190 92;b 190 65 145 55 Diagnostic assessment;t 180 155 Priority is not a final diagnosis;t 180 195 Urgent symptoms need clinical evaluation"
+  ],
+  "plus-medicine-what-informed-consent-involves": [
+    "b 25 45 145 45 Expected benefits;b 190 45 145 45 Material risks;b 25 115 145 45 Alternatives;b 190 115 145 45 Option to decline;t 180 195 Explain information relevant to decision",
+    "b 25 65 145 55 Explain;a 170 80 190 80;a 190 105 170 105;b 190 65 145 55 Teach-back;t 180 150 Questions and interpreters support understanding;t 180 195 Signature alone is insufficient",
+    "c 90 95 40;c 270 95 40;t 90 100 Voluntary;t 270 100 Capacity;t 180 155 Both relevant to decision;t 180 195 Authorized surrogate may be appropriate",
+    "l 35 105 325 105;d 65 105 7;d 180 105 7;d 295 105 7;t 65 85 Explain;t 180 85 Decide;t 295 85 Revisit;t 180 175 Consent can change during ongoing care"
+  ],
+  "depth-medicine-how-diagnostic-tests-are-evaluated": [
+    "r 35 45 145 120;r 180 45 145 120;l 35 105 325 105;t 107 65 Condition +;t 252 65 Condition −;t 107 95 True +;t 252 95 False +;t 107 145 False −;t 252 145 True −;t 180 195 Sensitivity: TP/(TP+FN), specificity: TN/(TN+FP)",
+    "r 35 75 290 50;f 35 75 87 50;t 78 105 True +;t 210 105 False +;t 180 55 Among positive tests;t 180 195 PPV depends on prevalence",
+    "b 25 45 145 50 100 cases;b 190 45 145 50 900 noncases;t 97 130 90 true positives;t 262 130 90 false positives;t 180 170 PPV = 90/180;t 180 195 50%",
+    "l 35 175 325 175;p M35 175Q115 15 325 175;p M95 175Q205 15 325 175;l 180 35 180 175;t 180 25 Decision threshold;t 180 195 Shifting threshold trades error types"
+  ],
+  "depth-medicine-why-clinical-trials-use-controls": [
+    "l 35 175 325 175;p M35 150L325 65;p M35 150L325 95;t 260 55 Treated;t 260 110 Control;t 180 195 Compare improvement beyond background changes",
+    "b 105 35 150 45 Participants;a 180 80 95 125;a 180 80 265 125;b 25 125 140 45 Random group A;b 195 125 140 45 Random group B;t 180 205 Balance prognostic factors in expectation",
+    "b 25 55 95 55 Placebo;b 132 55 95 55 Usual care;b 239 55 95 55 Active drug;t 180 155 Comparator defines the question;t 180 195 Must be ethically appropriate",
+    "r 45 65 100 100;r 215 100 100 65;t 95 55 Outcome A;t 265 90 Outcome B;t 180 195 Between-group difference, account for missing data"
+  ],
+  "plus-medicine-how-medicines-are-absorbed": [
+    "b 25 45 145 50 Oral dose;a 97 95 97 145;b 25 145 145 40 Gut → blood;b 190 45 145 50 IV dose;a 262 95 262 145;b 190 145 145 40 Direct blood;t 180 205 IV bypasses absorption step",
+    "r 35 90 290 35;r 150 75 60 65;a 95 45 95 165;a 180 45 180 165;t 95 35 Diffusion;t 180 35 Carrier;t 270 75 Dissolution;t 180 195 Ionization and formulation influence uptake",
+    "b 25 65 95 55 Gut;a 120 92 132 92;b 132 65 95 55 Liver;a 227 92 239 92;b 239 65 95 55 Systemic blood;a 180 120 180 155;t 180 175 First-pass metabolism can reduce exposure",
+    "r 35 75 290 50;f 35 75 174 50;t 122 105 60 mg systemic;t 267 105 40 mg other;t 180 55 Hypothetical 100 mg dose, F=.6;t 180 195 Illustration only, not a dose recommendation"
+  ],
+  "plus-medicine-why-drugs-have-half-lives": [
+    "l 35 175 325 175;p M35 45Q105 125 180 150T325 170;t 180 30 First-order elimination;t 180 195 Constant fraction, not amount, per time",
+    "l 35 175 325 175;p M35 45L107.5 110L180 142.5L252.5 158.75L325 166.9;d 35 45 5;d 107.5 110 5;d 180 142.5 5;t 35 35 C₀;t 107 100 C₀/2;t 180 132 C₀/4;t 180 195 C(t)=C₀×2^(−t/t½)",
+    "r 35 55 280 30;r 35 95 140 30;r 35 135 70 30;r 35 175 35 25;t 175 75 80 units;t 200 115 40 at 4h;t 155 155 20 at 8h;t 180 195 10 at 12h",
+    "l 35 175 325 175;p M35 165L60 100L85 145L110 75L135 125L160 55L185 115L210 45L235 105L260 40L285 100L310 40;t 180 25 Repeated exposure approaches steady state;t 180 195 Approximate linear model, not dosing guidance"
+  ],
+  "plus-medicine-what-placebo-controlled-trials-test": [
+    "b 25 55 145 55 Active intervention;b 190 55 145 55 Matched placebo;t 180 150 Shared expectations and procedures;t 180 195 Difference estimates specific treatment effect",
+    "c 90 95 35;c 270 95 35;l 55 95 125 95;l 235 95 305 95;t 90 150 Participant masked;t 270 150 Assessor masked;t 180 195 Side effects may reveal group",
+    "l 35 175 325 175;p M35 150L325 70;t 180 45 Placebo-group improvement;t 180 195 Recovery, regression and context can contribute",
+    "b 25 55 145 55 Placebo design;b 190 55 145 55 Active comparator;t 97 150 Ethical justification;t 262 150 Existing treatment;t 180 195 Choose comparison appropriate to clinical question"
+  ],
+  "plus-medicine-how-blood-tests-use-reference-intervals": [
+    "l 35 175 325 175;p M35 175Q180 -95 325 175;l 75 100 75 175;l 285 100 285 175;t 180 70 Central 95%;t 55 165 2.5%;t 305 165 2.5%;t 180 195 Reference interval is not disease boundary",
+    "b 25 45 145 45 Age / sex;b 190 45 145 45 Pregnancy;b 25 115 145 45 Assay method;b 190 115 145 45 Collection timing;t 180 195 Appropriate intervals differ",
+    "r 35 75 290 50;f 35 75 186 50;t 128 105 64% ≥1 outside;t 273 105 36% none;t 180 55 20 independent central 95% tests;t 180 195 1 − .95²⁰ ≈ .64",
+    "l 35 105 325 105;l 100 65 100 145;l 245 65 245 145;d 280 105 6;t 100 55 Ref. low;t 245 55 Ref. high;t 280 135 Result;t 180 195 Symptoms, trends and decision limits matter"
+  ],
+  "plus-medicine-how-drug-interactions-occur": [
+    "l 35 175 325 175;p M35 155Q95 35 150 85T325 155;p M35 155Q95 15 180 55T325 110;t 240 95 Lower clearance;t 240 145 Baseline;t 180 195 Pharmacokinetic interaction changes exposure",
+    "b 25 65 145 55 Drug A effect;b 190 65 145 55 Drug B effect;a 97 120 180 150;a 262 120 180 150;t 180 175 Shared physiological effect;t 180 200 Concentrations need not change",
+    "r 65 105 90 65;r 205 40 90 130;t 110 95 Cavg;t 250 30 2× Cavg;t 110 190 Clearance CL;t 250 190 Clearance CL/2;t 180 210 Fixed input, simplified linear model",
+    "b 25 45 145 45 Medicines / timing;b 190 45 145 45 Dose;b 25 115 145 45 Patient factors;b 190 115 145 45 Therapeutic window;t 180 195 Clinician review assesses actual interaction relevance"
+  ],
+  "plus-medicine-understanding-anemia-as-a-clinical-finding": [
+    "r 65 45 90 125;r 205 95 90 75;t 110 35 Higher Hb;t 250 85 Lower Hb;t 180 195 Lower hemoglobin reduces oxygen-carrying capacity",
+    "b 25 55 95 55 Low production;b 132 55 95 55 Blood loss;b 239 55 95 55 Destruction;t 180 155 Different routes to low hemoglobin",
+    "c 65 95 22;c 180 95 32;c 295 95 42;t 65 155 Microcytic;t 180 155 Normocytic;t 295 155 Macrocytic;t 180 195 Cell size and marrow response narrow possibilities",
+    "b 25 45 145 45 Ferritin;b 190 45 145 45 Other iron tests;b 25 115 145 45 Inflammation;b 190 115 145 45 History / testing;t 180 195 Ferritin reflects stores but can rise with inflammation"
+  ],
+  "plus-medicine-how-blood-clotting-is-regulated": [
+    "r 35 75 290 70;p M145 75L180 115L215 75;d 155 105 6;d 170 100 6;d 185 105 6;d 200 100 6;t 180 45 Vessel injury;t 180 195 Platelet adhesion and aggregation form initial plug",
+    "b 25 65 95 55 Thrombin;a 120 92 132 92;b 132 65 95 55 Fibrinogen;a 227 92 239 92;b 239 65 95 55 Fibrin;p M250 135L310 175M310 135L250 175M260 135L320 175;t 180 195 Fibrin mesh stabilizes platelet plug",
+    "p M35 65L145 145M35 105L145 65M35 145L145 105M215 65L260 100M280 125L325 145;a 155 105 205 105;t 95 175 Fibrin mesh;t 270 175 Breakdown;t 180 205 Natural anticoagulants and plasmin limit clotting",
+    "p M35 105H325;l 180 65 180 145;c 95 105 22;c 265 105 22;t 95 160 Bleeding risk;t 265 160 Thrombosis risk;t 180 195 Hemostasis requires balanced regulation"
+  ],
+  "plus-medicine-how-medical-devices-are-evaluated": [
+    "b 25 55 145 55 External simple tool;b 190 55 145 55 Life-support implant;t 97 150 Lower complexity;t 262 150 Higher potential harm;t 180 195 Evidence depends on intended use and risk",
+    "b 25 55 145 55 Bench testing;b 190 55 145 55 Usability test;t 97 150 Performance / durability;t 262 150 Realistic operator tasks;t 180 195 Engineering and human factors complement each other",
+    "b 25 45 145 45 Diagnostic accuracy;b 190 45 145 45 Functional outcomes;b 25 115 145 45 Adverse events;b 190 115 145 45 Comparator;t 180 195 Clinical evidence must match intended population",
+    "l 35 105 325 105;d 65 105 7;d 180 105 7;d 295 105 7;t 65 85 Launch;t 180 85 Monitor;t 295 85 Improve;t 180 175 Rare and long-term failures may emerge later"
+  ]
+};
+window.LumenSlideArtBatch20Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch20;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch20Render(c,cls,step)||prior(c,cls,step);};})();
