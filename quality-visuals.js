@@ -2642,3 +2642,143 @@ window.LumenSlideArtBatch16Render=function renderer(c,cls="cover",step=-1){
  const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch16Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* Zoology: dedicated slide artwork, batch 17. */
+window.LumenSlideArtBatch17={
+  "migration": [
+    "c 90 95 45;c 270 95 45;a 135 80 225 80;a 225 110 135 110;t 90 100 Summer;t 270 100 Winter;t 180 180 Repeated directional movement between habitats",
+    "p M35 155L95 80L155 155M205 155L265 115L325 155;c 95 45 15;a 145 65 245 65;t 95 175 Summer breeding;t 265 175 Winter food;t 180 205 Seasonal resources differ",
+    "d 35 105 7;d 130 105 7;d 230 105 7;d 325 105 7;a 42 105 123 105;a 137 105 223 105;a 237 105 318 105;t 130 85 Refuel;t 230 85 Refuel;t 180 170 Stopovers reduce fuel constraints",
+    "c 90 95 45;c 270 95 45;a 90 50 270 50;c 90 95 20;t 90 100 Resident;t 270 100 Migrant;t 180 190 Inherited and learned strategies"
+  ],
+  "animal-communication": [
+    "c 65 100 25;c 295 100 25;p M95 80Q120 100 95 120M115 65Q155 100 115 135M140 50Q195 100 140 150;a 195 100 260 100;t 65 145 Sender;t 295 145 Receiver;t 180 195 Signal changes behavior",
+    "p M35 65Q60 40 85 65T135 65;c 180 65 20;d 235 65 5;d 265 65 5;d 295 65 5;t 85 100 Sound;t 180 100 Visual;t 265 100 Chemical;t 180 165 Channels differ in range and persistence",
+    "b 25 55 145 55 Alarm call;b 190 55 145 55 Courtship display;a 95 110 95 155;a 265 110 265 155;t 95 180 Hide;t 265 180 Approach;t 180 205 Context shapes response",
+    "l 35 175 325 175;p M35 150L300 45;p M35 150L300 110;t 235 35 Honest cost/constraint;t 265 100 Deception possible;t 180 195 Reliability depends on incentives"
+  ],
+  "camouflage": [
+    "r 25 50 145 120;r 190 50 145 120;d 45 75 5;d 75 105 5;d 105 80 5;d 135 145 5;p M55 100Q95 65 135 100Q95 135 55 100Z;p M220 100Q260 65 300 100Q260 135 220 100Z;d 80 95 5;d 110 105 5;t 97 190 Matched pattern;t 262 190 Mismatched",
+    "p M35 105Q95 45 155 105Q95 165 35 105Z;p M205 105Q265 45 325 105Q265 165 205 105Z;l 65 75 85 135;l 110 65 135 125;l 230 75 280 145;l 275 65 315 115;t 95 175 Uniform outline;t 265 175 Disruptive markings;t 180 205 Contrast can obscure the boundary",
+    "p M35 55H325M35 85H325M35 115H325M35 145H325;p M70 70Q130 55 190 70Q130 85 70 70Z;p M240 55Q255 115 240 175Q225 115 240 55Z;t 180 195 Orienting along background features reduces contrast",
+    "r 45 95 100 75;r 215 45 100 125;t 95 85 Mismatched;t 265 35 Matched;t 180 195 Compare detection times, control visual system"
+  ],
+  "social-insects": [
+    "c 180 100 30;c 70 65 20;c 290 65 20;c 70 145 20;c 290 145 20;l 150 90 90 70;l 210 90 270 70;l 150 110 90 140;l 210 110 270 140;t 180 104 Queen;t 70 35 Brood care;t 290 35 Defense;t 70 180 Forage;t 290 180 Tasks vary",
+    "d 45 105 10;d 315 105 10;p M55 105Q180 45 305 105;d 90 85 4;d 130 70 4;d 170 65 4;d 210 70 4;d 250 85 4;a 95 85 250 85;t 45 145 Nest;t 315 145 Food;t 180 195 Local pheromone cues guide workers",
+    "d 45 105 8;d 315 105 8;p M53 105Q180 5 307 105M53 105Q180 185 307 105;d 95 75 5;d 135 55 5;d 180 55 5;d 225 65 5;d 265 85 5;d 180 145 3;t 180 25 Reinforced route;t 180 190 Unused trail fades",
+    "b 25 55 145 55 Specialist workers;b 190 55 145 55 Flexible tasks;t 97 150 Efficient;t 262 150 Adaptable;t 180 195 Allocation shifts as needs change"
+  ],
+  "depth-zoology-how-animals-regulate-body-temperature": [
+    "c 95 95 35;c 265 95 35;a 95 95 95 40;a 265 35 265 60;t 95 150 Metabolic heat;t 265 150 External heat;t 180 195 Dominant heat source differs",
+    "c 180 100 45;a 180 55 180 20;a 225 100 310 100;a 135 100 50 100;a 180 145 180 185;t 180 15 Radiation;t 300 85 Convection;t 60 85 Conduction;t 180 205 Evaporation",
+    "c 70 50 22;p M35 140H165M195 140H325M195 75H325;p M60 130L105 120L145 130M220 130L265 120L305 130;t 95 175 Bask;t 265 175 Shade;t 180 205 Move between microclimates",
+    "l 35 175 325 175;l 35 175 35 35;p M35 45L180 150L325 55;t 180 30 Metabolic cost (schematic);t 180 195 Insulation reduces heat loss"
+  ],
+  "depth-zoology-how-animals-breathe": [
+    "l 180 35 180 175;d 85 70 5;d 110 95 5;d 135 125 5;d 245 95 5;a 115 80 245 80;a 245 135 115 135;t 180 25 Thin moist surface;t 180 65 O₂ →;t 180 155 ← CO₂;t 180 195 Diffusion follows partial pressure gradients",
+    "p M180 35V75L120 105L85 145M180 75L240 105L275 145;c 85 145 22;c 275 145 22;p M35 175Q85 185 135 175M225 175Q275 185 325 175;a 85 145 85 175;t 180 25 Airway;t 180 205 Alveoli exchange gases with blood",
+    "r 35 65 290 90;a 45 85 315 85;a 315 135 45 135;l 35 110 325 110;a 95 88 95 130;a 180 88 180 130;a 265 88 265 130;t 180 50 Water →;t 180 175 ← Blood;t 180 205 Countercurrent maintains O₂ gradient",
+    "p M50 95H165L215 45M165 95L215 95M165 95L215 145;c 240 45 10;c 240 95 10;c 240 145 10;t 50 75 Spiracle;t 180 190 Tracheae deliver air near insect tissues"
+  ],
+  "depth-zoology-why-animals-have-different-teeth": [
+    "p M45 55H105V100L75 145L45 100Z;p M145 55H205L175 155Z;p M245 55Q260 35 275 55Q290 35 305 55V130H245Z;t 75 175 Incisor cuts;t 175 175 Canine grips;t 275 175 Molar grinds",
+    "p M35 65H155V125H35Z;p M45 70L65 90L85 70L105 90L125 70L145 90;p M205 65L230 125L255 65L280 125L305 65L325 125;t 95 160 Grinding;t 265 160 Shearing;t 180 195 Diet and ancestry influence tooth shape",
+    "p M65 50L90 130L115 50M65 135L90 175L115 135;p M245 170Q210 90 260 45Q295 35 305 65;a 245 165 260 80;t 90 195 Replacement;t 270 195 Continuous growth",
+    "p M55 55H135V145H55Z;l 65 70 125 95;l 65 95 125 120;b 190 55 145 45 Microwear;b 190 120 145 45 Isotope ratios;t 180 195 Combine fossil clues to infer diet"
+  ],
+  "depth-zoology-how-animals-sense-their-surroundings": [
+    "p M25 95Q45 60 65 95T105 95;a 105 95 145 95;c 180 95 25;a 205 95 310 95;t 65 145 Stimulus;t 180 145 Receptor;t 275 145 Neural signal;t 180 195 Sensory transduction",
+    "l 35 175 325 175;l 35 175 35 35;p M35 140L65 145L95 135L125 145L155 130L185 65L215 140L245 135L275 145L325 140;l 35 100 325 100;t 180 90 Detection threshold;t 180 195 Weak signals can be masked by noise",
+    "c 70 100 18;p M40 70Q70 45 100 70M140 70Q180 100 140 130M220 80Q250 50 280 80M220 120Q250 150 280 120;t 70 155 Infrared pit;t 165 155 Electric field;t 270 155 Echo;t 180 195 Specialized receptor systems",
+    "r 25 45 145 125;r 190 45 145 125;d 75 95 8;d 240 95 8;c 125 145 12;c 290 145 12;t 97 185 Stimulus;t 262 185 Control;t 180 205 Randomize positions and match other cues"
+  ],
+  "plus-zoology-why-birds-have-specialized-feathers": [
+    "p M180 180V30M180 40L120 75M180 55L105 95M180 70L100 120M180 85L115 145M180 40L230 65M180 55L245 90M180 70L250 115M180 85L235 145;t 180 20 Shaft;t 75 95 Barbs;t 280 115 Vane;t 180 205 Barbules interlock neighboring barbs",
+    "p M35 105Q110 25 185 105Q110 140 35 105ZM220 65L320 45L290 165L220 105Z;a 65 45 150 45;a 265 165 265 195;t 110 155 Asymmetric wing;t 270 30 Tail feathers;t 180 210 Wing surface and tail steering",
+    "p M95 170V65M95 95L50 55M95 105L140 65M95 125L45 105M95 135L145 115;p M265 170V65Q195 105 265 155Q335 105 265 65Z;t 95 195 Loose down;t 265 195 Contour vane;t 180 215 Down traps insulating air",
+    "p M90 170V40M90 60L45 100M90 80L140 125M90 110L55 145;p M270 170V40M270 60L225 85M270 80L225 105M270 100L315 125M270 120L315 145;a 145 100 215 100;t 90 195 Worn;t 270 195 Aligned vane;t 180 215 Preening and molting maintain feathers"
+  ],
+  "plus-zoology-how-beak-shapes-relate-to-feeding": [
+    "p M25 75L145 100L25 125ZM205 55Q325 65 325 125L280 95L205 125Z;t 85 165 Straight probe;t 265 165 Curved grip;t 180 195 Keratin covers jaw structures",
+    "p M25 75L100 105L25 135Z;c 110 105 10;p M135 90L225 105L135 120Z;p M245 75Q335 75 320 135L300 105L245 125Z;t 65 175 Seed crack;t 180 175 Probe;t 285 175 Tear;t 180 205 Form changes feeding mechanics",
+    "d 90 100 8;l 90 100 290 100;a 135 45 135 95;a 290 100 290 145;t 90 125 Pivot;t 145 35 Muscle;t 285 165 Bite;t 180 200 Jaw leverage and muscle size affect force",
+    "l 35 175 325 175;p M35 175Q105 25 175 175;p M135 175Q215 25 295 175;t 105 35 Earlier;t 215 35 Later;t 180 195 Heritable beak distributions can shift across generations"
+  ],
+  "depth-zoology-how-parental-care-evolves": [
+    "c 180 65 24;c 130 140 12;c 180 140 12;c 230 140 12;a 180 89 130 125;a 180 89 180 125;a 180 89 230 125;t 180 35 Parent invests food or protection;t 180 195 Time and energy unavailable elsewhere",
+    "r 45 65 120 95;r 195 105 120 55;t 105 55 Offspring benefit;t 255 95 Future cost;t 180 195 Care favored when fitness benefit exceeds cost",
+    "c 65 65 20;c 135 65 20;c 225 65 20;c 295 65 20;c 100 145 12;c 260 145 12;a 65 85 100 130;a 135 85 100 130;a 225 85 260 130;t 100 180 Both parents;t 260 180 One caregiver;t 180 205 Helpers may also contribute",
+    "c 85 80 8;c 105 80 8;c 125 80 8;c 85 110 8;c 105 110 8;c 125 110 8;c 265 95 18;t 105 145 Many young;t 265 145 Few young;t 180 195 Compare related species, not simple universal rules"
+  ],
+  "depth-zoology-understanding-animal-social-groups": [
+    "c 180 105 20;c 120 75 13;c 240 75 13;c 120 135 13;c 240 135 13;a 120 75 65 45;a 240 75 295 45;a 120 135 65 165;a 240 135 295 165;t 180 195 More observers can detect danger",
+    "c 90 85 12;c 115 85 12;c 140 85 12;c 90 115 12;c 115 115 12;c 140 115 12;c 265 100 25;t 115 155 Many competitors;t 265 155 Shared food;t 180 195 Larger groups can increase conflict and disease",
+    "c 180 50 18;c 105 110 18;c 255 110 18;c 180 160 18;l 180 68 105 92;l 180 68 255 92;l 105 128 180 142;l 255 128 180 142;l 123 110 237 110;t 180 195 Kinship, rank and changing membership",
+    "d 60 75 9;c 110 75 9;c 160 75 9;c 210 75 9;c 260 75 9;c 60 125 9;c 110 125 9;c 160 125 9;c 210 125 9;c 260 125 9;t 180 170 One randomly targeted individual out of ten;t 180 195 Conditional selection chance 1/10"
+  ],
+  "plus-zoology-how-echolocation-supports-animal-navigation": [
+    "c 55 105 18;r 285 65 25 80;a 75 85 280 85;a 280 125 75 125;p M95 65Q115 85 95 105M135 65Q155 85 135 105;t 180 45 Outgoing pulse;t 180 160 Returning echo;t 180 195 Sound travels to target and back",
+    "c 55 100 15;r 290 65 20 70;a 75 80 285 80;a 285 120 75 120;t 180 65 .02 s round trip;t 180 155 343 × .02 / 2;t 180 195 Target distance = 3.43 m",
+    "c 95 65 15;c 95 145 15;d 280 90 10;l 110 65 280 90;l 110 145 280 90;t 95 35 Ear A;t 95 175 Ear B;t 280 65 Target;t 180 200 Delay and level differences reveal direction",
+    "d 35 105 10;d 175 105 7;d 325 105 3;p M55 80Q75 105 55 130M95 70Q130 105 95 140M150 60Q195 105 150 150;t 180 35 Echo weakens with distance;t 180 195 Clutter and reflectivity affect detection"
+  ],
+  "plus-zoology-how-animal-migration-uses-environmental-cues": [
+    "r 35 65 290 35;f 35 65 190 35;r 35 125 290 35;f 35 125 105 35;t 180 55 Long photoperiod;t 180 115 Short photoperiod;t 180 195 Seasonal cue can initiate migration",
+    "c 180 105 65;l 180 45 180 165;l 120 105 240 105;a 180 105 215 65;t 180 35 N;t 180 185 Compass gives direction, map gives position",
+    "p M35 145Q100 45 180 105T325 55;d 35 145 5;d 180 105 5;d 325 55 5;t 90 35 Inherited bearing;t 255 150 Learned landmarks;t 180 195 Experience can modify routes",
+    "c 95 100 45;c 265 100 45;a 95 100 95 55;a 265 100 305 100;t 95 165 Normal field;t 265 165 Rotated field;t 180 195 Compare bearings while controlling other cues"
+  ],
+  "plus-zoology-how-insect-metamorphosis-changes-body-form": [
+    "c 45 95 12;c 135 95 20;c 225 95 28;c 315 95 35;a 57 95 115 95;a 155 95 197 95;a 253 95 280 95;t 45 145 Egg;t 135 145 Nymph;t 225 145 Nymph;t 315 145 Adult;t 180 195 Successive molts retain basic body plan",
+    "c 45 95 10;p M95 95Q110 65 125 95T155 95;c 225 95 25;p M290 95Q260 45 300 65L315 95L330 65Q370 45 340 95;t 45 145 Egg;t 125 145 Larva;t 225 145 Pupa;t 315 145 Adult;t 180 195 Complete metamorphosis changes niches",
+    "l 35 175 325 175;p M35 155L75 155L90 45L105 155L165 155L180 45L195 155L255 155L270 45L285 155L325 155;p M35 65L165 65L195 140L325 140;t 180 30 Ecdysteroid pulses trigger molts;t 180 195 Juvenile hormone helps determine stage",
+    "p M70 45Q110 20 150 45V150Q110 180 70 150Z;c 110 85 18;d 105 130 8;a 150 95 205 95;p M255 95Q210 40 245 55L270 95L295 55Q330 40 285 95L310 145L270 115L230 145Z;t 110 190 Pupal tissues;t 270 190 Adult structures;t 180 210 Some cells survive and remodel"
+  ],
+  "plus-zoology-why-animals-use-warning-coloration": [
+    "c 80 100 35;l 55 80 105 80;l 48 100 112 100;l 55 120 105 120;a 115 100 230 100;c 265 100 30;t 80 155 Warning pattern;t 265 155 Predator learns;t 180 195 Signal advertises a defense",
+    "l 35 175 325 175;p M35 60Q100 160 325 165;t 180 35 Attack frequency across encounters;t 180 195 Initial visibility can increase detection",
+    "c 65 100 30;c 180 100 30;c 295 100 30;l 45 95 85 95;l 160 95 200 95;l 275 95 315 95;t 65 150 Defended;t 180 150 Undefended mimic;t 295 150 Defended mimic;t 180 195 Batesian vs Müllerian",
+    "r 25 50 145 115;r 190 50 145 115;c 95 105 24;c 265 105 24;l 75 105 115 105;l 265 85 265 125;t 97 185 Pattern A;t 262 185 Pattern B;t 180 205 Compare attacks after controlled experience"
+  ],
+  "plus-zoology-how-fish-regulate-salt-and-water": [
+    "p M45 95Q100 40 155 95Q100 150 45 95L25 70V120ZM205 95Q260 40 315 95Q260 150 205 95L185 70V120Z;a 100 25 100 65;a 260 65 260 25;t 100 155 Freshwater: gains water;t 260 155 Marine: loses water;t 180 195 Gradients differ for typical bony fish",
+    "p M75 105Q180 25 285 105Q180 185 75 105L35 65V145Z;a 180 25 180 75;a 255 55 230 85;a 180 140 180 190;t 180 20 Water enters;t 270 45 Ion uptake;t 180 205 Dilute urine removes excess water",
+    "p M75 105Q180 25 285 105Q180 185 75 105L35 65V145Z;a 335 105 285 105;a 230 85 270 45;a 180 65 180 25;t 310 90 Drink;t 290 35 Salt out;t 180 195 Marine bony fish replace lost water",
+    "b 25 55 145 55 Shark: urea retention;b 190 55 145 55 Euryhaline fish;t 97 150 Osmolality near seawater;t 262 150 Remodel ion transport;t 180 195 Different lineages use different mechanisms"
+  ],
+  "plus-zoology-how-mammals-conserve-water": [
+    "c 180 105 35;a 45 65 145 95;a 45 140 145 115;a 215 95 315 65;a 215 115 315 145;t 75 50 Drink / food;t 75 160 Metabolism;t 285 50 Urine / feces;t 285 160 Vapor;t 180 195 Water budget",
+    "p M70 35V140Q70 175 110 175Q150 175 150 140V35;l 260 35 260 175;a 260 85 210 85;a 260 135 210 135;t 110 20 Loop of Henle;t 260 195 Collecting duct;t 180 65 Medullary gradient;t 180 210 ADH increases water permeability",
+    "r 65 115 90 55;r 205 60 90 110;t 110 105 .25 L;t 250 50 .5 L;t 110 190 1,200 mOsm/L;t 250 190 600 mOsm/L;t 180 210 Same 300 mOsm solute load",
+    "c 70 60 25;p M70 60Q90 35 95 65;p M130 85Q180 35 230 85L205 110H155Z;a 175 85 175 45;t 70 120 Nocturnal;t 180 135 Nasal recovery;t 180 195 Dry feces and reduced evaporative losses"
+  ],
+  "plus-zoology-how-hibernation-changes-energy-use": [
+    "l 35 175 325 175;p M35 45L65 150H145L160 45L175 150H250L265 45L280 150H325;t 180 30 Arousal spikes;t 180 195 Prolonged regulated torpor with arousals",
+    "r 65 45 90 125;r 205 157.5 90 12.5;t 110 35 100 units/day;t 250 148 10 units/day;t 110 190 Active rest;t 250 190 Torpor;t 180 210 90% daily energy reduction",
+    "l 35 175 325 175;p M35 155H125L145 45L165 155H245L265 45L285 155H325;t 145 35 Rewarm;t 265 35 Rewarm;t 180 195 Arousal consumes substantial energy",
+    "b 25 55 145 55 Neural regulation;b 190 55 145 55 Hormonal regulation;a 97 110 180 145;a 262 110 180 145;b 105 145 150 40 Torpor state;t 180 205 Active regulation, not uncontrolled cooling"
+  ],
+  "plus-zoology-why-animal-signals-can-be-costly": [
+    "c 75 100 30;a 105 100 235 100;c 265 100 30;t 75 150 Sender;t 265 150 Receiver;t 180 65 Display requires energy or risk;t 180 195 Cost alone does not ensure honesty",
+    "l 35 175 325 175;l 35 175 35 35;p M35 165Q180 155 325 95;p M35 165Q180 125 325 35;t 265 95 High condition;t 265 35 Low condition;t 180 195 Cost of equal display may depend on condition",
+    "r 35 55 145 40;r 190 55 145 40;t 107 80 Benefit 5;t 262 80 Benefit 5;r 35 115 58 35;r 190 115 145 35;t 107 145 Cost 2;t 262 140 Cost 7;t 97 185 Net +3;t 262 185 Net −2",
+    "b 25 55 145 55 Manipulate condition;b 190 55 145 55 Control / match;t 180 150 Measure signal, response and fitness;t 180 195 Distinguish cost from social enforcement"
+  ]
+};
+window.LumenSlideArtBatch17Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch17;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch17Render(c,cls,step)||prior(c,cls,step);};})();
