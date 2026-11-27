@@ -3952,3 +3952,107 @@ window.LumenSlideArtBatch26Render=function renderer(c,cls="cover",step=-1){
  const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
 };
 (function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch26Render(c,cls,step)||prior(c,cls,step);};})();
+
+
+/* Aerospace: remaining dedicated slide artwork, batch 27. */
+window.LumenSlideArtBatch27={
+  "depth-aerospace-navigating-with-satellite-signals": [
+    "d 65 55 10;d 295 155 10;a 78 60 282 149;l 65 90 295 90;t 65 35 Broadcast tₛ;t 295 180 Receive tᵣ;t 180 110 Measured delay Δt",
+    "d 35 100 8;d 325 100 8;l 35 100 325 100;l 35 120 305 120;t 180 85 Apparent range cΔt;t 170 145 Geometric range;t 180 195 Clock and atmospheric delays bias measurement",
+    "d 180 105 8;d 45 40 10;d 315 40 10;d 45 175 10;d 315 175 10;l 45 40 180 105;l 315 40 180 105;l 45 175 180 105;l 315 175 180 105;t 180 25 Four independent range measurements;t 180 205 Solve x, y, z and clock offset",
+    "r 180 70 70 105;d 45 40 8;d 315 40 8;d 115 170 8;p M45 40L115 170M315 40L250 90L115 170;t 215 125 Building;t 180 195 Reflected path is longer than direct path"
+  ],
+  "depth-aerospace-how-aircraft-cabins-are-pressurized": [
+    "l 35 175 325 175;l 35 175 35 35;p M35 45Q120 120 325 163;t 180 30 Atmospheric pressure;t 180 195 Altitude increases → pressure falls",
+    "p M35 105Q80 45 180 55Q280 45 325 105Q280 165 180 155Q80 165 35 105Z;a 35 105 100 105;a 260 105 325 105;a 180 105 180 55;a 180 105 180 155;t 100 90 Air supply;t 265 90 Outflow;t 180 195 Cabin pressure loads fuselage outward",
+    "l 90 175 90 35;l 70 45 110 45;l 70 125 110 125;t 210 45 Flight altitude ~35,000 ft;t 210 125 Cabin altitude ~8,000 ft;t 180 195 Illustrative equivalent pressure altitudes",
+    "l 35 175 325 175;p M35 165L65 55H125L155 165L185 55H245L275 165H325;t 180 35 Differential pressure cycles;t 180 195 Repeated loading requires fatigue assessment"
+  ],
+  "plus-aerospace-why-wings-have-flaps": [
+    "p M25 90Q110 45 185 90Q110 120 25 90ZM205 90Q265 50 315 90L340 120L310 110Q260 115 205 90Z;t 105 145 Retracted;t 270 145 Extended;t 180 195 Flap deflection increases camber",
+    "l 35 175 325 175;l 35 175 35 35;p M35 160L200 75L235 105;p M35 125L230 40L265 90;t 180 25 Flaps: higher CLmax;t 180 195 Stall speed ∝ 1/√CLmax at fixed weight and density",
+    "p M35 95Q145 45 250 95L290 145L250 115Q140 125 35 95Z;a 180 95 180 25;a 180 95 310 95;t 180 20 Lift;t 300 80 Drag;t 180 195 Increased drag may require more thrust",
+    "p M35 65Q85 35 135 65L155 85M195 65Q245 35 295 65L330 135;t 95 110 Smaller deflection;t 265 155 Larger deflection;t 180 195 Lift, drag and handling vary by design"
+  ],
+  "plus-aerospace-what-mach-number-means": [
+    "a 35 75 275 75;a 35 135 215 135;t 155 65 Local sound speed a;t 125 125 Aircraft true airspeed V;t 180 195 Mach = V/a",
+    "l 35 175 325 175;l 35 175 35 35;p M35 165Q120 85 325 45;t 180 25 Sound speed a ∝ √T;t 180 195 Absolute temperature in kelvins",
+    "p M35 105Q140 40 325 105Q140 145 35 105Z;p M210 30L225 75L210 92;t 180 25 Local supersonic flow;t 270 55 Shock;t 180 195 Transonic aircraft can have local Mach >1",
+    "r 35 65 290 35;r 35 125 232 35;t 180 55 Sound speed 300 m/s;t 150 115 True airspeed 240 m/s;t 180 195 240/300 = Mach 0.8"
+  ],
+  "depth-aerospace-what-happens-during-atmospheric-reentry": [
+    "p M60 150Q180 85 325 65;a 65 45 145 85;a 145 85 210 120;a 210 120 250 150;t 100 25 Incoming kinetic energy;t 180 195 Drag transfers energy to gas and vehicle",
+    "p M190 40Q80 105 190 170;p M230 55Q155 105 230 155Z;a 35 75 110 75;a 35 105 100 105;a 35 135 110 135;t 100 35 Bow shock;t 250 105 Vehicle;t 180 195 Compressed gas heats ahead of vehicle",
+    "r 65 65 230 105;f 65 65 230 25;a 95 25 95 65;a 180 25 180 65;a 265 65 300 35;t 180 83 Ablative layer;t 180 130 Protected structure;t 180 195 Eroding material carries energy away",
+    "p M35 45Q120 55 165 175;p M35 45Q180 65 325 175;l 35 175 325 175;t 100 115 Steep;t 265 100 Shallow;t 180 195 Peak heating versus duration and trajectory"
+  ],
+  "plus-aerospace-how-propellers-turn-power-into-thrust": [
+    "c 180 105 20;p M180 85Q120 25 135 20Q200 30 190 85M180 125Q240 185 225 190Q160 180 170 125;a 35 105 145 105;a 205 105 325 105;t 180 15 Rotating airfoil blades;t 180 205 Axial thrust and resisting torque",
+    "l 65 105 295 105;d 65 105 6;d 180 105 6;d 295 105 6;a 180 105 180 65;a 295 105 295 25;p M165 95L195 115M280 100L310 110;t 65 135 Hub;t 295 145 Tip;t 180 195 Tangential speed ωr increases outward",
+    "b 25 55 145 55 Shaft P=τω;b 190 55 145 55 Useful P=TV;t 180 150 η=TV/(τω);t 180 195 Forward flight definition",
+    "r 35 75 290 50;f 35 75 223.08 50;t 146 105 50 kW useful;t 290 105 15 kW;t 180 55 1,000 N × 50 m/s = 50 kW;t 180 195 50/65 ≈77% efficiency"
+  ],
+  "plus-aerospace-how-aircraft-instruments-sense-altitude": [
+    "l 35 175 325 175;l 35 175 35 35;p M35 45Q120 135 325 165;t 180 25 Pressure;t 180 195 Height increases → static pressure decreases",
+    "c 180 95 65;l 180 95 210 50;d 180 95 5;r 145 130 70 25;t 180 145 Reference;t 180 20 Barometric altimeter;t 180 195 Changing reference shifts indicated altitude",
+    "l 35 175 325 175;p M90 175L90 45M265 175L265 85;l 65 45 115 45;l 240 85 290 85;t 90 30 Standard layer;t 265 70 Cold layer;t 180 195 Same pressure interval spans less height in cold air",
+    "p M35 55H125L155 70H35Z;a 95 75 95 155;a 110 155 110 75;p M25 155L75 135L140 155L200 120L335 155;d 290 35 7;l 290 35 120 55;t 180 195 Radar: height above surface, GNSS: position"
+  ],
+  "plus-aerospace-why-aircraft-ice-is-dangerous": [
+    "p M35 100Q140 40 325 100Q140 135 35 100Z;d 25 45 5;d 55 45 5;d 85 45 5;a 25 50 45 85;a 55 50 65 77;p M35 100L22 90L32 80L50 78;t 180 195 Supercooled droplets freeze at impact",
+    "p M35 75Q100 30 165 75Q100 110 35 75ZM195 75L180 55L205 45Q265 35 325 75Q265 110 195 75Z;p M195 45Q260 10 325 55M195 55Q250 115 325 90;t 95 135 Clean airfoil;t 265 135 Iced airfoil;t 180 195 Ice roughness promotes separation",
+    "c 65 105 40;c 65 105 15;p M165 65L180 145L195 65;c 285 105 30;l 285 75 285 35;t 65 165 Inlet;t 180 165 Propeller;t 285 165 Sensor;t 180 195 Ice affects systems beyond the wing",
+    "r 35 65 130 80;r 195 65 130 80;a 95 35 95 65;a 260 100 260 35;t 100 170 Prevent buildup;t 260 170 Remove buildup;t 180 195 Anti-ice versus deice, aircraft-specific limits"
+  ],
+  "plus-aerospace-how-aircraft-balance-their-mass": [
+    "p M35 105L85 85H275L325 105L275 125H85Z;d 115 105 10;d 245 105 15;d 190 105 5;a 190 110 190 175;t 190 195 Total weight through CG",
+    "l 35 145 325 145;l 35 135 35 155;l 131.67 135 131.67 155;l 276.67 135 276.67 155;r 110 65 43 70;r 265 100 23 35;d 180 145 6;t 131 55 100 kg at 2 m;t 276 90 50 kg at 5 m;t 180 165 CG=3 m;t 180 200 (100×2+50×5)/150",
+    "p M35 105L85 85H275L325 105L275 125H85Z;d 130 105 7;d 220 105 7;a 130 105 130 165;a 220 105 220 165;a 180 105 180 35;t 180 25 Aerodynamic force;t 180 195 Moving CG changes required trim moment",
+    "l 35 175 325 175;l 35 175 35 35;p M95 155L120 55H235L280 155Z;d 160 85 6;d 190 125 6;a 160 85 190 125;t 180 25 Weight;t 180 195 Approved CG envelope (schematic)"
+  ],
+  "plus-aerospace-what-spacecraft-telemetry-communicates": [
+    "r 35 55 130 105;r 195 55 130 105;l 165 105 195 105;a 165 105 195 105;t 100 80 Temperature;t 100 110 Voltage;t 100 140 Attitude;t 260 105 Ground system;t 180 195 Remote engineering measurements",
+    "r 35 75 290 60;l 100 75 100 135;l 175 75 175 135;l 250 75 250 135;t 67 105 ID;t 137 105 Time;t 212 105 Value;t 287 105 Check;t 180 195 Digital packet fields support decoding",
+    "c 65 105 18;p M75 80Q150 105 75 130M95 60Q230 105 95 150M115 40Q310 105 115 170;r 295 95 30 20;t 180 25 Expanding radio wave;t 180 195 Bandwidth, power and distance limit downlink",
+    "l 35 175 325 175;p M35 135L95 130L155 105L215 85L275 45;p M35 155L95 155L155 145L215 130L275 110;d 95 130 5;d 215 85 5;t 265 35 Temperature;t 275 100 Current;t 180 195 Related trends help interpret subsystem behavior"
+  ],
+  "depth-aerospace-how-mission-staging-saves-mass": [
+    "r 35 55 290 45;f 35 55 217.5 45;r 35 130 72.5 45;t 143 82 Propellant;t 288 82 Dry mass;t 180 45 Initial mass;t 180 195 Δv=ve ln(mi/mf) (ideal)",
+    "p M65 45H145V175H65ZM65 100H145M215 45H295V100H215Z;a 145 75 215 75;r 215 125 80 50;a 255 100 255 125;t 105 195 Full stack;t 255 195 Discarded dry stage;t 180 25 Later stage accelerates less mass",
+    "b 25 65 145 55 ve=3,000 m/s;b 190 65 145 55 mi/mf=4;t 180 155 3,000 × ln(4);t 180 195 Ideal Δv ≈4,159 m/s",
+    "p M35 60H155V160H35ZM205 60H325V160H205Z;l 35 110 155 110;l 205 110 325 110;a 95 160 95 190;a 265 160 265 190;t 95 40 Discard stage;t 265 40 Recover stage;t 180 210 Recovery reserve and hardware trade against mass"
+  ],
+  "plus-aerospace-why-spacecraft-need-thermal-control": [
+    "r 120 65 120 90;c 45 50 20;a 65 60 120 95;a 240 90 325 45;a 240 130 325 175;d 180 105 10;t 180 35 Sunlight in;t 290 35 Radiation out;t 180 195 Internal conduction moves electronics heat",
+    "r 95 65 170 95;a 95 85 35 45;a 95 140 35 180;a 265 85 325 45;a 265 140 325 180;t 180 115 Radiator;t 180 35 εσAT⁴;t 180 195 Area, emissivity and temperature set radiated power",
+    "b 25 45 145 45 A=1 m²;b 190 45 145 45 ε=.8;b 105 115 150 45 T=300 K;t 180 195 .8×5.67×10⁻⁸×300⁴ ≈367 W",
+    "r 105 55 150 110;r 95 45 170 130;f 255 85 75 50;a 180 110 255 110;t 180 35 Insulation;t 292 75 Radiator;t 180 110 Heater / electronics;t 180 195 Heat pipe moves heat to radiating surface"
+  ],
+  "plus-aerospace-how-reaction-wheels-orient-satellites": [
+    "r 85 45 190 130;c 180 110 38;p M180 72Q218 72 218 110;a 218 110 205 140;p M95 35Q180 10 265 35;a 110 25 95 35;t 180 115 Wheel;t 180 195 Internal wheel and spacecraft turn oppositely",
+    "b 25 65 145 55 I=.02 kg·m²;b 190 65 145 55 Δω=100 rad/s;t 180 155 ΔH = .02 × 100;t 180 195 2 kg·m²/s wheel momentum change",
+    "l 35 175 325 175;l 35 45 325 45;p M35 155L245 45L245 135L325 95;t 180 35 Wheel speed limit;t 180 195 External torque unloads accumulated momentum",
+    "b 25 65 95 55 Sensors;a 120 92 132 92;b 132 65 95 55 Controller;a 227 92 239 92;b 239 65 95 55 Wheels;a 285 120 285 155;a 285 155 72 155;a 72 155 72 120;t 180 195 Measured attitude closes feedback loop"
+  ],
+  "plus-aerospace-how-deep-space-radio-links-work": [
+    "d 45 105 8;p M65 75Q105 105 65 135M95 55Q175 105 95 155M125 35Q260 105 125 175;r 300 85 25 40;t 45 145 TX;t 312 145 RX;t 180 195 Free-space power spreads over larger area",
+    "r 65 45 90 120;r 205 135 90 30;t 110 35 P;t 250 125 P/4;t 110 185 Range d;t 250 185 Range 2d;t 180 205 Inverse-square loss: −6 dB",
+    "l 35 175 325 175;p M35 130L55 110L75 145L95 105L115 140L135 115L155 135L175 110L195 135L215 115L235 140L255 110L275 140L295 120L325 135;p M35 125H325;t 180 35 Weak signal near noise floor;t 180 195 Narrower bandwidth can reduce integrated noise",
+    "d 35 105 8;d 325 105 8;a 45 105 315 105;t 180 85 300 million km;t 180 145 300,000 km/s;t 180 195 One-way delay ≈1,000 s =16.7 min"
+  ]
+};
+window.LumenSlideArtBatch27Render=function renderer(c,cls="cover",step=-1){
+ const data=window.LumenSlideArtBatch27;if(step<0||!Object.prototype.hasOwnProperty.call(data,c.id)||!data[c.id][step])return "";
+ const E=v=>String(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));const ink="#345746",gold="#d7bd86",bg="#f1eadc",accent="#a45d49",green="#98b6a2";
+ const t=(x,y,s,size=12)=>`<text x="${x}" y="${y}" text-anchor="middle" font-family="system-ui,sans-serif" font-size="${size}" fill="${ink}">${E(s)}</text>`;
+ const line=(x,y,u,w,col=ink)=>`<line x1="${x}" y1="${y}" x2="${u}" y2="${w}" stroke="${col}" stroke-width="2" stroke-linecap="round"/>`;let body="";
+ for(const cmd of data[c.id][step].split(";")){const [op,...v]=cmd.trim().split(" ");const [x,y,u,w]=v.map(Number);
+ if(op==="t"){const s=v.slice(2).join(" ");body+=t(x,y,s,Math.min(12,Math.max(8,Math.floor((2*Math.min(x,360-x)-4)/(Math.max(s.length,1)*.55)))));}
+ else if(["b","r","f"].includes(op)){body+=`<rect x="${x}" y="${y}" width="${u}" height="${w}" rx="3" fill="${op==="f"?green:gold}" fill-opacity="${op==="b"?".65":".85"}" stroke="${ink}" stroke-width="1.3"/>`;if(op==="b"){const s=v.slice(4).join(" ");body+=t(x+u/2,y+w/2+4,s,Math.min(12,Math.max(8,Math.floor((u-6)/(Math.max(s.length,1)*.55)))));}}
+ else if(op==="c"||op==="d")body+=`<circle cx="${x}" cy="${y}" r="${u}" fill="${op==="d"?accent:gold}" fill-opacity="${op==="d"?1:.18}" stroke="${ink}" stroke-width="1.7"/>`;
+ else if(op==="l")body+=line(x,y,u,w);
+ else if(op==="a"){const theta=Math.atan2(w-y,u-x),h=8;body+=line(x,y,u,w,accent)+`<path d="M${u-h*Math.cos(theta-.55)} ${w-h*Math.sin(theta-.55)}L${u} ${w}L${u-h*Math.cos(theta+.55)} ${w-h*Math.sin(theta+.55)}" stroke="${accent}" stroke-width="2" fill="none"/>`;}
+ else if(op==="p")body+=`<path d="${E(v.join(" "))}" stroke="${ink}" stroke-width="2" fill="none" stroke-linejoin="round"/>`;else throw Error("Unknown art primitive "+op);}
+ const title=c.slides[step].title,desc=c.slides[step].text;return `<svg class="${E(cls)}" viewBox="0 0 360 220" role="img" aria-label="${E(title)}" preserveAspectRatio="xMidYMid meet"><title>${E(title)}</title><desc>${E(desc)}</desc><rect width="360" height="220" fill="${bg}"/>${body}</svg>`;
+};
+(function(){const prior=window.LumenQualityArt;window.LumenQualityArt=function(c,cls='cover',step=-1){return window.LumenSlideArtBatch27Render(c,cls,step)||prior(c,cls,step);};})();
